@@ -68,6 +68,10 @@ const SHARED_HEADER = `
 const SHARED_FOOTER = `
   <footer class="site-footer">&copy; 2026 Silicon Valley Girl Podcast &middot; Marina Mogilko</footer>`;
 
+function slugify(str) {
+  return String(str).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString("en-US", {
     year: "numeric",
@@ -262,7 +266,7 @@ function renderHomePage(episodes) {
       </div>
     </section>
 
-    <section class="episodes-section">
+    <section id="episodes" class="episodes-section">
       <h2>Episodes</h2>
       ${episodeListHtml}
     </section>
@@ -298,7 +302,18 @@ function renderEpisodePage(d) {
 
   // Replace generic speaker labels with the actual guest name
   const genericSpeakerRe = /^\*\*(?:Guest|Host|Interviewer|Speaker\s*\d*|.{0,30}?\b(?:VP|CEO|CTO|CFO|COO|Director|Head|President|Manager|Exec|Executive|Founder|Co-founder)\b[^*]*):\*\*/gm;
-  const cleanedTranscript = d.transcript.replace(genericSpeakerRe, `**${d.guestName}:**`);
+  // Remove sponsored/ad segments from transcript
+  const adPatterns = [
+    /This part of the video is brought to you by[\s\S]*?(?=\*\*[A-Z]|\n\n\*\*[A-Z]|Okay,? now let'?s|Now,? let'?s get back|Back to)/gi,
+    /This episode is sponsored by[\s\S]*?(?=\*\*[A-Z]|\n\n\*\*[A-Z]|Okay,? now let'?s|Now,? let'?s get back|Back to)/gi,
+    /This video is sponsored by[\s\S]*?(?=\*\*[A-Z]|\n\n\*\*[A-Z]|Okay,? now let'?s|Now,? let'?s get back|Back to)/gi,
+  ];
+  let filteredTranscript = d.transcript;
+  for (const pat of adPatterns) {
+    filteredTranscript = filteredTranscript.replace(pat, "");
+  }
+
+  const cleanedTranscript = filteredTranscript.replace(genericSpeakerRe, `**${d.guestName}:**`);
 
   const transcriptHtml = cleanedTranscript
     .split(/\n\n+/)
@@ -324,13 +339,17 @@ function renderEpisodePage(d) {
     )
     .join("\n");
 
-  const metaDescription = d.episodeSummary.slice(0, 160).replace(/\s+\S*$/, "...");
+  const guestLabel = d.guestName || "a special guest";
+  const metaDescription = `Marina Mogilko interviews ${guestLabel}, ${d.guestTitle}, on the Silicon Valley Girl Podcast`;
+
+  const episodeSlug = slugify(d.title);
+  const canonicalUrl = `https://podcast.marinamogilko.co/episode/${d.videoId}/`;
 
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: d.title,
-    url: `https://podcast.marinamogilko.co/episode/${d.videoId}/`,
+    url: canonicalUrl,
     datePublished: isoDate,
     description: d.episodeSummary,
     duration: d.duration,
@@ -349,6 +368,11 @@ function renderEpisodePage(d) {
       name: d.guestName,
       jobTitle: d.guestTitle,
     },
+    host: {
+      "@type": "Person",
+      name: "Marina Mogilko",
+      url: "https://marinamogilko.co",
+    },
   });
 
   return `<!DOCTYPE html>
@@ -362,11 +386,12 @@ function renderEpisodePage(d) {
   <meta property="og:description" content="${esc(metaDescription)}">
   <meta property="og:image" content="${esc(d.coverArt)}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://podcast.marinamogilko.co/episode/${d.videoId}/">
+  <meta property="og:url" content="${canonicalUrl}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(d.title)}">
   <meta name="twitter:description" content="${esc(metaDescription)}">
   <meta name="twitter:image" content="${esc(d.coverArt)}">
+  <link rel="canonical" href="${canonicalUrl}">
   <script type="application/ld+json">${jsonLd}</script>
   ${SHARED_HEAD}
   <style>
@@ -511,7 +536,7 @@ function renderEpisodePage(d) {
 
   <nav class="breadcrumb">
     <a href="/">Home</a><span class="sep">/</span>
-    <a href="/">Podcast</a><span class="sep">/</span>
+    <a href="/#episodes">Podcast</a><span class="sep">/</span>
     <span>${esc(d.guestName || "Episode")}</span>
   </nav>
 
@@ -524,7 +549,7 @@ function renderEpisodePage(d) {
         <span>${esc(d.duration)}</span>
       </div>
       <a href="https://www.youtube.com/watch?v=${d.videoId}" class="video-thumb" target="_blank" rel="noopener">
-        <img src="${esc(d.coverArt)}" alt="${esc(d.title)}">
+        <img src="${esc(d.coverArt)}" alt="${esc(guestLabel)}, ${esc(d.guestTitle)}, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
