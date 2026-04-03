@@ -1,31 +1,285 @@
 const fs = require("fs");
 const path = require("path");
 
-const API_URL =
-  "https://svg-dashboard-production.up.railway.app/api/podcast-page/PTZ5iN9nDkY";
+const API_BASE =
+  "https://svg-dashboard-production.up.railway.app/api/podcast-page";
+
+const VIDEO_IDS = [
+  "PTZ5iN9nDkY",
+  "E0Q96IKXx6Q",
+  "4vIIeCqHYXA",
+  "KF_uNAxPFFA",
+];
+
+async function fetchEpisode(videoId) {
+  const res = await fetch(`${API_BASE}/${videoId}`);
+  if (!res.ok) throw new Error(`API returned ${res.status} for ${videoId}`);
+  return res.json();
+}
 
 async function build() {
   console.log("Fetching podcast data...");
-  const res = await fetch(API_URL);
-  if (!res.ok) throw new Error(`API returned ${res.status}`);
-  const data = await res.json();
-
-  const html = renderPage(data);
+  const episodes = await Promise.all(VIDEO_IDS.map(fetchEpisode));
+  episodes.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   const outDir = path.join(__dirname, "public");
+
+  // Home page
   fs.mkdirSync(outDir, { recursive: true });
-  const outPath = path.join(outDir, "index.html");
-  fs.writeFileSync(outPath, html);
-  console.log(`Written to ${outPath}`);
+  fs.writeFileSync(path.join(outDir, "index.html"), renderHomePage(episodes));
+  console.log("Written public/index.html");
+
+  // Episode pages
+  for (const ep of episodes) {
+    const epDir = path.join(outDir, "episode", ep.videoId);
+    fs.mkdirSync(epDir, { recursive: true });
+    fs.writeFileSync(path.join(epDir, "index.html"), renderEpisodePage(ep));
+    console.log(`Written public/episode/${ep.videoId}/index.html`);
+  }
 }
 
-function renderPage(d) {
-  const published = new Date(d.publishedAt).toLocaleDateString("en-US", {
+// ---------------------------------------------------------------------------
+// Shared
+// ---------------------------------------------------------------------------
+
+const ICONS = {
+  youtube: `<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>`,
+  spotify: `<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg>`,
+  apple: `<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M5.34 0C5.82.74 6.1 1.58 6.06 2.46c-.04.84-.4 1.64-.96 2.28-.56.62-1.38 1.06-2.22 1-.08-.82.28-1.68.82-2.28C4.28 2.82 4.9 2.42 5.34 0zM18.71 19.28c-.42.98-.62 1.42-1.16 2.28-.76 1.2-1.82 2.7-3.14 2.72-1.18.02-1.48-.76-3.08-.76-1.6.02-1.94.78-3.12.78-1.32-.02-2.32-1.36-3.08-2.56C3.24 18.78 2.12 14 3.76 10.96c.82-1.52 2.28-2.48 3.86-2.5 1.18-.02 2.28.8 3 .8.72 0 2.06-.98 3.48-.84.58.02 2.24.24 3.3 1.78-.08.06-1.96 1.16-1.94 3.44.02 2.72 2.38 3.62 2.4 3.64-.02.04-.38 1.3-1.15 2z"/></svg>`,
+  instagram: `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.42-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.17-.42-.37-1.06-.42-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.78.3-1.44.71-2.1 1.37S.94 3.36.63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.78.71 1.44 1.37 2.1.66.66 1.32 1.07 2.1 1.37.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.78-.3 1.44-.71 2.1-1.37.66-.66 1.07-1.32 1.37-2.1.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.78-.71-1.44-1.37-2.1C21.3 1.42 20.64 1.01 19.86.71 19.1.41 18.22.21 16.95.15 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>`,
+  linkedin: `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>`,
+};
+
+const SHARED_HEAD = `
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">`;
+
+const SHARED_HEADER = `
+  <header class="site-header">
+    <a href="/" class="logo">Silicon Valley Girl Podcast</a>
+    <nav class="header-links">
+      <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube}</a>
+      <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify}</a>
+      <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple}</a>
+    </nav>
+  </header>`;
+
+const SHARED_FOOTER = `
+  <footer class="site-footer">&copy; 2026 Silicon Valley Girl Podcast &middot; Marina Mogilko</footer>`;
+
+function formatDate(dateStr) {
+  return new Date(dateStr).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   });
+}
 
+// ---------------------------------------------------------------------------
+// Home Page
+// ---------------------------------------------------------------------------
+
+function renderHomePage(episodes) {
+  const episodeListHtml = episodes
+    .map((ep) => {
+      const date = formatDate(ep.publishedAt);
+      const guest = ep.guestName || "Special Guest";
+      return `
+            <a href="/episode/${ep.videoId}/" class="episode-row">
+              <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">${esc(ep.title)}</div>
+                <div class="episode-row-meta">
+                  <span>${esc(guest)}</span>
+                  <span>${date}</span>
+                  <span>${esc(ep.duration)}</span>
+                </div>
+              </div>
+            </a>`;
+    })
+    .join("\n");
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silicon Valley Girl Podcast — Marina Mogilko</title>
+  <meta name="description" content="Silicon Valley Girl Podcast hosted by Marina Mogilko. Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
+  <meta property="og:title" content="Silicon Valley Girl Podcast">
+  <meta property="og:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://podcast.marinamogilko.co">
+  <script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    name: "Silicon Valley Girl Podcast",
+    description: "Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.",
+    url: "https://podcast.marinamogilko.co",
+    author: { "@type": "Person", name: "Marina Mogilko" },
+  })}</script>
+  ${SHARED_HEAD}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    a { color: inherit; }
+
+    /* ---- Header ---- */
+    .site-header {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 900px; margin: 0 auto;
+    }
+    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
+    .header-links { display: flex; gap: 1.25rem; align-items: center; }
+    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
+    .header-links a:hover { color: #1a1a1a; }
+
+    /* ---- Container ---- */
+    .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+
+    /* ---- Hero ---- */
+    .hero { margin-bottom: 3rem; }
+    .hero h1 {
+      font-size: 2.5rem; font-weight: 700; line-height: 1.2;
+      letter-spacing: -0.03em; margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
+    }
+    .listen-links {
+      display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap;
+    }
+    .listen-links a {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      border: 1px solid #ddd; border-radius: 6px;
+      font-size: 0.85rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
+    .listen-links a svg { flex-shrink: 0; }
+
+    /* ---- About Host ---- */
+    .host-card {
+      background: #fafafa; border: 1px solid #eee; border-radius: 10px;
+      padding: 2rem; margin-bottom: 3rem;
+    }
+    .host-card h2 {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: #999; margin-bottom: 1rem;
+    }
+    .host-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .host-bio {
+      font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem;
+    }
+    .host-links { display: flex; gap: 1rem; }
+    .host-links a {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.85rem; color: #2563eb; text-decoration: none; font-weight: 500;
+    }
+    .host-links a:hover { text-decoration: underline; }
+    .host-links a svg { flex-shrink: 0; }
+
+    /* ---- Episodes List ---- */
+    .episodes-section h2 {
+      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .episode-row {
+      display: flex; gap: 1.25rem; padding: 1.25rem 0;
+      border-bottom: 1px solid #f0f0f0; text-decoration: none; color: inherit;
+      transition: background 0.1s; align-items: center;
+    }
+    .episode-row:first-child { border-top: 1px solid #f0f0f0; }
+    .episode-row:hover { background: #fafafa; }
+    .episode-row img {
+      width: 180px; min-width: 180px; height: auto;
+      border-radius: 6px; object-fit: cover;
+    }
+    .episode-row-info { flex: 1; min-width: 0; }
+    .episode-row-title {
+      font-size: 1rem; font-weight: 600; line-height: 1.4;
+      margin-bottom: 0.4rem;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .episode-row-meta {
+      font-size: 0.8rem; color: #999;
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+    }
+    .episode-row-meta span + span::before {
+      content: "\\00b7"; margin-right: 0.5rem;
+    }
+
+    /* ---- Footer ---- */
+    .site-footer {
+      max-width: 800px; margin: 0 auto; padding: 2rem;
+      text-align: center; font-size: 0.8rem; color: #999;
+      border-top: 1px solid #eee;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 640px) {
+      .site-header { padding: 0.75rem 1rem; }
+      .container { padding: 2rem 1rem 3rem; }
+      .hero h1 { font-size: 1.75rem; }
+      .episode-row { flex-direction: column; gap: 0.75rem; }
+      .episode-row img { width: 100%; min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  ${SHARED_HEADER}
+
+  <main class="container">
+    <section class="hero">
+      <h1>Silicon Valley Girl Podcast</h1>
+      <p>Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and building the future. Hosted by Marina Mogilko.</p>
+      <div class="listen-links">
+        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube} YouTube</a>
+        <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
+        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
+      </div>
+    </section>
+
+    <section class="host-card">
+      <h2>Your Host</h2>
+      <div class="host-name">Marina Mogilko</div>
+      <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
+      <div class="host-links">
+        <a href="https://www.instagram.com/linguamarina/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
+        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="episodes-section">
+      <h2>Episodes</h2>
+      ${episodeListHtml}
+    </section>
+  </main>
+
+  ${SHARED_FOOTER}
+
+</body>
+</html>`;
+}
+
+// ---------------------------------------------------------------------------
+// Episode Page
+// ---------------------------------------------------------------------------
+
+function renderEpisodePage(d) {
+  const published = formatDate(d.publishedAt);
   const isoDate = new Date(d.publishedAt).toISOString();
 
   const takeawaysHtml = d.keyTakeaways
@@ -42,7 +296,7 @@ function renderPage(d) {
     )
     .join("\n              ");
 
-  // Replace generic speaker labels (e.g. "Guest", "Google VP") with the actual guest name
+  // Replace generic speaker labels with the actual guest name
   const genericSpeakerRe = /^\*\*(?:Guest|Host|Interviewer|Speaker\s*\d*|.{0,30}?\b(?:VP|CEO|CTO|CFO|COO|Director|Head|President|Manager|Exec|Executive|Founder|Co-founder)\b[^*]*):\*\*/gm;
   const cleanedTranscript = d.transcript.replace(genericSpeakerRe, `**${d.guestName}:**`);
 
@@ -63,7 +317,7 @@ function renderPage(d) {
   const relatedHtml = d.relatedVideos
     .map(
       (v) => `
-              <a href="https://youtube.com/watch?v=${v.videoId}" class="related-card" target="_blank" rel="noopener">
+              <a href="/episode/${v.videoId}/" class="related-card">
                 <img src="${esc(v.thumbnail)}" alt="${esc(v.title)}" loading="lazy">
                 <span class="related-title">${esc(v.title)}</span>
               </a>`
@@ -76,7 +330,7 @@ function renderPage(d) {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: d.title,
-    url: `https://podcast.marinamogilko.co`,
+    url: `https://podcast.marinamogilko.co/episode/${d.videoId}/`,
     datePublished: isoDate,
     description: d.episodeSummary,
     duration: d.duration,
@@ -88,7 +342,7 @@ function renderPage(d) {
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "Silicon Valley Girl Podcast",
-      url: "https://www.youtube.com/@SiliconValleyGirl",
+      url: "https://podcast.marinamogilko.co",
     },
     performer: {
       "@type": "Person",
@@ -108,283 +362,139 @@ function renderPage(d) {
   <meta property="og:description" content="${esc(metaDescription)}">
   <meta property="og:image" content="${esc(d.coverArt)}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://podcast.marinamogilko.co">
+  <meta property="og:url" content="https://podcast.marinamogilko.co/episode/${d.videoId}/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(d.title)}">
   <meta name="twitter:description" content="${esc(metaDescription)}">
   <meta name="twitter:image" content="${esc(d.coverArt)}">
   <script type="application/ld+json">${jsonLd}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  ${SHARED_HEAD}
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fff;
+      line-height: 1.7; color: #1a1a1a; background: #fff;
     }
-
     a { color: inherit; }
 
     /* ---- Header ---- */
     .site-header {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 900px;
-      margin: 0 auto;
+      border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 900px; margin: 0 auto;
     }
-    .site-header .logo {
-      font-weight: 700;
-      font-size: 1.1rem;
-      text-decoration: none;
-      color: #1a1a1a;
-    }
-    .header-links {
-      display: flex;
-      gap: 1.25rem;
-      align-items: center;
-    }
-    .header-links a {
-      font-size: 0.85rem;
-      color: #666;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.15s;
-    }
+    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
+    .header-links { display: flex; gap: 1.25rem; align-items: center; }
+    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
     .header-links a:hover { color: #1a1a1a; }
 
-    /* ---- Breadcrumb ---- */
     .breadcrumb {
-      max-width: 800px;
-      margin: 1.5rem auto 0;
-      padding: 0 2rem;
-      font-size: 0.8rem;
-      color: #999;
+      max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
+      font-size: 0.8rem; color: #999;
     }
-    .breadcrumb a {
-      color: #999;
-      text-decoration: none;
-    }
+    .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
 
-    /* ---- Main Content ---- */
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 2rem 4rem;
-    }
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
 
-    /* ---- Episode Header ---- */
-    .episode-header {
-      margin-bottom: 2.5rem;
-    }
+    .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 1rem;
-      letter-spacing: -0.02em;
+      font-size: 2rem; font-weight: 700; line-height: 1.3;
+      margin-bottom: 1rem; letter-spacing: -0.02em;
     }
     .episode-meta {
-      display: flex;
-      gap: 1rem;
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
+      display: flex; gap: 1rem; font-size: 0.85rem; color: #666;
+      margin-bottom: 1.5rem; flex-wrap: wrap;
     }
-    .episode-meta span + span::before {
-      content: "\\00b7";
-      margin-right: 1rem;
-    }
-    .video-embed {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 1.5rem;
-      background: #000;
-    }
-    .video-embed iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+    .episode-meta span + span::before { content: "\\00b7"; margin-right: 1rem; }
 
-    /* ---- Guest Card ---- */
+    .video-thumb {
+      position: relative; display: block; width: 100%;
+      border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
+    }
+    .video-thumb img { width: 100%; display: block; }
+    .video-thumb .play-btn {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px; height: 48px; background: rgba(0,0,0,0.75);
+      border-radius: 12px; pointer-events: none;
+    }
+    .video-thumb .play-btn::after {
+      content: ""; position: absolute; top: 50%; left: 54%;
+      transform: translate(-50%, -50%);
+      border-style: solid; border-width: 10px 0 10px 18px;
+      border-color: transparent transparent transparent #fff;
+    }
+    .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
-      background: #fafafa;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2.5rem;
+      background: #fafafa; border: 1px solid #eee; border-radius: 8px;
+      padding: 1.5rem; margin-bottom: 2.5rem;
     }
     .guest-card h3 {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #999;
-      margin-bottom: 0.75rem;
+      font-size: 0.75rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #999; margin-bottom: 0.75rem;
     }
-    .guest-name {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-    .guest-title {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 0.5rem;
-    }
-    .guest-bio {
-      font-size: 0.9rem;
-      color: #444;
-      line-height: 1.6;
-    }
+    .guest-name { font-size: 1.1rem; font-weight: 600; }
+    .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+    .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
 
-    /* ---- Tabs ---- */
-    .tabs {
-      border-bottom: 2px solid #eee;
-      display: flex;
-      gap: 0;
-      margin-bottom: 2rem;
-    }
+    .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
-      background: none;
-      border: none;
-      border-bottom: 2px solid transparent;
-      margin-bottom: -2px;
-      padding: 0.75rem 1.5rem;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: #999;
-      cursor: pointer;
-      font-family: inherit;
+      background: none; border: none; border-bottom: 2px solid transparent;
+      margin-bottom: -2px; padding: 0.75rem 1.5rem;
+      font-size: 0.9rem; font-weight: 500; color: #999;
+      cursor: pointer; font-family: inherit;
       transition: color 0.15s, border-color 0.15s;
     }
     .tab-btn:hover { color: #1a1a1a; }
-    .tab-btn.active {
-      color: #1a1a1a;
-      border-bottom-color: #1a1a1a;
-    }
+    .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
 
-    /* ---- Show Notes ---- */
-    .summary {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 2rem;
-      line-height: 1.8;
-    }
-    .takeaways h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-    }
-    .takeaways ul {
-      padding-left: 1.25rem;
-      color: #333;
-    }
-    .takeaways li {
-      margin-bottom: 0.6rem;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
+    .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
+    .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .takeaways ul { padding-left: 1.25rem; color: #333; }
+    .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
 
-    /* ---- Timestamps ---- */
-    .timestamps-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
+    .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      padding: 0.6rem 0;
-      text-decoration: none;
-      border-bottom: 1px solid #f0f0f0;
-      transition: background 0.1s;
+      display: flex; align-items: baseline; gap: 1rem;
+      padding: 0.6rem 0; text-decoration: none;
+      border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem;
-      color: #2563eb;
-      min-width: 3.5rem;
-      font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
     }
-    .ts-title {
-      font-size: 0.95rem;
-      color: #333;
-    }
+    .ts-title { font-size: 0.95rem; color: #333; }
 
-    /* ---- Transcript ---- */
-    .transcript p {
-      margin-bottom: 1.25rem;
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: #333;
-    }
-    .speaker {
-      font-weight: 600;
-      color: #1a1a1a;
-    }
-    .speaker-marina {
-      font-weight: 600;
-      color: #2563eb;
-    }
+    .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
+    .speaker { font-weight: 600; color: #1a1a1a; }
+    .speaker-marina { font-weight: 600; color: #2563eb; }
 
-    /* ---- Related Episodes ---- */
-    .related-section {
-      margin-top: 4rem;
-      padding-top: 2.5rem;
-      border-top: 1px solid #eee;
-    }
-    .related-section h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-    }
+    .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
+    .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1.5rem;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem;
     }
-    .related-card {
-      text-decoration: none;
-      color: inherit;
-      transition: opacity 0.15s;
-    }
+    .related-card { text-decoration: none; color: inherit; transition: opacity 0.15s; }
     .related-card:hover { opacity: 0.8; }
-    .related-card img {
-      width: 100%;
-      border-radius: 6px;
-      display: block;
-      margin-bottom: 0.5rem;
-    }
+    .related-card img { width: 100%; border-radius: 6px; display: block; margin-bottom: 0.5rem; }
     .related-title {
-      font-size: 0.85rem;
-      font-weight: 500;
-      line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      font-size: 0.85rem; font-weight: 500; line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
     }
 
-    /* ---- Responsive ---- */
+    .site-footer {
+      max-width: 800px; margin: 0 auto; padding: 2rem;
+      text-align: center; font-size: 0.8rem; color: #999; border-top: 1px solid #eee;
+    }
+
     @media (max-width: 640px) {
       .site-header { padding: 0.75rem 1rem; }
       .breadcrumb { padding: 0 1rem; }
@@ -397,37 +507,31 @@ function renderPage(d) {
 </head>
 <body>
 
-  <header class="site-header">
-    <a href="/" class="logo">Silicon Valley Girl Podcast</a>
-    <nav class="header-links">
-      <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
-      <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener">Apple Podcasts</a>
-    </nav>
-  </header>
+  ${SHARED_HEADER}
 
   <nav class="breadcrumb">
     <a href="/">Home</a><span class="sep">/</span>
     <a href="/">Podcast</a><span class="sep">/</span>
-    <span>${esc(d.guestName)}</span>
+    <span>${esc(d.guestName || "Episode")}</span>
   </nav>
 
   <main class="container">
     <article class="episode-header">
-      <h1>${esc(d.title)}</h1>
+      <h1>${esc(d.title)} — Silicon Valley Girl Podcast</h1>
       <div class="episode-meta">
-        <span>${esc(d.guestName)}</span>
+        <span>${esc(d.guestName || "Special Guest")}</span>
         <span>${published}</span>
         <span>${esc(d.duration)}</span>
       </div>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/${d.videoId}" title="${esc(d.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
+      <a href="https://www.youtube.com/watch?v=${d.videoId}" class="video-thumb" target="_blank" rel="noopener">
+        <img src="${esc(d.coverArt)}" alt="${esc(d.title)}">
+        <span class="play-btn"></span>
+      </a>
     </article>
 
     <div class="guest-card">
       <h3>About the Guest</h3>
-      <div class="guest-name">${esc(d.guestName)}</div>
+      <div class="guest-name">${esc(d.guestName || "Special Guest")}</div>
       <div class="guest-title">${esc(d.guestTitle)}</div>
       <p class="guest-bio">${esc(d.aboutGuest)}</p>
     </div>
@@ -439,7 +543,7 @@ function renderPage(d) {
     </div>
 
     <div id="panel-notes" class="tab-panel active" role="tabpanel">
-      <div class="summary">${esc(d.episodeSummary)}</div>
+      <div class="summary">In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews ${esc(d.guestName || "a special guest")}, ${esc(d.guestTitle)}. ${esc(d.episodeSummary)}</div>
       <div class="takeaways">
         <h3>Key Takeaways</h3>
         <ul>
@@ -468,6 +572,8 @@ function renderPage(d) {
     </section>
   </main>
 
+  ${SHARED_FOOTER}
+
   <script>
     function switchTab(tab) {
       document.querySelectorAll('.tab-btn').forEach(b => {
@@ -483,6 +589,8 @@ function renderPage(d) {
 </body>
 </html>`;
 }
+
+// ---------------------------------------------------------------------------
 
 function esc(str) {
   return String(str)
