@@ -105,7 +105,9 @@ async function fetchYouTubeData(videoId) {
 
 async function fetchTranscript(videoId) {
   try {
-    const { YoutubeTranscript } = await import('youtube-transcript');
+    const { YoutubeTranscript } = require(
+      path.join(__dirname, 'node_modules/youtube-transcript/dist/youtube-transcript.common.cjs')
+    );
     const lines = await YoutubeTranscript.fetchTranscript(videoId);
     return lines.map(l => l.text).join(' ').replace(/\s+/g, ' ');
   } catch (e) {
