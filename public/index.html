@@ -9,6 +9,7 @@
   <meta property="og:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://podcast.marinamogilko.co">
+  <link rel="canonical" href="https://podcast.marinamogilko.co/">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastSeries","name":"Silicon Valley Girl Podcast","description":"Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.","url":"https://podcast.marinamogilko.co","author":{"@type":"Person","name":"Marina Mogilko"}}</script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +17,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fff;
+      line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
-
-    /* ---- Header ---- */
     .site-header {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 1rem 2rem;
+      border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem;
       display: flex; align-items: center; justify-content: space-between;
       max-width: 900px; margin: 0 auto;
     }
@@ -36,45 +31,26 @@
     .header-links { display: flex; gap: 1.25rem; align-items: center; }
     .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
     .header-links a:hover { color: #1a1a1a; }
-
-    /* ---- Container ---- */
     .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
-
-    /* ---- Hero ---- */
     .hero { margin-bottom: 3rem; }
-    .hero h1 {
-      font-size: 2.5rem; font-weight: 700; line-height: 1.2;
-      letter-spacing: -0.03em; margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
-    }
-    .listen-links {
-      display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap;
-    }
+    .hero h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 1rem; }
+    .hero p { font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px; }
+    .listen-links { display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap; }
     .listen-links a {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.6rem 1.25rem;
-      border: 1px solid #ddd; border-radius: 6px;
+      padding: 0.6rem 1.25rem; border: 1px solid #ddd; border-radius: 6px;
       font-size: 0.85rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
       transition: border-color 0.15s, background 0.15s;
     }
     .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
     .listen-links a svg { flex-shrink: 0; }
-
-    /* ---- About Host ---- */
     .host-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 10px;
       padding: 2rem; margin-bottom: 3rem;
     }
-    .host-card h2 {
-      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
-      color: #999; margin-bottom: 1rem;
-    }
+    .host-card h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 1rem; }
     .host-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .host-bio {
-      font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem;
-    }
+    .host-bio { font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem; }
     .host-links { display: flex; gap: 1rem; }
     .host-links a {
       display: inline-flex; align-items: center; gap: 0.4rem;
@@ -82,12 +58,7 @@
     }
     .host-links a:hover { text-decoration: underline; }
     .host-links a svg { flex-shrink: 0; }
-
-    /* ---- Episodes List ---- */
-    .episodes-section h2 {
-      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
-    }
+    .episodes-section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
     .episode-row {
       display: flex; gap: 1.25rem; padding: 1.25rem 0;
       border-bottom: 1px solid #f0f0f0; text-decoration: none; color: inherit;
@@ -95,33 +66,18 @@
     }
     .episode-row:first-child { border-top: 1px solid #f0f0f0; }
     .episode-row:hover { background: #fafafa; }
-    .episode-row img {
-      width: 180px; min-width: 180px; height: auto;
-      border-radius: 6px; object-fit: cover;
-    }
+    .episode-row img { width: 180px; min-width: 180px; height: auto; border-radius: 6px; object-fit: cover; }
     .episode-row-info { flex: 1; min-width: 0; }
     .episode-row-title {
-      font-size: 1rem; font-weight: 600; line-height: 1.4;
-      margin-bottom: 0.4rem;
-      display: -webkit-box; -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical; overflow: hidden;
+      font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.4rem;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
     }
-    .episode-row-meta {
-      font-size: 0.8rem; color: #999;
-      display: flex; gap: 0.5rem; flex-wrap: wrap;
-    }
-    .episode-row-meta span + span::before {
-      content: "\00b7"; margin-right: 0.5rem;
-    }
-
-    /* ---- Footer ---- */
+    .episode-row-meta { font-size: 0.8rem; color: #999; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .episode-row-meta span + span::before { content: "\00b7"; margin-right: 0.5rem; }
     .site-footer {
       max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999;
-      border-top: 1px solid #eee;
+      text-align: center; font-size: 0.8rem; color: #999; border-top: 1px solid #eee;
     }
-
-    /* ---- Responsive ---- */
     @media (max-width: 640px) {
       .site-header { padding: 0.75rem 1rem; }
       .container { padding: 2rem 1rem 3rem; }
@@ -159,8 +115,8 @@
       <div class="host-name">Marina Mogilko</div>
       <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
       <div class="host-links">
-        <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg> Instagram</a>
-        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg> LinkedIn</a>
+        <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">undefined Instagram</a>
+        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">undefined LinkedIn</a>
       </div>
     </section>
 
@@ -211,6 +167,978 @@
                   <span>Max Tegmark</span>
                   <span>March 20, 2026</span>
                   <span>16 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/Dp6u0pel-Rs/" class="episode-row">
+              <img src="https://img.youtube.com/vi/Dp6u0pel-Rs/maxresdefault.jpg" alt="Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception</div>
+                <div class="episode-row-meta">
+                  <span>Saadia Zahidi</span>
+                  <span>March 16, 2026</span>
+                  <span>21 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/nBM3_AzNYU8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/nBM3_AzNYU8/maxresdefault.jpg" alt="$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley</div>
+                <div class="episode-row-meta">
+                  <span>Bill Gurley</span>
+                  <span>March 12, 2026</span>
+                  <span>35 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/Gk0n0FjeKj8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/maxresdefault.jpg" alt="Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix</div>
+                <div class="episode-row-meta">
+                  <span>Kian Katanforoosh</span>
+                  <span>March 5, 2026</span>
+                  <span>35 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/czItVEAINqw/" class="episode-row">
+              <img src="https://img.youtube.com/vi/czItVEAINqw/maxresdefault.jpg" alt="$1.3B AI CEO: &quot;You ONLY Need 2 People and 90 Days to Build a $1M Business&quot; | Higgsfield Founder" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$1.3B AI CEO: &quot;You ONLY Need 2 People and 90 Days to Build a $1M Business&quot; | Higgsfield Founder</div>
+                <div class="episode-row-meta">
+                  <span>Alex Mashrabov</span>
+                  <span>March 3, 2026</span>
+                  <span>34 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/S0h5oUVv0BY/" class="episode-row">
+              <img src="https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg" alt="LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman</div>
+                <div class="episode-row-meta">
+                  <span>Reid Hoffman</span>
+                  <span>February 24, 2026</span>
+                  <span>28 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/ktpNFfpJ5rw/" class="episode-row">
+              <img src="https://img.youtube.com/vi/ktpNFfpJ5rw/maxresdefault.jpg" alt="LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky</div>
+                <div class="episode-row-meta">
+                  <span>Ryan Roslansky</span>
+                  <span>February 20, 2026</span>
+                  <span>24 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/0fXGtQoJgNo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/0fXGtQoJgNo/maxresdefault.jpg" alt="Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio</div>
+                <div class="episode-row-meta">
+                  <span>Yoshua Bengio</span>
+                  <span>February 16, 2026</span>
+                  <span>30 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/JFilKfL7_9A/" class="episode-row">
+              <img src="https://img.youtube.com/vi/JFilKfL7_9A/maxresdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</div>
+                <div class="episode-row-meta">
+                  <span>Daniela Rus</span>
+                  <span>February 12, 2026</span>
+                  <span>25 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/_aUKWYHLKfE/" class="episode-row">
+              <img src="https://img.youtube.com/vi/_aUKWYHLKfE/maxresdefault.jpg" alt="Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan</div>
+                <div class="episode-row-meta">
+                  <span>Conor Grennan</span>
+                  <span>February 5, 2026</span>
+                  <span>41 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/lVV0HInr0ZY/" class="episode-row">
+              <img src="https://img.youtube.com/vi/lVV0HInr0ZY/maxresdefault.jpg" alt="$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO</div>
+                <div class="episode-row-meta">
+                  <span>Yamini Rangan</span>
+                  <span>January 30, 2026</span>
+                  <span>42 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/rxR83MF6LF0/" class="episode-row">
+              <img src="https://img.youtube.com/vi/rxR83MF6LF0/maxresdefault.jpg" alt="7 Founders Told Me What Separates Winners From Everyone Else" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">7 Founders Told Me What Separates Winners From Everyone Else</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>January 26, 2026</span>
+                  <span>21 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/CL1OfPj3ePo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/CL1OfPj3ePo/maxresdefault.jpg" alt="The Fastest Way To Build A One-Person Business (2026 Beginner Guide)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">The Fastest Way To Build A One-Person Business (2026 Beginner Guide)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>January 15, 2026</span>
+                  <span>15 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/-Epp6VmpezI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/-Epp6VmpezI/maxresdefault.jpg" alt="The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Epidemic Sound CEO" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Epidemic Sound CEO</div>
+                <div class="episode-row-meta">
+                  <span>Oscar Hoglund</span>
+                  <span>January 9, 2026</span>
+                  <span>38 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/6es0HhfpQlQ/" class="episode-row">
+              <img src="https://img.youtube.com/vi/6es0HhfpQlQ/maxresdefault.jpg" alt="Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It</div>
+                <div class="episode-row-meta">
+                  <span>Mel Robbins</span>
+                  <span>January 5, 2026</span>
+                  <span>67 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/HQ3eVt2jgAY/" class="episode-row">
+              <img src="https://img.youtube.com/vi/HQ3eVt2jgAY/maxresdefault.jpg" alt="$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook)</div>
+                <div class="episode-row-meta">
+                  <span>Young Zhao</span>
+                  <span>December 29, 2025</span>
+                  <span>39 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/8W5A7fIuA-A/" class="episode-row">
+              <img src="https://img.youtube.com/vi/8W5A7fIuA-A/maxresdefault.jpg" alt="I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>December 23, 2025</span>
+                  <span>19 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/9pfbGnuMNhk/" class="episode-row">
+              <img src="https://img.youtube.com/vi/9pfbGnuMNhk/maxresdefault.jpg" alt="If I need to start over in 2026, I’d learn these 7 skills first" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">If I need to start over in 2026, I’d learn these 7 skills first</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>December 15, 2025</span>
+                  <span>23 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/RvYv90ftf2M/" class="episode-row">
+              <img src="https://img.youtube.com/vi/RvYv90ftf2M/maxresdefault.jpg" alt="$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI</div>
+                <div class="episode-row-meta">
+                  <span>Andrey Khusid</span>
+                  <span>December 11, 2025</span>
+                  <span>35 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/eaZ2R1K-SjQ/" class="episode-row">
+              <img src="https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg" alt="Future of Education: How to Get Ahead before AI Changes Everything" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Future of Education: How to Get Ahead before AI Changes Everything</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>December 5, 2025</span>
+                  <span>21 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/l6d_0PB0Pbg/" class="episode-row">
+              <img src="https://img.youtube.com/vi/l6d_0PB0Pbg/maxresdefault.jpg" alt="Future of Work 2026: The Only Jobs That Will Survive the AI Era" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Future of Work 2026: The Only Jobs That Will Survive the AI Era</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>November 28, 2025</span>
+                  <span>25 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/EuaVTPB8dxc/" class="episode-row">
+              <img src="https://img.youtube.com/vi/EuaVTPB8dxc/maxresdefault.jpg" alt="GM CEO Reveals the Truth About AI Cars &amp; the Future of Driving" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">GM CEO Reveals the Truth About AI Cars &amp; the Future of Driving</div>
+                <div class="episode-row-meta">
+                  <span>Mary Barra</span>
+                  <span>November 21, 2025</span>
+                  <span>34 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/dM5T0Oj9-90/" class="episode-row">
+              <img src="https://img.youtube.com/vi/dM5T0Oj9-90/maxresdefault.jpg" alt="Launch a $1M AI Business Solo — No Employees, No Investment, No Code" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Launch a $1M AI Business Solo — No Employees, No Investment, No Code</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>November 18, 2025</span>
+                  <span>23 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/SP76PvgMzVU/" class="episode-row">
+              <img src="https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg" alt="CEO of Microsoft AI:The Next 10 Years Will Change Humanity Forever" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">CEO of Microsoft AI:The Next 10 Years Will Change Humanity Forever</div>
+                <div class="episode-row-meta">
+                  <span>Mustafa Suleyman</span>
+                  <span>November 14, 2025</span>
+                  <span>42 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/nlOmBneT-oM/" class="episode-row">
+              <img src="https://img.youtube.com/vi/nlOmBneT-oM/maxresdefault.jpg" alt="How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative</div>
+                <div class="episode-row-meta">
+                  <span>Priscilla Chan</span>
+                  <span>November 7, 2025</span>
+                  <span>31 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/NPiKEwTSwn4/" class="episode-row">
+              <img src="https://img.youtube.com/vi/NPiKEwTSwn4/maxresdefault.jpg" alt="Google’s AI Search Expert: How to Get Ahead Before AI Changes Everything" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Google’s AI Search Expert: How to Get Ahead Before AI Changes Everything</div>
+                <div class="episode-row-meta">
+                  <span>Robby Stein</span>
+                  <span>October 30, 2025</span>
+                  <span>28 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/APTVFZSYtiE/" class="episode-row">
+              <img src="https://img.youtube.com/vi/APTVFZSYtiE/maxresdefault.jpg" alt="Why Working HARD will Keep You Poor (unless you do this)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Why Working HARD will Keep You Poor (unless you do this)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>October 23, 2025</span>
+                  <span>16 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/tSrN8eRMEAE/" class="episode-row">
+              <img src="https://img.youtube.com/vi/tSrN8eRMEAE/maxresdefault.jpg" alt="$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley</div>
+                <div class="episode-row-meta">
+                  <span>Daniel Priestley</span>
+                  <span>October 17, 2025</span>
+                  <span>54 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/SQReIhBKFlw/" class="episode-row">
+              <img src="https://img.youtube.com/vi/SQReIhBKFlw/maxresdefault.jpg" alt="7 Habits That Turn You Into an AI-Native Professional" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">7 Habits That Turn You Into an AI-Native Professional</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>October 10, 2025</span>
+                  <span>13 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/EUrkIpq838c/" class="episode-row">
+              <img src="https://img.youtube.com/vi/EUrkIpq838c/maxresdefault.jpg" alt="$6.6B AI CEO: How to Make Your First $10,000 with AI" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$6.6B AI CEO: How to Make Your First $10,000 with AI</div>
+                <div class="episode-row-meta">
+                  <span>Mati Staniszewski</span>
+                  <span>October 4, 2025</span>
+                  <span>44 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/L1EmhDYc11g/" class="episode-row">
+              <img src="https://img.youtube.com/vi/L1EmhDYc11g/maxresdefault.jpg" alt="5 BEST AI Businesses To Start before 2026 (For Beginners)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">5 BEST AI Businesses To Start before 2026 (For Beginners)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>October 1, 2025</span>
+                  <span>18 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/U7PcyE0p54s/" class="episode-row">
+              <img src="https://img.youtube.com/vi/U7PcyE0p54s/maxresdefault.jpg" alt="$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity</div>
+                <div class="episode-row-meta">
+                  <span>Aravind Srinivas</span>
+                  <span>September 26, 2025</span>
+                  <span>41 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/Q66gsBJnKKQ/" class="episode-row">
+              <img src="https://img.youtube.com/vi/Q66gsBJnKKQ/maxresdefault.jpg" alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger</div>
+                <div class="episode-row-meta">
+                  <span>Mike Krieger</span>
+                  <span>September 19, 2025</span>
+                  <span>44 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/UJo_MiMA7qE/" class="episode-row">
+              <img src="https://img.youtube.com/vi/UJo_MiMA7qE/maxresdefault.jpg" alt="$1.5B AI Founder: This Is Your Golden Age to Build With AI" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">$1.5B AI Founder: This Is Your Golden Age to Build With AI</div>
+                <div class="episode-row-meta">
+                  <span>Jesse Zhang</span>
+                  <span>September 12, 2025</span>
+                  <span>26 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/ELuBhd-PgDg/" class="episode-row">
+              <img src="https://img.youtube.com/vi/ELuBhd-PgDg/maxresdefault.jpg" alt="9 AI Skills That Will Make You Rich in 2026" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">9 AI Skills That Will Make You Rich in 2026</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>September 5, 2025</span>
+                  <span>16 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/3FgPLbfs_oY/" class="episode-row">
+              <img src="https://img.youtube.com/vi/3FgPLbfs_oY/maxresdefault.jpg" alt="AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit</div>
+                <div class="episode-row-meta">
+                  <span>Amjad Masad</span>
+                  <span>August 29, 2025</span>
+                  <span>38 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/S9xrvZhMLMI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/S9xrvZhMLMI/maxresdefault.jpg" alt="Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios</div>
+                <div class="episode-row-meta">
+                  <span>Alex</span>
+                  <span>August 19, 2025</span>
+                  <span>39 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/8DuxOlkHdy4/" class="episode-row">
+              <img src="https://img.youtube.com/vi/8DuxOlkHdy4/maxresdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Become an Entrepreneur Today – AI stack to build your company in 2025</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>August 15, 2025</span>
+                  <span>13 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/1gm__VUG2m8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/1gm__VUG2m8/maxresdefault.jpg" alt="AI Agents EXPLAINED in 14 minutes and TOOLS for building one" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">AI Agents EXPLAINED in 14 minutes and TOOLS for building one</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>August 11, 2025</span>
+                  <span>15 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/3cs09XQ6cb0/" class="episode-row">
+              <img src="https://img.youtube.com/vi/3cs09XQ6cb0/maxresdefault.jpg" alt="The Future of Work: High-Paying Careers That AI Won't Replace" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">The Future of Work: High-Paying Careers That AI Won't Replace</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>July 24, 2025</span>
+                  <span>17 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/9XM8yDN-AEA/" class="episode-row">
+              <img src="https://img.youtube.com/vi/9XM8yDN-AEA/maxresdefault.jpg" alt="Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead</div>
+                <div class="episode-row-meta">
+                  <span>Thomas Wolf</span>
+                  <span>July 18, 2025</span>
+                  <span>25 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/KfoenLbhOTI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/KfoenLbhOTI/maxresdefault.jpg" alt="How to Build a Profitable Personal Brand with AI (In Just 30 Days)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How to Build a Profitable Personal Brand with AI (In Just 30 Days)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>July 11, 2025</span>
+                  <span>20 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/4jqrK-hUicQ/" class="episode-row">
+              <img src="https://img.youtube.com/vi/4jqrK-hUicQ/maxresdefault.jpg" alt="How to Build a Viral Brand Online ft. @blogilates" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How to Build a Viral Brand Online ft. @blogilates</div>
+                <div class="episode-row-meta">
+                  <span>Cassey Ho</span>
+                  <span>July 4, 2025</span>
+                  <span>38 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/PR__eFQsnhg/" class="episode-row">
+              <img src="https://img.youtube.com/vi/PR__eFQsnhg/maxresdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</div>
+                <div class="episode-row-meta">
+                  <span>Thomas Dohmke</span>
+                  <span>June 27, 2025</span>
+                  <span>22 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/IdN-b2Y_foo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/IdN-b2Y_foo/maxresdefault.jpg" alt="Marie Forleo: Progress Way Faster than 99% of people" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Marie Forleo: Progress Way Faster than 99% of people</div>
+                <div class="episode-row-meta">
+                  <span>Marie Forleo</span>
+                  <span>June 20, 2025</span>
+                  <span>42 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/Ab1FyDL4HEY/" class="episode-row">
+              <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg" alt="High-income AI business ideas for 2025 (no coding, no budget)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">High-income AI business ideas for 2025 (no coding, no budget)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>June 14, 2025</span>
+                  <span>18 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/jVD8pCZeLww/" class="episode-row">
+              <img src="https://img.youtube.com/vi/jVD8pCZeLww/maxresdefault.jpg" alt="How to Use AI to Go VIRAL on Social Media (full guide)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How to Use AI to Go VIRAL on Social Media (full guide)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>June 11, 2025</span>
+                  <span>20 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/4BrBrwAXCXo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/4BrBrwAXCXo/maxresdefault.jpg" alt="Don’t Let AI Take Your Job: Master These 7 Skills Now" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Don’t Let AI Take Your Job: Master These 7 Skills Now</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>June 5, 2025</span>
+                  <span>17 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/Hg-iFwW5vBo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/Hg-iFwW5vBo/maxresdefault.jpg" alt="Win the AI Race in 2025 with These 9 Game-Changing Tools" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Win the AI Race in 2025 with These 9 Game-Changing Tools</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>May 31, 2025</span>
+                  <span>17 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/ZYT81iUfBK4/" class="episode-row">
+              <img src="https://img.youtube.com/vi/ZYT81iUfBK4/maxresdefault.jpg" alt="How I Launched My Merch Store in 7 Minutes Using AI Tools" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How I Launched My Merch Store in 7 Minutes Using AI Tools</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>May 28, 2025</span>
+                  <span>7 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/s5r4wdOWLjk/" class="episode-row">
+              <img src="https://img.youtube.com/vi/s5r4wdOWLjk/maxresdefault.jpg" alt="AI Instead of a Degree: How to Build a $1B Company" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">AI Instead of a Degree: How to Build a $1B Company</div>
+                <div class="episode-row-meta">
+                  <span>Samir Vasavada</span>
+                  <span>May 24, 2025</span>
+                  <span>45 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/qkGuzV50JWI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/qkGuzV50JWI/maxresdefault.jpg" alt="Must Have AI Skills to Save your Career in 2026" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Must Have AI Skills to Save your Career in 2026</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>May 20, 2025</span>
+                  <span>19 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/gW51vYIJgUs/" class="episode-row">
+              <img src="https://img.youtube.com/vi/gW51vYIJgUs/maxresdefault.jpg" alt="Life-Changing Lessons I Learned From The Top 1%" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Life-Changing Lessons I Learned From The Top 1%</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>May 15, 2025</span>
+                  <span>19 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/mtfB8GtJAWM/" class="episode-row">
+              <img src="https://img.youtube.com/vi/mtfB8GtJAWM/maxresdefault.jpg" alt="What It Really Takes to Build a $3 Billion Business" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">What It Really Takes to Build a $3 Billion Business</div>
+                <div class="episode-row-meta">
+                  <span>Gaurav Munjal and Roman Saini</span>
+                  <span>May 13, 2025</span>
+                  <span>36 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/_tQUyvTLaSM/" class="episode-row">
+              <img src="https://img.youtube.com/vi/_tQUyvTLaSM/maxresdefault.jpg" alt="From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja</div>
+                <div class="episode-row-meta">
+                  <span>Jenny Lei</span>
+                  <span>April 28, 2025</span>
+                  <span>32 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/PmpaFWBFy_c/" class="episode-row">
+              <img src="https://img.youtube.com/vi/PmpaFWBFy_c/maxresdefault.jpg" alt="Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt</div>
+                <div class="episode-row-meta">
+                  <span>Ankur Jain</span>
+                  <span>April 25, 2025</span>
+                  <span>28 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/B8v4wWeWqJ8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/B8v4wWeWqJ8/maxresdefault.jpg" alt="TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha</div>
+                <div class="episode-row-meta">
+                  <span>Coco Rocha</span>
+                  <span>April 18, 2025</span>
+                  <span>34 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/KnWKFp472GI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/KnWKFp472GI/maxresdefault.jpg" alt="What No One Tells You About Building a Startup With Your Spouse (Our Story)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">What No One Tells You About Building a Startup With Your Spouse (Our Story)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>April 10, 2025</span>
+                  <span>25 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/xuN4jZpaPho/" class="episode-row">
+              <img src="https://img.youtube.com/vi/xuN4jZpaPho/maxresdefault.jpg" alt="Steal These Money Habits — They Built My 7-Figure Wealth" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Steal These Money Habits — They Built My 7-Figure Wealth</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>April 4, 2025</span>
+                  <span>16 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/NX5-bXM1NQg/" class="episode-row">
+              <img src="https://img.youtube.com/vi/NX5-bXM1NQg/maxresdefault.jpg" alt="Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl</div>
+                <div class="episode-row-meta">
+                  <span>Blake Scholl</span>
+                  <span>March 21, 2025</span>
+                  <span>40 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/QvwI0TTVcwo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/QvwI0TTVcwo/maxresdefault.jpg" alt="I'm 35. If you're in your 20s, watch this" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">I'm 35. If you're in your 20s, watch this</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>March 13, 2025</span>
+                  <span>15 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/d_Dp1vpDCrk/" class="episode-row">
+              <img src="https://img.youtube.com/vi/d_Dp1vpDCrk/maxresdefault.jpg" alt="My 19 sources of income at age 34" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">My 19 sources of income at age 34</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>March 6, 2025</span>
+                  <span>21 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/ZE1AjTnsubI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/ZE1AjTnsubI/maxresdefault.jpg" alt="LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman</div>
+                <div class="episode-row-meta">
+                  <span>Reid Hoffman</span>
+                  <span>February 27, 2025</span>
+                  <span>23 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/GOqARrckaR8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/GOqARrckaR8/maxresdefault.jpg" alt="TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>February 21, 2025</span>
+                  <span>20 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/FZm2vVlPX9w/" class="episode-row">
+              <img src="https://img.youtube.com/vi/FZm2vVlPX9w/maxresdefault.jpg" alt="TOP-8 profitable online business ideas you can start in 2025" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">TOP-8 profitable online business ideas you can start in 2025</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>February 13, 2025</span>
+                  <span>21 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/pqf9uL4j9GU/" class="episode-row">
+              <img src="https://img.youtube.com/vi/pqf9uL4j9GU/maxresdefault.jpg" alt="7 steps to start your business from ZERO in 2025" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">7 steps to start your business from ZERO in 2025</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>February 11, 2025</span>
+                  <span>22 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/pUITF0uGa6U/" class="episode-row">
+              <img src="https://img.youtube.com/vi/pUITF0uGa6U/maxresdefault.jpg" alt="Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! @humphrey" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! @humphrey</div>
+                <div class="episode-row-meta">
+                  <span>Humphrey Yang</span>
+                  <span>February 4, 2025</span>
+                  <span>37 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/qrzRg0JUBj0/" class="episode-row">
+              <img src="https://img.youtube.com/vi/qrzRg0JUBj0/maxresdefault.jpg" alt="34-year-old millionaire explains: 13 habits keeping you poor" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">34-year-old millionaire explains: 13 habits keeping you poor</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>January 23, 2025</span>
+                  <span>18 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/t6UbvaOGIEI/" class="episode-row">
+              <img src="https://img.youtube.com/vi/t6UbvaOGIEI/maxresdefault.jpg" alt="How I built a $34M business at 34 on Youtube" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How I built a $34M business at 34 on Youtube</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>January 9, 2025</span>
+                  <span>16 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/Y4Jxbet2RK8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/Y4Jxbet2RK8/maxresdefault.jpg" alt="6 habits that made me a multi-millionaire" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">6 habits that made me a multi-millionaire</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>December 26, 2024</span>
+                  <span>18 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/VN_0zJXBO6E/" class="episode-row">
+              <img src="https://img.youtube.com/vi/VN_0zJXBO6E/maxresdefault.jpg" alt="How to make $1000/month on social media with 0 followers" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How to make $1000/month on social media with 0 followers</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>December 19, 2024</span>
+                  <span>19 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/OrbhGa4aeAM/" class="episode-row">
+              <img src="https://img.youtube.com/vi/OrbhGa4aeAM/maxresdefault.jpg" alt="Getting Started with Email Marketing: Full Step-by-Step Guide" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Getting Started with Email Marketing: Full Step-by-Step Guide</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>December 11, 2024</span>
+                  <span>27 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/V3PbrBA9teE/" class="episode-row">
+              <img src="https://img.youtube.com/vi/V3PbrBA9teE/maxresdefault.jpg" alt="How To Make Your Life Exciting Again" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How To Make Your Life Exciting Again</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>November 28, 2024</span>
+                  <span>15 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/2kWPqccrb-o/" class="episode-row">
+              <img src="https://img.youtube.com/vi/2kWPqccrb-o/maxresdefault.jpg" alt="9 Work From Home Business Ideas To Quit Your Job" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">9 Work From Home Business Ideas To Quit Your Job</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>November 25, 2024</span>
+                  <span>18 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/r67fvYaB2y8/" class="episode-row">
+              <img src="https://img.youtube.com/vi/r67fvYaB2y8/maxresdefault.jpg" alt="10 AI tools to use in 2025" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">10 AI tools to use in 2025</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>November 21, 2024</span>
+                  <span>11 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/VHiyfK06n1c/" class="episode-row">
+              <img src="https://img.youtube.com/vi/VHiyfK06n1c/maxresdefault.jpg" alt="How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>November 15, 2024</span>
+                  <span>23 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/tzUAJZAuaZw/" class="episode-row">
+              <img src="https://img.youtube.com/vi/tzUAJZAuaZw/maxresdefault.jpg" alt="Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company</div>
+                <div class="episode-row-meta">
+                  <span>Raj Gokal</span>
+                  <span>November 7, 2024</span>
+                  <span>60 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/JqcK4b3wRGU/" class="episode-row">
+              <img src="https://img.youtube.com/vi/JqcK4b3wRGU/maxresdefault.jpg" alt="How I Made $50,000 on My Airbnb in 6 Months" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">How I Made $50,000 on My Airbnb in 6 Months</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>October 28, 2024</span>
+                  <span>12 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/JcvG5P6CW-M/" class="episode-row">
+              <img src="https://img.youtube.com/vi/JcvG5P6CW-M/maxresdefault.jpg" alt="9 AI TOOLS You Must Know In 2024" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">9 AI TOOLS You Must Know In 2024</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>October 24, 2024</span>
+                  <span>17 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/chbinls_V-w/" class="episode-row">
+              <img src="https://img.youtube.com/vi/chbinls_V-w/maxresdefault.jpg" alt="31 Most Profitable Business Ideas for the Next 10 Years" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">31 Most Profitable Business Ideas for the Next 10 Years</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>October 21, 2024</span>
+                  <span>49 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/JI6KrvldAoE/" class="episode-row">
+              <img src="https://img.youtube.com/vi/JI6KrvldAoE/maxresdefault.jpg" alt="Meet Renuka from India who moved to the U.S. to build a manicure robot" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Meet Renuka from India who moved to the U.S. to build a manicure robot</div>
+                <div class="episode-row-meta">
+                  <span>Renuka</span>
+                  <span>October 4, 2024</span>
+                  <span>24 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/kvlMhVz-DeM/" class="episode-row">
+              <img src="https://img.youtube.com/vi/kvlMhVz-DeM/maxresdefault.jpg" alt="His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)</div>
+                <div class="episode-row-meta">
+                  <span>Nikil Viswanathan</span>
+                  <span>October 1, 2024</span>
+                  <span>51 MIN</span>
                 </div>
               </div>
             </a>
