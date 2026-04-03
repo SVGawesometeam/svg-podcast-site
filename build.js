@@ -204,10 +204,22 @@ function renderPage(d) {
       content: "\\00b7";
       margin-right: 1rem;
     }
-    .episode-cover {
+    .video-embed {
+      position: relative;
       width: 100%;
+      padding-bottom: 56.25%;
       border-radius: 8px;
+      overflow: hidden;
       margin-bottom: 1.5rem;
+      background: #000;
+    }
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     /* ---- Guest Card ---- */
@@ -408,7 +420,9 @@ function renderPage(d) {
         <span>${published}</span>
         <span>${esc(d.duration)}</span>
       </div>
-      <img class="episode-cover" src="${esc(d.coverArt)}" alt="${esc(d.title)}">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/${d.videoId}" title="${esc(d.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
     </article>
 
     <div class="guest-card">
