@@ -257,7 +257,7 @@ function renderHomePage(episodes) {
       <div class="host-name">Marina Mogilko</div>
       <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
       <div class="host-links">
-        <a href="https://www.instagram.com/linguamarina/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
+        <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
         <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
       </div>
     </section>
