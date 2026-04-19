@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://podcast.marinamogilko.co/sitemap.xml
