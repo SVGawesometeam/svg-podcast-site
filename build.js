@@ -3,13 +3,9 @@ const path = require("path");
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
-
-const VIDEO_IDS = [
-  "PTZ5iN9nDkY",
-  "E0Q96IKXx6Q",
-  "4vIIeCqHYXA",
-  "KF_uNAxPFFA",
-];
+const SITE_URL = "https://podcast.marinamogilko.co";
+const PUBLIC_DIR = path.join(__dirname, "public");
+const IDS_FILE = path.join(__dirname, "podcast-video-ids.txt");
 
 async function fetchEpisode(videoId) {
   const res = await fetch(`${API_BASE}/${videoId}`);
@@ -17,25 +13,82 @@ async function fetchEpisode(videoId) {
   return res.json();
 }
 
+// Pull the minimal fields needed for the home page + sitemap out of an
+// already-rendered episode page so we don't have to re-hit the API.
+function readExistingEpisodeMeta(videoId, html) {
+  const titleMatch = html.match(/<title>(.*?) — Silicon Valley Girl Podcast<\/title>/);
+  const imgMatch = html.match(/og:image" content="([^"]+)"/);
+  const dateMatch = html.match(/datePublished":"([^"]+)"/);
+  const guestMatch = html.match(/<div class="guest-name">([^<]+)<\/div>/);
+  const durationMatch = html.match(/<span>(\d+ MIN)<\/span>/);
+  return {
+    videoId,
+    title: titleMatch ? titleMatch[1] : videoId,
+    thumbnail: imgMatch ? imgMatch[1] : `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+    publishedAt: dateMatch ? dateMatch[1] : new Date().toISOString(),
+    guestName: guestMatch ? guestMatch[1] : "",
+    duration: durationMatch ? durationMatch[1] : "",
+  };
+}
+
 async function build() {
-  console.log("Fetching podcast data...");
-  const episodes = await Promise.all(VIDEO_IDS.map(fetchEpisode));
-  episodes.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  const videoIds = fs.readFileSync(IDS_FILE, "utf8")
+    .split("\n").map(l => l.trim()).filter(Boolean);
 
-  const outDir = path.join(__dirname, "public");
+  console.log(`Found ${videoIds.length} video IDs`);
 
-  // Home page
-  fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "index.html"), renderHomePage(episodes));
+  fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+
+  const allEpisodes = [];
+  let built = 0, skipped = 0, failed = 0;
+
+  for (let i = 0; i < videoIds.length; i++) {
+    const videoId = videoIds[i];
+    const epDir = path.join(PUBLIC_DIR, "episode", videoId);
+    const epFile = path.join(epDir, "index.html");
+
+    if (fs.existsSync(epFile)) {
+      allEpisodes.push(readExistingEpisodeMeta(videoId, fs.readFileSync(epFile, "utf8")));
+      skipped++;
+      continue;
+    }
+
+    console.log(`[${i + 1}/${videoIds.length}] Fetching ${videoId}...`);
+    try {
+      const ep = await fetchEpisode(videoId);
+      fs.mkdirSync(epDir, { recursive: true });
+      fs.writeFileSync(epFile, renderEpisodePage(ep));
+      allEpisodes.push(ep);
+      built++;
+      console.log(`   DONE -> public/episode/${videoId}/index.html`);
+    } catch (e) {
+      console.error(`   FAILED ${videoId}: ${e.message}`);
+      failed++;
+    }
+  }
+
+  allEpisodes.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+  fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes));
   console.log("Written public/index.html");
 
-  // Episode pages
-  for (const ep of episodes) {
-    const epDir = path.join(outDir, "episode", ep.videoId);
-    fs.mkdirSync(epDir, { recursive: true });
-    fs.writeFileSync(path.join(epDir, "index.html"), renderEpisodePage(ep));
-    console.log(`Written public/episode/${ep.videoId}/index.html`);
-  }
+  fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
+  console.log("Written public/sitemap.xml");
+
+  console.log(`\nBuilt: ${built}  Skipped: ${skipped}  Failed: ${failed}  Total: ${allEpisodes.length}`);
+}
+
+function renderSitemap(episodes) {
+  const urls = [
+    `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
+    ...episodes.map(ep =>
+      `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${new Date(ep.publishedAt).toISOString().split("T")[0]}</lastmod></url>`
+    ),
+  ];
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.join("\n")}
+</urlset>`;
 }
 
 // ---------------------------------------------------------------------------

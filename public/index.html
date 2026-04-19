@@ -9,7 +9,6 @@
   <meta property="og:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://podcast.marinamogilko.co">
-  <link rel="canonical" href="https://podcast.marinamogilko.co/">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastSeries","name":"Silicon Valley Girl Podcast","description":"Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.","url":"https://podcast.marinamogilko.co","author":{"@type":"Person","name":"Marina Mogilko"}}</script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +16,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7; color: #1a1a1a; background: #fff;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fff;
     }
     a { color: inherit; }
+
+    /* ---- Header ---- */
     .site-header {
-      border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1rem 2rem;
       display: flex; align-items: center; justify-content: space-between;
       max-width: 900px; margin: 0 auto;
     }
@@ -31,26 +36,45 @@
     .header-links { display: flex; gap: 1.25rem; align-items: center; }
     .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
     .header-links a:hover { color: #1a1a1a; }
+
+    /* ---- Container ---- */
     .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+
+    /* ---- Hero ---- */
     .hero { margin-bottom: 3rem; }
-    .hero h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 1rem; }
-    .hero p { font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px; }
-    .listen-links { display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .hero h1 {
+      font-size: 2.5rem; font-weight: 700; line-height: 1.2;
+      letter-spacing: -0.03em; margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
+    }
+    .listen-links {
+      display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap;
+    }
     .listen-links a {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.6rem 1.25rem; border: 1px solid #ddd; border-radius: 6px;
+      padding: 0.6rem 1.25rem;
+      border: 1px solid #ddd; border-radius: 6px;
       font-size: 0.85rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
       transition: border-color 0.15s, background 0.15s;
     }
     .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
     .listen-links a svg { flex-shrink: 0; }
+
+    /* ---- About Host ---- */
     .host-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 10px;
       padding: 2rem; margin-bottom: 3rem;
     }
-    .host-card h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 1rem; }
+    .host-card h2 {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: #999; margin-bottom: 1rem;
+    }
     .host-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .host-bio { font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem; }
+    .host-bio {
+      font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem;
+    }
     .host-links { display: flex; gap: 1rem; }
     .host-links a {
       display: inline-flex; align-items: center; gap: 0.4rem;
@@ -58,7 +82,12 @@
     }
     .host-links a:hover { text-decoration: underline; }
     .host-links a svg { flex-shrink: 0; }
-    .episodes-section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+
+    /* ---- Episodes List ---- */
+    .episodes-section h2 {
+      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
     .episode-row {
       display: flex; gap: 1.25rem; padding: 1.25rem 0;
       border-bottom: 1px solid #f0f0f0; text-decoration: none; color: inherit;
@@ -66,18 +95,33 @@
     }
     .episode-row:first-child { border-top: 1px solid #f0f0f0; }
     .episode-row:hover { background: #fafafa; }
-    .episode-row img { width: 180px; min-width: 180px; height: auto; border-radius: 6px; object-fit: cover; }
+    .episode-row img {
+      width: 180px; min-width: 180px; height: auto;
+      border-radius: 6px; object-fit: cover;
+    }
     .episode-row-info { flex: 1; min-width: 0; }
     .episode-row-title {
-      font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.4rem;
-      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      font-size: 1rem; font-weight: 600; line-height: 1.4;
+      margin-bottom: 0.4rem;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
     }
-    .episode-row-meta { font-size: 0.8rem; color: #999; display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .episode-row-meta span + span::before { content: "\00b7"; margin-right: 0.5rem; }
+    .episode-row-meta {
+      font-size: 0.8rem; color: #999;
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+    }
+    .episode-row-meta span + span::before {
+      content: "\00b7"; margin-right: 0.5rem;
+    }
+
+    /* ---- Footer ---- */
     .site-footer {
       max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999; border-top: 1px solid #eee;
+      text-align: center; font-size: 0.8rem; color: #999;
+      border-top: 1px solid #eee;
     }
+
+    /* ---- Responsive ---- */
     @media (max-width: 640px) {
       .site-header { padding: 0.75rem 1rem; }
       .container { padding: 2rem 1rem 3rem; }
@@ -123,6 +167,42 @@
     <section id="episodes" class="episodes-section">
       <h2>Episodes</h2>
       
+            <a href="/episode/00RHph_eok4/" class="episode-row">
+              <img src="https://img.youtube.com/vi/00RHph_eok4/maxresdefault.jpg" alt="AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy</div>
+                <div class="episode-row-meta">
+                  <span>Roman Yampolskiy</span>
+                  <span>April 17, 2026</span>
+                  <span>46 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/GDeEATJcbJo/" class="episode-row">
+              <img src="https://img.youtube.com/vi/GDeEATJcbJo/maxresdefault.jpg" alt="Duolingo CEO: What I Tell Every Employee About Surviving AI" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Duolingo CEO: What I Tell Every Employee About Surviving AI</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>April 10, 2026</span>
+                  <span>45 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/vZLY2YGUk4o/" class="episode-row">
+              <img src="https://img.youtube.com/vi/vZLY2YGUk4o/maxresdefault.jpg" alt="Nobel Prize Winner: Nobody Sees What's Coming After AI" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">Nobel Prize Winner: Nobody Sees What's Coming After AI</div>
+                <div class="episode-row-meta">
+                  <span>John Martinis</span>
+                  <span>April 8, 2026</span>
+                  <span>23 MIN</span>
+                </div>
+              </div>
+            </a>
+
             <a href="/episode/YfRkj9kmQf0/" class="episode-row">
               <img src="https://img.youtube.com/vi/YfRkj9kmQf0/maxresdefault.jpg" alt="Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI" loading="lazy">
               <div class="episode-row-info">
@@ -599,6 +679,18 @@
                   <span>Amjad Masad</span>
                   <span>August 29, 2025</span>
                   <span>38 MIN</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="/episode/zCWfnfFDr90/" class="episode-row">
+              <img src="https://img.youtube.com/vi/zCWfnfFDr90/maxresdefault.jpg" alt="The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)" loading="lazy">
+              <div class="episode-row-info">
+                <div class="episode-row-title">The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)</div>
+                <div class="episode-row-meta">
+                  <span>Special Guest</span>
+                  <span>August 26, 2025</span>
+                  <span>15 MIN</span>
                 </div>
               </div>
             </a>
