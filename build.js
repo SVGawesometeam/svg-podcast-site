@@ -408,6 +408,9 @@ function renderEpisodePage(d) {
     duration: d.duration,
     associatedMedia: {
       "@type": "VideoObject",
+      name: d.title,
+      description: (d.episodeSummary || "").slice(0, 200),
+      uploadDate: new Date(d.publishedAt).toISOString().split("T")[0],
       embedUrl: `https://www.youtube.com/embed/${d.videoId}`,
       thumbnailUrl: d.thumbnail,
     },
