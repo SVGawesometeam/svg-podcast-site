@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward — Silicon Valley Girl Podcast</title>
+  <meta name="description" content="Marina Mogilko interviews Josh Woodward, VP, Google Labs · Head of Gemini · AI Studio, on the Silicon Valley Girl Podcast">
+  <meta property="og:title" content="Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward">
+  <meta property="og:description" content="Marina Mogilko interviews Josh Woodward, VP, Google Labs · Head of Gemini · AI Studio, on the Silicon Valley Girl Podcast">
+  <meta property="og:image" content="https://img.youtube.com/vi/ZW87Peh3tWM/maxresdefault.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://marinamogilko.co/episode/ZW87Peh3tWM/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward">
+  <meta name="twitter:description" content="Marina Mogilko interviews Josh Woodward, VP, Google Labs · Head of Gemini · AI Studio, on the Silicon Valley Girl Podcast">
+  <meta name="twitter:image" content="https://img.youtube.com/vi/ZW87Peh3tWM/maxresdefault.jpg">
+  <link rel="canonical" href="https://marinamogilko.co/episode/ZW87Peh3tWM/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastEpisode","name":"Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward","url":"https://marinamogilko.co/episode/ZW87Peh3tWM/","datePublished":"2026-05-21T21:00:25.000Z","description":"Josh Woodward, VP behind Google Labs and head of Gemini, discusses Google's shift into the agentic AI era and reveals that most users are only accessing 5% of Gemini's capabilities. He highlights Gemini Spark, an AI agent that works 24/7 in the background, deeply integrated with Gmail, Google Docs, Sheets, Slides, and Calendar to automate digital chores and free up calendar time. Woodward shares that a voice feature demoed at Google I/O—which understands file context, creates emails with tables, and generates images and videos—was built just two weekends before the conference. He explains Google's competitive advantages: native Google ecosystem integration without connectors, cloud-based virtual machines enabling parallel task execution, and access to a generative media suite including Imagen and music generation that competitors don't have.","duration":"34 MIN","associatedMedia":{"@type":"VideoObject","name":"Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward","description":"Josh Woodward, VP behind Google Labs and head of Gemini, discusses Google's shift into the agentic AI era and reveals that most users are only accessing 5% of Gemini's capabilities. He highlights Gemi","uploadDate":"2026-05-21","embedUrl":"https://www.youtube.com/embed/ZW87Peh3tWM","thumbnailUrl":"https://img.youtube.com/vi/ZW87Peh3tWM/maxresdefault.jpg"},"partOfSeries":{"@type":"PodcastSeries","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co"},"performer":{"@type":"Person","name":"Josh Woodward","jobTitle":"VP, Google Labs · Head of Gemini · AI Studio"},"host":{"@type":"Person","name":"Marina Mogilko","url":"https://marinamogilko.co"}}</script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #fff;
+    }
+    a { color: inherit; }
+
+    /* ---- Header ---- */
+    .site-header {
+      border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 900px; margin: 0 auto;
+    }
+    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
+    .header-links { display: flex; gap: 1.25rem; align-items: center; }
+    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
+    .header-links a:hover { color: #1a1a1a; }
+
+    .breadcrumb {
+      max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
+      font-size: 0.8rem; color: #999;
+    }
+    .breadcrumb a { color: #999; text-decoration: none; }
+    .breadcrumb a:hover { color: #1a1a1a; }
+    .breadcrumb .sep { margin: 0 0.4rem; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
+    .episode-header { margin-bottom: 2.5rem; }
+    .episode-header h1 {
+      font-size: 2rem; font-weight: 700; line-height: 1.3;
+      margin-bottom: 1rem; letter-spacing: -0.02em;
+    }
+    .episode-meta {
+      display: flex; gap: 1rem; font-size: 0.85rem; color: #666;
+      margin-bottom: 1.5rem; flex-wrap: wrap;
+    }
+    .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
+    .video-thumb {
+      position: relative; display: block; width: 100%;
+      border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
+    }
+    .video-thumb img { width: 100%; display: block; }
+    .video-thumb .play-btn {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px; height: 48px; background: rgba(0,0,0,0.75);
+      border-radius: 12px; pointer-events: none;
+    }
+    .video-thumb .play-btn::after {
+      content: ""; position: absolute; top: 50%; left: 54%;
+      transform: translate(-50%, -50%);
+      border-style: solid; border-width: 10px 0 10px 18px;
+      border-color: transparent transparent transparent #fff;
+    }
+    .video-thumb:hover .play-btn { background: #e00; }
+
+    .guest-card {
+      background: #fafafa; border: 1px solid #eee; border-radius: 8px;
+      padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .guest-card h3 {
+      font-size: 0.75rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #999; margin-bottom: 0.75rem;
+    }
+    .guest-name { font-size: 1.1rem; font-weight: 600; }
+    .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+    .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
+    .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
+    .tab-btn {
+      background: none; border: none; border-bottom: 2px solid transparent;
+      margin-bottom: -2px; padding: 0.75rem 1.5rem;
+      font-size: 0.9rem; font-weight: 500; color: #999;
+      cursor: pointer; font-family: inherit;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .tab-btn:hover { color: #1a1a1a; }
+    .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
+    .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .takeaways ul { padding-left: 1.25rem; color: #333; }
+    .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
+    .timestamps-list { display: flex; flex-direction: column; gap: 0; }
+    .timestamp-link {
+      display: flex; align-items: baseline; gap: 1rem;
+      padding: 0.6rem 0; text-decoration: none;
+      border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
+    }
+    .timestamp-link:hover { background: #fafafa; }
+    .ts-time {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+    }
+    .ts-title { font-size: 0.95rem; color: #333; }
+
+    .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
+    .speaker { font-weight: 600; color: #1a1a1a; }
+    .speaker-marina { font-weight: 600; color: #2563eb; }
+
+    .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
+    .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .related-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem;
+    }
+    .related-card { text-decoration: none; color: inherit; transition: opacity 0.15s; }
+    .related-card:hover { opacity: 0.8; }
+    .related-card img { width: 100%; border-radius: 6px; display: block; margin-bottom: 0.5rem; }
+    .related-title {
+      font-size: 0.85rem; font-weight: 500; line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    .site-footer {
+      max-width: 800px; margin: 0 auto; padding: 2rem;
+      text-align: center; font-size: 0.8rem; color: #999; border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 640px) {
+      .site-header { padding: 0.75rem 1rem; }
+      .breadcrumb { padding: 0 1rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+      .episode-header h1 { font-size: 1.5rem; }
+      .tab-btn { padding: 0.6rem 1rem; font-size: 0.85rem; }
+      .related-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <a href="/" class="logo">Silicon Valley Girl Podcast</a>
+    <nav class="header-links">
+      <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg></a>
+      <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg></a>
+      <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg></a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a><span class="sep">/</span>
+    <a href="/#episodes">Podcast</a><span class="sep">/</span>
+    <span>Josh Woodward</span>
+  </nav>
+
+  <main class="container">
+    <article class="episode-header">
+      <h1>Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward — Silicon Valley Girl Podcast</h1>
+      <div class="episode-meta">
+        <span>Josh Woodward</span>
+        <span>May 21, 2026</span>
+        <span>34 MIN</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=ZW87Peh3tWM" class="video-thumb" target="_blank" rel="noopener">
+        <img src="https://img.youtube.com/vi/ZW87Peh3tWM/maxresdefault.jpg" alt="Josh Woodward, VP, Google Labs · Head of Gemini · AI Studio, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <span class="play-btn"></span>
+      </a>
+    </article>
+
+    <div class="guest-card">
+      <h3>About the Guest</h3>
+      <div class="guest-name">Josh Woodward</div>
+      <div class="guest-title">VP, Google Labs · Head of Gemini · AI Studio</div>
+      <p class="guest-bio">Josh Woodward is the VP behind Google Labs, the Gemini app, and AI Studio at Google, where he has worked for 16.5 years starting as an intern. He leads the development of Gemini's agentic features and personal intelligence capabilities, playing a key role in Google's AI strategy and product launches at Google I/O 2024.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-notes" onclick="switchTab('notes')">Show Notes</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-timestamps" onclick="switchTab('timestamps')">Timestamps</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-transcript" onclick="switchTab('transcript')">Transcript</button>
+    </div>
+
+    <div id="panel-notes" class="tab-panel active" role="tabpanel">
+      <div class="summary">In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews Josh Woodward, VP, Google Labs · Head of Gemini · AI Studio. Josh Woodward, VP behind Google Labs and head of Gemini, discusses Google's shift into the agentic AI era and reveals that most users are only accessing 5% of Gemini's capabilities. He highlights Gemini Spark, an AI agent that works 24/7 in the background, deeply integrated with Gmail, Google Docs, Sheets, Slides, and Calendar to automate digital chores and free up calendar time. Woodward shares that a voice feature demoed at Google I/O—which understands file context, creates emails with tables, and generates images and videos—was built just two weekends before the conference. He explains Google's competitive advantages: native Google ecosystem integration without connectors, cloud-based virtual machines enabling parallel task execution, and access to a generative media suite including Imagen and music generation that competitors don't have.</div>
+      <div class="takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Gemini Spark's killer feature for regular users isn't work automation—it's helping manage personal digital chores like remembering library book deadlines, freeing up calendar time, and filtering content based on personal interests like sports team news</li>
+              <li>Google's agentic AI can execute hundreds of parallel tasks in cloud virtual machines, meaning productivity gains will be exponential as the technology scales beyond today's early beta limitations</li>
+              <li>The shift to voice-first interfaces is already happening internally at Google; upcoming features let users talk to documents and files directly, with AI understanding context from PDFs and images to generate formatted outputs</li>
+              <li>Google's competitive moat against ChatGPT and other AI tools is native integration with its ecosystem (no connectors needed) plus access to generative media capabilities—Imagen for images, music generation, and video creation—that competitors haven't matched</li>
+              <li>The agentic era fundamentally changes work from 'doing' to 'directing': as AI agents handle execution, human judgment and taste become MORE valuable, not less, making career advice for new entrants focus on developing irreplaceable human skills</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="panel-timestamps" class="tab-panel" role="tabpanel">
+      <div class="timestamps-list">
+        <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=0s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">0:00</span>
+                <span class="ts-title">— Intro</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=61s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">1:01</span>
+                <span class="ts-title">— Why This Google I/O Is Different From Every Other One</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=141s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">2:21</span>
+                <span class="ts-title">— Feature That Was Built Two Weekends Before I/O</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=202s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">3:22</span>
+                <span class="ts-title">— Why Switch to Gemini When You Already Use Another AI</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=413s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">6:53</span>
+                <span class="ts-title">— The Shift to Voice-First Is Already Happening</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=482s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">8:02</span>
+                <span class="ts-title">— From Doing to Directing: Everyone Becomes a Manager</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=730s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">12:10</span>
+                <span class="ts-title">— Is Google Actually Losing the AI Race?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=918s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">15:18</span>
+                <span class="ts-title">— Gemini's Personality</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=987s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">16:27</span>
+                <span class="ts-title">— How Josh Builds Personal Context Into AI</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1198s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">19:58</span>
+                <span class="ts-title">— Why Everyone Needs to Organize Their Personal Context Now</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1255s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">20:55</span>
+                <span class="ts-title">— What AGI Actually Means</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1355s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">22:35</span>
+                <span class="ts-title">— Why Human Taste Becomes More Valuable, Not Less</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1422s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">23:42</span>
+                <span class="ts-title">— Advice for Someone Starting Their Career Right Now</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1469s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">24:29</span>
+                <span class="ts-title">— How Google Labs Ships Products in Two Weekends</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1573s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">26:13</span>
+                <span class="ts-title">— The Metric Josh Uses Instead of Retention Dashboards</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1779s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">29:39</span>
+                <span class="ts-title">— The Next Shift Nobody Has Internalized Yet</span>
+              </a>
+              <a href="https://youtube.com/watch?v=ZW87Peh3tWM&t=1872s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">31:12</span>
+                <span class="ts-title">— What His Five-Year-Old's Future Looks Like</span>
+              </a>
+      </div>
+    </div>
+
+    <div id="panel-transcript" class="tab-panel" role="tabpanel">
+      <div class="transcript">
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> The amount you're going to be able to get done is unbelievable. What used to take a few seconds is just going to be boom boom boom boom.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> This is Josh Woodward, head of Gemini. Google just launched Gemini Spark, an AI agent that works for you 24/7 in the background.</p>
+            <p>That was a project we started called personal intelligence. If you're a Gmail user, use Google Docs, Sheets, Slides, Calendar, all that stuff just works, helping us free up time in our calendar so we can do things we want to do either together with our family, hobbies, and whatnot.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> So, if agents do a lot of stuff instead of us, is this officially a new era of work coming? Let's get into it. Thanks to HubSpot for sponsoring this video.</p>
+            <p>Josh, welcome to Silicon Valley Girl. I'm so excited to finally be chatting with you.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I know.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Congrats on all the success. You've been with Google for almost 20 years.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Well, 16 and a half, I think. I started as an intern.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Crazy. Okay. So, you've seen a lot of Google history. Can you rank this one in terms of significance?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah, I think this is a big one for a couple of reasons. One, it's the first time we're really starting to shift more into this agentic era. And I think that'll be a big shift for a lot of our products. You saw some of it yesterday. But there's a lot more cooking we have in Google Labs coming too.</p>
+            <p>I think the other thing is this Gemini Omni model is another one. It's a very big shift in how you start to think about any kind of input and the output that comes out of it. So it should be fun. And then at the end, Google IO is such a flood of news. But towards the end, Demis actually mentioned a couple of our science products that we're working on and I'm very excited about that and where that's going to go.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> What was your most exciting update yesterday?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Well, I can't wait for people to play with Gemini Spark. It's rolling out this week to testers and next week to pro.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, to the Google AI Ultra members in the US and then we're going to scale it up from there.</p>
+            <p>You know what was my favorite update?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> What?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> When you were demoing this voice feature. You're talking to your computer, but instead of just transcribing it, it actually went to your Google Drive, went to your Gmail, found all the necessary information, pulled it together and created this beautiful email with a table inside. This is the next step of voice. Is that rolling out soon?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> That'll be in the coming weeks. Exactly. We're playing with it right now. It's so fun. What's amazing to me, the first time I remember it was two weekends ago. We were hacking on this on the team and they were like, &quot;Do you think we could get this in Google IO?&quot; It's a little tight to get something in, but we snuck it in.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> So this feature is two weeks old.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah, this feature was two weekends ago. And it's amazing because you select all your files—they could be in drive or on your desktop—and then you just talk to it and it can go through and understand what's in the PDF, what's in the image, and then create it all. And then it also enhances the text. I intentionally made a mistake on stage to change the date. It understands.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Exactly. Yeah. So this thing is happening now. I wanted to touch upon something. A lot of people are using different tools, and we've seen something similar in other AI tools. With these features rolling out, what would you tell to people who are thinking if they need to switch? Why would they switch to Gemini?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah. Well, I think with Gemini, you're going to get a few things. And if you're thinking about Gemini Spark in particular, first, it is deeply integrated in the Google environment and ecosystem.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> You don't even need connectors.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> That's right. So whether if you're a Gmail user, if you use Google Docs, Sheets, Slides, Calendar, all that stuff just works.</p>
+            <p>And it's very good. Second thing, we actually have virtual machines that we can spin up in the background on Google Cloud. So I think where all this is going is you won't just have one or two tasks. You may have hundreds of tasks. And you can imagine we can do that in parallel, and the amount you're going to be able to get done is unbelievable.</p>
+            <p>The third I would say is we're really trying to push the limits on the types of things that Spark's going to be able to create for you. So what I showed on stage was a Google doc or a Google slide deck for our neighborhood block party. But imagine this—it's got Imagen, it can make images. It's got Omni, it can make videos. It's got a music generation model, it can make songs. And that's the kind of stuff that no one else has—that generative media suite. So I think the ability of this thing over time is just going to be way more versatile. But we're starting out very early. It's a beta. There will be a lot of things. When we add MCP connections in a few weeks, we'll add agentic payments with Google Pay.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> YouTube analytics, by any chance?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Oh, that's a good feature request. Maybe.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Because the thing is, as a YouTuber, I can't really use Gemini to talk to my analytics because it's not connected. So I have to either download a CSV file or use agentic features to go and take screenshots and all that. Is there a killer feature that everyone should try once this rolls out so that they're convinced? Because I feel like a lot of people, they're hearing words like &quot;agentic&quot; and &quot;agent running in a cloud,&quot; but as a mom, what does that mean for me? What can I try and do to be blown away by this?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah. Well, I think just to take that example, maybe outside of work as a mom, it is so good at any kind of just a lot of people have been doing user research and are saying, &quot;I have all these digital chores I have to go do.&quot; So it might be helping you remember things that you might have forgotten. It's helped me remember a lot of deadlines for our kids—like, you got to return that library book before the end of the school year.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> I'm like, how many things am I supposed to do for both my kids?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah. That's right. So anything around that. I would say also it's very good at finding and—my wife and I use it this way—for helping us free up time in our calendar so we can do things we want to do either together with our family, hobbies, and whatnot. One of the things I would say for your work life, for a lot of people out there: ask it, &quot;What are the three meetings I should cancel this week?&quot; It's very good at that.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, it's a good prompt.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yes. So that's one that's really interesting. I used to—I'm using it more and more. When I started, I was setting up recurring schedules. One of my favorite ones right now, we're huge NBA basketball fans of the Oklahoma City Thunder, and they're in the playoffs right now. And so I just get all the news about the team, but it's writing it to me as if I'm a diehard sports fan for the Thunder. So there's all kinds of different ways. I think anything around &quot;help me not forget something&quot; is excellent.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Help me free up time, help me follow an interest I'm really passionate about. It's excellent and all that stuff. Yeah. And you also released Docs Live yesterday.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah. When you can talk to your Google doc.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> And you know what it got me thinking? Are we slowly moving to voice-first apps? Do you notice that internally? Because I started talking to my computer all the time. Now you're releasing this feature which not only allows you to transcribe what you're saying but has some smart thinking behind the scenes. Do you think the shift is happening now where we're using more voice?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I think so. We see it in our Gemini usage stats as well.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, do you have any numbers?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Well, not to share here, but I will say that there are certain countries now where it's tipped and voice has become a dominant way a lot of people are interacting. It's natural. It's faster. It's also now we're at a point where you can ramble and the model can clean it up for you. We've also now got it where the models hooked in can do all the tool calling. It can generate the images. And then the stuff I showed yesterday with the dialects is really fun.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh yeah.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> So you can have it talk in any number of different ways. All that stuff is coming in the next weeks. This is not far out.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Talk to me about the shift that's happening. So what I'm noticing as a user is that a lot of companies were optimizing for software engineering—let's use AI to speed up our software engineers. I'm seeing this huge shift to knowledge workers—let's now help knowledge workers experience the same magic that AI has done to software engineering. Is that the priority at Google right now?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> There's big focus on it. And I think what's interesting is taking the lessons we've learned over the last few months and quarters with coding and applying some of that to knowledge work. One of the early projects I worked on with all of this, which is still going a lot, is Notebook LM.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh yeah, my favorite. I love it. Whenever I'm prepping for a scientific podcast, I go to Notebook, upload all the articles they send me and listen to a podcast about this phenomenon.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> And I think that was one of the first ones we realized if you can make it really easy for people to assemble all that context, all those papers in your case, and then either hit a button, it's a podcast, hit a button, it's a slide deck, it's a mind map, whatever you want. That was our first glimpse into where this is all going. And I think where Notebook's going to go and even you'll see it in Gemini and other stuff is that ability to just describe or talk about what you want.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. It's like I need to understand this. Go grab all these things. Make this, this, and this. It's just going to happen. And so I think for knowledge workers it's very exciting but also it is a different shift because you're almost going to a point where you're orchestrating much more about the outcome or the deliverable you want instead of the how to get there in some cases.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Exactly. And so we on the team talk about is you're moving from doing to directing.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> And that's like everybody becomes a manager.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> That's right. We've thought on the team, in companies like Google, you would do manager days or leadership days or manager training and that would only be for the people managers, a certain percentage of your whole team. Now, we're imagining we may need that for everybody because you may be managing these different agents and others.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> So you're launching so many products that are helping people do that.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Absolutely.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, we're trying to. What Josh just said about how people are starting to use AI for decisions is actually a much bigger shift. For years, if you ran any kind of business, a startup, a SaaS product, an e-commerce brand, even a personal brand, you optimized for Google search. You wrote blog posts, chased rankings, played the whole SEO game. But now people ask Gemini, ChatGPT, or Perplexity, what's the best sushi restaurant near me? Can you recommend a podcast? What's the best hotel in Silicon Valley? How do I keep track of all my customers? And whatever answer the AI gives, that's what drives the decision. The problem is most founders have no idea how to make their brand show up in those answers and we noticed that too. So a couple months ago we saw that our podcast was doing really well on YouTube getting hundreds and thousands of views but was almost invisible inside AI answers. So we started digging into that and after trying a few things that didn't work we realized it actually comes down to small details. What you write in your descriptions, how your content is written, even small things like your text bio. Once we fixed that, we finally started showing up. It's still a work in progress, but it's a really important long-term investment. That's why I was excited when I saw a new tool called HubSpot AEO. It's a tool that shows you exactly how your brand appears across ChatGPT, Gemini, and Perplexity, your visibility score, how you compare to competitors, and specific recommendations for what you can actually do about it. Where most tools just give you a score, HubSpot AEO gives you a plan, what to fix, what to write, and what to post. You don't need an agency. You don't need expensive consultants or technical expertise. You just see where you stand and what to do next. It's $50 a month, but you can try for free for 28 days first with access to 25 Bronze. The link is in the description. Thanks to HubSpot for sponsoring this video. Now, back to the interview with Josh. But for the past few years, I was sad to hear that people were saying Google is losing this AI race because people are using all the other tools. ChatGPT was the first, but LLMs and when it comes to search. How do you see the situation changing now?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Well, it's very dynamic. It's very fast moving. It is, as you know, you have people on your show, too. I think first off, it's fun. I think competition, a lot of us on the team, we like that because you get this, it sharpens you. The other thing I would say though is that there's a lot of things Google has and in some cases has had for years. And what's fun for someone like me who's been around here a while is it's like how do you kind of put these together in new and interesting ways? So, we talked earlier about you don't have to use connectors. That was a project we started called Personal Intelligence. And it started from this idea, what if you could just tap one button and all your stuff could be connected. I wouldn't mean that everybody wants to do it. We made it opt-in so it's like you can choose. But for a lot of people, they're like, yes, I want that. And so I feel like it's really fun because we're in this stage where we're getting to reimagine not only existing products but combine them in new ways to make new products. And I think that's just super fun we get to do.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> And also my dad started using AI like a few months ago when he came here visiting. He teaches MBA so he needed to do some tables with weights of different experts, etc. So we asked ChatGPT. He was like, &quot;Okay.&quot; We asked Claude. He needed some follow-up questions, but he was happy with the result. We asked Gemini and first prompt in, he was so happy. So I had to give him a phone that's powered by Gemini so he can run all these things. And this is what makes me sad, right? Still, if we look at B2B usage and traffic, it's leading it.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> What would you say will make people make this shift?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. Well, I think there's a few things. I think one the core model a lot of the early adopters choose, wherever that is, and you can even look back over the last six months how people have jumped from different models to different models.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> We're jumping every week.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. So there's a lot of that happening now at the edge with the really early adopters. I think for most people in the world they hear AI and it means all kinds of things. For some it may mean excitement, for you and me more. For others it may mean fear, uncertainty or what is this thing? And so I think how we try to think about it is almost like a tagline would be &quot;look what Gemini can do for you.&quot;</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Because it's not about &quot;look what AI can do for you.&quot; It's about for your life. Your problems, your daily annoyances, the things that make you grumpy. How's it going to help? And I think that's how we're trying to think about all these features. And it maybe starts very small. For your dad that one thing may be like, whoa, that leads to another thing and another thing. We're trying to build out these very almost bite-sized things that you'd be able to turn to your dad or I could turn to a friend and say, &quot;Hey, look what this can do for you.&quot; And that's how we're imagining it. Over the years, you learn sometimes that sometimes you get lucky and something goes incredibly viral. But often it's this accumulation of small things that add up and cause people to be like, &quot;Oh, that thing I use it for this.&quot;</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. I use it for this, for that. Maybe I should completely switch it.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> That's right. Do you think Gemini's personality is important? Because we know AIs have their different personalities. How would you describe Gemini's personality?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, that's a great question. I mean, hopefully it's helpful. Hopefully it's something that you can trust. It comes across in the user research. People think it's factual, it's accurate, it's precise, not too agreeable. We also hope that it's concise. It doesn't ramble on and on. It gets to the point. We also want it to be warm, friendly, but not too friendly. Do you know what I mean? And I think one of the things we've also been exploring is ways we can let people steer the personality. There's maybe something that comes out of the box by default, but then some people do want it. In certain cases we'll see this where they'll be like, be really harsh on my ideas, poke holes in everything. And so we want the model to have some degree of steerability, too. But I do think for us we don't think of it as a friend or something you're trying to fall in love with or anything like that. It's a tool.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> And it's something that again at the end of the day hopefully it's something that's useful and helpful.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Do you have any tips for someone who's just starting using Gemini and you mentioned some people ask it to disagree with everything or like—</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Is there anything that you have personally? For example, I have this MD file called personal constitution that talks about all my principles. So I would upload it to every AI that I'm using so it learns my principles or my tone of voice or a person's dossier because I use AI to write a lot of text so I don't want it to come up with facts. Do you have your own personal productivity setup that you would recommend to everyone?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, that's interesting. Yours sounds good by the way.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I love it because then AI really becomes your strategic partner versus just an—</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, that's what I was going to say. The biggest shift I feel years ago I made was instead of just going to it one-off, actually trying to build that context like you use MD files. It sounds like you've got it down.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> How do you create this context? How do you store it?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> So I have certain files like you've got now—like something like Gemini Spark. These are all now skills that are in there. I've turned on personal intelligence so it knows my backstory of all my Gmail and calendar and drive. The other thing I do is it's very good if you ask it. So one thing I try to do pretty regularly is I'll ask it: what are the things I'm doing that I should no longer be doing? Or what are the patterns you see me using in Gemini that I should just not do or I can make better? And so I almost use it as a mirror in that way to reflect.</p>
+            <p>That's interesting. I've also got tons of notebooks which now I'll sync across Gemini too, which are awesome. So I've got ones that's like everything I've ever written that I feel like is my best writing—not for the style necessarily, although it takes on some of that, but also just the ideas. I read a lot of books and I take notes on all of that.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> And just going back on that. So when you have all your newsletters inside a notebook and you ask Gemini a question, it can reference those newsletters because it's one whole ecosystem. Do you have to specifically point it out like &quot;go to my notebook&quot; or it knows?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, usually today how it works is you can just hit the plus icon and just add that notebook to your prompt, or if you go into the notebook itself, it takes all that context automatically.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I'm just thinking from the user perspective—is it too much context because it has access to Gmail, calendar, notebooks? Is there a way you need to kind of narrow it down and say only take these things?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, we're actually experimenting with this right now. So in a product like Notebook LM, as you know, you can change which sources it uses to shape the answer. But I don't know if the UI paradigms for all this have really settled yet because I think that's one of the things we're finding too—these models love context, but finding the right context is the challenge.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Finding the right context without eating all the tokens because I've been using Gmail since 2015. Too many emails.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Exactly. We all get too many emails. But I think what you'll find—model over model, and even this 3.5 Flash model—way better at these things. We put it through all these tests: can it retrieve the right stuff? Can it synthesize the right stuff? It's very good at this, and I think that'll just keep getting better too.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Okay, so you would recommend going to your best newsletters?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, that's what I do. I put that in. I have another one where I read a lot. So any of the notes or books—I take lots of notes, I use Readwise for Kindle highlights, I sync all that. So you can almost imagine my own collection of experts' quotes, things that have shaped how I think. That's a whole other area I put in as well.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah, that's great. Because it's so important to launch your agents because they have to have a proper base on what they're acting on. If you and I were having coffee after this episode, I'd certainly pull out my phone and say, &quot;Look what I tried this week. This changed how my team works. This is what I do all the time.&quot; To share these kinds of things that don't fit into the podcast, I started my own newsletter. Every week I write about AI tools, strategies, and experiments I'm running in my own business with real numbers, real results, templates that you can use, and also honest mistakes. If you want to be in the loop, the link is waiting for you in the description.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, let's talk about AGI. I've heard that word so many times. Yesterday on stage and I'm like, because last year I remember Demis talking with Sergey here at Google I/O and they were predicting maybe in five years. Yesterday Demis was like, we made another step towards AGI with this model. What is AGI for me? Like for a normal person, what does that mean?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah, and at this point it's been thrown around so much it has lost a lot of its meaning in some ways. To be honest with you, I don't think about it all the time. There's a spectrum of people who talk about it every time they get on stage. I'm probably more on the other side of it. I think at some level it's probably like an app or some sort of experience software you can probably talk to that is able to answer almost superhuman questions for you.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> And the best products make you feel something. And so to me I think less about how many years away things are, but more probably what are the feelings or the experience you would get interacting with something that's that good. And it probably would feel something like, &quot;Man, it just saves me so much time.&quot;</p>
+            <p><strong class="speaker">Josh Woodward:</strong> It's like mental relief. I know that, or even I imagine, I'm hoping it'll be fun. Like it'll be able to bring up things and insights and connect dots that you wouldn't otherwise do. So I tend to think of it a little bit more that way from a product perspective as opposed to bigger thoughts and timelines and specific definitions. How do you think it's going to change our workflow? Because you're releasing so many features for workflows. Will the workflow exist at all if AI is capable of so many things?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, I happen to think it still will actually because I think there's still going to be a huge premium on things like human judgment, human taste. These things are actually going to become more valuable than they have been even today or in the past.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> But then also AI can learn your taste. This is what I'm trying to do within my team right now.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Teach AI my taste. So we're collecting all my feedback that I'm giving to my team and let's teach that so it can help me make decisions.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah, I think that may still happen and probably will. We do things similar where you can almost simulate a meeting before the meeting ever happens and you can almost anticipate the feedback you'll get. Maybe that's what you're doing on your team. The other thing I would say is I do think on the workflows point, we are seeing areas where AI today can get you to a really good first draft and maybe let's assume it'll get you to a second, third, or fourth draft. It'll get better, but there's still something about creating. And I'm finding in small teams of people, it's just so fun. It's hard to imagine I wouldn't want to give that up. And you could imagine there will be single person giant companies or whatever all the predictions, but to me it's like life is about the memories and the people you're doing it with too. And so it feels like hopefully we're going to put a lot of power tools on the table and let small groups of people just create amazing stuff.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. What would you say to someone who's starting their career now and worried about AI? The advice I continue to try to even give myself is just every week be on the edge of these tools and try to figure out, build an intuition for what they're really good at and what they're not good at. And then the important thing is what's almost possible now, because in another rev or two of the models, that may become possible. So I think that's probably it—it's a new skill set. I think there's a lot of soft skills and maybe EQ around some of this too—like how to deal with uncertainty, how to invent things, how to adapt to things. So there's a whole set of things even beyond just the core tool usage I would say.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Totally.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Can we learn some of your culture as well? Because you're rolling out so many products. As you mentioned, this voice feature you coded it like two weeks ago and it was on stage yesterday. How are you able to manage all of that, let alone having four kids? I can't imagine that. Is there a principle? Is there a life hack?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, I wish there was a life hack. If you find it, let me know. I'd say it's a lot of things. Part of it, I think, just as an individual, I try to think about what are the things in life that I really want to prioritize, and some of them are at work, but a lot of them are outside work. Life's way more than just work. So I think that's just as a personal thing. I think at work, it's a lot about small teams with these tools can do remarkable things.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> There's been a big shift. A lot of our Google Labs projects start with five, six people, and you're hunting for what's an interesting problem to solve that'll really make a difference in a certain set of people's lives. And then you let them cook. We try to minimize all the reviews and all the stuff you could imagine. I think that's the best thing people say: &quot;Ah, this is like I'm empowered. We built this thing in two weekends.&quot; To me, that's hitting the mark. And then the other part of this is you'll build a lot of stuff. Some of it maybe you get lucky—it becomes an AI studio or a notebook LM or Google Flow. A lot of it though doesn't work.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> What's the percentage of the things that work?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I wish I would know. What I will say is it usually takes us three, four, five times on an idea before we realize that's it or just ditch it.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> What's the metric that you're looking for?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> It's funny. We don't look as much at retention or dashboards. I always tell the teams, and I try to go with them on a lot of these. You see it in people's eyes when they use the thing. Do their eyes light up or are they recoil?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> How do you track if you're an entrepreneur launching something? How do you try to sit down with a customer and just watch?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Go to the coffee shops, go to the student unions, go out in the real world. We always—I'm always trying to keep our teams as little time as possible in conference rooms thinking and theorizing about stuff. It's take it out here, go talk to those two guys, see what they say. And that's when you really know how far off you are from your lofty concepts to reality.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> That's fascinating. And so you just see people's faces light up, and this is how you know you're going to continue working on it.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> You're trying to develop an intuition because the biggest thing is you make something no one wants. That's the biggest risk. And so you're trying to find like did that strike a nerve with her or with him?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> How do you quantify that because you're in a large organization also—you just go to people like, oh, I saw their eyes light up. I'm going to put a billion into this?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Well, you take it step by step. You don't go from zero to a billion. But I do think it's very countercultural to a very data-driven place like Google or other big tech companies or even startups. You're looking for one early signal. And we'll get to that. But it's that early stage. One of the biggest things is that all big things start small.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> We're very lucky at a place like Google. You saw Sundar showed that slide with all these huge products with a billion users and things. But actually, all those things originally started going to coffee shops or showing it to your friends and seeing if this is something people are going to like. That's how Notebook LM started. That's how Flow started. That's how AI Studio started. So now you know, they've got millions and millions of people, but it all starts in the trenches. Starts very small, and then you'll get to what are our DAUs? What's our D7 retention? What's our ARR? All that stuff comes, but you got to get out of the first phase, which is like, does anyone even care about what you're working on?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> What would you say to an entrepreneur who is working right now building these ideas, five times he tried, nothing's working? What's the mindset they should be adopting?</p>
+            <p><strong class="speaker">Josh Woodward:</strong> That's always the hardest part we have too—you believe in your idea. You're on your third or fourth or fifth iteration. Sometimes the cash just runs out, and that's when you know—in our case, sometimes what I've noticed is the core team, those four, five, six people, they often know before I do if there's anything here. And so sometimes you just have to face that moment. I also like to be, when we're doing this with our teams, very clear: all right, well, let's try it. We got one more shot, and everyone gives it one more shot. It's a lot like if you're playing on a sports team—you put it all out on the field and you see if it works or not.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Sometimes you're just worried like if I take another step, then it's going to work, and you're like I don't know when to stop.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> It's funny—sometimes I know we stop things too early. Sometimes they go too long. I think that's the other thing I try to remind the teams: it's a lot more art than science at that stage. It's a lot more gut and feel. What's the next big AI trend you're predicting?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, that's good. Well, you hit on one. I'll think if there's others too, but I want to spend a couple of minutes on voice. I think we are on the cusp of a big shift to voice. The other one I am not sure people have fully internalized, even at Google, is how fast these models are going to get and how quickly. So 3.5 Flash is already way faster than what we had before. But even the demo Sundar showed with the dinosaur game—1,500 tokens per second. This is coming. This is not theoretical. We have this running at Google internally right now. And when you can stream that fast, it changes everything. We've seen that over time with search. Every time we make a feature faster, more people use it. Speed's a feature. And I think that's one part of these models that's around the corner and that's going to be incredible.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> So we're going to be iterating on so many ideas really fast.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Practically, that's how it's going to happen. What used to take—send, wait a few seconds—is just going to be boom, boom, boom, boom. And that'll be amazing for all the image, video, audio stuff. It'll also be amazing for anything with agents or anything with multi-steps because it'll just compress time. So research accelerating.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Then you apply that to something like our science tools or other things. You got all this discovery that's just waiting to happen. So I'm very excited about that. I think that'll be fun.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> My last question is your daughters are five, six years old. Mine are five and five and six.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Yeah.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Almost five.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> What do you think their future's going to look like?</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, it's hard to imagine right now. Is it going to be totally different, or do you think it's just going to be the same? Things will happen in a different way, but it's going to be the same.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I mean, it's interesting because I think in some ways human nature is remarkably resilient, for its virtues and vices.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Exactly. So some of that I predict will be the same. But I do think our kind of human-computer interaction feels like it will be way different.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> I don't know. You talked to your parents—you mentioned your dad earlier. I think about my parents or my wife's, and it's like you hear them talk about when they were in the workforce and suddenly spreadsheets showed up. For us, it's like, oh yeah, of course we work with them. It's no big deal. But for them, it was a shift.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> I wonder if there'll be feelings like that where our girls will be like, yeah, of course you just talk to this thing and it does all this magic and it's done in like 200 milliseconds.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> So I think there will be many of these shifts. I'm very excited for them to experience that.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> To be able to what it's going to do for what they can learn about.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> What are you trying to instill in them? I think for them, I'm trying to teach them that you can create anything you can think of, but you can also—if something doesn't make sense to you, just tell it to describe it in something you're really interested in. One of our girls is so into soccer right now. She can't wait for the World Cup. So there's a lot of lessons from even kindergarten where we're translating it into, oh, what if Ronaldo was doing it this way? And that's the kind of stuff that it just feels like it'll be at their fingertips.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> It's pretty fun to think about.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Fascinating.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. Thank you so much, Josh. It was amazing. I'm looking forward to all of the updates from you because whenever you release something, that means I'm using it in my workflow. I love where you're building.</p>
+            <p><strong class="speaker">Josh Woodward:</strong> Well, thank you and keep the feedback coming. We'll follow up on your feedback requests.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, thank you so much.</p>
+      </div>
+    </div>
+
+    <section class="related-section">
+      <h2>More from Silicon Valley Girl Podcast</h2>
+      <div class="related-grid">
+        
+              <a href="/episode/U7apPfqHgvg/" class="related-card">
+                <img src="https://img.youtube.com/vi/U7apPfqHgvg/hqdefault.jpg" alt="$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026" loading="lazy">
+                <span class="related-title">$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026</span>
+              </a>
+
+              <a href="/episode/bzfklNb1wjc/" class="related-card">
+                <img src="https://img.youtube.com/vi/bzfklNb1wjc/hqdefault.jpg" alt="Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu" loading="lazy">
+                <span class="related-title">Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu</span>
+              </a>
+
+              <a href="/episode/DPe_srf0GlI/" class="related-card">
+                <img src="https://img.youtube.com/vi/DPe_srf0GlI/hqdefault.jpg" alt="Head of ChatGPT &amp; Codex: agents for normal people are HERE" loading="lazy">
+                <span class="related-title">Head of ChatGPT &amp; Codex: agents for normal people are HERE</span>
+              </a>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">&copy; 2026 Silicon Valley Girl Podcast &middot; Marina Mogilko</footer>
+
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelector('[aria-controls="panel-' + tab + '"]').classList.add('active');
+      document.querySelector('[aria-controls="panel-' + tab + '"]').setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + tab).classList.add('active');
+    }
+  </script>
+</body>
+</html>

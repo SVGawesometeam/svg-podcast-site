@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://podcast.marinamogilko.co/sitemap.xml
+Sitemap: https://marinamogilko.co/sitemap.xml
 
 # AI crawlers — explicitly welcome
 User-agent: GPTBot

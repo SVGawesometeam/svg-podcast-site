@@ -16,6 +16,7 @@ const MARINA_BIO = 'Entrepreneur, content creator, and founder based in Silicon 
 // Manual overrides: videoId -> { guestName, guestTitle }
 const MANUAL = {
   '4vIIeCqHYXA': { guestName: 'Gary Vaynerchuk', guestTitle: 'Entrepreneur, Author &amp; Chairman of VaynerX' },
+  'GDeEATJcbJo': { guestName: 'Luis von Ahn', guestTitle: 'Co-founder &amp; CEO, Duolingo' },
 };
 
 function esc(s) {

@@ -3,7 +3,7 @@ const path = require("path");
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
-const SITE_URL = "https://podcast.marinamogilko.co";
+const SITE_URL = "https://marinamogilko.co";
 const PUBLIC_DIR = path.join(__dirname, "public");
 const IDS_FILE = path.join(__dirname, "podcast-video-ids.txt");
 
@@ -167,13 +167,13 @@ function renderHomePage(episodes) {
   <meta property="og:title" content="Silicon Valley Girl Podcast">
   <meta property="og:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://podcast.marinamogilko.co">
+  <meta property="og:url" content="https://marinamogilko.co">
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "PodcastSeries",
     name: "Silicon Valley Girl Podcast",
     description: "Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.",
-    url: "https://podcast.marinamogilko.co",
+    url: "https://marinamogilko.co",
     author: { "@type": "Person", name: "Marina Mogilko" },
   })}</script>
   ${SHARED_HEAD}
@@ -396,7 +396,7 @@ function renderEpisodePage(d) {
   const metaDescription = `Marina Mogilko interviews ${guestLabel}, ${d.guestTitle}, on the Silicon Valley Girl Podcast`;
 
   const episodeSlug = slugify(d.title);
-  const canonicalUrl = `https://podcast.marinamogilko.co/episode/${d.videoId}/`;
+  const canonicalUrl = `https://marinamogilko.co/episode/${d.videoId}/`;
 
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
@@ -417,7 +417,7 @@ function renderEpisodePage(d) {
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "Silicon Valley Girl Podcast",
-      url: "https://podcast.marinamogilko.co",
+      url: "https://marinamogilko.co",
     },
     performer: {
       "@type": "Person",
