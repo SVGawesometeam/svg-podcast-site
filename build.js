@@ -105,6 +105,11 @@ const ICONS = {
 
 const SHARED_HEAD = `
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#181B36">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">`;
@@ -169,6 +174,13 @@ function renderHomePage(episodes) {
   <meta property="og:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marinamogilko.co">
+  <meta property="og:image" content="https://marinamogilko.co/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Silicon Valley Girl Podcast">
+  <meta name="twitter:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
+  <meta name="twitter:image" content="https://marinamogilko.co/og-image.png">
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "PodcastSeries",

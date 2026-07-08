@@ -1,0 +1,14 @@
+{
+  "name": "Silicon Valley Girl Podcast",
+  "short_name": "SVG Podcast",
+  "description": "Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future. Hosted by Marina Mogilko.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#181B36",
+  "theme_color": "#181B36",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
