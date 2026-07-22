@@ -1,0 +1,18 @@
+{
+  "videoId": "HMvTSaaO9sU",
+  "episode": "The Liberman Brothers — Silicon Valley Girl Podcast",
+  "note": "Бэкенд вернул два разных ярлыка для одной пары гостей ('The Liberman Brothers' и 'David and Daniel Lieberman'), во втором две опечатки: Daniel вместо Daniil, Lieberman вместо Liberman. Транскрипт сведён к настоящим именам; заголовок сохраняет узнаваемое 'The Liberman Brothers', связь имён закреплена в JSON-LD через alternateName.",
+  "speakerRenames": {
+    "The Liberman Brothers": "Daniil and David Liberman",
+    "David and Daniel Lieberman": "Daniil and David Liberman"
+  },
+  "title": {
+    "from": "Who Controls the AI Wealth in 3 Years (and How to Join Them) | The Liberman Brothers",
+    "to": "Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers",
+    "reason": "Fanout-запросы в Peec идут по двум формулам: '[Имя] podcast/interview' и '[Компания] CEO podcast'. Эталон — страница Ryan Roslansky, единственная, закрывающая обе сразу, и с самым высоким citation rate на сайте (2.0 против 0.31 у главной)."
+  },
+  "jsonLd": {
+    "performer.name": "Daniil and David Liberman",
+    "performer.alternateName": "The Liberman Brothers"
+  }
+}

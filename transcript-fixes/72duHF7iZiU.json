@@ -1,0 +1,48 @@
+{
+  "videoId": "72duHF7iZiU",
+  "episode": "Erik Brynjolfsson — Silicon Valley Girl Podcast",
+  "note": "Бэкенд вернул транскрипт со съехавшей разметкой спикеров: вопросы ведущей подписаны гостем и наоборот, плюс фантомный спикер 'Reed Hoffman', которого в записи нет. Реплики 76-100 сверены с видео вручную и подтверждены Мариной 2026-07-22. ВАЖНО: дефект затрагивает весь выпуск, а не только этот участок. Реплики 0-75 и 101-126 НЕ сверены; автопроверка нашла среди них 9 подозрительных (см. unverifiedSuspects) — вопросы ведущей, подписанные гостем. Нумерация индексов ниже относится к состоянию ДО разреза блока 98; после разреза всё, что было >= 99, сдвинуто на +1.",
+  "unverifiedSuspects": [1, 31, 43, 47, 53, 106, 108, 110, 118],
+  "speakers": {
+    "marina": "Marina Mogilko",
+    "guest": "Erik Brynjolfsson"
+  },
+  "verifiedRange": [76, 100],
+  "unverifiedRange": [101, 125],
+  "assignments": {
+    "76": "marina",
+    "77": "guest",
+    "78": "guest",
+    "79": "marina",
+    "80": "guest",
+    "81": "guest",
+    "82": "marina",
+    "83": "guest",
+    "84": "marina",
+    "85": "guest",
+    "86": "guest",
+    "87": "marina",
+    "88": "guest",
+    "89": "marina",
+    "90": "guest",
+    "91": "guest",
+    "92": "marina",
+    "93": "guest",
+    "94": "guest",
+    "95": "guest",
+    "96": "guest",
+    "97": "guest",
+    "99": "guest",
+    "100": "guest"
+  },
+  "splits": [
+    {
+      "index": 98,
+      "reason": "Один блок содержит реплики двух спикеров",
+      "parts": [
+        { "speaker": "marina", "startsWith": "I wonder if we could set aside the ones that we can measure those separately," },
+        { "speaker": "guest", "startsWith": "but let's just look at something like Wikipedia" }
+      ]
+    }
+  ]
+}
