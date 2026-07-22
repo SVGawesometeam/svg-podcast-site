@@ -1,11 +1,27 @@
 {
   "videoId": "HMvTSaaO9sU",
   "episode": "The Liberman Brothers — Silicon Valley Girl Podcast",
-  "note": "Бэкенд вернул два разных ярлыка для одной пары гостей ('The Liberman Brothers' и 'David and Daniel Lieberman'), во втором две опечатки: Daniel вместо Daniil, Lieberman вместо Liberman. Транскрипт сведён к настоящим именам; заголовок сохраняет узнаваемое 'The Liberman Brothers', связь имён закреплена в JSON-LD через alternateName.",
-  "speakerRenames": {
-    "The Liberman Brothers": "Daniil and David Liberman",
-    "David and Daniel Lieberman": "Daniil and David Liberman"
+  "transcriptSource": "Trint CSV (финальная расшифровка), не субтитры YouTube",
+  "note": "Первая версия страницы собиралась из субтитров YouTube, в которых нет информации о говорящих — бэкенд назначал их моделью, и 14 реплик ведущей оказались подписаны гостями, включая призыв подписаться на рассылку. Страница снята с публикации и пересобрана из настоящей диаризации Trint.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Marina Mogilko",
+    "Speaker 2": "Daniil and David Liberman",
+    "Speaker 3": "Daniil and David Liberman",
+    "Speaker 4": "Daniil and David Liberman"
   },
+  "speakerMapEvidence": {
+    "Speaker 1": "Открывает выпуск («Hello, everyone. Welcome to Silicon Valley Girl»), 24 вопроса из 43 реплик, произносит призыв подписаться на рассылку.",
+    "Speaker 2 и 3": "Оба говорят от лица компании («we are saying», «we are not so fond of governments»), рассказывают про Gonka и регулирование.",
+    "Speaker 4": "Артефакт диаризации: всего 2 реплики, 3 слова («Yeah.», «Oh, yeah.»), обе внутри блоков Speaker 2.",
+    "confirmedBy": "Марина, 2026-07-22"
+  },
+  "brothersMergedDeliberately": "Trint развёл братьев на Speaker 2 и Speaker 3, но не дал имён — понять, кто Daniil, а кто David, можно только на слух. Раздельные ярлыки «Speaker 2/3» на странице были бы хуже общего, поэтому объединены. Для GEO потерь нет: оба имени есть в ярлыке, meta description и JSON-LD.",
+  "correspondenceCheck": "Сверено с субтитрами YouTube: из 121 содержательной реплики Trint только 2 не находят соответствия, обе — мелкие расхождения распознавания. Сплошных пропусков нет, значит расшифровка снята с опубликованного монтажа.",
+  "adsRemoved": [
+    { "block": 18, "what": "спонсорский блок MongoDB Atlas, 220 слов", "kept": "вопрос ведущей в конце того же блока — на него отвечает следующая реплика" },
+    { "block": 74, "what": "призыв подписаться на рассылку, 34 слова", "kept": "переход к блицу в конце того же блока" }
+  ],
+  "textFixes": "Снятые таймкоды, склейка 134 реплик Trint в 86 абзацев по говорящему, «Liverman» → «Liberman» (1), убраны 17 висячих кавычек от распознавания.",
   "title": {
     "from": "Who Controls the AI Wealth in 3 Years (and How to Join Them) | The Liberman Brothers",
     "to": "Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers",

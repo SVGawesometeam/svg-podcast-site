@@ -6,6 +6,113 @@ const API_BASE =
 const SITE_URL = "https://marinamogilko.co";
 const PUBLIC_DIR = path.join(__dirname, "public");
 const IDS_FILE = path.join(__dirname, "podcast-video-ids.txt");
+const FIXES_DIR = path.join(__dirname, "transcript-fixes");
+
+// The API re-runs speaker diarization per request, so names drift between
+// fetches and phantom speakers turn up. Anything verified against the video
+// lives in transcript-fixes/<videoId>.json and is re-applied on every build.
+function loadFix(videoId) {
+  const f = path.join(FIXES_DIR, `${videoId}.json`);
+  if (!fs.existsSync(f)) return null;
+  return JSON.parse(fs.readFileSync(f, "utf8"));
+}
+
+// Split the transcript markdown into speaker-labelled turns.
+function parseTurns(md) {
+  return md
+    .split(/\n\n+/)
+    .map((block) => {
+      const m = block.match(/^\*\*(.+?):\*\*\s*([\s\S]*)$/);
+      return m
+        ? { speaker: m[1].trim(), text: m[2].trim() }
+        : { speaker: null, text: block.trim() };
+    })
+    .filter((t) => t.text || t.speaker);
+}
+
+function serializeTurns(turns) {
+  return turns
+    .map((t) => (t.speaker ? `**${t.speaker}:** ${t.text}` : t.text))
+    .join("\n\n");
+}
+
+// Apply a transcript-fixes/<id>.json override to the raw transcript markdown.
+function applyTranscriptFix(transcript, fix) {
+  if (!fix) return transcript;
+  let turns = parseTurns(transcript);
+
+  // 1. splits — one block that actually holds two speakers' lines.
+  //    Applied first: assignment indices are numbered against the pre-split state.
+  const splits = [...(fix.splits || [])].sort((a, b) => b.index - a.index);
+  for (const sp of splits) {
+    const turn = turns[sp.index];
+    if (!turn) throw new Error(`split index ${sp.index} out of range`);
+    const pieces = [];
+    let rest = turn.text;
+    sp.parts.forEach((part, i) => {
+      if (i === 0) return;
+      const at = rest.indexOf(part.startsWith);
+      if (at === -1) {
+        throw new Error(
+          `split anchor not found at index ${sp.index}: "${part.startsWith.slice(0, 40)}..."`
+        );
+      }
+      pieces.push(rest.slice(0, at).trim());
+      rest = rest.slice(at);
+    });
+    pieces.push(rest.trim());
+    const rebuilt = pieces.map((text, i) => ({
+      speaker: fix.speakers?.[sp.parts[i].speaker] || sp.parts[i].speaker,
+      text,
+    }));
+    turns.splice(sp.index, 1, ...rebuilt);
+  }
+
+  // 2. assignments — indices verified against the video win over whatever
+  //    the backend guessed. Numbered against the post-split state.
+  for (const [idx, role] of Object.entries(fix.assignments || {})) {
+    const turn = turns[Number(idx)];
+    if (!turn) throw new Error(`assignment index ${idx} out of range`);
+    turn.speaker = fix.speakers?.[role] || role;
+  }
+
+  // 3. speakerRenames — straight label substitution (typos, phantom speakers).
+  for (const t of turns) {
+    if (t.speaker && fix.speakerRenames?.[t.speaker]) {
+      t.speaker = fix.speakerRenames[t.speaker];
+    }
+  }
+
+  return serializeTurns(turns);
+}
+
+// Every speaker label on a page must be a real person in that recording.
+// Unknown labels fail the build instead of reaching production.
+function assertKnownSpeakers(videoId, transcript, d, fix) {
+  const allowed = new Set();
+  const add = (n) => n && String(n).split(/\s*,\s*|\s+and\s+/).forEach((p) => p.trim() && allowed.add(p.trim()));
+  add("Marina");
+  add("Marina Mogilko");
+  add(d.guestName);
+  Object.values(fix?.speakers || {}).forEach(add);
+  Object.values(fix?.speakerRenames || {}).forEach(add);
+  (fix?.knownSpeakers || []).forEach(add);
+
+  const seen = new Set(parseTurns(transcript).map((t) => t.speaker).filter(Boolean));
+  const unknown = [...seen].filter((s) => {
+    const parts = s.split(/\s*,\s*|\s+and\s+/).map((p) => p.trim()).filter(Boolean);
+    return !parts.every((p) => allowed.has(p));
+  });
+
+  if (unknown.length) {
+    throw new Error(
+      `unknown speaker label(s) in ${videoId}: ${unknown.map((u) => `"${u}"`).join(", ")}\n` +
+        `   known: ${[...allowed].join(", ") || "(none)"}\n` +
+        `   Add the real name to transcript-fixes/${videoId}.json ` +
+        `(speakerRenames or knownSpeakers) after checking the video.`
+    );
+  }
+}
 
 async function fetchEpisode(videoId) {
   const res = await fetch(`${API_BASE}/${videoId}`);
