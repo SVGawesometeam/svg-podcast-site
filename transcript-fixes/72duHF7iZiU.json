@@ -1,48 +1,27 @@
 {
   "videoId": "72duHF7iZiU",
   "episode": "Erik Brynjolfsson — Silicon Valley Girl Podcast",
-  "note": "Бэкенд вернул транскрипт со съехавшей разметкой спикеров: вопросы ведущей подписаны гостем и наоборот, плюс фантомный спикер 'Reed Hoffman', которого в записи нет. Реплики 76-100 сверены с видео вручную и подтверждены Мариной 2026-07-22. ВАЖНО: дефект затрагивает весь выпуск, а не только этот участок. Реплики 0-75 и 101-126 НЕ сверены; автопроверка нашла среди них 9 подозрительных (см. unverifiedSuspects) — вопросы ведущей, подписанные гостем. Нумерация индексов ниже относится к состоянию ДО разреза блока 98; после разреза всё, что было >= 99, сдвинуто на +1.",
-  "unverifiedSuspects": [1, 31, 43, 47, 53, 106, 108, 110, 118],
-  "speakers": {
-    "marina": "Marina Mogilko",
-    "guest": "Erik Brynjolfsson"
+  "transcriptSource": "Trint CSV, файл «Erik Brynjolfsson draft 3mp4.mp4» (trintId Y8VfKj7tQhqfkbLgKL7xCQ). Вопреки названию это финальный монтаж — см. correspondenceCheck.",
+  "note": "Выпуск никогда не публиковался. Бэкенд отдал транскрипт со съехавшей разметкой спикеров по всему выпуску — вопросы ведущей были подписаны гостем и наоборот, плюс фантомный спикер «Reed Hoffman» (7 реплик), чьё имя было зашито примером в промпт форматирования. Собран заново из диаризации Trint.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Erik Brynjolfsson",
+    "Speaker 2": "Marina Mogilko",
+    "Speaker 3": "Marina Mogilko"
   },
-  "verifiedRange": [76, 100],
-  "unverifiedRange": [101, 125],
-  "assignments": {
-    "76": "marina",
-    "77": "guest",
-    "78": "guest",
-    "79": "marina",
-    "80": "guest",
-    "81": "guest",
-    "82": "marina",
-    "83": "guest",
-    "84": "marina",
-    "85": "guest",
-    "86": "guest",
-    "87": "marina",
-    "88": "guest",
-    "89": "marina",
-    "90": "guest",
-    "91": "guest",
-    "92": "marina",
-    "93": "guest",
-    "94": "guest",
-    "95": "guest",
-    "96": "guest",
-    "97": "guest",
-    "99": "guest",
-    "100": "guest"
+  "speakerMapEvidence": {
+    "Speaker 2": "Реплика [3] «This is Eric, Stanford economist who saw AI coming before almost anyone» — представление гостя в третьем лице. Реплика [79] «subscribe to Silicon Valley Girl». 32 вопроса из 57 реплик, 1757 слов.",
+    "Speaker 1": "Реплика [26] «when I teach at Stanford, we do a lot of things by the Socratic method». 8846 слов в 59 репликах — развёрнутые ответы.",
+    "Speaker 3": "Две реплики в три слова: «It's amazing.» в ответ на вопрос Эрика и «Mmm.» посреди его монолога — короткие реакции ведущей, отколотые диаризацией.",
+    "confirmedBy": "Марина, 2026-07-22"
   },
-  "splits": [
-    {
-      "index": 98,
-      "reason": "Один блок содержит реплики двух спикеров",
-      "parts": [
-        { "speaker": "marina", "startsWith": "I wonder if we could set aside the ones that we can measure those separately," },
-        { "speaker": "guest", "startsWith": "but let's just look at something like Wikipedia" }
-      ]
-    }
-  ]
+  "crossCheck": "Раскладка Trint независимо совпала с ручной сверкой Марины по видео: из 6 проверенных фрагментов совпали все 6, расхождений нет. Ручная сверка реплик 76-100 велась ранее, когда Trint ещё не был подключён.",
+  "correspondenceCheck": "Длительность файла 53:31.9, конец CSV 00:53:31.889 — совпадение точное. Концовка дословно совпадает с опубликованной версией («The doomers are not wrong… I keep telling my daughters… It was such fun talking to you»). Покрытие речи 99%, дубликатов нет, пять микроперекрытий по 0.6 сек на стыках реплик.",
+  "falseCorrectionAvoided": "Реплика «There's nothing like that anymore» после вопроса «What would you never delegate to AI?» выглядела как ошибка: ведущая будто отвечает на свой же вопрос. Предложение отдать её гостю было ОТКЛОНЕНО Мариной — она действительно это говорит. Trint был прав, рассуждение по логике диалога — нет. Не повторять: логика разговора не заменяет данные диаризации.",
+  "formatting": "118 реплик Trint, длинные монологи разбиты на абзацы до 170 слов по границам предложений, ярлык спикера только у первого абзаца реплики. Итого 158 абзацев. Убрано 19 висячих кавычек от распознавания.",
+  "adsKept": "Реклама не вырезана — правило по рекламе на момент публикации не утверждено. Так же, как у выпуска Jurvetson; у Либерманов вырезана. Выравнивать одним проходом после решения.",
+  "title": {
+    "from": "The Best and Worst Decade in History Starts Now | Erik Brynjolfsson",
+    "to": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson",
+    "reason": "Имя в заголовке было, роли не было. Роль взята из guestTitle эпизода, не придумана."
+  }
 }
