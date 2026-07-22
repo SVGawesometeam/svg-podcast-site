@@ -1,0 +1,26 @@
+{
+  "videoId": "fxIVCIoLOys",
+  "episode": "Steve Jurvetson — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint CSV из папки Final Versions, файл «SVG - Steve Jursvetson - 4 (4K).mp4» (trintId wEaCs1UUTcaSE1O1yGEOPw)",
+  "note": "Страница была опубликована с транскриптом из субтитров YouTube, где нет информации о говорящих. Бэкенд назначал их моделью и приписал 16 реплик Риду Хоффману — человеку, которого в этой записи нет, его имя было зашито примером в промпт форматирования. Пересобрано из настоящей диаризации Trint.",
+  "trintSpeakerMap": {
+    "Marina": "Marina Mogilko",
+    "Speaker 3": "Marina Mogilko",
+    "Steve": "Steve Jurvetson",
+    "Speaker 4": "Audience question",
+    "Speaker 5": "Audience question"
+  },
+  "speakerMapEvidence": {
+    "Speaker 3": "Реплика на 00:47 «This is going to be very exciting, Steve. I am so excited to have you on this stage» — подтверждено Мариной как её голос, Trint разбил его на два.",
+    "Speaker 4 и 5": "Вопросы из зала, не участники разговора. Speaker 4 на 35:36 открывает словами «Thank you, Steve, for your fireside chat»; Speaker 5 на 39:26 спрашивает про аргумент Пенроуза. Имён спрашивавших нет, поэтому нейтральный ярлык вместо выдуманного имени.",
+    "confirmedBy": "Марина, 2026-07-22"
+  },
+  "correspondenceCheck": "Длительность файла Trint 43:35 против 44 MIN на YouTube. Фразы из хвоста («substitute the word memory for consciousness», «garbage collection for our metabolism», «different substrate») найдены на опубликованной странице. Покрытие речи в CSV — 99% длины файла, разрывов нет.",
+  "formatting": "43 реплики Trint склеены по говорящему в 42, затем длинные монологи разбиты на абзацы до 170 слов по границам предложений — ярлык спикера стоит только у первого абзаца реплики. Итого 82 абзаца против 72 в старой версии. Убраны 17 висячих кавычек от распознавания.",
+  "adsKept": "Реклама НЕ вырезана: правило по рекламе на момент публикации не утверждено. В выпуске два промо-блока — рекламная вставка про доску для ресёрча (абзацы 29-30) и призыв к рассылке (68-69). У выпуска Либерманов реклама вырезана, здесь оставлена — расхождение осознанное, выравнивать одним проходом после решения правила.",
+  "title": {
+    "from": "The Next 3 Years of AI: Lessons from Elon Musk's First Investor",
+    "to": "Elon Musk's First Investor on the Next 3 Years of AI | Steve Jurvetson",
+    "reason": "В старом заголовке не было имени гостя, поэтому страница не ловила fanout-запрос «Steve Jurvetson podcast». Роль была, имени нет. Новый заголовок закрывает обе формулы, как эталонная страница Ryan Roslansky."
+  }
+}
