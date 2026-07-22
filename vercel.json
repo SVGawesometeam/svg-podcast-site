@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/podcast/ryan-roslansky-linkedin-ceo-future-of-jobs", "destination": "/episode/ktpNFfpJ5rw/", "permanent": true },
+    { "source": "/podcast/:slug*", "destination": "/", "permanent": true },
+    { "source": "/podcast", "destination": "/", "permanent": true },
+    { "source": "/ru", "destination": "/", "permanent": true },
+    { "source": "/ru/:path*", "destination": "/", "permanent": true },
+    { "source": "/llms-txt", "destination": "/llms.txt", "permanent": true }
+  ]
+}

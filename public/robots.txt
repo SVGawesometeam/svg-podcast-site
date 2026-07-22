@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Sitemap: https://marinamogilko.co/sitemap.xml
 
+# AI-readable site summary
+# https://marinamogilko.co/llms.txt
+
 # AI crawlers — explicitly welcome
 User-agent: GPTBot
 Allow: /
