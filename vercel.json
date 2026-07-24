@@ -1,18 +1,74 @@
 {
   "redirects": [
-    { "source": "/podcast/ryan-roslansky-linkedin-ceo-future-of-jobs", "destination": "/episode/ktpNFfpJ5rw/", "permanent": true },
-    { "source": "/podcast/:slug*", "destination": "/", "permanent": true },
-    { "source": "/podcast", "destination": "/", "permanent": true },
-    { "source": "/ru", "destination": "/", "permanent": true },
-    { "source": "/ru/:path*", "destination": "/", "permanent": true },
-    { "source": "/llms-txt", "destination": "/llms.txt", "permanent": true },
-
-    { "source": "/link", "destination": "/", "permanent": true },
-    { "source": "/main", "destination": "/", "permanent": true },
-    { "source": "/collab", "destination": "/", "permanent": true },
-    { "source": "/collabin", "destination": "/", "permanent": true },
-    { "source": "/plcxxx", "destination": "/", "permanent": true },
-    { "source": "/yt_channel", "destination": "https://www.youtube.com/@SiliconValleyGirl", "permanent": true },
-    { "source": "/yt_channel/:path*", "destination": "https://www.youtube.com/@SiliconValleyGirl", "permanent": true }
+    {
+      "source": "/podcast/ryan-roslansky-linkedin-ceo-future-of-jobs",
+      "destination": "/episode/ktpNFfpJ5rw/",
+      "permanent": true
+    },
+    {
+      "source": "/podcast/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/podcast",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ru",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/llms-txt",
+      "destination": "/llms.txt",
+      "permanent": true
+    },
+    {
+      "source": "/link",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/main",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/collab",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/collabin",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/plcxxx",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/yt_channel",
+      "destination": "https://www.youtube.com/@SiliconValleyGirl",
+      "permanent": true
+    },
+    {
+      "source": "/yt_channel/",
+      "destination": "https://www.youtube.com/@SiliconValleyGirl",
+      "permanent": true
+    },
+    {
+      "source": "/yt_channel/:path*",
+      "destination": "https://www.youtube.com/@SiliconValleyGirl",
+      "permanent": true
+    }
   ]
 }
