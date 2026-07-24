@@ -5,6 +5,14 @@
     { "source": "/podcast", "destination": "/", "permanent": true },
     { "source": "/ru", "destination": "/", "permanent": true },
     { "source": "/ru/:path*", "destination": "/", "permanent": true },
-    { "source": "/llms-txt", "destination": "/llms.txt", "permanent": true }
+    { "source": "/llms-txt", "destination": "/llms.txt", "permanent": true },
+
+    { "source": "/link", "destination": "/", "permanent": true },
+    { "source": "/main", "destination": "/", "permanent": true },
+    { "source": "/collab", "destination": "/", "permanent": true },
+    { "source": "/collabin", "destination": "/", "permanent": true },
+    { "source": "/plcxxx", "destination": "/", "permanent": true },
+    { "source": "/yt_channel", "destination": "https://www.youtube.com/@SiliconValleyGirl", "permanent": true },
+    { "source": "/yt_channel/:path*", "destination": "https://www.youtube.com/@SiliconValleyGirl", "permanent": true }
   ]
 }
