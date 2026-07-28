@@ -1,0 +1,21 @@
+{
+  "videoId": "bzfklNb1wjc",
+  "episode": "Howie Liu (Airtable) — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint CSV bzfklNb1wjc.csv (экспорт с говорящими, 61 сегмент, 3 голоса)",
+  "note": "Опубликованная страница имела ТРИ ярлыка спикеров: Marina, Howie Liu и фантомный «Reed Hoffman» (7 реплик) — человека, которого в записи нет. Тот же дефект, что на fxIVCIoLOys: имя Рида Хоффмана было зашито примером в промпт форматирования бэкенда и галлюцинировалось на страницы. Плюс ведущая и гость были перепутаны местами примерно в 11 абзацах. Пересобрано из настоящей диаризации Trint.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Marina Mogilko",
+    "Speaker 2": "Howie Liu",
+    "Speaker 3": "backchannel (короткие «Yeah»/«Exactly», приписаны соседней реплике)"
+  },
+  "speakerMapEvidence": {
+    "Speaker 1 = Marina": "Интро-войсовер (сег.3) «Howie built one of the biggest software companies on the planet. Airtable is used by more than 80% of the Fortune 100» и закрытие (сег.61) «It's an amazing time to be alive. Thank you so much, Howie, and thank you so much for the product» — это ведущая.",
+    "Speaker 2 = Howie": "Сег.26 «this is actually a demo account of mine» и сег.54 «one is obviously sign up for hyper agent… we try to make hyper agent…» — говорит владелец продукта HyperAgent, то есть гость.",
+    "phantom Reed Hoffman": "7 реплик страницы, размеченных «Reed Hoffman», по Trint принадлежат: демо-нарратив («here's one of my personal favorites», «set up a live mode agent», «being a builder comes down to the appetite to tinker») — Speaker 2 (Howie); короткие реакции («Totally…», «took us a few days») — Speaker 1 (Marina).",
+    "confirmedBy": "Trint-диаризация; сверено по содержанию 2026-07-28"
+  },
+  "correspondenceCheck": "Начало страницы «I'm the bottleneck because all the content goes through me» = Trint сегмент 1; концовка «amazing time to be alive. Thank you so much, Howie» = Trint сегмент 61. Последний In 00:32:26 против 33 MIN на YouTube — совпадает, файл соответствует опубликованному монтажу.",
+  "corrected": "Убран фантом «Reed Hoffman» (7 ярлыков). Исправлены перепутанные местами реплики ведущей/гостя: абзацы, где текст по 4-граммному голосованию однозначно принадлежал другому голосу (например «as the models get better… rethink the paradigm» и «going back to our generational metaphor» — это Howie, стояла Marina; «When do you think this flip is going to happen?» и «Most people use Claude as a search engine» — это Marina, стоял Howie). Три абзаца со смешанными голосами разрезаны по границе предложения.",
+  "formatting": "61 сегмент Trint склеены по говорящему в реплики, длинные монологи разбиты на абзацы до 170 слов по границам предложений — ярлык только у первого абзаца реплики. Итого 26 реплик Marina + 26 Howie, 68 абзацев (16 из них — продолжения без ярлыка). Крупнейший абзац 955 знаков.",
+  "adsKept": "Реклама НЕ вырезана — правило по рекламе на момент правки не утверждено, как и на fxIVCIoLOys."
+}
