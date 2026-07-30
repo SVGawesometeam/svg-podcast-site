@@ -1,0 +1,15 @@
+{
+  "videoId": "VF2FwZ_PXhw",
+  "episode": "Anne Wojcicki (23andMe) — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint CSV VF2FwZ_PXhw.csv (экспорт с говорящими, 116 сегментов)",
+  "note": "Бэкенд (svg-dashboard на Railway) по этому выпуску отдал транскрипт БЕЗ разметки говорящих вообще — сплошной текст на 56 тыс. знаков, где вопрос ведущей и ответ гостя слиты в один абзац. Диаризации в ответе API нет (поле transcript — строка, не массив со спикерами). Собрано из настоящей диаризации Trint.",
+  "trintSpeakerMap": {
+    "Anne": "Anne Wojcicki",
+    "Marina": "Marina Mogilko",
+    "Speaker 3": "Marina Mogilko (бэкчэннел ведущей — «Mm-hmm», «Oh my God», «Clock's ticking» между репликами Анны)"
+  },
+  "correspondenceCheck": "Начало страницы «Every single person can benefit from genetic information…» = Trint сегмент 1 (Anne). Файл соответствует опубликованному монтажу (62 MIN).",
+  "formatting": "116 сегментов Trint склеены по говорящему в реплики, длинные монологи разбиты на абзацы до 170 слов — ярлык только у первого абзаца реплики. Итого 59 реплик Anne Wojcicki + 58 Marina Mogilko, 150 абзацев. Снята висячая кавычка-артефакт Trint в начале сегментов.",
+  "fixes": "«23 and me» / «23andme» → «23andMe» по всему тексту.",
+  "backendIssue": "Дефект на стороне бэкенда: пайплайн не проставил спикеров. Чинится только пересборкой из Trint; корневой фикс — в репозитории svg-dashboard (кода нет на этой машине)."
+}
