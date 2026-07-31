@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
@@ -127,13 +128,15 @@ function readExistingEpisodeMeta(videoId, html) {
   const imgMatch = html.match(/og:image" content="([^"]+)"/);
   const dateMatch = html.match(/datePublished":"([^"]+)"/);
   const guestMatch = html.match(/<div class="guest-name">([^<]+)<\/div>/);
+  const guestTitleMatch = html.match(/<div class="guest-title">([^<]*)<\/div>/);
   const durationMatch = html.match(/<span>(\d+ MIN)<\/span>/);
   return {
     videoId,
-    title: titleMatch ? titleMatch[1] : videoId,
+    title: titleMatch ? unesc(titleMatch[1]) : videoId,
     thumbnail: imgMatch ? imgMatch[1] : `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
     publishedAt: dateMatch ? dateMatch[1] : new Date().toISOString(),
-    guestName: guestMatch ? guestMatch[1] : "",
+    guestName: guestMatch ? unesc(guestMatch[1]) : "",
+    guestTitle: guestTitleMatch ? unesc(guestTitleMatch[1]) : "",
     duration: durationMatch ? durationMatch[1] : "",
   };
 }
@@ -182,20 +185,118 @@ async function build() {
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
   console.log("Written public/sitemap.xml");
 
+  writeLlmsTxt(allEpisodes);
+
   console.log(`\nBuilt: ${built}  Skipped: ${skipped}  Failed: ${failed}  Total: ${allEpisodes.length}`);
 }
 
+// lastmod has to mean "the page changed", not "the episode came out", or every
+// build hands Google the same dates and the edits we make to old pages never
+// register. Keyed on a hash of the rendered page so it survives a fresh clone,
+// which mtime would not.
+function lastmodFor(episodes) {
+  const cacheFile = path.join(__dirname, "sitemap-lastmod.json");
+  const cache = fs.existsSync(cacheFile)
+    ? JSON.parse(fs.readFileSync(cacheFile, "utf8"))
+    : seedLastmodFromSitemap();
+  const today = new Date().toISOString().split("T")[0];
+  const out = {};
+
+  for (const ep of episodes) {
+    const epFile = path.join(PUBLIC_DIR, "episode", ep.videoId, "index.html");
+    const hash = fs.existsSync(epFile)
+      ? crypto.createHash("sha1").update(fs.readFileSync(epFile)).digest("hex")
+      : "";
+    const prev = cache[ep.videoId];
+    // A page we have never seen is dated by publication, not by today, so the
+    // first run after this lands doesn't announce all 110 pages as changed.
+    const date = !prev
+      ? new Date(ep.publishedAt).toISOString().split("T")[0]
+      : prev.hash && prev.hash !== hash
+        ? today
+        : prev.date;
+    out[ep.videoId] = { hash, date };
+  }
+
+  fs.writeFileSync(cacheFile, JSON.stringify(out, null, 2) + "\n");
+  return out;
+}
+
+// No cache yet means this is the first build since lastmod started being
+// tracked. Take the dates already published in sitemap.xml rather than
+// resetting them to publication dates and throwing away a real crawl signal.
+function seedLastmodFromSitemap() {
+  const file = path.join(PUBLIC_DIR, "sitemap.xml");
+  if (!fs.existsSync(file)) return {};
+  const seeded = {};
+  const re = /<loc>[^<]*\/episode\/([^/]+)\/<\/loc><lastmod>([^<]+)<\/lastmod>/g;
+  const xml = fs.readFileSync(file, "utf8");
+  let m;
+  while ((m = re.exec(xml)) !== null) {
+    // No hash: the date stands until the page's content actually changes.
+    seeded[m[1]] = { hash: "", date: m[2] };
+  }
+  return seeded;
+}
+
 function renderSitemap(episodes) {
+  const lastmod = lastmodFor(episodes);
   const urls = [
     `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
     ...episodes.map(ep =>
-      `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${new Date(ep.publishedAt).toISOString().split("T")[0]}</lastmod></url>`
+      `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${lastmod[ep.videoId].date}</lastmod></url>`
     ),
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.join("\n")}
 </urlset>`;
+}
+
+// llms.txt is what AI crawlers read, so the guest index in it has to list every
+// guest episode with a link. The prose above and below is hand-written, so only
+// the one section is regenerated — everything else in the file is left alone.
+const LLMS_HEADING = "## Podcast Guests and Their Episodes";
+
+function renderLlmsGuestSection(episodes) {
+  const lines = episodes
+    // Solo episodes have Marina as the performer, compilations list several
+    // guests at once. Neither belongs in a guest -> page index.
+    .filter(ep => ep.guestName && ep.guestName !== "Marina Mogilko" && !ep.guestName.includes(","))
+    .map(ep => {
+      const role = (ep.guestTitle || "").replace(/\s*·\s*/g, ", ");
+      const year = new Date(ep.publishedAt).getFullYear();
+      return `- ${ep.guestName} — ${role} (${year}): ${SITE_URL}/episode/${ep.videoId}/`;
+    });
+
+  return [
+    LLMS_HEADING,
+    "Every guest interview on the Silicon Valley Girl podcast, newest first. " +
+      "Each line is the guest, their role, the year, and the page with the full transcript.",
+    ...lines,
+    "",
+    "",
+  ].join("\n");
+}
+
+function writeLlmsTxt(episodes) {
+  const file = path.join(PUBLIC_DIR, "llms.txt");
+  if (!fs.existsSync(file)) {
+    console.log("Skipped public/llms.txt (file missing)");
+    return;
+  }
+  const txt = fs.readFileSync(file, "utf8");
+  const start = txt.indexOf(LLMS_HEADING);
+  if (start === -1) {
+    console.log(`Skipped public/llms.txt (no "${LLMS_HEADING}" section)`);
+    return;
+  }
+  const after = txt.indexOf("\n## ", start + LLMS_HEADING.length);
+  const end = after === -1 ? txt.length : after + 1;
+
+  const section = renderLlmsGuestSection(episodes);
+  fs.writeFileSync(file, txt.slice(0, start) + section + txt.slice(end));
+  console.log(`Written public/llms.txt (${section.split("\n").length - 4} guests)`);
 }
 
 // ---------------------------------------------------------------------------
@@ -801,6 +902,18 @@ function esc(str) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+// Anything scraped back out of a rendered page is already escaped, and the
+// templates escape again on the way out. Without this the ampersand in a title
+// like "ChatGPT & Codex" gains an &amp; on every build.
+function unesc(str) {
+  return String(str)
+    .replace(/&quot;/g, '"')
+    .replace(/&gt;/g, ">")
+    .replace(/&lt;/g, "<")
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, "&");
 }
 
 build().catch((err) => {
