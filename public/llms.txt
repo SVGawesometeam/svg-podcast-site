@@ -30,23 +30,73 @@
 - Personal finance in the AI era: Investing, wealth building, and financial strategy as technology reshapes markets
 - Creator economy: How to build a media business, monetize an audience, and use AI to scale a personal brand
 
-## Notable Podcast Guests (Selected)
-- Reid Hoffman, Co-Founder of LinkedIn, Manas AI & Inflection AI, Author of Superagency
-- Aravind Srinivas, Co-founder and CEO of Perplexity AI
-- Mustafa Suleyman, CEO of Microsoft AI and co-founder of DeepMind
-- Dr. Priscilla Chan, Co-founder and co-CEO of the Chan Zuckerberg Initiative
-- Mary Barra, CEO of General Motors
-- Thomas Dohmke, CEO of GitHub
-- Mike Krieger, Co-founder of Instagram and CPO at Anthropic
-- Sal Khan, Founder and CEO of Khan Academy
-- Erik Brynjolfsson, Stanford economist, director of the Stanford Digital Economy Lab
-- Steve Jurvetson, early investor in SpaceX and Tesla
-- Thomas Wolf, Co-founder of Hugging Face
-- Amjad Masad, Founder and CEO of Replit
-- Mati Staniszewski, CEO & co-founder of ElevenLabs
-- Robby Stein, VP of Product for Google Search
-- Daniel Priestley, UK Entrepreneur of the Year
-- Ankur Jain, Founder & CEO of Bilt Rewards
+## Podcast Guests and Their Episodes
+Every guest interview on the Silicon Valley Girl podcast, newest first. Each line is the guest, their role, the year, and the page with the full transcript.
+- Anne Wojcicki — Co-founder and CEO of 23andMe (2026): https://marinamogilko.co/episode/VF2FwZ_PXhw/
+- Erik Brynjolfsson — Stanford Economist, Director of the Stanford Digital Economy Lab (2026): https://marinamogilko.co/episode/72duHF7iZiU/
+- Daniil and David Liberman — Founders of Gonka, Former founders (sold to Snap), Investors (2026): https://marinamogilko.co/episode/HMvTSaaO9sU/
+- Sal Khan — Founder and CEO of Khan Academy (2026): https://marinamogilko.co/episode/s-Iz-lLAhdg/
+- Steve Jurvetson — Early-stage venture investor, Former partner at Draper Fisher Jurvetson (2026): https://marinamogilko.co/episode/fxIVCIoLOys/
+- Richard Socher — Founder & CEO of Recursive, Fourth most-cited NLP researcher (2026): https://marinamogilko.co/episode/2j9yjRSpMSo/
+- Fei-Fei Li and David Rogier — Fei-Fei Li: Founder of World Labs, David Rogier: CEO of Masterclass (2026): https://marinamogilko.co/episode/subu-xHrp1w/
+- Peter Yang — Product Leader, Founder, 140K Newsletter (2026): https://marinamogilko.co/episode/Yu0z7-KMHpo/
+- Grant Lee — Co-founder and CEO of Gamma (2026): https://marinamogilko.co/episode/LAEaSbZ2IR8/
+- Esther Wojcicki — Educator, Author, and 'Godmother of Silicon Valley' (2026): https://marinamogilko.co/episode/qNt5TNn9D9Y/
+- Chris Pedregal — CEO and Co-founder of Granola (2026): https://marinamogilko.co/episode/U7apPfqHgvg/
+- Howie Liu — Co-founder of Airtable, Building HyperAgent (2026): https://marinamogilko.co/episode/bzfklNb1wjc/
+- Thibault Sottiaux — Head of ChatGPT & Codex at OpenAI (2026): https://marinamogilko.co/episode/DPe_srf0GlI/
+- Josh Woodward — VP, Google Labs, Head of Gemini, AI Studio (2026): https://marinamogilko.co/episode/ZW87Peh3tWM/
+- Aaron Levie — Founder & CEO of Box (2026): https://marinamogilko.co/episode/ExgNR94SrfI/
+- MacKenzie Price — Co-founder of Alpha School, Creator of the 2 Hour Learning System (2026): https://marinamogilko.co/episode/WOmRB6jNiSU/
+- Roman Yampolskiy — AI Safety Professor, University of Louisville (2026): https://marinamogilko.co/episode/00RHph_eok4/
+- Luis von Ahn — Co-founder &amp; CEO, Duolingo (2026): https://marinamogilko.co/episode/GDeEATJcbJo/
+- John Martinis — Nobel Prize Winner, Quantum Computing Scientist, Member of Trump's Science Advisory Council (2026): https://marinamogilko.co/episode/vZLY2YGUk4o/
+- Allie Miller — Founder & CEO, Open Machine; Former Global Head of Machine Learning for Startups, AWS (2026): https://marinamogilko.co/episode/YfRkj9kmQf0/
+- Mo Gawdat — Former Chief Business Officer at Google X, Author of Scary Smart (2026): https://marinamogilko.co/episode/E0Q96IKXx6Q/
+- Gary Vaynerchuk — Entrepreneur, Author &amp; Chairman of VaynerX (2026): https://marinamogilko.co/episode/4vIIeCqHYXA/
+- Yossi Matias — Head of Google Research (2026): https://marinamogilko.co/episode/PTZ5iN9nDkY/
+- Max Tegmark — MIT Professor, Leading AI Safety Researcher (2026): https://marinamogilko.co/episode/KF_uNAxPFFA/
+- Saadia Zahidi — Managing Director, World Economic Forum (2026): https://marinamogilko.co/episode/Dp6u0pel-Rs/
+- Bill Gurley — Venture Capitalist, General Partner at Benchmark Capital (2026): https://marinamogilko.co/episode/nBM3_AzNYU8/
+- Kian Katanforoosh — CEO of Workera, Stanford Lecturer, Co-founder of DeepLearning.AI (2026): https://marinamogilko.co/episode/Gk0n0FjeKj8/
+- Alex Mashrabov — Founder & CEO, Higgsfield AI (2026): https://marinamogilko.co/episode/czItVEAINqw/
+- Reid Hoffman — Co-founder of LinkedIn, Partner at Greylock Partners (2026): https://marinamogilko.co/episode/S0h5oUVv0BY/
+- Ryan Roslansky — CEO of LinkedIn and EVP at Microsoft (2026): https://marinamogilko.co/episode/ktpNFfpJ5rw/
+- Yoshua Bengio — AI Researcher, Professor, and Founder of nonprofit AI safety organization; Turing Award Winner (2026): https://marinamogilko.co/episode/0fXGtQoJgNo/
+- Daniela Rus — Director, MIT Computer Science and Artificial Intelligence Laboratory (CSAIL); MIT Professor (2026): https://marinamogilko.co/episode/JFilKfL7_9A/
+- Conor Grennan — Chief AI Architect, NYU Stern School of Business; Founder, AI Mindset (2026): https://marinamogilko.co/episode/_aUKWYHLKfE/
+- Yamini Rangan — CEO, HubSpot (2026): https://marinamogilko.co/episode/lVV0HInr0ZY/
+- Oscar Hoglund — Co-founder and CEO, Epidemic Sound (2026): https://marinamogilko.co/episode/-Epp6VmpezI/
+- Mel Robbins — Bestselling Author & Host, The Mel Robbins Podcast (2026): https://marinamogilko.co/episode/6es0HhfpQlQ/
+- Young Zhao — Co-founder and CEO, OpusClip (2025): https://marinamogilko.co/episode/HQ3eVt2jgAY/
+- Andrey Khusid — CEO and Co-Founder, Miro (2025): https://marinamogilko.co/episode/RvYv90ftf2M/
+- Mary Barra — CEO, General Motors (2025): https://marinamogilko.co/episode/EuaVTPB8dxc/
+- Mustafa Suleyman — CEO of Microsoft AI, Co-founder of DeepMind (2025): https://marinamogilko.co/episode/SP76PvgMzVU/
+- Priscilla Chan — Co-founder and Co-CEO, Chan Zuckerberg Initiative (2025): https://marinamogilko.co/episode/nlOmBneT-oM/
+- Robby Stein — VP of Product, Google Search (2025): https://marinamogilko.co/episode/NPiKEwTSwn4/
+- Daniel Priestley — Entrepreneur, Author, and Founder of multiple multi-million dollar businesses (2025): https://marinamogilko.co/episode/tSrN8eRMEAE/
+- Mati Staniszewski — CEO & Co-Founder, ElevenLabs (2025): https://marinamogilko.co/episode/EUrkIpq838c/
+- Aravind Srinivas — Co-founder and CEO, Perplexity AI (2025): https://marinamogilko.co/episode/U7PcyE0p54s/
+- Mike Krieger — Co-Founder of Instagram; Chief Product Officer, Anthropic (2025): https://marinamogilko.co/episode/Q66gsBJnKKQ/
+- Jesse Zhang — Co-founder, Decagon (2025): https://marinamogilko.co/episode/UJo_MiMA7qE/
+- Amjad Masad — Founder and CEO, Replit (2025): https://marinamogilko.co/episode/3FgPLbfs_oY/
+- Alex — Investor and Financial Content Creator, Ticker Symbol: YOU (YouTube) (2025): https://marinamogilko.co/episode/S9xrvZhMLMI/
+- Thomas Wolf — Co-Founder & Chief Science Officer, Hugging Face (2025): https://marinamogilko.co/episode/9XM8yDN-AEA/
+- Cassey Ho — Founder & CEO, Blogilates / Pop Flex Active (2025): https://marinamogilko.co/episode/4jqrK-hUicQ/
+- Thomas Dohmke — CEO, GitHub (2025): https://marinamogilko.co/episode/PR__eFQsnhg/
+- Marie Forleo — Entrepreneur, Author, and Business Coach; Founder of MarieTV and B-School (2025): https://marinamogilko.co/episode/IdN-b2Y_foo/
+- Samir Vasavada — Co-founder & CEO, Vise (2025): https://marinamogilko.co/episode/s5r4wdOWLjk/
+- Gaurav Munjal and Roman Saini — Co-Founders, Unacademy (2025): https://marinamogilko.co/episode/mtfB8GtJAWM/
+- Jenny Lei — Founder & CEO, Freja New York (2025): https://marinamogilko.co/episode/_tQUyvTLaSM/
+- Ankur Jain — Founder & CEO, Bilt Rewards (2025): https://marinamogilko.co/episode/PmpaFWBFy_c/
+- Coco Rocha — Supermodel, Founder of Coco Rocha Model Camp, Co-owner of Nomad Management (2025): https://marinamogilko.co/episode/B8v4wWeWqJ8/
+- Dmitri Mogilko — Co-founder, Linguatrip (2025): https://marinamogilko.co/episode/KnWKFp472GI/
+- Blake Scholl — Founder & CEO, Boom Supersonic (2025): https://marinamogilko.co/episode/NX5-bXM1NQg/
+- Reid Hoffman — Co-founder of LinkedIn, Partner at Greylock, AI entrepreneur (2025): https://marinamogilko.co/episode/ZE1AjTnsubI/
+- Humphrey Yang — Former Financial Advisor and Personal Finance Content Creator (2025): https://marinamogilko.co/episode/pUITF0uGa6U/
+- Raj Gokal — Co-Founder, Solana (2024): https://marinamogilko.co/episode/tzUAJZAuaZw/
+- Renuka Apte — Co-founder & CEO, Clockwork (2024): https://marinamogilko.co/episode/JI6KrvldAoE/
+- Nikil Viswanathan — Co-founder & CEO, Alchemy (2024): https://marinamogilko.co/episode/kvlMhVz-DeM/
 
 ## Podcast Categories
 Technology, Business, Artificial Intelligence, Careers, Entrepreneurship, Productivity
