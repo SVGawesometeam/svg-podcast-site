@@ -356,7 +356,7 @@ function renderHomePage(episodes) {
   const episodeListHtml = episodes
     .map((ep) => {
       const date = formatDate(ep.publishedAt);
-      const guest = ep.guestName || "Special Guest";
+      const guest = ep.guestName || "Marina Mogilko";
       return `
             <a href="/episode/${ep.videoId}/" class="episode-row">
               <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy">
@@ -589,7 +589,13 @@ function renderEpisodePage(d) {
     filteredTranscript = filteredTranscript.replace(pat, "");
   }
 
-  const cleanedTranscript = filteredTranscript.replace(genericSpeakerRe, `**${d.guestName}:**`);
+  let cleanedTranscript = filteredTranscript.replace(genericSpeakerRe, `**${d.guestName}:**`);
+
+  // Solo episode: the monologue has no speaker markers — label the opening
+  // paragraph as Marina so the transcript isn't left unattributed.
+  if ((!d.guestName || !d.guestName.trim()) && !/^\s*\*\*/.test(cleanedTranscript)) {
+    cleanedTranscript = `**Marina Mogilko:** ${cleanedTranscript.trimStart()}`;
+  }
 
   const transcriptHtml = cleanedTranscript
     .split(/\n\n+/)
@@ -615,8 +621,17 @@ function renderEpisodePage(d) {
     )
     .join("\n");
 
+  // Solo episode (no guest): Marina presents her own material. Normalize so the
+  // page renders as her, not a "Special Guest" placeholder.
+  const isSolo = !d.guestName || !d.guestName.trim();
+  if (isSolo) {
+    d.guestName = "Marina Mogilko";
+    d.guestTitle = "Host, Silicon Valley Girl Podcast";
+  }
   const guestLabel = d.guestName || "a special guest";
-  const metaDescription = `Marina Mogilko interviews ${guestLabel}, ${d.guestTitle}, on the Silicon Valley Girl Podcast`;
+  const metaDescription = isSolo
+    ? `${d.title} — Silicon Valley Girl Podcast`
+    : `Marina Mogilko interviews ${guestLabel}, ${d.guestTitle}, on the Silicon Valley Girl Podcast`;
 
   const episodeSlug = slugify(d.title);
   const canonicalUrl = `https://marinamogilko.co/episode/${d.videoId}/`;
@@ -847,7 +862,7 @@ function renderEpisodePage(d) {
     </div>
 
     <div id="panel-notes" class="tab-panel active" role="tabpanel">
-      <div class="summary">In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews ${esc(d.guestName || "a special guest")}, ${esc(d.guestTitle)}. ${esc(d.episodeSummary)}</div>
+      <div class="summary">${isSolo ? `In this episode of the Silicon Valley Girl Podcast, Marina Mogilko shares ${esc(d.episodeSummary)}` : `In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews ${esc(d.guestName || "a special guest")}, ${esc(d.guestTitle)}. ${esc(d.episodeSummary)}`}</div>
       <div class="takeaways">
         <h3>Key Takeaways</h3>
         <ul>
