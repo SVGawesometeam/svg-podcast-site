@@ -534,10 +534,10 @@ function renderHomePage(episodes) {
         <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
         <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
         <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
+        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram">${ICONS.instagram} Podcast IG</a>
+        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok">${ICONS.tiktok} TikTok</a>
         <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
         <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" title="X">${ICONS.twitter} X</a>
-        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok">${ICONS.tiktok} TikTok</a>
-        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram">${ICONS.instagram} Podcast IG</a>
         <a href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener" title="Newsletter">${ICONS.newsletter} Newsletter</a>
         <a href="mailto:partnerships@marinamogilko.co" title="Contact">${ICONS.mail} Contact</a>
       </div>
