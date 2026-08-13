@@ -1,0 +1,14 @@
+{
+  "videoId": "xiJsfvaxzRY",
+  "episode": "Luana Lopes Lara (Kalshi) — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint CSV xiJsfvaxzRY.csv (экспорт с говорящими, 47 сегментов)",
+  "note": "Бэкенд отдал транскрипт без разметки говорящих — сплошной текст с сырыми метками '>>' (смена говорящего, без имён). Собрано из диаризации Trint, где оба говорящих уже названы.",
+  "trintSpeakerMap": {
+    "Marina Mogilko": "Marina Mogilko",
+    "Luana Lopes Lara": "Luana Lopes Lara"
+  },
+  "correspondenceCheck": "Начало страницы «73% chance that AI will be number one reason for job cuts…» = Trint сегмент 1 (Marina, тизер). Файл соответствует опубликованному монтажу (34 MIN).",
+  "formatting": "47 сегментов Trint склеены по говорящему, длинные монологи разбиты на абзацы до 170 слов, ярлык только у первого абзаца. Итого 24 реплики Marina + 23 Luana, 75 абзацев. Убраны сырые метки '>>' и висячие кавычки Trint.",
+  "fixes": "ASR-написание имени «Lopez-Lara» нормализовано в «Lopes Lara» по всему тексту.",
+  "manualOverrides": "РУЧНЫЕ правки страницы поверх данных бэкенда (сбросятся при force-пересборке папки): (1) роль сокращена с «Co-Founder of Kalshi · Forbes' Youngest Self-Made Woman Billionaire» до «Co-Founder of Kalshi» (по решению Марины — убрать длинноту и women-рамку); (2) имя гостя «Luana Lopes Lara» добавлено в <title>/<h1>/og/twitter под fanout-запрос."
+}

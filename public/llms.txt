@@ -32,6 +32,7 @@
 
 ## Podcast Guests and Their Episodes
 Every guest interview on the Silicon Valley Girl podcast, newest first. Each line is the guest, their role, the year, and the page with the full transcript.
+- Luana Lopes Lara — Co-Founder of Kalshi (2026): https://marinamogilko.co/episode/xiJsfvaxzRY/
 - Anne Wojcicki — Co-founder and CEO of 23andMe (2026): https://marinamogilko.co/episode/VF2FwZ_PXhw/
 - Erik Brynjolfsson — Stanford Economist, Director of the Stanford Digital Economy Lab (2026): https://marinamogilko.co/episode/72duHF7iZiU/
 - Daniil and David Liberman — Founders of Gonka, Former founders (sold to Snap), Investors (2026): https://marinamogilko.co/episode/HMvTSaaO9sU/
