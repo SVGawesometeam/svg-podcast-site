@@ -478,6 +478,19 @@ function renderHomePage(episodes) {
     .host-links a:hover { text-decoration: underline; }
     .host-links a svg { flex-shrink: 0; }
 
+    /* ---- Brand / Partnerships CTA ---- */
+    .brand-cta {
+      margin: 2rem 0; padding: 2.75rem 2rem;
+      background: #f4f4f5; border-radius: 12px; text-align: center;
+    }
+    .brand-cta h2 {
+      font-size: 1.9rem; font-weight: 800; text-transform: uppercase;
+      letter-spacing: -0.01em; line-height: 1.1; margin: 0 0 0.85rem; color: #111;
+    }
+    .brand-cta p { font-size: 1rem; color: #555; margin: 0; }
+    .brand-cta a { color: #111; font-weight: 700; text-decoration: underline; }
+    @media (max-width: 640px) { .brand-cta h2 { font-size: 1.5rem; } }
+
     /* ---- Episodes List ---- */
     .episodes-section h2 {
       font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
@@ -542,7 +555,6 @@ function renderHomePage(episodes) {
         <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
         <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" title="X">${ICONS.twitter} X</a>
         <a href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener" title="Newsletter">${ICONS.newsletter} Newsletter</a>
-        <a href="mailto:partnerships@marinamogilko.co" title="Contact">${ICONS.mail} Contact</a>
       </div>
     </section>
 
@@ -550,6 +562,11 @@ function renderHomePage(episodes) {
       <h2>Your Host</h2>
       <div class="host-name">Marina Mogilko</div>
       <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
+    </section>
+
+    <section class="brand-cta">
+      <h2>Want your brand on my podcast?</h2>
+      <p>Email us at <a href="mailto:partnerships@marinamogilko.co">partnerships@marinamogilko.co</a></p>
     </section>
 
     <section id="episodes" class="episodes-section">
