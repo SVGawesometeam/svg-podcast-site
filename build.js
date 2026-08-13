@@ -311,7 +311,7 @@ const ICONS = {
   linkedin: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg>`,
   twitter: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg>`,
   tiktok: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg>`,
-  newsletter: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#FFC800"/><path fill="#1a1a1a" d="M5 7.5h14a.5.5 0 0 1 .5.5v.4l-7.5 4.3L4.5 8.4V8a.5.5 0 0 1 .5-.5zM4.5 9.9l6.9 3.95a1 1 0 0 0 1 0L19.5 9.9V16a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5z"/></svg>`,
+  newsletter: `<svg width="20" height="20" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5" fill="#FFC800"/><rect x="6" y="7.5" width="7" height="5.5" rx="1" fill="#1a1a1a"/><rect x="14.5" y="7.5" width="3.5" height="1.5" rx="0.75" fill="#1a1a1a"/><rect x="14.5" y="11" width="3.5" height="1.5" rx="0.75" fill="#1a1a1a"/><rect x="6" y="15" width="12" height="1.5" rx="0.75" fill="#1a1a1a"/></svg>`,
   mail: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#5b6470"/><path fill="#fff" d="M5 7.5h14a.5.5 0 0 1 .5.5v.4l-7.5 4.3L4.5 8.4V8a.5.5 0 0 1 .5-.5zM4.5 9.9l6.9 3.95a1 1 0 0 0 1 0L19.5 9.9V16a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5z"/></svg>`,
 };
 
@@ -329,6 +329,13 @@ const SHARED_HEAD = `
 const SHARED_HEADER = `
   <header class="site-header">
     <a href="/" class="logo">Silicon Valley Girl Podcast</a>
+    <nav class="header-links">
+      <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube}</a>
+      <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify}</a>
+      <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple}</a>
+      <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram}</a>
+      <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin}</a>
+    </nav>
   </header>`;
 
 const SHARED_FOOTER = `
@@ -434,13 +441,13 @@ function renderHomePage(episodes) {
     }
     .listen-links {
       display: grid; grid-template-columns: repeat(5, 1fr);
-      gap: 0.6rem; margin-top: 1.5rem; max-width: 760px;
+      gap: 0.6rem; margin-top: 1.5rem; max-width: 820px;
     }
     .listen-links a {
-      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
-      padding: 0.6rem 0.75rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.45rem;
+      padding: 0.6rem 0.5rem; white-space: nowrap;
       border: 1px solid #ddd; border-radius: 6px;
-      font-size: 0.85rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
+      font-size: 0.8rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
       transition: border-color 0.15s, background 0.15s;
     }
     .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
