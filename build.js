@@ -452,7 +452,10 @@ function renderHomePage(episodes) {
     }
     .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
     .listen-links a svg { flex-shrink: 0; }
-    @media (max-width: 640px) { .listen-links { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) {
+      .listen-links { grid-template-columns: repeat(2, 1fr); }
+      .listen-links a { justify-content: flex-start; padding-left: 1rem; }
+    }
 
     /* ---- About Host ---- */
     .host-card {
