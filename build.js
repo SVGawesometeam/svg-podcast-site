@@ -480,16 +480,16 @@ function renderHomePage(episodes) {
 
     /* ---- Brand / Partnerships CTA ---- */
     .brand-cta {
-      margin: 2rem 0; padding: 2.75rem 2rem;
+      margin: 2rem 0; padding: 2rem;
       background: #f4f4f5; border-radius: 12px; text-align: center;
     }
     .brand-cta h2 {
-      font-size: 1.9rem; font-weight: 800; text-transform: uppercase;
-      letter-spacing: -0.01em; line-height: 1.1; margin: 0 0 0.85rem; color: #111;
+      font-size: 1.25rem; font-weight: 800; text-transform: uppercase;
+      letter-spacing: -0.005em; line-height: 1.2; margin: 0 0 0.6rem; color: #111;
     }
-    .brand-cta p { font-size: 1rem; color: #555; margin: 0; }
+    .brand-cta p { font-size: 0.95rem; color: #555; margin: 0; }
     .brand-cta a { color: #111; font-weight: 700; text-decoration: underline; }
-    @media (max-width: 640px) { .brand-cta h2 { font-size: 1.5rem; } }
+    @media (max-width: 640px) { .brand-cta h2 { font-size: 1.1rem; } }
 
     /* ---- Episodes List ---- */
     .episodes-section h2 {
