@@ -433,17 +433,19 @@ function renderHomePage(episodes) {
       font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
     }
     .listen-links {
-      display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap;
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 0.6rem; margin-top: 1.5rem; max-width: 760px;
     }
     .listen-links a {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.6rem 1.25rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      padding: 0.6rem 0.75rem;
       border: 1px solid #ddd; border-radius: 6px;
       font-size: 0.85rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
       transition: border-color 0.15s, background 0.15s;
     }
     .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
     .listen-links a svg { flex-shrink: 0; }
+    @media (max-width: 640px) { .listen-links { grid-template-columns: repeat(2, 1fr); } }
 
     /* ---- About Host ---- */
     .host-card {
@@ -516,8 +518,6 @@ function renderHomePage(episodes) {
 </head>
 <body>
 
-  ${SHARED_HEADER}
-
   <main class="container">
     <section class="hero">
       <h1>Silicon Valley Girl Podcast</h1>
@@ -527,12 +527,12 @@ function renderHomePage(episodes) {
         <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
         <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
         <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
-        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram">${ICONS.instagram} Podcast Instagram</a>
-        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok">${ICONS.tiktok} TikTok</a>
         <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
         <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" title="X">${ICONS.twitter} X</a>
+        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok">${ICONS.tiktok} TikTok</a>
+        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram">${ICONS.instagram} Podcast IG</a>
         <a href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener" title="Newsletter">${ICONS.newsletter} Newsletter</a>
-        <a href="mailto:partnerships@marinamogilko.co" title="Partnerships">${ICONS.mail} Partnerships</a>
+        <a href="mailto:partnerships@marinamogilko.co" title="Contact">${ICONS.mail} Contact</a>
       </div>
     </section>
 
