@@ -361,16 +361,22 @@ function renderHomePage(episodes) {
   const episodeListHtml = episodes
     .map((ep) => {
       const date = formatDate(ep.publishedAt);
+      // Compilations list several guests (comma-separated). We don't surface
+      // their names on the home page — a montage shouldn't compete with each
+      // guest's own episode for a "[name] podcast" query.
+      const isCompilation = !!(ep.guestName && ep.guestName.includes(","));
       const guest = ep.guestName || "Marina Mogilko";
+      const metaSpans = [];
+      if (!isCompilation) metaSpans.push(`<span>${esc(guest)}</span>`);
+      metaSpans.push(`<span>${date}</span>`);
+      metaSpans.push(`<span>${esc(ep.duration)}</span>`);
       return `
             <a href="/episode/${ep.videoId}/" class="episode-row">
               <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy">
               <div class="episode-row-info">
                 <div class="episode-row-title">${esc(ep.title)}</div>
                 <div class="episode-row-meta">
-                  <span>${esc(guest)}</span>
-                  <span>${date}</span>
-                  <span>${esc(ep.duration)}</span>
+                  ${metaSpans.join("\n                  ")}
                 </div>
               </div>
             </a>`;
