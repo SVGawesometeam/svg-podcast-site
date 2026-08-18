@@ -590,23 +590,24 @@ function renderHomePage(episodes) {
 // Episode Page
 // ---------------------------------------------------------------------------
 
-// Future Proof newsletter CTA. Placement is a deterministic 3-way split by
-// videoId (top / mid / end) so we can A/B which position converts; each variant
-// carries a distinct utm_content. Kept in sync with the one-off backfill in
-// scripts/inject-newsletter-cta.js — same hash, same markup.
+// Future Proof newsletter CTA. Placement is a deterministic 2-way split by
+// videoId — "top" (after the About the Guest card) vs "end" (before Related);
+// both clean, always-visible slots, never inside the transcript. Each variant
+// carries a distinct utm_content so we can A/B which converts. Kept in sync
+// with the one-off backfill in scripts/inject-newsletter-cta.js.
 function ctaVariantOf(id) {
   let h = 5381;
   for (let i = 0; i < id.length; i++) h = ((h << 5) + h + id.charCodeAt(i)) >>> 0;
-  return ["top", "mid", "end"][h % 3];
+  return ["top", "end"][h % 2];
 }
 function newsletterCta(variant) {
   const url =
     "https://siliconvalleygirl.beehiiv.com/subscribe" +
     "?utm_source=marinamogilkoco&amp;utm_medium=transcripts" +
     "&amp;utm_campaign=futureproof-sub&amp;utm_content=cta-" + variant;
-  return `      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.5rem 1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 1.25rem;">
+  return `      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
-        <a href="${url}" target="_blank" rel="noopener" style="flex:0 0 auto;background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
+        <a href="${url}" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>`;
 }
 
@@ -662,14 +663,12 @@ function renderEpisodePage(d) {
       return `<p>${esc(para)}</p>`;
     });
 
-  // Newsletter CTA placement (see ctaVariantOf). "mid" splices into the middle
-  // of the transcript; too-short transcripts fall back to the "end" slot.
+  // Newsletter CTA placement (see ctaVariantOf): after About the Guest, or
+  // before Related — never inside the transcript.
   const ctaVariant = ctaVariantOf(d.videoId);
   const ctaBlock = newsletterCta(ctaVariant);
-  const midOK = ctaVariant === "mid" && transcriptParas.length >= 2;
-  if (midOK) transcriptParas.splice(Math.floor(transcriptParas.length / 2), 0, ctaBlock);
   const ctaTop = ctaVariant === "top" ? ctaBlock + "\n\n    " : "";
-  const ctaEnd = ctaVariant === "end" || (ctaVariant === "mid" && !midOK) ? ctaBlock + "\n\n    " : "";
+  const ctaEnd = ctaVariant === "end" ? ctaBlock + "\n\n    " : "";
 
   const transcriptHtml = transcriptParas.join("\n            ");
 
