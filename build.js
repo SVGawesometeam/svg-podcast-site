@@ -361,22 +361,21 @@ function renderHomePage(episodes) {
   const episodeListHtml = episodes
     .map((ep) => {
       const date = formatDate(ep.publishedAt);
-      // Compilations list several guests (comma-separated). We don't surface
-      // their names on the home page — a montage shouldn't compete with each
-      // guest's own episode for a "[name] podcast" query.
+      // Compilations list several guests (comma-separated). On the home page we
+      // show Marina as the host instead of the guest list: a montage shouldn't
+      // compete with each guest's own episode for a "[name] podcast" query, and
+      // the row still reads consistently ("Marina Mogilko · date · duration").
       const isCompilation = !!(ep.guestName && ep.guestName.includes(","));
-      const guest = ep.guestName || "Marina Mogilko";
-      const metaSpans = [];
-      if (!isCompilation) metaSpans.push(`<span>${esc(guest)}</span>`);
-      metaSpans.push(`<span>${date}</span>`);
-      metaSpans.push(`<span>${esc(ep.duration)}</span>`);
+      const guest = isCompilation || !ep.guestName ? "Marina Mogilko" : ep.guestName;
       return `
             <a href="/episode/${ep.videoId}/" class="episode-row">
               <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy">
               <div class="episode-row-info">
                 <div class="episode-row-title">${esc(ep.title)}</div>
                 <div class="episode-row-meta">
-                  ${metaSpans.join("\n                  ")}
+                  <span>${esc(guest)}</span>
+                  <span>${date}</span>
+                  <span>${esc(ep.duration)}</span>
                 </div>
               </div>
             </a>`;
