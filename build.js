@@ -590,6 +590,26 @@ function renderHomePage(episodes) {
 // Episode Page
 // ---------------------------------------------------------------------------
 
+// Future Proof newsletter CTA. Placement is a deterministic 3-way split by
+// videoId (top / mid / end) so we can A/B which position converts; each variant
+// carries a distinct utm_content. Kept in sync with the one-off backfill in
+// scripts/inject-newsletter-cta.js — same hash, same markup.
+function ctaVariantOf(id) {
+  let h = 5381;
+  for (let i = 0; i < id.length; i++) h = ((h << 5) + h + id.charCodeAt(i)) >>> 0;
+  return ["top", "mid", "end"][h % 3];
+}
+function newsletterCta(variant) {
+  const url =
+    "https://siliconvalleygirl.beehiiv.com/subscribe" +
+    "?utm_source=marinamogilkoco&amp;utm_medium=transcripts" +
+    "&amp;utm_campaign=futureproof-sub&amp;utm_content=cta-" + variant;
+  return `      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.5rem 1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 1.25rem;">
+        <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
+        <a href="${url}" target="_blank" rel="noopener" style="flex:0 0 auto;background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
+      </aside>`;
+}
+
 function renderEpisodePage(d) {
   const published = formatDate(d.publishedAt);
   const isoDate = new Date(d.publishedAt).toISOString();
@@ -629,7 +649,7 @@ function renderEpisodePage(d) {
     cleanedTranscript = `**Marina Mogilko:** ${cleanedTranscript.trimStart()}`;
   }
 
-  const transcriptHtml = cleanedTranscript
+  const transcriptParas = cleanedTranscript
     .split(/\n\n+/)
     .map((para) => {
       const speakerMatch = para.match(/^\*\*(.+?):\*\*\s*([\s\S]*)/);
@@ -640,8 +660,18 @@ function renderEpisodePage(d) {
         return `<p><strong${cls}>${esc(name)}:</strong> ${esc(speakerMatch[2])}</p>`;
       }
       return `<p>${esc(para)}</p>`;
-    })
-    .join("\n            ");
+    });
+
+  // Newsletter CTA placement (see ctaVariantOf). "mid" splices into the middle
+  // of the transcript; too-short transcripts fall back to the "end" slot.
+  const ctaVariant = ctaVariantOf(d.videoId);
+  const ctaBlock = newsletterCta(ctaVariant);
+  const midOK = ctaVariant === "mid" && transcriptParas.length >= 2;
+  if (midOK) transcriptParas.splice(Math.floor(transcriptParas.length / 2), 0, ctaBlock);
+  const ctaTop = ctaVariant === "top" ? ctaBlock + "\n\n    " : "";
+  const ctaEnd = ctaVariant === "end" || (ctaVariant === "mid" && !midOK) ? ctaBlock + "\n\n    " : "";
+
+  const transcriptHtml = transcriptParas.join("\n            ");
 
   const relatedHtml = d.relatedVideos
     .map(
@@ -887,7 +917,7 @@ function renderEpisodePage(d) {
       <p class="guest-bio">${esc(d.aboutGuest)}</p>
     </div>
 
-    <div class="tabs" role="tablist">
+    ${ctaTop}<div class="tabs" role="tablist">
       <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-notes" onclick="switchTab('notes')">Show Notes</button>
       <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-timestamps" onclick="switchTab('timestamps')">Timestamps</button>
       <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-transcript" onclick="switchTab('transcript')">Transcript</button>
@@ -915,7 +945,7 @@ function renderEpisodePage(d) {
       </div>
     </div>
 
-    <section class="related-section">
+    ${ctaEnd}<section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
         ${relatedHtml}
