@@ -1,0 +1,21 @@
+{
+  "videoId": "Y854KRfONAU",
+  "episode": "The AI Workflow That Puts You in the Top 1% (compilation) — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint file «TOP Use Cases 3 audio.wav» (trintId dnGR9bWUTV6XeS3-f7xaQQ) — финальный монтаж, получен через коннектор Trint (get_file_content) с диаризацией.",
+  "verifiedAgainstVideo": "Сегменты и их порядок сверены с расшифровкой самого опубликованного ролика (бэкенд svg-dashboard, транскрибирует аудио видео, published 2026-08-18, 23 мин). Все 39 абзацев draft 3 присутствуют в видео и в том же порядке (проверено скользящими окнами по нормализованному тексту; расхождения — только на уровне распознавания слов). Из видео отсутствует лишь филлер «Hmm» — выброшен.",
+  "whyNotDraft2": "Сначала собрал из «draft 2» (pZGCt8XcRJW22Sxb2V5CpA, 16.08). Позже нашлась «TOP Use Cases 3 audio.wav» (17.08, обновлена 18.08) — новее и финальнее. Структура та же (те же 5 гостей, тот же порядок, та же карта говорящих), отличия — мелкие правки распознавания. Пересобрано из draft 3.",
+  "note": "Бэкенд отдаёт транскрипт без говорящих и с неверным списком гостей («Lana Lopez, Eric Brynjolfsson» — всего двое). На деле это КОМПИЛЯЦИЯ из пяти гостей.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Marina Mogilko (закадровый нарратив)",
+    "Speaker 3": "Marina Mogilko (её вопросы в интервью)",
+    "Speaker 2": "Luana Lopes Lara",
+    "Speaker 4": "Erik Brynjolfsson",
+    "Speaker 5": "Peter Yang",
+    "Speaker 6": "Aaron Levie",
+    "Speaker 7": "Sal Khan"
+  },
+  "speakerMapEvidence": "Марина в закадре называет каждого гостя перед его клипом: «I was talking to Luana Lopes Lara, who co-founded Kalshi»; «Erik runs the Digital Economy Lab at Stanford»; «Peter Yang… left Meta, Reddit, Roblox… built 16 apps»; «The next person I want to highlight is Aaron Levie… runs Box»; «Sal Khan runs Khan Academy… 200 engineers».",
+  "formatting": "Реплики склеены по говорящему (Speaker 1 и 3 → Marina), длинные монологи разбиты на абзацы до 170 слов, ярлык у первого абзаца. Итого 53 абзаца / 35 подписанных реплик: Marina 18, Aaron Levie 6, Erik 5, Sal Khan 4, Luana 1, Peter Yang 1.",
+  "fixes": "Исправлены ASR/бэкенд-искажения имён и брендов: Flight City→Perplexity, Kulshy→Kalshi, Lorna Lopez→Luana Lopes Lara, Eric→Erik Brynjolfsson, Aaron Levy→Aaron Levie; TenSpark/Genspar→Genspark, «GPT Clyde Gemini»→«GPT, Claude, Gemini», Nana Banana→Nano Banana, Vio→Veo, Whisperflow→Wispr Flow, Boris Czerny→Boris Cherny, Proplexity→Perplexity, «download Cloud»→«download Claude», «perplexity/publicity computer»→«Perplexity Comet», «chat, GPT plan»→«ChatGPT plan», «top COs»→«top CEOs».",
+  "metadataFix": "guestName: с «Luana Lopes Lara, Erik Brynjolfsson» (2) на все 5; guestTitle → «Kalshi, Stanford, Box & Khan Academy»."
+}
