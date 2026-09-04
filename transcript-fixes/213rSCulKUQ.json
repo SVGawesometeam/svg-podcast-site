@@ -1,0 +1,20 @@
+{
+  "videoId": "213rSCulKUQ",
+  "episode": "Stop Sending Resumes: The Top 1% Hiring Secret (compilation) — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint file «SVG - How to Get Hired - 4 (YT)(4K).mp4» (trintId WkYag4mdR7Wbp08Q4GLPbQ) — финальный кат, обновлён 2026-09-04 (дата публикации). Получен через коннектор Trint (get_file_content) с диаризацией.",
+  "note": "Бэкенд отдал транскрипт без говорящих и с guestName «Multiple Guests». На деле это КОМПИЛЯЦИЯ из 7 гостей. Собрано из Trint; раскладку подтвердила Марина.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Marina Mogilko (закадровый нарратив + её вопросы + реклама Transcriptor + плаг рассылки Future Proof)",
+    "Speaker 2": "Sal Khan (Khan Academy)",
+    "Speaker 3": "Ryan Roslansky (экс-CEO LinkedIn)",
+    "Speaker 4": "Yamini Rangan (HubSpot)",
+    "Speaker 5": "Grant Lee (Gamma)",
+    "Speaker 6": "Aaron Levie (Box)",
+    "Speaker 7": "Luana Lopes Lara (Kalshi)",
+    "Speaker 8": "Conor Grennan"
+  },
+  "speakerMapEvidence": "Марина в закадре называет каждого гостя перед его клипом: «I put that exact question to Sal Khan, who runs Khan Academy»; «Ryan Roslansky, who ran LinkedIn for six years»; «Yamini Rangan… runs HubSpot»; «Graham Lee. He co-founded Gamma» (Grant Lee); «ask Aaron Levy how technical… running Box» (Aaron Levie); «Luana Lopez Lara co-founded Kalshi»; «Connor Grannon told me something». Совпадает со списком гостей из бэкенда.",
+  "formatting": "Реплики склеены по говорящему, длинные монологи разбиты на абзацы до 170 слов, ярлык у первого абзаца. Итого 44 абзаца / 27 реплик: Marina 14, Sal Khan 4, Aaron Levie 4, остальные по 1.",
+  "fixes": "Исправлены ASR/бэкенд-искажения имён/брендов: Graham Lee→Grant Lee; Aaron Levy→Aaron Levie; Luana Lopez Lara→Luana Lopes Lara; Caoshi/Kaoshi→Kalshi; Connor Grannon→Conor Grennan; «download Cloud»→Claude; «codecs Pride…»→«Codex. Probably Claude, Cowork, Perplexity»; «Claw Gemini, ChatGBT»→«Claude, Gemini, ChatGPT»; «Layton»→LinkedIn; «Erin described»→Aaron; «$6.5 million job openings»→«6.5 million»; «equipment meant to»→«a commitment to work». Спонсор — Transcriptor (Марина подтвердила; ASR давал Transcripter/Transcriptor). Реклама и плаг рассылки оставлены (по правилу рекламу не режем).",
+  "metadataFix": "guestName: «Multiple Guests» → 7 имён; guestTitle → «Khan Academy, LinkedIn, HubSpot, Gamma, Box, Kalshi & NYU Stern»; meta/OG/Twitter description переписаны (гость+компания по каждому); JSON-LD performer.name = 7 имён, jobTitle = компании. Заголовок оставлен без имён гостей (правило компиляций). На главной показывается «Marina Mogilko»."
+}
