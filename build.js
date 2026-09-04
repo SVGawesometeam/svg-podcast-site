@@ -144,6 +144,7 @@ function readExistingEpisodeMeta(videoId, html) {
 async function build() {
   const videoIds = fs.readFileSync(IDS_FILE, "utf8")
     .split("\n").map(l => l.trim()).filter(Boolean);
+  const idSet = new Set(videoIds);
 
   console.log(`Found ${videoIds.length} video IDs`);
 
@@ -166,6 +167,9 @@ async function build() {
     console.log(`[${i + 1}/${videoIds.length}] Fetching ${videoId}...`);
     try {
       const ep = await fetchEpisode(videoId);
+      // Only link related episodes that are actually on the site — the backend
+      // sometimes returns neighbours that haven't been added yet (broken links).
+      ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
       fs.mkdirSync(epDir, { recursive: true });
       fs.writeFileSync(epFile, renderEpisodePage(ep));
       allEpisodes.push(ep);

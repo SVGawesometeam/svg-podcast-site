@@ -1,0 +1,14 @@
+{
+  "videoId": "o-wv_szZ0V0",
+  "episode": "Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint file «final Andrew Ng .wav» (trintId fMK_KHjqSUqKSRiDoBxQBQ) — финальный кат, получен через коннектор Trint (get_file_content) с диаризацией. Начало совпадает с опубликованным видео («This is Andrew. He co-founded Google Brain and Coursera»).",
+  "note": "Бэкенд отдал транскрипт с битой диаризацией: 7 абзацев под фантомным «Speaker Name» (настоящее имя было вшито первой строкой текста) и несколько абзацев, где вопрос Марины и ответ Эндрю склеены под одним ярлыком. Пересобрано из Trint.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Andrew Ng",
+    "Speaker 2": "Marina Mogilko (ведущая: вопросы + закадровый нарратив + реклама HubSpot)"
+  },
+  "speakerMapEvidence": "В [8] Марина задаёт длинный вопрос как Speaker 2, в [9] Эндрю отвечает как Speaker 1. Speaker 2 также ведёт закадр («This is Andrew. He co-founded Google Brain and Coursera»), рекламу HubSpot и плаг рассылки Future Proof — всё это ведущая.",
+  "formatting": "Реплики склеены по говорящему, длинные монологи разбиты на абзацы до 170 слов, ярлык у первого абзаца. Итого 87 абзацев / 63 реплики (Andrew Ng 32, Marina 31). Холодное открытие (тизер-нарезка) оставлено как в ролике.",
+  "fixes": "Исправлены ASR-искажения имён/брендов: Eric Brinovson→Erik Brynjolfsson; track/chat/Chad GPT→ChatGPT; PR and registry capture→regulatory capture; Metamuse→Llama; Quen→Qwen; open way→open weight; Yoshua Benja→Yoshua Bengio; Johnson Huang→Jensen Huang; OpenAid→OpenAI; NMPI→MNPI; Air Aspire→AI Aspire; one-too-many→one-to-many; fear monitoring→fear-mongering; moshaps→mishaps; убрана нечитаемая «Seymour». Реклама HubSpot оставлена (по правилу рекламу не режем).",
+  "relatedFix": "Бэкенд подтянул в related выпуск 213rSCulKUQ, которого ещё нет на сайте (битая ссылка) — заменён на 72duHF7iZiU (Erik Brynjolfsson, которого Эндрю прямо упоминает). В build.js добавлен фильтр: related только на videoId из списка сайта."
+}
