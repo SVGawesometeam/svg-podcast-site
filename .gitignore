@@ -1,2 +1,5 @@
 .vercel
 node_modules/
+
+# Guest research dossiers — not part of the deployed site
+dossiers/
