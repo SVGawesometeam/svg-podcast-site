@@ -1,0 +1,15 @@
+{
+  "videoId": "JEZVl3BkSLk",
+  "episode": "Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint file «SVG_Shishir_episode_lowq.mp4» (trintId yDVZzW5yTCCzd_3jcu0y3g) — финальный кат, status edited, обновлён 2026-09-09. Получен через коннектор Trint (get_file_content) с диаризацией. Начало совпадает с расшифровкой самого видео («You learn to be a manager… This is Shishir… ran product for YouTube… board of Spotify… company behind Grammarly»).",
+  "note": "Бэкенд отдал транскрипт без диаризации (98 абзацев сплошным текстом). Пересобрано из Trint. Один гость — Shishir Mehrotra.",
+  "trintSpeakerMap": {
+    "Speaker 1": "Shishir Mehrotra",
+    "Speaker 2": "Marina Mogilko (вопросы + закадровый нарратив + реклама MongoDB + плаг рассылки Future Proof)",
+    "Speaker 3": "короткие бэкчэннелы («Mm-hmm», «Points.», «Yeah.») — выброшены, в видео их нет"
+  },
+  "speakerMapEvidence": "В [1] Марина в закадре представляет гостя («This is Shishir. He spent 20 years… ran product for YouTube… board of Spotify… company behind Grammarly») как Speaker 2; в [6] она задаёт вопрос как Speaker 2, в [7] Shishir отвечает как Speaker 1. Speaker 2 также ведёт рекламу MongoDB и плаг рассылки — это ведущая.",
+  "formatting": "Реплики склеены по говорящему, длинные монологи разбиты на абзацы до 170 слов, ярлык у первого абзаца. Итого 103 абзаца / 72 реплики (Shishir 36, Marina 36). Холодное открытие (тизер) оставлено как в ролике.",
+  "fixes": "Исправлены ASR/бэкенд-искажения: Shashir→Shishir; Grammarley/Grammarely/Grammerly/Grammery→Grammarly; «Grammar does over 100 billion»→«Grammarly does…»; Koda→Coda; «entire Flatter up»→«entire ladder up»; список инструментов в рекламе MongoDB «Cloud, Cloud Code, Codec, ScrockBuild, Devin cursor»→«Claude, Claude Code, Codex, Devin, Cursor»; Ryan Ruslansky→Ryan Roslansky; «sacred heart»→«Sacred Heart». Реклама MongoDB и плаг рассылки оставлены (по правилу рекламу не режем).",
+  "metadataFix": "В заголовок (title/H1/OG/Twitter/JSON-LD) добавлено «| Shishir Mehrotra» (было без имени гостя). guest-name/guest-title из бэкенда корректны."
+}

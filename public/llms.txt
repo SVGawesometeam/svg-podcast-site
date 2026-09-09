@@ -32,6 +32,7 @@
 
 ## Podcast Guests and Their Episodes
 Every guest interview on the Silicon Valley Girl podcast, newest first. Each line is the guest, their role, the year, and the page with the full transcript.
+- Shishir Mehrotra — CEO of Superhuman, Founder of Coda, Former CPO of YouTube, Spotify Board Member (2026): https://marinamogilko.co/episode/JEZVl3BkSLk/
 - Andrew Ng — Co-founder of Coursera, Founder of Google Brain, AI educator (2026): https://marinamogilko.co/episode/o-wv_szZ0V0/
 - Luana Lopes Lara — Co-Founder of Kalshi (2026): https://marinamogilko.co/episode/xiJsfvaxzRY/
 - Anne Wojcicki — Co-founder and CEO of 23andMe (2026): https://marinamogilko.co/episode/VF2FwZ_PXhw/
