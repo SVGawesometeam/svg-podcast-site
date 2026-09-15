@@ -1,0 +1,35 @@
+{
+  "videoId": "cVGHg4Vd9uM",
+  "episode": "The Biggest AI Opportunities Are Hiding in Boring Businesses (compilation) — Silicon Valley Girl Podcast",
+  "transcriptSource": "Trint file «SVG - The best AI side hustle - 3 (1).mp4» (trintId f1LlRryAQX6IB_9PN4jm0Q) — финальный кат, status edited, обновлён 2026-09-11 17:02 (день публикации). Получен через коннектор Trint (get_file_content) с диаризацией. Более ранние версии «- 1» и «- 2» не использовались.",
+  "correspondenceCheck": "Первые реплики совпадают дословно с расшифровкой самого видео («I find that building something meaningful… If you're trying to make money with AI, this is probably where you're stuck»). Длительность Trint 1437 с против 1439 с на YouTube.",
+  "note": "Бэкенд отдал компиляцию из 9 говорящих почти без говорящих: 42 абзаца без ярлыка, по 2 у Eddie Kim / «Jesse Jang» / Marina. Атрибуция пересобрана по Trint, слова взяты из текста бэкенда (чище распознан), Trint решал только «кто говорит».",
+  "trintSpeakerMap": {
+    "Speaker 1": "Andrew Ng",
+    "Speaker 2": "Marina Mogilko (закадровый нарратив, вопросы, реклама Omnisend, плаг рассылки Future Proof)",
+    "Speaker 3": "Sal Khan",
+    "Speaker 4": "Alex Mashrabov",
+    "Speaker 5": "Amjad Masad",
+    "Speaker 6": "Eddie Kim",
+    "Speaker 7": "Jesse Zhang",
+    "Speaker 8": "Allie K. Miller",
+    "Speaker 9": "Daniel Priestley"
+  },
+  "speakerMapEvidence": "Марина (Speaker 2: «on my Silicon Valley Girl podcast», реклама, «my newsletter, Future Proof») называет каждого гостя перед или сразу после его клипа: «That's Sal Khan, the founder of Khan Academy» (после Speaker 3); «I talked to Alex Mashrabov… the founder of Higgsfield» (перед Speaker 4); «Amjad Masad, the CEO of Replit, explained…» (перед Speaker 5); «I asked the legendary Andrew Ng, founder of Coursera» (перед Speaker 1, тот же спикер открывает ролик); «Eddie Kim is the co-founder and head of technology at Gusto… Here's what he said» (перед Speaker 6); «Jesse Zhang, the CEO of Decagon» (перед Speaker 7); «Allie K. Miller put the rule much more simply» (перед Speaker 8); «Daniel Priestley suggests 90 days» (перед Speaker 9). Совпадает со списком гостей в описании YouTube плюс Alex Mashrabov, который назван в таймкодах ролика (03:00), но не в списке из семи имён.",
+  "attributionChangesVsBackend": [
+    "«But at the same time, what OpenAI models are training on…» — у бэкенда внутри реплики Amjad Masad; по Trint это Speaker 2 (Марина), реплика вынесена ей.",
+    "«When you're developing something.» — по Trint Speaker 2 (Марина), подсказка Eddie Kim про R&D tax credit; у бэкенда склеена с ответом Эдди.",
+    "«You said you're personally 10x more productive?» — по Trint Speaker 2 (Марина), вопрос к Allie K. Miller; у бэкенда стоял в начале её абзаца.",
+    "«Because there's no pressure of continuity like I have to do this for you.» — по Trint Speaker 2 (Марина), у бэкенда внутри реплики Daniel Priestley.",
+    "Ответная реплика после Аллиного «Should we ever charge by the hour again?» — «We're actually switching that in my team… we should pay by video» — по Trint Speaker 2 (Марина)."
+  ],
+  "unresolvedNote": "Блок Allie K. Miller «We made that same. When did you make that shift? A week ago. But still, but now is the time.» — Trint отдаёт все три фразы Speaker 8 (get_times_from_quotes: 1197–1203 с). По смыслу «A week ago» может быть ответом Марины на вопрос Аллие, но диаризация с этим не согласна; оставлено по Trint (правило: логика разговора не заменяет данные диаризации). Нужна проверка Мариной по видео.",
+  "formatting": "Реплики склеены по говорящему, длинные монологи Марины разбиты на абзацы до ~170 слов по границам предложений, ярлык только у первого абзаца реплики. Итого 51 абзац / 30 реплик (Marina 15, Andrew Ng 2, Amjad Masad 2, Eddie Kim 3, Jesse Zhang 2, Allie K. Miller 2, Daniel Priestley 2, Sal Khan 1, Alex Mashrabov 1). Холодное открытие (Andrew Ng) оставлено как в ролике. Обрывок «nd domain expertise matters more.» (абзац 17 бэкенда) приклеен обратно к предыдущему предложению.",
+  "fixes": "Исправлены искажения имён/брендов из текста бэкенда: Salcan→Sal Khan; K Academy→Khan Academy; Silicon Valley Growth podcast→Silicon Valley Girl podcast; Alex Mashrab / Mashraov→Alex Mashrabov; Hicksfield→Higgsfield; Jad Masad→Amjad Masad; Jesse Jang→Jesse Zhang; Ali K. Miller→Allie K. Miller; Lingua Trip→LinguaTrip; O1 visa→O-1 visa; «product test service»→«productized service» (по Trint); «make every point where someone waits»→«mark every point…». Адрес в рекламе оставлен как у бэкенда («www.omnisend.com/aimcp»); Trint слышит «omnisen.com slash AI slash MCP», по видео не проверено.",
+  "adsKept": "Реклама Omnisend и плаг рассылки Future Proof оставлены (по правилу рекламу не режем). Автосрезка build.js их вырезала при первой сборке — блок восстановлен вручную из текста бэкенда.",
+  "metadataFix": "guestName: 7 имён из бэкенда → 8 имён в порядке появления (добавлен Alex Mashrabov, у которого есть клип в ролике); guestTitle «Founder of Khan Academy · CEO of Replit · Founder of Coursera · AI founders and researchers» → «Khan Academy, Higgsfield, Replit, Coursera, Gusto, Decagon, Open Machine & entrepreneur-author Daniel Priestley»; meta/OG/Twitter description переписаны (гость+компания); guest-bio переписана — у бэкенда было выдуманное «Eddie Kim, Jesse Zhang, Allie K. Miller, and Daniel Priestley… have built companies in the past two years», роли взяты из собственных страниц гостей на сайте (guest-title) и из слов Марины в ролике; JSON-LD performer.name/jobTitle обновлены. Заголовок оставлен без имён гостей (правило компиляций). На главной показывается «Marina Mogilko».",
+  "nameSpelling": "Allie K. Miller — написание из описания ролика на YouTube; на её собственной странице сайта (YfRkj9kmQf0) и в компиляции zL2PIa72gJ4 она подписана «Allie Miller».",
+  "relatedAdded": "К трём карточкам бэкенда (JEZVl3BkSLk, 213rSCulKUQ, o-wv_szZ0V0) добавлена четвёртая — выпуск Сала Хана s-Iz-lLAhdg «Khan Academy CEO: The Real AI Opportunity Is in Boring Industries», заголовок прочитан с той страницы.",
+  "lastmod": "Запись для страницы удалена из sitemap-lastmod.json после ручной правки, чтобы первая дата в sitemap была датой публикации (2026-09-11), а не днём правки.",
+  "confirmedBy": "не подтверждено; собрано Claude 2026-09-15, ждёт проверки Марины (см. unresolvedNote)"
+}
