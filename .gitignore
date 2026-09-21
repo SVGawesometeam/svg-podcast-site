@@ -3,3 +3,7 @@ node_modules/
 
 # Guest research dossiers — not part of the deployed site
 dossiers/
+
+# Finder metadata — created whenever the folder is opened, never part of the site
+.DS_Store
+**/.DS_Store

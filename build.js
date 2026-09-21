@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const { ICONS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
+const { TOPICS, FIELDS } = require("./lib/contact-fields");
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
@@ -130,8 +132,10 @@ function readExistingEpisodeMeta(videoId, html) {
   const guestMatch = html.match(/<div class="guest-name">([^<]+)<\/div>/);
   const guestTitleMatch = html.match(/<div class="guest-title">([^<]*)<\/div>/);
   const durationMatch = html.match(/<span>(\d+ MIN)<\/span>/);
+  const descMatch = html.match(/<meta name="description" content="([^"]*)"/);
   return {
     videoId,
+    description: descMatch ? unesc(descMatch[1]) : "",
     title: titleMatch ? unesc(titleMatch[1]) : videoId,
     thumbnail: imgMatch ? imgMatch[1] : `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
     publishedAt: dateMatch ? dateMatch[1] : new Date().toISOString(),
@@ -185,6 +189,11 @@ async function build() {
 
   fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes));
   console.log("Written public/index.html");
+
+  const episodesDir = path.join(PUBLIC_DIR, "episodes");
+  fs.mkdirSync(episodesDir, { recursive: true });
+  fs.writeFileSync(path.join(episodesDir, "index.html"), renderEpisodesPage(allEpisodes));
+  console.log("Written public/episodes/index.html");
 
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
   console.log("Written public/sitemap.xml");
@@ -247,6 +256,7 @@ function renderSitemap(episodes) {
   const lastmod = lastmodFor(episodes);
   const urls = [
     `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
+    `  <url><loc>${SITE_URL}/episodes/</loc><priority>0.8</priority></url>`,
     ...episodes.map(ep =>
       `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${lastmod[ep.videoId].date}</lastmod></url>`
     ),
@@ -307,53 +317,23 @@ function writeLlmsTxt(episodes) {
 // Shared
 // ---------------------------------------------------------------------------
 
-const ICONS = {
-  youtube: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg>`,
-  spotify: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg>`,
-  apple: `<svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg>`,
-  instagram: `<svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg>`,
-  linkedin: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg>`,
-  twitter: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg>`,
-  tiktok: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg>`,
-  newsletter: `<svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg>`,
-  mail: `<svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#5b6470"/><path fill="#fff" d="M5 7.5h14a.5.5 0 0 1 .5.5v.4l-7.5 4.3L4.5 8.4V8a.5.5 0 0 1 .5-.5zM4.5 9.9l6.9 3.95a1 1 0 0 0 1 0L19.5 9.9V16a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5z"/></svg>`,
-};
-
-const SHARED_HEAD = `
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">`;
-
-const SHARED_HEADER = `
-  <header class="site-header">
-    <a href="/" class="logo">Silicon Valley Girl Podcast</a>
-    <nav class="header-links">
-      <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube}</a>
-      <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify}</a>
-      <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple}</a>
-      <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram}</a>
-      <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin}</a>
-    </nav>
-  </header>`;
-
-const SHARED_FOOTER = `
-  <footer class="site-footer">&copy; 2026 Silicon Valley Girl Podcast &middot; Marina Mogilko</footer>`;
 
 function slugify(str) {
   return String(str).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
+// timeZone is pinned because publishedAt is a UTC instant and six episodes go
+// out between 20:40 and 21:07 UTC. Without it the rendered day comes from
+// whichever machine ran the build, so those six flip a day east of UTC and the
+// build stops being reproducible. UTC also reproduces the dates already
+// published: no episode goes out before 12:00 UTC, so the UTC day and the US
+// publishing day are always the same one.
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 }
 
@@ -361,30 +341,230 @@ function formatDate(dateStr) {
 // Home Page
 // ---------------------------------------------------------------------------
 
-function renderHomePage(episodes) {
-  const episodeListHtml = episodes
-    .map((ep) => {
-      const date = formatDate(ep.publishedAt);
-      // Compilations list several guests (comma-separated). On the home page we
-      // show Marina as the host instead of the guest list: a montage shouldn't
-      // compete with each guest's own episode for a "[name] podcast" query, and
-      // the row still reads consistently ("Marina Mogilko · date · duration").
-      const isCompilation = !!(ep.guestName && ep.guestName.includes(","));
-      const guest = isCompilation || !ep.guestName ? "Marina Mogilko" : ep.guestName;
-      return `
-            <a href="/episode/${ep.videoId}/" class="episode-row">
-              <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">${esc(ep.title)}</div>
-                <div class="episode-row-meta">
-                  <span>${esc(guest)}</span>
-                  <span>${date}</span>
-                  <span>${esc(ep.duration)}</span>
-                </div>
-              </div>
-            </a>`;
-    })
+// Short form for the cover-story meta line ("SEP 8 2026"). UTC-pinned for the
+// same reason as formatDate — see the comment there.
+function formatDateShort(dateStr) {
+  return new Date(dateStr)
+    .toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })
+    .replace(",", "")
+    .toUpperCase();
+}
+
+// Compilations list several guests (comma-separated). Everywhere on the home
+// page we show Marina as the host instead of the guest list: a montage should
+// not compete with each guest's own episode for a "[name] podcast" query.
+function displayGuest(ep) {
+  const isCompilation = !!(ep.guestName && ep.guestName.includes(","));
+  return isCompilation || !ep.guestName ? "Marina Mogilko" : ep.guestName;
+}
+
+// Built from lib/contact-fields.js so the markup and the server-side validator
+// can never disagree about names, options or limits. Every control gets a real
+// <label for> — the mock's uppercase field names are styling, not placeholders,
+// and a placeholder disappears the moment someone starts typing.
+function renderFormFields() {
+  return FIELDS.map((f) => {
+    const id = `f-${f.name}`;
+    const req = f.required ? " required" : "";
+    const cap = f.max ? ` maxlength="${f.max}"` : "";
+    const auto = f.autocomplete ? ` autocomplete="${f.autocomplete}"` : "";
+    const ph = f.placeholder ? ` placeholder="${esc(f.placeholder)}"` : "";
+
+    let control;
+    if (f.type === "select") {
+      const options = TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join("\n            ");
+      control = `<select id="${id}" name="${f.name}"${req}>\n            ${options}\n          </select>`;
+    } else if (f.type === "textarea") {
+      control = `<textarea id="${id}" name="${f.name}" rows="6"${req}${cap}${ph}></textarea>`;
+    } else {
+      control = `<input type="${f.type}" id="${id}" name="${f.name}"${req}${cap}${auto}${ph}>`;
+    }
+
+    return `        <div class="field field-${f.name}">
+          <label for="${id}">${esc(f.label)}</label>
+          ${control}
+        </div>`;
+  }).join("\n");
+}
+
+// Pin a specific episode to the top of the homepage. Set to null (or a
+// videoId no longer on the site) and the newest episode takes the slot again,
+// which is what the page does by default.
+const FEATURED_VIDEO_ID = "o-wv_szZ0V0";
+
+
+// Every episode on one page, linked from the homepage archive. Separate from
+// the homepage because revealing 110 cards in place buried everything below
+// them — the form included — behind an endless scroll.
+function renderEpisodesPage(episodes) {
+  const cards = episodes
+    .map(
+      (ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${formatDateShort(ep.publishedAt)} &middot; ${esc(ep.duration)}</p>
+              <h3 class="ep-card-title">${esc(ep.title)}</h3>
+            </div>
+          </a>`
+    )
     .join("\n");
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All episodes — Silicon Valley Girl Podcast</title>
+  <meta name="description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko — conversations with the founders and scientists building AI.">
+  <link rel="canonical" href="${SITE_URL}/episodes/">
+  <meta property="og:title" content="All episodes — Silicon Valley Girl Podcast">
+  <meta property="og:description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${SITE_URL}/episodes/">
+  <meta property="og:image" content="${SITE_URL}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  ${SHARED_HEAD}
+  <style>
+    /* CHROME-START */${CHROME_CSS}
+    /* CHROME-END */
+
+    body {
+      font-family: var(--body); background: var(--ground); color: var(--ink);
+      line-height: 1.55; margin: 0; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    h1, h3 { margin: 0; font-weight: 400; }
+    p { margin: 0; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .archive-page { padding: clamp(2rem, 3.5vw, 3rem) 0 clamp(3rem, 5vw, 4rem); }
+    .archive-page h1 {
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .archive-count {
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 2rem;
+    }
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .back-home {
+      display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
+      font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 1rem; }
+      .archive-grid { grid-template-columns: 1fr; }
+      .ep-card-meta { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  ${SHARED_HEADER}
+
+  <main class="archive-page">
+    <div class="wrap">
+      <h1>All episodes</h1>
+      <p class="archive-count">${episodes.length} episodes</p>
+      <div class="archive-grid">
+${cards}
+      </div>
+      <a class="back-home" href="/">&larr; Back to the homepage</a>
+    </div>
+  </main>
+
+  ${SHARED_FOOTER}
+
+</body>
+</html>`;
+}
+
+function renderHomePage(episodes) {
+  const newest = episodes[0];
+  const pinned = FEATURED_VIDEO_ID
+    ? episodes.find((e) => e.videoId === FEATURED_VIDEO_ID)
+    : null;
+  if (FEATURED_VIDEO_ID && !pinned) {
+    console.log(`Note: featured episode ${FEATURED_VIDEO_ID} is not on the site — falling back to the newest.`);
+  }
+  // Two distinct slots. The hero carries whatever is pinned — an editorial
+  // pick, with no "latest" wording anywhere near it. The cover story below is
+  // always the genuinely newest episode, so "This week's cover story" stays
+  // true no matter what is pinned above it.
+  const hero = pinned || newest;
+  const cover = newest;
+  const shown = new Set([hero.videoId, cover.videoId]);
+  const rest = episodes.filter((e) => !shown.has(e.videoId));
+
+  // Six cards show; the rest stay in the markup but hidden, and "All episodes"
+  // reveals them. Keeping every episode in the DOM preserves the internal
+  // linking the archive is worth to search — moving 110 of them behind a
+  // separate page would cost that for a purely visual gain.
+  const ARCHIVE_VISIBLE = 6;
+  const archive = episodes.filter((e) => !new Set([hero.videoId, cover.videoId]).has(e.videoId));
+  const archiveHtml = rest
+    .slice(0, ARCHIVE_VISIBLE)
+    .map(
+      (ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${esc(ep.duration)}</p>
+              <h3 class="ep-card-title">${esc(ep.title)}</h3>
+            </div>
+          </a>`
+    )
+    .join("\n");
+  const moreCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
+
+  // A portrait of Marina if one has been dropped into public/ under any of
+  // these names; otherwise two recent stills, so a missing file degrades to
+  // something reasonable instead of a broken image.
+  const HOST_PHOTO_NAMES = ["host.jpg", "host.jpeg", "host.png", "host.webp"];
+  const hostPhotoFile = HOST_PHOTO_NAMES.find((n) => fs.existsSync(path.join(PUBLIC_DIR, n)));
+  const hostStills = hostPhotoFile
+    ? `<img src="/${hostPhotoFile}" alt="Marina Mogilko" class="host-photo" loading="lazy" width="640" height="800">`
+    : rest
+        .slice(0, 2)
+        .map(
+          (ep) =>
+            `<img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">`
+        )
+        .join("\n          ");
+  if (!hostPhotoFile) {
+    console.log("Note: no host photo found — drop one at public/host.jpg to replace the episode stills.");
+  }
+
+  const followLinks = [
+    ["https://www.youtube.com/@SiliconValleyGirl", "YouTube", ICONS.youtube],
+    ["https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY", "Spotify", ICONS.spotify],
+    ["https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545", "Apple", ICONS.apple],
+    ["https://www.instagram.com/siliconvalleygirlpodcast/", "Instagram", ICONS.instagram],
+    ["https://www.tiktok.com/@linguamarina", "TikTok", ICONS.tiktok],
+    ["https://www.linkedin.com/in/marinamogilko/", "LinkedIn", ICONS.linkedin],
+    ["https://x.com/siliconvalleymm", "X", ICONS.twitter],
+  ]
+    .map(
+      ([url, label, icon]) =>
+        `<a href="${url}" target="_blank" rel="noopener" class="follow-btn">${icon}<span>${label}</span></a>`
+    )
+    .join("\n            ");
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -414,177 +594,447 @@ function renderHomePage(episodes) {
   })}</script>
   ${SHARED_HEAD}
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* CHROME-START */${CHROME_CSS}
+    /* CHROME-END */
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fff;
+      font-family: var(--body);
+      background: var(--ground);
+      color: var(--ink);
+      line-height: 1.55;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; }
+    h1, h2, h3 { margin: 0; font-weight: 400; }
+    p { margin: 0; }
 
-    /* ---- Header ---- */
-    .site-header {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 900px; margin: 0 auto;
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+    .eyebrow {
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.9rem;
     }
-    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
-    .header-links { display: flex; gap: 1.25rem; align-items: center; }
-    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
-    .header-links a:hover { color: #1a1a1a; }
+    .section-title {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 4vw, 2.9rem);
+      letter-spacing: 0.01em; line-height: 1; margin-bottom: 1.8rem;
+    }
+    .accent { color: var(--accent); }
 
-    /* ---- Container ---- */
-    .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+    /* Three button styles, as the mock uses: accent for the primary watch
+       action, ink for secondary actions, outlined for the tertiary one. */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.35rem; border: 2px solid var(--ink);
+      font-size: 0.95rem; font-weight: 600; border-radius: 8px;
+      text-decoration: none; background: transparent; color: var(--ink);
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .btn:hover { background: var(--ink); color: var(--ground); }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: var(--ground); }
+    .btn-accent:hover { background: #c41210; border-color: #c41210; color: var(--ground); }
+    .btn-ink { background: var(--ink); border-color: var(--ink); color: var(--ground); }
+    .btn-ink:hover { background: var(--accent); border-color: var(--accent); color: var(--ground); }
+    .btn-text {
+      font-size: 0.95rem; font-weight: 600; text-decoration: none;
+      border-bottom: 2px solid var(--accent); padding-bottom: 2px; align-self: center;
+    }
+    .btn-text:hover { color: var(--accent); }
+
+    /* The mock sets section eyebrows as red pills, not plain red text. */
+    .pill-label {
+      display: inline-block; background: var(--accent); color: var(--ground);
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 999px;
+      margin-right: 0.8rem; vertical-align: middle;
+    }
 
     /* ---- Hero ---- */
-    .hero { margin-bottom: 3rem; }
+    .hero { padding: clamp(1.75rem, 3.5vw, 3rem) 0 clamp(1.75rem, 3.5vw, 3rem); }
+    .hero-inner {
+      display: grid; grid-template-columns: 1.25fr 0.95fr;
+      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: end;
+    }
     .hero h1 {
-      font-size: 2.5rem; font-weight: 700; line-height: 1.2;
-      letter-spacing: -0.03em; margin-bottom: 1rem;
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(2.5rem, 7vw, 6rem);
+      line-height: 0.82; letter-spacing: -0.01em;
+      margin-bottom: 1.1rem;
     }
-    .hero p {
-      font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
+    .hero-dek {
+      font-size: clamp(1rem, 1.5vw, 1.12rem); max-width: 34rem;
+      color: rgba(23, 21, 17, 0.8); margin-bottom: 1.3rem;
     }
-    .listen-links {
-      display: grid; grid-template-columns: repeat(5, 1fr);
-      gap: 0.6rem; margin-top: 1.5rem; max-width: 820px;
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    .hero-media { position: relative; }
+    .hero-media img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .hero-badge {
+      position: absolute; bottom: -0.9rem; right: -0.6rem;
+      background: var(--accent); color: #fff;
+      font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 0.6rem 0.9rem;
     }
-    .listen-links a {
-      display: flex; align-items: center; justify-content: center; gap: 0.45rem;
-      padding: 0.6rem 0.5rem; white-space: nowrap;
-      border: 1px solid #ddd; border-radius: 6px;
-      font-size: 0.8rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
-      transition: border-color 0.15s, background 0.15s;
+
+    /* ---- Cover story ---- */
+    .cover { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
+    .cover-card {
+      display: grid; grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
+      background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
     }
-    .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
-    .listen-links a svg { flex-shrink: 0; }
+    .cover-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .cover-meta {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
+    }
+    .cover-title {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      line-height: 1.02; margin-bottom: 0.9rem;
+    }
+    .cover-title a { text-decoration: none; }
+    .cover-title a:hover { color: var(--accent); }
+    .cover-dek { color: rgba(23, 21, 17, 0.78); margin-bottom: 1.4rem; }
+    .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+    /* ---- About ---- */
+    .about { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
+    .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
+    .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* ---- Archive ---- */
+    .archive { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .archive-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .archive-head .section-title { margin-bottom: 1.8rem; }
+    .archive-more {
+      background: none; border: none; border-bottom: 2px solid var(--accent);
+      font-family: var(--body); cursor: pointer; padding: 0 0 2px;
+      color: rgba(23, 21, 17, 0.62);
+    }
+
+    /* ---- Host ---- */
+    .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
+    .host .section-title { color: var(--ground); }
+    .host-inner { display: grid; grid-template-columns: 0.65fr 1.35fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+    .host-stills { display: grid; gap: 0.8rem; }
+    .host-stills img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .host-photo { object-fit: cover; aspect-ratio: 4 / 5; }
+    .host-name {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1; margin-bottom: 1.1rem;
+    }
+    .host-bio { color: rgba(255, 253, 246, 0.82); max-width: 44rem; margin-bottom: 2rem; }
+    .host-stats { display: flex; flex-wrap: wrap; gap: clamp(2rem, 6vw, 4.5rem); }
+    .stat-value { font-family: var(--display); font-size: 1.8rem; line-height: 1; display: block; }
+    .stat-label {
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
+    }
+
+    /* ---- Partnerships ---- */
+    .partnerships { padding: clamp(2.5rem, 5vw, 3.5rem) 0; border-bottom: 1px solid var(--rule); }
+    .partnerships-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem; }
+    .partnerships h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.4vw, 2.4rem); line-height: 1; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent); color: #fff; text-decoration: none;
+      padding: 0.75rem 1.2rem; font-size: 0.82rem; font-weight: 600;
+    }
+    .pill:hover { background: #c41210; }
+
+    /* ---- Newsletter + follow ---- */
+    .newsletter { padding: clamp(2rem, 3.5vw, 3rem) 0; }
+    .newsletter-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+    .newsletter h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 0.95; margin-bottom: 1rem; }
+    .newsletter p { color: rgba(23, 21, 17, 0.8); margin-bottom: 1.5rem; max-width: 30rem; }
+    .follow-links { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .follow-btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      border: 1px solid var(--rule); background: var(--card);
+      padding: 0.6rem 0.9rem; font-size: 0.78rem; font-weight: 600;
+      text-decoration: none; transition: border-color 0.15s;
+    }
+    .follow-btn:hover { border-color: var(--ink); }
+
+    /* ---- Work with Marina ---- */
+    .work { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
+    .work-inner { max-width: 760px; }
+    .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
+    .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
+    .field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .field-budget, .field-details { grid-column: 1 / -1; }
+    .field label {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.62);
+    }
+    .field input, .field select, .field textarea {
+      font-family: var(--body); font-size: 0.95rem; color: var(--ink);
+      background: var(--card); border: 1px solid var(--rule);
+      padding: 0.7rem 0.8rem; width: 100%; border-radius: 0;
+    }
+    .field textarea { resize: vertical; min-height: 8rem; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--ink); }
+    .form-submit { grid-column: 1 / -1; justify-self: start; border: none; cursor: pointer; }
+    .form-submit[disabled] { opacity: 0.6; cursor: default; }
+    .form-error {
+      grid-column: 1 / -1; background: #FDECEC; border-left: 3px solid var(--accent);
+      padding: 0.75rem 0.9rem; font-size: 0.9rem;
+    }
+    .form-done {
+      background: var(--card); border-left: 3px solid var(--accent);
+      padding: 1rem 1.1rem; font-size: 1rem;
+    }
+    /* Off-screen rather than display:none — some bots skip hidden fields. */
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+    @media (max-width: 900px) {
+      .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
+        grid-template-columns: 1fr;
+      }
+      .hero-media { order: -1; }
+      .hero-badge { right: 0.5rem; bottom: 0.5rem; }
+    }
     @media (max-width: 640px) {
-      .listen-links { grid-template-columns: repeat(2, 1fr); }
-      .listen-links a { justify-content: flex-start; padding-left: 1rem; }
-    }
+      .wrap { padding: 0 1rem; }
 
-    /* ---- About Host ---- */
-    .host-card {
-      background: #fafafa; border: 1px solid #eee; border-radius: 10px;
-      padding: 2rem; margin-bottom: 3rem;
-    }
-    .host-card h2 {
-      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
-      color: #999; margin-bottom: 1rem;
-    }
-    .host-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .host-bio {
-      font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem;
-    }
-    .host-links { display: flex; gap: 1rem; }
-    .host-links a {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-size: 0.85rem; color: #2563eb; text-decoration: none; font-weight: 500;
-    }
-    .host-links a:hover { text-decoration: underline; }
-    .host-links a svg { flex-shrink: 0; }
+      /* Labels and meta sit near 10px at desktop sizes, which is too small to
+         read comfortably on a phone. */
+      .eyebrow, .ep-card-meta, .cover-meta, .stat-label, .field label { font-size: 0.75rem; }
 
-    /* ---- Brand / Partnerships CTA ---- */
-    .brand-cta {
-      margin: 2rem 0; padding: 2rem;
-      background: #fafafa; border-radius: 10px; text-align: center;
-    }
-    .brand-cta h2 {
-      font-size: 1.25rem; font-weight: 800; text-transform: uppercase;
-      letter-spacing: -0.005em; line-height: 1.2; margin: 0 0 0.6rem; color: #e00;
-    }
-    .brand-cta p { font-size: 0.95rem; color: #111; margin: 0; }
-    .brand-cta a { color: #111; font-weight: 700; text-decoration: underline; }
-    @media (max-width: 640px) { .brand-cta h2 { font-size: 1.1rem; } }
+      /* 16px is the threshold below which iOS Safari zooms the page when a
+         field is focused, throwing the layout around mid-typing. */
+      .field input, .field select, .field textarea { font-size: 16px; }
 
-    /* ---- Episodes List ---- */
-    .episodes-section h2 {
-      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
-    }
-    .episode-row {
-      display: flex; gap: 1.25rem; padding: 1.25rem 0;
-      border-bottom: 1px solid #f0f0f0; text-decoration: none; color: inherit;
-      transition: background 0.1s; align-items: center;
-    }
-    .episode-row:first-child { border-top: 1px solid #f0f0f0; }
-    .episode-row:hover { background: #fafafa; }
-    .episode-row img {
-      width: 180px; min-width: 180px; height: auto;
-      border-radius: 6px; object-fit: cover;
-    }
-    .episode-row-info { flex: 1; min-width: 0; }
-    .episode-row-title {
-      font-size: 1rem; font-weight: 600; line-height: 1.4;
-      margin-bottom: 0.4rem;
-      display: -webkit-box; -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical; overflow: hidden;
-    }
-    .episode-row-meta {
-      font-size: 0.8rem; color: #999;
-      display: flex; gap: 0.5rem; flex-wrap: wrap;
-    }
-    .episode-row-meta span + span::before {
-      content: "\\00b7"; margin-right: 0.5rem;
-    }
+      /* The badge sits over the still at desktop widths. On a phone the image
+         is far smaller and the badge covers the thumbnail's own caption, so it
+         drops below the image instead. */
+      .hero-badge {
+        position: static; display: inline-block; margin-top: 0.6rem;
+      }
 
-    /* ---- Footer ---- */
-    .site-footer {
-      max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999;
-      border-top: 1px solid #eee;
-    }
-
-    /* ---- Responsive ---- */
-    @media (max-width: 640px) {
-      .site-header { padding: 0.75rem 1rem; }
-      .container { padding: 2rem 1rem 3rem; }
-      .hero h1 { font-size: 1.75rem; }
-      .episode-row { flex-direction: column; gap: 0.75rem; }
-      .episode-row img { width: 100%; min-width: 0; }
+      /* Comfortable tap targets. */
+      .btn, .form-submit { padding: 0.85rem 1.35rem; }
+      .archive-more { min-height: 44px; display: inline-flex; align-items: center; }
+      .follow-btn { padding: 0.7rem 0.95rem; }
+      .archive-grid { grid-template-columns: 1fr; }
+      .host-stills { grid-template-columns: 1fr 1fr; }
+      .pitch-form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Silicon Valley Girl Podcast</h1>
-      <p>Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and building the future. Hosted by Marina Mogilko.</p>
-      <div class="listen-links">
-        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube} YouTube</a>
-        <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
-        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
-        <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
-        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram">${ICONS.instagram} Podcast IG</a>
-        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok">${ICONS.tiktok} TikTok</a>
-        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
-        <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" title="X">${ICONS.twitter} X</a>
-        <a href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener" title="Newsletter">${ICONS.newsletter} Newsletter</a>
+  ${SHARED_HEADER}
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">The podcast that decodes the valley</p>
+        <h1>What AI means for<br><span class="accent">your</span> day</h1>
+        <p class="hero-dek">Marina Mogilko interviews the founders and scientists building AI, then asks them the only question that matters: what can I actually do with this today?</p>
+        <div class="hero-cta">
+          <a class="btn btn-accent" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a class="btn btn-ink" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener">Apple</a>
+        </div>
       </div>
-    </section>
+      <div class="hero-media">
+        <a href="/episode/${hero.videoId}/"><img src="${esc(hero.thumbnail)}" alt="${esc(hero.title)}" width="640" height="360"></a>
+        <span class="hero-badge">New episode weekly</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="host-card">
-      <h2>Your Host</h2>
-      <div class="host-name">Marina Mogilko</div>
-      <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
-    </section>
+  <section class="cover">
+    <div class="wrap">
+      <h2 class="section-title"><span class="pill-label">Latest</span>This week&rsquo;s cover story</h2>
+      <div class="cover-card">
+        <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" loading="lazy" width="480" height="270"></a>
+        <div>
+          <p class="cover-meta">${formatDateShort(cover.publishedAt)} &middot; ${esc(cover.duration)} &middot; With ${esc(displayGuest(cover))}</p>
+          <h3 class="cover-title"><a href="/episode/${cover.videoId}/">${esc(cover.title)}</a></h3>
+          ${cover.description ? `<p class="cover-dek">${esc(cover.description)}</p>` : ""}
+          <div class="cover-cta">
+            <a class="btn btn-ink" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
+            <a class="btn" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="brand-cta">
-      <h2>Want your brand on my podcast?</h2>
-      <p>Email us at <a href="mailto:partnerships@marinamogilko.co">partnerships@marinamogilko.co</a></p>
-    </section>
+  <section class="about">
+    <div class="wrap about-inner">
+      <h2 class="section-title">About the show</h2>
+      <div class="about-body">
+        <p>Silicon Valley Girl is a weekly interview podcast hosted by Marina Mogilko, an entrepreneur and creator based in Silicon Valley. Each episode she sits down with the founders and scientists building AI and asks them one question: what can a normal person actually do with this today?</p>
+        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work. Past guests include Andrew Ng, Fei-Fei Li, Sal Khan, Anne Wojcicki and Shishir Mehrotra.</p>
+        <p>You can watch on YouTube or listen on Spotify and Apple Podcasts. New episodes come out every week.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="episodes" class="episodes-section">
-      <h2>Episodes</h2>
-      ${episodeListHtml}
-    </section>
-  </main>
+  <section id="episodes" class="archive">
+    <div class="wrap">
+      <div class="archive-head">
+        <h2 class="section-title">The archive</h2>
+        ${moreCount ? `<a class="btn-text archive-more" href="/episodes/">All episodes &rarr;</a>` : ""}
+      </div>
+      <div class="archive-grid">
+${archiveHtml}
+      </div>
+    </div>
+  </section>
+
+  <section id="host" class="host">
+    <div class="wrap">
+      <h2 class="section-title">Meet the host</h2>
+      <div class="host-inner">
+        <div class="host-stills">
+          ${hostStills}
+        </div>
+        <div>
+          <h3 class="host-name">Marina Mogilko</h3>
+          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          <div class="host-stats">
+            <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
+            <div><span class="stat-value">Millions</span><span class="stat-label">Following along</span></div>
+            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partnerships">
+    <div class="wrap partnerships-inner">
+      <div>
+        <p class="eyebrow">Partnerships</p>
+        <h2>Want your brand on the podcast?</h2>
+      </div>
+      <a class="pill" href="mailto:partnerships@marinamogilko.co">${ICONS.mail} partnerships@marinamogilko.co</a>
+    </div>
+  </section>
+
+  <section id="subscribe" class="newsletter">
+    <div class="wrap newsletter-inner">
+      <div>
+        <h2>Get the<br>weekly brief</h2>
+        <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
+        <a class="btn btn-accent" href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener">Subscribe to the newsletter</a>
+      </div>
+      <div>
+        <p class="eyebrow">Follow along</p>
+        <div class="follow-links">
+            ${followLinks}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="wrap work-inner">
+      <h2 class="section-title">Pitch Marina anything</h2>
+      <p class="work-dek">Brand deals, podcast guests, speaking, press, partnerships &mdash; anything at all. Tell us what you have in mind and the team will get back to you.</p>
+
+      <form id="pitch-form" class="pitch-form" novalidate>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+${renderFormFields()}
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Leave this blank</label>
+          <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="rendered" value="">
+        <button type="submit" class="btn btn-accent form-submit">Send opportunity</button>
+      </form>
+
+      <p id="form-done" class="form-done" role="status" hidden>Thank you &mdash; that&rsquo;s with the team. You&rsquo;ll hear back at the address you gave.</p>
+
+      <noscript>
+        <p class="work-dek">This form needs JavaScript. Email <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a> instead and we&rsquo;ll pick it up just the same.</p>
+      </noscript>
+    </div>
+  </section>
 
   ${SHARED_FOOTER}
+
+  <script>
+    (function () {
+      var form = document.getElementById('pitch-form');
+      if (!form) return;
+      var errorBox = document.getElementById('form-error');
+      var done = document.getElementById('form-done');
+      var button = form.querySelector('button[type="submit"]');
+      var label = button.textContent;
+
+      // Stamped on load, not at build time. Baking it into the HTML would make
+      // every build produce a different index.html, and would measure the age
+      // of the deploy rather than how long this visitor spent on the page.
+      var stamp = form.querySelector('input[name="rendered"]');
+      if (stamp) stamp.value = String(Date.now());
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        errorBox.hidden = true;
+        button.disabled = true;
+        button.textContent = 'Sending…';
+
+        var payload = {};
+        new FormData(form).forEach(function (value, key) { payload[key] = value; });
+
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+          .then(function (res) {
+            return res.json().catch(function () { return {}; }).then(function (body) {
+              return { ok: res.ok, body: body };
+            });
+          })
+          .then(function (result) {
+            if (result.ok) {
+              form.hidden = true;
+              done.hidden = false;
+              done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+              return;
+            }
+            fail(result.body.error || 'Something went wrong. Please try again.');
+          })
+          .catch(function () {
+            fail('Could not reach the server. Please try again, or email pr@marinamogilko.co.');
+          });
+      });
+
+      // Never clears the form: whatever they typed stays exactly where it is.
+      function fail(message) {
+        errorBox.textContent = message;
+        errorBox.hidden = false;
+        button.disabled = false;
+        button.textContent = label;
+        errorBox.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    })();
+  </script>
 
 </body>
 </html>`;
@@ -750,16 +1200,8 @@ function renderEpisodePage(d) {
     }
     a { color: inherit; }
 
-    /* ---- Header ---- */
-    .site-header {
-      border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 900px; margin: 0 auto;
-    }
-    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
-    .header-links { display: flex; gap: 1.25rem; align-items: center; }
-    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
-    .header-links a:hover { color: #1a1a1a; }
+    /* CHROME-START */${CHROME_CSS}
+    /* CHROME-END */
 
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
@@ -862,13 +1304,7 @@ function renderEpisodePage(d) {
       -webkit-box-orient: vertical; overflow: hidden;
     }
 
-    .site-footer {
-      max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999; border-top: 1px solid #eee;
-    }
-
     @media (max-width: 640px) {
-      .site-header { padding: 0.75rem 1rem; }
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
       .episode-header h1 { font-size: 1.5rem; }
@@ -984,7 +1420,12 @@ function unesc(str) {
     .replace(/&amp;/g, "&");
 }
 
-build().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate };
+
+// Guarded so the tests can require the renderers without kicking off a build.
+if (require.main === module) {
+  build().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
