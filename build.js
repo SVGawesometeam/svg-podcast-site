@@ -612,7 +612,7 @@ function renderHomePage(episodes) {
     .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
     .eyebrow {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em;
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.16em;
       text-transform: uppercase; color: var(--accent); margin-bottom: 0.9rem;
     }
     .section-title {
@@ -652,8 +652,8 @@ function renderHomePage(episodes) {
     /* ---- Hero ---- */
     .hero { padding: clamp(1.75rem, 3.5vw, 3rem) 0 clamp(1.75rem, 3.5vw, 3rem); }
     .hero-inner {
-      display: grid; grid-template-columns: 1fr 1.1fr;
-      gap: clamp(1.5rem, 3.5vw, 3rem); align-items: end;
+      display: grid; grid-template-columns: 1.25fr 0.95fr;
+      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: end;
     }
     .hero h1 {
       font-family: var(--display); text-transform: uppercase;
@@ -849,7 +849,7 @@ function renderHomePage(episodes) {
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <p class="eyebrow">The podcast that decodes the valley</p>
-        <h1>What AI<br>means for<br><span class="accent">your</span> day</h1>
+        <h1>What AI means for<br><span class="accent">your</span> day</h1>
         <p class="hero-dek">Marina Mogilko interviews the founders and scientists building AI, then asks them the only question that matters: what can I actually do with this today?</p>
         <div class="hero-cta">
           <a class="btn btn-accent" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
