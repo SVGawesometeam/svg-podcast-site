@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,67 +357,83 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=213rSCulKUQ&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">– Why breaking in got so hard</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Why breaking in got so hard</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=76s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:16</span>
-                <span class="ts-title">– Sal Khan: what your resume shows</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Sal Khan: what your resume shows</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=146s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:26</span>
-                <span class="ts-title">– Roslansky: no linear career path anymore</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Roslansky: no linear career path anymore</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=234s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:54</span>
-                <span class="ts-title">– Being findable versus being chosen</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Being findable versus being chosen</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=266s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:26</span>
-                <span class="ts-title">– Yamini Rangan: three things HubSpot hires for</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Yamini Rangan: three things HubSpot hires for</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=419s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:59</span>
-                <span class="ts-title">– How I test this when hiring</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How I test this when hiring</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=467s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:47</span>
-                <span class="ts-title">– Grant Lee: why Gamma hires generalists</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Grant Lee: why Gamma hires generalists</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=636s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:36</span>
-                <span class="ts-title">– Do you really need technical skills?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Do you really need technical skills?</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=670s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:10</span>
-                <span class="ts-title">– Aaron Levie: how technical to get</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Aaron Levie: how technical to get</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=758s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:38</span>
-                <span class="ts-title">– The apps to open first</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">The apps to open first</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=815s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:35</span>
-                <span class="ts-title">– Junior roles: what's actually shrinking</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Junior roles: what's actually shrinking</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=862s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:22</span>
-                <span class="ts-title">– Luana Lopes Lara: AI allowed in interviews</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Luana Lopes Lara: AI allowed in interviews</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=996s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:36</span>
-                <span class="ts-title">– The question I asked every candidate</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">The question I asked every candidate</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=1023s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:03</span>
-                <span class="ts-title">– Conor Grennan: what to say in interviews</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Conor Grennan: what to say in interviews</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=1183s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:43</span>
-                <span class="ts-title">– Sal Khan: come with a hundred agents</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Sal Khan: come with a hundred agents</span>
               </a>
               <a href="https://youtube.com/watch?v=213rSCulKUQ&t=1226s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:26</span>
-                <span class="ts-title">– Five things to start this month</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Five things to start this month</span>
               </a>
       </div>
     </div>

@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,71 +358,88 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">— The change nobody is ready for</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The change nobody is ready for</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=47s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:47</span>
-                <span class="ts-title">— How knowledge work changes tomorrow</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How knowledge work changes tomorrow</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=180s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:00</span>
-                <span class="ts-title">— The agentic workflow breakthrough</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The agentic workflow breakthrough</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=258s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:18</span>
-                <span class="ts-title">— The must-have files everyone needs</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The must-have files everyone needs</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=354s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:54</span>
-                <span class="ts-title">— The one file you should NOT write yourself</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The one file you should NOT write yourself</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=428s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:08</span>
-                <span class="ts-title">— Use agents vs. don't — the productivity gap</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Use agents vs. don't — the productivity gap</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=470s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:50</span>
-                <span class="ts-title">— The trap of optimizing everything</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The trap of optimizing everything</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=707s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:47</span>
-                <span class="ts-title">— Vibe coding: when you still need an engineer</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Vibe coding: when you still need an engineer</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=818s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:38</span>
-                <span class="ts-title">— The future of software engineering</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The future of software engineering</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=907s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:07</span>
-                <span class="ts-title">— A workflow you should deploy today</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">A workflow you should deploy today</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=990s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:30</span>
-                <span class="ts-title">— Live demo: agent runs my inbox + plans a trip</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Live demo: agent runs my inbox + plans a trip</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=1278s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:18</span>
-                <span class="ts-title">— &quot;Where am I wasting my time?&quot;</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">&quot;Where am I wasting my time?&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=1368s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:48</span>
-                <span class="ts-title">— What Thibault personally uses Codex for</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What Thibault personally uses Codex for</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=1493s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:53</span>
-                <span class="ts-title">— Live demo: agent pulls my LinkedIn analytics</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Live demo: agent pulls my LinkedIn analytics</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=1555s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:55</span>
-                <span class="ts-title">— He quit his PhD after 2 weeks — would he do it today</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">He quit his PhD after 2 weeks — would he do it today</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=1668s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:48</span>
-                <span class="ts-title">— The &quot;personal tailor&quot; model of AI</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The &quot;personal tailor&quot; model of AI</span>
               </a>
               <a href="https://youtube.com/watch?v=DPe_srf0GlI&t=1744s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:04</span>
-                <span class="ts-title">— The real skill that replaces prompting</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The real skill that replaces prompting</span>
               </a>
       </div>
     </div>

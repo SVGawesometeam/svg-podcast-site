@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,63 +357,78 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">– Why building with AI is no longer the hard part</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Why building with AI is no longer the hard part</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=81s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:21</span>
-                <span class="ts-title">– Where the real AI opportunity is</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Where the real AI opportunity is</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=180s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:00</span>
-                <span class="ts-title">– Alex Mashrabov: the property management opportunity</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Alex Mashrabov: the property management opportunity</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=231s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:51</span>
-                <span class="ts-title">– Why money gets lost between the steps</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Why money gets lost between the steps</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=253s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:13</span>
-                <span class="ts-title">– Amjad Masad: your domain knowledge is the advantage</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Amjad Masad: your domain knowledge is the advantage</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=345s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:45</span>
-                <span class="ts-title">– Andrew Ng: deciding what to build is the new bottleneck</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Andrew Ng: deciding what to build is the new bottleneck</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=531s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:51</span>
-                <span class="ts-title">– 7 boring AI opportunities ranked</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">7 boring AI opportunities ranked</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=971s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:11</span>
-                <span class="ts-title">– Eddie Kim: why small businesses are adopting AI</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Eddie Kim: why small businesses are adopting AI</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=990s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:30</span>
-                <span class="ts-title">– How your current job can become an AI opportunity</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How your current job can become an AI opportunity</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=1017s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:57</span>
-                <span class="ts-title">– Jesse Zhang: the new roles created by AI</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Jesse Zhang: the new roles created by AI</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=1058s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:38</span>
-                <span class="ts-title">– What you should actually sell</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What you should actually sell</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=1151s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:11</span>
-                <span class="ts-title">– Stop selling hours, sell the outcome</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Stop selling hours, sell the outcome</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=1244s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:44</span>
-                <span class="ts-title">– How to find your first client</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How to find your first client</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=1279s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:19</span>
-                <span class="ts-title">– Daniel Priestley: test your side hustle for 90 days</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Daniel Priestley: test your side hustle for 90 days</span>
               </a>
               <a href="https://youtube.com/watch?v=cVGHg4Vd9uM&t=1344s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:24</span>
-                <span class="ts-title">– The five-step, 90-day plan</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">The five-step, 90-day plan</span>
               </a>
       </div>
     </div>

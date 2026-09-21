@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,51 +357,63 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">– Teaser</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=394s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:34</span>
-                <span class="ts-title">– How soon will AI hit jobs?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How soon will AI hit jobs?</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=571s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:31</span>
-                <span class="ts-title">– Is Khan Academy laying anyone off because of AI?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Is Khan Academy laying anyone off because of AI?</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=795s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:15</span>
-                <span class="ts-title">– AI tools that would've seemed impossible 2 years ago</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">AI tools that would've seemed impossible 2 years ago</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=849s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:09</span>
-                <span class="ts-title">– Khan Academy's $1.2M/year Anthropic bill</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Khan Academy's $1.2M/year Anthropic bill</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=1197s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:57</span>
-                <span class="ts-title">– Could AI build another Khan Academy from scratch?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Could AI build another Khan Academy from scratch?</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=1363s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:43</span>
-                <span class="ts-title">– A $10K degree with TED and ETS</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">A $10K degree with TED and ETS</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=1520s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:20</span>
-                <span class="ts-title">– The 5 durable skills that matter in an AI world</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">The 5 durable skills that matter in an AI world</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=1768s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:28</span>
-                <span class="ts-title">– What happens to non-elite universities?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What happens to non-elite universities?</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=1896s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:36</span>
-                <span class="ts-title">– Should parents still save for college?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Should parents still save for college?</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=2265s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:45</span>
-                <span class="ts-title">– What can one person do today to stay relevant?</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What can one person do today to stay relevant?</span>
               </a>
               <a href="https://youtube.com/watch?v=s-Iz-lLAhdg&t=2346s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:06</span>
-                <span class="ts-title">– The AI prompts that changed how they work</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">The AI prompts that changed how they work</span>
               </a>
       </div>
     </div>

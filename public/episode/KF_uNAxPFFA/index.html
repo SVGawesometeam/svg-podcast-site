@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,43 +358,53 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">- MIT study: ChatGPT users show 55% less brain activity</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">MIT study: ChatGPT users show 55% less brain activity</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=74s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:14</span>
-                <span class="ts-title">- Max Tegmark: &quot;Game over for humanity&quot; without AI regulation</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Max Tegmark: &quot;Game over for humanity&quot; without AI regulation</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=148s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:28</span>
-                <span class="ts-title">- Cognitive debt — what MIT discovered</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Cognitive debt — what MIT discovered</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=216s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:36</span>
-                <span class="ts-title">- How close are we to AGI — and the test that tells you</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">How close are we to AGI — and the test that tells you</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=324s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:24</span>
-                <span class="ts-title">- The one skill AI can't replace + McKinsey data</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">The one skill AI can't replace + McKinsey data</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=350s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:50</span>
-                <span class="ts-title">- Ad: HubSpot AEO Playbook</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Ad: HubSpot AEO Playbook</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=491s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:11</span>
-                <span class="ts-title">- The shocking story Max told me</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">The shocking story Max told me</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=628s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:28</span>
-                <span class="ts-title">- What's actually happening with AI regulation right now</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">What's actually happening with AI regulation right now</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=700s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:40</span>
-                <span class="ts-title">- What you can do right now</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">What you can do right now</span>
               </a>
               <a href="https://youtube.com/watch?v=KF_uNAxPFFA&t=772s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:52</span>
-                <span class="ts-title">- 3 rules for using AI</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">3 rules for using AI</span>
               </a>
       </div>
     </div>

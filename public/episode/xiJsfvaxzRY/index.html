@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,79 +358,98 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:00</span>
-                <span class="ts-title">— Intro</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=76s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:16</span>
-                <span class="ts-title">— The market Luana's team watches most right now</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The market Luana's team watches most right now</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=184s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:04</span>
-                <span class="ts-title">— What people ask to bet on now vs a year ago</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What people ask to bet on now vs a year ago</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=245s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:05</span>
-                <span class="ts-title">— The layoffs market and why 73% was a number you could trust</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The layoffs market and why 73% was a number you could trust</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=380s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">6:20</span>
-                <span class="ts-title">— How a New York bar used a market as insurance</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How a New York bar used a market as insurance</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=454s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:34</span>
-                <span class="ts-title">— Why 70% of Kalshi users never place a trade</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why 70% of Kalshi users never place a trade</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=530s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:50</span>
-                <span class="ts-title">— One number for the sentiment of a whole country</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">One number for the sentiment of a whole country</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=692s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:32</span>
-                <span class="ts-title">— What actually changes for you by the end of this year</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What actually changes for you by the end of this year</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=790s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:10</span>
-                <span class="ts-title">— Will 2026 feel lighter or heavier financially?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Will 2026 feel lighter or heavier financially?</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=840s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:00</span>
-                <span class="ts-title">— Which jobs get safer from here</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Which jobs get safer from here</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=866s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:26</span>
-                <span class="ts-title">— The 1% chance on Kalshi that came true anyway</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The 1% chance on Kalshi that came true anyway</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1011s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:51</span>
-                <span class="ts-title">— How agents changed the way she runs 170 people</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How agents changed the way she runs 170 people</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1102s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:22</span>
-                <span class="ts-title">— The weekly planning agent you could copy tomorrow</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The weekly planning agent you could copy tomorrow</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1197s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:57</span>
-                <span class="ts-title">— Why she put engineers inside design and legal</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why she put engineers inside design and legal</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1407s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:27</span>
-                <span class="ts-title">— How long can you stay a solo founder with agents?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How long can you stay a solo founder with agents?</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1572s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:12</span>
-                <span class="ts-title">— What Kalshi looks for in job interviews now</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What Kalshi looks for in job interviews now</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1730s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:50</span>
-                <span class="ts-title">— What years of ballet taught her about building Kalshi</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What years of ballet taught her about building Kalshi</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1817s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:17</span>
-                <span class="ts-title">— How suing the U.S. government helped Kalshi grow</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How suing the U.S. government helped Kalshi grow</span>
               </a>
               <a href="https://youtube.com/watch?v=xiJsfvaxzRY&t=1908s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:48</span>
-                <span class="ts-title">— Luana's advice for women building something hard</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Luana's advice for women building something hard</span>
               </a>
       </div>
     </div>

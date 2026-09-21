@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,79 +357,98 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">— Can you still compete with Big Tech in 2026?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Can you still compete with Big Tech in 2026?</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=76s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:16</span>
-                <span class="ts-title">— If anyone can vibe-code, why build anything?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">If anyone can vibe-code, why build anything?</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=151s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:31</span>
-                <span class="ts-title">— Is there still room for new AI startups?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Is there still room for new AI startups?</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=271s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:31</span>
-                <span class="ts-title">— The launch strategy almost nobody uses</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The launch strategy almost nobody uses</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=383s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:23</span>
-                <span class="ts-title">— How to find a winning startup idea in 2026</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How to find a winning startup idea in 2026</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=595s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:55</span>
-                <span class="ts-title">— The startup advantage Big Tech can't copy</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The startup advantage Big Tech can't copy</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=850s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:10</span>
-                <span class="ts-title">— The 2×2 framework for what's worth building</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The 2×2 framework for what's worth building</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1020s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:00</span>
-                <span class="ts-title">— The Slack and Dropbox growth playbook</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The Slack and Dropbox growth playbook</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1100s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:20</span>
-                <span class="ts-title">— 500 installs on day one — no marketing</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">500 installs on day one — no marketing</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1300s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:40</span>
-                <span class="ts-title">— The hidden signal of product-market fit</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The hidden signal of product-market fit</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1436s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:56</span>
-                <span class="ts-title">— Inside Chris's AI workflow</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Inside Chris's AI workflow</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1627s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:07</span>
-                <span class="ts-title">— The one job Chris won't give to AI</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The one job Chris won't give to AI</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1722s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:42</span>
-                <span class="ts-title">— The prompt that found Marina's bottleneck</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The prompt that found Marina's bottleneck</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1760s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:20</span>
-                <span class="ts-title">— The prompt that makes any AI tool better</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The prompt that makes any AI tool better</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=1945s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:25</span>
-                <span class="ts-title">— Turn every meeting into a chief of staff</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Turn every meeting into a chief of staff</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=2260s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:40</span>
-                <span class="ts-title">— Why some AI feels magical and most doesn't</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why some AI feels magical and most doesn't</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=2362s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:22</span>
-                <span class="ts-title">— What Chris tells people who fear AI</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What Chris tells people who fear AI</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=2452s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">40:52</span>
-                <span class="ts-title">— Chris on dealing with AI anxiety</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Chris on dealing with AI anxiety</span>
               </a>
               <a href="https://youtube.com/watch?v=U7apPfqHgvg&t=2604s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">43:24</span>
-                <span class="ts-title">— Chris's #1 warning for AI founders</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Chris's #1 warning for AI founders</span>
               </a>
       </div>
     </div>

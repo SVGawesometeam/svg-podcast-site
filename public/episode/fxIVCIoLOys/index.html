@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,79 +358,98 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">— What the next 3 years actually look like</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What the next 3 years actually look like</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=47s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:47</span>
-                <span class="ts-title">— Backing SpaceX when &quot;space&quot; wasn't even a category</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Backing SpaceX when &quot;space&quot; wasn't even a category</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=132s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:12</span>
-                <span class="ts-title">— The one graph Steve calls the most important ever drawn</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The one graph Steve calls the most important ever drawn</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=238s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:58</span>
-                <span class="ts-title">— The 3 giant industries about to wake up</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The 3 giant industries about to wake up</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=315s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:15</span>
-                <span class="ts-title">— The breakthrough still hiding in plain sight</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The breakthrough still hiding in plain sight</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=473s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:53</span>
-                <span class="ts-title">— Superintelligence: a 30% chance by next year?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Superintelligence: a 30% chance by next year?</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=618s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:18</span>
-                <span class="ts-title">— Why the robots are ready but we're not</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why the robots are ready but we're not</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=749s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:29</span>
-                <span class="ts-title">— How much &quot;AI code&quot; humans still actually touch</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How much &quot;AI code&quot; humans still actually touch</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=832s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:52</span>
-                <span class="ts-title">— Elon's actual secret (yes, I asked)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Elon's actual secret (yes, I asked)</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1045s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:25</span>
-                <span class="ts-title">— Why the best people keep saying yes to Elon</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why the best people keep saying yes to Elon</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1084s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:04</span>
-                <span class="ts-title">— Holding a 50-year vision when everyone says &quot;too early&quot;</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Holding a 50-year vision when everyone says &quot;too early&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1252s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:52</span>
-                <span class="ts-title">— What still surprises him after 30 years of betting</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What still surprises him after 30 years of betting</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1382s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:02</span>
-                <span class="ts-title">— What Steve is quietly betting on right now</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What Steve is quietly betting on right now</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1577s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:17</span>
-                <span class="ts-title">— Can you just copy this with ETFs? (nice try)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Can you just copy this with ETFs? (nice try)</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1611s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:51</span>
-                <span class="ts-title">— The 30-day plan when all you have is an idea</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The 30-day plan when all you have is an idea</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1773s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:33</span>
-                <span class="ts-title">— Where the best co-founders actually meet</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Where the best co-founders actually meet</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=1881s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:21</span>
-                <span class="ts-title">— When machines do everything, what's left for us?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">When machines do everything, what's left for us?</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=2122s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:22</span>
-                <span class="ts-title">— Q&amp;A: the Neuralink question everyone asks</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Q&amp;A: the Neuralink question everyone asks</span>
               </a>
               <a href="https://youtube.com/watch?v=fxIVCIoLOys&t=2352s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:12</span>
-                <span class="ts-title">— Q&amp;A: can a machine ever be conscious?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Q&amp;A: can a machine ever be conscious?</span>
               </a>
       </div>
     </div>

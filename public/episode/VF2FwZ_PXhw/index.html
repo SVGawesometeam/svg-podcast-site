@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -357,119 +359,148 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">— Intro</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=55s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:55</span>
-                <span class="ts-title">— What AI + DNA can do today that a doctor couldn't 5 years ago</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What AI + DNA can do today that a doctor couldn't 5 years ago</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=87s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:27</span>
-                <span class="ts-title">— Why the system pays to treat disease, not prevent it</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why the system pays to treat disease, not prevent it</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=120s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:00</span>
-                <span class="ts-title">— The cholesterol gene no diet can fix (Marina has it)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The cholesterol gene no diet can fix (Marina has it)</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=276s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:36</span>
-                <span class="ts-title">— Genetics vs. environment: how much can you actually control?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Genetics vs. environment: how much can you actually control?</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=371s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:11</span>
-                <span class="ts-title">— &quot;I'm 36 and don't want statins&quot; — is there another way?</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">&quot;I'm 36 and don't want statins&quot; — is there another way?</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=444s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:24</span>
-                <span class="ts-title">— The best health prompts to put into your AI right now</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The best health prompts to put into your AI right now</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=522s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:42</span>
-                <span class="ts-title">— Ad</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Ad</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=592s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:52</span>
-                <span class="ts-title">— From 14 million to 100 million: training AI on human DNA</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">From 14 million to 100 million: training AI on human DNA</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=727s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:07</span>
-                <span class="ts-title">— What happens when we can predict cancer before it starts</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What happens when we can predict cancer before it starts</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=796s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:16</span>
-                <span class="ts-title">— Connecting your wearable data to your genes</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Connecting your wearable data to your genes</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=874s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:34</span>
-                <span class="ts-title">— The environmental factors quietly raising your risk</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The environmental factors quietly raising your risk</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=982s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:22</span>
-                <span class="ts-title">— Why small daily movement beats everything</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why small daily movement beats everything</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1042s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:22</span>
-                <span class="ts-title">— The one food society agrees is bad for you</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The one food society agrees is bad for you</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1100s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:20</span>
-                <span class="ts-title">— What changed for Anne after losing her sister Susan</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What changed for Anne after losing her sister Susan</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1372s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:52</span>
-                <span class="ts-title">— Why the next five years could be transformative</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why the next five years could be transformative</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1454s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:14</span>
-                <span class="ts-title">— Who should get genetic testing — and why no one should be surprised</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Who should get genetic testing — and why no one should be surprised</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1599s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:39</span>
-                <span class="ts-title">— Baby KJ, CRISPR, and editing disease out of your genes</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Baby KJ, CRISPR, and editing disease out of your genes</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1688s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:08</span>
-                <span class="ts-title">— A reality check on biotech, drug discovery, and the FDA</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">A reality check on biotech, drug discovery, and the FDA</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1800s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:00</span>
-                <span class="ts-title">— The top things to do for your health after watching this</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The top things to do for your health after watching this</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=1917s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:57</span>
-                <span class="ts-title">— Full-body MRIs, chest CTs, and catching things early</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Full-body MRIs, chest CTs, and catching things early</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=2063s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:23</span>
-                <span class="ts-title">— Founder mindset: playing the 10+ year long game</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Founder mindset: playing the 10+ year long game</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=2280s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:00</span>
-                <span class="ts-title">— Rebuilding a town: community, kids, and downtown Los Altos</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Rebuilding a town: community, kids, and downtown Los Altos</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=2468s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">41:08</span>
-                <span class="ts-title">— &quot;Did you ever think about giving up?&quot;</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">&quot;Did you ever think about giving up?&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=2639s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">43:59</span>
-                <span class="ts-title">— Her biggest lesson from the hardest year</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Her biggest lesson from the hardest year</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=2816s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">46:56</span>
-                <span class="ts-title">— Having a baby at 45 and doing it her way</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Having a baby at 45 and doing it her way</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=3088s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">51:28</span>
-                <span class="ts-title">— Hard rules as a working mom</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Hard rules as a working mom</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=3241s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">54:01</span>
-                <span class="ts-title">— Two ambitious founders, one marriage (on Sergey)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Two ambitious founders, one marriage (on Sergey)</span>
               </a>
               <a href="https://youtube.com/watch?v=VF2FwZ_PXhw&t=3463s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">57:43</span>
-                <span class="ts-title">— The smartest thing you can do for your body in 2026</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The smartest thing you can do for your body in 2026</span>
               </a>
       </div>
     </div>

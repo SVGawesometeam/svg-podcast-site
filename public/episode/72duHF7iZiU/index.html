@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,75 +357,93 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=72duHF7iZiU&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">— Intro</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=49s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:49</span>
-                <span class="ts-title">— The 16% of entry-level jobs AI has already erased</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The 16% of entry-level jobs AI has already erased</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=123s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:03</span>
-                <span class="ts-title">— The exact jobs getting hit first (and the ones quietly growing)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The exact jobs getting hit first (and the ones quietly growing)</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=185s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:05</span>
-                <span class="ts-title">— Why every one of his Stanford students now has to ship real code</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why every one of his Stanford students now has to ship real code</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=267s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:27</span>
-                <span class="ts-title">— The plane-ticket rule that decides whether your job survives</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The plane-ticket rule that decides whether your job survives</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=452s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:32</span>
-                <span class="ts-title">— The company that &quot;won&quot; its AI hackathon with better lunch menus</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The company that &quot;won&quot; its AI hackathon with better lunch menus</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=560s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:20</span>
-                <span class="ts-title">— His money bet with a skeptic economist: &quot;AI is underhyped&quot;</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">His money bet with a skeptic economist: &quot;AI is underhyped&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=618s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:18</span>
-                <span class="ts-title">— Ad</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Ad</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=767s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:47</span>
-                <span class="ts-title">— Why your next job is running a fleet of AI agents</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Why your next job is running a fleet of AI agents</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=1005s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:45</span>
-                <span class="ts-title">— Junior engineer, marketing manager, paralegal: what he tells them</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Junior engineer, marketing manager, paralegal: what he tells them</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=1029s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:09</span>
-                <span class="ts-title">— How to become senior when the junior jobs are gone</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How to become senior when the junior jobs are gone</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=1316s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:56</span>
-                <span class="ts-title">— The radiologist Hinton said was doomed (now there's a shortage)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The radiologist Hinton said was doomed (now there's a shortage)</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=1688s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:08</span>
-                <span class="ts-title">— If AI is smarter than you, the 4 things you still get paid for</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">If AI is smarter than you, the 4 things you still get paid for</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=1893s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:33</span>
-                <span class="ts-title">— Reid Hoffman's chess story and the one human superpower</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">Reid Hoffman's chess story and the one human superpower</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=2038s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:58</span>
-                <span class="ts-title">— What to do if you don't have a podcast or a startup</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What to do if you don't have a podcast or a startup</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=2677s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">44:37</span>
-                <span class="ts-title">— What Erik would pay to keep AI for one month (his real number)</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">What Erik would pay to keep AI for one month (his real number)</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=2718s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">45:18</span>
-                <span class="ts-title">— How to start if you only use AI like a search bar</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">How to start if you only use AI like a search bar</span>
               </a>
               <a href="https://youtube.com/watch?v=72duHF7iZiU&t=3046s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">50:46</span>
-                <span class="ts-title">— The best decade in history, or the worst: his answer</span>
+                <span class="ts-dash">—</span>
+                <span class="ts-title">The best decade in history, or the worst: his answer</span>
               </a>
       </div>
     </div>

@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,43 +358,53 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
-                <span class="ts-title">- Intro</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=157s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:37</span>
-                <span class="ts-title">- Build Your Dream App With No Code</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Build Your Dream App With No Code</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=215s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:35</span>
-                <span class="ts-title">- The #1 Mistake People Make When Building With AI</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">The #1 Mistake People Make When Building With AI</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=278s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:38</span>
-                <span class="ts-title">- How to Pick a Niche That Actually Works</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">How to Pick a Niche That Actually Works</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=459s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:39</span>
-                <span class="ts-title">- The Voice Agent Business Nobody's Doing</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">The Voice Agent Business Nobody's Doing</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=678s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:18</span>
-                <span class="ts-title">- Your First Dollar by Day 30, $1M ARR by Day 90</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Your First Dollar by Day 30, $1M ARR by Day 90</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=757s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:37</span>
-                <span class="ts-title">- How to Land Your First Customers (Without Paid Ads)</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">How to Land Your First Customers (Without Paid Ads)</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=829s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:49</span>
-                <span class="ts-title">- Bill Gurley: Why This Is the Right Moment to Move Fast</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">Bill Gurley: Why This Is the Right Moment to Move Fast</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=876s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:36</span>
-                <span class="ts-title">- The Real Difference Between Winners and Quitters</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">The Real Difference Between Winners and Quitters</span>
               </a>
               <a href="https://youtube.com/watch?v=ZK-TCkETAFw&t=928s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:28</span>
-                <span class="ts-title">- The 4-Step Playbook to $10K/Month</span>
+                <span class="ts-dash">-</span>
+                <span class="ts-title">The 4-Step Playbook to $10K/Month</span>
               </a>
       </div>
     </div>

@@ -1073,12 +1073,25 @@ function renderEpisodePage(d) {
     .map((t) => `<li>${esc(t)}</li>`)
     .join("\n              ");
 
+  // Chapter titles arrive from the YouTube description with the separator dash
+  // glued to the front ("00:00 – Intro"). Left there it sits hard against the
+  // title with the time column's slack to its left, so it goes in its own span
+  // between the two and the flex gap centres it.
+  const tsDash = (title) => (title.match(/^\s*([–—-])\s*/) || [])[1] || "";
+  const tsTitle = (title) => title.replace(/^\s*[–—-]\s*/, "");
+  // Width of the widest time on this page, in characters. `ch` is the advance
+  // width of "0", so in a monospace face the column fits the time exactly
+  // whatever font the visitor actually has — a rem guess would leave slack.
+  const tsWidth = Math.max(4, ...d.timestamps.map((t) => String(t.time).length));
+
   const timestampsHtml = d.timestamps
     .map(
       (t) =>
         `<a href="https://youtube.com/watch?v=${d.videoId}&t=${t.seconds}s" class="timestamp-link" target="_blank" rel="noopener">
-                <span class="ts-time">${esc(t.time)}</span>
-                <span class="ts-title">${esc(t.title)}</span>
+                <span class="ts-time">${esc(t.time)}</span>${
+                  tsDash(t.title) ? `\n                <span class="ts-dash">${esc(tsDash(t.title))}</span>` : ""
+                }
+                <span class="ts-title">${esc(tsTitle(t.title))}</span>
               </a>`
     )
     .join("\n              ");
@@ -1283,15 +1296,17 @@ function renderEpisodePage(d) {
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: ${tsWidth}ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
