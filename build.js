@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const { ICONS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
+const { TOPICS, FIELDS } = require("./lib/contact-fields");
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
@@ -349,6 +350,35 @@ function displayGuest(ep) {
   return isCompilation || !ep.guestName ? "Marina Mogilko" : ep.guestName;
 }
 
+// Built from lib/contact-fields.js so the markup and the server-side validator
+// can never disagree about names, options or limits. Every control gets a real
+// <label for> — the mock's uppercase field names are styling, not placeholders,
+// and a placeholder disappears the moment someone starts typing.
+function renderFormFields() {
+  return FIELDS.map((f) => {
+    const id = `f-${f.name}`;
+    const req = f.required ? " required" : "";
+    const cap = f.max ? ` maxlength="${f.max}"` : "";
+    const auto = f.autocomplete ? ` autocomplete="${f.autocomplete}"` : "";
+    const ph = f.placeholder ? ` placeholder="${esc(f.placeholder)}"` : "";
+
+    let control;
+    if (f.type === "select") {
+      const options = TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join("\n            ");
+      control = `<select id="${id}" name="${f.name}"${req}>\n            ${options}\n          </select>`;
+    } else if (f.type === "textarea") {
+      control = `<textarea id="${id}" name="${f.name}" rows="6"${req}${cap}${ph}></textarea>`;
+    } else {
+      control = `<input type="${f.type}" id="${id}" name="${f.name}"${req}${cap}${auto}${ph}>`;
+    }
+
+    return `        <div class="field field-${f.name}">
+          <label for="${id}">${esc(f.label)}</label>
+          ${control}
+        </div>`;
+  }).join("\n");
+}
+
 function renderHomePage(episodes) {
   const cover = episodes[0];
   const rest = episodes.slice(1);
@@ -577,6 +607,37 @@ function renderHomePage(episodes) {
     }
     .follow-btn:hover { border-color: var(--ink); }
 
+    /* ---- Work with Marina ---- */
+    .work { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
+    .work-inner { max-width: 760px; }
+    .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
+    .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
+    .field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .field-budget, .field-details { grid-column: 1 / -1; }
+    .field label {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.62);
+    }
+    .field input, .field select, .field textarea {
+      font-family: var(--body); font-size: 0.95rem; color: var(--ink);
+      background: var(--card); border: 1px solid var(--rule);
+      padding: 0.7rem 0.8rem; width: 100%; border-radius: 0;
+    }
+    .field textarea { resize: vertical; min-height: 8rem; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--ink); }
+    .form-submit { grid-column: 1 / -1; justify-self: start; border: none; cursor: pointer; }
+    .form-submit[disabled] { opacity: 0.6; cursor: default; }
+    .form-error {
+      grid-column: 1 / -1; background: #FDECEC; border-left: 3px solid var(--accent);
+      padding: 0.75rem 0.9rem; font-size: 0.9rem;
+    }
+    .form-done {
+      background: var(--card); border-left: 3px solid var(--accent);
+      padding: 1rem 1.1rem; font-size: 1rem;
+    }
+    /* Off-screen rather than display:none — some bots skip hidden fields. */
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
     @media (max-width: 900px) {
       .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
         grid-template-columns: 1fr;
@@ -588,6 +649,7 @@ function renderHomePage(episodes) {
       .wrap { padding: 0 1rem; }
       .archive-grid { grid-template-columns: 1fr; }
       .host-stills { grid-template-columns: 1fr 1fr; }
+      .pitch-form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -699,9 +761,90 @@ ${archiveHtml}
     </div>
   </section>
 
-  <!-- FORM -->
+  <section id="work" class="work">
+    <div class="wrap work-inner">
+      <h2 class="section-title">Pitch Marina anything</h2>
+      <p class="work-dek">Brand deals, podcast guests, speaking, press, partnerships &mdash; anything at all. Tell us what you have in mind and the team will get back to you.</p>
+
+      <form id="pitch-form" class="pitch-form" novalidate>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+${renderFormFields()}
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Leave this blank</label>
+          <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="rendered" value="">
+        <button type="submit" class="btn btn-primary form-submit">Send opportunity</button>
+      </form>
+
+      <p id="form-done" class="form-done" role="status" hidden>Thank you &mdash; that&rsquo;s with the team. You&rsquo;ll hear back at the address you gave.</p>
+
+      <noscript>
+        <p class="work-dek">This form needs JavaScript. Email <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a> instead and we&rsquo;ll pick it up just the same.</p>
+      </noscript>
+    </div>
+  </section>
 
   ${SHARED_FOOTER}
+
+  <script>
+    (function () {
+      var form = document.getElementById('pitch-form');
+      if (!form) return;
+      var errorBox = document.getElementById('form-error');
+      var done = document.getElementById('form-done');
+      var button = form.querySelector('button[type="submit"]');
+      var label = button.textContent;
+
+      // Stamped on load, not at build time. Baking it into the HTML would make
+      // every build produce a different index.html, and would measure the age
+      // of the deploy rather than how long this visitor spent on the page.
+      var stamp = form.querySelector('input[name="rendered"]');
+      if (stamp) stamp.value = String(Date.now());
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        errorBox.hidden = true;
+        button.disabled = true;
+        button.textContent = 'Sending…';
+
+        var payload = {};
+        new FormData(form).forEach(function (value, key) { payload[key] = value; });
+
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+          .then(function (res) {
+            return res.json().catch(function () { return {}; }).then(function (body) {
+              return { ok: res.ok, body: body };
+            });
+          })
+          .then(function (result) {
+            if (result.ok) {
+              form.hidden = true;
+              done.hidden = false;
+              done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+              return;
+            }
+            fail(result.body.error || 'Something went wrong. Please try again.');
+          })
+          .catch(function () {
+            fail('Could not reach the server. Please try again, or email pr@marinamogilko.co.');
+          });
+      });
+
+      // Never clears the form: whatever they typed stays exactly where it is.
+      function fail(message) {
+        errorBox.textContent = message;
+        errorBox.hidden = false;
+        button.disabled = false;
+        button.textContent = label;
+        errorBox.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    })();
+  </script>
 
 </body>
 </html>`;
