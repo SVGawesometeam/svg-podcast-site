@@ -47,7 +47,7 @@ test('display and body faces are loaded', () => {
 test('header is the black bar with wordmark and nav', () => {
   assert.match(chrome.SHARED_HEADER, /SILICON VALLEY GIRL/);
   assert.match(chrome.SHARED_HEADER, /WITH MARINA MOGILKO/);
-  for (const link of ['/#episodes', '/#host', '/#subscribe']) {
+  for (const link of ['/#episodes', '/#host', '/#work', '/#subscribe']) {
     assert.ok(chrome.SHARED_HEADER.includes(link), `missing nav anchor: ${link}`);
   }
 });

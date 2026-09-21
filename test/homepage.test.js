@@ -78,7 +78,7 @@ test('the header and footer come from the shared chrome', () => {
 
 test('nav anchor targets exist on the page', () => {
   const html = renderHomePage(EPISODES);
-  for (const id of ['episodes', 'host', 'subscribe']) {
+  for (const id of ['episodes', 'host', 'work', 'subscribe']) {
     assert.ok(html.includes(`id="${id}"`), `nav points at #${id} but no such element`);
   }
 });
