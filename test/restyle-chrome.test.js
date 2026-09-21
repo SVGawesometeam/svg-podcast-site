@@ -8,6 +8,7 @@ const { patchPage } = require('../scripts/restyle-episode-chrome');
 const PAGE = `<!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     a { color: inherit; }
     .site-header {
@@ -80,4 +81,23 @@ test('throws rather than half-writing a page it does not recognise', () => {
     () => patchPage('<html><body>no chrome here</body></html>'),
     /does not match/
   );
+});
+
+// The built pages predate the redesign and requested Inter alone, so the chrome
+// named 'Bebas Neue' and silently fell back to Arial Narrow — the header read in
+// a different face from the homepage's. Patching the CSS without the font
+// request fixes nothing visible.
+test('updates the font request so the chrome gets the faces it names', () => {
+  const { html } = patchPage(PAGE);
+  assert.match(html, /Bebas\+Neue/, 'display face never requested');
+  assert.match(html, /family=Barlow/, 'body face never requested');
+  assert.match(html, /family=Inter/, 'Inter must stay — episode bodies use it');
+  assert.equal((html.match(/fonts\.googleapis\.com\/css2/g) || []).length, 1, 'duplicated the font link');
+});
+
+test('does not impose a body font on the episode itself', () => {
+  const { html } = patchPage(PAGE);
+  // Only the chrome may change face; the page's own body rule is untouched.
+  assert.ok(html.includes('.transcript-turn { color: #222; }'));
+  assert.ok(!/body\s*\{[^}]*Barlow/.test(html), 'body font was changed');
 });

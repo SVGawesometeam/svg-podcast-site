@@ -19,7 +19,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("../lib/chrome");
+const { SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("../lib/chrome");
 
 const CHROME_BLOCK = `    /* CHROME-START */${CHROME_CSS}\n    /* CHROME-END */`;
 
@@ -33,6 +33,14 @@ const SENTINEL_CSS = /^ {4}\/\* CHROME-START \*\/[\s\S]*?^ {4}\/\* CHROME-END \*
 // required for the patch to be considered valid.
 const OLD_FOOTER_CSS = /^ {4}\.site-footer \{\n[\s\S]*?^ {4}\}\n/m;
 const OLD_MQ_HEADER = /^ {6}\.site-header \{ padding: 0\.75rem 1rem; \}\n/m;
+
+// The built pages predate the redesign and still load Inter alone, so the
+// chrome declared 'Bebas Neue' and silently fell back to Arial Narrow. The
+// stylesheet link has to be patched too, or the header reads in a different
+// face from the homepage's. Only the font request changes — each page's own
+// CSS still sets Inter on the body, so transcripts are untouched.
+const FONT_LINK = /<link href="https:\/\/fonts\.googleapis\.com\/css2\?[^"]*" rel="stylesheet">/;
+const FONT_LINK_NEW = (SHARED_HEAD.match(/<link href="https:\/\/fonts\.googleapis\.com\/css2\?[^"]*" rel="stylesheet">/) || [])[0];
 
 const HEADER_MARKUP = /<header class="site-header">[\s\S]*?<\/header>/;
 const FOOTER_MARKUP = /<footer class="site-footer">[\s\S]*?<\/footer>/;
@@ -54,7 +62,15 @@ function patchPage(html) {
   html = html.replace(OLD_FOOTER_CSS, "");
   html = html.replace(OLD_MQ_HEADER, "");
 
-  // 3. Markup.
+  // 3. The font request, so the chrome renders in the faces it names.
+  if (!FONT_LINK_NEW) throw new Error("could not read the font link out of SHARED_HEAD");
+  if (FONT_LINK.test(html)) {
+    html = html.replace(FONT_LINK, FONT_LINK_NEW);
+  } else if (!html.includes(FONT_LINK_NEW)) {
+    throw new Error("does not match: no Google Fonts stylesheet link");
+  }
+
+  // 4. Markup.
   if (!HEADER_MARKUP.test(html)) throw new Error("does not match: no <header class=\"site-header\">");
   if (!FOOTER_MARKUP.test(html)) throw new Error("does not match: no <footer class=\"site-footer\">");
   html = html.replace(HEADER_MARKUP, SHARED_HEADER.trim());
