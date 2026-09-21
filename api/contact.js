@@ -10,7 +10,18 @@
 const { validate, isBot } = require("../lib/contact-validation");
 
 const TO = "pr@marinamogilko.co";
-const FROM = "Silicon Valley Girl <forms@marinamogilko.co>";
+
+// Resend's shared sending domain, which needs no DNS setup at all. The From
+// address is cosmetic here: this mail only ever goes to our own inbox, and
+// reply_to below is set to whoever filled the form, so hitting reply answers
+// them rather than this address.
+//
+// Verifying a domain would let this read forms@marinamogilko.co and would
+// improve deliverability. It was skipped deliberately — marinamogilko.co
+// already has one SPF record covering Google Workspace, Mailgun and Brevo, and
+// a domain may only have one, so touching it risks the business mail for a
+// cosmetic gain. A Gmail filter on pr@ handles the spam risk instead.
+const FROM = "Silicon Valley Girl <onboarding@resend.dev>";
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {

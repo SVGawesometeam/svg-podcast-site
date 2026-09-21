@@ -118,3 +118,14 @@ test('the API key never appears in a response body', async () => {
     assert.ok(!JSON.stringify(res.body).includes('test-key'), 'key leaked to the client');
   }
 });
+
+// The From address is Resend's shared domain: no DNS setup, and it is cosmetic
+// because this mail only ever goes to our own inbox. What matters is that
+// Reply-To is the person who wrote in.
+test('sends from a domain that needs no DNS, and replies go to the sender', async () => {
+  const { calls } = await run(GOOD);
+  const sent = JSON.parse(calls[0].init.body);
+  assert.match(sent.from, /resend\.dev>$/, 'From should need no domain verification');
+  assert.equal(sent.reply_to, GOOD.email);
+  assert.deepEqual(sent.to, ['pr@marinamogilko.co']);
+});
