@@ -35,8 +35,10 @@ function parseDuration(iso) {
   return totalMin + ' MIN';
 }
 
+// timeZone pinned so the month cannot flip on an episode published near the
+// end of a UTC month. See the comment on formatDate in build.js.
 function formatDate(iso) {
-  return new Date(iso).toLocaleDateString('en-US',{month:'long',year:'numeric'}).toUpperCase();
+  return new Date(iso).toLocaleDateString('en-US',{month:'long',year:'numeric',timeZone:'UTC'}).toUpperCase();
 }
 
 function parseTimestamps(description) {
