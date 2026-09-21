@@ -23,1586 +23,1364 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* CHROME-START */
+  :root {
+    --accent: #DF1615;
+    --ground: #FFFDF6;
+    --ink: #171511;
+    --card: #FFFFFF;
+    --muted: #C5C1B9;
+    --rule: rgba(23, 21, 17, 0.12);
+    --display: 'Bebas Neue', 'Arial Narrow', Impact, sans-serif;
+    --body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  img { max-width: 100%; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---- Header ---- */
+  .site-header {
+    background: var(--ink);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .site-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .site-header .wordmark {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+  .site-header .wordmark span {
+    font-family: var(--body);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .site-nav a {
+    font-family: var(--body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.82;
+    transition: opacity 0.15s;
+  }
+  .site-nav a:hover { opacity: 1; }
+  .site-nav .nav-cta {
+    background: var(--accent);
+    opacity: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+  }
+  .site-nav .nav-cta:hover { background: #c41210; }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    background: var(--ink);
+    color: #fff;
+    margin-top: 0;
+  }
+  .site-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-mark {
+    font-family: var(--display);
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+  .site-footer .footer-legal {
+    font-family: var(--body);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .site-header-inner {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.7rem;
+    }
+    .site-header .wordmark { font-size: 1.2rem; flex-wrap: wrap; gap: 0.5rem; }
+    .site-nav { gap: 1.1rem; }
+    .site-footer-inner { padding: 2rem 1rem; flex-direction: column; align-items: flex-start; }
+  }
+    /* CHROME-END */
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fff;
+      font-family: var(--body);
+      background: var(--ground);
+      color: var(--ink);
+      line-height: 1.55;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; }
+    h1, h2, h3 { margin: 0; font-weight: 400; }
+    p { margin: 0; }
 
-    /* ---- Header ---- */
-    .site-header {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 900px; margin: 0 auto;
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+    .eyebrow {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.9rem;
     }
-    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
-    .header-links { display: flex; gap: 1.25rem; align-items: center; }
-    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
-    .header-links a:hover { color: #1a1a1a; }
+    .section-title {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 4vw, 2.9rem);
+      letter-spacing: 0.01em; line-height: 1; margin-bottom: 1.8rem;
+    }
+    .accent { color: var(--accent); }
 
-    /* ---- Container ---- */
-    .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      padding: 0.72rem 1.15rem; border: 1px solid var(--ink);
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none; background: transparent;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn:hover { background: var(--ink); color: var(--ground); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn-primary:hover { background: #c41210; border-color: #c41210; color: #fff; }
+    .btn-text {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px; align-self: center;
+    }
 
     /* ---- Hero ---- */
-    .hero { margin-bottom: 3rem; }
+    .hero { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+    .hero-inner {
+      display: grid; grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(2rem, 5vw, 4rem); align-items: center;
+    }
     .hero h1 {
-      font-size: 2.5rem; font-weight: 700; line-height: 1.2;
-      letter-spacing: -0.03em; margin-bottom: 1rem;
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(3rem, 8.5vw, 7rem);
+      line-height: 0.85; letter-spacing: -0.01em;
+      margin-bottom: 1.4rem;
     }
-    .hero p {
-      font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
+    .hero-dek {
+      font-size: clamp(1rem, 1.5vw, 1.12rem); max-width: 34rem;
+      color: rgba(23, 21, 17, 0.8); margin-bottom: 1.8rem;
     }
-    .listen-links {
-      display: grid; grid-template-columns: repeat(5, 1fr);
-      gap: 0.6rem; margin-top: 1.5rem; max-width: 820px;
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    .hero-media { position: relative; }
+    .hero-media img { width: 100%; height: auto; display: block; }
+    .hero-badge {
+      position: absolute; bottom: -0.9rem; right: -0.6rem;
+      background: var(--accent); color: #fff;
+      font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 0.6rem 0.9rem;
     }
-    .listen-links a {
-      display: flex; align-items: center; justify-content: center; gap: 0.45rem;
-      padding: 0.6rem 0.5rem; white-space: nowrap;
-      border: 1px solid #ddd; border-radius: 6px;
-      font-size: 0.8rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
-      transition: border-color 0.15s, background 0.15s;
+
+    /* ---- Cover story ---- */
+    .cover { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .cover-card {
+      display: grid; grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
+      background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
     }
-    .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
-    .listen-links a svg { flex-shrink: 0; }
+    .cover-card img { width: 100%; height: auto; display: block; }
+    .cover-meta {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
+    }
+    .cover-title {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      line-height: 1.02; margin-bottom: 0.9rem;
+    }
+    .cover-title a { text-decoration: none; }
+    .cover-title a:hover { color: var(--accent); }
+    .cover-dek { color: rgba(23, 21, 17, 0.78); margin-bottom: 1.4rem; }
+    .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+    /* ---- About ---- */
+    .about { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
+    .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* ---- Archive ---- */
+    .archive { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+
+    /* ---- Host ---- */
+    .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
+    .host .section-title { color: var(--ground); }
+    .host-inner { display: grid; grid-template-columns: 0.65fr 1.35fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+    .host-stills { display: grid; gap: 0.8rem; }
+    .host-stills img { width: 100%; height: auto; display: block; }
+    .host-name {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1; margin-bottom: 1.1rem;
+    }
+    .host-bio { color: rgba(255, 253, 246, 0.82); max-width: 44rem; margin-bottom: 2rem; }
+    .host-stats { display: flex; flex-wrap: wrap; gap: clamp(2rem, 6vw, 4.5rem); }
+    .stat-value { font-family: var(--display); font-size: 1.8rem; line-height: 1; display: block; }
+    .stat-label {
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
+    }
+
+    /* ---- Partnerships ---- */
+    .partnerships { padding: clamp(2.5rem, 5vw, 3.5rem) 0; border-bottom: 1px solid var(--rule); }
+    .partnerships-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem; }
+    .partnerships h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.4vw, 2.4rem); line-height: 1; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent); color: #fff; text-decoration: none;
+      padding: 0.75rem 1.2rem; font-size: 0.82rem; font-weight: 600;
+    }
+    .pill:hover { background: #c41210; }
+
+    /* ---- Newsletter + follow ---- */
+    .newsletter { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+    .newsletter-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+    .newsletter h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 0.95; margin-bottom: 1rem; }
+    .newsletter p { color: rgba(23, 21, 17, 0.8); margin-bottom: 1.5rem; max-width: 30rem; }
+    .follow-links { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .follow-btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      border: 1px solid var(--rule); background: var(--card);
+      padding: 0.6rem 0.9rem; font-size: 0.78rem; font-weight: 600;
+      text-decoration: none; transition: border-color 0.15s;
+    }
+    .follow-btn:hover { border-color: var(--ink); }
+
+    @media (max-width: 900px) {
+      .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
+        grid-template-columns: 1fr;
+      }
+      .hero-media { order: -1; }
+      .hero-badge { right: 0.5rem; bottom: 0.5rem; }
+    }
     @media (max-width: 640px) {
-      .listen-links { grid-template-columns: repeat(2, 1fr); }
-      .listen-links a { justify-content: flex-start; padding-left: 1rem; }
-    }
-
-    /* ---- About Host ---- */
-    .host-card {
-      background: #fafafa; border: 1px solid #eee; border-radius: 10px;
-      padding: 2rem; margin-bottom: 3rem;
-    }
-    .host-card h2 {
-      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
-      color: #999; margin-bottom: 1rem;
-    }
-    .host-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .host-bio {
-      font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem;
-    }
-    .host-links { display: flex; gap: 1rem; }
-    .host-links a {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-size: 0.85rem; color: #2563eb; text-decoration: none; font-weight: 500;
-    }
-    .host-links a:hover { text-decoration: underline; }
-    .host-links a svg { flex-shrink: 0; }
-
-    /* ---- Brand / Partnerships CTA ---- */
-    .brand-cta {
-      margin: 2rem 0; padding: 2rem;
-      background: #fafafa; border-radius: 10px; text-align: center;
-    }
-    .brand-cta h2 {
-      font-size: 1.25rem; font-weight: 800; text-transform: uppercase;
-      letter-spacing: -0.005em; line-height: 1.2; margin: 0 0 0.6rem; color: #e00;
-    }
-    .brand-cta p { font-size: 0.95rem; color: #111; margin: 0; }
-    .brand-cta a { color: #111; font-weight: 700; text-decoration: underline; }
-    @media (max-width: 640px) { .brand-cta h2 { font-size: 1.1rem; } }
-
-    /* ---- Episodes List ---- */
-    .episodes-section h2 {
-      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
-    }
-    .episode-row {
-      display: flex; gap: 1.25rem; padding: 1.25rem 0;
-      border-bottom: 1px solid #f0f0f0; text-decoration: none; color: inherit;
-      transition: background 0.1s; align-items: center;
-    }
-    .episode-row:first-child { border-top: 1px solid #f0f0f0; }
-    .episode-row:hover { background: #fafafa; }
-    .episode-row img {
-      width: 180px; min-width: 180px; height: auto;
-      border-radius: 6px; object-fit: cover;
-    }
-    .episode-row-info { flex: 1; min-width: 0; }
-    .episode-row-title {
-      font-size: 1rem; font-weight: 600; line-height: 1.4;
-      margin-bottom: 0.4rem;
-      display: -webkit-box; -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical; overflow: hidden;
-    }
-    .episode-row-meta {
-      font-size: 0.8rem; color: #999;
-      display: flex; gap: 0.5rem; flex-wrap: wrap;
-    }
-    .episode-row-meta span + span::before {
-      content: "\00b7"; margin-right: 0.5rem;
-    }
-
-    /* ---- Footer ---- */
-    .site-footer {
-      max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999;
-      border-top: 1px solid #eee;
-    }
-
-    /* ---- Responsive ---- */
-    @media (max-width: 640px) {
-      .site-header { padding: 0.75rem 1rem; }
-      .container { padding: 2rem 1rem 3rem; }
-      .hero h1 { font-size: 1.75rem; }
-      .episode-row { flex-direction: column; gap: 0.75rem; }
-      .episode-row img { width: 100%; min-width: 0; }
+      .wrap { padding: 0 1rem; }
+      .archive-grid { grid-template-columns: 1fr; }
+      .host-stills { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Silicon Valley Girl Podcast</h1>
-      <p>Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and building the future. Hosted by Marina Mogilko.</p>
-      <div class="listen-links">
-        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg> YouTube</a>
-        <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg> Spotify</a>
-        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg> Apple Podcasts</a>
-        <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg> Instagram</a>
-        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg> Podcast IG</a>
-        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg> TikTok</a>
-        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg> LinkedIn</a>
-        <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" title="X"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg> X</a>
-        <a href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener" title="Newsletter"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg> Newsletter</a>
+  
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="wordmark">SILICON VALLEY GIRL<span>WITH MARINA MOGILKO</span></a>
+      <nav class="site-nav">
+        <a href="/#episodes">Episodes</a>
+        <a href="/#host">Host</a>
+        <a href="/#subscribe" class="nav-cta">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">The podcast that decodes the valley</p>
+        <h1>What AI<br>means for<br><span class="accent">your</span> day</h1>
+        <p class="hero-dek">Marina Mogilko interviews the founders and scientists building AI, then asks them the only question that matters: what can I actually do with this today?</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener">Apple</a>
+          <a class="btn-text" href="/episode/cVGHg4Vd9uM/">Latest episode &rarr;</a>
+        </div>
       </div>
-    </section>
-
-    <section class="host-card">
-      <h2>Your Host</h2>
-      <div class="host-name">Marina Mogilko</div>
-      <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
-    </section>
-
-    <section class="brand-cta">
-      <h2>Want your brand on my podcast?</h2>
-      <p>Email us at <a href="mailto:partnerships@marinamogilko.co">partnerships@marinamogilko.co</a></p>
-    </section>
-
-    <section id="episodes" class="episodes-section">
-      <h2>Episodes</h2>
-      
-            <a href="/episode/cVGHg4Vd9uM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/cVGHg4Vd9uM/maxresdefault.jpg" alt="The Biggest AI Opportunities Are Hiding in Boring Businesses" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">The Biggest AI Opportunities Are Hiding in Boring Businesses</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>September 11, 2026</span>
-                  <span>24 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/JEZVl3BkSLk/" class="episode-row">
-              <img src="https://img.youtube.com/vi/JEZVl3BkSLk/maxresdefault.jpg" alt="Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra</div>
-                <div class="episode-row-meta">
-                  <span>Shishir Mehrotra</span>
-                  <span>September 8, 2026</span>
-                  <span>39 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/213rSCulKUQ/" class="episode-row">
-              <img src="https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg" alt="Top 1% Career Strategy: How to Get Hired in the AI Era" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Top 1% Career Strategy: How to Get Hired in the AI Era</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>September 4, 2026</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/o-wv_szZ0V0/" class="episode-row">
-              <img src="https://img.youtube.com/vi/o-wv_szZ0V0/maxresdefault.jpg" alt="Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think</div>
-                <div class="episode-row-meta">
-                  <span>Andrew Ng</span>
-                  <span>August 28, 2026</span>
-                  <span>38 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Y854KRfONAU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Y854KRfONAU/maxresdefault.jpg" alt="The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>August 18, 2026</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/xiJsfvaxzRY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/xiJsfvaxzRY/maxresdefault.jpg" alt="$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months | Luana Lopes Lara" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months | Luana Lopes Lara</div>
-                <div class="episode-row-meta">
-                  <span>Luana Lopes Lara</span>
-                  <span>August 11, 2026</span>
-                  <span>34 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/2NFQ4-6MzuU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/2NFQ4-6MzuU/maxresdefault.jpg" alt="How to Rank #1 in AI: The Ultimate GEO (Generative Engine Optimization) Guide" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How to Rank #1 in AI: The Ultimate GEO (Generative Engine Optimization) Guide</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>August 4, 2026</span>
-                  <span>18 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/VF2FwZ_PXhw/" class="episode-row">
-              <img src="https://img.youtube.com/vi/VF2FwZ_PXhw/maxresdefault.jpg" alt="Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki</div>
-                <div class="episode-row-meta">
-                  <span>Anne Wojcicki</span>
-                  <span>July 28, 2026</span>
-                  <span>62 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/72duHF7iZiU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/72duHF7iZiU/maxresdefault.jpg" alt="Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson</div>
-                <div class="episode-row-meta">
-                  <span>Erik Brynjolfsson</span>
-                  <span>July 21, 2026</span>
-                  <span>54 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/HMvTSaaO9sU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/HMvTSaaO9sU/maxresdefault.jpg" alt="Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers</div>
-                <div class="episode-row-meta">
-                  <span>Daniil and David Liberman</span>
-                  <span>July 17, 2026</span>
-                  <span>41 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/s-Iz-lLAhdg/" class="episode-row">
-              <img src="https://img.youtube.com/vi/s-Iz-lLAhdg/maxresdefault.jpg" alt="Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan</div>
-                <div class="episode-row-meta">
-                  <span>Sal Khan</span>
-                  <span>July 14, 2026</span>
-                  <span>45 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/fxIVCIoLOys/" class="episode-row">
-              <img src="https://img.youtube.com/vi/fxIVCIoLOys/maxresdefault.jpg" alt="Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson</div>
-                <div class="episode-row-meta">
-                  <span>Steve Jurvetson</span>
-                  <span>July 7, 2026</span>
-                  <span>44 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/2j9yjRSpMSo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/2j9yjRSpMSo/maxresdefault.jpg" alt="AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher</div>
-                <div class="episode-row-meta">
-                  <span>Richard Socher</span>
-                  <span>June 26, 2026</span>
-                  <span>50 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/subu-xHrp1w/" class="episode-row">
-              <img src="https://img.youtube.com/vi/subu-xHrp1w/maxresdefault.jpg" alt="Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier</div>
-                <div class="episode-row-meta">
-                  <span>Fei-Fei Li and David Rogier</span>
-                  <span>June 19, 2026</span>
-                  <span>50 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Yu0z7-KMHpo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Yu0z7-KMHpo/maxresdefault.jpg" alt="AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang</div>
-                <div class="episode-row-meta">
-                  <span>Peter Yang</span>
-                  <span>June 16, 2026</span>
-                  <span>30 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/LAEaSbZ2IR8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/LAEaSbZ2IR8/maxresdefault.jpg" alt="$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma</div>
-                <div class="episode-row-meta">
-                  <span>Grant Lee</span>
-                  <span>June 12, 2026</span>
-                  <span>46 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/qNt5TNn9D9Y/" class="episode-row">
-              <img src="https://img.youtube.com/vi/qNt5TNn9D9Y/maxresdefault.jpg" alt="She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley</div>
-                <div class="episode-row-meta">
-                  <span>Esther Wojcicki</span>
-                  <span>June 9, 2026</span>
-                  <span>44 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/U7apPfqHgvg/" class="episode-row">
-              <img src="https://img.youtube.com/vi/U7apPfqHgvg/maxresdefault.jpg" alt="$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal</div>
-                <div class="episode-row-meta">
-                  <span>Chris Pedregal</span>
-                  <span>May 29, 2026</span>
-                  <span>45 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/bzfklNb1wjc/" class="episode-row">
-              <img src="https://img.youtube.com/vi/bzfklNb1wjc/maxresdefault.jpg" alt="Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu</div>
-                <div class="episode-row-meta">
-                  <span>Howie Liu</span>
-                  <span>May 27, 2026</span>
-                  <span>33 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/DPe_srf0GlI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/DPe_srf0GlI/maxresdefault.jpg" alt="Head of ChatGPT &amp; Codex: Agents for Normal People Are HERE | Thibault Sottiaux" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Head of ChatGPT &amp; Codex: Agents for Normal People Are HERE | Thibault Sottiaux</div>
-                <div class="episode-row-meta">
-                  <span>Thibault Sottiaux</span>
-                  <span>May 22, 2026</span>
-                  <span>32 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ZW87Peh3tWM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ZW87Peh3tWM/maxresdefault.jpg" alt="Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward</div>
-                <div class="episode-row-meta">
-                  <span>Josh Woodward</span>
-                  <span>May 21, 2026</span>
-                  <span>34 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ExgNR94SrfI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ExgNR94SrfI/maxresdefault.jpg" alt="Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie</div>
-                <div class="episode-row-meta">
-                  <span>Aaron Levie</span>
-                  <span>May 15, 2026</span>
-                  <span>53 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Baa71rPgxvA/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Baa71rPgxvA/maxresdefault.jpg" alt="Build a Self-Running AI Company in 16 Minutes (Move 75% Faster)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Build a Self-Running AI Company in 16 Minutes (Move 75% Faster)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>May 12, 2026</span>
-                  <span>17 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/WOmRB6jNiSU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/WOmRB6jNiSU/maxresdefault.jpg" alt="AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price</div>
-                <div class="episode-row-meta">
-                  <span>MacKenzie Price</span>
-                  <span>May 8, 2026</span>
-                  <span>59 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/gwsaC3WiCqs/" class="episode-row">
-              <img src="https://img.youtube.com/vi/gwsaC3WiCqs/maxresdefault.jpg" alt="6 Profitable AI business ideas for 2026" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">6 Profitable AI business ideas for 2026</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>May 1, 2026</span>
-                  <span>24 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/zL2PIa72gJ4/" class="episode-row">
-              <img src="https://img.youtube.com/vi/zL2PIa72gJ4/maxresdefault.jpg" alt="Double Your Income With AI in 3 Months (Here's the Stack)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Double Your Income With AI in 3 Months (Here's the Stack)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>April 27, 2026</span>
-                  <span>30 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ZK-TCkETAFw/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ZK-TCkETAFw/maxresdefault.jpg" alt="Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>April 23, 2026</span>
-                  <span>17 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/00RHph_eok4/" class="episode-row">
-              <img src="https://img.youtube.com/vi/00RHph_eok4/maxresdefault.jpg" alt="AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy</div>
-                <div class="episode-row-meta">
-                  <span>Roman Yampolskiy</span>
-                  <span>April 17, 2026</span>
-                  <span>46 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/GDeEATJcbJo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/GDeEATJcbJo/maxresdefault.jpg" alt="Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn</div>
-                <div class="episode-row-meta">
-                  <span>Luis von Ahn</span>
-                  <span>April 10, 2026</span>
-                  <span>45 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/vZLY2YGUk4o/" class="episode-row">
-              <img src="https://img.youtube.com/vi/vZLY2YGUk4o/maxresdefault.jpg" alt="Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis</div>
-                <div class="episode-row-meta">
-                  <span>John Martinis</span>
-                  <span>April 8, 2026</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/YfRkj9kmQf0/" class="episode-row">
-              <img src="https://img.youtube.com/vi/YfRkj9kmQf0/maxresdefault.jpg" alt="Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller</div>
-                <div class="episode-row-meta">
-                  <span>Allie Miller</span>
-                  <span>April 3, 2026</span>
-                  <span>59 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/E0Q96IKXx6Q/" class="episode-row">
-              <img src="https://img.youtube.com/vi/E0Q96IKXx6Q/maxresdefault.jpg" alt="Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat</div>
-                <div class="episode-row-meta">
-                  <span>Mo Gawdat</span>
-                  <span>March 31, 2026</span>
-                  <span>40 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/4vIIeCqHYXA/" class="episode-row">
-              <img src="https://img.youtube.com/vi/4vIIeCqHYXA/maxresdefault.jpg" alt="Gary Vee: The AI Opportunity Is Real — You're Just Looking at It Wrong | VaynerX Chairman Gary Vaynerchuk" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Gary Vee: The AI Opportunity Is Real — You're Just Looking at It Wrong | VaynerX Chairman Gary Vaynerchuk</div>
-                <div class="episode-row-meta">
-                  <span>Gary Vaynerchuk</span>
-                  <span>March 27, 2026</span>
-                  <span>45 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/PTZ5iN9nDkY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/PTZ5iN9nDkY/maxresdefault.jpg" alt="Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias</div>
-                <div class="episode-row-meta">
-                  <span>Yossi Matias</span>
-                  <span>March 24, 2026</span>
-                  <span>20 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/KF_uNAxPFFA/" class="episode-row">
-              <img src="https://img.youtube.com/vi/KF_uNAxPFFA/maxresdefault.jpg" alt="Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor</div>
-                <div class="episode-row-meta">
-                  <span>Max Tegmark</span>
-                  <span>March 20, 2026</span>
-                  <span>16 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Dp6u0pel-Rs/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Dp6u0pel-Rs/maxresdefault.jpg" alt="Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum</div>
-                <div class="episode-row-meta">
-                  <span>Saadia Zahidi</span>
-                  <span>March 16, 2026</span>
-                  <span>21 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/nBM3_AzNYU8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/nBM3_AzNYU8/maxresdefault.jpg" alt="$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley</div>
-                <div class="episode-row-meta">
-                  <span>Bill Gurley</span>
-                  <span>March 12, 2026</span>
-                  <span>35 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Gk0n0FjeKj8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/maxresdefault.jpg" alt="Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh</div>
-                <div class="episode-row-meta">
-                  <span>Kian Katanforoosh</span>
-                  <span>March 5, 2026</span>
-                  <span>35 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/czItVEAINqw/" class="episode-row">
-              <img src="https://img.youtube.com/vi/czItVEAINqw/maxresdefault.jpg" alt="$1.3B AI CEO: &quot;You ONLY Need 2 People and 90 Days to Build a $1M Business&quot; | Higgsfield Founder Alex Mashrabov" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$1.3B AI CEO: &quot;You ONLY Need 2 People and 90 Days to Build a $1M Business&quot; | Higgsfield Founder Alex Mashrabov</div>
-                <div class="episode-row-meta">
-                  <span>Alex Mashrabov</span>
-                  <span>March 3, 2026</span>
-                  <span>34 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/S0h5oUVv0BY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg" alt="LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman</div>
-                <div class="episode-row-meta">
-                  <span>Reid Hoffman</span>
-                  <span>February 24, 2026</span>
-                  <span>28 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ktpNFfpJ5rw/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ktpNFfpJ5rw/maxresdefault.jpg" alt="LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky</div>
-                <div class="episode-row-meta">
-                  <span>Ryan Roslansky</span>
-                  <span>February 20, 2026</span>
-                  <span>24 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/0fXGtQoJgNo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/0fXGtQoJgNo/maxresdefault.jpg" alt="Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio</div>
-                <div class="episode-row-meta">
-                  <span>Yoshua Bengio</span>
-                  <span>February 16, 2026</span>
-                  <span>30 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/JFilKfL7_9A/" class="episode-row">
-              <img src="https://img.youtube.com/vi/JFilKfL7_9A/maxresdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</div>
-                <div class="episode-row-meta">
-                  <span>Daniela Rus</span>
-                  <span>February 12, 2026</span>
-                  <span>25 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/_aUKWYHLKfE/" class="episode-row">
-              <img src="https://img.youtube.com/vi/_aUKWYHLKfE/maxresdefault.jpg" alt="Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan</div>
-                <div class="episode-row-meta">
-                  <span>Conor Grennan</span>
-                  <span>February 5, 2026</span>
-                  <span>41 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/lVV0HInr0ZY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/lVV0HInr0ZY/maxresdefault.jpg" alt="$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO</div>
-                <div class="episode-row-meta">
-                  <span>Yamini Rangan</span>
-                  <span>January 30, 2026</span>
-                  <span>42 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/rxR83MF6LF0/" class="episode-row">
-              <img src="https://img.youtube.com/vi/rxR83MF6LF0/maxresdefault.jpg" alt="7 Founders Told Me What Separates Winners From Everyone Else" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">7 Founders Told Me What Separates Winners From Everyone Else</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>January 26, 2026</span>
-                  <span>21 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/CL1OfPj3ePo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/CL1OfPj3ePo/maxresdefault.jpg" alt="The Fastest Way To Build A One-Person Business (2026 Beginner Guide)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">The Fastest Way To Build A One-Person Business (2026 Beginner Guide)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>January 15, 2026</span>
-                  <span>15 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/-Epp6VmpezI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/-Epp6VmpezI/maxresdefault.jpg" alt="The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Oscar Hoglund, Epidemic Sound" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Oscar Hoglund, Epidemic Sound</div>
-                <div class="episode-row-meta">
-                  <span>Oscar Hoglund</span>
-                  <span>January 9, 2026</span>
-                  <span>38 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/6es0HhfpQlQ/" class="episode-row">
-              <img src="https://img.youtube.com/vi/6es0HhfpQlQ/maxresdefault.jpg" alt="Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It</div>
-                <div class="episode-row-meta">
-                  <span>Mel Robbins</span>
-                  <span>January 5, 2026</span>
-                  <span>67 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/HQ3eVt2jgAY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/HQ3eVt2jgAY/maxresdefault.jpg" alt="$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip</div>
-                <div class="episode-row-meta">
-                  <span>Young Zhao</span>
-                  <span>December 29, 2025</span>
-                  <span>39 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/8W5A7fIuA-A/" class="episode-row">
-              <img src="https://img.youtube.com/vi/8W5A7fIuA-A/maxresdefault.jpg" alt="I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>December 23, 2025</span>
-                  <span>19 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/9pfbGnuMNhk/" class="episode-row">
-              <img src="https://img.youtube.com/vi/9pfbGnuMNhk/maxresdefault.jpg" alt="If I need to start over in 2026, I’d learn these 7 skills first" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">If I need to start over in 2026, I’d learn these 7 skills first</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>December 15, 2025</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/RvYv90ftf2M/" class="episode-row">
-              <img src="https://img.youtube.com/vi/RvYv90ftf2M/maxresdefault.jpg" alt="$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro</div>
-                <div class="episode-row-meta">
-                  <span>Andrey Khusid</span>
-                  <span>December 11, 2025</span>
-                  <span>35 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/eaZ2R1K-SjQ/" class="episode-row">
-              <img src="https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg" alt="Future of Education: How to Get Ahead before AI Changes Everything" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Future of Education: How to Get Ahead before AI Changes Everything</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>December 5, 2025</span>
-                  <span>21 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/l6d_0PB0Pbg/" class="episode-row">
-              <img src="https://img.youtube.com/vi/l6d_0PB0Pbg/maxresdefault.jpg" alt="Future of Work 2026: The Only Jobs That Will Survive the AI Era" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Future of Work 2026: The Only Jobs That Will Survive the AI Era</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>November 28, 2025</span>
-                  <span>25 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/EuaVTPB8dxc/" class="episode-row">
-              <img src="https://img.youtube.com/vi/EuaVTPB8dxc/maxresdefault.jpg" alt="GM CEO on AI Cars and the Future of Driving | Mary Barra" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">GM CEO on AI Cars and the Future of Driving | Mary Barra</div>
-                <div class="episode-row-meta">
-                  <span>Mary Barra</span>
-                  <span>November 21, 2025</span>
-                  <span>34 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/dM5T0Oj9-90/" class="episode-row">
-              <img src="https://img.youtube.com/vi/dM5T0Oj9-90/maxresdefault.jpg" alt="Launch a $1M AI Business Solo — No Employees, No Investment, No Code" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Launch a $1M AI Business Solo — No Employees, No Investment, No Code</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>November 18, 2025</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/SP76PvgMzVU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg" alt="CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman</div>
-                <div class="episode-row-meta">
-                  <span>Mustafa Suleyman</span>
-                  <span>November 14, 2025</span>
-                  <span>42 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/nlOmBneT-oM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/nlOmBneT-oM/maxresdefault.jpg" alt="How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative</div>
-                <div class="episode-row-meta">
-                  <span>Priscilla Chan</span>
-                  <span>November 7, 2025</span>
-                  <span>31 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/NPiKEwTSwn4/" class="episode-row">
-              <img src="https://img.youtube.com/vi/NPiKEwTSwn4/maxresdefault.jpg" alt="Google Search VP on How AI Search Really Works | Robby Stein" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Google Search VP on How AI Search Really Works | Robby Stein</div>
-                <div class="episode-row-meta">
-                  <span>Robby Stein</span>
-                  <span>October 30, 2025</span>
-                  <span>28 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/APTVFZSYtiE/" class="episode-row">
-              <img src="https://img.youtube.com/vi/APTVFZSYtiE/maxresdefault.jpg" alt="Why Working HARD will Keep You Poor (unless you do this)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Why Working HARD will Keep You Poor (unless you do this)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>October 23, 2025</span>
-                  <span>16 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/tSrN8eRMEAE/" class="episode-row">
-              <img src="https://img.youtube.com/vi/tSrN8eRMEAE/maxresdefault.jpg" alt="$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley</div>
-                <div class="episode-row-meta">
-                  <span>Daniel Priestley</span>
-                  <span>October 17, 2025</span>
-                  <span>54 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/SQReIhBKFlw/" class="episode-row">
-              <img src="https://img.youtube.com/vi/SQReIhBKFlw/maxresdefault.jpg" alt="7 Habits That Turn You Into an AI-Native Professional" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">7 Habits That Turn You Into an AI-Native Professional</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>October 10, 2025</span>
-                  <span>13 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/EUrkIpq838c/" class="episode-row">
-              <img src="https://img.youtube.com/vi/EUrkIpq838c/maxresdefault.jpg" alt="ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski</div>
-                <div class="episode-row-meta">
-                  <span>Mati Staniszewski</span>
-                  <span>October 4, 2025</span>
-                  <span>44 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/L1EmhDYc11g/" class="episode-row">
-              <img src="https://img.youtube.com/vi/L1EmhDYc11g/maxresdefault.jpg" alt="5 BEST AI Businesses To Start before 2026 (For Beginners)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">5 BEST AI Businesses To Start before 2026 (For Beginners)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>October 1, 2025</span>
-                  <span>18 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/U7PcyE0p54s/" class="episode-row">
-              <img src="https://img.youtube.com/vi/U7PcyE0p54s/maxresdefault.jpg" alt="$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity</div>
-                <div class="episode-row-meta">
-                  <span>Aravind Srinivas</span>
-                  <span>September 26, 2025</span>
-                  <span>41 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Q66gsBJnKKQ/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Q66gsBJnKKQ/maxresdefault.jpg" alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger</div>
-                <div class="episode-row-meta">
-                  <span>Mike Krieger</span>
-                  <span>September 19, 2025</span>
-                  <span>44 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/UJo_MiMA7qE/" class="episode-row">
-              <img src="https://img.youtube.com/vi/UJo_MiMA7qE/maxresdefault.jpg" alt="$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon</div>
-                <div class="episode-row-meta">
-                  <span>Jesse Zhang</span>
-                  <span>September 12, 2025</span>
-                  <span>26 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ELuBhd-PgDg/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ELuBhd-PgDg/maxresdefault.jpg" alt="9 AI Skills That Will Make You Rich in 2026" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">9 AI Skills That Will Make You Rich in 2026</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>September 5, 2025</span>
-                  <span>16 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/3FgPLbfs_oY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/3FgPLbfs_oY/maxresdefault.jpg" alt="AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit</div>
-                <div class="episode-row-meta">
-                  <span>Amjad Masad</span>
-                  <span>August 29, 2025</span>
-                  <span>38 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/zCWfnfFDr90/" class="episode-row">
-              <img src="https://img.youtube.com/vi/zCWfnfFDr90/maxresdefault.jpg" alt="The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>August 26, 2025</span>
-                  <span>15 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/S9xrvZhMLMI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/S9xrvZhMLMI/maxresdefault.jpg" alt="Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU</div>
-                <div class="episode-row-meta">
-                  <span>Alex</span>
-                  <span>August 19, 2025</span>
-                  <span>39 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/8DuxOlkHdy4/" class="episode-row">
-              <img src="https://img.youtube.com/vi/8DuxOlkHdy4/maxresdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Become an Entrepreneur Today – AI stack to build your company in 2025</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>August 15, 2025</span>
-                  <span>13 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/1gm__VUG2m8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/1gm__VUG2m8/maxresdefault.jpg" alt="AI Agents EXPLAINED in 14 minutes and TOOLS for building one" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI Agents EXPLAINED in 14 minutes and TOOLS for building one</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>August 11, 2025</span>
-                  <span>15 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/3cs09XQ6cb0/" class="episode-row">
-              <img src="https://img.youtube.com/vi/3cs09XQ6cb0/maxresdefault.jpg" alt="The Future of Work: High-Paying Careers That AI Won't Replace" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">The Future of Work: High-Paying Careers That AI Won't Replace</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>July 24, 2025</span>
-                  <span>17 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/9XM8yDN-AEA/" class="episode-row">
-              <img src="https://img.youtube.com/vi/9XM8yDN-AEA/maxresdefault.jpg" alt="Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf</div>
-                <div class="episode-row-meta">
-                  <span>Thomas Wolf</span>
-                  <span>July 18, 2025</span>
-                  <span>25 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/KfoenLbhOTI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/KfoenLbhOTI/maxresdefault.jpg" alt="How to Build a Profitable Personal Brand with AI (In Just 30 Days)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How to Build a Profitable Personal Brand with AI (In Just 30 Days)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>July 11, 2025</span>
-                  <span>20 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/4jqrK-hUicQ/" class="episode-row">
-              <img src="https://img.youtube.com/vi/4jqrK-hUicQ/maxresdefault.jpg" alt="How to Build a Viral Brand Online ft. @blogilates" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How to Build a Viral Brand Online ft. @blogilates</div>
-                <div class="episode-row-meta">
-                  <span>Cassey Ho</span>
-                  <span>July 4, 2025</span>
-                  <span>38 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/PR__eFQsnhg/" class="episode-row">
-              <img src="https://img.youtube.com/vi/PR__eFQsnhg/maxresdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</div>
-                <div class="episode-row-meta">
-                  <span>Thomas Dohmke</span>
-                  <span>June 27, 2025</span>
-                  <span>22 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/IdN-b2Y_foo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/IdN-b2Y_foo/maxresdefault.jpg" alt="Marie Forleo: Progress Way Faster than 99% of people" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Marie Forleo: Progress Way Faster than 99% of people</div>
-                <div class="episode-row-meta">
-                  <span>Marie Forleo</span>
-                  <span>June 20, 2025</span>
-                  <span>42 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Ab1FyDL4HEY/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg" alt="High-income AI business ideas for 2025 (no coding, no budget)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">High-income AI business ideas for 2025 (no coding, no budget)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>June 14, 2025</span>
-                  <span>18 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/jVD8pCZeLww/" class="episode-row">
-              <img src="https://img.youtube.com/vi/jVD8pCZeLww/maxresdefault.jpg" alt="How to Use AI to Go VIRAL on Social Media (full guide)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How to Use AI to Go VIRAL on Social Media (full guide)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>June 11, 2025</span>
-                  <span>20 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/4BrBrwAXCXo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/4BrBrwAXCXo/maxresdefault.jpg" alt="Don’t Let AI Take Your Job: Master These 7 Skills Now" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Don’t Let AI Take Your Job: Master These 7 Skills Now</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>June 5, 2025</span>
-                  <span>17 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Hg-iFwW5vBo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Hg-iFwW5vBo/maxresdefault.jpg" alt="Win the AI Race in 2025 with These 9 Game-Changing Tools" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Win the AI Race in 2025 with These 9 Game-Changing Tools</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>May 31, 2025</span>
-                  <span>17 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ZYT81iUfBK4/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ZYT81iUfBK4/maxresdefault.jpg" alt="How I Launched My Merch Store in 7 Minutes Using AI Tools" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How I Launched My Merch Store in 7 Minutes Using AI Tools</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>May 28, 2025</span>
-                  <span>7 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/s5r4wdOWLjk/" class="episode-row">
-              <img src="https://img.youtube.com/vi/s5r4wdOWLjk/maxresdefault.jpg" alt="AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise</div>
-                <div class="episode-row-meta">
-                  <span>Samir Vasavada</span>
-                  <span>May 24, 2025</span>
-                  <span>45 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/qkGuzV50JWI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/qkGuzV50JWI/maxresdefault.jpg" alt="Must Have AI Skills to Save your Career in 2026" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Must Have AI Skills to Save your Career in 2026</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>May 20, 2025</span>
-                  <span>19 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/gW51vYIJgUs/" class="episode-row">
-              <img src="https://img.youtube.com/vi/gW51vYIJgUs/maxresdefault.jpg" alt="Life-Changing Lessons I Learned From The Top 1%" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Life-Changing Lessons I Learned From The Top 1%</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>May 15, 2025</span>
-                  <span>19 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/mtfB8GtJAWM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/mtfB8GtJAWM/maxresdefault.jpg" alt="Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini</div>
-                <div class="episode-row-meta">
-                  <span>Gaurav Munjal and Roman Saini</span>
-                  <span>May 13, 2025</span>
-                  <span>36 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/_tQUyvTLaSM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/_tQUyvTLaSM/maxresdefault.jpg" alt="From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja</div>
-                <div class="episode-row-meta">
-                  <span>Jenny Lei</span>
-                  <span>April 28, 2025</span>
-                  <span>32 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/PmpaFWBFy_c/" class="episode-row">
-              <img src="https://img.youtube.com/vi/PmpaFWBFy_c/maxresdefault.jpg" alt="Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt</div>
-                <div class="episode-row-meta">
-                  <span>Ankur Jain</span>
-                  <span>April 25, 2025</span>
-                  <span>28 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/B8v4wWeWqJ8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/B8v4wWeWqJ8/maxresdefault.jpg" alt="TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha</div>
-                <div class="episode-row-meta">
-                  <span>Coco Rocha</span>
-                  <span>April 18, 2025</span>
-                  <span>34 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/KnWKFp472GI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/KnWKFp472GI/maxresdefault.jpg" alt="What No One Tells You About Building a Startup With Your Spouse (Our Story)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">What No One Tells You About Building a Startup With Your Spouse (Our Story)</div>
-                <div class="episode-row-meta">
-                  <span>Dmitri Mogilko</span>
-                  <span>April 10, 2025</span>
-                  <span>25 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/xuN4jZpaPho/" class="episode-row">
-              <img src="https://img.youtube.com/vi/xuN4jZpaPho/maxresdefault.jpg" alt="Steal These Money Habits — They Built My 7-Figure Wealth" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Steal These Money Habits — They Built My 7-Figure Wealth</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>April 4, 2025</span>
-                  <span>16 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/NX5-bXM1NQg/" class="episode-row">
-              <img src="https://img.youtube.com/vi/NX5-bXM1NQg/maxresdefault.jpg" alt="Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl</div>
-                <div class="episode-row-meta">
-                  <span>Blake Scholl</span>
-                  <span>March 21, 2025</span>
-                  <span>40 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/QvwI0TTVcwo/" class="episode-row">
-              <img src="https://img.youtube.com/vi/QvwI0TTVcwo/maxresdefault.jpg" alt="I'm 35. If you're in your 20s, watch this" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">I'm 35. If you're in your 20s, watch this</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>March 13, 2025</span>
-                  <span>15 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/d_Dp1vpDCrk/" class="episode-row">
-              <img src="https://img.youtube.com/vi/d_Dp1vpDCrk/maxresdefault.jpg" alt="My 19 sources of income at age 34" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">My 19 sources of income at age 34</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>March 6, 2025</span>
-                  <span>21 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/ZE1AjTnsubI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/ZE1AjTnsubI/maxresdefault.jpg" alt="LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman</div>
-                <div class="episode-row-meta">
-                  <span>Reid Hoffman</span>
-                  <span>February 27, 2025</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/GOqARrckaR8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/GOqARrckaR8/maxresdefault.jpg" alt="TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>February 21, 2025</span>
-                  <span>20 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/FZm2vVlPX9w/" class="episode-row">
-              <img src="https://img.youtube.com/vi/FZm2vVlPX9w/maxresdefault.jpg" alt="TOP-8 profitable online business ideas you can start in 2025" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">TOP-8 profitable online business ideas you can start in 2025</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>February 13, 2025</span>
-                  <span>21 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/pqf9uL4j9GU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/pqf9uL4j9GU/maxresdefault.jpg" alt="7 steps to start your business from ZERO in 2025" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">7 steps to start your business from ZERO in 2025</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>February 11, 2025</span>
-                  <span>22 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/pUITF0uGa6U/" class="episode-row">
-              <img src="https://img.youtube.com/vi/pUITF0uGa6U/maxresdefault.jpg" alt="Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang</div>
-                <div class="episode-row-meta">
-                  <span>Humphrey Yang</span>
-                  <span>February 4, 2025</span>
-                  <span>37 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/qrzRg0JUBj0/" class="episode-row">
-              <img src="https://img.youtube.com/vi/qrzRg0JUBj0/maxresdefault.jpg" alt="34-year-old millionaire explains: 13 habits keeping you poor" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">34-year-old millionaire explains: 13 habits keeping you poor</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>January 23, 2025</span>
-                  <span>18 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/t6UbvaOGIEI/" class="episode-row">
-              <img src="https://img.youtube.com/vi/t6UbvaOGIEI/maxresdefault.jpg" alt="How I built a $34M business at 34 on Youtube" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How I built a $34M business at 34 on Youtube</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>January 9, 2025</span>
-                  <span>16 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/Y4Jxbet2RK8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/Y4Jxbet2RK8/maxresdefault.jpg" alt="6 habits that made me a multi-millionaire" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">6 habits that made me a multi-millionaire</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>December 26, 2024</span>
-                  <span>18 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/VN_0zJXBO6E/" class="episode-row">
-              <img src="https://img.youtube.com/vi/VN_0zJXBO6E/maxresdefault.jpg" alt="How to make $1000/month on social media with 0 followers" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How to make $1000/month on social media with 0 followers</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>December 19, 2024</span>
-                  <span>19 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/OrbhGa4aeAM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/OrbhGa4aeAM/maxresdefault.jpg" alt="Getting Started with Email Marketing: Full Step-by-Step Guide" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Getting Started with Email Marketing: Full Step-by-Step Guide</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>December 11, 2024</span>
-                  <span>27 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/V3PbrBA9teE/" class="episode-row">
-              <img src="https://img.youtube.com/vi/V3PbrBA9teE/maxresdefault.jpg" alt="How To Make Your Life Exciting Again" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How To Make Your Life Exciting Again</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>November 28, 2024</span>
-                  <span>15 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/2kWPqccrb-o/" class="episode-row">
-              <img src="https://img.youtube.com/vi/2kWPqccrb-o/maxresdefault.jpg" alt="9 Work From Home Business Ideas To Quit Your Job" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">9 Work From Home Business Ideas To Quit Your Job</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>November 25, 2024</span>
-                  <span>18 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/r67fvYaB2y8/" class="episode-row">
-              <img src="https://img.youtube.com/vi/r67fvYaB2y8/maxresdefault.jpg" alt="10 AI tools to use in 2025" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">10 AI tools to use in 2025</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>November 21, 2024</span>
-                  <span>11 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/VHiyfK06n1c/" class="episode-row">
-              <img src="https://img.youtube.com/vi/VHiyfK06n1c/maxresdefault.jpg" alt="How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>November 15, 2024</span>
-                  <span>23 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/tzUAJZAuaZw/" class="episode-row">
-              <img src="https://img.youtube.com/vi/tzUAJZAuaZw/maxresdefault.jpg" alt="Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company</div>
-                <div class="episode-row-meta">
-                  <span>Raj Gokal</span>
-                  <span>November 7, 2024</span>
-                  <span>60 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/JqcK4b3wRGU/" class="episode-row">
-              <img src="https://img.youtube.com/vi/JqcK4b3wRGU/maxresdefault.jpg" alt="How I Made $50,000 on My Airbnb in 6 Months" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">How I Made $50,000 on My Airbnb in 6 Months</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>October 28, 2024</span>
-                  <span>12 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/JcvG5P6CW-M/" class="episode-row">
-              <img src="https://img.youtube.com/vi/JcvG5P6CW-M/maxresdefault.jpg" alt="9 AI TOOLS You Must Know In 2024" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">9 AI TOOLS You Must Know In 2024</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>October 24, 2024</span>
-                  <span>17 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/chbinls_V-w/" class="episode-row">
-              <img src="https://img.youtube.com/vi/chbinls_V-w/maxresdefault.jpg" alt="31 Most Profitable Business Ideas for the Next 10 Years" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">31 Most Profitable Business Ideas for the Next 10 Years</div>
-                <div class="episode-row-meta">
-                  <span>Marina Mogilko</span>
-                  <span>October 21, 2024</span>
-                  <span>49 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/JI6KrvldAoE/" class="episode-row">
-              <img src="https://img.youtube.com/vi/JI6KrvldAoE/maxresdefault.jpg" alt="Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork</div>
-                <div class="episode-row-meta">
-                  <span>Renuka Apte</span>
-                  <span>October 4, 2024</span>
-                  <span>24 MIN</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="/episode/kvlMhVz-DeM/" class="episode-row">
-              <img src="https://img.youtube.com/vi/kvlMhVz-DeM/maxresdefault.jpg" alt="His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)</div>
-                <div class="episode-row-meta">
-                  <span>Nikil Viswanathan</span>
-                  <span>October 1, 2024</span>
-                  <span>51 MIN</span>
-                </div>
-              </div>
-            </a>
-    </section>
-  </main>
+      <div class="hero-media">
+        <a href="/episode/cVGHg4Vd9uM/"><img src="https://img.youtube.com/vi/cVGHg4Vd9uM/maxresdefault.jpg" alt="The Biggest AI Opportunities Are Hiding in Boring Businesses" width="640" height="360"></a>
+        <span class="hero-badge">New episode weekly</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cover">
+    <div class="wrap">
+      <p class="eyebrow">Latest</p>
+      <h2 class="section-title">This week&rsquo;s cover story</h2>
+      <div class="cover-card">
+        <a href="/episode/cVGHg4Vd9uM/"><img src="https://img.youtube.com/vi/cVGHg4Vd9uM/maxresdefault.jpg" alt="The Biggest AI Opportunities Are Hiding in Boring Businesses" loading="lazy" width="480" height="270"></a>
+        <div>
+          <p class="cover-meta">SEP 11 2026 &middot; 24 MIN &middot; With Marina Mogilko</p>
+          <h3 class="cover-title"><a href="/episode/cVGHg4Vd9uM/">The Biggest AI Opportunities Are Hiding in Boring Businesses</a></h3>
+          <div class="cover-cta">
+            <a class="btn btn-primary" href="https://youtube.com/watch?v=cVGHg4Vd9uM" target="_blank" rel="noopener">Play on YouTube</a>
+            <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap about-inner">
+      <h2 class="section-title">About the show</h2>
+      <div class="about-body">
+        <p>Silicon Valley Girl is a weekly interview podcast hosted by Marina Mogilko, an entrepreneur and creator based in Silicon Valley. Each episode she sits down with the founders and scientists building AI and asks them one question: what can a normal person actually do with this today?</p>
+        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work. Past guests include Andrew Ng, Fei-Fei Li, Sal Khan, Anne Wojcicki and Shishir Mehrotra.</p>
+        <p>You can watch on YouTube or listen on Spotify and Apple Podcasts. New episodes come out every week.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="episodes" class="archive">
+    <div class="wrap">
+      <h2 class="section-title">The archive</h2>
+      <div class="archive-grid">
+
+          <a href="/episode/JEZVl3BkSLk/" class="ep-card">
+            <img src="https://img.youtube.com/vi/JEZVl3BkSLk/maxresdefault.jpg" alt="Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Shishir Mehrotra &middot; 39 MIN</p>
+              <h3 class="ep-card-title">Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra</h3>
+            </div>
+          </a>
+
+          <a href="/episode/213rSCulKUQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg" alt="Top 1% Career Strategy: How to Get Hired in the AI Era" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 23 MIN</p>
+              <h3 class="ep-card-title">Top 1% Career Strategy: How to Get Hired in the AI Era</h3>
+            </div>
+          </a>
+
+          <a href="/episode/o-wv_szZ0V0/" class="ep-card">
+            <img src="https://img.youtube.com/vi/o-wv_szZ0V0/maxresdefault.jpg" alt="Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Andrew Ng &middot; 38 MIN</p>
+              <h3 class="ep-card-title">Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Y854KRfONAU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Y854KRfONAU/maxresdefault.jpg" alt="The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 23 MIN</p>
+              <h3 class="ep-card-title">The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up</h3>
+            </div>
+          </a>
+
+          <a href="/episode/xiJsfvaxzRY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/xiJsfvaxzRY/maxresdefault.jpg" alt="$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months | Luana Lopes Lara" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Luana Lopes Lara &middot; 34 MIN</p>
+              <h3 class="ep-card-title">$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months | Luana Lopes Lara</h3>
+            </div>
+          </a>
+
+          <a href="/episode/2NFQ4-6MzuU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/2NFQ4-6MzuU/maxresdefault.jpg" alt="How to Rank #1 in AI: The Ultimate GEO (Generative Engine Optimization) Guide" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 18 MIN</p>
+              <h3 class="ep-card-title">How to Rank #1 in AI: The Ultimate GEO (Generative Engine Optimization) Guide</h3>
+            </div>
+          </a>
+
+          <a href="/episode/VF2FwZ_PXhw/" class="ep-card">
+            <img src="https://img.youtube.com/vi/VF2FwZ_PXhw/maxresdefault.jpg" alt="Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Anne Wojcicki &middot; 62 MIN</p>
+              <h3 class="ep-card-title">Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki</h3>
+            </div>
+          </a>
+
+          <a href="/episode/72duHF7iZiU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/72duHF7iZiU/maxresdefault.jpg" alt="Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Erik Brynjolfsson &middot; 54 MIN</p>
+              <h3 class="ep-card-title">Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson</h3>
+            </div>
+          </a>
+
+          <a href="/episode/HMvTSaaO9sU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/HMvTSaaO9sU/maxresdefault.jpg" alt="Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Daniil and David Liberman &middot; 41 MIN</p>
+              <h3 class="ep-card-title">Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers</h3>
+            </div>
+          </a>
+
+          <a href="/episode/s-Iz-lLAhdg/" class="ep-card">
+            <img src="https://img.youtube.com/vi/s-Iz-lLAhdg/maxresdefault.jpg" alt="Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Sal Khan &middot; 45 MIN</p>
+              <h3 class="ep-card-title">Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan</h3>
+            </div>
+          </a>
+
+          <a href="/episode/fxIVCIoLOys/" class="ep-card">
+            <img src="https://img.youtube.com/vi/fxIVCIoLOys/maxresdefault.jpg" alt="Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Steve Jurvetson &middot; 44 MIN</p>
+              <h3 class="ep-card-title">Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson</h3>
+            </div>
+          </a>
+
+          <a href="/episode/2j9yjRSpMSo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/2j9yjRSpMSo/maxresdefault.jpg" alt="AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Richard Socher &middot; 50 MIN</p>
+              <h3 class="ep-card-title">AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher</h3>
+            </div>
+          </a>
+
+          <a href="/episode/subu-xHrp1w/" class="ep-card">
+            <img src="https://img.youtube.com/vi/subu-xHrp1w/maxresdefault.jpg" alt="Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Fei-Fei Li and David Rogier &middot; 50 MIN</p>
+              <h3 class="ep-card-title">Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Yu0z7-KMHpo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Yu0z7-KMHpo/maxresdefault.jpg" alt="AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Peter Yang &middot; 30 MIN</p>
+              <h3 class="ep-card-title">AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang</h3>
+            </div>
+          </a>
+
+          <a href="/episode/LAEaSbZ2IR8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/LAEaSbZ2IR8/maxresdefault.jpg" alt="$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Grant Lee &middot; 46 MIN</p>
+              <h3 class="ep-card-title">$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma</h3>
+            </div>
+          </a>
+
+          <a href="/episode/qNt5TNn9D9Y/" class="ep-card">
+            <img src="https://img.youtube.com/vi/qNt5TNn9D9Y/maxresdefault.jpg" alt="She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Esther Wojcicki &middot; 44 MIN</p>
+              <h3 class="ep-card-title">She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley</h3>
+            </div>
+          </a>
+
+          <a href="/episode/U7apPfqHgvg/" class="ep-card">
+            <img src="https://img.youtube.com/vi/U7apPfqHgvg/maxresdefault.jpg" alt="$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Chris Pedregal &middot; 45 MIN</p>
+              <h3 class="ep-card-title">$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal</h3>
+            </div>
+          </a>
+
+          <a href="/episode/bzfklNb1wjc/" class="ep-card">
+            <img src="https://img.youtube.com/vi/bzfklNb1wjc/maxresdefault.jpg" alt="Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Howie Liu &middot; 33 MIN</p>
+              <h3 class="ep-card-title">Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu</h3>
+            </div>
+          </a>
+
+          <a href="/episode/DPe_srf0GlI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/DPe_srf0GlI/maxresdefault.jpg" alt="Head of ChatGPT &amp; Codex: Agents for Normal People Are HERE | Thibault Sottiaux" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Thibault Sottiaux &middot; 32 MIN</p>
+              <h3 class="ep-card-title">Head of ChatGPT &amp; Codex: Agents for Normal People Are HERE | Thibault Sottiaux</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ZW87Peh3tWM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ZW87Peh3tWM/maxresdefault.jpg" alt="Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Josh Woodward &middot; 34 MIN</p>
+              <h3 class="ep-card-title">Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ExgNR94SrfI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ExgNR94SrfI/maxresdefault.jpg" alt="Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Aaron Levie &middot; 53 MIN</p>
+              <h3 class="ep-card-title">Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Baa71rPgxvA/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Baa71rPgxvA/maxresdefault.jpg" alt="Build a Self-Running AI Company in 16 Minutes (Move 75% Faster)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 17 MIN</p>
+              <h3 class="ep-card-title">Build a Self-Running AI Company in 16 Minutes (Move 75% Faster)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/WOmRB6jNiSU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/WOmRB6jNiSU/maxresdefault.jpg" alt="AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">MacKenzie Price &middot; 59 MIN</p>
+              <h3 class="ep-card-title">AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price</h3>
+            </div>
+          </a>
+
+          <a href="/episode/gwsaC3WiCqs/" class="ep-card">
+            <img src="https://img.youtube.com/vi/gwsaC3WiCqs/maxresdefault.jpg" alt="6 Profitable AI business ideas for 2026" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 24 MIN</p>
+              <h3 class="ep-card-title">6 Profitable AI business ideas for 2026</h3>
+            </div>
+          </a>
+
+          <a href="/episode/zL2PIa72gJ4/" class="ep-card">
+            <img src="https://img.youtube.com/vi/zL2PIa72gJ4/maxresdefault.jpg" alt="Double Your Income With AI in 3 Months (Here's the Stack)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 30 MIN</p>
+              <h3 class="ep-card-title">Double Your Income With AI in 3 Months (Here's the Stack)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ZK-TCkETAFw/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ZK-TCkETAFw/maxresdefault.jpg" alt="Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 17 MIN</p>
+              <h3 class="ep-card-title">Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team</h3>
+            </div>
+          </a>
+
+          <a href="/episode/00RHph_eok4/" class="ep-card">
+            <img src="https://img.youtube.com/vi/00RHph_eok4/maxresdefault.jpg" alt="AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Roman Yampolskiy &middot; 46 MIN</p>
+              <h3 class="ep-card-title">AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy</h3>
+            </div>
+          </a>
+
+          <a href="/episode/GDeEATJcbJo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/GDeEATJcbJo/maxresdefault.jpg" alt="Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Luis von Ahn &middot; 45 MIN</p>
+              <h3 class="ep-card-title">Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn</h3>
+            </div>
+          </a>
+
+          <a href="/episode/vZLY2YGUk4o/" class="ep-card">
+            <img src="https://img.youtube.com/vi/vZLY2YGUk4o/maxresdefault.jpg" alt="Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">John Martinis &middot; 23 MIN</p>
+              <h3 class="ep-card-title">Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis</h3>
+            </div>
+          </a>
+
+          <a href="/episode/YfRkj9kmQf0/" class="ep-card">
+            <img src="https://img.youtube.com/vi/YfRkj9kmQf0/maxresdefault.jpg" alt="Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Allie Miller &middot; 59 MIN</p>
+              <h3 class="ep-card-title">Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller</h3>
+            </div>
+          </a>
+
+          <a href="/episode/E0Q96IKXx6Q/" class="ep-card">
+            <img src="https://img.youtube.com/vi/E0Q96IKXx6Q/maxresdefault.jpg" alt="Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mo Gawdat &middot; 40 MIN</p>
+              <h3 class="ep-card-title">Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat</h3>
+            </div>
+          </a>
+
+          <a href="/episode/4vIIeCqHYXA/" class="ep-card">
+            <img src="https://img.youtube.com/vi/4vIIeCqHYXA/maxresdefault.jpg" alt="Gary Vee: The AI Opportunity Is Real — You're Just Looking at It Wrong | VaynerX Chairman Gary Vaynerchuk" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Gary Vaynerchuk &middot; 45 MIN</p>
+              <h3 class="ep-card-title">Gary Vee: The AI Opportunity Is Real — You're Just Looking at It Wrong | VaynerX Chairman Gary Vaynerchuk</h3>
+            </div>
+          </a>
+
+          <a href="/episode/PTZ5iN9nDkY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/PTZ5iN9nDkY/maxresdefault.jpg" alt="Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Yossi Matias &middot; 20 MIN</p>
+              <h3 class="ep-card-title">Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias</h3>
+            </div>
+          </a>
+
+          <a href="/episode/KF_uNAxPFFA/" class="ep-card">
+            <img src="https://img.youtube.com/vi/KF_uNAxPFFA/maxresdefault.jpg" alt="Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Max Tegmark &middot; 16 MIN</p>
+              <h3 class="ep-card-title">Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Dp6u0pel-Rs/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Dp6u0pel-Rs/maxresdefault.jpg" alt="Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Saadia Zahidi &middot; 21 MIN</p>
+              <h3 class="ep-card-title">Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum</h3>
+            </div>
+          </a>
+
+          <a href="/episode/nBM3_AzNYU8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/nBM3_AzNYU8/maxresdefault.jpg" alt="$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Bill Gurley &middot; 35 MIN</p>
+              <h3 class="ep-card-title">$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Gk0n0FjeKj8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/maxresdefault.jpg" alt="Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Kian Katanforoosh &middot; 35 MIN</p>
+              <h3 class="ep-card-title">Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh</h3>
+            </div>
+          </a>
+
+          <a href="/episode/czItVEAINqw/" class="ep-card">
+            <img src="https://img.youtube.com/vi/czItVEAINqw/maxresdefault.jpg" alt="$1.3B AI CEO: &quot;You ONLY Need 2 People and 90 Days to Build a $1M Business&quot; | Higgsfield Founder Alex Mashrabov" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Alex Mashrabov &middot; 34 MIN</p>
+              <h3 class="ep-card-title">$1.3B AI CEO: &quot;You ONLY Need 2 People and 90 Days to Build a $1M Business&quot; | Higgsfield Founder Alex Mashrabov</h3>
+            </div>
+          </a>
+
+          <a href="/episode/S0h5oUVv0BY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg" alt="LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Reid Hoffman &middot; 28 MIN</p>
+              <h3 class="ep-card-title">LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ktpNFfpJ5rw/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ktpNFfpJ5rw/maxresdefault.jpg" alt="LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Ryan Roslansky &middot; 24 MIN</p>
+              <h3 class="ep-card-title">LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky</h3>
+            </div>
+          </a>
+
+          <a href="/episode/0fXGtQoJgNo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/0fXGtQoJgNo/maxresdefault.jpg" alt="Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Yoshua Bengio &middot; 30 MIN</p>
+              <h3 class="ep-card-title">Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio</h3>
+            </div>
+          </a>
+
+          <a href="/episode/JFilKfL7_9A/" class="ep-card">
+            <img src="https://img.youtube.com/vi/JFilKfL7_9A/maxresdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Daniela Rus &middot; 25 MIN</p>
+              <h3 class="ep-card-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</h3>
+            </div>
+          </a>
+
+          <a href="/episode/_aUKWYHLKfE/" class="ep-card">
+            <img src="https://img.youtube.com/vi/_aUKWYHLKfE/maxresdefault.jpg" alt="Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Conor Grennan &middot; 41 MIN</p>
+              <h3 class="ep-card-title">Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan</h3>
+            </div>
+          </a>
+
+          <a href="/episode/lVV0HInr0ZY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/lVV0HInr0ZY/maxresdefault.jpg" alt="$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Yamini Rangan &middot; 42 MIN</p>
+              <h3 class="ep-card-title">$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO</h3>
+            </div>
+          </a>
+
+          <a href="/episode/rxR83MF6LF0/" class="ep-card">
+            <img src="https://img.youtube.com/vi/rxR83MF6LF0/maxresdefault.jpg" alt="7 Founders Told Me What Separates Winners From Everyone Else" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 21 MIN</p>
+              <h3 class="ep-card-title">7 Founders Told Me What Separates Winners From Everyone Else</h3>
+            </div>
+          </a>
+
+          <a href="/episode/CL1OfPj3ePo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/CL1OfPj3ePo/maxresdefault.jpg" alt="The Fastest Way To Build A One-Person Business (2026 Beginner Guide)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 15 MIN</p>
+              <h3 class="ep-card-title">The Fastest Way To Build A One-Person Business (2026 Beginner Guide)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/-Epp6VmpezI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/-Epp6VmpezI/maxresdefault.jpg" alt="The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Oscar Hoglund, Epidemic Sound" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Oscar Hoglund &middot; 38 MIN</p>
+              <h3 class="ep-card-title">The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Oscar Hoglund, Epidemic Sound</h3>
+            </div>
+          </a>
+
+          <a href="/episode/6es0HhfpQlQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/6es0HhfpQlQ/maxresdefault.jpg" alt="Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mel Robbins &middot; 67 MIN</p>
+              <h3 class="ep-card-title">Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It</h3>
+            </div>
+          </a>
+
+          <a href="/episode/HQ3eVt2jgAY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/HQ3eVt2jgAY/maxresdefault.jpg" alt="$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Young Zhao &middot; 39 MIN</p>
+              <h3 class="ep-card-title">$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip</h3>
+            </div>
+          </a>
+
+          <a href="/episode/8W5A7fIuA-A/" class="ep-card">
+            <img src="https://img.youtube.com/vi/8W5A7fIuA-A/maxresdefault.jpg" alt="I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 19 MIN</p>
+              <h3 class="ep-card-title">I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need</h3>
+            </div>
+          </a>
+
+          <a href="/episode/9pfbGnuMNhk/" class="ep-card">
+            <img src="https://img.youtube.com/vi/9pfbGnuMNhk/maxresdefault.jpg" alt="If I need to start over in 2026, I’d learn these 7 skills first" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 23 MIN</p>
+              <h3 class="ep-card-title">If I need to start over in 2026, I’d learn these 7 skills first</h3>
+            </div>
+          </a>
+
+          <a href="/episode/RvYv90ftf2M/" class="ep-card">
+            <img src="https://img.youtube.com/vi/RvYv90ftf2M/maxresdefault.jpg" alt="$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Andrey Khusid &middot; 35 MIN</p>
+              <h3 class="ep-card-title">$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro</h3>
+            </div>
+          </a>
+
+          <a href="/episode/eaZ2R1K-SjQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg" alt="Future of Education: How to Get Ahead before AI Changes Everything" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 21 MIN</p>
+              <h3 class="ep-card-title">Future of Education: How to Get Ahead before AI Changes Everything</h3>
+            </div>
+          </a>
+
+          <a href="/episode/l6d_0PB0Pbg/" class="ep-card">
+            <img src="https://img.youtube.com/vi/l6d_0PB0Pbg/maxresdefault.jpg" alt="Future of Work 2026: The Only Jobs That Will Survive the AI Era" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 25 MIN</p>
+              <h3 class="ep-card-title">Future of Work 2026: The Only Jobs That Will Survive the AI Era</h3>
+            </div>
+          </a>
+
+          <a href="/episode/EuaVTPB8dxc/" class="ep-card">
+            <img src="https://img.youtube.com/vi/EuaVTPB8dxc/maxresdefault.jpg" alt="GM CEO on AI Cars and the Future of Driving | Mary Barra" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mary Barra &middot; 34 MIN</p>
+              <h3 class="ep-card-title">GM CEO on AI Cars and the Future of Driving | Mary Barra</h3>
+            </div>
+          </a>
+
+          <a href="/episode/dM5T0Oj9-90/" class="ep-card">
+            <img src="https://img.youtube.com/vi/dM5T0Oj9-90/maxresdefault.jpg" alt="Launch a $1M AI Business Solo — No Employees, No Investment, No Code" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 23 MIN</p>
+              <h3 class="ep-card-title">Launch a $1M AI Business Solo — No Employees, No Investment, No Code</h3>
+            </div>
+          </a>
+
+          <a href="/episode/SP76PvgMzVU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg" alt="CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mustafa Suleyman &middot; 42 MIN</p>
+              <h3 class="ep-card-title">CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman</h3>
+            </div>
+          </a>
+
+          <a href="/episode/nlOmBneT-oM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/nlOmBneT-oM/maxresdefault.jpg" alt="How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Priscilla Chan &middot; 31 MIN</p>
+              <h3 class="ep-card-title">How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative</h3>
+            </div>
+          </a>
+
+          <a href="/episode/NPiKEwTSwn4/" class="ep-card">
+            <img src="https://img.youtube.com/vi/NPiKEwTSwn4/maxresdefault.jpg" alt="Google Search VP on How AI Search Really Works | Robby Stein" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Robby Stein &middot; 28 MIN</p>
+              <h3 class="ep-card-title">Google Search VP on How AI Search Really Works | Robby Stein</h3>
+            </div>
+          </a>
+
+          <a href="/episode/APTVFZSYtiE/" class="ep-card">
+            <img src="https://img.youtube.com/vi/APTVFZSYtiE/maxresdefault.jpg" alt="Why Working HARD will Keep You Poor (unless you do this)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 16 MIN</p>
+              <h3 class="ep-card-title">Why Working HARD will Keep You Poor (unless you do this)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/tSrN8eRMEAE/" class="ep-card">
+            <img src="https://img.youtube.com/vi/tSrN8eRMEAE/maxresdefault.jpg" alt="$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Daniel Priestley &middot; 54 MIN</p>
+              <h3 class="ep-card-title">$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley</h3>
+            </div>
+          </a>
+
+          <a href="/episode/SQReIhBKFlw/" class="ep-card">
+            <img src="https://img.youtube.com/vi/SQReIhBKFlw/maxresdefault.jpg" alt="7 Habits That Turn You Into an AI-Native Professional" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 13 MIN</p>
+              <h3 class="ep-card-title">7 Habits That Turn You Into an AI-Native Professional</h3>
+            </div>
+          </a>
+
+          <a href="/episode/EUrkIpq838c/" class="ep-card">
+            <img src="https://img.youtube.com/vi/EUrkIpq838c/maxresdefault.jpg" alt="ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mati Staniszewski &middot; 44 MIN</p>
+              <h3 class="ep-card-title">ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski</h3>
+            </div>
+          </a>
+
+          <a href="/episode/L1EmhDYc11g/" class="ep-card">
+            <img src="https://img.youtube.com/vi/L1EmhDYc11g/maxresdefault.jpg" alt="5 BEST AI Businesses To Start before 2026 (For Beginners)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 18 MIN</p>
+              <h3 class="ep-card-title">5 BEST AI Businesses To Start before 2026 (For Beginners)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/U7PcyE0p54s/" class="ep-card">
+            <img src="https://img.youtube.com/vi/U7PcyE0p54s/maxresdefault.jpg" alt="$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Aravind Srinivas &middot; 41 MIN</p>
+              <h3 class="ep-card-title">$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Q66gsBJnKKQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Q66gsBJnKKQ/maxresdefault.jpg" alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mike Krieger &middot; 44 MIN</p>
+              <h3 class="ep-card-title">Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger</h3>
+            </div>
+          </a>
+
+          <a href="/episode/UJo_MiMA7qE/" class="ep-card">
+            <img src="https://img.youtube.com/vi/UJo_MiMA7qE/maxresdefault.jpg" alt="$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Jesse Zhang &middot; 26 MIN</p>
+              <h3 class="ep-card-title">$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ELuBhd-PgDg/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ELuBhd-PgDg/maxresdefault.jpg" alt="9 AI Skills That Will Make You Rich in 2026" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 16 MIN</p>
+              <h3 class="ep-card-title">9 AI Skills That Will Make You Rich in 2026</h3>
+            </div>
+          </a>
+
+          <a href="/episode/3FgPLbfs_oY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/3FgPLbfs_oY/maxresdefault.jpg" alt="AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Amjad Masad &middot; 38 MIN</p>
+              <h3 class="ep-card-title">AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit</h3>
+            </div>
+          </a>
+
+          <a href="/episode/zCWfnfFDr90/" class="ep-card">
+            <img src="https://img.youtube.com/vi/zCWfnfFDr90/maxresdefault.jpg" alt="The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 15 MIN</p>
+              <h3 class="ep-card-title">The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/S9xrvZhMLMI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/S9xrvZhMLMI/maxresdefault.jpg" alt="Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Alex &middot; 39 MIN</p>
+              <h3 class="ep-card-title">Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU</h3>
+            </div>
+          </a>
+
+          <a href="/episode/8DuxOlkHdy4/" class="ep-card">
+            <img src="https://img.youtube.com/vi/8DuxOlkHdy4/maxresdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 13 MIN</p>
+              <h3 class="ep-card-title">Become an Entrepreneur Today – AI stack to build your company in 2025</h3>
+            </div>
+          </a>
+
+          <a href="/episode/1gm__VUG2m8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/1gm__VUG2m8/maxresdefault.jpg" alt="AI Agents EXPLAINED in 14 minutes and TOOLS for building one" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 15 MIN</p>
+              <h3 class="ep-card-title">AI Agents EXPLAINED in 14 minutes and TOOLS for building one</h3>
+            </div>
+          </a>
+
+          <a href="/episode/3cs09XQ6cb0/" class="ep-card">
+            <img src="https://img.youtube.com/vi/3cs09XQ6cb0/maxresdefault.jpg" alt="The Future of Work: High-Paying Careers That AI Won't Replace" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 17 MIN</p>
+              <h3 class="ep-card-title">The Future of Work: High-Paying Careers That AI Won't Replace</h3>
+            </div>
+          </a>
+
+          <a href="/episode/9XM8yDN-AEA/" class="ep-card">
+            <img src="https://img.youtube.com/vi/9XM8yDN-AEA/maxresdefault.jpg" alt="Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Thomas Wolf &middot; 25 MIN</p>
+              <h3 class="ep-card-title">Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf</h3>
+            </div>
+          </a>
+
+          <a href="/episode/KfoenLbhOTI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/KfoenLbhOTI/maxresdefault.jpg" alt="How to Build a Profitable Personal Brand with AI (In Just 30 Days)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 20 MIN</p>
+              <h3 class="ep-card-title">How to Build a Profitable Personal Brand with AI (In Just 30 Days)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/4jqrK-hUicQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/4jqrK-hUicQ/maxresdefault.jpg" alt="How to Build a Viral Brand Online ft. @blogilates" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Cassey Ho &middot; 38 MIN</p>
+              <h3 class="ep-card-title">How to Build a Viral Brand Online ft. @blogilates</h3>
+            </div>
+          </a>
+
+          <a href="/episode/PR__eFQsnhg/" class="ep-card">
+            <img src="https://img.youtube.com/vi/PR__eFQsnhg/maxresdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Thomas Dohmke &middot; 22 MIN</p>
+              <h3 class="ep-card-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</h3>
+            </div>
+          </a>
+
+          <a href="/episode/IdN-b2Y_foo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/IdN-b2Y_foo/maxresdefault.jpg" alt="Marie Forleo: Progress Way Faster than 99% of people" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marie Forleo &middot; 42 MIN</p>
+              <h3 class="ep-card-title">Marie Forleo: Progress Way Faster than 99% of people</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Ab1FyDL4HEY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg" alt="High-income AI business ideas for 2025 (no coding, no budget)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 18 MIN</p>
+              <h3 class="ep-card-title">High-income AI business ideas for 2025 (no coding, no budget)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/jVD8pCZeLww/" class="ep-card">
+            <img src="https://img.youtube.com/vi/jVD8pCZeLww/maxresdefault.jpg" alt="How to Use AI to Go VIRAL on Social Media (full guide)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 20 MIN</p>
+              <h3 class="ep-card-title">How to Use AI to Go VIRAL on Social Media (full guide)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/4BrBrwAXCXo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/4BrBrwAXCXo/maxresdefault.jpg" alt="Don’t Let AI Take Your Job: Master These 7 Skills Now" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 17 MIN</p>
+              <h3 class="ep-card-title">Don’t Let AI Take Your Job: Master These 7 Skills Now</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Hg-iFwW5vBo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Hg-iFwW5vBo/maxresdefault.jpg" alt="Win the AI Race in 2025 with These 9 Game-Changing Tools" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 17 MIN</p>
+              <h3 class="ep-card-title">Win the AI Race in 2025 with These 9 Game-Changing Tools</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ZYT81iUfBK4/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ZYT81iUfBK4/maxresdefault.jpg" alt="How I Launched My Merch Store in 7 Minutes Using AI Tools" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 7 MIN</p>
+              <h3 class="ep-card-title">How I Launched My Merch Store in 7 Minutes Using AI Tools</h3>
+            </div>
+          </a>
+
+          <a href="/episode/s5r4wdOWLjk/" class="ep-card">
+            <img src="https://img.youtube.com/vi/s5r4wdOWLjk/maxresdefault.jpg" alt="AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Samir Vasavada &middot; 45 MIN</p>
+              <h3 class="ep-card-title">AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise</h3>
+            </div>
+          </a>
+
+          <a href="/episode/qkGuzV50JWI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/qkGuzV50JWI/maxresdefault.jpg" alt="Must Have AI Skills to Save your Career in 2026" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 19 MIN</p>
+              <h3 class="ep-card-title">Must Have AI Skills to Save your Career in 2026</h3>
+            </div>
+          </a>
+
+          <a href="/episode/gW51vYIJgUs/" class="ep-card">
+            <img src="https://img.youtube.com/vi/gW51vYIJgUs/maxresdefault.jpg" alt="Life-Changing Lessons I Learned From The Top 1%" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 19 MIN</p>
+              <h3 class="ep-card-title">Life-Changing Lessons I Learned From The Top 1%</h3>
+            </div>
+          </a>
+
+          <a href="/episode/mtfB8GtJAWM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/mtfB8GtJAWM/maxresdefault.jpg" alt="Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Gaurav Munjal and Roman Saini &middot; 36 MIN</p>
+              <h3 class="ep-card-title">Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini</h3>
+            </div>
+          </a>
+
+          <a href="/episode/_tQUyvTLaSM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/_tQUyvTLaSM/maxresdefault.jpg" alt="From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Jenny Lei &middot; 32 MIN</p>
+              <h3 class="ep-card-title">From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja</h3>
+            </div>
+          </a>
+
+          <a href="/episode/PmpaFWBFy_c/" class="ep-card">
+            <img src="https://img.youtube.com/vi/PmpaFWBFy_c/maxresdefault.jpg" alt="Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Ankur Jain &middot; 28 MIN</p>
+              <h3 class="ep-card-title">Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt</h3>
+            </div>
+          </a>
+
+          <a href="/episode/B8v4wWeWqJ8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/B8v4wWeWqJ8/maxresdefault.jpg" alt="TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Coco Rocha &middot; 34 MIN</p>
+              <h3 class="ep-card-title">TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha</h3>
+            </div>
+          </a>
+
+          <a href="/episode/KnWKFp472GI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/KnWKFp472GI/maxresdefault.jpg" alt="What No One Tells You About Building a Startup With Your Spouse (Our Story)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Dmitri Mogilko &middot; 25 MIN</p>
+              <h3 class="ep-card-title">What No One Tells You About Building a Startup With Your Spouse (Our Story)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/xuN4jZpaPho/" class="ep-card">
+            <img src="https://img.youtube.com/vi/xuN4jZpaPho/maxresdefault.jpg" alt="Steal These Money Habits — They Built My 7-Figure Wealth" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 16 MIN</p>
+              <h3 class="ep-card-title">Steal These Money Habits — They Built My 7-Figure Wealth</h3>
+            </div>
+          </a>
+
+          <a href="/episode/NX5-bXM1NQg/" class="ep-card">
+            <img src="https://img.youtube.com/vi/NX5-bXM1NQg/maxresdefault.jpg" alt="Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Blake Scholl &middot; 40 MIN</p>
+              <h3 class="ep-card-title">Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl</h3>
+            </div>
+          </a>
+
+          <a href="/episode/QvwI0TTVcwo/" class="ep-card">
+            <img src="https://img.youtube.com/vi/QvwI0TTVcwo/maxresdefault.jpg" alt="I'm 35. If you're in your 20s, watch this" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 15 MIN</p>
+              <h3 class="ep-card-title">I'm 35. If you're in your 20s, watch this</h3>
+            </div>
+          </a>
+
+          <a href="/episode/d_Dp1vpDCrk/" class="ep-card">
+            <img src="https://img.youtube.com/vi/d_Dp1vpDCrk/maxresdefault.jpg" alt="My 19 sources of income at age 34" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 21 MIN</p>
+              <h3 class="ep-card-title">My 19 sources of income at age 34</h3>
+            </div>
+          </a>
+
+          <a href="/episode/ZE1AjTnsubI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ZE1AjTnsubI/maxresdefault.jpg" alt="LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Reid Hoffman &middot; 23 MIN</p>
+              <h3 class="ep-card-title">LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman</h3>
+            </div>
+          </a>
+
+          <a href="/episode/GOqARrckaR8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/GOqARrckaR8/maxresdefault.jpg" alt="TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 20 MIN</p>
+              <h3 class="ep-card-title">TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/FZm2vVlPX9w/" class="ep-card">
+            <img src="https://img.youtube.com/vi/FZm2vVlPX9w/maxresdefault.jpg" alt="TOP-8 profitable online business ideas you can start in 2025" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 21 MIN</p>
+              <h3 class="ep-card-title">TOP-8 profitable online business ideas you can start in 2025</h3>
+            </div>
+          </a>
+
+          <a href="/episode/pqf9uL4j9GU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/pqf9uL4j9GU/maxresdefault.jpg" alt="7 steps to start your business from ZERO in 2025" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 22 MIN</p>
+              <h3 class="ep-card-title">7 steps to start your business from ZERO in 2025</h3>
+            </div>
+          </a>
+
+          <a href="/episode/pUITF0uGa6U/" class="ep-card">
+            <img src="https://img.youtube.com/vi/pUITF0uGa6U/maxresdefault.jpg" alt="Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Humphrey Yang &middot; 37 MIN</p>
+              <h3 class="ep-card-title">Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang</h3>
+            </div>
+          </a>
+
+          <a href="/episode/qrzRg0JUBj0/" class="ep-card">
+            <img src="https://img.youtube.com/vi/qrzRg0JUBj0/maxresdefault.jpg" alt="34-year-old millionaire explains: 13 habits keeping you poor" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 18 MIN</p>
+              <h3 class="ep-card-title">34-year-old millionaire explains: 13 habits keeping you poor</h3>
+            </div>
+          </a>
+
+          <a href="/episode/t6UbvaOGIEI/" class="ep-card">
+            <img src="https://img.youtube.com/vi/t6UbvaOGIEI/maxresdefault.jpg" alt="How I built a $34M business at 34 on Youtube" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 16 MIN</p>
+              <h3 class="ep-card-title">How I built a $34M business at 34 on Youtube</h3>
+            </div>
+          </a>
+
+          <a href="/episode/Y4Jxbet2RK8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Y4Jxbet2RK8/maxresdefault.jpg" alt="6 habits that made me a multi-millionaire" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 18 MIN</p>
+              <h3 class="ep-card-title">6 habits that made me a multi-millionaire</h3>
+            </div>
+          </a>
+
+          <a href="/episode/VN_0zJXBO6E/" class="ep-card">
+            <img src="https://img.youtube.com/vi/VN_0zJXBO6E/maxresdefault.jpg" alt="How to make $1000/month on social media with 0 followers" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 19 MIN</p>
+              <h3 class="ep-card-title">How to make $1000/month on social media with 0 followers</h3>
+            </div>
+          </a>
+
+          <a href="/episode/OrbhGa4aeAM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/OrbhGa4aeAM/maxresdefault.jpg" alt="Getting Started with Email Marketing: Full Step-by-Step Guide" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 27 MIN</p>
+              <h3 class="ep-card-title">Getting Started with Email Marketing: Full Step-by-Step Guide</h3>
+            </div>
+          </a>
+
+          <a href="/episode/V3PbrBA9teE/" class="ep-card">
+            <img src="https://img.youtube.com/vi/V3PbrBA9teE/maxresdefault.jpg" alt="How To Make Your Life Exciting Again" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 15 MIN</p>
+              <h3 class="ep-card-title">How To Make Your Life Exciting Again</h3>
+            </div>
+          </a>
+
+          <a href="/episode/2kWPqccrb-o/" class="ep-card">
+            <img src="https://img.youtube.com/vi/2kWPqccrb-o/maxresdefault.jpg" alt="9 Work From Home Business Ideas To Quit Your Job" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 18 MIN</p>
+              <h3 class="ep-card-title">9 Work From Home Business Ideas To Quit Your Job</h3>
+            </div>
+          </a>
+
+          <a href="/episode/r67fvYaB2y8/" class="ep-card">
+            <img src="https://img.youtube.com/vi/r67fvYaB2y8/maxresdefault.jpg" alt="10 AI tools to use in 2025" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 11 MIN</p>
+              <h3 class="ep-card-title">10 AI tools to use in 2025</h3>
+            </div>
+          </a>
+
+          <a href="/episode/VHiyfK06n1c/" class="ep-card">
+            <img src="https://img.youtube.com/vi/VHiyfK06n1c/maxresdefault.jpg" alt="How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 23 MIN</p>
+              <h3 class="ep-card-title">How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)</h3>
+            </div>
+          </a>
+
+          <a href="/episode/tzUAJZAuaZw/" class="ep-card">
+            <img src="https://img.youtube.com/vi/tzUAJZAuaZw/maxresdefault.jpg" alt="Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Raj Gokal &middot; 60 MIN</p>
+              <h3 class="ep-card-title">Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company</h3>
+            </div>
+          </a>
+
+          <a href="/episode/JqcK4b3wRGU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/JqcK4b3wRGU/maxresdefault.jpg" alt="How I Made $50,000 on My Airbnb in 6 Months" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 12 MIN</p>
+              <h3 class="ep-card-title">How I Made $50,000 on My Airbnb in 6 Months</h3>
+            </div>
+          </a>
+
+          <a href="/episode/JcvG5P6CW-M/" class="ep-card">
+            <img src="https://img.youtube.com/vi/JcvG5P6CW-M/maxresdefault.jpg" alt="9 AI TOOLS You Must Know In 2024" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 17 MIN</p>
+              <h3 class="ep-card-title">9 AI TOOLS You Must Know In 2024</h3>
+            </div>
+          </a>
+
+          <a href="/episode/chbinls_V-w/" class="ep-card">
+            <img src="https://img.youtube.com/vi/chbinls_V-w/maxresdefault.jpg" alt="31 Most Profitable Business Ideas for the Next 10 Years" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Marina Mogilko &middot; 49 MIN</p>
+              <h3 class="ep-card-title">31 Most Profitable Business Ideas for the Next 10 Years</h3>
+            </div>
+          </a>
+
+          <a href="/episode/JI6KrvldAoE/" class="ep-card">
+            <img src="https://img.youtube.com/vi/JI6KrvldAoE/maxresdefault.jpg" alt="Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Renuka Apte &middot; 24 MIN</p>
+              <h3 class="ep-card-title">Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork</h3>
+            </div>
+          </a>
+
+          <a href="/episode/kvlMhVz-DeM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/kvlMhVz-DeM/maxresdefault.jpg" alt="His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Nikil Viswanathan &middot; 51 MIN</p>
+              <h3 class="ep-card-title">His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)</h3>
+            </div>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="host" class="host">
+    <div class="wrap">
+      <h2 class="section-title">Meet the host</h2>
+      <div class="host-inner">
+        <div class="host-stills">
+          <img src="https://img.youtube.com/vi/JEZVl3BkSLk/maxresdefault.jpg" alt="Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra" loading="lazy" width="480" height="270">
+          <img src="https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg" alt="Top 1% Career Strategy: How to Get Hired in the AI Era" loading="lazy" width="480" height="270">
+        </div>
+        <div>
+          <h3 class="host-name">Marina Mogilko</h3>
+          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          <div class="host-stats">
+            <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
+            <div><span class="stat-value">Millions</span><span class="stat-label">Following along</span></div>
+            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partnerships">
+    <div class="wrap partnerships-inner">
+      <div>
+        <p class="eyebrow">Partnerships</p>
+        <h2>Want your brand on the podcast?</h2>
+      </div>
+      <a class="pill" href="mailto:partnerships@marinamogilko.co"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#5b6470"/><path fill="#fff" d="M5 7.5h14a.5.5 0 0 1 .5.5v.4l-7.5 4.3L4.5 8.4V8a.5.5 0 0 1 .5-.5zM4.5 9.9l6.9 3.95a1 1 0 0 0 1 0L19.5 9.9V16a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5z"/></svg> partnerships@marinamogilko.co</a>
+    </div>
+  </section>
+
+  <section id="subscribe" class="newsletter">
+    <div class="wrap newsletter-inner">
+      <div>
+        <h2>Get the<br>weekly brief</h2>
+        <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
+        <a class="btn btn-primary" href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener">Subscribe to the newsletter</a>
+      </div>
+      <div>
+        <p class="eyebrow">Follow along</p>
+        <div class="follow-links">
+            <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" class="follow-btn"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg><span>YouTube</span></a>
+            <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" class="follow-btn"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg><span>Spotify</span></a>
+            <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" class="follow-btn"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg><span>Apple</span></a>
+            <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg><span>Instagram</span></a>
+            <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg><span>TikTok</span></a>
+            <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg><span>LinkedIn</span></a>
+            <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg><span>X</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
 
   
-  <footer class="site-footer">&copy; 2026 Silicon Valley Girl Podcast &middot; Marina Mogilko</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="footer-mark">SILICON VALLEY GIRL</span>
+      <span class="footer-legal">&copy; 2026 Marina Mogilko &middot; Made in Silicon Valley</span>
+    </div>
+  </footer>
 
 </body>
 </html>

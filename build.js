@@ -332,30 +332,64 @@ function formatDate(dateStr) {
 // Home Page
 // ---------------------------------------------------------------------------
 
+// Short form for the cover-story meta line ("SEP 8 2026"). UTC-pinned for the
+// same reason as formatDate — see the comment there.
+function formatDateShort(dateStr) {
+  return new Date(dateStr)
+    .toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })
+    .replace(",", "")
+    .toUpperCase();
+}
+
+// Compilations list several guests (comma-separated). Everywhere on the home
+// page we show Marina as the host instead of the guest list: a montage should
+// not compete with each guest's own episode for a "[name] podcast" query.
+function displayGuest(ep) {
+  const isCompilation = !!(ep.guestName && ep.guestName.includes(","));
+  return isCompilation || !ep.guestName ? "Marina Mogilko" : ep.guestName;
+}
+
 function renderHomePage(episodes) {
-  const episodeListHtml = episodes
-    .map((ep) => {
-      const date = formatDate(ep.publishedAt);
-      // Compilations list several guests (comma-separated). On the home page we
-      // show Marina as the host instead of the guest list: a montage shouldn't
-      // compete with each guest's own episode for a "[name] podcast" query, and
-      // the row still reads consistently ("Marina Mogilko · date · duration").
-      const isCompilation = !!(ep.guestName && ep.guestName.includes(","));
-      const guest = isCompilation || !ep.guestName ? "Marina Mogilko" : ep.guestName;
-      return `
-            <a href="/episode/${ep.videoId}/" class="episode-row">
-              <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy">
-              <div class="episode-row-info">
-                <div class="episode-row-title">${esc(ep.title)}</div>
-                <div class="episode-row-meta">
-                  <span>${esc(guest)}</span>
-                  <span>${date}</span>
-                  <span>${esc(ep.duration)}</span>
-                </div>
-              </div>
-            </a>`;
-    })
+  const cover = episodes[0];
+  const rest = episodes.slice(1);
+
+  const archiveHtml = rest
+    .map(
+      (ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${esc(ep.duration)}</p>
+              <h3 class="ep-card-title">${esc(ep.title)}</h3>
+            </div>
+          </a>`
+    )
     .join("\n");
+
+  // The mock shows a pair of stills beside the host bio. Using the two most
+  // recent episodes keeps that shape without introducing a new image asset.
+  const hostStills = rest
+    .slice(0, 2)
+    .map(
+      (ep) =>
+        `<img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">`
+    )
+    .join("\n          ");
+
+  const followLinks = [
+    ["https://www.youtube.com/@SiliconValleyGirl", "YouTube", ICONS.youtube],
+    ["https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU", "Spotify", ICONS.spotify],
+    ["https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950", "Apple", ICONS.apple],
+    ["https://www.instagram.com/siliconvalleygirl/", "Instagram", ICONS.instagram],
+    ["https://www.tiktok.com/@linguamarina", "TikTok", ICONS.tiktok],
+    ["https://www.linkedin.com/in/marinamogilko/", "LinkedIn", ICONS.linkedin],
+    ["https://x.com/siliconvalleymm", "X", ICONS.twitter],
+  ]
+    .map(
+      ([url, label, icon]) =>
+        `<a href="${url}" target="_blank" rel="noopener" class="follow-btn">${icon}<span>${label}</span></a>`
+    )
+    .join("\n            ");
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -385,158 +419,287 @@ function renderHomePage(episodes) {
   })}</script>
   ${SHARED_HEAD}
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fff;
-    }
-    a { color: inherit; }
-
     /* CHROME-START */${CHROME_CSS}
     /* CHROME-END */
 
-    /* ---- Container ---- */
-    .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+    body {
+      font-family: var(--body);
+      background: var(--ground);
+      color: var(--ink);
+      line-height: 1.55;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    h1, h2, h3 { margin: 0; font-weight: 400; }
+    p { margin: 0; }
+
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+    .eyebrow {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.9rem;
+    }
+    .section-title {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 4vw, 2.9rem);
+      letter-spacing: 0.01em; line-height: 1; margin-bottom: 1.8rem;
+    }
+    .accent { color: var(--accent); }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      padding: 0.72rem 1.15rem; border: 1px solid var(--ink);
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none; background: transparent;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn:hover { background: var(--ink); color: var(--ground); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn-primary:hover { background: #c41210; border-color: #c41210; color: #fff; }
+    .btn-text {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px; align-self: center;
+    }
 
     /* ---- Hero ---- */
-    .hero { margin-bottom: 3rem; }
+    .hero { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+    .hero-inner {
+      display: grid; grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(2rem, 5vw, 4rem); align-items: center;
+    }
     .hero h1 {
-      font-size: 2.5rem; font-weight: 700; line-height: 1.2;
-      letter-spacing: -0.03em; margin-bottom: 1rem;
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(3rem, 8.5vw, 7rem);
+      line-height: 0.85; letter-spacing: -0.01em;
+      margin-bottom: 1.4rem;
     }
-    .hero p {
-      font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 600px;
+    .hero-dek {
+      font-size: clamp(1rem, 1.5vw, 1.12rem); max-width: 34rem;
+      color: rgba(23, 21, 17, 0.8); margin-bottom: 1.8rem;
     }
-    .listen-links {
-      display: grid; grid-template-columns: repeat(5, 1fr);
-      gap: 0.6rem; margin-top: 1.5rem; max-width: 820px;
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    .hero-media { position: relative; }
+    .hero-media img { width: 100%; height: auto; display: block; }
+    .hero-badge {
+      position: absolute; bottom: -0.9rem; right: -0.6rem;
+      background: var(--accent); color: #fff;
+      font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 0.6rem 0.9rem;
     }
-    .listen-links a {
-      display: flex; align-items: center; justify-content: center; gap: 0.45rem;
-      padding: 0.6rem 0.5rem; white-space: nowrap;
-      border: 1px solid #ddd; border-radius: 6px;
-      font-size: 0.8rem; font-weight: 500; text-decoration: none; color: #1a1a1a;
-      transition: border-color 0.15s, background 0.15s;
+
+    /* ---- Cover story ---- */
+    .cover { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .cover-card {
+      display: grid; grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
+      background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
     }
-    .listen-links a:hover { border-color: #1a1a1a; background: #fafafa; }
-    .listen-links a svg { flex-shrink: 0; }
+    .cover-card img { width: 100%; height: auto; display: block; }
+    .cover-meta {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
+    }
+    .cover-title {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      line-height: 1.02; margin-bottom: 0.9rem;
+    }
+    .cover-title a { text-decoration: none; }
+    .cover-title a:hover { color: var(--accent); }
+    .cover-dek { color: rgba(23, 21, 17, 0.78); margin-bottom: 1.4rem; }
+    .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+    /* ---- About ---- */
+    .about { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
+    .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* ---- Archive ---- */
+    .archive { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+
+    /* ---- Host ---- */
+    .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
+    .host .section-title { color: var(--ground); }
+    .host-inner { display: grid; grid-template-columns: 0.65fr 1.35fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+    .host-stills { display: grid; gap: 0.8rem; }
+    .host-stills img { width: 100%; height: auto; display: block; }
+    .host-name {
+      font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1; margin-bottom: 1.1rem;
+    }
+    .host-bio { color: rgba(255, 253, 246, 0.82); max-width: 44rem; margin-bottom: 2rem; }
+    .host-stats { display: flex; flex-wrap: wrap; gap: clamp(2rem, 6vw, 4.5rem); }
+    .stat-value { font-family: var(--display); font-size: 1.8rem; line-height: 1; display: block; }
+    .stat-label {
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
+    }
+
+    /* ---- Partnerships ---- */
+    .partnerships { padding: clamp(2.5rem, 5vw, 3.5rem) 0; border-bottom: 1px solid var(--rule); }
+    .partnerships-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem; }
+    .partnerships h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.4vw, 2.4rem); line-height: 1; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent); color: #fff; text-decoration: none;
+      padding: 0.75rem 1.2rem; font-size: 0.82rem; font-weight: 600;
+    }
+    .pill:hover { background: #c41210; }
+
+    /* ---- Newsletter + follow ---- */
+    .newsletter { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+    .newsletter-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+    .newsletter h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 0.95; margin-bottom: 1rem; }
+    .newsletter p { color: rgba(23, 21, 17, 0.8); margin-bottom: 1.5rem; max-width: 30rem; }
+    .follow-links { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .follow-btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      border: 1px solid var(--rule); background: var(--card);
+      padding: 0.6rem 0.9rem; font-size: 0.78rem; font-weight: 600;
+      text-decoration: none; transition: border-color 0.15s;
+    }
+    .follow-btn:hover { border-color: var(--ink); }
+
+    @media (max-width: 900px) {
+      .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
+        grid-template-columns: 1fr;
+      }
+      .hero-media { order: -1; }
+      .hero-badge { right: 0.5rem; bottom: 0.5rem; }
+    }
     @media (max-width: 640px) {
-      .listen-links { grid-template-columns: repeat(2, 1fr); }
-      .listen-links a { justify-content: flex-start; padding-left: 1rem; }
-    }
-
-    /* ---- About Host ---- */
-    .host-card {
-      background: #fafafa; border: 1px solid #eee; border-radius: 10px;
-      padding: 2rem; margin-bottom: 3rem;
-    }
-    .host-card h2 {
-      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
-      color: #999; margin-bottom: 1rem;
-    }
-    .host-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .host-bio {
-      font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 1rem;
-    }
-    .host-links { display: flex; gap: 1rem; }
-    .host-links a {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-size: 0.85rem; color: #2563eb; text-decoration: none; font-weight: 500;
-    }
-    .host-links a:hover { text-decoration: underline; }
-    .host-links a svg { flex-shrink: 0; }
-
-    /* ---- Brand / Partnerships CTA ---- */
-    .brand-cta {
-      margin: 2rem 0; padding: 2rem;
-      background: #fafafa; border-radius: 10px; text-align: center;
-    }
-    .brand-cta h2 {
-      font-size: 1.25rem; font-weight: 800; text-transform: uppercase;
-      letter-spacing: -0.005em; line-height: 1.2; margin: 0 0 0.6rem; color: #e00;
-    }
-    .brand-cta p { font-size: 0.95rem; color: #111; margin: 0; }
-    .brand-cta a { color: #111; font-weight: 700; text-decoration: underline; }
-    @media (max-width: 640px) { .brand-cta h2 { font-size: 1.1rem; } }
-
-    /* ---- Episodes List ---- */
-    .episodes-section h2 {
-      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
-    }
-    .episode-row {
-      display: flex; gap: 1.25rem; padding: 1.25rem 0;
-      border-bottom: 1px solid #f0f0f0; text-decoration: none; color: inherit;
-      transition: background 0.1s; align-items: center;
-    }
-    .episode-row:first-child { border-top: 1px solid #f0f0f0; }
-    .episode-row:hover { background: #fafafa; }
-    .episode-row img {
-      width: 180px; min-width: 180px; height: auto;
-      border-radius: 6px; object-fit: cover;
-    }
-    .episode-row-info { flex: 1; min-width: 0; }
-    .episode-row-title {
-      font-size: 1rem; font-weight: 600; line-height: 1.4;
-      margin-bottom: 0.4rem;
-      display: -webkit-box; -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical; overflow: hidden;
-    }
-    .episode-row-meta {
-      font-size: 0.8rem; color: #999;
-      display: flex; gap: 0.5rem; flex-wrap: wrap;
-    }
-    .episode-row-meta span + span::before {
-      content: "\\00b7"; margin-right: 0.5rem;
-    }
-
-    /* ---- Responsive ---- */
-    @media (max-width: 640px) {
-      .container { padding: 2rem 1rem 3rem; }
-      .hero h1 { font-size: 1.75rem; }
-      .episode-row { flex-direction: column; gap: 0.75rem; }
-      .episode-row img { width: 100%; min-width: 0; }
+      .wrap { padding: 0 1rem; }
+      .archive-grid { grid-template-columns: 1fr; }
+      .host-stills { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Silicon Valley Girl Podcast</h1>
-      <p>Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and building the future. Hosted by Marina Mogilko.</p>
-      <div class="listen-links">
-        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube} YouTube</a>
-        <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
-        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
-        <a href="https://www.instagram.com/siliconvalleygirl/" target="_blank" rel="noopener" title="Instagram">${ICONS.instagram} Instagram</a>
-        <a href="https://www.instagram.com/siliconvalleygirlpodcast" target="_blank" rel="noopener" title="Podcast Instagram">${ICONS.instagram} Podcast IG</a>
-        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" title="TikTok">${ICONS.tiktok} TikTok</a>
-        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" title="LinkedIn">${ICONS.linkedin} LinkedIn</a>
-        <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" title="X">${ICONS.twitter} X</a>
-        <a href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener" title="Newsletter">${ICONS.newsletter} Newsletter</a>
+  ${SHARED_HEADER}
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">The podcast that decodes the valley</p>
+        <h1>What AI<br>means for<br><span class="accent">your</span> day</h1>
+        <p class="hero-dek">Marina Mogilko interviews the founders and scientists building AI, then asks them the only question that matters: what can I actually do with this today?</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener">Apple</a>
+          <a class="btn-text" href="/episode/${cover.videoId}/">Latest episode &rarr;</a>
+        </div>
       </div>
-    </section>
+      <div class="hero-media">
+        <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" width="640" height="360"></a>
+        <span class="hero-badge">New episode weekly</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="host-card">
-      <h2>Your Host</h2>
-      <div class="host-name">Marina Mogilko</div>
-      <p class="host-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
-    </section>
+  <section class="cover">
+    <div class="wrap">
+      <p class="eyebrow">Latest</p>
+      <h2 class="section-title">This week&rsquo;s cover story</h2>
+      <div class="cover-card">
+        <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" loading="lazy" width="480" height="270"></a>
+        <div>
+          <p class="cover-meta">${formatDateShort(cover.publishedAt)} &middot; ${esc(cover.duration)} &middot; With ${esc(displayGuest(cover))}</p>
+          <h3 class="cover-title"><a href="/episode/${cover.videoId}/">${esc(cover.title)}</a></h3>
+          <div class="cover-cta">
+            <a class="btn btn-primary" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
+            <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="brand-cta">
-      <h2>Want your brand on my podcast?</h2>
-      <p>Email us at <a href="mailto:partnerships@marinamogilko.co">partnerships@marinamogilko.co</a></p>
-    </section>
+  <section class="about">
+    <div class="wrap about-inner">
+      <h2 class="section-title">About the show</h2>
+      <div class="about-body">
+        <p>Silicon Valley Girl is a weekly interview podcast hosted by Marina Mogilko, an entrepreneur and creator based in Silicon Valley. Each episode she sits down with the founders and scientists building AI and asks them one question: what can a normal person actually do with this today?</p>
+        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work. Past guests include Andrew Ng, Fei-Fei Li, Sal Khan, Anne Wojcicki and Shishir Mehrotra.</p>
+        <p>You can watch on YouTube or listen on Spotify and Apple Podcasts. New episodes come out every week.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="episodes" class="episodes-section">
-      <h2>Episodes</h2>
-      ${episodeListHtml}
-    </section>
-  </main>
+  <section id="episodes" class="archive">
+    <div class="wrap">
+      <h2 class="section-title">The archive</h2>
+      <div class="archive-grid">
+${archiveHtml}
+      </div>
+    </div>
+  </section>
+
+  <section id="host" class="host">
+    <div class="wrap">
+      <h2 class="section-title">Meet the host</h2>
+      <div class="host-inner">
+        <div class="host-stills">
+          ${hostStills}
+        </div>
+        <div>
+          <h3 class="host-name">Marina Mogilko</h3>
+          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          <div class="host-stats">
+            <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
+            <div><span class="stat-value">Millions</span><span class="stat-label">Following along</span></div>
+            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partnerships">
+    <div class="wrap partnerships-inner">
+      <div>
+        <p class="eyebrow">Partnerships</p>
+        <h2>Want your brand on the podcast?</h2>
+      </div>
+      <a class="pill" href="mailto:partnerships@marinamogilko.co">${ICONS.mail} partnerships@marinamogilko.co</a>
+    </div>
+  </section>
+
+  <section id="subscribe" class="newsletter">
+    <div class="wrap newsletter-inner">
+      <div>
+        <h2>Get the<br>weekly brief</h2>
+        <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
+        <a class="btn btn-primary" href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener">Subscribe to the newsletter</a>
+      </div>
+      <div>
+        <p class="eyebrow">Follow along</p>
+        <div class="follow-links">
+            ${followLinks}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
 
   ${SHARED_FOOTER}
 
@@ -924,7 +1087,12 @@ function unesc(str) {
     .replace(/&amp;/g, "&");
 }
 
-build().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = { renderHomePage, renderEpisodePage, formatDate };
+
+// Guarded so the tests can require the renderers without kicking off a build.
+if (require.main === module) {
+  build().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
