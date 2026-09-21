@@ -47,9 +47,14 @@ module.exports = async function handler(req, res) {
   const d = result.data;
 
   if (!process.env.RESEND_API_KEY) {
-    console.error("RESEND_API_KEY is not set; cannot send the enquiry.");
+    console.error(
+      "RESEND_API_KEY is not set on this deployment. Add it in Vercel " +
+        "(Settings -> Environment Variables, ticking both Production and Preview) " +
+        "and redeploy — a new variable does not reach an existing deployment."
+    );
     return res.status(500).json({
       error: `Could not send right now. Please email ${TO} directly.`,
+      detail: "mail service not configured",
     });
   }
 
@@ -84,10 +89,26 @@ module.exports = async function handler(req, res) {
   }
 
   if (!response.ok) {
-    // Status only. The provider's response body can echo the credential, and
-    // this runs in a log a lot of people can read.
-    console.error("Resend rejected the send:", response.status);
-    return res.status(502).json({ error: `Could not send right now. Please email ${TO} directly.` });
+    // Resend's own message, which is what actually says WHY — most usefully
+    // "You can only send testing emails to your own email address" when the
+    // account has no verified domain. Only the message field is logged, never
+    // the whole body, and never the request headers that carry the key.
+    let reason = "";
+    try {
+      const body = await response.json();
+      reason = String(body?.message || body?.error?.message || "").slice(0, 300);
+    } catch {
+      /* non-JSON error body; the status alone will have to do */
+    }
+    console.error(`Resend rejected the send: HTTP ${response.status}${reason ? ` — ${reason}` : ""}`);
+
+    // 403 with no verified domain is the one failure the person filling the
+    // form can do nothing about but which we can name precisely for ourselves.
+    return res.status(502).json({
+      error: `Could not send right now. Please email ${TO} directly.`,
+      // Not shown by the form; visible in the network tab when debugging.
+      detail: `provider returned ${response.status}`,
+    });
   }
 
   return res.status(200).json({ ok: true });

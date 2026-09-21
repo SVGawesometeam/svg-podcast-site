@@ -539,20 +539,20 @@ function renderHomePage(episodes) {
     }
 
     /* ---- Hero ---- */
-    .hero { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+    .hero { padding: clamp(1.75rem, 3.5vw, 3rem) 0 clamp(1.75rem, 3.5vw, 3rem); }
     .hero-inner {
-      display: grid; grid-template-columns: 1.05fr 0.95fr;
-      gap: clamp(2rem, 5vw, 4rem); align-items: end;
+      display: grid; grid-template-columns: 1fr 1.1fr;
+      gap: clamp(1.5rem, 3.5vw, 3rem); align-items: end;
     }
     .hero h1 {
       font-family: var(--display); text-transform: uppercase;
       font-size: clamp(3rem, 9.5vw, 8.5rem);
       line-height: 0.82; letter-spacing: -0.01em;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.1rem;
     }
     .hero-dek {
       font-size: clamp(1rem, 1.5vw, 1.12rem); max-width: 34rem;
-      color: rgba(23, 21, 17, 0.8); margin-bottom: 1.8rem;
+      color: rgba(23, 21, 17, 0.8); margin-bottom: 1.3rem;
     }
     .hero-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
     .hero-media { position: relative; }
@@ -565,7 +565,7 @@ function renderHomePage(episodes) {
     }
 
     /* ---- Cover story ---- */
-    .cover { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .cover { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
     .cover-card {
       display: grid; grid-template-columns: 0.9fr 1.1fr;
       gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
@@ -586,13 +586,13 @@ function renderHomePage(episodes) {
     .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
 
     /* ---- About ---- */
-    .about { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .about { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
     .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
     .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
     .about-body p:last-child { margin-bottom: 0; }
 
     /* ---- Archive ---- */
-    .archive { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .archive { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
     .archive-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.6rem 1.4rem;
@@ -653,7 +653,7 @@ function renderHomePage(episodes) {
     .pill:hover { background: #c41210; }
 
     /* ---- Newsletter + follow ---- */
-    .newsletter { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+    .newsletter { padding: clamp(2rem, 3.5vw, 3rem) 0; }
     .newsletter-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
     .newsletter h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 0.95; margin-bottom: 1rem; }
     .newsletter p { color: rgba(23, 21, 17, 0.8); margin-bottom: 1.5rem; max-width: 30rem; }
@@ -706,6 +706,26 @@ function renderHomePage(episodes) {
     }
     @media (max-width: 640px) {
       .wrap { padding: 0 1rem; }
+
+      /* Labels and meta sit near 10px at desktop sizes, which is too small to
+         read comfortably on a phone. */
+      .eyebrow, .ep-card-meta, .cover-meta, .stat-label, .field label { font-size: 0.75rem; }
+
+      /* 16px is the threshold below which iOS Safari zooms the page when a
+         field is focused, throwing the layout around mid-typing. */
+      .field input, .field select, .field textarea { font-size: 16px; }
+
+      /* The badge sits over the still at desktop widths. On a phone the image
+         is far smaller and the badge covers the thumbnail's own caption, so it
+         drops below the image instead. */
+      .hero-badge {
+        position: static; display: inline-block; margin-top: 0.6rem;
+      }
+
+      /* Comfortable tap targets. */
+      .btn, .form-submit { padding: 0.85rem 1.35rem; }
+      .archive-more { min-height: 44px; display: inline-flex; align-items: center; }
+      .follow-btn { padding: 0.7rem 0.95rem; }
       .archive-grid { grid-template-columns: 1fr; }
       .host-stills { grid-template-columns: 1fr 1fr; }
       .pitch-form { grid-template-columns: 1fr; }

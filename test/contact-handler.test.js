@@ -105,11 +105,23 @@ test('a missing API key fails loudly rather than silently dropping the enquiry',
   assert.equal(calls.length, 0);
 });
 
-test('a provider failure surfaces a usable message, not the provider response', async () => {
+// The message shown to a visitor must stay plain and actionable. A bare status
+// code in `detail` is deliberate — it is not a secret, and it is what makes a
+// failure diagnosable from the browser's network tab without digging through
+// server logs. What must never appear is a credential or the provider's raw
+// response body.
+test('a provider failure surfaces a usable message, never a credential', async () => {
   const { res } = await run(GOOD, { resendStatus: 401 });
   assert.equal(res.statusCode, 502);
   assert.match(res.body.error, /pr@marinamogilko\.co/);
-  assert.ok(!/401|resend|bearer|key/i.test(JSON.stringify(res.body)), 'leaked provider detail');
+
+  // The visible message stays free of provider and credential detail.
+  assert.ok(!/resend|bearer|api[_ -]?key|token/i.test(res.body.error), 'error message leaked provider detail');
+
+  // Nothing anywhere in the response may carry the key or an auth header.
+  const whole = JSON.stringify(res.body);
+  assert.ok(!whole.includes('test-key'), 'API key leaked to the client');
+  assert.ok(!/bearer/i.test(whole), 'authorization header leaked to the client');
 });
 
 test('the API key never appears in a response body', async () => {
