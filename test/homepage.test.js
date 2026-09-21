@@ -138,3 +138,20 @@ test('without JavaScript the whole archive is shown and the button hidden', () =
   assert.match(noscript, /\.ep-card-more \{ display: block; \}/);
   assert.match(noscript, /\.archive-more \{ display: none; \}/);
 });
+
+// The host photo is referenced as /host.jpg. macOS is case-insensitive, so a
+// file saved as host.JPG resolves locally and 404s on Vercel's Linux
+// filesystem — which is exactly what happened once. This asserts the file the
+// markup points at is the file that exists, spelled identically.
+test('the host photo reference matches a real file, case included', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const html = renderHomePage(EPISODES);
+  const ref = html.match(/src="\/(host\.[A-Za-z]+)"/);
+  if (!ref) return; // no photo installed; the stills fallback is in use
+  const dir = path.join(__dirname, '..', 'public');
+  assert.ok(
+    fs.readdirSync(dir).includes(ref[1]),
+    `markup points at /${ref[1]} but public/ has no file spelled exactly that`
+  );
+});
