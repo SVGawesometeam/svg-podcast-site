@@ -383,10 +383,15 @@ function renderHomePage(episodes) {
   const cover = episodes[0];
   const rest = episodes.slice(1);
 
+  // Six cards show; the rest stay in the markup but hidden, and "All episodes"
+  // reveals them. Keeping every episode in the DOM preserves the internal
+  // linking the archive is worth to search — moving 110 of them behind a
+  // separate page would cost that for a purely visual gain.
+  const ARCHIVE_VISIBLE = 6;
   const archiveHtml = rest
     .map(
-      (ep) => `
-          <a href="/episode/${ep.videoId}/" class="ep-card">
+      (ep, i) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card${i < ARCHIVE_VISIBLE ? "" : " ep-card-more"}">
             <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
               <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${esc(ep.duration)}</p>
@@ -395,16 +400,25 @@ function renderHomePage(episodes) {
           </a>`
     )
     .join("\n");
+  const hiddenCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
 
-  // The mock shows a pair of stills beside the host bio. Using the two most
-  // recent episodes keeps that shape without introducing a new image asset.
-  const hostStills = rest
-    .slice(0, 2)
-    .map(
-      (ep) =>
-        `<img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">`
-    )
-    .join("\n          ");
+  // A portrait of Marina if one has been dropped into public/ under any of
+  // these names; otherwise two recent stills, so a missing file degrades to
+  // something reasonable instead of a broken image.
+  const HOST_PHOTO_NAMES = ["host.jpg", "host.jpeg", "host.png", "host.webp"];
+  const hostPhotoFile = HOST_PHOTO_NAMES.find((n) => fs.existsSync(path.join(PUBLIC_DIR, n)));
+  const hostStills = hostPhotoFile
+    ? `<img src="/${hostPhotoFile}" alt="Marina Mogilko" class="host-photo" loading="lazy" width="640" height="800">`
+    : rest
+        .slice(0, 2)
+        .map(
+          (ep) =>
+            `<img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">`
+        )
+        .join("\n          ");
+  if (!hostPhotoFile) {
+    console.log("Note: no host photo found — drop one at public/host.jpg to replace the episode stills.");
+  }
 
   const followLinks = [
     ["https://www.youtube.com/@SiliconValleyGirl", "YouTube", ICONS.youtube],
@@ -476,32 +490,44 @@ function renderHomePage(episodes) {
     }
     .accent { color: var(--accent); }
 
+    /* Three button styles, as the mock uses: accent for the primary watch
+       action, ink for secondary actions, outlined for the tertiary one. */
     .btn {
-      display: inline-flex; align-items: center; gap: 0.45rem;
-      padding: 0.72rem 1.15rem; border: 1px solid var(--ink);
-      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
-      text-transform: uppercase; text-decoration: none; background: transparent;
-      transition: background 0.15s, color 0.15s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.35rem; border: 2px solid var(--ink);
+      font-size: 0.95rem; font-weight: 600; border-radius: 8px;
+      text-decoration: none; background: transparent; color: var(--ink);
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
     .btn:hover { background: var(--ink); color: var(--ground); }
-    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .btn-primary:hover { background: #c41210; border-color: #c41210; color: #fff; }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: var(--ground); }
+    .btn-accent:hover { background: #c41210; border-color: #c41210; color: var(--ground); }
+    .btn-ink { background: var(--ink); border-color: var(--ink); color: var(--ground); }
+    .btn-ink:hover { background: var(--accent); border-color: var(--accent); color: var(--ground); }
     .btn-text {
-      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
-      text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--accent);
-      padding-bottom: 2px; align-self: center;
+      font-size: 0.95rem; font-weight: 600; text-decoration: none;
+      border-bottom: 2px solid var(--accent); padding-bottom: 2px; align-self: center;
+    }
+    .btn-text:hover { color: var(--accent); }
+
+    /* The mock sets section eyebrows as red pills, not plain red text. */
+    .pill-label {
+      display: inline-block; background: var(--accent); color: var(--ground);
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 999px;
+      margin-right: 0.8rem; vertical-align: middle;
     }
 
     /* ---- Hero ---- */
     .hero { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
     .hero-inner {
-      display: grid; grid-template-columns: 1.15fr 0.85fr;
-      gap: clamp(2rem, 5vw, 4rem); align-items: center;
+      display: grid; grid-template-columns: 1.05fr 0.95fr;
+      gap: clamp(2rem, 5vw, 4rem); align-items: end;
     }
     .hero h1 {
       font-family: var(--display); text-transform: uppercase;
-      font-size: clamp(3rem, 8.5vw, 7rem);
-      line-height: 0.85; letter-spacing: -0.01em;
+      font-size: clamp(3rem, 9.5vw, 8.5rem);
+      line-height: 0.82; letter-spacing: -0.01em;
       margin-bottom: 1.4rem;
     }
     .hero-dek {
@@ -510,7 +536,7 @@ function renderHomePage(episodes) {
     }
     .hero-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
     .hero-media { position: relative; }
-    .hero-media img { width: 100%; height: auto; display: block; }
+    .hero-media img { width: 100%; height: auto; display: block; border-radius: 8px; }
     .hero-badge {
       position: absolute; bottom: -0.9rem; right: -0.6rem;
       background: var(--accent); color: #fff;
@@ -525,7 +551,7 @@ function renderHomePage(episodes) {
       gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
       background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
     }
-    .cover-card img { width: 100%; height: auto; display: block; }
+    .cover-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
     .cover-meta {
       font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
       text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
@@ -552,7 +578,7 @@ function renderHomePage(episodes) {
       gap: 1.6rem 1.4rem;
     }
     .ep-card { text-decoration: none; display: block; }
-    .ep-card img { width: 100%; height: auto; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
     .ep-card-body { padding-top: 0.75rem; }
     .ep-card-meta {
       font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
@@ -563,13 +589,26 @@ function renderHomePage(episodes) {
       letter-spacing: 0.01em; text-transform: uppercase;
     }
     .ep-card:hover .ep-card-title { color: var(--accent); }
+    .archive-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .archive-head .section-title { margin-bottom: 1.8rem; }
+    .archive-more {
+      background: none; border: none; border-bottom: 2px solid var(--accent);
+      font-family: var(--body); cursor: pointer; padding: 0 0 2px;
+      color: rgba(23, 21, 17, 0.62);
+    }
+    .ep-card-more { display: none; }
+    .archive.expanded .ep-card-more { display: block; }
 
     /* ---- Host ---- */
     .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
     .host .section-title { color: var(--ground); }
     .host-inner { display: grid; grid-template-columns: 0.65fr 1.35fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
     .host-stills { display: grid; gap: 0.8rem; }
-    .host-stills img { width: 100%; height: auto; display: block; }
+    .host-stills img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .host-photo { object-fit: cover; aspect-ratio: 4 / 5; }
     .host-name {
       font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.2rem);
       line-height: 1; margin-bottom: 1.1rem;
@@ -664,8 +703,8 @@ function renderHomePage(episodes) {
         <h1>What AI<br>means for<br><span class="accent">your</span> day</h1>
         <p class="hero-dek">Marina Mogilko interviews the founders and scientists building AI, then asks them the only question that matters: what can I actually do with this today?</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
-          <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-accent" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a class="btn btn-ink" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
           <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener">Apple</a>
           <a class="btn-text" href="/episode/${cover.videoId}/">Latest episode &rarr;</a>
         </div>
@@ -679,15 +718,14 @@ function renderHomePage(episodes) {
 
   <section class="cover">
     <div class="wrap">
-      <p class="eyebrow">Latest</p>
-      <h2 class="section-title">This week&rsquo;s cover story</h2>
+      <h2 class="section-title"><span class="pill-label">Latest</span>This week&rsquo;s cover story</h2>
       <div class="cover-card">
         <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" loading="lazy" width="480" height="270"></a>
         <div>
           <p class="cover-meta">${formatDateShort(cover.publishedAt)} &middot; ${esc(cover.duration)} &middot; With ${esc(displayGuest(cover))}</p>
           <h3 class="cover-title"><a href="/episode/${cover.videoId}/">${esc(cover.title)}</a></h3>
           <div class="cover-cta">
-            <a class="btn btn-primary" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
+            <a class="btn btn-ink" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
             <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
           </div>
         </div>
@@ -708,7 +746,10 @@ function renderHomePage(episodes) {
 
   <section id="episodes" class="archive">
     <div class="wrap">
-      <h2 class="section-title">The archive</h2>
+      <div class="archive-head">
+        <h2 class="section-title">The archive</h2>
+        ${hiddenCount ? `<button type="button" class="btn-text archive-more" id="archive-more">All episodes &rarr;</button>` : ""}
+      </div>
       <div class="archive-grid">
 ${archiveHtml}
       </div>
@@ -750,7 +791,7 @@ ${archiveHtml}
       <div>
         <h2>Get the<br>weekly brief</h2>
         <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
-        <a class="btn btn-primary" href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener">Subscribe to the newsletter</a>
+        <a class="btn btn-accent" href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener">Subscribe to the newsletter</a>
       </div>
       <div>
         <p class="eyebrow">Follow along</p>
@@ -774,7 +815,7 @@ ${renderFormFields()}
           <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
         </div>
         <input type="hidden" name="rendered" value="">
-        <button type="submit" class="btn btn-primary form-submit">Send opportunity</button>
+        <button type="submit" class="btn btn-accent form-submit">Send opportunity</button>
       </form>
 
       <p id="form-done" class="form-done" role="status" hidden>Thank you &mdash; that&rsquo;s with the team. You&rsquo;ll hear back at the address you gave.</p>
@@ -787,7 +828,19 @@ ${renderFormFields()}
 
   ${SHARED_FOOTER}
 
+  <noscript><style>.ep-card-more { display: block; } .archive-more { display: none; }</style></noscript>
+
   <script>
+    (function () {
+      var more = document.getElementById('archive-more');
+      if (more) {
+        more.addEventListener('click', function () {
+          document.querySelector('.archive').classList.add('expanded');
+          more.hidden = true;
+        });
+      }
+    })();
+
     (function () {
       var form = document.getElementById('pitch-form');
       if (!form) return;

@@ -112,3 +112,29 @@ test('the cover meta renders its date in UTC, in the mock short form', () => {
   // and matching the mock's "SEP 8 2026".
   assert.match(renderHomePage(EPISODES), /SEP 8 2026/);
 });
+
+// Six cards show and the rest are revealed by the button. They stay in the
+// markup rather than moving to a separate page, so the homepage keeps linking
+// to every episode — which is what the archive is worth to search.
+test('the archive shows six cards and hides the rest behind the button', () => {
+  const many = Array.from({ length: 12 }, (_, i) => ({
+    videoId: `id${i}`, title: `Episode ${i}`, thumbnail: `https://i.ytimg.com/vi/id${i}/hq.jpg`,
+    publishedAt: `2026-09-${String(28 - i).padStart(2, '0')}T17:00:00.000Z`,
+    guestName: `Guest ${i}`, guestTitle: '', duration: '30 MIN',
+  }));
+  const html = renderHomePage(many);
+  assert.equal((html.match(/class="ep-card"/g) || []).length, 6, 'expected six visible cards');
+  assert.equal((html.match(/class="ep-card ep-card-more"/g) || []).length, 5, 'rest should be hidden, not dropped');
+  assert.match(html, /All episodes/);
+
+  // Every episode still reachable from the homepage: 11 archive + the cover.
+  const links = new Set(html.match(/href="\/episode\/[^"]*"/g));
+  assert.equal(links.size, 12, 'an episode lost its link');
+});
+
+test('without JavaScript the whole archive is shown and the button hidden', () => {
+  const html = renderHomePage(EPISODES);
+  const noscript = html.slice(html.indexOf('<noscript><style>'), html.indexOf('</noscript>', html.indexOf('<noscript><style>')));
+  assert.match(noscript, /\.ep-card-more \{ display: block; \}/);
+  assert.match(noscript, /\.archive-more \{ display: none; \}/);
+});
