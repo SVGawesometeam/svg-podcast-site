@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,70 +343,87 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=KnWKFp472GI&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=35s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Sharing our story</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=130s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What's up with Dmitry's English?</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=185s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why we were so good at working together</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=250s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">No one believed we could make it in Silicon Valley</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=334s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">5:34</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">American culture VS Russian culture</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=414s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">6:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">About the company that we founded</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=524s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:44</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What I missed most about working together</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=594s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why we stopped working together</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=815s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice for couples or friends starting a business together</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=905s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Some investors told us it was a red flag back then; Is it a bad idea working together?</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=946s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:46</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">We went from 5 people to 60 in 6 months - advice for those who build a company right now</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=1055s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What we wish we could change</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=1086s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Can similar backgrounds be a liability in a startup?</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=1201s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:01</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why did Dmitry want to start a company?</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=1320s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Dmitry found a win-win for everybody</span>
               </a>
               <a href="https://youtube.com/watch?v=KnWKFp472GI&t=1385s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Would we ever work together again? Our honest answer</span>
               </a>
       </div>

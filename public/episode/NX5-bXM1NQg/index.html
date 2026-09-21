@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,122 +342,152 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=54s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">His early career, 14 years in tech</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=132s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">&quot;People have to declare big things for big things to actually happen.&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=211s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:31</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Working at Amazon with Jeff Bezos, the lessons he learned there</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=458s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What led him to transition from a corporate job to starting Boom</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=500s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why he quit his stable job at 33, with newborn twins and a toddler daughter</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=546s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How much money he saved for his startup</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=584s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:44</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How he managed his time with family while building a startup</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=630s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How he started a company without formal education</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=777s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How he moved from theory to practice</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=870s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Challenges in hiring the right people</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=950s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">&quot;When I told people I was building a supersonic jet, they said, 'Are you crazy?'&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1038s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why you shouldn’t listen to industry experts and should check the information yourself</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1160s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">No one can tell you what you’re capable of, except yourself</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1196s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The failures that can turn out to be winning moments</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1233s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The hardest day at Boom</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1277s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">3 weeks from bankruptcy – What separates a successful founder from a failing one?</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1320s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why 99% of startups fail</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1350s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How close they are to launching</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1440s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Legal bans and challenges that stopped them</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1572s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How everything can change in just 4 weeks</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1580s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to navigate the challenge of 3x the carbon emissions that jets use</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1738s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The costs of flying on a supersonic jet</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1818s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why increasing speed is important and how it can drive growth in other fields</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=1965s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How he manages work-life balance while working at a startup</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=2015s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">&quot;The world is really open to supersonic right now. We have to move fast. I haven't had a day off in 4 months.&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=2080s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The story behind the Trump photo</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=2220s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice for someone who’s stuck with their idea of building a startup but is facing obstacles</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=2280s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Stop being afraid of failure</span>
               </a>
               <a href="https://youtube.com/watch?v=NX5-bXM1NQg&t=2358s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What he would say to the younger version of himself</span>
               </a>
       </div>

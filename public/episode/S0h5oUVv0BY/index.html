@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,66 +343,82 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=51s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:51</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=53s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">We're only at 5% of the AI boom — what's actually coming</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=192s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI basics every non-technical person needs to know right now</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=287s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Role-based prompting: the technique that changes how you think with AI</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=428s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Reid evaluates Marina's AI setup: easy, medium, or advanced?</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=566s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The fastest way to double your income in 2026 (with a 9-to-5)</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=658s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to rethink your business when AI changes the rules</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=814s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:34</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The $300B SaaS crash: why AI is breaking the software business model</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=948s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will software engineers lose their jobs?</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=962s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will we lose jobs to AI in 2 years? The future of jobs</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=1037s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why small businesses might actually beat big companies in the AI era</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=1136s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice for entrepreneurs afraid of being replaced by big AI</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=1310s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What markets will explode in the AI era</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=1418s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will AI be the last revolution created by humans? Reid's prediction</span>
               </a>
               <a href="https://youtube.com/watch?v=S0h5oUVv0BY&t=1530s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">One thing to do before February 2027 to not fall behind</span>
               </a>
       </div>

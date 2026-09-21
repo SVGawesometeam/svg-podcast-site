@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,102 +342,127 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=70s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Marina shares why Priscilla’s openness about miscarriage meant so much to her</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=155s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why Priscilla and Mark decided to start the Chan Zuckerberg Initiative</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=204s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The mission of SZI</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=280s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">10 years ago VS now. How do people react</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=416s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">6:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Priscilla’s personal story: why she turned from medicine to biology and investing in science</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=558s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why CZI focuses on building tools for all scientists instead of tackling a single disease</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=638s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why they’re building virtual cells</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=677s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What exactly is a virtual cell?</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=712s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:52</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How close are we to creating a full, natural virtual cell?</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=743s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What this means for patients — how healthcare could change in the next five years</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=820s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Which common diseases could be cured with the help of virtual cells</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=878s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The first diseases likely to be cured with AI-driven biology</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=971s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:11</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Looking ten years ahead: what breakthroughs to expect</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1032s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How mapping cells accelerated from 100 million to 1 billion — and why speed matters</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1190s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What is the virtual immune system?</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1238s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The sensor that reads immune-cell communication — how the body “talks” to itself</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1297s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">2040 - what medicine could look like</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1414s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:34</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What keeps Priscilla up at night</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1438s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Her advice for future scientists and doctors</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1469s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The new role of physicians working alongside AI</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1560s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When Priscilla’s mission becomes deeply personal</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1676s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Which diseases she believes will be cured in our lifetime</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1771s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:31</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When Priscilla will feel her mission is fulfilled</span>
               </a>
               <a href="https://youtube.com/watch?v=nlOmBneT-oM&t=1786s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:46</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Balancing work and raising kids</span>
               </a>
       </div>

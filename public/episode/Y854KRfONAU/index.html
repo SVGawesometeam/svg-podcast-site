@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,26 +357,32 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=Y854KRfONAU&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Only 15% of CEOs Get Real Value From AI</span>
               </a>
               <a href="https://youtube.com/watch?v=Y854KRfONAU&t=152s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:32</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Kalshi Co-Founder's Weekly AI Planning System</span>
               </a>
               <a href="https://youtube.com/watch?v=Y854KRfONAU&t=450s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Stanford Top AI Economist: What AI Is Worth to Him in Dollars</span>
               </a>
               <a href="https://youtube.com/watch?v=Y854KRfONAU&t=647s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Peter Yang's AI Skill Stack, Built in One Day</span>
               </a>
               <a href="https://youtube.com/watch?v=Y854KRfONAU&t=870s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Box CEO's Top 3 AI Tools Right Now</span>
               </a>
               <a href="https://youtube.com/watch?v=Y854KRfONAU&t=1105s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Khan Academy's $1.2M-a-Year AI Bill</span>
               </a>
       </div>

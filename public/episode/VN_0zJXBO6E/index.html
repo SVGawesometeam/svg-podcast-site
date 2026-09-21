@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -342,46 +344,57 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Millions of Views Don’t Equal Millions of Dollars</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=73s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:13</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Sponsored Posts and Videos</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=310s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Targeted advertising</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=420s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">UGC</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=566s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Affiliate marketing</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=664s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:04</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Helping others create content</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=743s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Selling digital products and services</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=834s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Selling merchandise or offline products</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=926s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Patreon Paid Memberships</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=974s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Ad Revenue from Platforms</span>
               </a>
               <a href="https://youtube.com/watch?v=VN_0zJXBO6E&t=1039s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:19</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Raising venture capital</span>
               </a>
       </div>

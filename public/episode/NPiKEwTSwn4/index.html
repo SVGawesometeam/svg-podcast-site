@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,86 +343,107 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=60s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Google Search has changed</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=128s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Personalization in Google search</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=167s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">New features in AI mode at Google</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=185s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Live DEMO: testing new features</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=247s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Google can book restaurants?</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=362s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">6:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Google decides which restaurants to show first</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=444s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to use Gemini to save hours at work</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=519s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:39</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will Google Ads disappear?</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=668s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">LIVE DEMO: Google’s agent makes a real phone call</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=847s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to get your business recommended by AI</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=900s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why PR will define visibility in the AI era</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=945s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What to do if businesses buy reviews</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=980s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to grow fast with smarter search strategies</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1083s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Shopping powered by AI - what’s changing</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1128s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">LIVE DEMO: shopping by taking a picture</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1220s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Google vs ChatGPT</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1370s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to design your home with AI</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1465s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">TIPS to build products that stand out in the AI era</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1558s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to find ideas that actually work</span>
               </a>
               <a href="https://youtube.com/watch?v=NPiKEwTSwn4&t=1640s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The 2 principles behind every viral product</span>
               </a>
       </div>

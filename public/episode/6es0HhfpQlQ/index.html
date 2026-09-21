@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 8ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,94 +342,117 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser: How to shift anxiety into clarity and control</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=70s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to stop anxiety at night. Mel’s 3-level framework</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=424s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:04</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Practical tools to calm anxiety and stop overthinking</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=609s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:09</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Using AI as a personal coach (the right way)</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=829s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:49</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“I’m not where I’m supposed to be in life” — what that really means</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=990s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Should you quit your job to start something new?</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=1079s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:59</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The friction exercise that reveals what you really want</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=1275s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Second exercise: how jealousy reveals your true desires</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=1446s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Turning jealousy into a roadmap for your future</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=1623s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">FOMO, social media, and protecting your attention</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=1865s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to decide which opportunities are worth your time</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=2043s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Money, self-worth, and productivity anxiety</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=2370s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Feedback vs. noise - who you should (and shouldn’t) listen to</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=2482s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">41:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When criticism comes from family and close friends</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=2675s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">44:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why desperation can be a powerful motivator</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=2840s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">47:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Productive guilt vs. destructive guilt</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3000s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">50:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Boundaries, burnout, and saying no as you grow</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3224s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">53:44</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Mel’s Rules for boundaries, focus, and productivity</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3310s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">55:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why saying NO changes everything</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3525s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">58:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“Let them” and “Let me” - What is actually in your control</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3633s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:00:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Mel’s new product: protein shots</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3740s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:02:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why everyone needs more protein</span>
               </a>
               <a href="https://youtube.com/watch?v=6es0HhfpQlQ&t=3960s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:06:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Giving yourself permission and trusting yourself</span>
               </a>
       </div>

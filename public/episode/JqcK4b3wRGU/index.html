@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -342,22 +344,27 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=JqcK4b3wRGU&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How We Decided to Buy a Rental in Hawaii</span>
               </a>
               <a href="https://youtube.com/watch?v=JqcK4b3wRGU&t=270s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Managing and renovating the property</span>
               </a>
               <a href="https://youtube.com/watch?v=JqcK4b3wRGU&t=389s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Monthly revenue breakdown</span>
               </a>
               <a href="https://youtube.com/watch?v=JqcK4b3wRGU&t=480s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Unpleasant surprise that put us in the red</span>
               </a>
               <a href="https://youtube.com/watch?v=JqcK4b3wRGU&t=534s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is our AirBnb profitable?</span>
               </a>
       </div>

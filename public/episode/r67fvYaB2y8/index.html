@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,46 +342,57 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI that can control your computer</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=127s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Free AI Prompt Library</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=186s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Top-tier personal assistant</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=263s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Add color to black-and-white photos</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=284s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:44</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Viral content creation tool</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=318s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Fantastic app for studying</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=359s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:59</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">A bit scary AI assistant</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=425s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Telegram Bot that writes perfect posts</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=495s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI data analyst</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=544s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:04</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Business Name Generator</span>
               </a>
               <a href="https://youtube.com/watch?v=r67fvYaB2y8&t=609s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:09</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI that helps you getting things done</span>
               </a>
       </div>

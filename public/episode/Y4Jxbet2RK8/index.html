@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,30 +343,37 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=62s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">№1 habit</span>
               </a>
               <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=341s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">5:41</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">№2 habit</span>
               </a>
               <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=512s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:32</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">№3 habit</span>
               </a>
               <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=638s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">№4 habit</span>
               </a>
               <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=806s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">№5 habit</span>
               </a>
               <a href="https://youtube.com/watch?v=Y4Jxbet2RK8&t=998s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">№6 habit</span>
               </a>
       </div>

@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,126 +358,157 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=60s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What's wrong with the traditional education system — Soviet, China, and what AI can't replace</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=160s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why we need to reform education for our kids</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=282s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The AI-powered school: no teachers, 2 hours a day, top 1% nationally</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=368s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How AI helps kids go from 25th to 90th percentile</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=398s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Top 1% in every grade, every subject</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=480s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI tutor instead of teachers</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=538s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The one focus that helps Alpha students outperform</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=650s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">(Sponsor) HeyGen — how I scale my Lingua Marina channel</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=748s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Who Alpha hires instead of teachers — coaches, athletes, business pros</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=837s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What if a kid can't understand the material from AI?</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=1050s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Alpha student who turned her TikTok scrolling into a successful business — and what if adults DO know better?</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=1320s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How her project could land her in Nature — the world's top scientific journal</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=1420s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The 6-year-old who made $1,600 selling cookies</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=1550s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Consumers vs. creators: raising builders</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=1817s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is screen time actually harming our kids' cognitive development?</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2054s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What Alpha kids learn besides academics — cursive, sewing, biking, swimming</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2180s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">36:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">2x learning in 2 hours: how it actually works</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2308s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How much Alpha School costs per year</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2357s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Can you replicate Alpha at home for free?</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2514s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">41:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The programs: Math Academy, Claude, and AI for parents</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2595s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">43:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why ChatGPT is banned at Alpha School</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2655s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">44:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What to watch with your kids — what good content looks like</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2725s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">45:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will universities matter in 5-10 years?</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2840s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">47:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What happens when Alpha students go back to a traditional system</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=2940s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">49:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">A self-imposed Alpha school for adults</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=3040s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">50:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The professions AI is rewriting first</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=3180s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">53:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How we'll need to pick a profession in the future</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=3222s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">53:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What if your kid graduates and can't get a job?</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=3330s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">55:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The one action every parent should take this week</span>
               </a>
               <a href="https://youtube.com/watch?v=WOmRB6jNiSU&t=3405s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">56:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why we can't rely on the old system anymore</span>
               </a>
       </div>

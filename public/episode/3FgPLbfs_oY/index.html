@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,110 +343,137 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=40s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will software engineers become obsolete as AI builds everything?</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=180s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">From $0 to $144M ARR</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=246s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Millions Building on Replit: What People Are Creating Today</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=296s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">FREE Guide: How to Improve Your Prompting Skills</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=358s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Building an App LIVE with Amjad</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=446s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Prompting Secrets: How to Instantly Get Better Results</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=505s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Where to Learn AI Skills Fast</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=611s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:11</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why Amjad Started Replit</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=690s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The #1 Trait for Success</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=785s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Generating New Ideas with AI: The Limitations of AI</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=968s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Deploying in Real-Time</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=990s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Future of Software Engineers: Vibe Coders vs. Traditional Devs</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1093s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:13</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Big Launch in September</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1170s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Balancing Family &amp; Business</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1270s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why Developers Choose Replit Over Other AI Coding Tools</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1385s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Biggest Mistakes Builders Make (And How to Avoid Them)</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1440s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why Grit Matters More Than Ideas</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1520s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Marketing Tips for New Builders</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1570s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Amjad’s 3 Favorite AI Apps</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1610s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Amjad Uses GPT &amp; Replit Daily</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1673s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Hardest Moment: What Almost Killed Replit</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1820s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Pitching to Peter Thiel</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=1965s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Most Important Thing for Any Entrepreneur</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=2000s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What the Next Generation Should Learn to Succeed</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=2124s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What Should Girls Learn to Thrive in the AI Era?</span>
               </a>
               <a href="https://youtube.com/watch?v=3FgPLbfs_oY&t=2230s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Soon Will a Solo Entrepreneur Build a $1B Company?</span>
               </a>
       </div>

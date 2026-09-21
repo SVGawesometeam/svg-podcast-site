@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,98 +343,122 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=68s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The 3 qualities that helped Perplexity grow from $0 to $20B in just 3 years</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=140s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to grow 3700% in a single year</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=224s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:44</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The role of brand awareness: why Perplexity partnered with Formula 1</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=358s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">5:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The tool every founder should know</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=457s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The first AI-powered browser</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=486s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Aravind demonstrates a killer Comet feature</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=642s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Comet is changing paid advertising forever</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=680s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What businesses MUST do to survive in the era of AI agentic browsers</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=858s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI can do what I’d pay $1,000 for — instantly</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=906s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Monetization that will be disrupted forever</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1149s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:09</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The first time AI actually protects you from Big Tech</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1207s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Which jobs will disappear because of AI</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1254s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How you can save your job in the AI era</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1370s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will entry-level jobs disappear entirely?</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1413s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Does education still matter in the AI era — and what it can give you</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1584s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why he’d Still Do a PhD in the Age of AI</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1723s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The ONE thing you should bet on to be successful</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1829s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The main trait that defines who he is</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1867s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is he really working 24/7?</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=1993s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:13</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Top business niches for 2025</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=2123s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“Do what you’re truly obsessed about”</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=2220s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Aravind’s top 3 favorite apps</span>
               </a>
               <a href="https://youtube.com/watch?v=U7PcyE0p54s&t=2425s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">40:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When they will release the COMET app</span>
               </a>
       </div>

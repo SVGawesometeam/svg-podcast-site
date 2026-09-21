@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,78 +343,97 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser – future of coding</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=53s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Vibe coding – why it changes everything</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=113s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How complex can sites get</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=215s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">No developers in 2 years?</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=288s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Prompt better – make AI your co-founder</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=368s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The future of developers</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=450s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The smartest companies will be hiring more developers, not less</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=505s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">10x teams – but who's buying?</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=558s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">90% of code by AI agents?</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=588s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Big tech halts hiring – what's next?</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=662s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Learning to code? why teens have the edge</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=748s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Best platform to start vibe coding</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=862s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI vs you – who has better ideas?</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=903s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AGI by 2030?</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=948s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why AI needs to be more creative</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=1030s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Skills every kid should learn</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=1085s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Best time to be a developer</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=1150s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Scared of AI taking jobs? listen to this</span>
               </a>
               <a href="https://youtube.com/watch?v=PR__eFQsnhg&t=1227s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:27</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Top 3 AI tools you should try</span>
               </a>
       </div>

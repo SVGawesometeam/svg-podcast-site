@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,46 +357,57 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=00RHph_eok4&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=74s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Which Jobs Are Already Dead</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=278s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Broken Career Ladder</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=542s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What Happens to Wealth With Free Labor?</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=864s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AGI to Superintelligence: The Full Progression</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=931s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:31</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why We Can't Code Ethics Into AI</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=1190s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Can Anyone Actually Stop This?</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=1409s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Roman's Personal 5-Year Prediction</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=1712s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:32</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Where to Invest Before It's Too Late</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=1893s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">5 Jobs That Survive the AI Takeover</span>
               </a>
               <a href="https://youtube.com/watch?v=00RHph_eok4&t=2077s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">College in 2026: Worth It or Not?</span>
               </a>
       </div>

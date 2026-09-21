@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,74 +343,92 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=73s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:13</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">From $200 to Running a $30B Company: Yamini's Journey</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=356s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">I Still Walk Into Rooms and Think: Can I Do This?</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=435s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Your Past Will Limit Your Future — Here's Why</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=554s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to Switch Careers Without Experience</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=715s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Navigating Uncertainty: The Skill No One Talks About</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=831s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:51</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">FREE AI Toolkit: The Big 3 LLMs at Work</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=930s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How She Became CEO: Leading Through COVID Crisis</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1218s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What It Means to Be an AI-First Company</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1376s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is AI Really Taking Your Job? The Truth</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1470s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The #1 Mistake Entrepreneurs Make with AI</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1577s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The 3 Skills Every Hire Needs in the AI Era</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1740s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Should You Still Go to College in 2025?</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1874s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Decision-Making Framework of a $30B CEO</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=1962s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to Make Better Decisions Under Pressure</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=2076s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Questions You Need to Ask to Build Your Principles</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=2272s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:52</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice to Your 21-Year-Old Self in the AI Era</span>
               </a>
               <a href="https://youtube.com/watch?v=lVV0HInr0ZY&t=2379s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:39</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Ask Yourself 5 Whys: How to Break Through Any Plateau</span>
               </a>
       </div>

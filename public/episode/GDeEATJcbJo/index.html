@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -352,74 +354,92 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Duo showed up uninvited</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=67s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Can you still get hired without AI skills?</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=243s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why everyone should start vibe coding</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=306s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How 2 non-coders built Duolingo's newest product</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=505s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The exact steps to start your AI business in 2026</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=636s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Where AI actually fails — real internal data</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=750s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Did AI make Duolingo 10x more productive? Honest answer</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=921s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:21</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How the Duolingo founder actually uses AI</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=970s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will AI kill the need to learn languages?</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1162s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Marina and Luis got the same investor rejection</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1219s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:19</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Can anyone build their own app in 2026?</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1377s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">&quot;We have never done a layoff&quot; — the full story</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1521s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:21</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">No regrets on the 82% stock crash</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1700s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why your metrics shouldn't define your worth</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1900s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Don't know where to start with AI? Watch this</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=1980s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The one thing Luis is actually nervous about</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=2064s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Blitz: which jobs survive AI and which don't</span>
               </a>
               <a href="https://youtube.com/watch?v=GDeEATJcbJo&t=2386s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:46</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What business would Luis start in 2026?</span>
               </a>
       </div>

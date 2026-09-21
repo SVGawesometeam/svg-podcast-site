@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -342,118 +344,147 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=80s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Are we in an AI bubble?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=194s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is AI becoming conscious?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=315s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">5:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Kids forming relationships with AI: how to prevent it</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=420s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will we reach AGI by 2030?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=453s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What AI already does better than humans</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=485s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The future of work: humans and AI agents</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=510s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">8:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How AI is changing work — and creating unbelievable competition</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=660s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Get FREE: 100+ creative AI use cases for your work</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=728s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Imagine superintelligence: what would a normal day look like?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=830s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Imagine it’s 2040: how will your kitchen look? How AI will reshape everyday life</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=997s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Markets and investors: what to focus on to stay ahead</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1038s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Copilot and education: why 40% of student queries are health-related</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1145s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What will happen to traditional education? How AI will change learning</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1256s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Should you still be saving for your kid’s college?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1380s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What skills should we actually learn today?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1429s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:49</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Do you need to be technical to build a career in tech? Mustafa’s story</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1514s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The “memory” feature: when AI remembers everything</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1590s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">If AI remembers everything, what happens to our brains?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1715s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Are we getting dumber with AI?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1757s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Killer AI features people underuse — that actually save time</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1839s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:39</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Mustafa’s favorite use case of AI</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1885s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Should we be worried AI knows so much about us?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=1920s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Work automated by AI: why it’s not an AI problem but a human one</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=2062s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to adapt to the speed of AI progress — and could something like this happen again?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=2138s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">In 25 years: massive structural unemployment?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=2231s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:11</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Who will lead the future — governments or Big Tech?</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=2280s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“The Coming Wave”: what’s changed since the book and why Mustafa didn’t expect this speed</span>
               </a>
               <a href="https://youtube.com/watch?v=SP76PvgMzVU&t=2435s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">40:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Where all this is leading us in the next few years</span>
               </a>
       </div>

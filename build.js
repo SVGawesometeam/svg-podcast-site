@@ -1073,12 +1073,21 @@ function renderEpisodePage(d) {
     .map((t) => `<li>${esc(t)}</li>`)
     .join("\n              ");
 
-  // Chapter titles arrive from the YouTube description with the separator dash
-  // glued to the front ("00:00 – Intro"). Left there it sits hard against the
-  // title with the time column's slack to its left, so it goes in its own span
-  // between the two and the flex gap centres it.
-  const tsDash = (title) => (title.match(/^\s*([–—-])\s*/) || [])[1] || "";
-  const tsTitle = (title) => title.replace(/^\s*[–—-]\s*/, "");
+  // Chapter titles arrive from the YouTube description with a separator dash
+  // glued to the front ("00:00 – Intro"), in whichever glyph that description
+  // happened to use — or with no dash at all. Every page renders the same one,
+  // in its own span between the time and the title, so the flex gap centres it.
+  // Whatever the description supplied is dropped, but only when every chapter
+  // has one: on a list where a single title starts with a dash, that dash is
+  // part of the title ("-40% of jobs"), not a separator.
+  const TS_DASH = "–";
+  const tsLeading = d.timestamps.map((t) => (String(t.title).match(/^\s*([–—-])/) || [])[1]);
+  const tsGlyphs = new Set(tsLeading.filter(Boolean));
+  const tsStrip =
+    tsLeading.every(Boolean) && tsGlyphs.size === 1
+      ? new RegExp(`^\\s*[${[...tsGlyphs].join("")}]\\s*`)
+      : null;
+  const tsTitle = (title) => (tsStrip ? String(title).replace(tsStrip, "") : String(title).trim());
   // Width of the widest time on this page, in characters. `ch` is the advance
   // width of "0", so in a monospace face the column fits the time exactly
   // whatever font the visitor actually has — a rem guess would leave slack.
@@ -1088,9 +1097,8 @@ function renderEpisodePage(d) {
     .map(
       (t) =>
         `<a href="https://youtube.com/watch?v=${d.videoId}&t=${t.seconds}s" class="timestamp-link" target="_blank" rel="noopener">
-                <span class="ts-time">${esc(t.time)}</span>${
-                  tsDash(t.title) ? `\n                <span class="ts-dash">${esc(tsDash(t.title))}</span>` : ""
-                }
+                <span class="ts-time">${esc(t.time)}</span>
+                <span class="ts-dash">${TS_DASH}</span>
                 <span class="ts-title">${esc(tsTitle(t.title))}</span>
               </a>`
     )

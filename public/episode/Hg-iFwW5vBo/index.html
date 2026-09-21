@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,46 +343,57 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why Now Is the Best Time for AI</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=182s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 1: Monica + Custom GPT Agents</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=258s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 2: ChatPDF + ChatGPT (for Contracts &amp; Hiring)</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=374s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 3: Opus Clip, Gamma, EasyGen/Claude AI (for Content)</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=498s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 4: Otter, Copilot</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=597s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 5: Trint, 11Labs, HeyGen</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=679s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:19</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 6: Gong.io/Chorus.ai + Tableau/Power BI</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=730s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 7: Gemini for Google Sheets</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=759s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:39</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 8: Adobe Firefly + AI in Photoshop</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=809s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Tool 9: Notebook LM, Veo, Google Meet</span>
               </a>
               <a href="https://youtube.com/watch?v=Hg-iFwW5vBo&t=1003s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Final Tips &amp; Takeaways</span>
               </a>
       </div>

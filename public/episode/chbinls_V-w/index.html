@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,134 +342,167 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=chbinls_V-w&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Intro</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=76s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:16</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 31</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=134s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Get a catchy domain name for your business</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=204s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 30</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=310s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 29</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=364s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:04</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 28</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=434s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 27</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=547s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 26</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=658s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 25</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=730s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 24</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=835s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 23</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=871s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:31</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 22</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=966s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 21</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1056s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 20</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1097s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 19</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1146s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 18</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1214s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 17</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1303s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 16</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1374s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 15</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1480s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 14</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1571s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:11</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 13</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1674s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 12</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1768s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 11</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1847s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 10</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=1953s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 9</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2037s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 8</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2215s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">36:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 7</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2313s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 6</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2431s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">40:31</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 5</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2516s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">41:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 4</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2634s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">43:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 3</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2748s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">45:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 2</span>
               </a>
               <a href="https://youtube.com/watch?v=chbinls_V-w&t=2825s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">47:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Idea 1</span>
               </a>
       </div>

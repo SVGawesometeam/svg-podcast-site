@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,86 +357,107 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=38s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">If you started your career from scratch today</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=64s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:04</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Stay out of the recruiting folder</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=176s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why &quot;learn every AI tool&quot; is the wrong advice</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=266s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">We're hiring judgment</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=290s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Every skill is best learned in low-stakes places</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=397s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is the career ladder getting erased?</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=415s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">PSHE: how promotions actually work</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=480s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The trough of disillusionment</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=516s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI pushes the entire ladder up</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=608s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why he doesn't like the word &quot;replaced&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=798s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What happens to entry-level careers</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=942s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Eigenquestions: the skill he hires for</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=1000s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The teleportation interview question</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=1224s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to practice this without risking your job</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=1330s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Inside Grammarly: 100 billion AI queries a week</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=1494s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Demo: building agents that work where you work</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=1694s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Chat, do, assist — three ways to think about AI</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=1780s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The three agents he uses every day</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=2077s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Bill Campbell's advice</span>
               </a>
               <a href="https://youtube.com/watch?v=JEZVl3BkSLk&t=2240s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">37:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The metric he still measures himself by</span>
               </a>
       </div>

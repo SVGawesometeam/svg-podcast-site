@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -342,102 +344,127 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">0:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser: AI strategizing to achieve goals &amp; the stark 5-year timeline</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=75s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">1:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Intro: Meet Yoshua Bengio, godfather of AI</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=147s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:27</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">From pessimism to optimism: why Yoshua's outlook shifted</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=280s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Worst-case scenario: what happens when AI pursues its own goals</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=320s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">5:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI blackmailed lead-engineer: when AI goes against moral red lines</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=460s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Misalignment explained: why AIs develop goals we don't want</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=477s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Best case scenario: can we build AI that aligns with human values?</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=591s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">9:51</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When will we reach AGI?</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=705s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">One AI capability that  shows the level of intelligence - why asking questions from AI could change everything</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=740s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Two aspects of intelligence: ability vs. intentions</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=806s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AD: 5 paths to monetize AI in 30 days</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=885s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice on how to prepare for what's coming</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=917s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What jobs will remain when machines can do most tasks</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=978s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The human side that matters most in the future</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1050s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The timeline question: how much time do we really have?</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1085s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">5 years left: AI doubling every 7 months toward human-level intelligence</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1132s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:52</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Software engineers at risk</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1186s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:46</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Career advice: what individuals can do right now</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1238s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The future of education: will degrees still matter?</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1340s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What Yoshua would tell his children about learning and career paths</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1375s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Humanitarian vs. scientific path</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1443s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Looking back 30 years: what he'd do differently</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1520s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The AI breakthrough he wants to witness in his lifetime</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1580s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Which governments are getting AI policy right (and which aren't)</span>
               </a>
               <a href="https://youtube.com/watch?v=0fXGtQoJgNo&t=1630s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">One principle to guide decisions in 2026 when AI is growing rapidly</span>
               </a>
       </div>

@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -355,74 +357,92 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">I asked 50+ founders one question</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=30s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">$215M AI CEO: why he still uses ChatGPT</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=221s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:41</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The trick that makes any AI 10x smarter</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=258s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Mo Gawdat's 3-step AI system (+ business idea)</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=432s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How everyone uses AI vs. how the smart ones do</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=458s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How the best AI companies actually use Claude</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=554s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What I changed to double our revenue</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=614s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Allie Miller's 100-agent system (ex-Amazon AI leader)</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=855s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">3 files that stop AI from sounding generic</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=905s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Staying competitive when AI collapses the build cycle</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1034s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Gary Vaynerchuk: the wealth window closing soon</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1175s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">2 non-coders. 6 months. 7 million daily users</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1360s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why using AI puts you ahead of 99%</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1440s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The way you should be talking to AI (you'd never guess)</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1515s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">25:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The model that replaced Higgsfield founder's coach</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1581s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:21</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">My Gemini trick nobody talks about</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1650s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The tool that replaced my accountant</span>
               </a>
               <a href="https://youtube.com/watch?v=zL2PIa72gJ4&t=1710s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why I now record every single meeting</span>
               </a>
       </div>

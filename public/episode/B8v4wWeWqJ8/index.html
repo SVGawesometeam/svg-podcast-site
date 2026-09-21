@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,90 +343,112 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=42s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How she manages it all: the real support behind Coco</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=180s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The reality of working with her husband</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=375s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to stay relevant for 20+ years in fashion</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=482s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">People gravitate toward how you work, not how you look</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=506s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will AI models replace humans?</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=550s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The skills AI can't replicate — how human models stay irreplaceable</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=647s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Models should learn from content creators</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=714s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">'There’s no traditional path anymore' — why aspiring models need to throw out the rulebook</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=801s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:21</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The backlash from the fashion industry over her TikToks</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=918s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The confession: &quot;I’m actually a stay-at-home mom most of the time&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1080s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">&quot;If you see me on an airplane, I’m crying&quot;</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1173s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why she chose to have 3 kids while still modeling</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1295s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">She lost contracts because she got pregnant — the industry's brutal response to motherhood</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1343s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The law she helped pass that changed fashion forever</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1380s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The unexpected backlash that followed</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1448s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How she deals with hate and negativity</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1580s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The power of not responding right away</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1648s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Coco’s beauty &amp; travel survival tips</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1765s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The craziest thing that happened to her on set</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1842s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What she’d tell her 15-year-old self</span>
               </a>
               <a href="https://youtube.com/watch?v=B8v4wWeWqJ8&t=1925s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">'Here’s where I see myself in 5 years'</span>
               </a>
       </div>

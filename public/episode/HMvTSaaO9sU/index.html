@@ -246,15 +246,17 @@
 
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
 
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
@@ -356,86 +358,107 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Meet the Liberman brothers</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=80s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Is AI actually overhyped?</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=202s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">ChatGPT solved a 3-year house problem</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=288s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How much time do we really have?</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=396s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The AI moment that hits everyone</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=478s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Anthropic's founder owns just 1.5%</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=634s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:34</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How China's AI game really works</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=768s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why leaving your AI gets hard</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=860s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Who really owns 70% of our future</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=890s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Two futures. Which one is yours?</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1028s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Who controls your answers controls you</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1092s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Should the government step in?</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1283s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What one person can actually do</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1477s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI that's more empathetic than people</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1608s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Bitcoin beat the untouchable giants</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1914s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:54</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The coming boom in small businesses</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=1980s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What to do in 2 years</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=2027s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Where AI can take you: real story</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=2124s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What non-coders build in one hour</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=2203s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">36:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Rapid-fire predictions for 5 years</span>
               </a>
               <a href="https://youtube.com/watch?v=HMvTSaaO9sU&t=2393s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">39:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The smartest move you can make today</span>
               </a>
       </div>

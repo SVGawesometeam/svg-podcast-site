@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,74 +343,92 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">In this video...</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=76s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:16</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">From fitness YouTube to fashion DTC: Blogilates vs Popflex</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=155s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How pricing &amp; product strategy works across both brands</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=292s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:52</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Revenue breakdown: why she quit brand deals</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=341s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:41</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The role of email, content &amp; storytelling in sales</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=462s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What works in marketing: organic content, community &amp; behind-the-scenes</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=697s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How one micro-creator boosted sales overnight</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=776s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Taylor Swift viral moment — behind the scenes</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=905s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Burnout, hiring, and the emotional load of leading a lean team</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1021s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:01</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why she hates AI</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1156s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:16</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Dealing with copycats, dupes &amp; big retailers</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1420s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How online hate shaped her journey — and why she left fitness content</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1655s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">27:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Dealing with online hate</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1810s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice to creators facing online hate</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1896s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why content drives 70% of her revenue</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=1985s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">UGC fatigue &amp; what actually performs now</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=2062s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Adapting with the algorithm — and staying resilient</span>
               </a>
               <a href="https://youtube.com/watch?v=4jqrK-hUicQ&t=2190s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">36:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice for everyone who starts a business in 2025</span>
               </a>
       </div>

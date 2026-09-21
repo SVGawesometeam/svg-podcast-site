@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,70 +342,87 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=66s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">10x Productive with AI: 36 workflows, 100 agents. How this system actually works</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=357s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Setting Claude for non-technical</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=434s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:14</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The best way to write a prompt: just complain to Claude</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=570s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Claude Chat vs Claude Cowork vs Claude Code — what's the difference</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=804s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Live demo: building a morning briefing from scratch</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=953s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What is a &quot;skill&quot; in Claude — the toolbox explained</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=1141s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:01</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to migrate between AI systems in minutes</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=1227s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:27</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI as intern vs AI as teammate — why it matters</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=1384s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:04</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">3 context documents everyone should build first</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=2026s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:46</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Allie uses AI to run her consulting business</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=2140s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Allie reviews Marina's Claude setup live</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=2410s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">40:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When to trust AI and when not to</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=2765s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">46:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What's coming in AI in the next 12 months</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=2985s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">49:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Your AI will know you better than your strategist</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=3131s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">52:11</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What happens to teams when everyone is 10X more productive</span>
               </a>
               <a href="https://youtube.com/watch?v=YfRkj9kmQf0&t=3265s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">54:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The gap in 1 year: Claude user vs non-Claude user</span>
               </a>
       </div>

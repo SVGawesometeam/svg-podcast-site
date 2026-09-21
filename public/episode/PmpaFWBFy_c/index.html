@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,78 +342,97 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=35s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to stop flying economy using Ankur’s app (and how it actually works)</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=133s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:13</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">$7,900 monthly rent – how much do you earn in rewards?</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=150s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">2:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Where can you spend your rewards</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=216s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">3:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How rewards convert to real dollars</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=248s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">4:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why no one has done this before</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=320s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">5:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How COVID shaped his startup journey</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=378s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">6:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The ultimate entrepreneurship guide</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=438s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:18</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">2 years of hearing no</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=470s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">7:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">He spent 18 months in Washington DC changing regulations from within</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=616s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:16</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Entrepreneurial mindset – prepare for everything to go wrong</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=672s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What happened to solving big problems?</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=754s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">12:34</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Housing crisis, mental health – why the government doesn’t fix it</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=800s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Founders don’t want to solve problems anymore</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=829s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:49</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">His mindset for building a $3.1B company</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=934s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:34</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The problem with raising money in Silicon Valley</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=1057s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">His upbringing: his parents’ American dream</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=1183s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">19:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Startup life as a kid – growing up in an innovation environment</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=1415s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why NYC beats Silicon Valley for startups</span>
               </a>
               <a href="https://youtube.com/watch?v=PmpaFWBFy_c&t=1567s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Starting a company? 2 things you must know</span>
               </a>
       </div>

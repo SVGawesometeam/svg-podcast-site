@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,94 +342,117 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What This Video Is About: The 2026 AI Startup Playbook</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=100s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Pivot Story: From a Failing Product to Product–Market Fit</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=171s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:51</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Early Validation: Engineering Results Before Building the Full Product</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=287s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Strategy &amp; Retention: How to Measure What Actually Matters</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=329s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Advice for Founders: Build a Real Business, Not a Cool Demo</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=455s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Passion vs. Problems: What Actually Matters When Starting a Startup</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=550s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Building Creator Tools for Companies Like HubSpot</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=640s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Agent Opus: From AI Tool to an AI Creative Director</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=815s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Inside Agent Opus: How AI Agents Will Change Content Creation</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=907s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Future of Content Creators: Why Competition Is Getting Harder</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=947s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What to Focus on Instead of Technical Skills: Creativity &amp; Differentiation</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=972s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">16:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Will Personal Branding Become Saturated?</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1052s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:32</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Creators Who Will Stand Out in 2026 — and Why</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1130s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Starting an AI Company in 2026: What to Do in Your First 30 Days</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1300s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to Stand Out in a Crowded AI Market</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1358s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Two Types of Problems AI Founders Should Avoid</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1390s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Being “AGI-Pilled”: Predicting the Future of Foundation Models</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1490s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Pricing AI Products: Value Creation, Costs, and Unit Economics</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1700s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:20</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Customer Interviews: Why Quality Matters More Than Quantity</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1757s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:17</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The #1 AI Skill: Using AI as a Thinking Partner</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1848s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Daily Practice: How to Ask Better Questions and Get Better Answers</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=1980s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Top 3 Principles for Starting an AI Business in 2026</span>
               </a>
               <a href="https://youtube.com/watch?v=HQ3eVt2jgAY&t=2150s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Final Advice: One Principle Every Founder Should Learn in Their 20s</span>
               </a>
       </div>

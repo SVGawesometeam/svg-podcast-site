@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,82 +343,102 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Meet Raj Gokal</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=120s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“Having a really good co-founder relationship is the most important part of starting companies”</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=269s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The smart journal for personal growth</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=340s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How did he get into crypto?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=475s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“Any really important innovation is very volatile at first”</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=532s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:52</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What helps Raj keep going in the face of constant instability?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=633s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:33</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“The belief that Bitcoin is valuable is a fundamental property of the asset”</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=895s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:55</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How did he start working with Solana?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=1122s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How did he find his co-founder, Anatoly Yakovenko?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=1438s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">23:58</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“I gave Anatoly 6 months”</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=1768s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How does Solana grow capital?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=2103s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">35:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What is Raj’s role at Solana now?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=2166s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">36:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">“Tokens are just spam prevention”</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=2307s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:27</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What is crypto device Saga?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=2416s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">40:16</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why was Saga created?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=2620s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">43:40</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How can NFTs become a new way to communicate with an audience? Could this become a business?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=2909s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">48:29</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What is DePIN?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=3002s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">50:02</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How can you use this in business?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=3289s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">54:49</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What was the toughest moment for Raj while he was building Solana?</span>
               </a>
               <a href="https://youtube.com/watch?v=tzUAJZAuaZw&t=3501s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">58:21</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Raj’s most important commitment</span>
               </a>
       </div>

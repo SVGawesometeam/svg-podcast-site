@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,66 +342,82 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=95s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:35</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Why Did Samir Drop Out Despite His Traditional Indian Upbringing?</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=390s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Meeting the Co-founder and First Business Steps</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=566s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:26</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Startup Spending Philosophy and The Power of Team</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=818s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:38</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to Hire? Qualities Over Skills, Building Culture</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=942s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:42</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How Hiring Changed with AI? Advanced Insights from Samir</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=1125s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The Vise Idea: AI is Transforming Wealth Management</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=1260s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Overcoming Challenges: Pitching AI to Banks and Advisors</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=1488s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:48</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">AI-Driven Portfolio Insights: Upload, Customize, and Optimize Your Investments</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=1730s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">28:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What Keeps Samir Going Through Hard Times? The Struggles of Building a Startup</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=1890s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">31:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">College vs. Real-World Learning: How to Build Credibility Without a Degree</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=2010s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Samir’s North Star — Building a Company That Transforms Generations</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=2063s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:23</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Investing Tips: Balancing Long-Term Growth with Small Risks</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=2296s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:16</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Democratizing Wealth: Can Vise Serve Everyone?</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=2336s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">38:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Rethinking College: Will AI Replace Traditional Education?</span>
               </a>
               <a href="https://youtube.com/watch?v=s5r4wdOWLjk&t=2505s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">41:45</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to Become Successful in the AI Era: Find and Master Your Superpower</span>
               </a>
       </div>

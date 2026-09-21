@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -341,50 +343,62 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">I asked a robot to do my manicure</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=81s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:21</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">I want a beauty service so often, but I don't have the time to go out!</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=187s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">03:07</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">30-Second Website: Is it Possible?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=291s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">04:51</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What about the cuticles?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=469s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:49</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Let’s check out my nails!</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=543s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:03</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How long did it take to make this robot?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=713s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">11:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">You can totally get a robot manicure during your break at work! It’s a thing</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=881s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">14:41</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">I’m worried about nail technicians. Will robots take over their jobs?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=1051s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:31</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How many robots does ClockWork produce each year?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=1201s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:01</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">What about work-life balance?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=1292s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:32</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How’s it like managing a business while being a mom?</span>
               </a>
               <a href="https://youtube.com/watch?v=JI6KrvldAoE&t=1363s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">22:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">My manicure is all done! Let’s check it out!</span>
               </a>
       </div>

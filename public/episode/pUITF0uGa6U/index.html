@@ -235,15 +235,17 @@
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
@@ -340,110 +342,137 @@
       <div class="timestamps-list">
         <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=0s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Teaser</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=25s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">00:25</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Who is Humphrey Yang</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=66s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">01:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Budgeting strategy for 2025</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=128s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">02:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Investing strategy for beginners</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=344s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">05:44</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Three-fund portfolio</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=397s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">06:37</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Higher-risk instruments with potentially higher returns</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=450s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">07:30</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When to start investing in the stock market</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=527s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">08:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Investment schedule</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=552s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The main rule of investing</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=576s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">09:36</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">3 recommended brokerage apps</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=612s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">10:12</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Pros and cons of starting a 401(k) at the beginning of your investment journey</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=795s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">13:15</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Rent or buy: which is better?</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=943s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">15:43</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Investing in real estate</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1020s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">17:00</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Crypto: what to buy in 2025</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1127s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">18:47</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to pick meme coins to invest in</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1205s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:05</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How many coins does Humphrey own right now?</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1224s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">20:24</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Which platform to use for crypto</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1282s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">21:22</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Recommended % of your portfolio to invest into Bitcoin</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1496s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">24:56</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The worst financial decisions people can make</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1566s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:06</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When you should sell your car</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1610s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">26:50</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When to sell stocks</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1797s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">29:57</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Emotional investing</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1846s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">30:46</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to decide what information to use when investing</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1928s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:08</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">Best way to pick meme coins to buy</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1948s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">32:28</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">The % of your portfolio to allocate to individual stocks</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=1990s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">33:10</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">When to hire a financial adviser</span>
               </a>
               <a href="https://youtube.com/watch?v=pUITF0uGa6U&t=2093s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">34:53</span>
+                <span class="ts-dash">–</span>
                 <span class="ts-title">How to stay sane when the market goes down</span>
               </a>
       </div>
