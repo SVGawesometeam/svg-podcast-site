@@ -590,8 +590,8 @@ function renderIndexPage(episodes) {
       <p>Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and building the future. Hosted by Marina Mogilko.</p>
       <div class="listen-links">
         <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" title="YouTube">${ICONS.youtube} YouTube</a>
-        <a href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
-        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
+        <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener" title="Spotify">${ICONS.spotify} Spotify</a>
+        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener" title="Apple Podcasts">${ICONS.apple} Apple Podcasts</a>
       </div>
     </section>
 

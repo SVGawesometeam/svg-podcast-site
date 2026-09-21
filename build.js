@@ -442,8 +442,8 @@ function renderHomePage(episodes) {
 
   const followLinks = [
     ["https://www.youtube.com/@SiliconValleyGirl", "YouTube", ICONS.youtube],
-    ["https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU", "Spotify", ICONS.spotify],
-    ["https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950", "Apple", ICONS.apple],
+    ["https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY", "Spotify", ICONS.spotify],
+    ["https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545", "Apple", ICONS.apple],
     ["https://www.instagram.com/siliconvalleygirl/", "Instagram", ICONS.instagram],
     ["https://www.tiktok.com/@linguamarina", "TikTok", ICONS.tiktok],
     ["https://www.linkedin.com/in/marinamogilko/", "LinkedIn", ICONS.linkedin],
@@ -724,8 +724,8 @@ function renderHomePage(episodes) {
         <p class="hero-dek">Marina Mogilko interviews the founders and scientists building AI, then asks them the only question that matters: what can I actually do with this today?</p>
         <div class="hero-cta">
           <a class="btn btn-accent" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
-          <a class="btn btn-ink" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
-          <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener">Apple</a>
+          <a class="btn btn-ink" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener">Apple</a>
         </div>
       </div>
       <div class="hero-media">
@@ -746,7 +746,7 @@ function renderHomePage(episodes) {
           ${cover.description ? `<p class="cover-dek">${esc(cover.description)}</p>` : ""}
           <div class="cover-cta">
             <a class="btn btn-ink" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
-            <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
+            <a class="btn" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
           </div>
         </div>
       </div>
