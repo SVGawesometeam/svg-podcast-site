@@ -155,3 +155,34 @@ test('the host photo reference matches a real file, case included', () => {
     `markup points at /${ref[1]} but public/ has no file spelled exactly that`
   );
 });
+
+// The hero carries an editorial pin; the cover story is always the genuinely
+// newest episode. That split is what keeps "This week's cover story" true no
+// matter what is pinned above it.
+test('the cover story is always the newest episode and is labelled as such', () => {
+  const html = renderHomePage(EPISODES);
+  assert.match(html, /pill-label">Latest<\/span>This week/);
+  const cover = html.slice(html.indexOf('class="cover-card"'));
+  assert.ok(cover.includes(`/episode/${EPISODES[0].videoId}/`), 'cover is not the newest episode');
+});
+
+test('the hero carries no "latest" wording, since it may be a pinned older episode', () => {
+  const html = renderHomePage(EPISODES);
+  const hero = html.slice(html.indexOf('class="hero"'), html.indexOf('class="cover"'));
+  assert.ok(!/latest/i.test(hero), 'hero still claims to be the latest episode');
+});
+
+test('neither the hero nor the cover story is repeated in the archive', () => {
+  const html = renderHomePage(EPISODES);
+  const archive = html.slice(html.indexOf('id="episodes"'));
+  const heroId = html.slice(html.indexOf('hero-media')).match(/href="\/episode\/([^/]+)\//)[1];
+  const coverId = html.slice(html.indexOf('class="cover-card"')).match(/href="\/episode\/([^/]+)\//)[1];
+  for (const id of new Set([heroId, coverId])) {
+    assert.ok(!archive.includes(`/episode/${id}/`), `${id} duplicated in the archive`);
+  }
+});
+
+test('the cover story shows its description, as the reference does', () => {
+  const withDesc = EPISODES.map((e, i) => (i === 0 ? { ...e, description: 'A dek from the episode page.' } : e));
+  assert.match(renderHomePage(withDesc), /<p class="cover-dek">A dek from the episode page\.<\/p>/);
+});

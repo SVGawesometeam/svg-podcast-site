@@ -132,8 +132,10 @@ function readExistingEpisodeMeta(videoId, html) {
   const guestMatch = html.match(/<div class="guest-name">([^<]+)<\/div>/);
   const guestTitleMatch = html.match(/<div class="guest-title">([^<]*)<\/div>/);
   const durationMatch = html.match(/<span>(\d+ MIN)<\/span>/);
+  const descMatch = html.match(/<meta name="description" content="([^"]*)"/);
   return {
     videoId,
+    description: descMatch ? unesc(descMatch[1]) : "",
     title: titleMatch ? unesc(titleMatch[1]) : videoId,
     thumbnail: imgMatch ? imgMatch[1] : `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
     publishedAt: dateMatch ? dateMatch[1] : new Date().toISOString(),
@@ -379,9 +381,27 @@ function renderFormFields() {
   }).join("\n");
 }
 
+// Pin a specific episode to the top of the homepage. Set to null (or a
+// videoId no longer on the site) and the newest episode takes the slot again,
+// which is what the page does by default.
+const FEATURED_VIDEO_ID = "E0Q96IKXx6Q";
+
 function renderHomePage(episodes) {
-  const cover = episodes[0];
-  const rest = episodes.slice(1);
+  const newest = episodes[0];
+  const pinned = FEATURED_VIDEO_ID
+    ? episodes.find((e) => e.videoId === FEATURED_VIDEO_ID)
+    : null;
+  if (FEATURED_VIDEO_ID && !pinned) {
+    console.log(`Note: featured episode ${FEATURED_VIDEO_ID} is not on the site — falling back to the newest.`);
+  }
+  // Two distinct slots. The hero carries whatever is pinned — an editorial
+  // pick, with no "latest" wording anywhere near it. The cover story below is
+  // always the genuinely newest episode, so "This week's cover story" stays
+  // true no matter what is pinned above it.
+  const hero = pinned || newest;
+  const cover = newest;
+  const shown = new Set([hero.videoId, cover.videoId]);
+  const rest = episodes.filter((e) => !shown.has(e.videoId));
 
   // Six cards show; the rest stay in the markup but hidden, and "All episodes"
   // reveals them. Keeping every episode in the DOM preserves the internal
@@ -706,11 +726,10 @@ function renderHomePage(episodes) {
           <a class="btn btn-accent" href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">Watch on YouTube</a>
           <a class="btn btn-ink" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
           <a class="btn" href="https://podcasts.apple.com/us/podcast/silicon-valley-girl/id1455186950" target="_blank" rel="noopener">Apple</a>
-          <a class="btn-text" href="/episode/${cover.videoId}/">Latest episode &rarr;</a>
         </div>
       </div>
       <div class="hero-media">
-        <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" width="640" height="360"></a>
+        <a href="/episode/${hero.videoId}/"><img src="${esc(hero.thumbnail)}" alt="${esc(hero.title)}" width="640" height="360"></a>
         <span class="hero-badge">New episode weekly</span>
       </div>
     </div>
@@ -724,6 +743,7 @@ function renderHomePage(episodes) {
         <div>
           <p class="cover-meta">${formatDateShort(cover.publishedAt)} &middot; ${esc(cover.duration)} &middot; With ${esc(displayGuest(cover))}</p>
           <h3 class="cover-title"><a href="/episode/${cover.videoId}/">${esc(cover.title)}</a></h3>
+          ${cover.description ? `<p class="cover-dek">${esc(cover.description)}</p>` : ""}
           <div class="cover-cta">
             <a class="btn btn-ink" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
             <a class="btn" href="https://open.spotify.com/show/1uvTQ1Jy2rBcipKjHvTHMU" target="_blank" rel="noopener">Spotify</a>
