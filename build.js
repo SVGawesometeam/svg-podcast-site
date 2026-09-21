@@ -536,8 +536,16 @@ function renderHomePage(episodes) {
   // A portrait of Marina if one has been dropped into public/ under any of
   // these names; otherwise two recent stills, so a missing file degrades to
   // something reasonable instead of a broken image.
-  const HOST_PHOTO_NAMES = ["host.jpg", "host.jpeg", "host.png", "host.webp"];
-  const hostPhotoFile = HOST_PHOTO_NAMES.find((n) => fs.existsSync(path.join(PUBLIC_DIR, n)));
+  // Read the directory rather than probing names with existsSync. On macOS
+  // existsSync("host.jpg") is true for a file actually called host.JPG, so the
+  // markup would reference a spelling that does not exist and 404 on Vercel's
+  // case-sensitive filesystem. Taking the name from readdirSync means the src
+  // is always exactly what is on disk, whatever case it was saved in.
+  const HOST_PHOTO_EXT = /^host\.(jpe?g|png|webp)$/i;
+  const hostPhotoFile = fs
+    .readdirSync(PUBLIC_DIR)
+    .filter((n) => HOST_PHOTO_EXT.test(n))
+    .sort()[0];
   const hostStills = hostPhotoFile
     ? `<img src="/${hostPhotoFile}" alt="Marina Mogilko" class="host-photo" loading="lazy" width="640" height="800">`
     : rest

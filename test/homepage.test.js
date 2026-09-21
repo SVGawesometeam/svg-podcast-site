@@ -188,3 +188,27 @@ test('the cover story shows its description, as the reference does', () => {
   const withDesc = EPISODES.map((e, i) => (i === 0 ? { ...e, description: 'A dek from the episode page.' } : e));
   assert.match(renderHomePage(withDesc), /<p class="cover-dek">A dek from the episode page\.<\/p>/);
 });
+
+// macOS is case-insensitive, so a file saved as host.JPG satisfies
+// existsSync('host.jpg') locally and then 404s on Vercel's Linux filesystem.
+// This has now happened twice. The assertion is deliberately not skippable:
+// if no photo is installed at all, that is a separate, visible state and the
+// stills fallback covers it, but a reference that does not resolve is a bug.
+test('the host photo reference resolves to a real file, case included', () => {
+  const nodeFs = require('node:fs');
+  const nodePath = require('node:path');
+  const dir = nodePath.join(__dirname, '..', 'public');
+  const onDisk = nodeFs.readdirSync(dir).filter((f) => /^host\.[A-Za-z]+$/.test(f));
+  const ref = renderHomePage(EPISODES).match(/src="\/(host\.[A-Za-z]+)"/);
+
+  if (!onDisk.length) {
+    assert.equal(ref, null, 'markup points at a host photo but none exists in public/');
+    return;
+  }
+  assert.ok(ref, `public/ has ${onDisk[0]} but the markup does not reference it`);
+  assert.ok(
+    onDisk.includes(ref[1]),
+    `markup points at /${ref[1]} but public/ holds ${onDisk.join(', ')} — ` +
+      `identical on macOS, a 404 on Linux`
+  );
+});
