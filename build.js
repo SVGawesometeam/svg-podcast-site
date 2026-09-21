@@ -555,7 +555,7 @@ function renderHomePage(episodes) {
     ["https://www.youtube.com/@SiliconValleyGirl", "YouTube", ICONS.youtube],
     ["https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY", "Spotify", ICONS.spotify],
     ["https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545", "Apple", ICONS.apple],
-    ["https://www.instagram.com/siliconvalleygirl/", "Instagram", ICONS.instagram],
+    ["https://www.instagram.com/siliconvalleygirlpodcast/", "Instagram", ICONS.instagram],
     ["https://www.tiktok.com/@linguamarina", "TikTok", ICONS.tiktok],
     ["https://www.linkedin.com/in/marinamogilko/", "LinkedIn", ICONS.linkedin],
     ["https://x.com/siliconvalleymm", "X", ICONS.twitter],
@@ -940,7 +940,7 @@ ${archiveHtml}
       <div>
         <h2>Get the<br>weekly brief</h2>
         <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
-        <a class="btn btn-accent" href="https://siliconvalleygirl.beehiiv.com" target="_blank" rel="noopener">Subscribe to the newsletter</a>
+        <a class="btn btn-accent" href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener">Subscribe to the newsletter</a>
       </div>
       <div>
         <p class="eyebrow">Follow along</p>
