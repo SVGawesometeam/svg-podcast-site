@@ -190,6 +190,11 @@ async function build() {
   fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes));
   console.log("Written public/index.html");
 
+  const episodesDir = path.join(PUBLIC_DIR, "episodes");
+  fs.mkdirSync(episodesDir, { recursive: true });
+  fs.writeFileSync(path.join(episodesDir, "index.html"), renderEpisodesPage(allEpisodes));
+  console.log("Written public/episodes/index.html");
+
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
   console.log("Written public/sitemap.xml");
 
@@ -251,6 +256,7 @@ function renderSitemap(episodes) {
   const lastmod = lastmodFor(episodes);
   const urls = [
     `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
+    `  <url><loc>${SITE_URL}/episodes/</loc><priority>0.8</priority></url>`,
     ...episodes.map(ep =>
       `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${lastmod[ep.videoId].date}</lastmod></url>`
     ),
@@ -386,6 +392,109 @@ function renderFormFields() {
 // which is what the page does by default.
 const FEATURED_VIDEO_ID = "E0Q96IKXx6Q";
 
+
+// Every episode on one page, linked from the homepage archive. Separate from
+// the homepage because revealing 110 cards in place buried everything below
+// them — the form included — behind an endless scroll.
+function renderEpisodesPage(episodes) {
+  const cards = episodes
+    .map(
+      (ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${formatDateShort(ep.publishedAt)} &middot; ${esc(ep.duration)}</p>
+              <h3 class="ep-card-title">${esc(ep.title)}</h3>
+            </div>
+          </a>`
+    )
+    .join("\n");
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All episodes — Silicon Valley Girl Podcast</title>
+  <meta name="description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko — conversations with the founders and scientists building AI.">
+  <link rel="canonical" href="${SITE_URL}/episodes/">
+  <meta property="og:title" content="All episodes — Silicon Valley Girl Podcast">
+  <meta property="og:description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${SITE_URL}/episodes/">
+  <meta property="og:image" content="${SITE_URL}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  ${SHARED_HEAD}
+  <style>
+    /* CHROME-START */${CHROME_CSS}
+    /* CHROME-END */
+
+    body {
+      font-family: var(--body); background: var(--ground); color: var(--ink);
+      line-height: 1.55; margin: 0; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    h1, h3 { margin: 0; font-weight: 400; }
+    p { margin: 0; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .archive-page { padding: clamp(2rem, 3.5vw, 3rem) 0 clamp(3rem, 5vw, 4rem); }
+    .archive-page h1 {
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .archive-count {
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 2rem;
+    }
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .back-home {
+      display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
+      font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 1rem; }
+      .archive-grid { grid-template-columns: 1fr; }
+      .ep-card-meta { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  ${SHARED_HEADER}
+
+  <main class="archive-page">
+    <div class="wrap">
+      <h1>All episodes</h1>
+      <p class="archive-count">${episodes.length} episodes</p>
+      <div class="archive-grid">
+${cards}
+      </div>
+      <a class="back-home" href="/">&larr; Back to the homepage</a>
+    </div>
+  </main>
+
+  ${SHARED_FOOTER}
+
+</body>
+</html>`;
+}
+
 function renderHomePage(episodes) {
   const newest = episodes[0];
   const pinned = FEATURED_VIDEO_ID
@@ -408,10 +517,12 @@ function renderHomePage(episodes) {
   // linking the archive is worth to search — moving 110 of them behind a
   // separate page would cost that for a purely visual gain.
   const ARCHIVE_VISIBLE = 6;
+  const archive = episodes.filter((e) => !new Set([hero.videoId, cover.videoId]).has(e.videoId));
   const archiveHtml = rest
+    .slice(0, ARCHIVE_VISIBLE)
     .map(
-      (ep, i) => `
-          <a href="/episode/${ep.videoId}/" class="ep-card${i < ARCHIVE_VISIBLE ? "" : " ep-card-more"}">
+      (ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
             <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
               <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${esc(ep.duration)}</p>
@@ -420,7 +531,7 @@ function renderHomePage(episodes) {
           </a>`
     )
     .join("\n");
-  const hiddenCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
+  const moreCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
 
   // A portrait of Marina if one has been dropped into public/ under any of
   // these names; otherwise two recent stills, so a missing file degrades to
@@ -546,7 +657,7 @@ function renderHomePage(episodes) {
     }
     .hero h1 {
       font-family: var(--display); text-transform: uppercase;
-      font-size: clamp(3rem, 9.5vw, 8.5rem);
+      font-size: clamp(2.5rem, 7vw, 6rem);
       line-height: 0.82; letter-spacing: -0.01em;
       margin-bottom: 1.1rem;
     }
@@ -619,8 +730,6 @@ function renderHomePage(episodes) {
       font-family: var(--body); cursor: pointer; padding: 0 0 2px;
       color: rgba(23, 21, 17, 0.62);
     }
-    .ep-card-more { display: none; }
-    .archive.expanded .ep-card-more { display: block; }
 
     /* ---- Host ---- */
     .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
@@ -788,7 +897,7 @@ function renderHomePage(episodes) {
     <div class="wrap">
       <div class="archive-head">
         <h2 class="section-title">The archive</h2>
-        ${hiddenCount ? `<button type="button" class="btn-text archive-more" id="archive-more">All episodes &rarr;</button>` : ""}
+        ${moreCount ? `<a class="btn-text archive-more" href="/episodes/">All episodes &rarr;</a>` : ""}
       </div>
       <div class="archive-grid">
 ${archiveHtml}
@@ -868,19 +977,7 @@ ${renderFormFields()}
 
   ${SHARED_FOOTER}
 
-  <noscript><style>.ep-card-more { display: block; } .archive-more { display: none; }</style></noscript>
-
   <script>
-    (function () {
-      var more = document.getElementById('archive-more');
-      if (more) {
-        more.addEventListener('click', function () {
-          document.querySelector('.archive').classList.add('expanded');
-          more.hidden = true;
-        });
-      }
-    })();
-
     (function () {
       var form = document.getElementById('pitch-form');
       if (!form) return;
@@ -1323,7 +1420,7 @@ function unesc(str) {
     .replace(/&amp;/g, "&");
 }
 
-module.exports = { renderHomePage, renderEpisodePage, formatDate };
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate };
 
 // Guarded so the tests can require the renderers without kicking off a build.
 if (require.main === module) {

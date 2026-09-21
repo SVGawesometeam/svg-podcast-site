@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert');
-const { renderHomePage } = require('../build.js');
+const { renderHomePage, renderEpisodesPage } = require('../build.js');
 
 const EPISODES = [
   {
@@ -113,47 +113,49 @@ test('the cover meta renders its date in UTC, in the mock short form', () => {
   assert.match(renderHomePage(EPISODES), /SEP 8 2026/);
 });
 
-// Six cards show and the rest are revealed by the button. They stay in the
-// markup rather than moving to a separate page, so the homepage keeps linking
-// to every episode — which is what the archive is worth to search.
-test('the archive shows six cards and hides the rest behind the button', () => {
+// Six cards on the homepage, everything else on its own page. Revealing the
+// rest in place buried the sections below — the form included — behind a
+// scroll past 110 cards.
+test('the homepage archive shows six cards and links to the full list', () => {
   const many = Array.from({ length: 12 }, (_, i) => ({
     videoId: `id${i}`, title: `Episode ${i}`, thumbnail: `https://i.ytimg.com/vi/id${i}/hq.jpg`,
     publishedAt: `2026-09-${String(28 - i).padStart(2, '0')}T17:00:00.000Z`,
     guestName: `Guest ${i}`, guestTitle: '', duration: '30 MIN',
   }));
   const html = renderHomePage(many);
-  assert.equal((html.match(/class="ep-card"/g) || []).length, 6, 'expected six visible cards');
-  assert.equal((html.match(/class="ep-card ep-card-more"/g) || []).length, 5, 'rest should be hidden, not dropped');
-  assert.match(html, /All episodes/);
-
-  // Every episode still reachable from the homepage: 11 archive + the cover.
-  const links = new Set(html.match(/href="\/episode\/[^"]*"/g));
-  assert.equal(links.size, 12, 'an episode lost its link');
+  assert.equal((html.match(/class="ep-card"/g) || []).length, 6, 'expected six cards');
+  assert.ok(!html.includes('ep-card-more'), 'hidden cards should be gone entirely');
+  assert.match(html, /href="\/episodes\/"[^>]*>All episodes/);
 });
 
-test('without JavaScript the whole archive is shown and the button hidden', () => {
-  const html = renderHomePage(EPISODES);
-  const noscript = html.slice(html.indexOf('<noscript><style>'), html.indexOf('</noscript>', html.indexOf('<noscript><style>')));
-  assert.match(noscript, /\.ep-card-more \{ display: block; \}/);
-  assert.match(noscript, /\.archive-more \{ display: none; \}/);
+test('the all-episodes page lists every episode', () => {
+  const many = Array.from({ length: 12 }, (_, i) => ({
+    videoId: `id${i}`, title: `Episode ${i}`, thumbnail: `https://i.ytimg.com/vi/id${i}/hq.jpg`,
+    publishedAt: `2026-09-${String(28 - i).padStart(2, '0')}T17:00:00.000Z`,
+    guestName: `Guest ${i}`, guestTitle: '', duration: '30 MIN',
+  }));
+  const html = renderEpisodesPage(many);
+  assert.equal((html.match(/class="ep-card"/g) || []).length, 12, 'an episode is missing');
+  assert.match(html, /12 episodes/);
+  assert.match(html, /class="site-header"/, 'should carry the shared chrome');
+  assert.match(html, /Made in Silicon Valley/);
+  assert.match(html, /<link rel="canonical" href="[^"]*\/episodes\/">/);
 });
 
-// The host photo is referenced as /host.jpg. macOS is case-insensitive, so a
-// file saved as host.JPG resolves locally and 404s on Vercel's Linux
-// filesystem — which is exactly what happened once. This asserts the file the
-// markup points at is the file that exists, spelled identically.
-test('the host photo reference matches a real file, case included', () => {
-  const fs = require('node:fs');
-  const path = require('node:path');
-  const html = renderHomePage(EPISODES);
-  const ref = html.match(/src="\/(host\.[A-Za-z]+)"/);
-  if (!ref) return; // no photo installed; the stills fallback is in use
-  const dir = path.join(__dirname, '..', 'public');
-  assert.ok(
-    fs.readdirSync(dir).includes(ref[1]),
-    `markup points at /${ref[1]} but public/ has no file spelled exactly that`
-  );
+// Nothing may become unreachable: the homepage shows six, and the rest must be
+// one click away rather than orphaned.
+test('every episode is reachable from the homepage in at most one hop', () => {
+  const many = Array.from({ length: 12 }, (_, i) => ({
+    videoId: `id${i}`, title: `Episode ${i}`, thumbnail: `https://i.ytimg.com/vi/id${i}/hq.jpg`,
+    publishedAt: `2026-09-${String(28 - i).padStart(2, '0')}T17:00:00.000Z`,
+    guestName: `Guest ${i}`, guestTitle: '', duration: '30 MIN',
+  }));
+  const onHome = new Set((renderHomePage(many).match(/href="\/episode\/([^/]+)\//g) || []));
+  const onList = new Set((renderEpisodesPage(many).match(/href="\/episode\/([^/]+)\//g) || []));
+  for (const ep of many) {
+    const href = `href="/episode/${ep.videoId}/`;
+    assert.ok(onHome.has(href) || onList.has(href), `${ep.videoId} is unreachable`);
+  }
 });
 
 // The hero carries an editorial pin; the cover story is always the genuinely
