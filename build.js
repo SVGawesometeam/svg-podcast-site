@@ -395,17 +395,8 @@ function renderHomePage(episodes) {
     }
     a { color: inherit; }
 
-    /* ---- Header ---- */
-    .site-header {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 900px; margin: 0 auto;
-    }
-    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
-    .header-links { display: flex; gap: 1.25rem; align-items: center; }
-    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
-    .header-links a:hover { color: #1a1a1a; }
+    /* CHROME-START */${CHROME_CSS}
+    /* CHROME-END */
 
     /* ---- Container ---- */
     .container { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
@@ -502,16 +493,8 @@ function renderHomePage(episodes) {
       content: "\\00b7"; margin-right: 0.5rem;
     }
 
-    /* ---- Footer ---- */
-    .site-footer {
-      max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999;
-      border-top: 1px solid #eee;
-    }
-
     /* ---- Responsive ---- */
     @media (max-width: 640px) {
-      .site-header { padding: 0.75rem 1rem; }
       .container { padding: 2rem 1rem 3rem; }
       .hero h1 { font-size: 1.75rem; }
       .episode-row { flex-direction: column; gap: 0.75rem; }
@@ -721,16 +704,8 @@ function renderEpisodePage(d) {
     }
     a { color: inherit; }
 
-    /* ---- Header ---- */
-    .site-header {
-      border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 900px; margin: 0 auto;
-    }
-    .site-header .logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #1a1a1a; }
-    .header-links { display: flex; gap: 1.25rem; align-items: center; }
-    .header-links a { color: #999; text-decoration: none; display: flex; align-items: center; transition: color 0.15s; }
-    .header-links a:hover { color: #1a1a1a; }
+    /* CHROME-START */${CHROME_CSS}
+    /* CHROME-END */
 
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
@@ -833,13 +808,7 @@ function renderEpisodePage(d) {
       -webkit-box-orient: vertical; overflow: hidden;
     }
 
-    .site-footer {
-      max-width: 800px; margin: 0 auto; padding: 2rem;
-      text-align: center; font-size: 0.8rem; color: #999; border-top: 1px solid #eee;
-    }
-
     @media (max-width: 640px) {
-      .site-header { padding: 0.75rem 1rem; }
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
       .episode-header h1 { font-size: 1.5rem; }
