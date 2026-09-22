@@ -151,6 +151,20 @@
     font-size: 1.25rem;
     letter-spacing: 0.02em;
   }
+  .site-footer .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-links a {
+    font-family: var(--body);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-footer .footer-links a:hover { color: var(--ground); }
+
   .site-footer .footer-legal {
     font-family: var(--body);
     font-size: 0.75rem;
@@ -170,7 +184,8 @@
     /* Comfortable tap targets on a phone. */
     .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
     .site-header .wordmark { min-height: 44px; }
-    .site-footer-inner { padding: 2rem 1rem; flex-direction: column; align-items: flex-start; }
+    .site-footer-inner { padding: 2rem 1rem; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+    .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
 
@@ -462,6 +477,10 @@
   <footer class="site-footer">
     <div class="site-footer-inner">
       <span class="footer-mark">SILICON VALLEY GIRL</span>
+      <nav class="footer-links">
+        <a href="https://partnerships.marinamogilko.co/plc">Privacy Policy</a>
+        <a href="https://partnerships.marinamogilko.co/ts">Terms of Service</a>
+      </nav>
       <span class="footer-legal">&copy; 2026 Marina Mogilko &middot; Made in Silicon Valley</span>
     </div>
   </footer>

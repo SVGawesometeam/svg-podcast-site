@@ -63,3 +63,11 @@ test('footer carries the mock copy verbatim', () => {
 test('focus styling is present, so keyboard users can see where they are', () => {
   assert.match(chrome.CHROME_CSS, /:focus-visible/);
 });
+
+// Legal links live in the shared footer so they reach every page — the
+// homepage, /episodes/ and all 118 episode pages — rather than the homepage
+// alone, which is the usual way these end up missing where they matter.
+test('the footer carries the legal links', () => {
+  assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/plc"[^>]*>Privacy Policy</);
+  assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/ts"[^>]*>Terms of Service</);
+});
