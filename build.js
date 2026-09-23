@@ -924,22 +924,6 @@ ${archiveHtml}
     </div>
   </section>
 
-  <section id="subscribe" class="newsletter">
-    <div class="wrap newsletter-inner">
-      <div>
-        <h2>Get the<br>weekly brief</h2>
-        <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
-        <a class="btn btn-accent" href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener">Subscribe to the newsletter</a>
-      </div>
-      <div>
-        <p class="eyebrow">Follow along</p>
-        <div class="follow-links">
-            ${followLinks}
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="partnerships">
     <div class="wrap partnerships-inner">
       <div>
@@ -971,6 +955,22 @@ ${renderFormFields()}
       <noscript>
         <p class="work-dek">This form needs JavaScript. Email <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a> instead and we&rsquo;ll pick it up just the same.</p>
       </noscript>
+    </div>
+  </section>
+
+  <section id="subscribe" class="newsletter">
+    <div class="wrap newsletter-inner">
+      <div>
+        <h2>Get the<br>weekly brief</h2>
+        <p>One email a week: the AI idea worth your attention, and exactly what to try with it.</p>
+        <a class="btn btn-accent" href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener">Subscribe to the newsletter</a>
+      </div>
+      <div>
+        <p class="eyebrow">Follow along</p>
+        <div class="follow-links">
+            ${followLinks}
+        </div>
+      </div>
     </div>
   </section>
 
