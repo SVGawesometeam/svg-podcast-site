@@ -933,16 +933,6 @@ ${archiveHtml}
     </div>
   </section>
 
-  <section class="partnerships">
-    <div class="wrap partnerships-inner">
-      <div>
-        <p class="eyebrow">Partnerships</p>
-        <h2>Want your brand on the podcast?</h2>
-      </div>
-      <a class="pill" href="mailto:partnerships@marinamogilko.co">${ICONS.mail} partnerships@marinamogilko.co</a>
-    </div>
-  </section>
-
   <section id="subscribe" class="newsletter">
     <div class="wrap newsletter-inner">
       <div>
@@ -956,6 +946,16 @@ ${archiveHtml}
             ${followLinks}
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="contact" class="partnerships">
+    <div class="wrap partnerships-inner">
+      <div>
+        <p class="eyebrow">Partnerships</p>
+        <h2>Want your brand on the podcast?</h2>
+      </div>
+      <a class="pill" href="mailto:partnerships@marinamogilko.co">${ICONS.mail} partnerships@marinamogilko.co</a>
     </div>
   </section>
 
