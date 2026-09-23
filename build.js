@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-const { ICONS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
+const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
 const { TOPICS, FIELDS } = require("./lib/contact-fields");
 
 const API_BASE =
@@ -559,20 +559,11 @@ function renderHomePage(episodes) {
     console.log("Note: no host photo found — drop one at public/host.jpg to replace the episode stills.");
   }
 
-  const followLinks = [
-    ["https://www.youtube.com/@SiliconValleyGirl", "YouTube", ICONS.youtube],
-    ["https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY", "Spotify", ICONS.spotify],
-    ["https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545", "Apple", ICONS.apple],
-    ["https://www.instagram.com/siliconvalleygirlpodcast/", "Instagram", ICONS.instagram],
-    ["https://www.tiktok.com/@linguamarina", "TikTok", ICONS.tiktok],
-    ["https://www.linkedin.com/in/marinamogilko/", "LinkedIn", ICONS.linkedin],
-    ["https://x.com/siliconvalleymm", "X", ICONS.twitter],
-  ]
-    .map(
-      ([url, label, icon]) =>
-        `<a href="${url}" target="_blank" rel="noopener" class="follow-btn">${icon}<span>${label}</span></a>`
-    )
-    .join("\n            ");
+  // Same list the header icons come from, rendered here with labels.
+  const followLinks = SOCIAL_LINKS.map(
+    (s) =>
+      `<a href="${s.url}" target="_blank" rel="noopener" class="follow-btn">${s.icon}<span>${s.label}</span></a>`
+  ).join("\n            ");
 
   return `<!DOCTYPE html>
 <html lang="en">

@@ -71,3 +71,30 @@ test('the footer carries the legal links', () => {
   assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/plc"[^>]*>Privacy Policy</);
   assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/ts"[^>]*>Terms of Service</);
 });
+
+// The icons live in the sticky header so the accounts are reachable from any
+// scroll position on every page, not just the foot of the homepage.
+test('the header carries every social account as an icon', () => {
+  const { SOCIAL_LINKS, SHARED_HEADER } = chrome;
+  assert.ok(SOCIAL_LINKS.length >= 7, 'expected the full set of accounts');
+  for (const s of SOCIAL_LINKS) {
+    assert.ok(SHARED_HEADER.includes(s.url), `header missing ${s.label}`);
+  }
+});
+
+// Icon-only links have no text, so each needs an accessible name or a screen
+// reader announces "link" seven times in a row.
+test('each header icon has an accessible name and no visible label text', () => {
+  const { SOCIAL_LINKS, SHARED_HEADER } = chrome;
+  const socials = SHARED_HEADER.slice(SHARED_HEADER.indexOf('class="site-socials"'), SHARED_HEADER.indexOf('class="site-nav"'));
+  for (const s of SOCIAL_LINKS) {
+    assert.ok(socials.includes(`aria-label="${s.label}"`), `no aria-label for ${s.label}`);
+  }
+  assert.ok(!/>\s*[A-Za-z]/.test(socials.replace(/<svg[\s\S]*?<\/svg>/g, '')), 'a label is rendered as visible text');
+});
+
+test('the header icons open in a new tab without leaking the opener', () => {
+  const socials = chrome.SHARED_HEADER.slice(chrome.SHARED_HEADER.indexOf('class="site-socials"'));
+  const count = (socials.match(/rel="noopener"/g) || []).length;
+  assert.equal(count, chrome.SOCIAL_LINKS.length, 'an icon is missing rel="noopener"');
+});
