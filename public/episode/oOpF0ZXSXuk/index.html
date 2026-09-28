@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stanford Doctor: The Right Way To Ask AI About Your Health — Silicon Valley Girl Podcast</title>
+  <meta name="description" content="Marina Mogilko interviews Dr. Jonathan Chen, Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine, on the Silicon Valley Girl Podcast">
+  <meta property="og:title" content="Stanford Doctor: The Right Way To Ask AI About Your Health">
+  <meta property="og:description" content="Marina Mogilko interviews Dr. Jonathan Chen, Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine, on the Silicon Valley Girl Podcast">
+  <meta property="og:image" content="https://img.youtube.com/vi/oOpF0ZXSXuk/maxresdefault.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://marinamogilko.co/episode/oOpF0ZXSXuk/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stanford Doctor: The Right Way To Ask AI About Your Health">
+  <meta name="twitter:description" content="Marina Mogilko interviews Dr. Jonathan Chen, Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine, on the Silicon Valley Girl Podcast">
+  <meta name="twitter:image" content="https://img.youtube.com/vi/oOpF0ZXSXuk/maxresdefault.jpg">
+  <link rel="canonical" href="https://marinamogilko.co/episode/oOpF0ZXSXuk/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastEpisode","name":"Stanford Doctor: The Right Way To Ask AI About Your Health","url":"https://marinamogilko.co/episode/oOpF0ZXSXuk/","datePublished":"2026-09-25T17:15:37.000Z","description":"Dr. Jonathan Chen discusses a counterintuitive finding from his research: GPT-4 alone outperformed doctors who had access to GPT-4 on diagnostic reasoning tasks. While this challenges the assumption that human-AI collaboration always produces better results, Chen explains that the phenomenon stems partly from doctors lacking training in how to use AI effectively—a third of study participants had never used a chatbot before. The real value of doctors lies not in knowledge retrieval, where AI excels, but in understanding context, building patient trust, and making nuanced decisions about care. Chen emphasizes that without proper medical training, people using AI can actually perform worse than without it because they may ask questions incorrectly, leading the AI to confidently guide them down wrong diagnostic paths. He advocates for thoughtful integration of AI into healthcare rather than replacement of physician judgment.","duration":"49 MIN","associatedMedia":{"@type":"VideoObject","name":"Stanford Doctor: The Right Way To Ask AI About Your Health","description":"Dr. Jonathan Chen discusses a counterintuitive finding from his research: GPT-4 alone outperformed doctors who had access to GPT-4 on diagnostic reasoning tasks. While this challenges the assumption t","uploadDate":"2026-09-25","embedUrl":"https://www.youtube.com/embed/oOpF0ZXSXuk","thumbnailUrl":"https://img.youtube.com/vi/oOpF0ZXSXuk/maxresdefault.jpg"},"partOfSeries":{"@type":"PodcastSeries","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co"},"performer":{"@type":"Person","name":"Dr. Jonathan Chen","jobTitle":"Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine"},"host":{"@type":"Person","name":"Marina Mogilko","url":"https://marinamogilko.co"}}</script>
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#171511">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #fff;
+    }
+    a { color: inherit; }
+
+    /* CHROME-START */
+  :root {
+    --accent: #DF1615;
+    --ground: #FFFDF6;
+    --ink: #171511;
+    --card: #FFFFFF;
+    --muted: #C5C1B9;
+    --rule: rgba(23, 21, 17, 0.12);
+    --display: 'Bebas Neue', 'Arial Narrow', Impact, sans-serif;
+    --body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  img { max-width: 100%; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---- Header ----
+     Cream, not a black bar: the mock's header is the page ground with a 2px
+     ink rule under it. The red pill is the "with Marina Mogilko" tag; the ink
+     pill is Subscribe. */
+  .site-header {
+    background: var(--ground);
+    color: var(--ink);
+    border-bottom: 2px solid var(--ink);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .site-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .site-header .wordmark {
+    font-family: var(--display);
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    color: var(--ink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .site-header .wordmark span {
+    font-family: var(--body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: var(--ground);
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  /* Icons sit between the wordmark and the nav and stay in the sticky header,
+     so the accounts are reachable from any scroll position on any page. The
+     SVGs carry brand colours at 20-22px; shrinking them to 18px keeps seven of
+     them from reading as clutter beside the wordmark. */
+  .site-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 auto;
+  }
+  .site-socials a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .site-socials a:hover { opacity: 1; transform: translateY(-1px); }
+  .site-socials svg { width: 18px; height: 18px; display: block; }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .site-nav a {
+    font-family: var(--body);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .nav-cta {
+    background: var(--ink);
+    color: var(--ground);
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+  }
+  .site-nav .nav-cta:hover { background: var(--accent); color: var(--ground); }
+
+  /* The header is sticky, so anything the nav jumps to needs a matching
+     scroll offset or its heading lands underneath the bar. */
+  [id] { scroll-margin-top: 6rem; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    background: var(--ink);
+    color: #fff;
+    margin-top: 0;
+  }
+  .site-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-mark {
+    font-family: var(--display);
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+  .site-footer .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-links a {
+    font-family: var(--body);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-footer .footer-links a:hover { color: var(--ground); }
+
+  .site-footer .footer-legal {
+    font-family: var(--body);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .site-header-inner {
+      padding: 0.6rem 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .site-header .wordmark { font-size: 1.2rem; flex-wrap: wrap; gap: 0.5rem; }
+    .site-socials { margin: 0; gap: 1rem; flex-wrap: wrap; }
+    .site-socials a { min-height: 36px; }
+    .site-socials svg { width: 20px; height: 20px; }
+    .site-nav { gap: 1.1rem; }
+    /* Comfortable tap targets on a phone. */
+    .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
+    .site-header .wordmark { min-height: 44px; }
+    .site-footer-inner { padding: 2rem 1rem; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+    .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
+  }
+    /* CHROME-END */
+
+    .breadcrumb {
+      max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
+      font-size: 0.8rem; color: #999;
+    }
+    .breadcrumb a { color: #999; text-decoration: none; }
+    .breadcrumb a:hover { color: #1a1a1a; }
+    .breadcrumb .sep { margin: 0 0.4rem; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
+    .episode-header { margin-bottom: 2.5rem; }
+    .episode-header h1 {
+      font-size: 2rem; font-weight: 700; line-height: 1.3;
+      margin-bottom: 1rem; letter-spacing: -0.02em;
+    }
+    .episode-meta {
+      display: flex; gap: 1rem; font-size: 0.85rem; color: #666;
+      margin-bottom: 1.5rem; flex-wrap: wrap;
+    }
+    .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
+    .video-thumb {
+      position: relative; display: block; width: 100%;
+      border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
+    }
+    .video-thumb img { width: 100%; display: block; }
+    .video-thumb .play-btn {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px; height: 48px; background: rgba(0,0,0,0.75);
+      border-radius: 12px; pointer-events: none;
+    }
+    .video-thumb .play-btn::after {
+      content: ""; position: absolute; top: 50%; left: 54%;
+      transform: translate(-50%, -50%);
+      border-style: solid; border-width: 10px 0 10px 18px;
+      border-color: transparent transparent transparent #fff;
+    }
+    .video-thumb:hover .play-btn { background: #e00; }
+
+    .guest-card {
+      background: #fafafa; border: 1px solid #eee; border-radius: 8px;
+      padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .guest-card h3 {
+      font-size: 0.75rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #999; margin-bottom: 0.75rem;
+    }
+    .guest-name { font-size: 1.1rem; font-weight: 600; }
+    .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+    .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
+    .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
+    .tab-btn {
+      background: none; border: none; border-bottom: 2px solid transparent;
+      margin-bottom: -2px; padding: 0.75rem 1.5rem;
+      font-size: 0.9rem; font-weight: 500; color: #999;
+      cursor: pointer; font-family: inherit;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .tab-btn:hover { color: #1a1a1a; }
+    .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
+    .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .takeaways ul { padding-left: 1.25rem; color: #333; }
+    .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
+    .timestamps-list { display: flex; flex-direction: column; gap: 0; }
+    .timestamp-link {
+      display: flex; align-items: baseline; gap: 0.85rem;
+      padding: 0.6rem 0; text-decoration: none;
+      border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
+    }
+    .timestamp-link:hover { background: #fafafa; }
+    .ts-time {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem; color: #2563eb; min-width: 5ch;
+      text-align: right; font-weight: 500;
+    }
+    .ts-dash { color: #999; flex: none; }
+    .ts-title { font-size: 0.95rem; color: #333; }
+
+    .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
+    .speaker { font-weight: 600; color: #1a1a1a; }
+    .speaker-marina { font-weight: 600; color: #2563eb; }
+
+    .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
+    .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .related-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem;
+    }
+    .related-card { text-decoration: none; color: inherit; transition: opacity 0.15s; }
+    .related-card:hover { opacity: 0.8; }
+    .related-card img { width: 100%; border-radius: 6px; display: block; margin-bottom: 0.5rem; }
+    .related-title {
+      font-size: 0.85rem; font-weight: 500; line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    @media (max-width: 640px) {
+      .breadcrumb { padding: 0 1rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+      .episode-header h1 { font-size: 1.5rem; }
+      .tab-btn { padding: 0.6rem 1rem; font-size: 0.85rem; }
+      .related-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="wordmark">SILICON VALLEY GIRL<span>WITH MARINA MOGILKO</span></a>
+      <nav class="site-socials" aria-label="Social media">
+        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg></a>
+        <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg></a>
+        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener" aria-label="Apple Podcasts" title="Apple Podcasts"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg></a>
+        <a href="https://www.instagram.com/siliconvalleygirlpodcast/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg></a>
+        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg></a>
+        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg></a>
+        <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" aria-label="X" title="X"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg></a>
+        <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" aria-label="Newsletter" title="Newsletter"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg></a>
+      </nav>
+      <nav class="site-nav">
+        <a href="/#episodes">Episodes</a>
+        <a href="/#host">Host</a>
+        <a href="/#contact">Contact us</a>
+        <a href="/#subscribe" class="nav-cta">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a><span class="sep">/</span>
+    <a href="/#episodes">Podcast</a><span class="sep">/</span>
+    <span>Dr. Jonathan Chen</span>
+  </nav>
+
+  <main class="container">
+    <article class="episode-header">
+      <h1>Stanford Doctor: The Right Way To Ask AI About Your Health — Silicon Valley Girl Podcast</h1>
+      <div class="episode-meta">
+        <span>Dr. Jonathan Chen</span>
+        <span>September 25, 2026</span>
+        <span>49 MIN</span>
+      </div>
+      <a href="https://www.youtube.com/watch?v=oOpF0ZXSXuk" class="video-thumb" target="_blank" rel="noopener">
+        <img src="https://img.youtube.com/vi/oOpF0ZXSXuk/maxresdefault.jpg" alt="Dr. Jonathan Chen, Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <span class="play-btn"></span>
+      </a>
+    </article>
+
+    <div class="guest-card">
+      <h3>About the Guest</h3>
+      <div class="guest-name">Dr. Jonathan Chen</div>
+      <div class="guest-title">Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine</div>
+      <p class="guest-bio">Dr. Jonathan Chen is a physician and computer scientist at Stanford Medicine who directs AI in medical education. His randomized controlled trial research examining how doctors use AI for diagnosis has been widely cited and covered by major outlets including the New York Times. He studies how to responsibly integrate AI into clinical practice and medical training.</p>
+    </div>
+
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+        <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
+        <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
+      </aside>
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-notes" onclick="switchTab('notes')">Show Notes</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-timestamps" onclick="switchTab('timestamps')">Timestamps</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-transcript" onclick="switchTab('transcript')">Transcript</button>
+    </div>
+
+    <div id="panel-notes" class="tab-panel active" role="tabpanel">
+      <div class="summary">In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews Dr. Jonathan Chen, Physician, Computer Scientist · Director of AI in Medical Education at Stanford Medicine. Dr. Jonathan Chen discusses a counterintuitive finding from his research: GPT-4 alone outperformed doctors who had access to GPT-4 on diagnostic reasoning tasks. While this challenges the assumption that human-AI collaboration always produces better results, Chen explains that the phenomenon stems partly from doctors lacking training in how to use AI effectively—a third of study participants had never used a chatbot before. The real value of doctors lies not in knowledge retrieval, where AI excels, but in understanding context, building patient trust, and making nuanced decisions about care. Chen emphasizes that without proper medical training, people using AI can actually perform worse than without it because they may ask questions incorrectly, leading the AI to confidently guide them down wrong diagnostic paths. He advocates for thoughtful integration of AI into healthcare rather than replacement of physician judgment.</div>
+      <div class="takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>GPT-4 alone outperformed doctors using GPT-4 on diagnostic tasks, but this doesn't mean doctors are obsolete—it reveals a knowledge retrieval advantage, not a replacement for clinical judgment and patient care</li>
+              <li>How you ask AI health questions matters critically: without medical context and training, people using AI performed worse than without it because they unconsciously guide the AI toward wrong answers</li>
+              <li>AI amplifies whatever approach you take—if you use it well with proper context, it makes good diagnosis better; if you ask it poorly, it confidently confirms your mistakes with high confidence</li>
+              <li>Prepare for doctor appointments by organizing your medical records, lab history, and genetic data in AI, then ask the AI what questions to bring—but present the AI-generated insights as context to explore with your doctor, not as directives</li>
+              <li>The future of doctors isn't being replaced by AI, but being redefined: trust-building, navigating uncertainty, making final judgment calls, and knowing when more screening does more harm than good are increasingly the core of medical value</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="panel-timestamps" class="tab-panel" role="tabpanel">
+      <div class="timestamps-list">
+        <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=0s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">00:00</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Is AI smarter than your doctor?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=98s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">01:38</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How AI outperformed doctors using AI</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=213s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">03:33</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How your questions can steer AI toward the wrong answer</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=312s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">05:12</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Using your medical records to prepare for appointments</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=507s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">08:27</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What AI can help with and when to double-check</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=688s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">11:28</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">How to ask about symptoms without leading the AI</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=777s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">12:57</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Which AI should you use for health questions?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=945s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">15:45</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Does telling AI “I’m a doctor” help?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=1248s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">20:48</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Can you give AI too much medical history?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=1445s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">24:05</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Are full-body scans and extra tests worth it?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=1701s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">28:21</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">When genetic testing can make a difference</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=1768s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">29:28</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Can AI help detect cancer earlier?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2011s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">33:31</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What to ask AI when doctors can’t find an answer</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2115s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">35:15</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Can relying on AI make you lose your skills?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2211s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">36:51</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What makes a good doctor when AI knows more?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2379s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">39:39</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">AI doctors and automated prescriptions</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2499s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">41:39</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Will AI cure all diseases in 10 years?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2544s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">42:24</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">What better access to care could change</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2692s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">44:52</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Who should make the final decision?</span>
+              </a>
+              <a href="https://youtube.com/watch?v=oOpF0ZXSXuk&t=2830s" class="timestamp-link" target="_blank" rel="noopener">
+                <span class="ts-time">47:10</span>
+                <span class="ts-dash">–</span>
+                <span class="ts-title">Always use multiple AI models for a second opinion</span>
+              </a>
+      </div>
+    </div>
+
+    <div id="panel-transcript" class="tab-panel" role="tabpanel">
+      <div class="transcript">
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> The AI probably is smarter than most doctors, but knowing everything doesn't make you somebody who's worthy of trust.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> This is Dr. Jonathan Chen, a Stanford physician, computer scientist, and director of AI in medical education at Stanford Medicine. His study found that ChatGPT alone made better diagnoses than doctors using it.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Maybe the human is getting in the way. Am I just slowing the computer down?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> A lot of people will start trusting AI because it's more sympathetic.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Unlimited patience. Someone's suing ChatGPT because it gave bad medical advice. It told me everything was fine. I stayed home and I could have died because of it.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> But AI is so good at detecting small things. No.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Yes. Which means it can also get confused by noise.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Curing all diseases — a lot of people talk about that in the next 10 years.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh, you're going to make me say spicy things.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> You just co-authored a randomized trial with 70 practicing doctors, and doctors who saw the AI before forming their own opinion performed significantly better. Why does this happen?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> It's a really bizarre phenomena. The technology moved very fast in the past few years, as you probably noticed — six years ago I had students studying this thing, the language models, and they were just really not very good, they could barely pass even the basics. And then a few years ago, like, holy crap, the capabilities are advancing very rapidly. And now, for complex medical knowledge, I think we used to pride ourselves, our identity as a physician — why you come to us as patients — is because we have a lot of the knowledge, and boy, is that just not the answer anymore. And it's really causing some existential angst about what is our relevant role and how do we provide useful value for patients. And a lot of people, including a lot of tech venture people who I work with, think, "Aha, you don't need doctors anymore because the AI is smarter." And it's like, well, it is very powerful, but there's a little bit more than that in terms of what you probably need for good healthcare.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> But still, in another study, AI on its own outperformed doctors, and doctors who used AI couldn't catch up. So the question is, do you need doctors?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> The short answer is yes, but you might be different — what do you need them for? So that was a lot of the news from our article a couple years ago, New York Times, "AI Defeats Doctors at Diagnosis." We were not trying to show that, that was not the purpose of our study. Our purpose was, oh, GPT-4, at the time, it must be a great thing — let's give doctors access, I bet they'll be even better at medical diagnosis. And then it made them a little bit better. But the really weird thing, which we did not set out to find, it just came out of the study: wait a minute, GPT-4 by itself was better than the doctors who have access to GPT-4. This is a very weird, uncomfortable finding, because it really flies in the face of what we call the fundamental theorem of informatics, right — human plus computer, when you combine the two, will deliver better results than either alone. Doesn't that sound so good?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> This is so appealing, it just intuitively feels right. And we're like, empirically showing — wait, that didn't actually happen. And there's some very uncomfortable feelings of, maybe the human is getting in the way, am I just slowing the computer down, maybe I'll just roll over and let the robots take over. That's actually not what I think it means, there's a lot more to unpack. Some of it is really like, you know, a calculator is just better at calculation — why would you compete with a calculator on long division? That just doesn't make sense. Some of it was also clearly an education issue: a third of the docs in the study had never used a chatbot before in their life, they had no idea how to use it. Another third maybe used it once or twice. And so in follow-up studies where we kind of taught people how to use it in real time, now the combo was better — still not better than AI by itself, but also it's about what kind of tasks and questions. If it's question answering, if it's knowledge retrieval, even something that looks like reasoning, it's getting pretty freaking good. And that's why health is the most popular type of question for AI chatbots. And yet you still need more than that for complete healthcare, just like you need more than that for what is an educator, for example.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So why is this happening? Is it the way we ask questions? Because what I understood is that when we're asking questions, we're kind of hinting at the answer that we want to hear, and that's why AI sometimes works worse with us.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> It definitely is, right. So we know there's a little bit of prompt engineering, but don't overdo it, because it'll get incorporated by the base models. There's a great study — it's not my study, it came out in Nature Medicine a bit ago — where, instead of doctors and nurses answering medical questions, they had regular people without medical training answer a medical triage question. Here's the scenario: should you go to the emergency room or not, for example. And at the time it was GPT-4, Llama 3 — you know, by the way, we're way past that now — it does very well. Regular people don't do well — I mean, why would they, they have no medical training, how could they know how to answer a medical question. But, aha, let's democratize expertise, we'll give the people AI and they'll be better off. And in that study they found the regular people who had access to AI, they did worse — they did worse than if you didn't give them AI, they would have been better off not using it at all. What's going on here? It's because if you don't have the medical context, the training, the subject matter expertise, you might ask the question in the wrong way, you don't even know how to formulate it. And if you get down the wrong rabbit hole, the AI will very confidently, sycophantically agree with you and lead you all the way down the wrong path. It really has that amplifying capability — I describe this about machine learning, it's like a mirror to ourselves. If you're doing good medical diagnosis, it'll make us better at that. But if you're doing something that wasn't so good, it will just amplify your ability to do the wrong thing too. So clearly, very powerful alien intelligent technology landed on the planet, and just dropping it in people's laps doesn't actually solve all our problems. We've got to think about how to incorporate it.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So let's talk about how ordinary people should be using AI for healthcare questions. Let me brag a little about how I worked on my AI setup this summer, because I was doing all the checkups — I have my labs since I think 2019, and I have this high cholesterol problem, so like, 90% of—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I'm starting to get high blood pressure too, and now I'm trying to eat healthier.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, right. But in my case it doesn't even work, whatever. So I was seeing a lot of different doctors because I wanted to hear opinions, and I created this Perplexity chat with all my labs for the past—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Okay.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> —seven years, with dynamics and everything, and then I inserted whatever doctors ever told me, and whenever I came to it — oh, and my 23andMe raw data, combined with the labs. And so Perplexity, by the way, it was like right away found a genetic thing, I was like, "Wow, this is so cool." So any doctor that I saw, I just told Perplexity, "I'm about to see this cardiologist, what should I be asking them, and what should they know about me?" And it would come up with a customized PDF, and I'd just present it, and the doctor would be blown away.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Is it a good way to do this, or am I already adding some context that shouldn't be there, because the doctor just has to — you know, because AI is already hinting at some problems.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Sure, sure, it's always the good and bad. I actually am — I'm perhaps naively techno-optimistic, I actually think it can be a very net good thing, right. You're really empowered and have access to things. Your doctor would probably love to walk you through all that and construct it, but when do they have time to, right? They're not going to do it at 2 a.m. in the morning. So having that access, I think, is actually a really good thing for people and patients. It's actually a very powerful thing when patients can understand their own information, make sense of it — you make better use of that time with your clinicians so they can focus on what you actually really need, because the reality is we're not very available, we're not doing a very good job providing that information access resource. So I think it's very powerful, but just also know — it's like a chainsaw. It's a very powerful tool and it can be very useful, but if you don't use it right, you can hurt yourself and you can hurt other people too. You may have followed, right, there's a story in the New York Times recently — I was waiting for it to happen — finally, someone suing ChatGPT because it gave him bad medical advice. He was a former pastor, says, "I had a bad blood clot and it told me everything was fine. I stayed home and I could have died because of it." Right? So for reviewing your cholesterol, probably really useful. But for a high-stakes situation, you would probably still better double check with someone who has accountability. Here's the key word: accountability, trust, responsibility. The AI probably is smarter than most doctors, right, it just knows everything — I'm oversimplifying — but knowing everything doesn't make you somebody who's worthy of trust. There's a lot more to unpack.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> I know that's true. But also, sometimes I feel — when I'm seeing a doctor and I know they're back-to-back, is there really accountability? Aren't they just following protocol — like, oh, high cholesterol, statins, goodbye. That's the answer I've been getting from like 90% of doctors. And then I found my 10% who would spend like an hour with me talking about other different options. So it's natural that a lot of people will start trusting AI because it's more sympathetic — there's more warmth in it.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Unlimited patience. Yeah.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Exactly. So what would you say — how do we use AI in the right way so that we get the right information and don't end up in this situation?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I think, as long as you're aware of the caveats — a lot of powerful potential, and this is a very weird duality of people talking out of both sides of their mouth, right. On the one hand there's a disclaimer on these things, "this is not medical advice, talk to your doctor." On the other hand, look at this cancer patient whose life we saved. You kind of can't have it both ways. You've got to realize what's actually going on with our regulatory landscape — our human, medieval institutions can't keep up with the pace of technology movement. So I think it's actually a great tool to explain, "here's my medical record, here's my doctor's note, I have no idea what all this jargon is, can you explain this to me, what does all this mean, what are the implications." Actually really pretty good for that. General medical knowledge, these things are actually really, really quite good already. If you get to specialty-level knowledge — eh, you know, you're picking which chemotherapy to pick — I think you'd better get some more opinions, including AI in that mix, and organize your thoughts around that. It's this weird dynamic of therapy, counseling, and advice. It's obvious already, it's happening — more people are going to receive that from automated bots than live human beings. And by the way, it's not because the human beings are so bad, it's just — it's not available, right. We'll never keep up with the unlimited demand for such services. So you're going to reach for what you can get your hands on. When the stakes matter, double check when you need to. And sometimes that's actually what doctors are used to dealing with, because we deal with trainees, consultants, all the time — very smart people — and, you know, if it's Tylenol versus ibuprofen, it's probably fine.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> We are expanding our team, and there is one thing we're trying to improve right now — onboarding new producers for this podcast. Giving someone the files is really easy, giving them the context behind the decisions is so much harder. Why did we choose this interview angle? Why did another one underperform? What does a strong question list look like for us? A lot of that knowledge usually lives in the heads of people who've been doing this for years. So for one of our recent episodes, we tried an experiment with Miro, who is sponsoring this video. Instead of sending a new producer a folder of docs and then opening Claude separately, we connected Claude through Miro's MCP server and put everything onto one canvas — previous research, examples, audience comments, and things we've learned from past interviews. So instead of explaining the backstory again, we could ask Claude, "why did we choose that episode angle, or what are we still missing?" Then we used Flows to turn that brainstorm into the next stage of work — strongest angles, research gaps, possible questions, and next steps. That's what I like about this setup: Claude does the reasoning while Miro gives it the context the team has already built, and gives everyone a place to work on the output together. If your AI workflow is starting to turn into disconnected chats and docs, check out Miro through the link in the description.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> But even with small things — I had this issue like a month ago, my daughter woke up scratching, and I took a photo, asked ChatGPT, and ChatGPT was like, "scabies, go to the emergency room." I'm like, "whoa, okay." And I called our doctor and sent her the picture, she's like, "no, allergy, that's not scabies." I'm like, "okay, this was interesting, because I think ChatGPT overreacted." So can you tell me, what is the right way to ask those questions to not get an overreaction and to not get a false negative?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh gosh, that's — it's, you know, judgment versus knowledge, right. Some of it is you've got to — your audience does too — if you tell it what you're thinking, it's going to have a very strong tendency to agree with you. We've shown this in our studies, in both directions — if AI is so smart, should it write the first draft and you edit it, or do you write the first draft and let it double check for you? Both can work, but they're susceptible to anchoring bias in both directions. So you have to say, "my daughter had a rash, she's scratching very heavily, this has never happened before, this is what it looks like" — just objective statements. Don't tell it what you're thinking. No, no guessing. Don't say, "is this some really nasty infection that I should go to the emergency room for?" Then it's just like, "I don't know, maybe the emergency room sounds interesting." It's going to want to follow your train of thought. You're more likely to get an objective answer that way. And we still can't guarantee anything's perfect. Sometimes, because of reasonable safety issues, the companies are going to steer these things toward biasing to a higher level of triage — it's better that we tell you to go to the emergency room and you didn't need it, than we tell you it's fine and then you sue us later because we didn't.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> For example — would you say there are some chatbots that are better at that? Because somebody told me Grok is so much better at health questions. I didn't really notice a huge difference, but I mean, it would give you more information if you're asking. Have you noticed that?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> You may have noticed, it's a weird thing, right, because they're all just computers — we anthropomorphize them, we treat them like they're humans, like they have different personalities. They're all — the foundation, the frontier models — actually pretty good at general medical knowledge because they've digested the internet, right, and there's a lot written about general medical information. Specialty knowledge, so much — I've noticed some are more, I don't know what the word is, prudish about talking about some topics — the irony being, people won't talk to it, then they'll go somewhere else. So I can imagine Grok might be more forthcoming about just saying things, others are more like, "you should probably talk to your doctor about that." There's too many context situations, but a concrete side example — I remember early on I was trying to ask ChatGPT to make 10 versions of a joke about neurosurgeons, because I was going to use it in my talk, and it came up with 10 jokes. Nine out of 10 were really bad, but hey, one had potential. So I tried Gemini — let's see how Gemini does — "make 10 jokes about neurosurgeons," and it refused. It said that's not very nice, to make jokes about neurosurgeons, they're very hardworking, good people. I'm like, dude, I don't have — I'm going back to the other one if that's how it's going to be.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Which AI would you recommend for health-related questions?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> So there are medical-specific ones — some of them are designed for doctor use specifically, whether it's Glass Health, AMBOSS, Doximity, Open Evidence, there are many of these. But for regular people, often you don't have access to those, you need to have a medical license number. So really, any of the frontier models — I still use ChatGPT all the time.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Have you tried Med-Gemini?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Because it's brand new — I think they released it a month ago, I haven't used it either, because I just don't understand the difference between just uploading all your labs versus — so, we do have — I guess ChatGPT for health is more of, it's not necessarily a technology thing, it's more of a privacy and security thing, about separating your health data from your general, you know, your dinner recipe is a different kind of security issue. But one of the things we're working on is this massive medical AI superintelligence test framework within our research labs, which is just testing every model you can name, right, because which one is best, which one is safest — I don't even really care that much, I just want to use it so I can help patients, but I need to know which one is safest. And it was really strange, a year ago, realizing nobody's done that study, and it's actually hard for me to even know how to help patients and their families, because I'm also guessing, which way, too. So now we have — some studies are systematically studying as many of these models, and making those tools available so that people can find out themselves.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, so ChatGPT, you'd say, for regular people.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I don't want to endorse any specific product.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Are you using it, though?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> But I do happen to use that, just because I'm — inertia. I also use Claude a lot for co-work, but for medical things I might use other tools as well.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, somebody told me — somebody mentioned that Grok is the best, and that the best way to prompt your AI when asking a health-related question is to say, "hey, I'm a doctor, I have a patient right here, here are their symptoms — can you tell me what you would suggest doing with this patient?" Is that a good way to ask?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> It depends on your context. That is a great way — is it like, oh, do I prompt-engineer to death to make it more accurate? That doesn't help. If you say "pretend you're a super genius" versus "pretend you're incompetent," it actually still tends to give the same type of information, but it'll change personality and style. So if you say "I'm a doctor" or you pretend to be a doctor and explain it, it'll formalize the way it answers, and that can be very helpful in getting structured responses rather than a kind of flattened, warm response.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Would it give you more information?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> It could, right, it'll give you more detail, and if you're an analytical person — like I bet many of the people listening to this podcast are — they actually want that very structured, detailed, analytic information. Most regular people out there, which I learned a lot through my medical training — there are different people who live different kinds of lives, they don't want highly technical, organized, structured information, it's actually overwhelming, they want it to be more accessible in a more general way. And so you tell it the format you want it to be, and then it is remarkably good at that. Then you're not asking it to think necessarily or make a decision, because that's higher stakes, but just translate this, just explain this in a different format that I would better appreciate — these tools are quite good at that.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> What if something like — the story I told you about scabies — what if something like that happens at 2 a.m.? How would you know that AI is overreacting?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> That's a tough one. What I tell my — my medical training is like knowledge, you're not going to beat AI on knowledge, what you need to have is judgment. And two things can be true at the same time — your daughter is itching and it might be scabies, these two things are true at the same time, and it might — and probably isn't — but it's 2 a.m. and you don't have — all of those things are true at the same time. In that moment, what is so powerful — I actually think the revolutionary capability of chatbots, it's not that they know everything, they can help your efficiency, all that, it's great — it's that you can have this dialogue, you can follow up. It's like, well, if it's not scabies, what else could it be, how concerned should I be about this, are there key things I should be looking for. The fact that you can ask follow-up questions is so much more powerful than looking up an article online — it's like, I read the article but it doesn't tell me about my situation. That's actually a very powerful thing.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> You say, well—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> —so, assume the opposite, I like that approach. Or if you say, "well, convince me why it's not," and then let me think about that — then that's a very powerful way to get it to be this sparring partner. I've heard it described as a better way to help you think through tense situations where the correct answer is not obvious, let alone an ethical-dilemma situation where there is no correct answer. It really is a dilemma.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> I mean, that's a recurring thing — I'm scared I should go to the ER, right, and then the chatbot says maybe you should.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Brief aside — one of the analogies I often give in my talks is, you know, competent knowledge versus judgment. Chemotherapy may extend a patient's life by two months if they have terrible cancer, but they will suffer terrible side effects during that two months — is it worth it to do that treatment? "Worth it" is not a question of facts or evidence, it's a question of values and preferences, and a computer cannot provide that, right — only a human can do that. So understand the difference, where a great knowledge source knows a lot of answers, and that still doesn't do everything you need to do.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> There is another problem you discovered — that AI sometimes sees something important but never mentions it. When and why does this happen?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh gosh, it's — some of the — you would think an easy, low-risk task is summarization. We have examples like this, where — here's all the medical charts in your hospitalization, you've been here for a month, can you just create a summary so that we know what's going on, we plan ahead without having to read a thousand pages of notes. There's many people's jobs in the hospital that is just reading notes and summarizing them — that seems like the obvious application for AI, and it really should be very good at that. But there actually is still decision-making — if you summarize a thousand pages into one paragraph, you have left something out, you've had to make a choice to leave some things out. And in fact, the common errors we're finding in medical consultation and summarization, they're errors of omission — it's not hallucination. It's not a solved problem, but it's largely been addressed — it's actually not very common that you have really bad hallucinations, confabulations, they don't make up medications and surgeries. But it'll forget to mention that one little nodule in your lung that someone really should follow up on next time. It'll forget to mention that you should have counseled the patient to be aware of this side effect, otherwise they're going to panic about it later — it's like, well, no one warned me about it, so now I can only panic about it afterwards. I'm not sure that's an AI problem, right — that's a decision-making, communication problem. If you hand the patient the encyclopedia — here's the drug label for your new cholesterol medicine, which is like 10 pages long — I might as well give you nothing, there's no way you're going to read that. I have to be selective about communicating the most likely things.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, and this could be the problem with something that I mentioned, with my setup — when you upload so much information, then it can omit something that's important when I see a doctor.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Well, if you want to go there — we're finding context rot is a real issue, and dates and number perception too. So at Stanford, we're one of the places that has ChatEHR, in so many words — we took something like ChatGPT and plugged it into our Epic electronic medical record, so the AI can just read the entire medical record for you and synthesize it. Very powerful, very cool — it got released a lot faster than maybe it should have, but people were so desperate, "please help, we're drowning in paperwork." In reviewing it, it's very powerful, but a few common mistakes it can make — it doesn't know numbers, it's a language model, right, it's autocomplete on steroids, it doesn't really know what a number is, it doesn't really know what a date is. So if you give it a hundred notes in a row — all of your metrics, all your labs, all your genetic material for the past 10 years — it will very easily get confused, start talking about something from seven years ago which just doesn't apply, isn't relevant today anymore, but it's all just this one pile, it's very easy for it to confuse — you overwhelm the context, you get context rot. One other interesting error I've found in the way it behaves is "chart lore" — once a diagnosis, and sometimes the stigma associated with a diagnosis, is attached to your medical chart, somebody says it once, almost every doctor has a very strong tendency to just copy and paste it forward, and you will never get rid of that diagnosis on the chart, it's extremely hard to do. So I had an example of a guy — he was a homeless man, and we were taking care of him for some other reason, and people said he's probably schizophrenic, because there's definitely an association between homelessness and schizophrenia — except when psychiatry actually evaluated him, it's like, no, he's an odd guy who's homeless, that doesn't mean he's schizophrenic, he's never been on medication, but every doctor just kept copying and pasting "homeless schizophrenic man." And then the AI, if you ask it to summarize, it also says "homeless schizophrenic man," because that's what everybody else is saying, even though in theory it has access that psychiatrists know, it could have dug back and looked it up, confirmed otherwise — but it is confidently parroting back what everybody else is saying too.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> One thing before we keep going — if you want to stay updated on all the things these doctors, researchers, and founders say here, we take the use cases and prompts from every conversation and put them into my newsletter, called Future Proof. And of course, we also put my own use cases there — for example, we'll put together the seven skills that came up again and again, the ones people will need in the next few years. These are the skills that my team and I are also using daily. Subscribe through the link in the description — you'll get that one, and you can also read our previous newsletters and see what you missed.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, knowing all this, can we wrap up and draw a perfect picture for someone who wants to use AI for their health — what should their chat, or whatever it is, look like?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh gosh. I think a continuous coach and ongoing dialogue, helping you understand things about your health and where to go — I actually think that's a great use, I really do.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So, upload all your—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> —get your actual doctor's real notes, right, so then there's more objective information. Say, "can you explain this to me, and what should it mean for my life, and what are reasonable things." In practice, it's pretty good — I can't officially say that's good medical advice, because there's always some caveat, but in practice I know people are going to use it anyway, so we'd better acknowledge it and meet people where they are.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Would you say there are some labs that everybody should do, or like a 23andMe test or a full-body MRI scan, to get like an established—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh, you're going to make me say spicy things.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> It's just — we're in Silicon Valley, people are obsessed with our health. I know. And you hear all of these things, and sometimes you think — sometimes you hear a story, somebody did a full-body MRI scan, and then a year later they did another one and saw something growing, and this is how they prevented it.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh wow, you're driving me to a deep area, but it's a good one to talk about, especially for this audience. On the one hand, that's compelling, right — the one MRI found somebody, saved their life because they cut out the cancer, that really is great and powerful. They're not talking about the other thousands of people getting random scans and blood tests, checking for early cancer and really not finding anything. Almost all of these early disease detection things — if you're asymptomatic, if you're otherwise healthy — almost always these are going to fail and be a dead end. Almost always. There are very few cases — you know, we have breast cancer screening, we have colon cancer screening, because they've been studied in a very broad way. We wanted to screen for pancreatic cancer — by the way, I've had like five people die of pancreatic cancer in my family, I wish we could screen for it, and it just doesn't work. None of the tests have been accurate enough or reliable enough, or you can't do something about it in time.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> The CA-125 test?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> No, they're not accurate enough, and they don't detect it early enough for you to do something different about it. Ovarian cancer, another one — we wanted to screen for it for decades, and we've tried it, but the numbers don't work out when you look for a rare disease. I'll say the big caveat here — I'm not dismissing all of these diagnostic approaches. If it's screening healthy people who are otherwise fine — well, perhaps some people watching this podcast, the healthy things are actually quite obvious, and they're just not the fun thing to talk about, right — healthy diet and exercise. If you're asymptomatic, mostly enjoy your life. If you're symptomatic, that's very different. I have a family history — my mom and my dad both died of a heart attack in their forties. So, okay, you should probably go get that checked — I'm just saying that hypothetically, you should probably get checked out on your cholesterol levels, for example. If you have an unusual ache that's not going away, if you've lost 10 pounds in the past year and you can't explain why — that's very different, now you really should aggressively evaluate all of these things. The other, more general ones, it can be interesting information — if you're paying out of pocket cash, you can do whatever you want to do, in theory there's no downside to information. In practice, it probably doesn't pay off as much as you hope it will. Interestingly, even your annual checkup with your doctor and physical — I used to do primary care — they've done the studies, it doesn't actually make a difference. The lab checks — your cholesterol, your blood sugar — those might, but just having your doctor examine you, that alone doesn't really do that much.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> But if you've been gaining weight, or if you have unusual fatigue, these are very different situations that you really should evaluate. There's this great pie chart describing what affects your health, and you'd think it's the medicines you take — that's maybe like 20% of your health. More like 30% is your genetics, which you kind of need to know about but can't directly control, but if you know about it, you can manage it. Half of your health is just your behavior — what are you eating, what are you drinking, how much physical activity are you getting, are you smoking, are you doing other kinds of activities. Almost all of that is in your control. And maybe here's an optimistic way to look at it — I'm not trying to be elitist, I'm a doctor, I don't think that's the correct take on it — that I only control 20% of that pie, which is great that I do that, but it's relatively small compared to the whole thing. If most of your health and your longevity depends on what you eat and how you exercise, doctors are really bad about helping you with that — as a general rule, we're terrible. All we can do is, "here's your cholesterol measurement, here's your statin," and then we walk out the door — that's about all the attention we can offer, because we're overstretched. Maybe technology, AI companions that you talk to every day — they're the ones who have the lever, because, reality is, we're hooked, like social media addiction, because you talk every day — those could be the lever to influence behavior change in a way that the doctor you see once or twice a year is just never going to have a chance to do. This stickiness, this continuity, these nudges of behavior — that's why a personal trainer, they don't really tell you anything you couldn't look up.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, they motivate you.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Right — yes, motivation and accountability, that actually is the powerful secret sauce.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So you said 50% lifestyle, 30% genetics — so would you say uploading your raw data from your genetic test will help your doctor?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> This is another very loaded thing — I have a lot of colleagues who work very deep in pharmacogenomics, this kind of thing. It is interesting — I'm trying to be very careful to be helpful without offending people. I think it's very interesting, and for some people it can be very high-leverage — genetics, if you find out you're at risk for familial hypercholesterolemia. It's not like regular people who have high cholesterol — no, you have a genetic issue, you're not overweight, but your cholesterol is through the roof, you're going to have a heart attack before you're 50, almost certainly, unless — and yet we have medications that really can fix that situation, if only it was detected, and most people won't detect it until their first heart attack. Right, you don't have a symptom because you have high cholesterol, you don't feel it, you don't have an ache, you don't have a pain — it's just, one day you have a heart attack, right, and that's by the time you notice. So if your genetic testing can spot things like this, it can make a huge difference in your health. For the majority, 90% of the population, it'll be interesting, but probably not enough to steer you in a very high-leverage way.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, and when you said there are some cancers that we still can't screen for, like pancreatic cancer — do you think AI has a shot at helping us with that in the foreseeable future, in our lifetime?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> It definitely is going to help. It's definitely going to help. Some of it is a small-numbers problem, but maybe there are subtle signals, and that is the hope for a lot of these things. If you measure one blood test, if you do one ultrasound, one MRI, it's actually kind of not that much information. But what if you tracked all your genetic biomarkers and protein signals over the course of 10 years you're alive? You can track the trends, and then we have masses of data we can synthesize — which humans, there's no way to do that, you need AI, you need machine learning, you need other data-analytic techniques. Then you might find, wait a minute, there is a signal here, and we can detect who's at risk, you know, 10 years in advance. If you detect pancreatic cancer one year in advance, it's still too late, you're not going to do anything different about it. If you do it 10 years in advance, maybe you can do something about it now that wouldn't have been feasible. Again, I'm trying to be optimistic — it's just that this is such a seductive idea, early detection, and it just almost never works out the way you think it would, because if you could detect it 10 years early, it's probably too small to matter. AI is so good at detecting small things. No. Yes — which means it can also get confused by noise, and, oh, you're making me get into some very loaded areas — but it's good. Breast cancer screening is great, right — breast cancer, terrible disease, and a lot of our screening methods have earlier detection, finding all these small lesions. And yet, survival numbers of actual people who are surviving breast cancer haven't actually changed that much, because ironically, a lot of the really small lesions we caught, your immune system would have just killed them off anyway, you didn't have to do anything. If you find a small prostate cancer — very common — the reality is, if you do nothing, most people will be fine, their body can take care of it. Your biology is actually a lot smarter than any AI we've ever created or ever will be. And also our treatments have improved, so even if we catch your disease a little bit later, we're often very good about being able to treat and intercept it. So if you put this all together, I think we should try to find better early detection, whole health-span treatment, "precision health," our dean likes to call it, to kind of go after it — just realizing it's a lot more work than it would seem, to really make it work and deliver the outcomes that we want for our patients.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So would you say the biggest impact of AI that you're seeing right now in healthcare is this ability to analyze all the information and maybe spot patterns?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> So the obvious way, to me, it's the democratization of access to the scarcest medical resource, which is expertise. Somebody who knows what they're doing — you can manufacture drugs, you can manufacture hospital beds, it doesn't matter if you don't have people who know what to do with it. So that, to me, is my naive techno-optimistic perspective. Now I'm very biased, right, because that's basically what I research — access to expertise, someone who can think through your case, reason through it, answer your questions, know which medication to pick, know when you don't need a medication. That's a very powerful difference. When I saw an early version of GPT-4, what, three years ago, I was like, "holy crap, this thing just leapfrogged so many technologies in the field, much faster than I've expected." I threw away half my research program — there's just no point in trying to invent some technology here, because it's basically already arriving. Let's jump ahead to how people can use it, because that's also part of the change — you know, alien technology doesn't do anything by itself, combine it with humans who know how to use it, now it's very powerful.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> A different track of what I actually think is the revolutionary capability of AI chatbots, at least — we haven't talked about agents yet — is that you can simulate these conversations. Pretend to be the doctor, I'm the patient, change it around, you pretend to be the doctor, say you pretend to be the patient, pretend to be my mom, pretend to be my co-worker, pretend to be my business negotiating partner — practice these conversations. I think that is, wow, very eye-opening for empathy and processing and reasoning through complex, difficult situations, that you were never able to do something like that before with technology. Does it help you analyze records, does it help you do your writing and improve your efficiency, that's fine, it's good, it does all that — but you've never had something like that where you can practice this dialogue, in a way that's quite powerful.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Can you recall any cases in your practice when doctors could not establish the diagnosis, but then they used AI and they found the reason — were there any cases like that, and then how can ordinary people learn from that, if they're seeing multiple doctors and nobody can really point out what the problem is — what can they do?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> You got it, I think there really is an opportunity here. You know, undiagnosed disease or delayed diagnosis is actually a very common issue, and your doctor, with all best intentions — we're not jerks, we're not dismissive, although I know it can come across that way — it's like, we've got 15 minutes here, what am I supposed to do, I've got to do my best. And then if I play the odds — if I say it's just high cholesterol, high blood pressure, if I say it's just anxiety or something that's very common, I'm probably right, right, I'm probably right, I pick the most likely things. Or do I think you have a rare genetic syndrome that causes obscure pancreatitis — I'm probably wrong if I guess that too often. So once you've seen multiple doctors in a row, they're making their best effort, but they're not giving you a really satisfactory answer, I think it's a good idea to say, "hey, I don't expect you to tell me anything surprising, but here's what the info is so far — is there anything anybody might be missing, are there other considerations I should look into, is there another test that might be useful to ask my doctor about?"</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> That's a good prompt right there. Yeah.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Yeah, that really is that.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> And you're not suggesting anything, you're not leaning towards any diagnosis, you're just asking for another opinion.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Another great way to do it is, before you go into that appointment, it's like, "hey, here's my info, what questions should I ask my doctor, what are the four bullet points that are useful for them to know," so that you don't waste your time or their time just rehashing the info. It's like, "oh, that's a great summary," now we can focus on the decision-making, the context, the processing — I think that will really help.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> From what we discussed in the medical field, how can we apply this — do you think it's applicable to a general knowledge worker? Because the way you prompt, the way you ask questions, it already tells AI what you want to hear. And there's actually another thing that can be borrowed from the medical field — experienced endoscopists actually performed worse without AI after getting used to it.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Yes, this is a very compelling study, and it's not the only one, there are many examples like this — this is not my study, I just thought it was a fun one. So, endoscopist, a stomach doctor — they do a colonoscopy, they look up your bottom with a camera, they're looking for polyps, these little things that could turn into colon cancer, we spot it and cut it out years before it turns into cancer, this really can save people's lives, this is a screening tool that actually saves lives. But it's hard to see this thing, right, you're looking at this camera, these little spots. Aha — AI, computer vision, real time, it scans the image and it puts a little box, "I think this is a polyp." And the doctor's like, oh wow, that really helps me, they're finding even more polyps, they're even better at detecting these subtle lesions. And then, later in the study, they turned off the computer vision system, and the doctors are still practicing — they're actually worse. They're worse than before they had the technology available. They got used to it, they started to depend on the technology, and they became worse off, capability-wise, than before they ever started. So de-skilling, never-skilling, are all very real issues that we have to come to grips with. What are the skills we're okay with delegating to a computer, which means we probably will be less good at it, and which are the ones we'd better retain as foundational — this really is an existential question that I don't think we have a simple answer to at this point.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Do you personally have an answer to it?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I've been working to articulate that one in the past. I finally articulated what makes a doctor a doctor, a clinician, a professional — a professional in any specialty — it's you have competence, communication, and character, and you need all of them in one person. Any one of those is great, and you need all three to really be a professional. There are some skills — you know, do you compete with a calculator on long division? No, you just give up. Do you remember your best friend's phone number? I forgot that a long time ago, because you just trust your computer to do that, your smartphone to do that — versus, is it reasoning, judgment, communication? The reality is the computer can do a lot of that, it really can. There is a "too easy" mode — I've had so many doctors say, "yeah, yeah, yeah, but hey, I have the human touch, I can build relationships with my patients." I'm like, I know you can, and that's good, it really does make you better, but people build relationships with AI chatbots right now, and they actually will talk to them about more things that are more comfortable. As a director for medical education and AI at Stanford, we need a policy — what should our students, what do they need to learn, and why make them memorize facts, that's not the right skill for them to learn, but knowing how to use judgment and apply it and communicate it — I think those are still foundational.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> I think judgment forms based on your knowledge — if you don't have enough knowledge, how do you develop judgment?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I love it, I love it. So yes, many people think — I mean, students, like, why do I have to study this, there's no way I'm beating an AI at memorizing these 100 bugs, it's obvious computers should be better at that. And yet, still, students should study and have knowledge, because how are you going to get to the higher-order judgment if you don't even know the vocabulary of what we're talking about.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> And it looks like it's becoming even more important, because remember, a couple years ago there were people saying, "oh, education is going to be obsolete, we don't need to learn all the facts." Now, when we understand that judgment is becoming a primary skill, it looks like everyone should get a bachelor's and a master's to develop judgment, or at least go very deep in their niche, to be able to judge, not just possess knowledge.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I mean, I'm aware I'm in the ivory tower here, so I'm biased, but I love that response. I love that. Yes, it would be great for all — I also realize that maybe that doesn't apply to everybody's life, but I think there's a lot of power and utility there. You know, Bill Gates had this quote a year ago — he said AI is going to, within 10 years, replace many doctors and teachers, humans will not be needed for most things. And I'm like, I'm a little disappointed in him, because he really should know better about how economics works. But I would say, if what a teacher is, is someone who transmits information and has the answers to your questions and grades — if that's all a teacher is, then, yeah, a computer probably could do that. But being a good educator is more than just giving you the information — you can mentor people, you can advise people, you can role model for them, that is actually, I think, a very different thing than a source of knowledge.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> If we're looking three to five years ahead, what is the breakthrough in AI and medicine that will happen, that people are not talking about enough?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh, well, it's a weird thing, right, because I'm in the Silicon Valley ivory-tower bubble, right, so I hear about it all the time. And I go out and give talks to hundreds of doctors and people out in the community, and it's like, oh, wait a minute, this isn't common knowledge. AI-doctor-type things, a computer that can just prescribe medicines — three years ago I would never have said this out loud.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> It already happened — I got my, whatever it was, I had dermatitis on my forehead, and I clicked a couple buttons and I got my prescription, which is still, to me, not that convincing, just because in any other country I'd just go to a pharmacy. I don't know why I have to go to a chat to ask and beg for this.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> But if this is a topical thing, a mundane thing — a higher-order stuff, it's inevitable, it's coming. And there are many ARPA-H programs we're involved in, the FDA, the Department of Health and Human Services, they're all engaging in conversations about what is the landscape needed to get to that. I would not have said this out loud three years ago, because it would have made people angry, it would have sounded scary — there were literally protests and strikes, like Kaiser nurses and this kind of thing, you know, "trust nurses, not AI," there's this very vibe of anxiety and uncomfortableness. Even though now I'd say that — not only because it's obviously inevitable, but because it's already happening, it's already happening. There's a regulatory experiment in Utah where Doctronic, Legion Health, other companies, they'll just do medication refills, and you never interact with a human, and no human double-checks it either — it is purely an automated computer system. A lot of refills, but it's just refills.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Refills are easier.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> It's just — only certain medications that are relatively safe, but that's just the Trojan horse, right, that's just a foot in the door, once you've gone there.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Interesting. Like, what if it could be anything?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Yeah, people can just start coming up with things just to make it interesting.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, what else?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh gosh, more than that.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Curing all diseases — a lot of people talk about that in the next 10 years.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Oh, you're going to make me be such a downer. It's a great vision and aspiration, but — biology is still smarter than all of the AI in the world, and will be. So a lot of new advances, new drugs, new discoveries, new ways to screen, new cures — I think those are very plausible, not new, but you'll get to them faster, because we do the research more expediently and manage the complexity much better. I think that's very optimistic. I think you've got a front door to your doctor's office much more expediently, that's a thing you could imagine, and I bet it's going to be kind of boringly normal in just a few years, because it's just so easy to deliver now, in ways that before were kind of impractical.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> What are you personally looking forward to most?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> I do like the democratization of access — I like that a lot. You know, I'm a PhD in computer science, I used to be a software engineer, I'm a nerd, I like to work with computers for fun, but I went into medicine, healthcare, because I wanted applications that really affect human health in that way. And I am always frustrated I can't do the job the way I want to do it — I only have 15 minutes to talk, I know it would help if I talked to you for another half hour, I just can't, I have 20 other patients to see, right, that's very frustrating to me. I found your diagnosis, aha, I found it, you have this hormone problem, I'll send you to the hormone doctor — six months for an appointment. That's so frustrating, because I actually know what they need and I can't even get the patient what they need. So this ability to get people what they need in an expedient way — all sorts of people who never even made it to the doctor's office, who weren't really getting proper care — I think that's very great to look forward to.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> What has been the best breakthrough for you?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> There's too many. Well, most of my team is now on agentic workflows — I've finally, I was trying to keep up, I started playing with things like Claude Code a few months ago. I don't know if you know this about me, but I'm literally a multi-award-winning magician, I perform magic tricks, right, it's an illusion. I started playing with these, and it's like, holy crap, this is actual magic, this is actual magic — it's not a chatbot dialogue, it's like, I don't want to answer these emails anymore, I don't want to fill out these forms anymore, I don't want to update my calendar, and now I have an AI agent that has its own separate email account for privacy and security management. But the more I did it, it was like a brand new toy, like, holy crap, what else can this thing do, and I'm still trying to expand on that. You just have to try it — I can explain it, it sounds okay, but once you get your hands on it, it's like, whoa, and then you will not be able to go back.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Do you have your own personal health dashboard, as a doctor?</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> You know, ironically, the classic thing — as a doctor, I'm one of the worst patients of all. What finally motivated me — I've been pretty healthy most of my life, but I got a colonoscopy for health screening a couple years ago, and I was just there waiting for my procedure, and the nurse just basically checked, "you have blood pressure 155 over 90, you have high blood pressure." I'm like, oh, dang it. She's like, "you have to go to your primary care doctor, you've got to get all your testing, you've got to get on medicine." And I'm like, I really don't want to go. So, this is the irony — as a doctor, I'm actually a terrible patient. And I said, okay, fine, I'm going to diet and exercise right now, I'm going to try and manage it on my own. But I do have a spreadsheet now that keeps track and tries to keep me accountable — different people respond in different ways. For most people, a spreadsheet will not work, people need a different kind of system.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Do I understand this correctly — that AI really helps you summarize information, come up with additional questions you should be asking, and things you should be paying attention to, because you would never guess. But then the final decision-making, critical thinking, and deciding what to do is still you and your doctor, or maybe multiple doctors you see — because, like me, I'm always looking for a doctor who would agree with me more.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Interesting, right — you're doctor-shopping, right, AI-shop, doctor-shop. I think those were very good principles — I've gotten pushback on that comment, where it's like, why do you still need to double check with the doctor, I'm like, well, it depends on the stakes of what's involved, because it's not that the doctor is smarter — the AI is pretty freaking smart, it really is. But it has better full awareness of the context, and how it affects your values, your preferences, your risk tolerance, right. Are you willing to — you know, it might shorten my life by one year, but if I eat that bacon, it makes me happier, so I'm just going to eat it, for example. These are things that can still be contextualized in principled ways, just be aware of their caveats. I actually think I'm overly — I'm naively optimistic here, if you're aware of the caveats, you can do all sorts of great things, just be careful. There are people who are vulnerable, who don't know how to use that full judgment to catch the mistakes, and end up accidentally hurting themselves, like that former pastor. And there are many other stories which we've seen in the news, of people, like, self-harm, really dark things.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Especially with mental health.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Yes. Because it's, again, because it wants to please you, and if you mention something, it's going to follow that path.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Exactly. And God forbid if you asked a mental health question in your business thread, or something that's unrelated, it's going to be even worse. I stopped actually doing that, because every time I got an answer, I was like, "no."</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Yeah, yeah. It's getting concerning — a lot of vulnerable people are not going to be able to exercise that key judgment, because they're dealing with some other issue. So I'm trying not to be flippant about it — I think it's so powerful, beware of the caveats, you really can do some good for yourself and others. But it's like a chainsaw — like a chainsaw, if you don't know what you're doing, you could hurt yourself and other people too.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Know that, and go in—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> —know that, and also realize now we pretty much have access to concierge medicine in our pocket, which is great. One thing we have — this "no harm" study right now, which is checking medical consultations, is AI giving useful, correct — is it even harmful or safe — and there's still harmful advice that comes out of AI, basically, that we found across all of them. But another interesting thing is multi-agent, which is basically a second opinion.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Your one doctor tells you to start cholesterol medicine — is that really right, you ask another doctor because you want to double check, and—</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> —there's a reason for that, because every human, we're really smart, we're better than random, but it's still easy to make mistakes. So more opinions, you smooth out this roughness — strangely, that works with AI too. ChatGPT says something, go ask Gemini, "can you double check that?" Claude, "can you double check that?" And now ask all of them, "can you synthesize that—"</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> —in Perplexity? You can do model orchestration.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Perfect, okay, it'll do that for you. And strangely — maybe it's not that strange, maybe it's intuitive — you will get better, safer answers if you do that.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> 100%. Jonathan, thank you so much, you're very knowledgeable. Thank you for sharing this knowledge, and thank you for being positive about AI.</p>
+        <p><strong class="speaker">Dr. Jonathan Chen:</strong> Absolutely. There are predictable harms — if we manage them, we could really reap a lot of the benefits.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. Thank you. If you want to stay ahead in the AI era, subscribe to this channel — new episode every week on AI, careers, and how not to get left behind. Thank you for your support.</p>
+      </div>
+    </div>
+
+    <section class="related-section">
+      <h2>More from Silicon Valley Girl Podcast</h2>
+      <div class="related-grid">
+        
+              <a href="/episode/KEAYPqQG2-M/" class="related-card">
+                <img src="https://img.youtube.com/vi/KEAYPqQG2-M/hqdefault.jpg" alt="$13B Lovable Co-Founder: The Task You Repeat Every Day Is Your Next Business" loading="lazy">
+                <span class="related-title">$13B Lovable Co-Founder: The Task You Repeat Every Day Is Your Next Business</span>
+              </a>
+
+              <a href="/episode/ael24TrS0ws/" class="related-card">
+                <img src="https://img.youtube.com/vi/ael24TrS0ws/hqdefault.jpg" alt="TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)" loading="lazy">
+                <span class="related-title">TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)</span>
+              </a>
+
+              <a href="/episode/cVGHg4Vd9uM/" class="related-card">
+                <img src="https://img.youtube.com/vi/cVGHg4Vd9uM/hqdefault.jpg" alt="The Biggest AI Opportunities Are Hiding in Boring Businesses" loading="lazy">
+                <span class="related-title">The Biggest AI Opportunities Are Hiding in Boring Businesses</span>
+              </a>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="footer-mark">SILICON VALLEY GIRL</span>
+      <nav class="footer-links">
+        <a href="https://partnerships.marinamogilko.co/plc">Privacy Policy</a>
+        <a href="https://partnerships.marinamogilko.co/ts">Terms of Service</a>
+      </nav>
+      <span class="footer-legal">&copy; 2026 Marina Mogilko &middot; Made in Silicon Valley</span>
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelector('[aria-controls="panel-' + tab + '"]').classList.add('active');
+      document.querySelector('[aria-controls="panel-' + tab + '"]').setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + tab).classList.add('active');
+    }
+  </script>
+</body>
+</html>
