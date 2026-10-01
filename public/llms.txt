@@ -32,6 +32,7 @@
 
 ## Podcast Guests and Their Episodes
 Every guest interview on the Silicon Valley Girl podcast, newest first. Each line is the guest, their role, the year, and the page with the full transcript.
+- Greg Brockman — Co-Founder of OpenAI, Former CTO at Stripe (2026): https://marinamogilko.co/episode/qy8Gr27yLMk/
 - Dr. Jonathan Chen — Physician, Computer Scientist, Director of AI in Medical Education at Stanford Medicine (2026): https://marinamogilko.co/episode/oOpF0ZXSXuk/
 - Anton Osika — Co-Founder of Lovable, a $13B AI company (2026): https://marinamogilko.co/episode/KEAYPqQG2-M/
 - Shishir Mehrotra — CEO of Superhuman, Founder of Coda, Former CPO of YouTube, Spotify Board Member (2026): https://marinamogilko.co/episode/JEZVl3BkSLk/
