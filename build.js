@@ -390,7 +390,7 @@ function renderFormFields() {
 // Pin a specific episode to the top of the homepage. Set to null (or a
 // videoId no longer on the site) and the newest episode takes the slot again,
 // which is what the page does by default.
-const FEATURED_VIDEO_ID = "o-wv_szZ0V0";
+const FEATURED_VIDEO_ID = "qy8Gr27yLMk";
 
 
 // Every episode on one page, linked from the homepage archive. Separate from
