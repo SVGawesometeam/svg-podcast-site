@@ -32,6 +32,7 @@
 
 ## Podcast Guests and Their Episodes
 Every guest interview on the Silicon Valley Girl podcast, newest first. Each line is the guest, their role, the year, and the page with the full transcript.
+- Daron Acemoglu — MIT Economist and 2024 Nobel Laureate in Economic Sciences (2026): https://marinamogilko.co/episode/0lsasYuzhL4/
 - Brian Chesky — Co-founder and CEO of Airbnb (2026): https://marinamogilko.co/episode/iJlyNupMOzA/
 - Greg Brockman — Co-Founder of OpenAI, Former CTO at Stripe (2026): https://marinamogilko.co/episode/qy8Gr27yLMk/
 - Dr. Jonathan Chen — Physician, Computer Scientist, Director of AI in Medical Education at Stanford Medicine (2026): https://marinamogilko.co/episode/oOpF0ZXSXuk/
