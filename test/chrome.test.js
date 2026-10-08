@@ -9,7 +9,7 @@ test('exports every icon both builders reference', () => {
   }
 });
 
-test('head carries the favicons batch-build.js was missing', () => {
+test('head carries the favicons the old batch builder was missing', () => {
   assert.match(chrome.SHARED_HEAD, /rel="icon"/);
   assert.match(chrome.SHARED_HEAD, /apple-touch-icon/);
   assert.match(chrome.SHARED_HEAD, /site\.webmanifest/);

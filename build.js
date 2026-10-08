@@ -495,6 +495,77 @@ ${cards}
 </html>`;
 }
 
+// One identifier per entity, reused by every page on the site (and by the
+// media kit once it lives here), so a machine reading any page can tell that
+// the same person, show and publisher are meant. Only facts that need no
+// date are asserted here; counts and awards belong on the About page with
+// their sources.
+const IDS = {
+  person: `${SITE_URL}/#marina`,
+  podcast: `${SITE_URL}/#podcast`,
+  org: `${SITE_URL}/#org`,
+  website: `${SITE_URL}/#website`,
+};
+
+function homeJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": IDS.person,
+        name: "Marina Mogilko",
+        url: `${SITE_URL}/`,
+        image: `${SITE_URL}/host.jpg`,
+        jobTitle: "Host, Silicon Valley Girl Podcast",
+        description:
+          "Entrepreneur and creator based in Silicon Valley. Host of Silicon Valley Girl, an AI, tech and career podcast, and author of the Future Proof newsletter.",
+        worksFor: { "@id": IDS.org },
+        knowsAbout: ["Artificial intelligence", "Careers", "Entrepreneurship", "Creator economy"],
+        sameAs: [
+          "https://www.youtube.com/@SiliconValleyGirl",
+          "https://www.youtube.com/@linguamarina",
+          "https://www.instagram.com/siliconvalleygirl/",
+          "https://www.instagram.com/siliconvalleygirlpodcast/",
+          "https://www.linkedin.com/in/marinamogilko/",
+          "https://x.com/siliconvalleymm",
+          "https://www.tiktok.com/@linguamarina",
+        ],
+      },
+      {
+        "@type": "PodcastSeries",
+        "@id": IDS.podcast,
+        name: "Silicon Valley Girl Podcast",
+        url: `${SITE_URL}/`,
+        description:
+          "Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.",
+        inLanguage: "en",
+        author: { "@id": IDS.person },
+        publisher: { "@id": IDS.org },
+        sameAs: [
+          "https://www.youtube.com/@SiliconValleyGirl",
+          "https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY",
+          "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545",
+        ],
+      },
+      {
+        "@type": "Organization",
+        "@id": IDS.org,
+        name: "Linguamarina, Inc.",
+        url: `${SITE_URL}/`,
+        founder: { "@id": IDS.person },
+      },
+      {
+        "@type": "WebSite",
+        "@id": IDS.website,
+        name: "Silicon Valley Girl Podcast",
+        url: `${SITE_URL}/`,
+        publisher: { "@id": IDS.org },
+      },
+    ],
+  };
+}
+
 function renderHomePage(episodes) {
   const newest = episodes[0];
   const pinned = FEATURED_VIDEO_ID
@@ -583,14 +654,8 @@ function renderHomePage(episodes) {
   <meta name="twitter:title" content="Silicon Valley Girl Podcast">
   <meta name="twitter:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta name="twitter:image" content="https://marinamogilko.co/og-image.png">
-  <script type="application/ld+json">${JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "PodcastSeries",
-    name: "Silicon Valley Girl Podcast",
-    description: "Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.",
-    url: "https://marinamogilko.co",
-    author: { "@type": "Person", name: "Marina Mogilko" },
-  })}</script>
+  <link rel="canonical" href="${SITE_URL}/">
+  <script type="application/ld+json">${JSON.stringify(homeJsonLd())}</script>
   ${SHARED_HEAD}
   <style>
     /* CHROME-START */${CHROME_CSS}

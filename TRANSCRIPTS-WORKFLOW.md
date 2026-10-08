@@ -315,9 +315,10 @@ Vercel собирает из `main` автоматически, статика �
 - Правило по рекламе не унифицировано.
 - Корневая причина ошибок атрибуции — в бэкенде `svg-dashboard` (другой репозиторий): пайплайн
   назначает спикеров моделью по субтитрам YouTube, где данных о говорящих нет.
-- Вспомогательные скрипты в корне (`batch-build.js`, `fix-transcripts.js`, `fix-guests.js`,
-  `generate-podcast-page.js`, `patch-jsonld.js`) — разовые инструменты прошлых проходов, в
-  текущем процессе не используются. `fix-transcripts.js` требует `ANTHROPIC_API_KEY`.
+- Разовые скрипты прошлых проходов (`batch-build.js`, `fix-transcripts.js`, `fix-guests.js`,
+  `generate-podcast-page.js`, `patch-jsonld.js`) удалены 2026-10-08: они не участвовали в текущем
+  процессе, а `batch-build.js` ещё и собирал страницы под старый хост `podcast.marinamogilko.co`.
+  Проверка, что правка не тронула ни одну расшифровку: `npm run verify:transcripts`.
 
 ---
 
