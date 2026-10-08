@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert');
 const { renderEpisodePage } = require('../build.js');
 const { isoDuration, performers } = require('../lib/render-episode-v2');
+const { ANALYTICS_HEAD } = require('../lib/chrome');
 
 const BASE = {
   videoId: 'abcdefghijk',
@@ -53,7 +54,8 @@ test('summary, takeaways, chapters and transcript are visible sections with head
   assert.match(html, /<h2>Chapters<\/h2>/);
   assert.match(html, /<h2>Transcript<\/h2>/);
   assert.doesNotMatch(html, /display:\s*none/, 'something is hidden by default');
-  assert.doesNotMatch(html, /<script>/, 'the page should need no JavaScript');
+  // The only script is the analytics loader every page carries.
+  assert.doesNotMatch(html.replace(ANALYTICS_HEAD, ''), /<script>/, 'the page should need no JavaScript');
   assert.ok(html.includes('People pay $50 to $100 for a &quot;boring&quot; product.'));
 });
 

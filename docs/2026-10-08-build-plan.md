@@ -119,9 +119,9 @@ Releases 1 and 2 can be built today in this session; they are the safest and nee
 
 | Input | Needed for |
 | --- | --- |
-| Routing emails confirmed; GA4 ID; Vercel previews confirmed on | R1 |
+| Routing emails confirmed; GA4 ID (decided 2026-10-08: analytics goes through the team's Google Tag Manager container GTM-WZ57XVB, now loaded on every page; the team checks in Tag Manager that the container holds a GA4 tag and nothing left over from Tilda); Vercel previews confirmed on | R1 |
 | Episode-level Apple and Spotify URLs for the six pilots (done for five of six on 2026-10-08, see `content/PLATFORM-LINKS.md`; the sixth, `L1EmhDYc11g`, has no podcast release found); roles at recording | R3 |
-| Biography facts with sources; counts with dates; legal texts; press list; portrait | R4 |
+| Biography facts (confirmed 2026-10-08 from the media kit page; source links to follow and go into `content/site.json`); counts (left off until the dashboard job exists, which needs the structure of `audience.html` or the host allowed); legal texts (received, built); press list (received, built); portrait (received) | R4 |
 | Tilda export or filled template; demographics; formats; logo permissions; case-study sign-off; Tilda sitemap; DNS change | R5 |
 | Topic tags confirmed; hub answers reviewed | R6 |
 | Sources for numbers; guide review | R7 |

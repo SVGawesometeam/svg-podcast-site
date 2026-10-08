@@ -5,6 +5,8 @@ const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_C
 const { TOPICS, FIELDS } = require("./lib/contact-fields");
 const { esc, jsonForScript } = require("./lib/html");
 const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
+const { renderAboutPage, renderNewsletterPage, renderLegalPage } = require("./lib/pages");
+const { SITE_URL, IDS } = require("./lib/site");
 const {
   fromApi,
   validate,
@@ -15,7 +17,6 @@ const {
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
-const SITE_URL = "https://marinamogilko.co";
 const PUBLIC_DIR = path.join(__dirname, "public");
 const IDS_FILE = path.join(__dirname, "podcast-video-ids.txt");
 const FIXES_DIR = path.join(__dirname, "transcript-fixes");
@@ -25,6 +26,15 @@ const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 // The build renders every page from it on every run, so a template change
 // reaches all pages and a page is never edited by hand. Hand corrections go
 // into the JSON (and their reasons into transcript-fixes/<id>.json).
+const SITE_FILE = path.join(__dirname, "content", "site.json");
+const LEGAL_DIR = path.join(__dirname, "content", "legal");
+
+// Facts about Marina and the show; see content/site.json for what is in it
+// and where it comes from. /about/, llms.txt and the JSON-LD all read this.
+function readSite() {
+  return JSON.parse(fs.readFileSync(SITE_FILE, "utf8"));
+}
+
 function dataFile(videoId) {
   return path.join(CONTENT_DIR, `${videoId}.json`);
 }
@@ -157,10 +167,26 @@ async function build() {
   fs.writeFileSync(path.join(episodesDir, "index.html"), renderEpisodesPage(allEpisodes));
   console.log("Written public/episodes/index.html");
 
+  const site = readSite();
+  const staticPages = {
+    "about": renderAboutPage(site, allEpisodes),
+    "newsletter": renderNewsletterPage(site),
+    "privacy": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "privacy.md"), "utf8"),
+      { path: "/privacy/", description: "How marinamogilko.co and Linguamarina, Inc. handle the information visitors share, what is collected, and how to ask for it to be reviewed or deleted." }),
+    "terms": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "terms.md"), "utf8"),
+      { path: "/terms/", description: "The terms under which marinamogilko.co and its content are offered by Linguamarina, Inc., including the refund policy and how to raise a copyright notice." }),
+  };
+  for (const [slug, html] of Object.entries(staticPages)) {
+    const dir = path.join(PUBLIC_DIR, slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), html);
+    console.log(`Written public/${slug}/index.html`);
+  }
+
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
   console.log("Written public/sitemap.xml");
 
-  writeLlmsTxt(allEpisodes);
+  writeLlmsTxt(allEpisodes, site);
 
   console.log(`\nImported: ${imported}  Rendered: ${rendered}  Failed: ${failed}  Total: ${allEpisodes.length}`);
 }
@@ -171,14 +197,24 @@ async function build() {
 // which mtime would not.
 // What a reader or a machine gets from a page: its text, its links and its
 // structured data. Markup, CSS and scripts are not part of it.
+// The shared header and footer are not part of it either: a nav label or a
+// footer link changes on all 123 pages at once, and telling Google that every
+// episode changed that day would bury the dates of the pages that did.
 function contentFingerprint(html) {
   const ld = (html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) || [, ""])[1];
-  const links = [...html.matchAll(/(?:href|src)="([^"]*)"/g)].map((m) => m[1]).join("\n");
-  const text = html
-    .replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ")
-    .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const page = html
+    .replace(/<header class="site-header">[\s\S]*?<\/header>/, " ")
+    .replace(/<footer class="site-footer">[\s\S]*?<\/footer>/, " ")
+    .replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ");
+  const links = [...page.matchAll(/(?:href|src)="([^"]*)"/g)].map((m) => m[1]).join("\n");
+  const text = page.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   return `${text}\n${links}\n${ld}`;
 }
+
+// Bumped whenever contentFingerprint() changes what it hashes. On the first
+// build after a bump every page adopts its new hash and keeps its date, so
+// changing the formula never re-dates the whole site.
+const FINGERPRINT_BASIS = "content-v2";
 
 function lastmodFor(episodes) {
   const cacheFile = path.join(__dirname, "sitemap-lastmod.json");
@@ -200,13 +236,13 @@ function lastmodFor(episodes) {
     if (!prev) {
       // A page we have never seen is dated by publication, not by today.
       date = new Date(ep.publishedAt).toISOString().split("T")[0];
-    } else if (prev.basis !== "content") {
-      // First run on this basis: keep the published date, adopt the hash.
+    } else if (prev.basis !== FINGERPRINT_BASIS) {
+      // First run on this basis: keep the date, adopt the hash.
       date = prev.date;
     } else {
       date = prev.hash !== hash ? today : prev.date;
     }
-    out[ep.videoId] = { hash, date, basis: "content" };
+    out[ep.videoId] = { hash, date, basis: FINGERPRINT_BASIS };
   }
 
   fs.writeFileSync(cacheFile, JSON.stringify(out, null, 2) + "\n");
@@ -235,6 +271,10 @@ function renderSitemap(episodes) {
   const urls = [
     `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
     `  <url><loc>${SITE_URL}/episodes/</loc><priority>0.8</priority></url>`,
+    `  <url><loc>${SITE_URL}/about/</loc><priority>0.8</priority></url>`,
+    `  <url><loc>${SITE_URL}/newsletter/</loc><priority>0.6</priority></url>`,
+    `  <url><loc>${SITE_URL}/privacy/</loc><priority>0.2</priority></url>`,
+    `  <url><loc>${SITE_URL}/terms/</loc><priority>0.2</priority></url>`,
     ...episodes.map(ep =>
       `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${lastmod[ep.videoId].date}</lastmod></url>`
     ),
@@ -271,24 +311,50 @@ function renderLlmsGuestSection(episodes) {
   ].join("\n");
 }
 
-function writeLlmsTxt(episodes) {
+// The About section of llms.txt is the fact list from content/site.json, the
+// same one the About page shows, so an AI crawler and a reader get the same
+// claims. Counts appear only once the dashboard job has written them.
+const LLMS_ABOUT_HEADING = "## About Marina Mogilko";
+
+function renderLlmsAboutSection(site) {
+  const lines = (site.facts || []).map((f) => `- ${f.text}${f.source ? ` (source: ${f.source})` : ""}`);
+  const counts = site.counts && site.counts.items ? site.counts.items : [];
+  for (const c of counts) lines.push(`- ${c.label}: ${c.value} (as of ${site.counts.updatedAt})`);
+  lines.push(`- Based in ${site.person.location}`);
+  lines.push(`- Full profile, speaking and press: ${SITE_URL}/about/`);
+  return [LLMS_ABOUT_HEADING, ...lines, "", ""].join("\n");
+}
+
+// Replace the section that starts at `heading` and runs to the next "## ".
+function replaceSection(txt, heading, section) {
+  const start = txt.indexOf(heading);
+  if (start === -1) return null;
+  const after = txt.indexOf("\n## ", start + heading.length);
+  const end = after === -1 ? txt.length : after + 1;
+  return txt.slice(0, start) + section + txt.slice(end);
+}
+
+function writeLlmsTxt(episodes, site) {
   const file = path.join(PUBLIC_DIR, "llms.txt");
   if (!fs.existsSync(file)) {
     console.log("Skipped public/llms.txt (file missing)");
     return;
   }
-  const txt = fs.readFileSync(file, "utf8");
-  const start = txt.indexOf(LLMS_HEADING);
-  if (start === -1) {
+  let txt = fs.readFileSync(file, "utf8");
+  const guests = renderLlmsGuestSection(episodes);
+  const withGuests = replaceSection(txt, LLMS_HEADING, guests);
+  if (withGuests === null) {
     console.log(`Skipped public/llms.txt (no "${LLMS_HEADING}" section)`);
     return;
   }
-  const after = txt.indexOf("\n## ", start + LLMS_HEADING.length);
-  const end = after === -1 ? txt.length : after + 1;
-
-  const section = renderLlmsGuestSection(episodes);
-  fs.writeFileSync(file, txt.slice(0, start) + section + txt.slice(end));
-  console.log(`Written public/llms.txt (${section.split("\n").length - 4} guests)`);
+  txt = withGuests;
+  if (site) {
+    const withAbout = replaceSection(txt, LLMS_ABOUT_HEADING, renderLlmsAboutSection(site));
+    if (withAbout === null) console.log(`Note: public/llms.txt has no "${LLMS_ABOUT_HEADING}" section`);
+    else txt = withAbout;
+  }
+  fs.writeFileSync(file, txt);
+  console.log(`Written public/llms.txt (${guests.split("\n").length - 4} guests)`);
 }
 
 // ---------------------------------------------------------------------------
@@ -478,13 +544,6 @@ ${cards}
 // the same person, show and publisher are meant. Only facts that need no
 // date are asserted here; counts and awards belong on the About page with
 // their sources.
-const IDS = {
-  person: `${SITE_URL}/#marina`,
-  podcast: `${SITE_URL}/#podcast`,
-  org: `${SITE_URL}/#org`,
-  website: `${SITE_URL}/#website`,
-};
-
 function homeJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -493,8 +552,8 @@ function homeJsonLd() {
         "@type": "Person",
         "@id": IDS.person,
         name: "Marina Mogilko",
-        url: `${SITE_URL}/`,
-        image: `${SITE_URL}/host.jpg`,
+        url: `${SITE_URL}/about/`,
+        image: `${SITE_URL}/marina-mogilko.jpg`,
         jobTitle: "Host, Silicon Valley Girl Podcast",
         description:
           "Entrepreneur and creator based in Silicon Valley. Host of Silicon Valley Girl, an AI, tech and career podcast, and author of the Future Proof newsletter.",

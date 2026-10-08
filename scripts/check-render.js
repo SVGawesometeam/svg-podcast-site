@@ -14,6 +14,11 @@
 //
 //   node scripts/check-render.js [ref] [--allow id,id]   (allowed: transcript
 //   text repaired on purpose this release; still reported)
+//   --ignore-chrome   compare the pages with the shared header, footer and
+//                     analytics scripts cut out of both sides. For a release
+//                     that changes the chrome on purpose (nav labels, footer
+//                     links, a tag), it shows that nothing else moved. The
+//                     chrome itself is covered by test/chrome.test.js.
 
 const fs = require("fs");
 const path = require("path");
@@ -26,6 +31,12 @@ const args = process.argv.slice(2);
 const ref = args.find((a) => !a.startsWith("--")) || "HEAD";
 const allowIdx = args.indexOf("--allow");
 const allowed = new Set(allowIdx === -1 ? [] : (args[allowIdx + 1] || "").split(",").filter(Boolean));
+const ignoreChrome = args.includes("--ignore-chrome");
+
+const stripChrome = (html) => html
+  .replace(/<header class="site-header">[\s\S]*?<\/header>/, "<header/>")
+  .replace(/<footer class="site-footer">[\s\S]*?<\/footer>/, "<footer/>")
+  .replace(/\s*<script>window\.dataLayer[^<]*<\/script>\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtm\.js\?id=[^"]*"><\/script>/, "");
 
 function committed(id) {
   try {
@@ -76,10 +87,11 @@ const styleIds = [];
 const differentIds = [];
 
 for (const id of ids) {
-  const before = committed(id);
+  let before = committed(id);
   if (before === null) { counts.missing++; console.log(`NEW       ${id} (no committed page at ${ref})`); continue; }
   const data = JSON.parse(fs.readFileSync(path.join(CONTENT, `${id}.json`), "utf8"));
-  const after = renderEpisodePage(data);
+  let after = renderEpisodePage(data);
+  if (ignoreChrome) { before = stripChrome(before); after = stripChrome(after); }
 
   const problems = [];
   if (text(before) !== text(after)) problems.push(["text", firstDiff(text(before), text(after))]);
@@ -109,7 +121,7 @@ for (const id of ids) {
   console.log(`DIFFERENT ${id}: ${firstDiff(normalise(before), normalise(after))}`);
 }
 
-console.log(`\nRender vs ${ref}: ${counts.identical} identical, ${counts.cssOnly} same after normalisation (${counts.styleDiff} of them with different CSS rules), ${counts.different} markup-different, ${counts.contentDiff} content-different, ${counts.allowedDiff} allowed content changes, ${counts.missing} new`);
+console.log(`\nRender vs ${ref}${ignoreChrome ? " (chrome ignored)" : ""}: ${counts.identical} identical, ${counts.cssOnly} same after normalisation (${counts.styleDiff} of them with different CSS rules), ${counts.different} markup-different, ${counts.contentDiff} content-different, ${counts.allowedDiff} allowed content changes, ${counts.missing} new`);
 if (styleIds.length) console.log(`Pages whose CSS rules (not content) change to the current template: ${styleIds.join(" ")}`);
 if (differentIds.length) console.log(`Not passing: ${differentIds.join(" ")}`);
 process.exit(counts.different + counts.contentDiff ? 1 : 0);

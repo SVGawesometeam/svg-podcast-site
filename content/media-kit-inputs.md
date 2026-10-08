@@ -66,11 +66,13 @@ next to the quote; confirm before publishing.
 **Counts shown on the page (stale, do not reuse):** 18M audience; SVG YouTube 1.43M and "1.49M";
 linguamarina 8.82M; "2M"; Instagram 1.2M; TikTok 3.1M; 59K; 17K; "growing by 350,000 monthly".
 
-**Legal pages:** the Tilda footer links Privacy Policy and Terms of Service at
-`marinamogilko.co/plc` and `/ts`, while the main site's footer links them on the partnerships
-subdomain. Neither text is in the repository. Needed: the two texts (paste or export), so
-`/privacy/` and `/terms/` can be built before the subdomain is redirected.
+**Legal pages (done 2026-10-08):** the texts arrived as two Word documents and now live in
+`content/legal/privacy.md` and `terms.md`, published at `/privacy/` and `/terms/`; the footer on
+every page links them, and `/plc` and `/ts` on the main host redirect there. Two edits were made
+to the received text and should be checked: a sentence that appeared twice in a row in the
+Malware section is now there once, and the postcode "94 080" is written "94080".
 
 **Other links on the page to carry over or drop:** YouTube Music and YouTube playlists of the
 podcast; a Lingoda affiliate link (drop, per the edits doc); Google Tag Manager container
-GTM-WZ57XVB (the main site has no analytics yet; decide whether GA4 goes through this container).
+GTM-WZ57XVB: decided 2026-10-08, the main site now loads this container on every page, and GA4 is
+configured inside it (see the build plan's team inputs for what to check in the container).

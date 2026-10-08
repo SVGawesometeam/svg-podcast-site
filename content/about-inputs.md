@@ -1,23 +1,25 @@
 # About page: what Marina's team needs to confirm
 
-Release 4 builds `/about/` from this file. Everything below is either a question to
-answer or a claim to confirm with a source. Anything left unconfirmed is left off the
-page (and comes out of llms.txt), so a blank answer is a safe answer.
+**Status 2026-10-08:** `/about/` is built from `content/site.json`. The team confirmed
+everything that was on partnerships.marinamogilko.co and asked to build without source
+links; the `source` field in `site.json` is filled in as links arrive. What is still open is
+marked below. Counts are left off until the dashboard job writes them.
 
 Fill in directly under each item. Russian is fine.
 
 ## 1. Facts that need a source before they can be published
 
-These are on llms.txt today. For each: keep (with a link or document that shows it) or drop.
+Confirmed by the team on 2026-10-08 (everything on the media kit page). Published on
+`/about/` and in llms.txt; a source link per fact is still welcome and goes into `site.json`.
 
 - Silicon Valley Girl was part of the official program of the World Economic Forum in Davos 2026. Source:
 - First creator to receive venture capital funding as an individual (Slow Ventures, 2021). Source:
 - Angel investor in 25+ startups, including Boom Supersonic, Higgsfield AI, Navier, Beacons.ai, Sunsama. Current number and source:
 - Built two 8-figure businesses: an edtech company and a global media company. Exact wording you are comfortable publishing:
 - WIBA Award for Best in Education (Cannes Film Festival 2023). Source:
-- Learning & Development Creator of the Year, Shorty Impact Awards (year?). Source:
+- Learning & Development Creator of the Year, Shorty Impact Awards (year?). Source: **not on the media kit page, so not published yet; confirm and it goes in.**
 - Co-founded LinguaTrip (year?). Source:
-- Based in Los Altos, California (or "Silicon Valley" only?):
+- Based in Los Altos, California (or "Silicon Valley" only?): **published as "Silicon Valley, California" until told otherwise.**
 
 ## 2. Numbers
 
@@ -43,10 +45,10 @@ no counts rather than stale ones.
 - Past events with year (we have: Davos 2026 program, HubSpot Inbound 2025 judge, Cannes Lions 2026, DeepLearning.AI AI Dev conference in San Francisco, dates to confirm):
 - Two or three talk topics Marina offers:
 
-## 5. Press (received 2026-10-08: the links from partnerships.marinamogilko.co)
+## 5. Press (received and confirmed 2026-10-08)
 
-Titles below are read from the link itself; dates are known only where the link carries one.
-Confirm or correct the title and year, and strike anything that should not be shown.
+Confirmed by the team 2026-10-08; all 13 are on `/about/` (titles shortened from the links,
+dates shown only where known). Send a date or a corrected title and it goes into `site.json`.
 
 | # | Outlet | Title as far as the link shows it | Date | Link |
 | --- | --- | --- | --- | --- |

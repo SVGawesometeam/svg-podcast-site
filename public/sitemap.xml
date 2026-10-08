@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://marinamogilko.co/</loc><priority>1.0</priority></url>
   <url><loc>https://marinamogilko.co/episodes/</loc><priority>0.8</priority></url>
+  <url><loc>https://marinamogilko.co/about/</loc><priority>0.8</priority></url>
+  <url><loc>https://marinamogilko.co/newsletter/</loc><priority>0.6</priority></url>
+  <url><loc>https://marinamogilko.co/privacy/</loc><priority>0.2</priority></url>
+  <url><loc>https://marinamogilko.co/terms/</loc><priority>0.2</priority></url>
   <url><loc>https://marinamogilko.co/episode/0lsasYuzhL4/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://marinamogilko.co/episode/iJlyNupMOzA/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://marinamogilko.co/episode/qy8Gr27yLMk/</loc><lastmod>2026-10-02</lastmod></url>

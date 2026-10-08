@@ -47,9 +47,14 @@ test('display and body faces are loaded', () => {
 test('header is the black bar with wordmark and nav', () => {
   assert.match(chrome.SHARED_HEADER, /SILICON VALLEY GIRL/);
   assert.match(chrome.SHARED_HEADER, /WITH MARINA MOGILKO/);
-  for (const link of ['/#episodes', '/#host', '/#contact', '/#subscribe']) {
-    assert.ok(chrome.SHARED_HEADER.includes(link), `missing nav anchor: ${link}`);
+  // Nav since Release 4: the archive, the About page, the newsletter page and
+  // the pitch form, in that order. Homepage sections keep their ids for links
+  // from elsewhere; the nav no longer points at them.
+  for (const [href, label] of [['/episodes/', 'Episodes'], ['/about/', 'About Marina'], ['/newsletter/', 'Newsletter'], ['/#work', 'Work with Marina']]) {
+    assert.ok(chrome.SHARED_HEADER.includes(`href="${href}"`), `missing nav link: ${href}`);
+    assert.ok(chrome.SHARED_HEADER.includes(`>${label}<`), `missing nav label: ${label}`);
   }
+  assert.match(chrome.SHARED_HEADER, /href="\/#work" class="nav-cta"/, 'the pitch form is the call to action');
 });
 
 test('nav anchors are root-relative so they work from an episode page', () => {
@@ -67,9 +72,24 @@ test('focus styling is present, so keyboard users can see where they are', () =>
 // Legal links live in the shared footer so they reach every page — the
 // homepage, /episodes/ and all 118 episode pages — rather than the homepage
 // alone, which is the usual way these end up missing where they matter.
+// Since Release 4 the texts live on this site, not on the Tilda subdomain
+// that is being retired.
 test('the footer carries the legal links', () => {
-  assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/plc"[^>]*>Privacy Policy</);
-  assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/ts"[^>]*>Terms of Service</);
+  assert.match(chrome.SHARED_FOOTER, /href="\/privacy\/"[^>]*>Privacy Policy</);
+  assert.match(chrome.SHARED_FOOTER, /href="\/terms\/"[^>]*>Terms of Service</);
+  assert.ok(!chrome.SHARED_FOOTER.includes('partnerships.marinamogilko.co'), 'footer still points at Tilda');
+});
+
+// The tag manager loader is the one script every page carries. It is a plain
+// async script (not the injected snippet) so the CSP can name its host, and
+// the dataLayer push comes before it.
+test('the shared head loads the tag manager after priming the dataLayer', () => {
+  assert.equal(chrome.GTM_ID, 'GTM-WZ57XVB');
+  assert.ok(chrome.SHARED_HEAD.includes(chrome.ANALYTICS_HEAD), 'analytics not in the shared head');
+  const push = chrome.ANALYTICS_HEAD.indexOf('window.dataLayer.push');
+  const load = chrome.ANALYTICS_HEAD.indexOf('<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WZ57XVB">');
+  assert.ok(push !== -1 && load !== -1 && push < load, 'dataLayer must be primed before gtm.js loads');
+  assert.ok(!/noscript|<iframe/.test(chrome.ANALYTICS_HEAD), 'frames are blocked site-wide; no noscript iframe');
 });
 
 // The icons live in the sticky header so the accounts are reachable from any
