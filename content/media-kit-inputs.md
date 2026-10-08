@@ -43,3 +43,34 @@ conference, San Francisco (date?).
 - The Tilda page export: text and images, so nothing is lost when the subdomain is redirected.
 - The list of Tilda URLs (its sitemap), for the redirect map.
 - Who changes the DNS for partnerships.marinamogilko.co when the new page is approved.
+
+## Taken from the live Tilda page (Peec snapshot of 2026-08-30)
+
+The page could not be fetched directly from the build environment; Peec's stored copy supplied the
+text. Images, logos and layout are not in it.
+
+**Speaker list on the page:** ManyChat Instagram Online Summit 2024; VidCon, Anaheim 2023; Alibaba
+Co-Create, Las Vegas 2023; EduCon (YouTube), New York 2022; Stanford, San Francisco 2025; Viva
+Technology, Paris 2025; 1 Billion Followers Summit, Dubai 2025; Nas Summit, San Francisco 2024;
+World Economic Forum, Davos 2026.
+
+**Testimonials on the page (name, role, company):** Martina Lovrinov, Digital Marketing Manager,
+Lingoda (180 signups from three campaigns); Shay Levy, Partnerships Manager (company not named on
+the page, Wix link nearby); Mary Vui, Influencer Marketing (Notion link nearby); Sofya Bakhta,
+Marketing Manager, Insta360; Jack Ramsay, Social Media and PR Lead (GetResponse link nearby);
+Veronica, Global Marketing, Alibaba; Armine Hayrapetyan, Influencer Marketing Specialist (10Web
+link nearby); Christine Colling, Social Media & Influencer Marketing (Durable link nearby); Naila
+Kazi, Associate Director (Radix link nearby). The company for each is inferred from the logo link
+next to the quote; confirm before publishing.
+
+**Counts shown on the page (stale, do not reuse):** 18M audience; SVG YouTube 1.43M and "1.49M";
+linguamarina 8.82M; "2M"; Instagram 1.2M; TikTok 3.1M; 59K; 17K; "growing by 350,000 monthly".
+
+**Legal pages:** the Tilda footer links Privacy Policy and Terms of Service at
+`marinamogilko.co/plc` and `/ts`, while the main site's footer links them on the partnerships
+subdomain. Neither text is in the repository. Needed: the two texts (paste or export), so
+`/privacy/` and `/terms/` can be built before the subdomain is redirected.
+
+**Other links on the page to carry over or drop:** YouTube Music and YouTube playlists of the
+podcast; a Lingoda affiliate link (drop, per the edits doc); Google Tag Manager container
+GTM-WZ57XVB (the main site has no analytics yet; decide whether GA4 goes through this container).

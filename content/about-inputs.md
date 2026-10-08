@@ -19,16 +19,15 @@ These are on llms.txt today. For each: keep (with a link or document that shows 
 - Co-founded LinguaTrip (year?). Source:
 - Based in Los Altos, California (or "Silicon Valley" only?):
 
-## 2. Numbers (each with the month they were read)
+## 2. Numbers
 
-- YouTube Silicon Valley Girl subscribers:            as of:
-- YouTube linguamarina subscribers:                   as of:
-- Instagram siliconvalleygirl followers:              as of:
-- Instagram siliconvalleygirlpodcast followers:       as of:
-- TikTok followers:                                   as of:
-- LinkedIn followers:                                 as of:
-- X followers:                                        as of:
-- Future Proof newsletter subscribers:                as of:
+Decision 2026-10-08: the counts are collected on the team's dashboard
+(`svg-dashboard-production.up.railway.app/audience.html`) and the site will read them from there
+on a schedule instead of being typed in. What is needed to build that job: the page's structure or
+a JSON endpoint on the dashboard (the build environment cannot reach the host, so paste the page
+source or add the host to the environment's allowed domains). Until then the About page shows
+no counts rather than stale ones.
+
 - Total audience across platforms (if you want to state it, we add "includes overlap"):
 - Number of podcast episodes published (the site counts 123 pages; the Apple feed shows 83 audio episodes):
 
@@ -44,14 +43,35 @@ These are on llms.txt today. For each: keep (with a link or document that shows 
 - Past events with year (we have: Davos 2026 program, HubSpot Inbound 2025 judge, Cannes Lions 2026, DeepLearning.AI AI Dev conference in San Francisco, dates to confirm):
 - Two or three talk topics Marina offers:
 
-## 5. Press
+## 5. Press (received 2026-10-08: the links from partnerships.marinamogilko.co)
 
-- Up to eight articles: outlet, title, year, link (Forbes, The Washington Post, The New York Times are mentioned on the Shorty Awards page; which pieces exactly?):
+Titles below are read from the link itself; dates are known only where the link carries one.
+Confirm or correct the title and year, and strike anything that should not be shown.
 
-## 6. Images
+| # | Outlet | Title as far as the link shows it | Date | Link |
+| --- | --- | --- | --- | --- |
+| 1 | Forbes | My picks for the top social media influencers of 2020 (John B. Brandon) | 21 Dec 2020 | https://www.forbes.com/sites/johnbbrandon/2020/12/21/my-picks-for-the-top-social-media-influencers-of-2020/ |
+| 2 | Business Insider | VC firms are buying equity directly in influencers and YouTube creators | Nov 2021 | https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11 |
+| 3 | Tubefilter | Creators on the Rise: Silicon Valley Girl Marina Mogilko | 1 Jun 2022 | https://www.tubefilter.com/2022/06/01/creators-on-the-rise-silicon-valley-girl-marina-mogilko/ |
+| 4 | YouTube Official Blog | Meet 10 creators shaping the YouTube Shorts community | confirm (2021?) | https://blog.youtube/creator-and-artist-stories/10-creators-shaping-the-youtube-shorts-community/ |
+| 5 | The Washington Post (WP Creative Group, with YouTube) | The impact of the creator economy | confirm | https://www.washingtonpost.com/creativegroup/youtube/the-impact-of-the-creator-economy/ |
+| 6 | International Business Times | Why Marina Mogilko's Silicon Valley Girl podcast is exactly what the innovation economy needs right now | confirm | https://www.ibtimes.com/why-marina-mogilkos-silicon-valley-girl-podcast-exactly-what-innovation-economy-needs-right-now-3775116 |
+| 7 | Paper | Marina Mogilko (podcast launch feature) | confirm | https://papermag.com/marina-mogilko |
+| 8 | L'Officiel Cyprus | Marina Mogilko: redefining entrepreneurship and influence | confirm | https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence |
+| 9 | Times Monaco | WIBA Awards winner Marina Mogilko, shining social media star from Silicon Valley | confirm (2023?) | https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/ |
+| 10 | Vogue Adria | WIBA Awards USA launch event | confirm | https://vogueadria.com/wiba-awards-usa-launch-event/ |
+| 11 | The Tilt | Marina Mogilko, YouTube content creator (content entrepreneur profile) | confirm | https://www.thetilt.com/content-entrepreneur/marina-mogilko-youtube-content-creator |
+| 12 | The Tribune | Marina Mogilko: YouTube phenomenon and Silicon Valley entrepreneur | confirm | https://www.thetribune.com/marina-mogilko-youtube-phenomenon-and-silicon-valley-entrepreneur/ |
+| 13 | BuzzFeed | Cost to have a baby (TikTok) | confirm; probably not for the About page | https://www.buzzfeed.com/kristatorres/cost-to-have-a-baby-tiktok |
 
-- One portrait for the About page (landscape or square, at least 1600 px wide), with the photographer credit if required:
-- Confirm the current `public/host.jpg` can stay on the homepage or send a replacement:
+Items 1 to 9 are the strongest for the About page. Item 13 reads as lifestyle coverage; say if you want it kept.
+
+**Also taken from the same page (for section 1 and 4):** the fact list it publishes (Davos 2026 program; two 8-figure businesses; Slow Ventures 2021 as an individual; angel investor in Boom Supersonic, Beacons.ai, Navier, Higgsfield and 20+ startups; cover of Times Monaco and L'Officiel; WIBA Award, Best Influencer in Education, Cannes 2023) and the speaker list (ManyChat Instagram Online Summit 2024; VidCon Anaheim 2023; Alibaba Co-Create Las Vegas 2023; EduCon by YouTube, New York 2022; Stanford, San Francisco 2025; Viva Technology Paris 2025; 1 Billion Followers Summit Dubai 2025; Nas Summit San Francisco 2024; plus Davos 2026). The press links 2, 9 and 10 can serve as sources for the funding and award claims if you confirm them.
+
+## 6. Images (received 2026-10-08)
+
+- Portrait received and stored as `public/marina-mogilko.jpg` (1333 × 2000) with a square crop at `public/marina-mogilko-square.jpg`. Photographer credit, if one is required:
+- `public/host.jpg` stays on the homepage (confirmed).
 
 ## 7. Contact lines on the page
 
