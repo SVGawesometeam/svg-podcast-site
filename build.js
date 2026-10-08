@@ -32,9 +32,18 @@ function readEpisodeData(videoId) {
   return JSON.parse(fs.readFileSync(dataFile(videoId), "utf8"));
 }
 
+// The ID decides the file name, so it is checked here, before any write, and
+// the resolved path must stay inside content/episodes/ whatever the ID holds.
 function writeEpisodeData(d) {
+  if (!/^[A-Za-z0-9_-]{11}$/.test(String(d.videoId))) {
+    throw new Error(`refusing to write episode data for an invalid videoId: ${JSON.stringify(d.videoId)}`);
+  }
+  const file = path.resolve(dataFile(d.videoId));
+  if (!file.startsWith(path.resolve(CONTENT_DIR) + path.sep)) {
+    throw new Error(`refusing to write outside content/episodes: ${file}`);
+  }
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
-  fs.writeFileSync(dataFile(d.videoId), JSON.stringify(d, null, 2) + "\n");
+  fs.writeFileSync(file, JSON.stringify(d, null, 2) + "\n");
 }
 
 function loadFix(videoId) {
@@ -90,10 +99,19 @@ async function build() {
       console.log(`[${i + 1}/${videoIds.length}] Importing ${videoId} from the backend...`);
       try {
         const ep = await fetchEpisode(videoId);
-        ep.videoId = ep.videoId || videoId;
+        // The registry ID is the one we asked for; the backend does not get
+        // to rename the episode (or the file it is written to).
+        if (ep.videoId && ep.videoId !== videoId) {
+          throw new Error(`backend returned videoId ${JSON.stringify(ep.videoId)} for ${videoId}`);
+        }
+        ep.videoId = videoId;
         // Only link related episodes that are actually on the site.
         ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
         d = fromApi(ep, loadFix(videoId));
+        const draftProblems = validate(d);
+        if (draftProblems.length) {
+          throw new Error(`draft rejected: ${draftProblems.join("; ")}`);
+        }
         writeEpisodeData(d);
         imported++;
         console.log(`   DRAFT -> content/episodes/${videoId}.json (review before committing)`);
@@ -1395,7 +1413,7 @@ function renderEpisodePage(d) {
 }
 
 
-module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, CONTENT_DIR };
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, CONTENT_DIR };
 
 // Guarded so the tests can require the renderers without kicking off a build.
 if (require.main === module) {

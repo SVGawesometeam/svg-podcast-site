@@ -3,7 +3,7 @@ const assert = require('node:assert');
 const {
   parseEpisodePage, fromApi, validate, repairDollarAmounts, parseTranscriptBlocks, unknownSpeakers,
 } = require('../lib/episode-data');
-const { renderEpisodePage } = require('../build.js');
+const { renderEpisodePage, writeEpisodeData } = require('../build.js');
 
 const INTERVIEW = {
   videoId: 'abcdefghijk',
@@ -168,4 +168,10 @@ test('a title containing a closing script tag cannot end the JSON-LD block', () 
   assert.ok(!block.includes('</script>'), 'closing tag leaked into the JSON-LD block');
   assert.equal(JSON.parse(block).name, d.title, 'the escaped JSON no longer parses to the same title');
   assert.ok(!html.includes('<script>alert(1)</script>'), 'raw script tag reached the page');
+});
+
+test('episode data is only ever written under content/episodes with a valid id', () => {
+  for (const bad of ['../../package', '../x', 'abc', 'abcdefghijk/..', '']) {
+    assert.throws(() => writeEpisodeData({ ...INTERVIEW, videoId: bad }), /refusing to write/, `accepted ${JSON.stringify(bad)}`);
+  }
 });
