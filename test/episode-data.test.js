@@ -175,3 +175,8 @@ test('episode data is only ever written under content/episodes with a valid id',
     assert.throws(() => writeEpisodeData({ ...INTERVIEW, videoId: bad }), /refusing to write/, `accepted ${JSON.stringify(bad)}`);
   }
 });
+
+test('validate rejects chapter offsets and related ids that could break a link', () => {
+  assert.ok(validate({ ...INTERVIEW, timestamps: [{ time: '0:00', seconds: '0" onmouseover="x', title: 'Intro' }] }).some((p) => /bad offset/.test(p)));
+  assert.ok(validate({ ...INTERVIEW, relatedVideos: [{ videoId: '../x', title: 't', thumbnail: 'u' }] }).some((p) => /bad related videoId/.test(p)));
+});
