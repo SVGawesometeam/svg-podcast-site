@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>49 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=chbinls_V-w" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/chbinls_V-w/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/chbinls_V-w/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,7 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -558,7 +571,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Hey guys, welcome to Silicon Valley Girl. Today we're going to talk about top business ideas in 2024, and I don't want to give you some obvious ideas that you can think about yourself like drop shipping on Amazon or starting an Airbnb. That seems pretty obvious, but I want to focus on the latest trends and new technologies that are expanding around the world. The world is changing and your business idea has to stay relevant for the next few years.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Hey guys, welcome to Silicon Valley Girl. Today we're going to talk about top business ideas in 2024, and I don't want to give you some obvious ideas that you can think about yourself like drop shipping on Amazon or starting an Airbnb. That seems pretty obvious, but I want to focus on the latest trends and new technologies that are expanding around the world. The world is changing and your business idea has to stay relevant for the next few years.</p>
             <p>There is something I want you to remember before we go into this video. You need to choose a market that is growing and that is big. The thing is, you put the same amount of effort into building a billion dollar company and building a several hundred million dollar company. I live in Silicon Valley and I see so many entrepreneurs every day. I talk to them every day, and the ones who chose the right market are building the billion dollar companies, and the ones who chose the market that is shrinking, they are losing in the long run.</p>
             <p>Because of that, I also base my research on how big the market is and how fast it's growing. I also decided to rank my business ideas. We're going to start with the ones that are kind of harder to start because I'm going to talk about robotics, AI, and VR. In the second part of this video, I will talk about ideas that are kind of easy to start over a weekend. So please watch this video up to the very end to make sure you've seen all of the ideas I've prepared for you.</p>
             <p>Number 14: Robotic Housekeepers. This is something that Elon Musk has already announced. He stated that humans have to be ready to coexist with AI and robots. While the idea of robotic housekeepers is still in the research and development phase, Musk's vision aligns with the potential for AI and robotics to transform domestic activities. I can already visualize a robot in my home watering flowers, mopping the floors. Oh my God, like this is something I love doing myself, but not on a daily basis. So it would be great to have that type of help.</p>
@@ -595,7 +608,6 @@
             <p>Number 3: Drop Servicing. It's similar to dropshipping—you can outsource services to others and take commission on sales. When I say others, I also mean AI. This can be anything from graphic design, copywriting, virtual assistant, or video editing services to translation and much more. Great places to sell such services are Fiverr and Upwork.</p>
             <p>I just started outsourcing my video editing to India. I found amazing people who started a company editing videos for American creators, and the price is unbeatable. It's still a growing market, and I'm pretty sure a lot of editors are using AI tools to make their job faster.</p>
             <p>Number 2: Art Pancakes. This is a trend for 2024. Remember how Boba started taking over the Western world? Here's another idea from the East: art pancakes. They're popular food and entertainment from Thailand, which could be the next boba tea or take over the American market. It looks like a huge stove with a bunch of cans of colored dough, and kids can draw themselves a pancake and eat it. It's both delicious and fun. There are also pancake artists who can make real pieces of art out of the batter.</p>
-
             <p>My parents live in Thailand and they've been living there for four years now. It's just incredible how many ideas we can take from Thailand to the US. The market for art pancakes is diverse, ranging from traditional handcrafted pancakes to technological innovations like 3D printed pancakes.</p>
             <p>There's something that changed my life a lot in the past year. I'm already using AI's automatic video translation, video editing, and experimenting with video thumbnails that AI makes from scratch. Even though new services for creators are popping up every day, this market is still just starting out. The AI content generation market is expected to reach almost $6 billion by 2029.</p>
             <p>There are still a lot of unmet needs—manual edits, Photoshop, etc.—and you can definitely carve out a niche for yourself. Products that started in this niche a couple years ago are now taking off in terms of users and revenue. For example, an app called Haen, which I use regularly, reached $1 million in annual recurring revenue in March, and in October they already made $10 million. That was 2023. When I first discovered them, I just loved their feature when they translated everything into a different language and it sounded super natural. The technology and the demand are there, so today they're making $18 million according to Forbes.</p>
@@ -633,24 +645,28 @@
             <p>The ideal way to start this would be to pick several products in your house and try to film several videos. Get inspired by other creators who review products all the time. Try to create a video that you would consume by yourself, and create a profile on Instagram, for example, where you will post, let's say, 10 videos of you unpacking different products. Tag those companies. That's your first step. It's like your portfolio.</p>
             <p>The next step will be signing up on platforms for UGC creators. I will name some platforms later in this video, but let's talk about making money. How much you can earn really depends on your current skills. I would say the average fees are $150 per video, $250 per video if you agree that the brand will be using this video as ongoing promotion. That could be $300 a month for ongoing payment. There are also several categories that tend to pay more, like reviewing alcohol or reviewing financial apps. Anyway, you have to sit down and explore. You have to sit down and learn the process of creating videos.</p>
             <p>Here are some platforms to sign up for. Again, every platform is different depending on the need, and the terms are sometimes different. You sometimes just sell your videos for $150 and the brand does whatever it wants with it, so just be careful. But again, I'm super excited about this. I think it's another income stream for</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/JI6KrvldAoE/" class="related-card">
                 <img src="https://img.youtube.com/vi/JI6KrvldAoE/hqdefault.jpg" alt="Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork" loading="lazy">
                 <span class="related-title">Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork</span>
               </a>
+
               <a href="/episode/JcvG5P6CW-M/" class="related-card">
                 <img src="https://img.youtube.com/vi/JcvG5P6CW-M/hqdefault.jpg" alt="9 AI TOOLS You Must Know In 2024" loading="lazy">
                 <span class="related-title">9 AI TOOLS You Must Know In 2024</span>
               </a>
+
               <a href="/episode/4jqrK-hUicQ/" class="related-card">
                 <img src="https://img.youtube.com/vi/4jqrK-hUicQ/hqdefault.jpg" alt="How to Build a Viral Brand Online ft. @blogilates" loading="lazy">
                 <span class="related-title">How to Build a Viral Brand Online ft. @blogilates</span>
               </a>
+
               <a href="/episode/0fXGtQoJgNo/" class="related-card">
                 <img src="https://img.youtube.com/vi/0fXGtQoJgNo/hqdefault.jpg" alt="Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio" loading="lazy">
                 <span class="related-title">Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio</span>

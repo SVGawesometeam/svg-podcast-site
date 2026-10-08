@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>13 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=8DuxOlkHdy4" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/8DuxOlkHdy4/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/8DuxOlkHdy4/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,7 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -428,7 +441,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Everyone needs to be an entrepreneur in the future or you're going to lose your source of income. This is what Thomas Wolf, co-founder of Hugging Face, recently said in my podcast. And honestly, it made me kind of excited because my personality is definitely an entrepreneur. And I want to kind of help you with this video to think like an entrepreneur, to think about things in your life that you can automate with AI because AI for me now AI equals productivity.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Everyone needs to be an entrepreneur in the future or you're going to lose your source of income. This is what Thomas Wolf, co-founder of Hugging Face, recently said in my podcast. And honestly, it made me kind of excited because my personality is definitely an entrepreneur. And I want to kind of help you with this video to think like an entrepreneur, to think about things in your life that you can automate with AI because AI for me now AI equals productivity.</p>
             <p>Remember all of the old YouTube videos where people were like, &quot;Oh, I built this system. I built a second brain.&quot; All of this is now AI. And there was this McKinsey report that said AI will unlock $4.4 trillion in productivity gains. And I see the smartest entrepreneurs, the smartest YouTubers use AI to replace themselves and improve productivity in their companies. We actually did the same this summer in my media company. We hired our first couple of AI interns, basically people who have been studying computer science, and the goal was for them to look into our repetitive tasks and help us free up time for me and my team. And in this video, I'll show you not only how they transformed our workflow, but also how bigger companies use AI to transform their workflow. Because for us, AI inside our company saves hours every day and helps us scale without burnout. So let's talk about different ways you can automate things in your business to free up more time.</p>
             <p>Before we dive into the whole process of automating your business, I want you to write in comments down below if you're already an entrepreneur or not yet. It will give me more insight into what stage you're in so I can adjust in my next videos because sometimes I go very deep into things we're building in my company, but maybe you're just starting out and you need more advice on how to just start. So let me know down in the comments below.</p>
             <p>Let's talk about intelligent automation first. Traditional automation is basically if this then do this. But intelligent automation learns, adapts, and gets smarter over time. For example, Stanford studied 5,000 customer service agents and found that AI suggestions boosted productivity by 14% overall and 35% for new agents. This isn't about robots taking over. It's about AI coaching humans to become superstars, real-time support that makes every employee better.</p>
@@ -441,7 +454,6 @@
             <p>I love studying examples of bigger companies and I've always learned from them. Let's take Klarna. It's a fintech company out of Sweden. Over the last few years, they cut their workforce by about 40% from roughly 5,500 employees down to around 3,300. They automated things like customer service, marketing, and financially, Klarna is thriving. In Q1 2025, revenues rose 15% year-over-year to 700 million. And the most important thing—I don't know if you track this in your company, we do—it's called the metric revenue per employee. They boosted it by 152%, driving productivity. And it's just so cool. They estimate that Klarna is going to make around 1 million per employee. That's really high.</p>
             <p>When I look at companies, I'm like, how do we learn? What can we learn from that? One of the things that we do in our company is that our AI systems draft contracts and even pre-screen job applicants using ChatGPT and ChatPDF. At first, we just used it to summarize documents and flag red flags. Now we upload all of the job applicants into a Google spreadsheet. It analyzes who's better. It reviews all the answers. It suggests who we should interview. It creates questions for the interview. And this is what experts call progressive autonomy. You start small. AI makes minor decisions. You review and then you give AI more authority as it proves itself.</p>
             <p>And the next step is where these systems start learning by themselves. It basically separates amateur AI implementations from professional ones. According to Forbes research, companies using AI agents report 72% of workers feeling very productive compared to traditional automation. Because these systems learn from every interaction, the process changes by itself.</p>
-
             <p>For example, we use Otter and Copilot to record and analyze every team meeting, generate actionable follow-ups, and surface missed opportunities. It's not just transcribing. It's a system that helps our team learn and improve continuously without adding extra meetings.</p>
             <p>One of my favorite cases of how we used AI this summer with my team—it's not an automation yet, we're actually building automation on top of it—but we're able to get millions of impressions from just one conference because I was wearing my Apple Watch during Google I/O. Apple Watch recorded every session I attended. Apple Watch was connected to my phone. I used Otter to transcribe everything and send the text versions to different people in my team and they just uploaded them to their ChatGPTs that talk and act like me. And we were able to create X posts, LinkedIn posts, email newsletters. Of course, I filmed, and this is how we're able to do like millions of views in a day. That was super cool.</p>
             <p>All right, enough theory. Let's build something. I'm going to walk you through creating your first AI system that could save you 10 plus hours per week. The first thing: identify your highest value bottleneck. The mistake that a lot of founders make is they try to automate everything at once or they try to do everything by themselves at once. Start with a high-value process, the one that eats up time but doesn't require your unique genius. Stanford research shows that employees are most eager to automate repetitive low-skilled tasks, but they want to keep oversight on important decisions, and that's where you start.</p>
@@ -455,24 +467,28 @@
             <p>So remember how we started this video. Everyone is going to become an entrepreneur. I want you to start learning now because the key function of an entrepreneur is not only to come up with a problem and solve it. It's also like when you listen to Steve Jobs's talks later in his life, he said my job—like 70% of his time he was just interviewing people. I think if he lived now in the age of AI, a lot of his time would go into thinking how they can automate things at Apple with AI, and of course they're doing that right now.</p>
             <p>I want you to implement this mindset into everything you do. What can I automate today? What can I delegate today? And this is what makes you an entrepreneur in 2025.</p>
             <p>I remember 10 years ago when I started my YouTube channels, I remember thinking that my goal is to help everyone become an entrepreneur within their workplace, like even if they are an editor, I want them to be able to hire help. I want them to be able to use different tools. And this is what's happening to the whole world now. And I'm excited that I've been on this mission for several years. And I'm super grateful if you're watching these videos. Thank you so much. And I'll see you on this channel. Bye.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/1gm__VUG2m8/" class="related-card">
                 <img src="https://img.youtube.com/vi/1gm__VUG2m8/hqdefault.jpg" alt="AI Agents EXPLAINED in 14 minutes and TOOLS for building one" loading="lazy">
                 <span class="related-title">AI Agents EXPLAINED in 14 minutes and TOOLS for building one</span>
               </a>
+
               <a href="/episode/S9xrvZhMLMI/" class="related-card">
-                <img src="https://img.youtube.com/vi/S9xrvZhMLMI/hqdefault.jpg" alt="Ex-Rocket Scientist: The Secret to Millionaires&#x27; Investment Portfolios | Alex, Ticker Symbol: YOU" loading="lazy">
-                <span class="related-title">Ex-Rocket Scientist: The Secret to Millionaires&#x27; Investment Portfolios | Alex, Ticker Symbol: YOU</span>
+                <img src="https://img.youtube.com/vi/S9xrvZhMLMI/hqdefault.jpg" alt="Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU" loading="lazy">
+                <span class="related-title">Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU</span>
               </a>
+
               <a href="/episode/Dp6u0pel-Rs/" class="related-card">
                 <img src="https://img.youtube.com/vi/Dp6u0pel-Rs/hqdefault.jpg" alt="Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum" loading="lazy">
                 <span class="related-title">Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum</span>
               </a>
+
               <a href="/episode/r67fvYaB2y8/" class="related-card">
                 <img src="https://img.youtube.com/vi/r67fvYaB2y8/hqdefault.jpg" alt="10 AI tools to use in 2025" loading="lazy">
                 <span class="related-title">10 AI tools to use in 2025</span>

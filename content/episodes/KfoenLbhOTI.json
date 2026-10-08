@@ -1,0 +1,282 @@
+{
+  "videoId": "KfoenLbhOTI",
+  "title": "How to Build a Profitable Personal Brand with AI (In Just 30 Days)",
+  "format": "solo",
+  "guestName": "Marina Mogilko",
+  "guestTitle": "Host, Silicon Valley Girl Podcast",
+  "aboutGuest": "Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.",
+  "publishedAt": "2025-07-11T16:45:01.000Z",
+  "duration": "20 MIN",
+  "coverArt": "https://img.youtube.com/vi/KfoenLbhOTI/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/KfoenLbhOTI/maxresdefault.jpg",
+  "summary": "Marina Mogilko shares her step-by-step framework for building a profitable personal brand using AI tools in 30 days, drawing on her experience as the first creator to raise a $1.7 million venture round from Slow Ventures. She explains why trust — not knowledge — is the most valuable currency in the AI era, and walks through practical tactics including using ChatGPT to identify your niche, crafting a clear brand message, and leveraging AI tools to accelerate content creation. The episode emphasizes that personal brand success comes from passion, consistency, and positioning yourself as a product people buy into.",
+  "keyTakeaways": [
+    "Trust is the #1 moat in the AI era — Slow Ventures raised $60 million specifically to invest in creators who have built deep audience trust, not just entertainment-based followings.",
+    "Use ChatGPT to find your niche on day one — because the tool already knows your interests from past conversations, it can surface your most passionate and profitable content direction instantly.",
+    "Your personal brand is not your aesthetic — it's your ideas, voice, story, and reputation; people don't buy your product, they buy it from you.",
+    "Niche specificity drives growth — Marina started with GMAT/TOEFL content, then Silicon Valley entrepreneurship, then founder-parenting, each pivot driven by genuine passion and resulting in loyal audience cohorts.",
+    "Prompt ChatGPT to act as a coach managing the celebrity you'll become in 5 years — framing AI interactions around your future identity helps generate strategy aligned with your long-term brand vision."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "What AI can’t replace"
+    },
+    {
+      "time": "1:16",
+      "seconds": 76,
+      "title": "Building a brand in the AI era"
+    },
+    {
+      "time": "1:59",
+      "seconds": 119,
+      "title": "#1 You are the product"
+    },
+    {
+      "time": "3:40",
+      "seconds": 220,
+      "title": "Let AI find your niche"
+    },
+    {
+      "time": "5:00",
+      "seconds": 300,
+      "title": "My 3–5 year vision prompt"
+    },
+    {
+      "time": "6:12",
+      "seconds": 372,
+      "title": "5 questions to clarify your niche"
+    },
+    {
+      "time": "7:20",
+      "seconds": 440,
+      "title": "How to automate content"
+    },
+    {
+      "time": "8:30",
+      "seconds": 510,
+      "title": "#2 Monetize step-by-step"
+    },
+    {
+      "time": "10:30",
+      "seconds": 630,
+      "title": "#3 Content that converts"
+    },
+    {
+      "time": "13:36",
+      "seconds": 816,
+      "title": "#4 30-day roadmap"
+    },
+    {
+      "time": "15:10",
+      "seconds": 910,
+      "title": "What most skip when branding"
+    },
+    {
+      "time": "16:01",
+      "seconds": 961,
+      "title": "#5 Monetize smart, not hard"
+    },
+    {
+      "time": "18:19",
+      "seconds": 1099,
+      "title": "Share struggles, not just wins"
+    },
+    {
+      "time": "19:30",
+      "seconds": 1170,
+      "title": "Join the 30-Day Challenge"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Here's the paradox. The more AI dominates the internet, the more valuable you become. Why? Because AI can mimic knowledge, but it cannot mimic trust. As you know, I was the first creator to raise a venture round of $1.7 million. As a creator, this still blows my mind. But what's even crazier is that my investor, Slow Ventures, raised $60 million to invest in creators. You know what's their thesis? People who built trust with their audience. They're not looking for the next MrBeast. Of course, MrBeast is great and he builds great projects, but if you are entertaining people, you're competing with all the funny people in the world."
+    },
+    {
+      "speaker": null,
+      "text": "That's what Sam Lesson said. If you're deep into something like carving wood or vibe coating or you just love designing kids' bedrooms, the audience is going to trust you because they know you put hundreds of hours into what you love. You can create the product that's going to change their lives and you can create content that's going to change their lives. This is what they're investing in."
+    },
+    {
+      "speaker": null,
+      "text": "Creators build this trust by building their personal brand. So if you're watching this and you want to ask me how to start in 2025, how to stand out, attract clients and make money with your personal brand in the AI era when everyone and everything is getting replaced—yes, blah blah blah, creators are going to get replaced. The trust, I think, is not going to get replaced. So today I'll show you how I'm building my personal brand in 2025 and how I am using AI as my not-so-secret weapon. A lot of people are using AI, but I feel like it really helps me step up my game."
+    },
+    {
+      "speaker": null,
+      "text": "First of all, a couple of mindset shifts need to happen. First, you need to understand that building a personal brand is not like, \"I'm going to post a video. Oh, it didn't go viral. Oh, the audience doesn't like me, and that's it.\" No, it's work. You need to dedicate some time every day. But there's another mindset thing: you are the product. What do we like about products? Your personal brand is not just your Instagram aesthetic—just beige or just pink or a pretty logo. It's about how clear your message is. Your initial message has to be very clear and ideally niche. So if you're starting an AI blog or you're starting a cleaning blog, it has to be clear why people should subscribe."
+    },
+    {
+      "speaker": null,
+      "text": "By being your product, I mean that it's your ideas, it's your voice, it's your story, and most importantly, it's your reputation. When you build your brand, people don't buy your product—they buy it from you. And what I noticed right from the start is that people follow passion. I started my first channel talking about GMAT and TOEFL. I was so passionate about taking the standardized test and moving to the US. People followed that passion and we were able to create a product to help that cohort."
+    },
+    {
+      "speaker": null,
+      "text": "Later on, I became very passionate with building a business and making it in Silicon Valley and fundraising. This is why I started \"Silicon Valley Girl.\" Then later, I became a mom. I became fascinated by other moms who were able to raise a kid but also build a business. So I started to research all the things I could do to make that a possibility for me as well. And I don't do it alone. Yes, I have a team, but we also use a lot of AI tools even when I feel like I have no idea what I'm doing."
+    },
+    {
+      "speaker": null,
+      "text": "For example, step number one that you can do using AI: you can ask it to find your niche because most people get stuck on day one asking, \"Why should I even build my brand around something?\" Use an app that you use the most. For example, you use ChatGPT every day. Then go to ChatGPT because your brand is what you already have. Whether you're a creator with a million followers or you're just starting out, there is something that you're passionate about. There is something you keep asking about."
+    },
+    {
+      "speaker": null,
+      "text": "So if I were you, I would go to ChatGPT and ask it this. Let's say I don't have any blogs. I want to start a blog today. What should I post about? Because I've been talking to my ChatGPT for more than a year now, it knows me better than some of my friends. And immediately it gives me options: your expertise in business, tech, language learning, marketing, investing, personal insights or stories, behind the scenes, your travels, your parenting, your investments."
+    },
+    {
+      "speaker": null,
+      "text": "If you could just narrow it down to one topic, what would it be? I want to start with a perspective niche that's growing and profitable. \"How to thrive in the age of AI as an entrepreneur, creator, or investor.\" ChatGPT knows me so well. This is the topic that I'm most passionate about right now. Oh my god. Like, see, you can do it right now. Ask your ChatGPT what it thinks you should blog about."
+    },
+    {
+      "speaker": null,
+      "text": "Oh, and by the way, how do you like my new hair? I just got this haircut yesterday and it feels so cool. I feel like I'm a person from France back in the 70s. I'm going to play with my style a little bit. Anyways, when ChatGPT gives you a recommendation, another thing I want you to think about is: if you continue with this topic, where is it going to lead you in five years? Let's imagine everything goes right because you can guide that perception in the direction that you want."
+    },
+    {
+      "speaker": null,
+      "text": "If you want to be more of a celebrity and speak at conferences, that's one niche. If you want to just do a lifestyle vlog and travel, that's another niche. The thing is, we can make people see us the way we want to see ourselves. So you have to believe in that vision of yourself first, and then tell ChatGPT: \"Hey, I need you to think as a coach, as a mentor, as the best social media person in the world who's managing this celebrity that I'm going to become in five years.\" You have to think like that person. And when I ask you questions about posts, about anything, you're going to reply like that. Because in order to achieve something, you need to start thinking like the person you're going to be in three or five years."
+    },
+    {
+      "speaker": null,
+      "text": "ChatGPT knows a lot about my goals. So when I ask it a question, it's like, \"If you want to become whatever you want to become, don't do it. It's not going to be on brand for you anymore.\" If you don't have an AI that knows a lot about you, think about topics that you naturally talk about for hours, what people ask you for help with, the types of content you enjoy consuming, what podcasts, what books, what creators, skills you've developed in the past five years, results or transformations you've helped others achieve, and what you want to be known for in three years."
+    },
+    {
+      "speaker": null,
+      "text": "You can just take this prompt, which I'm going to put in the description. \"You're a personal brand strategist. Help me brainstorm my personal brand direction based on the following.\" And then you put in answers to the questions I just gave you. \"Identify three to five personal brand angles or identities I could build around. For each, include a one-liner describing the positioning and an example content theme or series I could create. Then give your recommendation for the strongest option and why.\""
+    },
+    {
+      "speaker": null,
+      "text": "This will give you three to five possible directions. If you don't like them, ask ChatGPT to iterate based on the one that's almost right. Maybe you'll end up finding one topic. Maybe you'll end up finding two or three topics. If you're like me and you like two or three topics, you can just start two or three channels. Nobody is stopping you from that. So just start multiple and see how it goes. But don't overthink it, please. You don't need perfection. You just need a starting point."
+    },
+    {
+      "speaker": null,
+      "text": "Now that you've defined your niche, the next challenge is to make your ideas look as good as they sound. And that's exactly where Gamma comes in. I've tested dozens of tools to help structure my ideas and content, but the one I keep coming back to is Gamma. It started as a presentation tool, and that's how I discovered it because I wanted an AI-generated presentation that looks great. But with their latest relaunch, it's become so much more."
+    },
+    {
+      "speaker": null,
+      "text": "You can now build everything from landing pages to trend reports to viral LinkedIn posts, all powered by AI. What I love is this: let's say you've just had a big insight for your next LinkedIn post. Instead of starting at a blank slide or a Google doc, you drop it into Gamma and it turns it into a polished, shareable asset in minutes. No design skills, no formatting stress, just clarity. I use Gamma to create pictures for LinkedIn posts, one-pagers for my PR team, and presentations for my Lingua Marina channel. It's the perfect tool if you want your personal brand to look professional without wasting hours."
+    },
+    {
+      "speaker": null,
+      "text": "Whether you're a marketer, solopreneur, or a content creator, Gamma gives you the edge. Try it yourself at gamma.app."
+    },
+    {
+      "speaker": null,
+      "text": "If you're in your twenties and you have all the time in the world, just start posting without thinking about monetizing it. That's how I did it. I just started posting. I just wanted to share. I couldn't stop myself from posting. But I also realized that if you're in your thirties right now and you're watching this video, you might be like, \"Marina, I have a job. I have kids. If I dedicate a few hours a week into something, I also want it to become an income stream. Maybe I want to quit my job later and just double down on my passion.\""
+    },
+    {
+      "speaker": null,
+      "text": "So if monetization is the goal, you need to be very strategic about what you're filming. Think of monetization as a ladder. You climb it one step at a time. First, you can get paid for your skills. That's the easiest way you can monetize your personal brand. That could mean freelancing, doing client work, or offering services. But then you get paid for your knowledge. You're no longer just doing the work. You're teaching others through coaching, courses, or consulting. And eventually, you get paid for your presence. Brands invite you to speak, sponsor your content, or partner with you simply because of your influence."
+    },
+    {
+      "speaker": null,
+      "text": "This was my path too. I started with language tutoring and exam prep. Then I created and sold digital products. I built a company around language travel. And now brands also reach out to me because of the audience and trust I've built. I feel like having multiple streams of income is what makes this career more consistent."
+    },
+    {
+      "speaker": null,
+      "text": "You don't need a massive following to monetize. Even if your blog has a hundred people, but you're talking about one specific niche like investing, you can already start promoting different apps and earn affiliate commissions. There are so many ways to monetize a small community these days because there are millions of people who are making a living by creating content."
+    },
+    {
+      "speaker": null,
+      "text": "When I started ten years ago, it was really hard to find a brand who would sponsor me right away. Now you just go on affiliate platforms, you go on UGC platforms, you create content for other brands. There's so many opportunities. You basically just need to try different things to see what works for you."
+    },
+    {
+      "speaker": null,
+      "text": "Step number three is to learn how to create content that converts because you need to get attention. You need to provide value, but you also need to monetize where you're building. My favorite system for content creation is something I call the content waterfall. Here's how it works: you start with one core idea. Let's say it's a short post you write for LinkedIn or X. Then you turn that same idea into a short video, a YouTube script, a series of carousels, a few strong quotes or hooks. So you just turned one idea into ten to twenty assets without burning out."
+    },
+    {
+      "speaker": null,
+      "text": "You can use different AI tools for that. You can use EasyGen, you can use Poppy AI, you can just use ChatGPT. But the golden rule is: adapt every idea for the platform you're posting on. Use AI to help you rewrite, reformat, repurpose. We do that every single week."
+    },
+    {
+      "speaker": null,
+      "text": "Let me show you what's happening. This glass represents how much content we can consume as a population. Back in the day, we used to have this much content. So it was really easy to grow as a creator just by posting on one platform. You grabbed a lot of people's attention. Now, the amount of content with AI is way more than this glass can fit."
+    },
+    {
+      "speaker": null,
+      "text": "People are still looking for great ideas, but you need to break through the noise. And in order to break through the noise, you have to be everywhere. Here's LinkedIn, here's Instagram, here's X, here's YouTube, here's Shorts, here's TikTok. And again, you don't need to come up with a new idea for every single platform. Just prioritize a couple of platforms. For me, it's LinkedIn, Instagram, and YouTube. I create different formats for them. But if you're just starting out, I would say LinkedIn and Instagram. Once you think about ideas for those two platforms, you repurpose them using ChatGPT, Perplexity, EasyGen, Poppy AI—repurpose it to every single platform. And this is how you become visible in this glass full of water."
+    },
+    {
+      "speaker": null,
+      "text": "There is this trend going on on Instagram right now. People are tired of professional content. I know I'm in the studio right now, but I'm creating for YouTube, which is different. But overall, people prefer something that's very natural. I started making these videos with my kids and I asked them something and it's like a one-shot and they're performing incredibly well. They cost me so much less to produce versus a really well-produced Instagram video that costs maybe a hundred bucks to my editor and then takes me like an hour to shoot."
+    },
+    {
+      "speaker": null,
+      "text": "Right now I'm personally kind of switching to this format again for the next few weeks. We'll see what's going to happen this fall because things constantly change. But if you're watching this video and it's August or September, you're in the right spot because we are in this trend of very, very casual videos. Which means you don't need a fancy camera. You don't need a studio. You don't even need editing skills. You just need to ask the right questions. You just need to talk about the right things and do it very casually because in a world full of sameness, your voice is what makes the content hit. Your ideas are unique. Your apartment is unique."
+    },
+    {
+      "speaker": null,
+      "text": "Step number four: design your growth engine. Growing a personal brand isn't about luck. It's about systems. It's about showing up. It's about being responsible. So here is a simple thirty-day roadmap."
+    },
+    {
+      "speaker": null,
+      "text": "Week number one: you define your brand foundation, your message, your audience, and visual style. Week number two: you launch your content waterfall. You start publishing. And by the way, you engage like crazy. You comment, you reply to DMs. You join conversations. Week number three: you analyze what's going on, what people are excited about. If you don't get any feedback, you repeat week two. You post and post and post. By the way, you don't just post the same type of content. You experiment. Maybe you film yourself cooking and talking. Maybe you film yourself putting your makeup on and talking. Maybe you talk about this new AI tool. Maybe you talk to your kids about AI. Different things. Please try them all."
+    },
+    {
+      "speaker": null,
+      "text": "Week number four: you try to monetize or test the ground with one simple offer. Maybe a service, maybe a product, or a one-on-one call."
+    },
+    {
+      "speaker": null,
+      "text": "The secret is that consistency is much more important than virality. Don't chase likes, chase trust. This comes from a person who's been around for more than ten years. The only way I'm able to maintain and sustain this is I'm not really chasing trends. I'm chasing a lifestyle where creating content is part of my life. I stay sane. I don't chase views and likes all the time. And yes, I don't get the most views, but it's my business. Investors valued it at thirty-three million and I'm not even from the US. I think it's crazy. I think just the fact that we can build this beautiful career in 2025 documenting our lives is godsend."
+    },
+    {
+      "speaker": null,
+      "text": "People used to have, they still have, creator Zoom calls where they come together and I think MrBeast shared that. Every week, they used to jump on calls with other creators and brainstorm topics for his next videos together. And I was wondering if I could do something like that. Smaller creators charge something like seventy-five dollars an hour for a call like that. Now you have ChatGPT. Now anyone can have a call like that with ChatGPT for free. You can also ask ChatGPT to give you feedback on your content and ask it to rate your visuals, give suggestions. ChatGPT is basically your team, your collaborator."
+    },
+    {
+      "speaker": null,
+      "text": "Step number five: I want you to think about monetizing strategically. It doesn't mean launching a course on day one. You just need one monetization moment. I like how my friend Christina, who's a lawyer, she started on Instagram. I think she quit Kool-Aid, one of the largest law firms, and she became a lawyer herself. She started a company and she has very few packages that she offers. She has this startup package for I think twenty-five hundred that I use personally to start a company for my snack brand. And she has a couple more. She doesn't have millions of followers on her social media, but she already makes more money than she used to make at that law firm."
+    },
+    {
+      "speaker": null,
+      "text": "Why? Because her personal brand is super clear and her offer is super clear. She knows that a lot of people consume social media content and they're thinking about starting a business. So what's the best product? Company incorporation and it's a C corp. She's targeting startups. So you need to register in Delaware. If you have a co-founder, you need like all of those smaller details. Of course, you can do it for a smaller amount of money using apps like Klarity, but if you're planning to raise money, of course, you'd hire a lawyer."
+    },
+    {
+      "speaker": null,
+      "text": "So think about how you can become like Christina. Think about this offer that you can make to your audience that fits a lot of your followers but also makes financial sense. Because if you only have like a hundred followers and you offer something for five dollars, it's not going to make you too motivated. But if you have a hundred followers and you offer something for twenty-five hundred, that's another story."
+    },
+    {
+      "speaker": null,
+      "text": "Then once you come up with a product, you can use apps like Stan. You can use Beacons.ai to create a product and place call-to-actions in your content where it feels natural, like \"DM me if you want to work together.\""
+    },
+    {
+      "speaker": null,
+      "text": "Another very important step: emails equal control equal money. The algorithms change every single day and you do not own your audience unless you own emails. Every hundred subscribers is a powerful asset if they trust you. I've recently started my newsletter about the AI tools that I'm using and how I'm using them. The app that I'm using is called Beehive. I like their pricing. I like the founder. I know the team. One feature that I really like is they offer you cross-promotion across other newsletters. So you can basically buy followers because they understand how hard it is to grow a newsletter. But also, if you have a ten-thousand-subscriber newsletter, that's already a business."
+    },
+    {
+      "speaker": null,
+      "text": "Do not forget that you don't just post success stories on your social media. I was in a podcast a week ago where the guy who was interviewing me said his sister used to watch a lot of my content, but then she stopped. She stops and resumes, she stops and resumes because sometimes I post too much about like achieving things. That's me. But I also realize how important it is to share the downfalls. Like, I used to work with my husband. We can't do it anymore. I can't stand that dynamic. I have two kids and it's messy. I get frustrated. It's very hard to travel with them. They're screaming and they're unhappy."
+    },
+    {
+      "speaker": null,
+      "text": "Right now it's summer. They don't have school and I am driving them to different activities. They're still unhappy and I have to work as well. I burned out in 2022. I couldn't post and I kept showing up but I also shared those things. That is what makes you a real person. Don't build a brand to look rich. Build a brand that's rich in trust, purpose, and freedom. If you're honest with your audience, believe me, it's so much easier than creating a character. Because this is where longevity comes from—if you're being you."
+    },
+    {
+      "speaker": null,
+      "text": "So here's your challenge: start today. Pick your niche. If I were you, I'd start on LinkedIn. If you're a business person, in thirty days, post on LinkedIn, create one piece of content, share one story, don't wait for permission. Build your brand and come back in thirty days and tell me how your life changed because it is going to change. Just thirty days. Because the future and the present is about being visible and you need to start being visible."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "4jqrK-hUicQ",
+      "thumbnail": "https://img.youtube.com/vi/4jqrK-hUicQ/hqdefault.jpg",
+      "title": "How to Build a Viral Brand Online ft. @blogilates"
+    },
+    {
+      "videoId": "9XM8yDN-AEA",
+      "thumbnail": "https://img.youtube.com/vi/9XM8yDN-AEA/hqdefault.jpg",
+      "title": "Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf"
+    },
+    {
+      "videoId": "S0h5oUVv0BY",
+      "thumbnail": "https://img.youtube.com/vi/S0h5oUVv0BY/hqdefault.jpg",
+      "title": "LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman"
+    },
+    {
+      "videoId": "JcvG5P6CW-M",
+      "thumbnail": "https://img.youtube.com/vi/JcvG5P6CW-M/hqdefault.jpg",
+      "title": "9 AI TOOLS You Must Know In 2024"
+    }
+  ],
+  "topics": [],
+  "metaDescription": "How to Build a Profitable Personal Brand with AI (In Just 30 Days) — Silicon Valley Girl Podcast with Marina Mogilko"
+}

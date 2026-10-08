@@ -1,0 +1,618 @@
+{
+  "videoId": "RvYv90ftf2M",
+  "title": "$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro",
+  "format": "interview",
+  "guestName": "Andrey Khusid",
+  "guestTitle": "CEO and Co-Founder, Miro",
+  "aboutGuest": "Andrey Khusid is the CEO and co-founder of Miro, a collaborative online whiteboard platform valued at approximately $18 billion. He founded the company after identifying a need for remote visual collaboration while running a creative agency, and has since scaled Miro to over 100 million users worldwide. Andrey is known for his product-first philosophy and his belief that iterative experimentation and user trust are the core drivers of sustainable growth.",
+  "publishedAt": "2025-12-11T13:00:57.000Z",
+  "duration": "35 MIN",
+  "coverArt": "https://img.youtube.com/vi/RvYv90ftf2M/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/RvYv90ftf2M/maxresdefault.jpg",
+  "summary": "Andrey Khusid, CEO and co-founder of Miro, joins Marina Mogilko to discuss how he grew a simple browser-based whiteboard into an $18 billion AI innovation workspace used by over 100 million people. He shares why he avoids planning beyond 12 months, how Miro scaled from 5 million to 50 million users in just 18 months during the pandemic, and why AI fundamentally changes how products are built and how teams move from idea to delivery. The conversation covers the qualities founders need to survive in an AI-saturated market and where the biggest opportunities lie.",
+  "keyTakeaways": [
+    "Miro grew from 5 million to 50 million users in just 18 months during the pandemic, and has since surpassed 100 million users globally — driven primarily by optimizing for product virality and frictionless user experience.",
+    "Andrey advises founders not to plan beyond 12 months because AI has made long-term prediction unreliable — experimentation and fast iteration matter more than a fixed multi-year vision.",
+    "The original goal for Miro was never to build a billion-dollar company; it was to reach break-even with a team of 10 people by solving a real collaboration problem Andrey personally experienced running a creative agency.",
+    "AI is transforming Miro from a visual collaboration tool into an end-to-end AI innovation workspace, where teams can progress from idea to solution to delivery with AI assistance at every step.",
+    "Andrey believes vertical AI applications will explode in the near future, and that founders who understand a specific domain deeply and move fast will capture the largest opportunities in the AI era."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "00:54",
+      "seconds": 54,
+      "title": "From whiteboard to $18B"
+    },
+    {
+      "time": "03:36",
+      "seconds": 216,
+      "title": "100M users in 18 months"
+    },
+    {
+      "time": "05:50",
+      "seconds": 350,
+      "title": "What Miro does differently"
+    },
+    {
+      "time": "07:35",
+      "seconds": 455,
+      "title": "How to gain users fast"
+    },
+    {
+      "time": "09:04",
+      "seconds": 544,
+      "title": "Why you need to fail"
+    },
+    {
+      "time": "10:08",
+      "seconds": 608,
+      "title": "Experimentation beats vision"
+    },
+    {
+      "time": "12:20",
+      "seconds": 740,
+      "title": "Trust is the new currency"
+    },
+    {
+      "time": "14:18",
+      "seconds": 858,
+      "title": "Name vs. brand vs. lovemark"
+    },
+    {
+      "time": "15:39",
+      "seconds": 939,
+      "title": "Three-year vision reset"
+    },
+    {
+      "time": "16:41",
+      "seconds": 1001,
+      "title": "Stop planning 12 months ahead"
+    },
+    {
+      "time": "20:45",
+      "seconds": 1245,
+      "title": "Why building is fun now"
+    },
+    {
+      "time": "22:00",
+      "seconds": 1320,
+      "title": "AI canvas demo"
+    },
+    {
+      "time": "24:49",
+      "seconds": 1489,
+      "title": "Most important founder quality"
+    },
+    {
+      "time": "27:40",
+      "seconds": 1660,
+      "title": "Where the opportunities are"
+    },
+    {
+      "time": "30:57",
+      "seconds": 1857,
+      "title": "Vertical AI will explode"
+    },
+    {
+      "time": "32:36",
+      "seconds": 1956,
+      "title": "Books that will change your mindset"
+    },
+    {
+      "time": "33:57",
+      "seconds": 2037,
+      "title": "Favorite AI apps"
+    },
+    {
+      "time": "34:29",
+      "seconds": 2069,
+      "title": "What founders should ask daily"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You build Miro, used by 100 million people worldwide. Would you say you do the same in 2025?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I would definitely focus on product-market fit."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Andrey Khusid, CEO and co-founder of Miro. He took a simple whiteboard idea and turned it into an $18 billion company. But in the past few years, the way he builds has flipped completely. Why?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "The one thing that we didn't predict is AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that's changed everything. Even for him."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "You can't predict from my perspective more than 12 months."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think is going to happen in 12 months?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I don't know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "AI made building easy. The world is now overflowing with products. If you want to build something big, you need to move really fast. You need to understand who you are, what you are passionate about. In the new era, the rules are simple and brutal. And only those who know the main secret will survive. The rest, they'll disappear."
+    },
+    {
+      "speaker": null,
+      "text": "Andre, welcome to Silicon Valley Girl. You build Miro, used by 100 million people worldwide. Let's talk about how entrepreneurship has been changing in the past few years. So Miro is this innovation workspace. But initially it was a mind map, right?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "It was a whiteboard. We started with a simple idea of bringing a whiteboard into a browser. Pretty simple idea which grew to become an almost $18 billion company."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If somebody who's starting out today and has a simple idea, how do they rationalize around how big it could get?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "When I started the company, I haven't thought about how big it can be. I was just thinking about how I can solve the problem that I have. Before this business, I was running a creative agency. We had customers who were in the same city with us and then we had customers who were remote from us. What I saw as an opportunity is to have that shared space where you can collaborate with customers who are remote, and that's how we came up with this simple idea of bringing a whiteboard into a browser. At that time, my only goal was to get to breakeven as fast as possible. I had a team of 10 people, and we were trying to build this product. Then we were rebuilding it after we figured out some early signals that what we originally built wasn't working. Everything we were doing was just trying to build the product that would get us to breakeven, and then we saw that a lot of people were quite excited about the product. We started to think about how we can scale, but again it wasn't like we had this ambition to build a multi-billion dollar company."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But have you ever had that ambition, or was it just \"I want to break even\"?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Not really. It's like we were passionate about the problem we're solving. Yes, I understood that the market can be quite big because there are a lot of knowledge workers in the world who can benefit from such a product. But it wasn't like something I was going to sleep thinking about—like 100 million users or 1 billion users. More about picking up the right problem, solving it, and solving it best-in-class. But also, you understand that the market can be quite big if you do it right. So the motivation back in the day was to build something that people would love using. That passion about the product, the product experience, and a frictionless experience. But obviously, when I'm building something, I'm thinking about what market I'm playing in and whether I need to shift toward a bigger market. Because if you're playing on a small market, that can limit the growth of the business."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "100%. Do you remember the aha moment when you were like, \"Oh my God, this is growing. This could be a really big company\"?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "We saw kind of initial growth in 2015 when we moved from Flash to HTML. At that time, I clearly saw a path to whatever 1 million, 5 million in revenue. We were like quite excited about that. But then in 2018, 2019, we started to see a path to 200 million. That was quite clear that we figured out how to do enterprise sales and how to get into companies with our value proposition. And then when the pandemic started, it was quite clear that this would scale quite broadly. When the pandemic started, we had 5 million users globally, and then within 18 months it grew to 50 million."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, that is crazy. Did it go down after the pandemic, or did people stay?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "It flattened. So now we just passed 100 million users globally. It took us another 36 months to add another 50 million users on top of the 50 million we had in 2022. It's still growing quite fast, and we developed the platform quite a bit since then. We expanded from just being visual collaboration to what we call now an AI innovation workspace where teams not just brainstorm or ideate, but where they move from the original idea to the solution to delivery end-to-end. They can progress from one step to another, and now with AI it's a quite significant change because it's not just that you do the steps manually, but actually you collaborate with AI. AI helps you progress from one step to another to another, so you can get to that outcome super fast. That's what we're passionate about now because canvas is that modality for AI that can be quite powerful."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You grew to 1 million people because of the product. But then you figured out a marketing strategy."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, originally everything we were optimizing was product experience—user experience—and we were optimizing for virality as much as possible. People come to Miro and start doing something, and then we were incentivizing them to invite other people to collaborate. It was just a delightful experience because those folks interacting with Miro were like, \"Oh wow, this thing exists. Oh wow, what can I create with this?\" So that activated word of mouth, and people were sharing this with others. Then we added search optimization as a channel. Those three were our major growth channels. And then after several years, once we nailed those channels, we started to layer on top more intentional marketing and more intentional sales, but we had to build that organic flywheel originally."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Would you say you do the same in 2025 when AI makes building products so easy and every product looks kind of nice?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, I would definitely focus on product-market fit because yes, it's now super cheap and fast to build a product. The quality is questionable still. You need to invest quite heavily into making it a high-quality product, but it's fast. The fundamentals stay the same. If your product is not solving a real problem, it will not grow fast. Brand matters more than ever."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Trust, right? Trust and love, mark, excitement about the brand. I think that's so important now. Do you have any tips for finding product-market fit? Do you talk to your customers? Do you track particular metrics?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, now we are reinventing the next horizon for our company and business. I spend a lot of time with customers, and there are different ways how you can explore product-market fit. It starts with: What's the problem you are solving? Is it a real problem? Is it a big problem? Then you look at how big the market is on which you are solving that problem. That should come together nicely. Once you figure out this is the problem and this is the market, you go and have open-ended conversations with customers. \"Hey, I heard this might be a problem for you. Can you elaborate why and what?\" You prove or disprove some of the hypotheses you have. You also build prototypes because sometimes, especially in AI-first products and products that require very special user experience, especially in productivity tools, people won't tell you \"I need this thing.\" You have to come up with a solution."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How many customers do you need to talk to?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I mean, it depends. In general, if you do deep quality interviews, it might be 7, 10, up to 20 customers because then more or less you understand the signal."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I've heard you talk about the failure rate in your company. You have a specific number in mind because if every experiment is successful, that means you're not experimenting enough. What's the failure rate and how did you end up with that?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "In general, I would say you want to have a success rate of whether 50-70%. And then you leave at least 30% for failure rate. It's across not just product experiments or growth experiments, but also acquisitions. If you're acquiring companies and 100% of your acquisitions are good, it means maybe you're not pushing the boundaries enough. Or if a lot of them just fail, that's also not right. So it's super important to have a portfolio and to have some bets that are safer and make more sense—like, \"This is how we can quite predict what the outcome would be\"—in the experiment or acquisition or anything you do. But some bets should be moonshots, and those bets should fail. Some of them should fail."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How far do you push? Because sometimes you come up with an idea and it's not working, but then after some tweaks, after some market research, you end up finding the right fit. Is there a strategy around that?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, I think that's a great question. You always try to figure out: Is the problem we're solving wrong, or is the solution we're playing not maybe perfect? If you believe the problem is there and if you believe this problem is solvable or solvable better than it's solved today, you have to go and iterate. It's totally fine. When I look at startups, a lot of those startups can do certain tweaks and get way stronger product-market fit. But some of them just stop, and their growth is very dependent on the strength of product-market fit. It's all about iteration on the solution. We are building this for 14 years now. We redesigned our onboarding I don't know, maybe hundreds of times. There's no right or wrong solution, but the time changes, the preference of users changes, and even the user experience you can create can change. We introduced a completely new interface called AI Canvas, and it's a separate mode with a new set of capabilities. But it's an experiment. We don't know if eventually it will merge into one experience or if we'll keep it as two separate experiences. We zoomed out and thought, \"Yeah, what's our day one thinking if we create the product today? How should it look?\" And that's how we came up with the solution. Now we'll see where the users gravitate and what works, what doesn't work. We may kill that AI Canvas, we may merge it with the core canvas. The fundamentals that we launch will remain, I'm sure. Those capabilities we've built are for a long time, but it's more about how you position those capabilities—as a separate mode or same mode? What's prioritized—the previous experience versus the new experience? You never know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Got it. So you're changing the product with AI. Are you changing your marketing in the AI era?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "We thought about that back in the day. I didn't expect there would be AI and commoditization of software building. But in general, I believe you have to stand out. That's how we came up with the Miro name. Originally the company was called Real Time Board, which was quite a literal board name."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Miro is a great name."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, thank you. Four letters. Yes, ideal. For me, there are three types of company names. One is just a name—whatever, Real Time Board—a descriptive name. Another would be a brand, like how you can create a brand that people know and recognize. And then there's the lovemark. When I was thinking about this rebranding, my objective was to go from name to lovemark."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you define lovemark?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "It's something that when you hear it, you have that kind of feeling. For us, this lovemark came from the inspiration of the artist Juan Miró. The idea was we want to be a canvas—a canvas that inspires people where the creative mind is activated. Not just yet another software, not yet another tool, but being that inspirational part of the day-to-day work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I actually like how you plan in three-year missions. Is that right?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, we write what we call a painted picture. We picked this practice from Atlassian back in the day. The idea is like you sit down as a team and imagine what the future of the company, the product, and our offering should look like, and you synthesize that in a couple of pages and share it with the whole organization. Then you go toward that. The last time we wrote this painted picture was 2022. It's now kind of coming to an end, and actually we executed quite well against that painted picture. The one thing that we didn't predict is AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So we're now rewriting the whole thing in terms of how AI fits into that vision?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "AI lends quite well into the vision, but also it starts to challenge some of the fundamentals of that vision."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "2025 is when you're going to sit down and predict the next three years."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I'm not sure we're going to do it this time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. And the reason why?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "You can't predict more than 12 months now from my perspective. The reality is that we are getting into this super fast cycle of innovation around both LLMs, and it's not clear for me how consumers and customers will behave in 12 months from now. It's not clear how much of the software will be built versus bought. Anyone can build any app for themselves. Well, not any, but a lot of apps can get built now. I believe bigger companies need to rely on partners and bring proper enterprise capabilities. We were building this for 10 years in enterprise software. It's not like you can build software that will be secure, compliant, and have all the right things executed overnight. But you can build some niche solutions, solve some specific problems with agents and whatnot. So it's quite hard to predict what it would be. You have to be extremely agile."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But you still focus on the problem you're trying to solve."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Our mission is to empower teams to create the next big thing, and that mission stays relevant from 2015. That's what guides me when I'm thinking about what's next and what we should do and what we should not do. I'm like, does it help us progress the mission? Do we empower teams to create the next big thing better and better every day? That's my north star and the picture for a longer term. But in the short to middle term, you have to figure out where you have permissions to play. And then what's even more important—where you have permissions to win. Because if you don't understand where you have permissions to win, the marketplace is so crowded now you can get in a corner and be out of the game."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "100%. So you have to pick your battles."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah. And what are the time increments you're thinking in now?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is it weeks?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, six months. Six months is what we kind of have a plan for and what we commit to. Then we have a bigger vision that's 12 to 18 months. Let's put it this way. But it's more like 12 rather than 18 months because the pace of change—for example, how models can impact the product you're building, the problems to solve for customers, and how you can become part of the ecosystem—was quite significant. We all saw that OpenAI announcement a couple days ago where you can embed different products into LLMs. That's quite a shift."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It is."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "They're becoming a platform."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes. And store."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Exactly. And the distribution is massive. So what will be the behavior of early adopters in 6 to 12 months?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's going to happen to ChatGPT-first people, right?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Exactly. We don't know that behavior. But you want to be where your users are. You want to continue solving the problems that you can uniquely solve. That's a lot to think about—not only the product but also the new ecosystems. We're looking at all the new ecosystem, all the landscape of different startups, big, small, and the big players. We're a mid-size company with 1600 people. There are hyperscalers, there are startups, and there are mid-size companies, and you have to navigate that chessboard quite a lot. It's changing every day."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think you're more positive about building now versus 2011 when you started?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I'm more positive about building now, which may sound crazy because the fundamental shift with LLMs is redefining the solution space. You can solve problems that you could solve before with one thing—you can solve it now in five to ten different ways. I think that's fascinating and exciting because the amount of reinvention of interfaces, how software performs, how software looks—there's a whole reinvention of all different surfaces, interfaces, and how jobs can be done. As a builder, I'm quite excited about that. Yes, obviously you want to build a sustainable company as a CEO, and I'm in charge of that. But also as a builder, I'm like, \"Wow, that's fascinating. It's like you're in a candy shop and you can see all these different opportunities, building blocks—how you can apply it day-to-day into building solutions for customers.\" It's fascinating how much you can go and do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, the new Miro AI version."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Exactly. Let's switch to AI Canvas. I'm clicking here and you see it. Switch the toolbar here. Let's use this use case where we connect multiple reference points and then synthesize it into an image. So I add an image here."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is the product that you want to see, right?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, this is the product we want to see. This is the color style reference, and here is the location reference. Something like that can be a background. So we are wiring it all together into this image placeholder. We add here a prompt and we can select a model. We will use the Stable Diffusion model here as the default."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you can do like, \"Can you do a nana banana?\""
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "No."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, nice. Oh, that's awesome. Let's run it. So it will now run on a one-step flow. We're adding more and more modalities every day, and you can take an output into any other kind of modality. So for example, while it's running, we can see what other options are there. I can create a table or a Canvas board."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Oh wow. Oh wow. Interesting. Where did it get?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "So the background is this kind of similar, the style is this, and then—"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. Yeah. And then these ladies, I—Can you ask it to remove the ladies? Like, can you follow up with—"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "So what I can do is create the next steps. Like, also, \"Create me three versions of this image,\" or I can invoke a sidekick. You see I selected one object, and now it can be conversational. I can say, \"Remove ladies from this photo.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you can also ask it to come up with a good prompt, right?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah. So you can ask to come up with a good prompt. One object selected. Let's see. I was thinking about when was the moment you were like, \"Okay, we're going to change the whole product\"? Because this is very new, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I mean, first principles. Before people were collaborating, and everything was manual. You put a thing, another person put a thing, and then you combine that. Now you collaborate between multiple people in the team and the AI. You just need to bring AI into that workflow."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I love this. I feel like this is the quality of the strongest founders. They're like, \"Okay, how can we reinvent our product, keeping the philosophy the same, the problem the same? It looks the same, it feels the same as Miro, but what's under the hood is completely different,\" right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So iterate, and then I can ask. Quality. I love. Yeah. It's not a banana. It's amazing. So then, what's the one quality that you think is the most important now for builders?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I think continuous curiosity is critical. Critical thinking is also super important because if you just build without understanding the playground, without understanding where you can actually win, you can't go too far without that. I mean, resilience. I was speaking recently at an event with a founder who said, \"Hey, I just kind of started my first company. I've been in a corporate environment for a while, and I'm a few months in, and the amount of change I see every day is just crazy. I'm overwhelmed.\" I'm like, \"Yeah, welcome. Welcome to entrepreneurship.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's only going to get worse from here."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "It's only getting worse. Like, in the next several years, it only will get worse. Because again, like what we just discussed, the amount of builders, the amount of software, the amount of other startups outside of software will grow because obviously AI will turn into physical AI. We'll see a bunch of things that will be part of our physical life, and how that experience will be reinvented in the next few years will be more and more overwhelming. But for those who love this kind of ambiguity, who love to navigate this kind of complexity, I think it's a great time because there's so much to figure out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if I told you I could delete 14 years and put you in the same position as you were in 2011, would you start all over again?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I would absolutely do it. It's been quite a journey. For me, what excites me is what I can learn every day. I heard Sergey Brin answer that question. He thought for a second and was like, \"Nah, too competitive.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's very true. So it's super competitive."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, but again, if you love building, if you love exploring this massive, unknown situation—it's hard for me to kind of go back in time and think about who I was at that time versus who I am now. Of course, if you ask me if I would not run Miro today, would I go and start the company from scratch and sign up for the next 20 years? I would think twice because the last 15 years were quite a journey, and it's still like a journey. It's quite an intense journey. But if you ask me, \"Hey, you haven't built anything in life, but you love building—would you start from scratch now?\" It's like absolutely yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would you build? Where do you see the most opportunity?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "This is a great question. I think it's again about what's your passion area. I call it founder-market fit. You need to understand who you are, what you're passionate about. For example, I'm not the person who will build the best operations business. I would not even try to do that. There are people who are way better than me at building heavy operations-oriented businesses. I'm more on the kind of product design side—thinking about experiences that don't exist and how you can bridge what people think they need and what they actually need. I love that type of stuff, and I love building products in this space, but this space is quite crazy."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Why is that?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "It's quite crazy because LLMs took over all the attention from the productivity perspective. Companies who are not building AI-native solutions kind of struggle more because there are no priorities on budget allocation and whatnot. That is existential for us. We were top of mind for a lot of companies—bigger enterprises in 2021—where they wanted to increase productivity and bring collaborative solutions. But then in 2023, after the ChatGPT moment, everyone started to focus on, \"Okay, how do we bring LLMs?\" And then now what we just launched is this bridge between single-player AI and multiplayer AI. Before, you were working individually with LLMs and increasing your individual productivity. But we thought there would be great value if we create this team-based productivity where you can move from discovery of the project to the solution to delivery as a team together with AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, interesting. Because what's most important is not your individual gains."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "What's most important is how fast you as a team move through the whole project. Yeah, because if you increase your individual productivity but the project takes the same 6 months, it doesn't increase the output or outcome of the project."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like how you told that. With AI now, when you have a team meeting, you walk out of the meeting with a solution that's already there."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "That's already there. Exactly. Because before we had this experience where you come to the meeting and workshop ideas, and the outcome of the meeting would be sticky notes on the wall or on the Miro board. Then you take another week, someone summarizes things, sends it back to the team, and while people receive it, the energy is already lost. Then you have to contribute, then it takes another few weeks. Someone takes it and breaks it down into projects—another several weeks or months. Someone comes up with a prototype, then you go test. But can we collapse all that into a few hours of the workshop?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "From the very first iteration, ideation to that output that we can put in front of the customer—that prototype or having that full project plan that is decomposed by different team members."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you can do all that during a call, right?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "You can do it in Miro during your session instead of spreading it across months of work. There are a lot of industries where the whole solution has to be reinvented from scratch, and that's where I see vertical AI companies can scale super fast and solve so much."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's your favorite market that you're looking at?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I think legal is quite impressive. Obviously, coding is a big market now, and there's a lot of reinvention happening. There's a lot of opportunity for engineers to focus more now on context engineering and aligning on what to build versus just writing code. There's a big shift happening there. And there are a lot of other areas—marketing is another big one."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So how you come up with the content, how you put it in the right channel, how you optimize for ROI."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Before, you had to do every step manually. Now you have companies redesigning the whole end-to-end process, and it will be quite agentic in terms of decision-making. So yeah, I see it across the board. We are now maybe purchasing more than 30-40 AI startups for different jobs to be done."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Nice. Yeah, so you have this fast track in the company."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah. To experiment, see the value, and where we see that value, roll it out. But it will not happen forever. You either scale your startup fast and break out from that early adopters circle, or someone who's playing in that space for a while will catch up. Consolidation will happen, and my guess is it will happen quite fast—in the next 18 to 24 months."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So move fast."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah, if you want to build something big, you need to move really fast."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is the book that changed your mindset as an entrepreneur?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "High Growth Handbook was a great book that I read about four or five years ago. It's a collection of different insights from CEOs who scale companies super fast. It was quite insightful because I don't live here in the Bay Area. I live in Europe."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Why don't you move?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Why should I? I know everything's happening here, but I love the Netherlands. I just kind of live there. So you can't go like every day to dinner and learn from those who scale this fast. There are not that many companies there, and this book kind of gives you access to that knowledge."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Here you can. I mean, you can. I come quite often here."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I come quite often here, but for those who are building business in their hometowns or wherever they want to live, it's always important to see how the most successful companies were built—especially not those built 10, 15, 20 years ago, but those built recently. That book quite well summarizes the lessons. High Output Management was a big book for me as well. When I started to scale the business, I was trying to understand what are the fundamentals I need to understand and learn. So I reread it multiple times. That's a great book also."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Your three favorite AI apps right now?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "I mean, Granola is number one."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "Yeah. Note-taking, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, note-taking. Yes. And it's beautiful because it combines personal notes with AI note-taking and just enhances your notes. That's kind of a beautiful app. Obviously, I use Perplexity and Anthropic products. So I switch between all of them all the time for different jobs to be done. And of course, Miro."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is the thing that everyone should tell themselves every morning? They're waking up, they're building something. What can keep them going?"
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "\"Do I love what I am doing?\" And if the answer is yes, just that's the best energy. That's the best energy boost. Because if you wake up and you don't like what you're doing or you don't like who you're doing it with or something else, you should not."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love it. Thank you so much. It was an awesome conversation with a lot of key takeaways."
+    },
+    {
+      "speaker": "Andrey Khusid",
+      "text": "It's been great to have a chat with you. Thank you for having me."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "eaZ2R1K-SjQ",
+      "thumbnail": "https://img.youtube.com/vi/eaZ2R1K-SjQ/hqdefault.jpg",
+      "title": "Future of Education: How to Get Ahead before AI Changes Everything"
+    },
+    {
+      "videoId": "9pfbGnuMNhk",
+      "thumbnail": "https://img.youtube.com/vi/9pfbGnuMNhk/hqdefault.jpg",
+      "title": "If I need to start over in 2026, I’d learn these 7 skills first"
+    },
+    {
+      "videoId": "LAEaSbZ2IR8",
+      "thumbnail": "https://img.youtube.com/vi/LAEaSbZ2IR8/hqdefault.jpg",
+      "title": "$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma"
+    },
+    {
+      "videoId": "_tQUyvTLaSM",
+      "thumbnail": "https://img.youtube.com/vi/_tQUyvTLaSM/hqdefault.jpg",
+      "title": "From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja"
+    }
+  ],
+  "topics": []
+}

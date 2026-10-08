@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>23 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=VHiyfK06n1c" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/VHiyfK06n1c/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/VHiyfK06n1c/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,9 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -450,7 +461,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Global affiliate marketing revenue is projected to reach 12 billion by 2025 and a lot of people think this niche is overcrowded. I thought the same way before I joined it. I joined it a couple years ago and I started taking it seriously this year. So if you're starting affiliate marketing from day one, you're in the right place. I'm about to reveal the full step-by-step guide to start making money on affiliate marketing from scratch. Let's start with basics. What actually is affiliate marketing and how are people making money on it?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Global affiliate marketing revenue is projected to reach 12 billion by 2025 and a lot of people think this niche is overcrowded. I thought the same way before I joined it. I joined it a couple years ago and I started taking it seriously this year. So if you're starting affiliate marketing from day one, you're in the right place. I'm about to reveal the full step-by-step guide to start making money on affiliate marketing from scratch. Let's start with basics. What actually is affiliate marketing and how are people making money on it?</p>
             <p>Affiliate marketing is a process where you, the affiliate, earn a commission by promoting a company's product or service. Here's how it works step by step. There is a merchant or advertiser. This is the brand or company that owns the product or service. Merchants create affiliate programs to expand their reach by leveraging affiliates to promote their offerings. For example, my company Lingua Trip has an affiliate program for people who took the course and want to recommend it to their friends. Another example is Amazon, and it's probably the most well-known merchant with a massive affiliate program called Amazon Associates. I am part of their program, and what's interesting about that program is you have to register in every single country separately. So I sat down—I think it was five years ago when I was starting to research affiliate marketing—and I registered with Amazon Associates in Canada, Germany, United States, like everywhere. Then you use an app called Genie.us to create links that will automatically send the buyer to the Amazon store of the country where they're from. Because if you give them, for example, an American affiliate link and they click it and they're in Germany, they will be sent to the German store and you might not end up getting the commissions. So in order to maximize your commissions, if you know that your audience is international with Amazon Associates, use Genie.us. I'm going to give you more tips throughout this video. I've been doing this for years now and there are so many nuances, but I feel it's just much more exciting to be on social media when you know that you have these affiliate links and they work for you for years instead of just, you know, giving a shout out to a company for a flat fee. After that, the video doesn't have any long tail anymore. When you have affiliates, all the videos have a long tail.</p>
             <p>Basically, those companies that have affiliate programs pay affiliates a percentage of sales made through affiliate links. Then there is an affiliate, and this is actually you. Affiliates can be individuals, influencers, or businesses that choose products to promote and earn commission when someone makes a purchase through their link. The final link in the chain are customers. They browse the content, see a recommendation, and make a purchase through your affiliate link. Affiliate links do not add any extra cost to their purchase, but merchants will pay you commission.</p>
             <p>Tracking links are what make the entire affiliate system work. When an affiliate joins a program, they receive a unique affiliate link for each product. These links contain data that tracks where each sale comes from, ensuring the right affiliate receives credit. What's important to understand is that sometimes these links track people for 24 hours, sometimes they track people for a month, which means you could have promoted a product once, somebody clicked your link, and then they end up buying something in two weeks and you still get paid for it. That's exciting.</p>
@@ -494,26 +505,31 @@
             <p>Intermediate level earnings are in the range of $1,000 to $10,000 per month. Your experience starts to grow. Your following starts to grow. People trust you more in a particular niche. You start joining higher paying programs. You build email lists, and email lists are super helpful. You leverage SEO. You do paid ads. With consistent effort, you might start earning $1,000 per month, $5,000 per month, or even more. Charlie Chang, Nate O'Brien, Graham Stephan—who else do I know? Jake Tran, they make a lot of money with affiliate programs and you can watch their interviews. Even Carlton Dennis, a tech consultant, makes money as an affiliate by recommending law firms. It's always about thinking about what people want from you. On my educational channel, I make money as an affiliate by recommending lawyers for immigrants. You need to identify that niche.</p>
             <p>Advanced level income range is $10K to $100K a month. Advanced affiliates tend to have a well-established presence. You probably know their names. High traffic, significant influence within their niche. They might run multiple websites, multiple YouTube channels in multiple languages. This is what we're trying this year—translating my videos that have affiliate programs into Spanish and other languages to see how those affiliate programs are going to work. We're also working on optimized funnels. Some advanced affiliates use paid ads exclusively and invest in courses or software that enhances their reach and conversions.</p>
             <p>I hope this video gave you a solid start with affiliate marketing and realistic expectations on earning potential.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/tzUAJZAuaZw/" class="related-card">
                 <img src="https://img.youtube.com/vi/tzUAJZAuaZw/hqdefault.jpg" alt="Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company" loading="lazy">
                 <span class="related-title">Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company</span>
               </a>
+
               <a href="/episode/r67fvYaB2y8/" class="related-card">
                 <img src="https://img.youtube.com/vi/r67fvYaB2y8/hqdefault.jpg" alt="10 AI tools to use in 2025" loading="lazy">
                 <span class="related-title">10 AI tools to use in 2025</span>
               </a>
+
               <a href="/episode/1gm__VUG2m8/" class="related-card">
                 <img src="https://img.youtube.com/vi/1gm__VUG2m8/hqdefault.jpg" alt="AI Agents EXPLAINED in 14 minutes and TOOLS for building one" loading="lazy">
                 <span class="related-title">AI Agents EXPLAINED in 14 minutes and TOOLS for building one</span>
               </a>
+
               <a href="/episode/Gk0n0FjeKj8/" class="related-card">
-                <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/hqdefault.jpg" alt="Stanford AI Expert: 71% of People Won&#x27;t Survive the AI Shift — Here&#x27;s the 30-Minute Fix | Kian Katanforoosh" loading="lazy">
-                <span class="related-title">Stanford AI Expert: 71% of People Won&#x27;t Survive the AI Shift — Here&#x27;s the 30-Minute Fix | Kian Katanforoosh</span>
+                <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/hqdefault.jpg" alt="Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh" loading="lazy">
+                <span class="related-title">Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh</span>
               </a>
       </div>
     </section>

@@ -1,0 +1,212 @@
+{
+  "videoId": "Ab1FyDL4HEY",
+  "title": "High-income AI business ideas for 2025 (no coding, no budget)",
+  "format": "solo",
+  "guestName": "Marina Mogilko",
+  "guestTitle": "Host, Silicon Valley Girl Podcast",
+  "aboutGuest": "Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.",
+  "publishedAt": "2025-06-14T13:00:15.000Z",
+  "duration": "18 MIN",
+  "coverArt": "https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg",
+  "summary": "Marina Mogilko breaks down high-income AI business ideas that require no coding skills or startup budget in 2025. She covers opportunities like building content factory services, leveraging AI agents, and riding the generative AI market wave, drawing on her own experience as a Silicon Valley entrepreneur and creator. The episode also highlights specific AI tools and the types of businesses Y Combinator is actively seeking.",
+  "keyTakeaways": [
+    "The generative AI market is projected to reach between $200 billion and $1.3 trillion by 2030 with a 25% growth rate — making now the ideal time to launch a niche AI product.",
+    "Building a 'Content Factory' service is one of the most in-demand opportunities right now, as companies and creators need to publish across LinkedIn, YouTube, newsletters, Reels, and more without large teams.",
+    "Tools like Poppy AI, InVideo, ElevenLabs, and EasyGen allow solopreneurs to automate content creation end-to-end with no prior technical experience.",
+    "Large companies like Google, Microsoft, and Amazon are moving fast but cannot solve niche problems — that gap is where individual founders can build and win.",
+    "In 2025, entrepreneurs with no coding background can go from idea to MVP in as little as 24 hours using tools like Replit, Lovable, and Cursor."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Why now is the time to build"
+    },
+    {
+      "time": "02:21",
+      "seconds": 141,
+      "title": "Build a “Content Factory” business"
+    },
+    {
+      "time": "05:25",
+      "seconds": 325,
+      "title": "What are the fastest growing startups"
+    },
+    {
+      "time": "06:57",
+      "seconds": 417,
+      "title": "AI Agents: The 24/7 virtual workforce"
+    },
+    {
+      "time": "08:36",
+      "seconds": 516,
+      "title": "Selling prompts"
+    },
+    {
+      "time": "09:22",
+      "seconds": 562,
+      "title": "Y Combinator–style Startups"
+    },
+    {
+      "time": "10:35",
+      "seconds": 635,
+      "title": "AI in education"
+    },
+    {
+      "time": "11:47",
+      "seconds": 707,
+      "title": "Voice AI agents"
+    },
+    {
+      "time": "12:50",
+      "seconds": 770,
+      "title": "AI in personal finance"
+    },
+    {
+      "time": "14:03",
+      "seconds": 843,
+      "title": "AI for science"
+    },
+    {
+      "time": "14:46",
+      "seconds": 886,
+      "title": "Robotic software"
+    },
+    {
+      "time": "16:21",
+      "seconds": 981,
+      "title": "Full-stack AI companies"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "One of my friends is building an AI startup and he just sent me this graph that shows they've grown by 260% in a day. We live in this weird time where the AI revolution is happening. There's a chance that large companies like Google, Microsoft, and Amazon are going to take all of the market because they're shipping so fast. They're able to create very powerful tools, but at the same time, they're not tailored to solve niche problems. And this is where you can make your millions."
+    },
+    {
+      "speaker": null,
+      "text": "The thing is, 2025 is the best time to be a solopreneur because you can code anything with Lovable, Replit, or Cursor. You can design everything with Canva or other AI tools. You can market everything with Poppy AI that's going to generate perfect scripts for you. So this is the time for someone who's been dreaming of building something to actually execute on that. I've seen a lot of people go from idea to an MVP in 24 hours. An MVP is a minimum viable product, something that you can show to a user and test it. Everything is speeding up and the next couple years are going to be perfect for launching your own business."
+    },
+    {
+      "speaker": null,
+      "text": "In this video, I want to give you some ideas of what you can build. These ideas are based on what I see in the market as a creator and entrepreneur who lives in Silicon Valley, but also on what Y Combinator is looking for—this accelerator that helps create billion-dollar companies. They always see what's going on in the market and they're looking for very specific things that I'm going to name in this video. I will also name some tools that you can use to build an AI company just by yourself with no experience, but a crazy idea and a lot of enthusiasm. This is the time for people like us to build something and bring it to the world."
+    },
+    {
+      "speaker": null,
+      "text": "You know, we used to talk a lot about content being commoditized and everyone being able to create content. I feel like we're entering, and we've already entered, this time where product is commoditized. Anyone can build a product now. So it's your time. Let's dive deeper into business ideas in the age of AI."
+    },
+    {
+      "speaker": null,
+      "text": "Let me start with some numbers. Recent estimates suggest that the generative AI market could reach between 200 billion and 1.3 trillion by 2030 with growth rates of 25%. It's always a good idea to be building a product in a growing market because this wave is just going to take you and push you forward."
+    },
+    {
+      "speaker": null,
+      "text": "I'm going to start with something that I'm building myself for my company, and it's called a content factory. As I mentioned, content has become commoditized and both sides of the game have expanded. We are consuming a lot of content and we're also creating a lot of content. In order to stay visible in this new market, you need to be everywhere with your content. If you're a company like Alo Yoga, they don't just have one Instagram profile. They have multiple accounts for each specific type of content they're creating. As a creator, I have to be on LinkedIn, Twitter, newsletter, reels, picture posts, YouTube podcasts, YouTube videos, clips. There are so many things I need to do. In order to do this without hiring a lot of people, I need to build a content factory. Gary Vee did it back in 2019, but he had hundreds of employees. I don't have this luxury of hiring as many people as I want, but now I can hire as many AI tools as I want. Businesses that help companies and creators build those content factories are in great demand."
+    },
+    {
+      "speaker": null,
+      "text": "There are some tools you can already start using—of course, ChatGPT for text, ElevenLabs for voice. There are more targeted marketing tools like Poppy AI that lets you upload videos that you like from different platforms and create a script based on what you've uploaded. I think it's a genius tool. There's Invideo that lets you create videos. But basically, even my company is looking for this all-in-one solution."
+    },
+    {
+      "speaker": null,
+      "text": "What's really exciting is something I've noticed—I'm talking to a lot of companies and creators, and a lot of them are looking for people with no prior experience. Last week, we hired a YouTube producer, and she had a huge background in producing videos. But everything changes every single week in our company. We wrote a script last week, but this week I'm looking at it and a lot of things have changed already. I'm like, \"We need to replace this, this, and that.\" She's like, \"Oh, you know, in our previous company, every process was described. Everything was in order. We never rewrote scripts, etc.\" I'm like, \"I know. Unfortunately, I can't do that in my company. We need to move really fast and processes have to change every single week.\""
+    },
+    {
+      "speaker": null,
+      "text": "So we decided that we're going to start hiring more people who maybe have no or minimum experience, but we're looking for entrepreneurial-minded producers who will be open to testing new tools, open to rewriting scripts, open to changing strategies very often because this is how it works these days. Nothing is guaranteed, even for a couple months. You always have to be able to identify what's trending. By the way, if you're that person, we're also looking for someone who is studying computer science and who's looking for an internship this summer. We're looking for someone who can help us integrate more AI tools in our work and help us create more AI content. This is your time, guys. If you're curious, if you're excited about AI, if you are willing to experiment, this is where you can build a business. Building a content factory and offering that service is a huge advantage for you to make money this summer or in the next couple years."
+    },
+    {
+      "speaker": null,
+      "text": "It's always a good idea to build a product on a growing market because it's just going to take you and pull you forward. When the market is exploding, you don't have to push as hard. The momentum's already there. You just need to catch the wave early and hold on tight."
+    },
+    {
+      "speaker": null,
+      "text": "The second cool idea is AI agents for small businesses that work 24/7. The emergence of autonomous AI agents is the biggest event in the industry in 2025. We're no longer talking about simple chatbots that just feed your replies. Now we have fully-fledged virtual employees who can think for themselves, make decisions, and even learn from their mistakes. The gap in the market is that everybody needs an AI agent, but it's kind of hard to create one. You need to be more technical. You need to understand what's going on. But there are already very cool examples of AI agents. There's a UK startup called Garfield AI that drafts legal letters for just two pounds without any lawyers. There are emerging AI agents in every niche—Logistify AI, which turns a voice message into a warehouse order in just three seconds."
+    },
+    {
+      "speaker": null,
+      "text": "The best way to enter this field is by creating a highly specialized AI agent that solves a very specific problem that you're aware of. Maybe you're solving your own problem as a specialist. For example, handling online orders for restaurants, or finding gigs for freelancers, negotiating price, calling a hospital and asking for a discount because of an outrageous bill that doesn't really match your expectations. And the best part is you don't need to code. You can launch these projects on no-code platforms like Voiceflow, Cursor, Replit, Lovable. I'm currently playing with all of them, and it's amazing how you can just build with a voice prompt. Of course, it needs some time, and that's why there is this gap in the market where you can start building and deploying AI agents for other companies."
+    },
+    {
+      "speaker": null,
+      "text": "Now, let's talk about how to make money selling prompts. This is an easier idea. If you're watching this video and you're like, \"Marina, again, super complicated Silicon Valley, give me easy money\"—easy money for you. You write those little instructions that make AI do magic. Platforms like Prompt Base are full of people trying to buy high-quality prompts for like $15 each. What's the secret here? You understand the niche and you make sure it's in high demand. For example, cyberpunk retro logos are super popular among startups, or celebrity portraits for NFT collections. I think there's an opportunity in creating bundles. For example, 50 fashion design prompts that you sell for $199. Top sellers on Prompt Base make $200 to $500 a month just by creating and selling prompts."
+    },
+    {
+      "speaker": null,
+      "text": "But if you're like, \"Marina, okay, selling prompts, perfect, not Silicon Valley style,\" let's dig deeper into ideas that you can start small with, but also could lead you to actually building a billion-dollar company. These ideas are something that Y Combinator is looking for. If you're going to start building something that I mentioned, please go ahead and apply to their accelerator. I think they're amazing. We tried several times and never got accepted with our idea. Maybe it's coming in the future, but for now—and something else I wanted to tell you regarding AI agents—I recently joined a fund where I will be investing together with the co-founder of Honest, the company he did with Jessica Alba, the ex-CMO of Bumbo, who's also co-founder of LTK. We're investing in products that are co-created with creators because the game these days is not only to create a great product. You need to find distribution, and that's why we're talking about content factories. That's why we're talking about AI content."
+    },
+    {
+      "speaker": null,
+      "text": "There is this AI agent that somebody built—it's an AI agent that generates brand deals for you. So a lot of people are working on these AI agents. Anyway, there is another opportunity, something I feel like my fund would invest in. It's called AI tutors. Reid Hoffman recently mentioned that they did an experiment with one of the schools where students used a personalized AI coach and they did so much better on tests. I feel like AI is overtaking the language learning industry. I feel like standardized tests may be a little bit harder because you still need the support of a real person. But when you're learning a language, you can just launch an app or a chatbot that's going to help people do that. This is what we're experimenting with at Lingua Trip. We released several apps in the past few months just because it's so much easier. A couple years ago, it would take us a year to build an app. Now, we're able to do that in weeks. One of the apps that we released is now number three in terms of how much revenue it generates."
+    },
+    {
+      "speaker": null,
+      "text": "The AI market education AI market is going to reach 24 billion by 2034. Profitability here is strong. You can charge subscriptions, you can work with schools, and your operating costs stay really low. I think these educational chatbots are the future of the course market. When everyone was launching courses, now everyone will be launching their own app, teaching people their craft. If you've been doing courses, please try building an AI bot yourself using one of the apps I mentioned that allow you to code without knowing how to code."
+    },
+    {
+      "speaker": null,
+      "text": "The next big niche is voice AI agents. There are billions of business calls that happen every year. Advanced voice bots can now handle customer support, bookings, troubleshooting, calling that hospital and telling them, \"Hey, how dare you charge $1,000 for a band-aid?\" I think I was charged several hundred for ibuprofen. That's your startup idea—build an AI agent that's going to go call a hospital about another outrageous bill. This is a relatively easy space to enter since you can build on existing platforms like ElevenLabs. The market for voice AI is set to explode, growing at about 35% a year and hitting nearly 48 billion by 2034. I feel like AI agents are just going to talk on our behalf, and this is your time to build an AI agent. The profit potential here is huge. Companies can cut their call center costs by half or more, and customers get instant service."
+    },
+    {
+      "speaker": null,
+      "text": "The next business idea I'd love to invest in as a venture partner—I'm super excited about AI in personal finance. Imagine having a personal AI assistant that knows what's going on with your apartment in Hawaii. Is it yielding something that you've projected or not? What's going on with your crypto? Is it a good time to sell? Maybe it's a good time to rebalance your portfolio. Maybe let's do some tax loss harvesting. Maybe Marina, it's time to think about buying a house instead of renting. Like all of these things, I do manually by myself. Yes, I use some AI tools to analyze expenses and do my bookkeeping. But imagine an assistant that tracks your spending 24/7, flags unnecessary expenses, suggests smart investment opportunities, and can even trade stocks automatically."
+    },
+    {
+      "speaker": null,
+      "text": "Today, there are several solutions on the market already, like Cleo or Plum, and they're already outperforming human experts in speed and accuracy, costing a fraction of the price, often around $10 to $15 a month. The personal finance AI market is growing steadily, and the broader AI-powered fintech market is expected to hit 130 billion by 2034. When the market is that huge, we're going to have multiple players coexisting on the market, serving different target audiences."
+    },
+    {
+      "speaker": null,
+      "text": "Let's move up in complexity and talk about AI for science. AI is now accelerating discoveries in chemistry, biology, and material science. What used to take years in the lab can now happen in weeks. We've seen DeepMind's AlphaFold that predicts the 3D structure of proteins, saving years of lab work. If you're doing your PhD, I want you to think about your PhD as there's also my chance in building my own AI agent that is going to come up with hypotheses, test them, and suggest tweaks to them. Basically your own AI researcher because the potential benefit here is massive. We're going to speed up research and we can find solutions to problems that would otherwise take years and years."
+    },
+    {
+      "speaker": null,
+      "text": "Next is something really exciting—robotic software. We recently had a robot dog visit our house. My daughter Lily, who was three years old, was just fascinated. For the next two days, she kept asking me about robots. She's like, \"Mom, when are we going to have a robot in our house? What would it be able to do? Will it give me candy? Will it switch on cartoons for me?\" We're talking about how it's going to wash the dishes, and when they grow up, they're going to have a robot in their house taking care of laundry, dishes, and cooking."
+    },
+    {
+      "speaker": null,
+      "text": "The way I see it is that robot is basically your iPhone, and then independent developers are going to be able to build apps for that robot. For example, I would need a robot to be able to set up a studio for me and watch the camera because I just recorded this whole video without my camera being switched on. So I need a robot to make sure it doesn't happen again. I would be able to write an app for a robot to do something that I need—maybe with my house specifics, maybe specifically in California because it's hot, or specifically in St. Petersburg because it gets really cold."
+    },
+    {
+      "speaker": null,
+      "text": "For now, robotics software is mostly for B2B, like delivery bots, warehouse robots, self-driving cars, but the market is already worth over 24 billion and is growing at more than 20% a year. Profitability is high, especially in B2B sectors, and I feel like it's a very interesting niche that's just going to grow and grow. I already see Tesla bots delivered to a lot of content creators. I'm like, this is interesting—non-tech content creators seeking production with a Tesla bot. Robots are fascinating."
+    },
+    {
+      "speaker": null,
+      "text": "Now we get to full-stack AI startups. This means building entire companies like a law firm or a clinic where every employee is an AI agent or a robot. Of course, it's a bold move. It requires deep industry knowledge, but it's also not like a $100,000 company. It's potentially a billion-dollar company if you have the ability to build complex systems. Full-stack AI businesses could be worth over 200 billion by 2033 with some of the highest profit margins in tech."
+    },
+    {
+      "speaker": null,
+      "text": "So as you see guys, we are in a market where building products is being commoditized. The way I am raising my kids is that I want them to be generalists and understand what's going on in the world—oh, this is happening in this industry, this is happening in that industry—but also be specialized in one subject so that they can grab ideas from different sectors and implement them in what they're doing."
+    },
+    {
+      "speaker": null,
+      "text": "As an entrepreneur who started her first company at the age of 21 solving my own problem, I would give this advice to everyone who's starting their business these days: If that's your first business, solve your own problem first because you become your own customer. Meaning that you're going to apply higher standards to your product. You're going to know exactly what you need from it. It's going to be so much easier for you to start that way. Later on, when you sell or exit this company or something happens to it and you stop working on it, you will be doing another process where you analyze the market and find a gap. But I feel like as someone who's just starting out, it's just great to solve something for yourself and build something for yourself using all of the tools that I mentioned."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "jVD8pCZeLww",
+      "thumbnail": "https://img.youtube.com/vi/jVD8pCZeLww/hqdefault.jpg",
+      "title": "How to Use AI to Go VIRAL on Social Media (full guide)"
+    },
+    {
+      "videoId": "IdN-b2Y_foo",
+      "thumbnail": "https://img.youtube.com/vi/IdN-b2Y_foo/hqdefault.jpg",
+      "title": "Marie Forleo: Progress Way Faster than 99% of people"
+    },
+    {
+      "videoId": "_aUKWYHLKfE",
+      "thumbnail": "https://img.youtube.com/vi/_aUKWYHLKfE/hqdefault.jpg",
+      "title": "Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan"
+    },
+    {
+      "videoId": "VF2FwZ_PXhw",
+      "thumbnail": "https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg",
+      "title": "Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki"
+    }
+  ],
+  "topics": [],
+  "metaDescription": "High-income AI business ideas for 2025 (no coding, no budget) — Silicon Valley Girl Podcast with Marina Mogilko"
+}

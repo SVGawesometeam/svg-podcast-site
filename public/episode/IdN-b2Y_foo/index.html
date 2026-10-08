@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Marie Forleo is a world-renowned entrepreneur, author of the New York Times bestseller 'Everything is Figureoutable,' and creator of MarieTV and B-School, an online business training program with students in over 170 countries. She began her career on the floor of the New York Stock Exchange before leaving to build a global coaching and media brand. Forleo has been recognized by Oprah Winfrey as a thought leader for the next generation and is known for her philosophy of combining business strategy with personal alignment.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -474,7 +486,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> You're tens of thousands of dollars in debt and this thing sounds so stupid and cheesy you're embarrassed to even say it out loud. If you're in your career for 10, 15 years, magical things start to happen. I want to just burn it all down. You are either going to endure something or you're going to enjoy it, right? Who do you think you are? And I sat on the church steps and I cried so hard because I hated my job so much and I felt like I was going to bring shame on my family if I quit. How do you keep this focus? How do you know you're doing the right thing and not start switching? Is there revenue tied to it? Is there profit tied to it? Or are you operating from fear? Marie, welcome to Silicon Valley Girls. I want to start with a question that you actually wrote a post on LinkedIn about making 2025 the best year of your life and the principles. How has it been going with the principles? How has 2025 been?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> You're tens of thousands of dollars in debt and this thing sounds so stupid and cheesy you're embarrassed to even say it out loud. If you're in your career for 10, 15 years, magical things start to happen. I want to just burn it all down. You are either going to endure something or you're going to enjoy it, right? Who do you think you are? And I sat on the church steps and I cried so hard because I hated my job so much and I felt like I was going to bring shame on my family if I quit. How do you keep this focus? How do you know you're doing the right thing and not start switching? Is there revenue tied to it? Is there profit tied to it? Or are you operating from fear? Marie, welcome to Silicon Valley Girls. I want to start with a question that you actually wrote a post on LinkedIn about making 2025 the best year of your life and the principles. How has it been going with the principles? How has 2025 been?</p>
             <p><strong class="speaker">Marie Forleo:</strong> I mean, so far it is such a year of transformation for me and this year has been going amazing because it feels like I'm entering this new phase of a lot more ease, a lot more play. I've always been a really playful person, and just kind of unexpected ways that I'm showing up for me that feel really good. So far, so good.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Can you share some of the principles that are working for you right now?</p>
             <p><strong class="speaker">Marie Forleo:</strong> So I think in terms of a principle, it's like really honoring what my nervous system is a big yes to versus what is a big no. I kind of built my career and it was amazing from being in this place of saying, you know, I have this goal. I'm going to set this goal and I'm going to do whatever it takes to achieve it. That's amazing. That's beautiful. But after having followed that for so long, I started reaching a point where I was like, doesn't feel good anymore. The very things that have brought me joy, like sitting at my computer all day long or operating a particular way, I was like, it feels draining and almost like hitting a point of burnout.</p>
@@ -549,24 +561,28 @@
             <p><strong class="speaker">Marie Forleo:</strong> Love it. So what's the metric you optimize for these days? The metric I optimize for is honestly, like, from a business perspective, I'm like, is it easeful, joyful money? Like, can I show up and create a product, a service, or an offering where it's like in that 80 to 90% genius zone for me? And there is no nervous system dread. If there's something like, &quot;Oh, all your customers and your audience want it and they want it so bad and everybody wants it,&quot; I'm like, &quot;Dude, if I don't want it, it is a psychic, emotional, energetic drain. And at some point, it's going to be a detriment to the bottom line. It's going to be a detriment to my ability to serve and my team. Like everything's going to go down at some point if I don't obey my inner truth.&quot;</p>
             <p>So from a money standpoint, you know, and of course there's a difference between the business side and the personal side. I think one of the joys of hitting the stage that I'm at is like I don't have to work for the money. So now I want to reshape things where it's like, &quot;Oh, I'm working because things are really exciting because I can bring something to the market or I can create something that's going to make my customers' lives so much easier, but I'm going to do it in a very artful and playful way.&quot;</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Do you see more progress there? Do I see? Oh, like, does it grow faster than when it's coming from the fear or like the hustle?</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/Ab1FyDL4HEY/" class="related-card">
                 <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/hqdefault.jpg" alt="High-income AI business ideas for 2025 (no coding, no budget)" loading="lazy">
                 <span class="related-title">High-income AI business ideas for 2025 (no coding, no budget)</span>
               </a>
+
               <a href="/episode/PR__eFQsnhg/" class="related-card">
                 <img src="https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy">
                 <span class="related-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</span>
               </a>
+
               <a href="/episode/JFilKfL7_9A/" class="related-card">
-                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
-                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus</span>
+                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
+                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</span>
               </a>
+
               <a href="/episode/kvlMhVz-DeM/" class="related-card">
                 <img src="https://img.youtube.com/vi/kvlMhVz-DeM/hqdefault.jpg" alt="His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)" loading="lazy">
                 <span class="related-title">His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)</span>

@@ -1,0 +1,327 @@
+{
+  "videoId": "_aUKWYHLKfE",
+  "title": "Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan",
+  "format": "interview",
+  "guestName": "Conor Grennan",
+  "guestTitle": "Chief AI Architect, NYU Stern School of Business; Founder, AI Mindset",
+  "aboutGuest": "Conor Grennan is the Chief AI Architect at NYU Stern School of Business and the founder of AI Mindset, a training and consulting organization that works with Fortune 500 companies and business leaders. Rather than focusing on specific tools or features, his work centers on a behavioral framework for fundamentally changing how individuals and organizations think about and interact with AI. Grennan is a writer and entrepreneur who has become one of the leading voices on practical, day-to-day AI adoption.",
+  "publishedAt": "2026-02-05T14:53:44.000Z",
+  "duration": "41 MIN",
+  "coverArt": "https://img.youtube.com/vi/_aUKWYHLKfE/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/_aUKWYHLKfE/maxresdefault.jpg",
+  "summary": "Marina Mogilko sits down with Conor Grennan, Chief AI Architect at NYU Stern School of Business, to explore why most people underutilize AI despite claiming to use it. Grennan argues the gap is behavioral, not technological, and shares practical frameworks for treating AI as a thinking companion rather than a search engine. They also discuss how hiring is shifting, with up to 30% of entry-level white-collar jobs at risk, and what skills help candidates stand out in the AI era.",
+  "keyTakeaways": [
+    "True AI power users engage with the tool 30+ times a day across both work and home tasks — not a few queries per week — making frequency and depth the real differentiators.",
+    "AI should be treated as a companion, not Google: long, ongoing conversations unlock far more value than single-shot search-style prompts.",
+    "Write your first draft yourself before involving AI — then paste it in and ask 'How can I make this more readable?' or 'What am I missing?' to preserve your voice while improving quality.",
+    "Even without any further technological advancement, AI could eliminate roughly 25% of entry-level white-collar jobs; candidates who visibly reinvent workflows with AI stand out more than those who simply do more work.",
+    "You can build persistent AI memory in minutes by exporting context from one platform and importing it into another, ensuring your AI 'knows you' regardless of which tool you're using."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "2:00",
+      "seconds": 120,
+      "title": "The Truth About AI Adoption (It's Lower Than You Think)"
+    },
+    {
+      "time": "3:35",
+      "seconds": 215,
+      "title": "How to Start Using AI Today"
+    },
+    {
+      "time": "4:59",
+      "seconds": 299,
+      "title": "Game-Changing Use Cases"
+    },
+    {
+      "time": "6:27",
+      "seconds": 387,
+      "title": "The Mindset Shift: AI as Companion, Not Search Engine"
+    },
+    {
+      "time": "9:14",
+      "seconds": 554,
+      "title": "Making AI Your Strategic Coach"
+    },
+    {
+      "time": "10:57",
+      "seconds": 657,
+      "title": "Why Your Brain Treats AI Like Google (And How to Fix It)"
+    },
+    {
+      "time": "13:31",
+      "seconds": 811,
+      "title": "The Real Power of AI"
+    },
+    {
+      "time": "16:44",
+      "seconds": 1004,
+      "title": "How to Transfer Your Memory Between AI Tools"
+    },
+    {
+      "time": "18:10",
+      "seconds": 1090,
+      "title": "Power Prompts: \"Push Back\" and \"What Am I Missing?\""
+    },
+    {
+      "time": "24:10",
+      "seconds": 1450,
+      "title": "Skills That Matter in AI Era"
+    },
+    {
+      "time": "26:34",
+      "seconds": 1594,
+      "title": "How Hiring is Changing (30% Entry-Level Jobs at Risk)"
+    },
+    {
+      "time": "28:29",
+      "seconds": 1709,
+      "title": "Job Seekers: How to Stand Out with AI Skills"
+    },
+    {
+      "time": "30:44",
+      "seconds": 1844,
+      "title": "Why Now is the Best Time to Be an Entrepreneur"
+    },
+    {
+      "time": "35:23",
+      "seconds": 2123,
+      "title": "Future of Universities: Are They Going Away?"
+    },
+    {
+      "time": "37:29",
+      "seconds": 2249,
+      "title": "AI for Education and Healthcare in Nepal"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Look, even if the technology doesn't change from today, it can still wipe out 25% of entry-level white collar workforce. Conor Grennan is the chief AI architect and founder of AI Mindset, a training organization helping people to adopt AI into their daily life. Reinventing a process gets noticed way more than you just doing more work. New tools drop daily. You're using it a few times in a week and wondering, \"Am I already behind? How do you even keep up? And if I don't figure this out, my job is going to disappear.\" So, first of all, don't stress, right? Everybody's going crazy with, \"Oh, I just made this into this.\" Don't worry about that. To me, like a power user is using it across everything from home to work and back again and also are having long conversations because this is not Google. This is a companion. In this conversation, Conor reveals why we naturally misunderstand AI, how to transform AI from a search tool into your most powerful companion, how to navigate the changing job market, and what skills actually matter when nobody knows where the technology is headed. Conor, thank you so much for doing this. I'm so excited to be talking to you. You're teaching thousands of future business leaders AI. You're talking to huge companies, teaching their leadership. Can you introduce yourself in 60 seconds and tell me why people should be listening to you when it comes to AI?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Thank you so much for having me. It's really an honor to be on your show here. Yeah, so I'm Conor Grennan. I am chief AI architect over at NYU Stern School of Business here in New York City. And a lot of what I do is I run AI Mindset, which is a training consulting organization. We train big organizations and kind of like everybody but on a completely new way of thinking about AI. It's a behavioral framework rather than just, hey, here's a few features and a tool that everybody should use. And the idea is when you're actually sitting with people in the room, a lot of them are just using it, you know, a couple of times a week or a few times a month or just for a couple of different things for queries for just asking questions."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So that's exactly—we can end the podcast right now. That was it, right? Like the idea is that when they are using it well, two things are sort of going wrong with the statistics, I think. First of all, imagine if you were in a big room and you said, \"Hey, who here is using Excel?\" Every hand goes up, right? But if you say, \"Who's using it and knows at least 40 formulas and has done one half million dollar deal?\" Three investment banker hands go up. So, everybody's quote unquote using it. But who's actually really using it to change how they work and how they do everything?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "To me like a power user is using it across everything from home to work and back again and also using it like 30 times a day and also are having long conversations because as you said this is not Google, it's not Google search, this is a companion."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. When it comes to people who are listening to this and they're like, okay, I'm using it maybe a couple times a week and I feel like I'm falling behind because everyone around me is sharing like, oh, I just started using this new app and it transformed everything that I do. What should these people be doing now?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Yeah. So, first of all, don't stress, right? Everybody's going crazy with, \"Oh, I just made this into this.\" Don't worry about that. The most important thing people can do is just take whatever tool they're comfortable with. And by that, I mean ChatGPT or Gemini or Claude or Co-Pilot, whatever it is, it doesn't matter. And just start applying what they are doing using this tool. So people keep thinking—I think this is the problem why people were saving like the 10,000 prompt libraries and it didn't make any sense except FOMO basically."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "But what I would say is just take this and realize I have to do a certain amount of things during the day. Here are the things that I do either at home or at work. It almost doesn't matter. And what am I doing? I'm usually just trying to figure that out by myself or maybe going to Google every once in a while. And imagine you have sort of this magical brilliant fairy godmother next to you all the time that is just always at your fingertips. So don't worry about what's the latest tool or GPT 5.2, what does it do? You don't need 10 PhDs in your pocket. You just need some help every day."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what is like the use case that you think is the most transformative? So for me, for example, asking Gemini to read my email and put things into my calendar. That's already a game changer. I'm like, really? Finally, all the school emails, like everything, they just go into calendar and I automatically add my husband to everything. The best. Has there been a use case for you where you're like, \"Oh my god, just try this and your life is going to change. You will understand the power of AI.\""
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "I think for me it's really just sort of like brainstorming and having conversations. So I do a lot of writing and so a lot of what I do is I actually do a lot of teaching and writing, right? So both those things, AI has been really powerful because I'm a writer by background. So I think I'm a good writer, but the idea is it can always be better. So I just take what I've already written and just throw it into like for me it's Claude, maybe, or Copilot or Gemini or ChatGPT and say, just make this more readable. So I'm not asking AI to do a first draft of something, right? Because then it's hard to get the AI out of it. It's write your first draft first. Always, always, always. And then just put it in and say, \"Hey, how can I make this better? This is my audience. Like what am I doing wrong?\" And for me, it's make this more readable. What are the stats in here? That's number one. And the second use case for me, again as a sort of a creator and entrepreneur, is I'm just trying to figure out like what am I missing? Here's what I'm doing right now. But I use, you know, the thinking models essentially of these things. So you can kind of say like, \"Hey, think a little longer,\" or something like that. And it'll just give you—it's almost like having a co-CEO or a co-founder or a co-idea generator with you to say, \"You know what, Conor? I know you've been doing it this way this whole time, but have you thought that maybe that's flawed?\" And if you ask it to poke holes in your argument, it's unbelievably impactful."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And this is the mindset change, right? Because you're going from, \"Oh, I'm just asking questions,\" to \"I treat this as my career coach. I treat this as my co-writer.\" What is this mindset shift? What do you teach your students?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Yeah, the mindset shift is everything, right? And mindset's a little bit of a—I don't know, like I don't love the word even though my company is called AI Mindset—but it's because it feels like it's kind of like nothing. But what we mean is that this is a behavioral shift. And what I mean by that is when we're going and talking to big companies, I mean everybody from, you know, Walmart on down, right? The idea is every company tends to treat this as a digital transformation. And what a digital transformation is—you know very well, right?—it's you're taking a new product and replacing the old product, but that product kind of does the same thing, right? You had pencil and paper, now you're using Excel. Or you had fax machines, now you're using email. The thing about that is that you're just moving from one tool to another tool that does essentially the same thing. So that's what a digital transformation is. But imagine now we have something that does something wildly differently—it helps you think in a new way. Like I ask people all the time, \"Hey, what does ChatGPT replace?\" Because you can always say what something replaces, right? Like email replaced the fax machine, and the hammer replaced the rock. You can always say what something replaces."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But with ChatGPT there's no answer, right?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "It's a new way of thinking. It doesn't—some people say Google search, but it doesn't really replace just search. It replaces a million different things. So if that's the mindset where you're like, \"This isn't something that's replacing something, this is as if I have a new person next to me.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Right next to me."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Able to help me with anything. Like if you spill coffee on your shirt, it's going to help you. If you need to brainstorm, it's going to help you. If you need to process information, it's going to help you. If you need to figure out a 12-year-old's birthday party, it's going to help you. It's so broad that narrowing it down to use cases can get overly limiting. So it's that new way of thinking."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. I heard you say when you just write down things that you're doing, you can take a picture and send it to ChatGPT and like ask what are the tools that can speed it up? And something that I realized is really working for me right now—in terms of like even for early adopters—like memory is such a core thing, right? And every app, it remembers all your interactions with it. It remembers your goals, your passions, things you're trying to avoid. And so I started doing more strategic things with ChatGPT and Gemini. I like them both, and Perplexity. Like I'm trying to use all of them for different purposes. But what I realized is if I start talking about my strategic goals and where I'm headed, then every answer is targeted to that goal. And like when I'm asking even like about the hotel in New York, like ChatGPT would be like, \"Marina, you're trying to slow down. You're trying to this and that. You should choose this hotel because it's only 10 minutes away from the studio.\" Like starting—do you feel like for everyone who's just brand new to this and has used ChatGPT a couple times, would you say integrating AI, the best way to start integrating AI, would be talking to it about your strategic goals first and like describing who you are?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Absolutely. And I love that example that you just gave on the hotel. So let's break that one down for a second, right? So Google—or let's call it Google search, I don't mean Gemini here—you just say like, \"Hey, what's a good hotel that's generally near the studio, right?\" And so Google will sort of like look and it'll give you a deterministic response. It's like, \"Okay, these are all within three blocks.\" But imagine if you had a friend that really knew the area, right? And you're like, \"Conor, my best friend in the world, where should I stay?\" I know you know New York. I'd be like, \"You, Marina, knowing you, what I would say is that this hotel is great, but you walk out, it's a little seedy, and this other one's right next to Whole Foods, and I know you like to run every day or something like that, and this is actually right near a park. And also, you want to get to the studio a little early, but guess what? There's a subway that takes you there in 5 minutes. You don't have to be next door. You're going to want to be here. It's just going to inspire.\" Do you know what I mean? Like it's a wildly different result because of that. And that's the thing. People are using it just as a search—like a command, response, walk away. And one thing on that, our brains have trouble because it looks like a search engine and so your brain treats it like a search. In the same way, if we saw a babysitter right here in our podcast studio—which would be phenomenal, by the way—you'd automatically talk to it like a baby. You wouldn't think, \"How do I talk to this thing?\" Right? You just do it instinctively. But that's the thing. When your brain sees something like ChatGPT, it literally looks like a search engine. So your brain literally goes into that mode. Command, response, walk away. Which hotel should I use? Instead of, \"Hey, this is your friend that you're texting.\" And then instead of command, response, walk away, you'd never do that if you had Jeff Bezos in the room and you were asking him a question. You'd have a conversation."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And so that's what you have to overcome. That's why we call it a mindset. It's literally things in your brain you have to overcome. Yeah. It's a friend, or now for me it's more like a coach. Yes. Like a professional coach that has access to all the information. Something like Jeff Bezos was advised by his career coach and I just asked them."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "It's phenomenal. But that's the thing because again, that turns it into a conversation. But why is it hard? So I think that, you know, in terms of getting hyper practical here—because we can say all we want like, \"Ah, just talk to it like a person,\" but that's like saying just eat less and exercise. There's a reason why we can't just eat. Maybe you can. I have a hard time with eating less and exercise. But why do we have a problem with getting on a treadmill? We have a problem getting on a treadmill because our brain prioritizes quick rewards and conserving energy, and a treadmill doesn't do those things. So it actually has nothing to do with the treadmill or how many features a treadmill has. It has everything to do with why our brain stops us."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Same thing here."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "This is our research that we uncovered over two years. This is that it's not that people don't want to treat it like a human or don't see the value in it. It's that your brain is actually literally doing something where it's treating it like a search engine because of how neural pathways and automation work in your brain. And that's why we have to come up with new paradigms and frameworks to get people through that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So the tools change so rapidly, right? Like you were just saying, how do you keep up with that?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Okay, and I'm so glad you said that because, you know what I would say to people out there? You don't have to keep up with it, right? Like you kind of do because of this. I kind of do because of my world. But I mean, 99.9% of the population doesn't. Why? Because the things that just came out—like literally last night, right? Or you know, or the day before—whatever it is, it's Gemini, it's Claude 4.5, it's ChatGPT 5.2. The difference of what that gives you is not significant to 99.9% of the population, right? Because again, we don't need 14 PhDs in our pockets. You don't need anything like that. And so when I think about even something like Excel, even something like that, what I tell people is don't worry about the tool. The tool's going to be fine. In the same way, you know, you don't have to buy the best treadmill out there. You just have to put on running shoes and go outside. Now, that's hard because of how our brain functions and what our brain prioritizes just through our limbic system. But when I think about okay, practically speaking, let's say you have to do this task and you're thinking, \"Well, what's going to do that? Like I have to build a spreadsheet, or I have to build a slide deck. What's going to do best on that?\" What I would say to people, especially as a starting point but even if you feel like you're pretty confident, don't worry about the tool that's going to do it the best. Think about your process, right? So just to give you a quick example—if I could—so I was working with a CEO of a big bank here in New York City and he was asking me like, \"Well, can it help me determine whether we should open an office in Denver?\" I was like, \"Well, not really, because it's not a good answer machine. It's a good process machine.\" He's like, \"Oh, it's kind of what I need.\" I'm like, \"Okay, but hold on. Like, let's talk about how would you do that?\" So he's like, \"Well, here's the process I would take without AI.\" And every step of that process, there were probably 12. I was like, \"Okay, here's how AI helps you here. Here's how AI helps you here.\" So it's really about breaking down, rather than getting an answer. Think about your process and just have AI walk you through and help you through each step of that process."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You just basically upload the process into ChatGPT."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "That's exactly it. And the same thing like with slide decks. How long have people been whining about it? It doesn't create like amazing slide decks. It's like, \"Yeah, man. That's your job. That's why you get paid. Like, don't offload that.\" Instead, say, \"Hey, this is the message I'm trying to create. ChatGPT, help me. What should I put generally on every slide?\" It's like this. Okay. What do you think would be impactful as a visual? This kind of thing. And then go and build the slide. It's not like every gamma does beautiful presentations now. Like there's a ton. There's a ton of slide deck things, but ultimately it's your process that this is going to help."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What are your top three tools that you use?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Okay, so in switching order because these things always switch, I would say I just love Claude 4.5 Opus. I think it's a really powerful writer. I love Gemini 3.5 as just a deep, deep thinking tool. I think it's phenomenal. It also integrates with all my Google stuff best. ChatGPT, I use as my everyday. It's like it kind of replaced Google for me. Like if I just have a question—like, wait, what is this again? How long does an oak tree live? I don't know why I'm asking that, but like ChatGPT is my go-to. And then Copilot, like when I'm working with a lot of companies on Copilot, we do tons of Copilot integrations. Copilot's getting smarter and smarter and smarter. So those are kind of like—sorry, I gave you four, but those are the four that I'm kind of switching between every day."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But basically you're using the LLMs, right? Of the world, not like specific smaller apps."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "I really like that. And here's the reason why. And it's even the reason why I answer that way when people ask, because there's maybe a couple of tools that I use. But the problem is in the history of technology, we're always looking for sort of like the better thing, right? It's like, \"Well, so because I get asked all the time like, 'Well, what's better? You know, Claude or ChatGPT?' I'm like, 'It's not relevant.' It's sort of like saying, 'Well, is this $900 bottle of wine better than this $800?'\" It's like, \"I don't know. Like, I have no idea, because your taste buds only go up to like $80. Well, maybe not yours, but mine, right?\" So the point is it doesn't matter which one is better. It matters which one feels more comfortable and natural with what you're doing and where are you going. And so when we overindex on like the specific tool, like some of these, you know, slide deck tools—even though they're great—I would say get used to having this companion because that companion is going to get better. Sorry, one other thing I do a lot with law firms—with law firms, like, \"Well, what's the best legal tech?\" I'm like, \"I think they're all pretty good, but what if you just had a companion through ChatGPT or Gemini or Claude that was just helping you, and you could just talk to it?\" Then it's not about what treadmill is better. It's, \"Are you putting on running shoes and getting out there?\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I love that. And also, like, with LLMs getting better and better, you just keep coming back to them. It's yes. Is there a tip for, for example, ChatGPT knows a lot about my queries because I also use it as Google, and I feel like the reason is because the output is so well structured—compared even to Gemini. I just love when it gives me bullet points and bold text and emojis. It's just the visual part. I think they nailed it. How do you transfer from—you say Claude is amazing now, I want to try it for writing. How do you transfer all the knowledge from ChatGPT to Claude?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "I think these tools are so good now that you can actually transfer pretty easily. So now I have kind of like co-CEOs for AI Mindset in Claude, Gemini, and ChatGPT. And the way I did that was ChatGPT essentially knew everything about me, right? Because you talk about the memory—it's so powerful. So what I asked ChatGPT was, \"Listen, create like a 10-page document on like everything you know about me. Like really distilling it down to the essentials. Like what do I like? How do I think? What do I like in outputs? All that kind of stuff.\" And then I just take that and I toss it into Gemini, and Gemini gets it right away. Claude gets it right away. So you can almost transfer your memory over to each single one. And that is the really powerful thing to me."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. Do you have any queries that people would want to use, especially towards the end of the year? You know, I was just interviewing the founder of Opus Clip, and he told me this query that he uses. He asked ChatGPT or whatever—I think he was using Gemini—if you could give me advice six months ago based on my queries in the past six months, what would that advice be? And I asked my ChatGPT, and my ChatGPT is like, \"Marina, you're trying to control everything in your life. Like you're trying to control your kids, your dog, your business. You need to chill.\" And that was like, \"Yeah.\""
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Wow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Really. Yeah. And like, let's build a strategy for 2026 based on this. Do you have anything like this that's super powerful because your LLM has the memory about you?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Yeah. When you tell your large language model—I say it almost in every prompt just to make sure. I'm like, \"Push back, push back, push back,\" because it pushes back. And okay, I'm anthropomorphizing, but it pushes back. Don't you find it kind of pushes back lovingly and empathetically? It's probably because it's not saying like, \"Marina, you idiot.\" It's probably saying like, \"Marina, you're doing a lot of stuff right.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's always the nicest person. \"Marina, you're so amazing, doing so much.\" Everybody's like, \"The syncopathy!\" Don't I'm like, \"That's—I love that part.\" You're now used to it. You're like, you expect everyone to treat you that way. Oh my god."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "They should. We can learn a lot from AI, I think. But it's that empathetic behavior. Obviously it's not intrinsically empathetic, but it is empathetic behavior. And so for me, the things that I put in there are a couple of things. First of all, \"Feel free to push back, because I'm not going to get defensive, and I know it's not sort of like a dead thing, but it's going to really help me.\" So other things I use all the time is just like, \"Just make this more readable. How am I thinking?\" And then the biggest thing—I did this in—so I just did a MasterClass if you know the brand MasterClass. So the thing I was doing in MasterClass a lot was this idea of never stop, right? Because why do we stop working? We stop working because I cannot bear to do another draft, or I can't bear to think through this one more time. But you don't have to. You can just say, \"How would I make this better? What am I missing? What am I missing?\" like five times in a row. It's not going to get worse. Or as soon as it does, you're like, \"Okay, well, come back to this, come back to this.\" So I would say the biggest things are, first of all, always create your first draft and have it edit, make it more readable. But the biggest thing—I love Opus Clips by the way. I love that you interviewed him. Towards the end of the year, remember that your brain instinctively will say, \"Conor, don't do any more work. You're exhausted. That's instinctive.\" You have to retrain it to say, \"Just do this again. What's better? What am I missing? What am I missing?\" That's the real power."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. When it comes to misinformation, right? Because we go to AI for so many questions, and I notice sometimes that if I'm just, especially when I'm in a single thread—like doing all my queries—and then I ask like a therapy question, and the answer is like, \"Oh no.\" I would never do that. How do you deal with that? Because I think Mustafa mentioned that 60% of Copilot AI queries are medical, and they like they connected Harvard database to make sure the answers are correct. But do you ever go to ChatGPT for, I don't know, financial advice? \"How should I restructure my portfolio?\" Would you trust AI with that?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "I think one of the mistakes people make, especially around hallucinations, and especially around, \"Well, you know, AI—I'm not going to trust it because it gets it wrong.\"—Like humans hallucinate too, right? Humans get things wrong too. So what we always say, or I always say sort of on our team, when we're working with these organizations, is it's not a calculator. Like if your calculator gave you a wrong answer, you'd throw it—it'd be like smoking and burning up, right? You'd throw it away. But if a person came on and they were brilliant—they didn't know much about your company, but they were absolutely brilliant—you could trust—maybe the wrong word—but they were clearly doing amazing work product. You still wouldn't just say like, \"Hey, do this task for me,\" and then, you know, go off and do it like, no. You'd refine it with them. You'd go back and forth with them, etc. You'd sort of like teach them a little bit. You'd say like, \"I like that, but I don't like that.\" So what is the difference here? The difference is it's really acting like a human. That's number one. So if a human gives you medical advice, if your friend is like, \"Oh, that, you know, burn on your arm looks like this.\" All right. Is that person a dermatologist or are they not a dermatologist? And so if they're not and it's important, I'm going to fact-check it. The example sometimes I use is that a lot of things that work, you don't have to have exact precision. A lot of it's just brainstorming. \"How should I think about this?\" But if you are going to go and meet, like, you know, the chief marketing officer at Morgan Stanley and you want some conversation starters, and your friend's like, \"I think I read somewhere that, you know, he's really into like balloon animals or something like that.\" You'd be like, \"Oh, I'll bring all my balloon animals.\" Right? You better get that right. Otherwise, like, you are screwed."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "So if you need accuracy, double-check it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you double-check? You just copy the answer from ChatGPT to Claude and ask it to double-check?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "I do, but I don't even put it into another AI. If I really need something that I need to be right, I go to Google search. I go to the source, like, or I ask somebody or something like that. Like if you need something to be absolutely precise, like you're fixing a thing on an airplane—like holding the propeller—to the, I don't know why you or I would be doing that—but like, but if it's that, you know, that I'm going to go to the actual manual. Well, I'm never going to rely on ChatGPT for something critical."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, that makes sense. Do you think, with all of that, like we're going to AI for all our queries, do you think we're losing memorization, critical skills?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Okay. Um, here's the thing. You have kids, I think, right? Like I have kids. They're in high school, they're a little further than yours. Um, and we do a lot with education. My son, who's about 16, about to be 17, he and I do a lot of like teaching together. We've taught at some amazing places and done keynotes together around this because I think people keep expecting him to say, \"Hey, everybody needs to use [AI].\" He's a junior in high school. \"Everybody needs to use AI.\" And in a way, he's right. In a way, I'm right too when I say that. In another way, I mean, it does—don't you think? Like it kind of can really destroy critical thinking. I absolutely believe that. And that's hard because how do you be such—how are you such an optimist about something that can destroy critical thinking? I guess what I would say is this technology is here, and a lot of technologies have, you know, done away with what we would think are critical thinking skills and things like that. This is a new one. So if people are only using it to just get answers, it's sort of like, remember like CliffsNotes and SparkNotes stuff like that? There's two ways to use that, right? Either, \"Hey, like, you know, I don't have time to read Hamlet. I'm just going to use this,\" but then that really diminishes your critical thinking, which is going to matter when you get out into the working world and everything else. School matters for a reason. Or you use it as, \"Hey, what's a new way of looking at this? What am I not seeing? Like, what didn't I understand that scene three, act four in this?\" And it's an amazing tool then, right? Now your critical thinking is getting even deeper and deeper and deeper. It's a personalized learning assistant. So it can help. It's really up to the individual. So it gets the whole question of how do we switch, how do we, like, change education. But I think—it's not just, does it kill critical thinking or does it not? But I think you're right. It can. So how do we prevent that?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you have two kids. What are you telling them about the future of the world powered by AI? What should they be learning, and what skills are becoming obsolete?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "I mean, you and I live in this world, right? And we're watching it every day, and it is very hard to tell what's going away and what's staying. You can kind of tell in the short term, but we could never have predicted where we are right now either. So it's easy to say to people, \"Oh, we need like adaptability. We need curiosity.\" But it drives me a little nuts when people say that because what does that mean? Like we were talking before we came on air, right, about like practical, right? Practical is always more interesting. And I hate when people are just like, \"Oh, you know, just be more curious.\" I'm like, \"How do you tell somebody to be more curious?\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what do you tell them?"
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "What I tell, you know, our kids, and what I do at scale—tens of thousands of people in one single organization—which is it doesn't matter if you're curious or not. Like you can behave in a curious way. And so what does that look like? Well, let's give you some steps. First, understand sort of, again, like what we do—which is like, what is the brain malfunctioning here? Like what are these three paradigms? What are these steps? All that kind of stuff. And take them through what it's not and what it is. And then say, \"Just lean into what you are passionate about.\" And I don't mean that as a touchy-feely kind of like, \"Oh, do what you love,\" because I actually don't believe that. I come from a business school. We don't tend to work in that way. But what I do think is that no matter what you do, AI can enhance it and come up with a new way of doing this. This is what's so interesting about this technology. The history of technology has been the creators of the technology or the service have always defined like what the role is like. If you invented the computer, you know that we need silicon chips and"
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "lVV0HInr0ZY",
+      "thumbnail": "https://img.youtube.com/vi/lVV0HInr0ZY/hqdefault.jpg",
+      "title": "$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO"
+    },
+    {
+      "videoId": "JFilKfL7_9A",
+      "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg",
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus"
+    },
+    {
+      "videoId": "kvlMhVz-DeM",
+      "thumbnail": "https://img.youtube.com/vi/kvlMhVz-DeM/hqdefault.jpg",
+      "title": "His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)"
+    },
+    {
+      "videoId": "Ab1FyDL4HEY",
+      "thumbnail": "https://img.youtube.com/vi/Ab1FyDL4HEY/hqdefault.jpg",
+      "title": "High-income AI business ideas for 2025 (no coding, no budget)"
+    }
+  ],
+  "topics": []
+}

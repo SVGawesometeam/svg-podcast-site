@@ -1,0 +1,386 @@
+{
+  "videoId": "PR__eFQsnhg",
+  "title": "GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke",
+  "format": "interview",
+  "guestName": "Thomas Dohmke",
+  "guestTitle": "CEO, GitHub",
+  "aboutGuest": "Thomas Dohmke is the CEO of GitHub, the world's largest software development platform with over 100 million users. He led the company's $7.5 billion integration with Microsoft and oversaw the launch of GitHub Copilot, which became the most widely adopted AI coding tool in history. Dohmke is a leading voice on the future of software development, AI agents, and developer education.",
+  "publishedAt": "2025-06-27T16:55:00.000Z",
+  "duration": "22 MIN",
+  "coverArt": "https://img.youtube.com/vi/PR__eFQsnhg/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/PR__eFQsnhg/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews GitHub CEO Thomas Dohmke at VivaTech in Paris about the future of software development in the age of AI. Dohmke explains how vibe coding works, why coding skills remain essential even as AI handles more of the work, and why he believes there will be more developers in five years, not fewer. They also discuss AGI timelines, skills kids should learn, and the top AI tools developers should be using today.",
+  "keyTakeaways": [
+    "Vibe coding lets anyone interact with AI agents to build software without reviewing every line of code, but complexity hits a ceiling fast — scaling a site for traffic like a Black Friday rush still requires a professional developer.",
+    "Having only AI-assisted, no-code skills will not differentiate a business, because if anyone can prompt the same product in five minutes, there is no competitive advantage and no path to a billion-dollar company.",
+    "Dohmke predicts far more developers in five years, not fewer, because AI dramatically lowers the barrier to entry and makes learning to code more accessible, especially for kids.",
+    "The smartest companies will hire more developers, not fewer, using AI to build 10x to 100x more complex products and widen the gap between themselves and competitors who rely solely on no-code tools.",
+    "AI agents are expected to write roughly 90% of code in the near future, but human developers will remain essential for directing, validating, and scaling what those agents produce."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser – future of coding"
+    },
+    {
+      "time": "00:53",
+      "seconds": 53,
+      "title": "Vibe coding – why it changes everything"
+    },
+    {
+      "time": "01:53",
+      "seconds": 113,
+      "title": "How complex can sites get"
+    },
+    {
+      "time": "03:35",
+      "seconds": 215,
+      "title": "No developers in 2 years?"
+    },
+    {
+      "time": "04:48",
+      "seconds": 288,
+      "title": "Prompt better – make AI your co-founder"
+    },
+    {
+      "time": "06:08",
+      "seconds": 368,
+      "title": "The future of developers"
+    },
+    {
+      "time": "07:30",
+      "seconds": 450,
+      "title": "The smartest companies will be hiring more developers, not less"
+    },
+    {
+      "time": "08:25",
+      "seconds": 505,
+      "title": "10x teams – but who's buying?"
+    },
+    {
+      "time": "09:18",
+      "seconds": 558,
+      "title": "90% of code by AI agents?"
+    },
+    {
+      "time": "09:48",
+      "seconds": 588,
+      "title": "Big tech halts hiring – what's next?"
+    },
+    {
+      "time": "11:02",
+      "seconds": 662,
+      "title": "Learning to code? why teens have the edge"
+    },
+    {
+      "time": "12:28",
+      "seconds": 748,
+      "title": "Best platform to start vibe coding"
+    },
+    {
+      "time": "14:22",
+      "seconds": 862,
+      "title": "AI vs you – who has better ideas?"
+    },
+    {
+      "time": "15:03",
+      "seconds": 903,
+      "title": "AGI by 2030?"
+    },
+    {
+      "time": "15:48",
+      "seconds": 948,
+      "title": "Why AI needs to be more creative"
+    },
+    {
+      "time": "17:10",
+      "seconds": 1030,
+      "title": "Skills every kid should learn"
+    },
+    {
+      "time": "18:05",
+      "seconds": 1085,
+      "title": "Best time to be a developer"
+    },
+    {
+      "time": "19:10",
+      "seconds": 1150,
+      "title": "Scared of AI taking jobs? listen to this"
+    },
+    {
+      "time": "20:27",
+      "seconds": 1227,
+      "title": "Top 3 AI tools you should try"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would you say to coders who are learning how to code right now?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "This is Thomas, CEO of GitHub, the world's largest platform for developers with over 100 million users. Under his leadership, GitHub Copilot became the most widely adopted AI coding tool in history."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We see big companies put a stop on hiring in two years. Do you think I wouldn't need a developer? The idea that AI without any coding skills let you just build a billion dollar business is mistaken because if that would be the case, everyone would do it. He led GitHub's $7.5 billion integration with Microsoft. Now he's shaping the future of coding itself. So you're not scared. The dream of software development was always that I can take the idea that I have in my head on a Sunday morning and by the evening I have the app up and running on my phone. Hey guys, welcome to Silicon Valley Girl. We're here at Viva Tech in Paris and I have Thomas, the CEO of GitHub. I am so excited to talk to you about what's going on in coding. First of all, let's define vibe coding. For everyone who's heard this term and they're like, \"What's what's going on? What's happening?\""
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Oo, that's a tough question to start with. I think the loosest interpretation from my side is that vibe coding means you open your IDE—you know, like Copilot or Cursor, insert any of these—and you go into the agent mode and you give it a task to do and then you're just following along with what the agent proposes to you and you run the commands. You're mostly focused on interacting with the agent and not so much on what the code is actually doing. You're not reviewing the code all the time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you don't have to learn how to code, 'cause I tried GitHub Copilot. I was just chatting with it. I'm like, \"Create this website, do this,\" and then it just tells me where to put the code so it starts working. So how complicated can the website get with vibe coding? Can I build something that has a database or is it just like a landing page or a very simple app?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "My rule of thumb would be you can get as far as you're having the patience to keep prompting. Because, as you said, if you don't understand what the agent is actually writing, what the code looks like, well then your only way of modifying the functionality is by figuring out how to prompt it. It almost becomes a quiz or like a game, right? Like, where you're trying to say, \"Okay, so hm, let me try a different approach.\""
+    },
+    {
+      "speaker": null,
+      "text": "I like to compare this to image models, right? You start with a simple prompt, you render an image of Paris and then almost certainly you get something which isn't exactly what you expected. And then you start rewriting it and for some time there were like tricks to do that in Stable Diffusion and Midjourney by doing things like \"trending on ArtStation,\" and then you got closer to what you wanted. But at some point you either run into a direction where you can't keep going anymore or you just take it and move it into Photoshop or in the world of Copilot into VS Code and now you have to start learning how to code."
+    },
+    {
+      "speaker": null,
+      "text": "So I think you can build a web page, you can build authentication, you can build settings pages and things like that, but you're ultimately always going to reach a point where the complexity is so deep that you have to understand what the code is actually doing or you're building something and it doesn't scale—it's super slow. And now figuring out a prompt on how to make it fast, or let's say it's a Shopify shop and make it scale for Black Friday—that's when you have to be a professional developer, at least for now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Right now we're using code to do basic things. In two years, do you think I wouldn't need a developer to build a billion dollar company with just vibe coding, or are we still too far away from it?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I think you have to be a developer to be in the tech business because what you can do with just the help of AI without coding, everybody else can do as well. And as such, your business isn't really differentiated anymore from other businesses, right? Like, if I can just prompt it in five minutes and build it myself, what do I need a SaaS service that I pay a subscription for? And so I think startups will build 10x, 100x more complex things than they're doing today with the help of AI, and as such, differentiating from those that are just vibing it."
+    },
+    {
+      "speaker": null,
+      "text": "Now, there's lots of businesses where you don't have to code at all. You know, like your YouTube channel, and there's many other YouTube channels where you can build out a brand and then hire a team to do a lot of these things. But I think the idea that AI without any coding skills let you just build a billion dollar business is mistaken because if that would be the case, everyone would do it and then everybody has a billion dollar company, which doesn't work, right? Like, who's paying the money?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I know a lot of you guys who are watching this are dreaming of becoming tech founders. And with new AI, it's so much easier to build an app or to put your idea into action within 24 hours. And it's becoming crystal clear that AI is not just a tool. It can actually become your co-founder, but the key is how you prompt it. How do you make it think like you? Because the better you are at talking to it, the more powerful it becomes. Do you think we're going to have less or more developers in five years?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I think we're going to have way more developers because it's so much easier to learn it. You know, we talked about our kids earlier. Kids can just get into this by using Copilot and then say, \"Hey, how do I build a game?\" Then they see games when they go to school, when they talk to their friends, when they go to a ski lodge and they have a Nintendo corner. And so naturally, kids when they explore these technologies, they want to learn it themselves."
+    },
+    {
+      "speaker": null,
+      "text": "And so giving them an agent, a chat tool on the side to say, \"Hey, you know, this is how you can learn coding. This is how you can fix your bugs. This is how you can unblock yourself, right?\" The most frustrating thing when you're learning something is you're stuck somewhere and then you have nobody at home, in your family or friends, that can help you with that because they're all nontechnical. So that's when we're saying AI is democratizing access. That's what we mean. Everyone who wants to learn it can learn it."
+    },
+    {
+      "speaker": null,
+      "text": "Now, that doesn't mean everybody who wants to learn coding then becomes a professional software developer. I think there's going to be a much bigger range between consumer developers that build their own micro apps, personalized things—you know, the trip to Paris app to figure out, \"This is the places we want to see, this is all the photos we took,\" and it's only valuable to you and your family or you and your friends—all the way to the professional developers that build all these AI systems and agents that we see here on the show floor today, which I think is still going to be a profession. And those companies that are the smartest are going to hire more developers because if you 10x a single developer, then 10 developers can do 100x."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It feels like we're moving in with development like what websites used to be 10 years ago when suddenly there are tools like Squarespace and everyone starts having a website. So they need designers who are not too technical and who have taste. So it's something like this, right? When everyone has an ability to code an app, they will still need someone to like take care of it."
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Correct. And you wouldn't start a business today where you're saying, \"I'm building apps or web pages for small businesses,\" right? Like, every VC would tell you that's not differentiated, there's no moat. You know, that's not the next billion dollar business. That's why I'm thinking, you know, AI will generate so much bigger ideas that the same size of team can implement. Or as you grow your team, you can do even more than those that are just using AI for cost savings."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's interesting. When we talk about this, when I tell this idea to my followers—like, \"Hey, every team can become a lot bigger. They can develop more.\"—they're like, \"But who's going to buy? We're still going to have the same amount of people.\" What do you think about that?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I think it's temporary, a temporary effect. Right now, that's the natural conclusion for the short term. We keep things stable and we're trying to figure out how the market develops. But very quickly, I think we're going to see people that say, \"Well, wait a second. If I have one more productive developer, why wouldn't I hire another one and another one?\""
+    },
+    {
+      "speaker": null,
+      "text": "And in fact, you know, AI has already added more work to the backlogs, right? Like, I haven't seen companies saying, \"Well, we're draining all our backlog and we have almost nothing left.\" And soon enough, AI is so powerful that all the ideas are implemented and we're just sitting around doing nothing. I think the reality is AI—all these models, all these agents, the path to AGI—ultimately means that we have more work to do."
+    },
+    {
+      "speaker": null,
+      "text": "I said this morning that I believe 90% of all code is going to be written by agents. And that sounds like we take away 90% of the work from developers and they're only left with 10%. But if the total amount of code is growing by 10x, right now the agent has 9x and the developer still has their 1x that they had before. And so you can keep going with that logic and see that ultimately those companies are successful that use AI to accelerate, not to cut costs."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But at the same time, we see big companies put a stop on hiring and they say, like, \"Hey, you need your employees, you need to figure out how to do this with AI first before we hire someone.\" What do you think about that?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I think it's a reflection of a fast changing market and a lot of uncertainty both in the political environment and in the tech environment of where things are going. The natural tendency is to go slower a little bit. And you may decide that some people are no longer the right folks in your company for that kind of environment where things are moving incredibly fast, where you're almost forced to use AI to keep up with the competition."
+    },
+    {
+      "speaker": null,
+      "text": "But the realization I think that many companies had in the last few months is that if we have employees that say, \"We don't want to use AI,\" that ultimately means we as a company are no longer set up for success because our competitors are all using AI or they're mandating AI. And I think this is the transition phase we're going through. But I believe very quickly we're going to see an acceleration, and you already see things like Mark Zuckerberg getting the Scale AI team. I think that shows where Mark's head is and where he believes the future is going to be. He's willing to invest into it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. What would you say to coders who are learning how to code right now? What should they focus on to be able to get a job?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Learn where they are. I think the biggest upside that young people have is that they are adopting new technology much faster than those that are in their day-to-day, right? Like, when you're in a day-to-day job, you have so much work, you have all your meetings, all the emails, all the things you have to do, that you barely have any time to learn. While young people that are still in school or in college have a lot of time to learn. And often, you know, young folks are much more open-minded to explore these and adopt these new things."
+    },
+    {
+      "speaker": null,
+      "text": "It's, you know, when you go to your parents and you're like, \"Oh, you're old because you're listening to all this music from the past or you're still watching linear TV\" and those kind of things. And I think the next generation of developers will grow up with AI. They will in the same way that Gen Z has grown up with smartphones. While in my generation, I didn't have a smartphone until I was like 20. Well, I didn't have a cell phone until I was like early 20s and then I didn't have a smartphone until I was already in my 30s, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And so I think we're going to see a new generation of software developers that for them using a set of agents is just going to be natural. They're going to have that when they're writing an email. They're going to have that when they're planning a trip. They're going to have that on the trip, and of course in their work environment across the coding skills but everything else as well in professional life."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think everyone should try vibe coding today or you think it's too early for everyone?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I think it's about the right time. You know, there's enough tools and enough AI systems like ChatGPT and Claude that have some form of vibe coding built in. OpenAI launched Codex, which lets you do some of those things within the OpenAI environment or ChatGPT environment. But you're right, there's some tools where you still have to know where to put it and what a GitHub repository even is or what GitHub is for that matter."
+    },
+    {
+      "speaker": null,
+      "text": "And then there's technologies like Vercel with Zero or Lovable Bold where you can actually just get started without any technical background. What you also see if you follow Reddit threads of people reporting on their experience is that you will get stuck, right? That's the nature of this. Either you're not asking deep enough or not giving it enough problems, or then you're probably getting it done but it looks crappy or it's very simple or you're going really to the edge of the technology and then you're going to get stuck if you don't know how to go into the source code and make modifications."
+    },
+    {
+      "speaker": null,
+      "text": "But yeah, I think Manos is the other one. Manos, who is this Chinese startup that brought this agent to market where you can do vibe coding in the sense of a consumer specifies what they want to build and then it builds you this web page or web app right in the chat tool. So you're never even launching anything or deploying it or any of the developer activities. You're just asking it to build you a tracking app for your kid's allowance or the trip to Tokyo or those kind of personalized apps that are only useful to you and your family—your workout tracker that's only useful for you. And where in the past you would have downloaded an app from the app store, now you're using such an AI system."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's fascinating. Do you think we're going to the world where AI can generate better ideas than us?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I think AI can help us generate better ideas because AI is also incredibly powerful for your own reflections. You know, putting your notes into an AI system like ChatGPT and say, \"Hey, what am I missing? Or what else could I be thinking about? Or if you take this and combine it with something else, what could come out of this?\""
+    },
+    {
+      "speaker": null,
+      "text": "So I think the reasoning capabilities, the chain of thought that these AI systems have, combined with your own ideas, with your triggers, you know, with the things that keep you up at night because you're so excited about this—I think those still come from the human. But the AI is going to help us explore those, to put them into a pitch deck or a presentation."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For the next five years, let's talk about AGI. Do you think it's going to be 2030?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Depends on how you define AGI. So I have to define AGI for you? I don't know. I think the arguments are on both sides. On the one side, you could say the models that are powering these AI agents today are already more intelligent than what you and I could do. Certainly in terms of how much knowledge they have stored, how they can reason over this knowledge, how they can even summarize things in such a short amount of time—you couldn't read a 500-page book and summarize it. So they are more intelligent or more capable and they've also seen all of the ideas but they're not creative."
+    },
+    {
+      "speaker": null,
+      "text": "I think emotion plays a big role in creativity, you know, and they have no emotion. Even Mr. Data in Star Trek had no emotion either. And they're not sentient. And I think if you define AGI or ASI as that, I don't know how long it will take because we haven't seen any research on how you can implement emotion within an AI system. And so we're going to be on a journey."
+    },
+    {
+      "speaker": null,
+      "text": "You know, Waymo in San Francisco is fascinating with what it is. Well, now it's coming to more cities. Self-driving cars, you know, feel like AGIs. I think vibe coding to some degree feels like AGI. But if you define AGI as needing this human instinct and the human collaboration and the idea in the morning of doing something completely new, I don't know how far away we are from this. It's certainly not tomorrow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you're not scared at all. I'm excited. What's your level of concern?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I'm not scared at all. Like, you know, as long as I still need to remind my kids three times to empty the dishwasher, as long as there is no robot that can actually do that—not even a prototype—it's coming soon still. Like, there are already robots walking in Silicon Valley, but like, they cannot really take a plate out of the dishwasher."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm seeing the progress, how fast it happens. And I'm not even—like, what do you teach your kids? What do you tell them like, \"What are they going to be when they grow up? What are the skills they need to acquire now?\""
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I grew up in East Germany before the wall fell, and I was 12 years old when Germany got reunited. And I tell them, \"Look, you know, you're growing up in one of the most exciting times that I have seen in my life, and there's so much technology around you. You can build a company today not only out of a garage in Silicon Valley. You can build a company out of a garage anywhere in the world because all you need is a good internet connection, a laptop or even a cell phone, and a developer and a bit of vibe coding.\""
+    },
+    {
+      "speaker": null,
+      "text": "Well, you can become a developer if you want to. Everybody can now become a developer. They don't have to get access to books and magazines and a computer club that's only in their town or what have you. And so I think from a software developer perspective, it is the most exciting time that developers have lived in because the dream of software development was always that I can take the idea that I have in my head on a Sunday morning and by the evening I have the app up and running on my phone, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And the reality today is I have the idea and then I'm trying to figure out how do I take this problem and convert it into source code and libraries, and how do I make rounded corners on an iPhone app and those things? And by the time it's night, I haven't done anything. I have basically bootstrapped the project and set up a few things and that was it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically, what are you teaching your kids? Entrepreneurship?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "I'm teaching them to explore the world. I'm teaching them how to solve problems on their own. I'm teaching them, or they're teaching themselves, how to use AI. And I think, you know, be curious and open-minded."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I feel like you're one of the most positive people I've interviewed about AI because a lot of people are like, \"I'm not sure, probably 90% of the jobs are going to be gone.\" But you're—and I'm German and you're German. So it gives me hope. What would be like the last advice you would give to people who are watching and who still have fear that AI is going to take their job?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Well, I think the best way to work around the fear that you have around your job is to adopt the technology, learn about it, learn how to use it, to upskill yourself into whatever the next job is going to be. You know, if you fear that your job is going to be replaced because AI can do it, then the best path out of that is to become the expert in using this AI system because I think there's always going to be a human that orchestrates, you know, is the conductor of all these AI agents."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, so you don't see the future where AI spots the problem, generates solution codes..."
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Well, look, you know, there's reasons why we do responsible AI, why we test every model, why there's security guard rails, red teaming—all these teams trying to hack the model, figuring out what the system prompt is, doing prompt injection. That is certainly things that we need to work on in the same way that we need to work on software security and traffic safety. And every technology that we have in life has risks and rewards. And I think we should focus on the rewards when we want to predict what the future is, and we should work on the risks on our day-to-day and make sure that the risks don't materialize."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, so your favorite—let's do top three favorite AI apps."
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Well, of course, Copilot is my number one as we're working on this."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You use it internally as well to code the code?"
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Yeah, everybody at GitHub—not only the coders—everybody is using Copilot. So product managers, designers, HR, legal, finance, everybody is using GitHub. That's the nature of GitHub—that everybody is on GitHub and is on Copilot."
+    },
+    {
+      "speaker": null,
+      "text": "I really love, you know, ChatGPT for like my day-to-day, you know, other questions. I have it on my Mac with Control Space and it just opens the toolbar. And I think more and more it's replacing the typical internet search."
+    },
+    {
+      "speaker": null,
+      "text": "And what's the third AI system that's my favorite? I have Granola for example on my app to transcribe calls. So that comes to mind. And I find that really useful for example for interviews. I think it's important to call it out to the person you're talking to that you're transcribing the call and having AI write a summary. But it's those things. And then obviously, you know, as I'm not very creative in terms of painting, I'm having one of these models create an image for me for PowerPoint presentations. I find that super useful as well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's awesome. Thank you so much for being so positive about the future for this conversation."
+    },
+    {
+      "speaker": "Thomas Dohmke",
+      "text": "Thank you."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "Q66gsBJnKKQ",
+      "thumbnail": "https://img.youtube.com/vi/Q66gsBJnKKQ/hqdefault.jpg",
+      "title": "Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger"
+    },
+    {
+      "videoId": "ZW87Peh3tWM",
+      "thumbnail": "https://img.youtube.com/vi/ZW87Peh3tWM/hqdefault.jpg",
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward"
+    },
+    {
+      "videoId": "U7PcyE0p54s",
+      "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/hqdefault.jpg",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity"
+    },
+    {
+      "videoId": "NPiKEwTSwn4",
+      "thumbnail": "https://img.youtube.com/vi/NPiKEwTSwn4/hqdefault.jpg",
+      "title": "Google Search VP on How AI Search Really Works | Robby Stein"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000714865301",
+    "spotify": "https://open.spotify.com/episode/4miuPQzUH8NiZ6kdcZB7p7"
+  }
+}

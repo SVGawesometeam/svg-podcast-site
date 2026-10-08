@@ -1,0 +1,437 @@
+{
+  "videoId": "xiJsfvaxzRY",
+  "title": "$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months | Luana Lopes Lara",
+  "format": "interview",
+  "guestName": "Luana Lopes Lara",
+  "guestTitle": "Co-Founder of Kalshi",
+  "aboutGuest": "Luana Lopes Lara is co-founder of Kalshi, a prediction market platform that reached a $22 billion valuation in May 2024 after raising $1 billion. Forbes recognizes her as the world's youngest self-made woman billionaire. She is an immigrant entrepreneur whose platform allows users to trade on real-world outcomes across AI, politics, sports, and economics, generating critical forecasting signals through market prices.",
+  "publishedAt": "2026-08-11T13:00:01.000Z",
+  "duration": "34 MIN",
+  "coverArt": "https://img.youtube.com/vi/xiJsfvaxzRY/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/xiJsfvaxzRY/maxresdefault.jpg",
+  "summary": "Luana Lopes Lara, co-founder of prediction market platform Kalshi valued at $22 billion, shares insights from betting data that reveals how real money predicts future outcomes. The conversation centers on what Kalshi's markets indicate about major shifts coming in 2026: AI is currently betting at 73% as the number one reason for tech job cuts, marking a significant shift from a year ago when users were primarily interested in AI capabilities rather than impact on employment. Beyond employment concerns, Kalshi users are increasingly hedging risks through prediction markets—from small businesses protecting against liability (like the Upper East Side bar betting against Knicks wins to cover promotions) to individuals considering protection against AI-related job loss. Lara discusses how even with modest trading volume of 5,000 contracts, markets converge to calibrated, trustworthy numbers, and explains that roughly 70% of Kalshi users never actually place trades but use the platform purely for forecasting signals.",
+  "keyTakeaways": [
+    "AI job displacement is the dominant concern — 73% of trades in Kalshi's monthly tech layoff markets predict AI will be the top reason for job cuts, a significant shift from a year ago when interest centered on AI capabilities rather than real-world impact",
+    "Prediction markets converge to accurate prices quickly — even with just 5,000 in trading volume, markets show calibration to reliable forecasts, making them trustworthy signals despite seeming niche",
+    "Hedging adoption is growing beyond tech investors — small businesses, bars, and individuals in hurricane-prone regions are increasingly using prediction markets for insurance-like protection against specific risks",
+    "People's betting behavior reveals sentiment shifts — a year ago Kalshi users requested markets about AI capabilities (which model wins, can AI do X); now 70% of requests focus on employment impact and societal effects, signaling a psychological shift from excitement to skepticism",
+    "The broader workforce impact is what actually changes by end of 2026 — while other factors matter, work itself is the variable most likely to shift materially for ordinary people according to what Kalshi users are positioning their money on"
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "1:16",
+      "seconds": 76,
+      "title": "The market Luana's team watches most right now"
+    },
+    {
+      "time": "3:04",
+      "seconds": 184,
+      "title": "What people ask to bet on now vs a year ago"
+    },
+    {
+      "time": "4:05",
+      "seconds": 245,
+      "title": "The layoffs market and why 73% was a number you could trust"
+    },
+    {
+      "time": "6:20",
+      "seconds": 380,
+      "title": "How a New York bar used a market as insurance"
+    },
+    {
+      "time": "7:34",
+      "seconds": 454,
+      "title": "Why 70% of Kalshi users never place a trade"
+    },
+    {
+      "time": "8:50",
+      "seconds": 530,
+      "title": "One number for the sentiment of a whole country"
+    },
+    {
+      "time": "11:32",
+      "seconds": 692,
+      "title": "What actually changes for you by the end of this year"
+    },
+    {
+      "time": "13:10",
+      "seconds": 790,
+      "title": "Will 2026 feel lighter or heavier financially?"
+    },
+    {
+      "time": "14:00",
+      "seconds": 840,
+      "title": "Which jobs get safer from here"
+    },
+    {
+      "time": "14:26",
+      "seconds": 866,
+      "title": "The 1% chance on Kalshi that came true anyway"
+    },
+    {
+      "time": "16:51",
+      "seconds": 1011,
+      "title": "How agents changed the way she runs 170 people"
+    },
+    {
+      "time": "18:22",
+      "seconds": 1102,
+      "title": "The weekly planning agent you could copy tomorrow"
+    },
+    {
+      "time": "19:57",
+      "seconds": 1197,
+      "title": "Why she put engineers inside design and legal"
+    },
+    {
+      "time": "23:27",
+      "seconds": 1407,
+      "title": "How long can you stay a solo founder with agents?"
+    },
+    {
+      "time": "26:12",
+      "seconds": 1572,
+      "title": "What Kalshi looks for in job interviews now"
+    },
+    {
+      "time": "28:50",
+      "seconds": 1730,
+      "title": "What years of ballet taught her about building Kalshi"
+    },
+    {
+      "time": "30:17",
+      "seconds": 1817,
+      "title": "How suing the U.S. government helped Kalshi grow"
+    },
+    {
+      "time": "31:48",
+      "seconds": 1908,
+      "title": "Luana's advice for women building something hard"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "73% chance that AI will be number one reason for job cuts. Like, how much should I be real?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Relying on public's opinion versus reality. Even with 5,000 in volume, we already see convergence to very calibrated numbers. So that number should be trusted for sure."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Luana Lopes Lara. Forbes calls her the youngest self-made woman billionaire in the world. She built Kalshi, a $22 billion company where anyone can look up the odds on things that haven't happened yet. Anthropic going public before OpenAI? Who takes the house in November? More tech layoffs in 2026 than in 2025? Can we make some predictions? Let's do it. What actually changes for a normal person by the end of this year? And I still think that by the end of the year, we're going to see work change the most. Do you think 2026 is going to feel lighter or heavier for the majority of people? That is a tricky... Do you see any jobs suddenly becoming safer? For now, I would actually claim that. Well, Anna, welcome. Oh, thank you. Thank you so much for doing this. Of course. I'm really happy when I have women on my podcast because my podcast is AI and Business."
+    },
+    {
+      "speaker": null,
+      "text": "And mostly, most of the time, it's guys building and like guys watching as well. I think we're 70% male. But it makes me really happy to interview one of the youngest self-made. Are you the youngest Self-Made? Billionaire? I think so. I hate the title, but yeah. I think this is very, very impressive and you're an immigrant. I would love to talk to you about the future because where you're building at Cal-She, you're basically making a ton of predictions about different markets and I want to talk to you, about what you were saying. Is there something that you see at Cal Sheet that we're not talking enough about?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "One example that actually my co-founder loves giving that is the Cetrini scenario. I don't know how to say this, Cetrine scenario, which is kind of like a little bit of a doomsday scenario for AI and they're thinking I think there's five conditions on, you know, unemployment levels and all of that. And actually the odds are around like I think 26 or 30 percent, which is extremely high. For the doomsday scenario? So there are five conditions and I don't know them all by heart, but the market is if three out of five of them hit, the market will pay out to yes. And the odds are a lot higher than what people think. It's very liquid. The market's traded like millions of dollars. And that's a market we look at a lot because obviously impacts our life so much. I think it was a very big report that came out a couple months ago that just got so much attention."
+    },
+    {
+      "speaker": null,
+      "text": "So we have a lot of markets on the AI side, obviously on, on. Sports. I mean, we're in New York, so the Knicks, I think it's 37% chance they're going to win the finals. There's a lot of very interesting markets and I think a lot of our job is figuring out what are the big questions out there in the world that people want to know, forecast for and what they want to have data for and try to frame the right market that gets to that question because not every question is a very simple yes no. You have to actually figure out what do people mean by saying AI did this or the economy is in this position and then really define it. But a lot of our job is doing that, so it's very fun."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is some of the requests, I can actually see them in my app. They're already public, but there are a lot of requests that you were seeing privately, right? Of what people are asking for. And then you decide what goes on the platform. Is there a trend in anything related to AI that you're seeing?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "A year or two years ago, most of the markets proposed were about AI capabilities. People were interested in like, will AI be able to do this, will they be able do that? Which model will be better than which model? Gemini Quad is still trending. That was kind of a big thing. Nowadays, actually, a lot more of the requests that we get are more on the impact of AI. So like tech layoffs and like just unemployment in general and kind of like how that side will pan out. And I think it's like, it's interesting because we see a lot of what people request of markets kind of show a shift also. And like, I think there was a lot of excitement for AI at the start. It wasn't like mainstream that everyone knew what AI was. Nowadays they do. And you can see that kind of like vibe shifting to a more conservative, more skeptical vibe."
+    },
+    {
+      "speaker": null,
+      "text": "And we see that in the market requests that we get. You have it monthly where"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "you asked about tech layoffs and for May is will AI be the number one reason for job cuts in May and that's well it's 30,000 volume"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "It's one of the smaller markets, but still, we've done a lot of research. We have an arm of the company called Cauchy Research that looks at the markets. Even with, I think, 5,000 in volume, you already see convergence to a very calibrated number. So that number can be trusted for sure."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "73% chance that AI will be number one reason for job cuts. And that was the truth for April and March. So it looks like. It looks likely that it will be again. Yeah. And it's what you mentioned is very interesting. A year ago, people were still trying to figure out what AI is. And now with all the headlines are like, oh, okay, interesting. And now it's actually having some impact on my job. Not for everyone, but for a lot of tech workers. Is there anything else you see in terms of like how AI impacts? The day-to-day decisions. Are more people asking about stable job or business? I don't, what kind of bets can you make?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Yeah, on the AI front, I think that I would still divide the world of the AI markets between the impact that they have in jobs and government, even in elections. I think there's a lot of people asking, how can we define a market of the AI impact on election or electoral thinking around AI there? And the other side is just really like capabilities and all of that. But we have a lot markets and for other things as well, for example, like You know, math problems being solved, or a lot of things that we're doing more on the kind of like FDA drug approval trials and timings for those, those markets we're getting a lot interested in now."
+    },
+    {
+      "speaker": null,
+      "text": "It's interesting because if you look at the history of prediction markets, right, a lot the most important things that prediction markets do is try to price these kind of unknown innovation and tech things that will look at, like future of AI or the future of, you know, a lot different drugs or the future of crypto or quantum computing. So we really try to have as many markets as we can for those. And now that we give interest on positions and dollar that you have in the account, you can actually, it makes sense for you to invest in something that's like five years down the road because you actually get paid on that, the interest. So we see more activity on those. Those are some of our favorite markets. I was listening to some of your podcasts."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "People are hedging their risks with AI. Like the example that I heard was floods. But now that I'm thinking, like if you're fearing that AI is gonna take your job and it takes your job, you can bet against that on cash. So you can have some insurance payments."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "We actually just had yesterday, not on the AI side, but on the sports side, a bar in the Upper East Side here in New York that was going to run a promotion that basically was, whoever comes in, we're going to pay for the entire tab if the Knicks win. And they were very concerned because they were like, we might be down $10,000, $20,000. So then they bought a hedge that way. And I think that one of the kind of like a prediction market adoption curve, I think a lot of what we're gonna see, that's my forecast there is like- At the beginning, everyone was also not sure what was going on, what are prediction markets, all of that. Then there was a lot of skepticism."
+    },
+    {
+      "speaker": null,
+      "text": "And now that people are starting to really understand what they are, you're going to see them starting to understand the other use cases like hedging and all of the that that we're really seeing growing on small business side, but also beginning of hurricane season out in Florida. The amount of people coming in saying, can we have a hurricane market for this specific part of Florida I live in because I want to be able to hedge my deductibles or this or that. Sex insurance wouldn't work if something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Happen. Exactly. For a person like me, I'm not into bedding. I don't have time for that. I know some people do it professionally. What do you think is the use case for me as a user of CalShe?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "70% of our users actually don't trade on anything. They're just coming to ingest, like to just look at almost like the news. They're coming to see what is the forecast of different things. So basically what you just did to look at their 70% chance that AI would be the main reason for job cuts in May. They're gonna come and kind of digest all that information in the morning from sports to culture, to who's gonna win Love Island and all of that. And that's the vast majority of the use case. Obviously like, look, we make money on transaction fees. So we make when people come in and trade. But at the end of the day, what prediction markets are really good at and how we get to impact the billions of people really is with the data that we're bringing. And I think that that's kind of the best use case data."
+    },
+    {
+      "speaker": null,
+      "text": "And also like, obviously, if you want the forecast for something, if you wanted the data for something that we don't have the market for, you can suggest, we can add it. And then you can kind of get answers on the spot as well. But I would say that that's almost the main use case for people, so. What are you looking at every morning? I look a lot on the economy stuff, and I look at a lot of the election stuff. I love American politics. I love politics in general. I'm from Brazil, so I like Brazilian politics too. And in an election year, we've been looking a lot at that, especially we launched on, and that's something that, for example, driven by the use case of the forecasting and kind of getting information, right? We have... Thousands and thousands of election markets for the midterms, all the primaries, all the house raises, Senate raises, all those things."
+    },
+    {
+      "speaker": null,
+      "text": "But it's actually pretty complicated to digest all of this into like one number of like, how is the country leaning, right? Because you can look at the Senate and it's like the Senate is moving this way, but it's always like, there's one seat here. How do we think about that? The house is another way. What we really wanted to create was a number that you can look out that will kind of track."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, like an AI assistant, now that I'm thinking. If I just ask, what's the sentiment about AI today?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Right. And it runs all the... Exactly. Exactly. And that's a lot of what we're working on now, which are these indices of how do we aggregate a lot data about the world, but also all of our market forecasts and try to create one number that is the sentiment or the index for something. So, we released the Cowship Power American Power Index. Which is we call K-POW, which is basically tracking is the country more Republican, more Democrat based on current state of the world and our forecast. What does it say? Last I checked was like 0.2, like plus two for the Republicans yesterday. And we want to do more and more of that because I think it really helps and adds on the, on the forecasting side. And we wanna build more and more on the kind of new side. To now. Before I used to look at race by race. There are some key Senate races that you look at like Maine."
+    },
+    {
+      "speaker": null,
+      "text": "You can look at a lot of the California races are very interesting, but now you can look at one number that do it. So like now the past couple of days, I just open, you know, calcium.com research, it's on our research tab and then, and then see the number there. But I try to look, I'm looking at the markets the whole day. That's kind of my job. So, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's fascinating. It's another way you consume news, but it's not from a particular news outlet. It is basically what people are trading on and betting on. Every conversation you have disappears the second it ends. A client call, a podcast interview, a team meeting, gone unless someone wrote it down. Transcriptor records it, transcribes it, and hands you a structured summary with action items. Automatically, no scribbling notes, No follow-up email asking, wait, what did we decide? You can paste any YouTube link to your own episodes, an interview you want to research, a talk you missed, and get a full transcript split by speaker in seconds. We're going to show you that on screen right now. Want to go deeper? Search across every past recording. Ask who said what, which decisions got made, and when. It's all archived and searchable. It connects to your AI agents through MCP, so it plugs straight into the automation workflows we've been talking about in this episode."
+    },
+    {
+      "speaker": null,
+      "text": "Link is in the description, sign up with your work email, and you get 300 free minutes. Can we make some predictions? Let's do it. AI, what actually changes?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "For a normal person by the end of this year? Work is one of the angles that's gonna change the most, but I still, I don't think when I look at like Caoshi, for example, I didn't think there's any role that we've completely just switched. We don't need this role, we have AI. All the roles have been like augmented by AI. So like an engineer now has like 20 cloud agents and all those things. And I think we will see more and more changes in other things. So for example we are investing a lot in having kind of this Caoshi AI agent that's kind of like everyone has their. Anyway, we're investing a lot in how to solve a lot of classic company problems with AI. As a company girl, communication and contacts are a big deal. Someone that just joined doesn't have the contacts to make decisions, they don't really know what they have to do. So how can we use AI to solve that?"
+    },
+    {
+      "speaker": null,
+      "text": "And I still think that by the end of the year, we are going to see work change the most. For me, one thing that changed the most also with AI is travel planning. I was traveling for a weekend and before I used to have to be like, oh, where should I stay? Whatever, now I'm just like. Planned this whole thing for me for two days. What are you using for that? I just use stretch beauty for that. So the baby."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you just give it whatever you're thinking of and it gives you suggestions, but then you still go and book yourself. I still go book myself. Maybe that's, yeah. You know, I did that yesterday and I was talking to my husband and I'm like, how is it possible? 2020 since I'm still booking every hotel myself, I'm clicking all the buttons."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Exactly. And I think that it's like a lot of these are menial tasks that people don't actually like doing that I think, but I still think that the biggest impact would be work. And I feel that the concerns that people have with the impact in their work is valid. I just feel like I'm more of an optimist than a pessimist, if that makes sense."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Money in general do you think 2026 gonna feel lighter or heavier for"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "majority of people. That is a tricky question. I think it depends a lot on the direction of the war, I would be honest, because I think that like most people would think about gas prices as kind of like a big dependent on that. But I like how you think about that. So if somebody has a concern about money, they can go to Kalshi and see what people are betting on. And we have markets on all these things like recession and inflation and all of that. I would probably say it's neutral and that that would be my forecast if we want to go with that, but I'm not sure."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, with the summer travel, I already feel like I'm, I don't know, 30% poorer because of the ticket prices."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "They're crazy. Oh, that's fair, right? Because it's crazy how many things are impacted by gas prices or oil prices at the end of the day. It's kind of... Yeah. We even forget about that. Absolutely. Do you see any jobs suddenly becoming safer? I was at the gym the other day and I was actually thinking that, for example, trainers are going to continue. I think everything that's more physical in nature are going continue. Oh, we'll see how all the robots, kind of like the optimus and all those things develop. But I think it's like for now. I would actually claim that the engineering roles and all of those roles that people thought were safer before, I think it's kind of clear that they're gonna be less safe. So yeah, I would say anything that's more like craft and physical probably."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When it comes to trusting those numbers that you see on cal sheet, how many of the bets, so for example, if people are betting for something like 70% agree and then the reality is completely different and it's flipped, how often do you see that happen? How much should I be relying on public's opinion versus reality?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "I think the most important thing to think about is that Kaoshi what we give off of probabilities, there's not an answer. So even if it's 99, it's still like, if you think about probability as like the frequencies, you still have one in a hundred that it's not going to happen. So for example, the pope, the American pope, he was around 1% at Kaoshi the whole time. And the news were all like, although Kaoshi markets were wrong, the Kaoshi Markets were wrong. And I mean, one is not zero. You still have 1% chance of something happening. And I think that that's kind of like the best example of. A completely closed information system, which is a conclave and there's no information that gets out, how hard it is to forecast from the outside, but we've done a lot of analysis and research on our calibration. So basically like if a market size is 70% chance, is it actually 70%?"
+    },
+    {
+      "speaker": null,
+      "text": "So we can actually plot like do some calibration math and the calibration is actually very, very, very good. And I think that even like there's a Fed paper that came out about prediction markets and how it's much better than any other. But I think the core of it is understanding that 70% is not 100%. Is there a number where predictions are right, like an average percentage? That really depends on the time to expiration and the type of market. So for example, for an entertainment market, it's actually different from them from a politics market. And even in a politics market, if you see like one week before, I think you'd need like maybe one or $3,000 for it to be extremely accurate. If it's one week before, but if it six months before an election, then I think you need a lot like more on the like tens of thousands, maybe 10,000."
+    },
+    {
+      "speaker": null,
+      "text": "I'm not exactly sure on the numbers there, but I think it depends on a lot of things. I still think though that it's like the whole point of a prediction market is that people are putting money where their mouth is. It's a system that's from the start designed to incentivize truth in information and like good information. Because people are incentivized to do their research because if they're right, they make money. Because if they are putting their money, that means they put some thinking behind. Exactly. So that's kind of how we really see it as kind of like directionally, from the start is a better system. It doesn't mean that from the, from the star you're going to have like, if there's $1 traded, you're not going to get a better answer than an alternative, but we've actually way less than what people expect."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are getting there. So we touched upon some agents. And I really like that topic. Can you talk to me about how agents have transformed your life as the founder?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "I think it transformed like a lot of every single part of the company and a lot of it. We are like, as of, I think yesterday 170 people at the company. And I think that we're able to do everything that we do a lot because we kind of just build AI systems from the, from, from like bottoms up of our, how we were thinking about engineering, how we're thinking about market operations, how are we thinking about all of those things. And I mean what it's helped me the most is like able to get context on things a lot faster. And I'm able to know what's going on a lot faster. So I'm able to manage a lot more threads and a lot more people in a way more effective way. We are very like metrics driven in the company, kind of everywhere. Um, obviously, for example, a great example is market operations, right?"
+    },
+    {
+      "speaker": null,
+      "text": "Like the way that we think about market operations is almost the same way as you think about a factory. We think about, um, you know, number of mistakes, but also like listing latency, determination, latency, coverage, all of those things that we, we kind of, you'd think about it in a factory and kind of how to define these metrics, how to get these metrics in real time. And all of that is. Kind of all built on top of AI because it's very complicated to think about a lot of these things in the context of like markets. So yeah, I think it's like all on the metric side and how like communication flows and is aggregated in the company, it's kind of like that and it becomes a lot simpler for me to do my job because I can just have my cloud agents kind of do everything I need them to do."
+    },
+    {
+      "speaker": null,
+      "text": "Can you talk to me about a couple of agents that you've built for you?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Something that anyone who's a knowledge worker could deploy for themselves as well."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Well, one thing that I think is useful for a lot more people maybe is on kind of like weekly planning and kind of like state of things that I think it's like, how do we get updates from the entire company track from what the updates was from the week before flag what hasn't been done? What hasn't been done. What hasn't been done?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you collect all the data? Do you use any tools? Does every employee have their agent? How do collect it all inside one database?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Yeah, that is a great question. And I think that we should ask our engineers when they're better because I'm very lucky that they can build a lot of the things for me. In terms of that, like it's connected to everything that we do. Emails, docs, Slack, all of that. We actually have an AI team now that is actually building. We obviously have a very, very good like engineering side of the AI equation is very good, but we're trying to build kind of like every new employee should get an agent that's kind of, like the biggest problem we have there that we're tryna figure out is how to figure out like permissions in the right way. We need to make sure that, for example, We have a lot of legal work or like surveillance and all of that, that it has to be very, you know, just some people have it and how do we think about it that way."
+    },
+    {
+      "speaker": null,
+      "text": "But I would say that like planning, organizing, and collecting information. Sundays are very like heavy days for me because it's like when I stop and I look at the entire week, everyone, what they was done, what we need to do the next week, look at all the metrics and all that. That's all I do on Sunday. And now I'm actually able to like have brunch on Sunday because I'm like, I have a lot more time. Uh, to think about things, but, um, because a lot of it is kind of done in the, in the way that I expect. But I would say it's like, like really looking at like for the past X number of weeks, this person has over-promised, under-delivered, these are the things, like these metrics are not- I'm trying to build something from my-"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like that for myself, but what I realized, we need to hire someone. So we try to build internally and my team is like creative producers. Now we hired someone with an engineering background to do that."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Yeah. And that's the thing is also, it's like, we are kind of putting engineers in every single part of the company to kind of figure this problem out. Cause obviously market operation is a great one. But for example, design, design is something we didn't use a lot of AI for. And now we're kind of cloud design or cloud design. Yes. But we're trying to also figure out a lot better on like, how do we also empower almost everyone to be a designer in a better way? Obviously we have a design system and all of those things, but If an engineer just wants to ship something, like how do we actually build something that it's not just, we're still defining it, but it's all just like, you can, right now you get a design system, you kind of can ship an experiment very quickly, but how do we actually like do it in a great way from the start?"
+    },
+    {
+      "speaker": null,
+      "text": "Cause I feel like that's the point of design, right? You can, you, can just like built in reviews or something. But also like engineers are very good at like, if you want to just test a new module on a page, right, you could very easily put it out. But what we have at the companies, they put it out and then we get like, we test it and we're like, okay, this was good direction to go, let's ship it. And then when we ship it, we actually go back to design and then the design team actually makes it good. Because before I was just like, it didn't look awful, but it wasn't great. And we're trying to figure out how can we actually not need that loop anymore by making. A lot of things we're thinking about."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's interesting. So you have that agent running, giving you all the information, something that I'm trying to build, I can relate to a lot, because also like information is all over the place and you need to collect it. And you want to make sure the agent knows what's a priority, what's not. Because otherwise it's a very long email of all the things you need."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "One thing we struggle a lot with is that on Slack we have these two, basically this channel is like product feedback, right? That we put a tweet that user is complaining, or a user from Discord, or internal, like everyone puts stuff there. And it's very, very tough to prioritize, track what's done or not done. And we have all those linear integrations and all those things. It's almost like a, we were talking about this yesterday, it's like a bug. Something to that extent, to like we'll track everything immediately, prioritize them. See what's live and alive without adding engineering burden that I think would be very helpful. Obviously like on the QA side as well, we're trying to figure something out so that it's a lot better. There are a lot of companies we tested on the qa side. Nothing was great. So we try to figure. Anyway, we try and put a lot. I'm burning a lot of tokens from what I'm hearing."
+    },
+    {
+      "speaker": null,
+      "text": "Is there anything that you've built yourself for yourself? Not really, to be honest. I think that both Tariq and I, we're very lucky to have a great team that does a lot of these things for me. Because a lot of what we think about is, obviously, TariQ and I should be always trying to be as productive as we can and be more and more productive. But I think it's more about, for us, our biggest question is, how do we build the most efficient company that we can that will keep ... I think the big differentiator for cauchy that people use to think it was a regulatory piece. I really think the actual real differentiator is how fast we've moved and like how good our product has been by how fast removing and for us, that's the biggest."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "A lot of people are talking how a founder can be a solo founder now because he or she can deploy so many agents. What I'm hearing from you is completely different. You're hiring more engineers to build those things for you, and this is what I'm experiencing myself. Yes, we tried to build something and something's working, but if you want to do really something sophisticated that doesn't make mistakes, well, or at least the mistake rate is like 3%, then you have to hire someone."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Cause I also, I'm a big believer, I think it's Peter Theother maybe said that is you need to have one person doing one thing if you want it to do it very well. And I think that my question is more like I think even it happens with me and I think it happens to my co-founder as well that we are already very spread thin. And if I was to say, I am going to put 5% of my time into trying to do something, it's not going to be great. If we really want to be, we want the company to be as efficient as possible and as fast as possible in the best product as possible. So yeah, I need to be a core part of that. So we need people that are amazing at this. They're going to be doing this and they're going to be this full time. And that's why I was saying I'm very optimistic about things."
+    },
+    {
+      "speaker": null,
+      "text": "I think that AI will create so many more opportunities for us to do more and more things, right? Like we just announced perps, which are a big new product. First time that we're going outside of prediction markets. So it's a perpetual future. So it is basically what you can do now is you take a long and a short, for example, on Bitcoin. So you're like long Bitcoin. You don't need to worry about for how long, you can get leverage in that position. You can short Bitcoin very easily, which is very hard to do. So basically you can think about a future where there's no end date anymore. So you can just express your opinion in a simple way. So crypto is what we launched, but we're looking at a lot of different things, even when we talk about it. AI is something where you can short a long AGI or a super intelligence."
+    },
+    {
+      "speaker": null,
+      "text": "That's exactly kind of the direction we want to go to and it's more of a matter of how do we define, we're back to how do define what actually is. Yeah, exactly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because I saw some of the predictions that are really well-structured. I'm like, oh, this is not a yes-no. This is something, does it happen before this day, or this amount before that time? And that's why we want to take out the component of."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Time so that, for example, if you're a long AI and we define it as like what really that is, you can just be long forever up until you want to say, I don't want to be long. And that's your alternative to investing in tech companies, right? It's kind of like if you are long. That's one of the reasons we started Couching. It's so hard. If you're long AI, you could say, okay, I'm going to buy NVIDIA stock, I am going to do, but it's very hard because there are so many other factors that impact all of these stocks. And what prediction markets or what we built, what we're excited about and what Caoshi is about is that we want whatever your thesis is, you're going to be able to get that. Not like trying to diversify among these data centers or... So you're just able to do that."
+    },
+    {
+      "speaker": null,
+      "text": "So for example, launching Perpetuals was, would it have been possible if we didn't AI in the state that it's now. Probably not without hurting the core product a lot more by resources or hiring a lot more people. So I think that the way that we think about it is more We hope to be able to do so much more and grow so much more and so many more products and hopefully become a way bigger company because we are AI first and we are about like hiring less people. That's just not how we're thinking about it at all. How are you hiring these days? How has it changed from the last year? We like being very lean. So we were 170 people at the moment and people that work very well at Caoshi, they are very low ego and willing to learn a lot. I mean, we're very direct. Culture, we really like being efficient with time."
+    },
+    {
+      "speaker": null,
+      "text": "So that means like feedback is like, I don't like something you did, I'll tell you right now and I'll be honest about it. And you have to be in that kind of like cultural side is very important for us. But realistically, the two things that matter the most is just working really hard and having like a commitment to work above everything else. And when I say commitment to work is more about when we ask you to do something and we trust you of something, we can trust that it's going to be done great. It's not about number of hours, it's not these things. It's about AI as well. It is, but so in the engineering side, in the engineering interview, we put a lot of time into it and kind of like, now you can use AI in the interviews and it's completely fine and all of that."
+    },
+    {
+      "speaker": null,
+      "text": "And actually in a lot of the systems review that we do interviews on systems review or like previous project review is kind of a big component. Of that, because now a lot of the things that we used to look at like two years before of like, oh, can someone actually do this or do that, but now like, whatever, like that's just not relevant. We are actually talking about in design now, I told you that we're trying to get more and more on the figure out how to use AI in a better way in design. In our design interviews, we're starting to be like, has this person used a lot of AI? So it's spreading to design. What about knowledge work? Less so. We need to do one thing actually, funnily enough, in the legal team."
+    },
+    {
+      "speaker": null,
+      "text": "We're starting to do that a lot too, to be like, cause we have so many cases of litigation, we're trying, we're staring to be a lot more like, how have you used AI for this? How would you use AI for that? It's less about, and it kind of adds, goes back to the willingness to learn. I think it's less about them having the answers or having used it to do something amazing before, but more like are they willing to do it? Because we have, again, like our engineering team. What we're doing is that we're kind of putting them, the AI group in like design, and then they're going to go into legal and try to kind of like, how do we help them to do it? And we just want people to be open-minded."
+    },
+    {
+      "speaker": null,
+      "text": "And then the answer is like, what they use, how they use to work is not the way that we are going to work at Caoshi and the world's going to do. And we need them to be opened-minded and have like low ego to figure out like, Oh, this thing that I thought I was very good at is actually, I don't need to do anymore. But yeah, it's funny because I think a lot of what Tarek and I think about so much is you always have that feeling of, you know, it is that people say, you always have the feeling you're not working hard enough. For us, it was more like we're not using AI enough. We need to sit down and like think about kind of how to do it. And that's why it was important for us to have this team in the company doing this. So then it's it's like someone full time thinking about it, which obviously we cannot afford."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, that makes total sense. You sound really smart. Where you build is amazing. As a mom who's raising two daughters, can you share some of your principles or something that you think was there in your upbringing?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "That brought you here. I joke, my biggest privilege in life is having my parents. They're perfect. My parents always kind of taught me that I could do or be or whatever, whoever I wanted. And it's less about like this, I mean, there's this whole view of like, it's not about entitlement at all. It's not like I deserve or I, it's more about like if I want to do something, I am capable of doing it. And my parents always like kind of like really believed in me and kind of like have this kind of respect for what I wanted to do. Or when I was in Brazil and I wanted to study here in the US, it was kind of a crazy idea. Like I'm from a middle-class background. I'm like, it's not like no one is applying to come to the US to study. Um, and, but I told them I wanted to do it and they're, they were like, all right."
+    },
+    {
+      "speaker": null,
+      "text": "Like let's, it sounds hard, but let's try to figure it out. And they supported me so much. Um, And I think it's kind of this. This thing that belly also doing belly for so long taught me is just you can do things you just need to work very hard for them. You're not old anything, but if you work really hard, good things happen. I think that that's kind of like the main thing about my bringing is just like teaching me that hard work is very valuable and doing things that matter are very important and you should be proud of yourself and like work really and try to do things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that your work principle, the main work principle?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Work hard. I want to make sure always that I did everything that I could and I think that that's kind of how I think about it. And it's funny enough, that's a very Cauchy thing because we took three to four years to get regulated and then we had to sue the government to get election markets, which after that is when we just started growing. And at the time, we engaged with the government for two years before we were able to launch the election markets. And it got to a point that we realized they weren't going to let us do it and And the only last thing that we could do was see the government. And it was very painful. Sounds very crazy. Especially as an immigrant. Yeah. It was crazy. And also like we were a small company, suing our own regulator, like, what are we doing? But it was that thing of like, we should do everything that we can."
+    },
+    {
+      "speaker": null,
+      "text": "And there is this option that we didn't try yet, and we should try it. And I think that's kind of like this thing, I think it's impacted Cauchi a lot too, but it's more about let's do everything we can, so it's like if the company, I remember thinking about this when we were couple of years ago, I never want to think that the company didn't work or a product didn't launch or something didn't go well. But I personally could have done something different. And I want to be able to have that kind of like to rest at night and be like, I've done every single thing that I can. And a lot of it obviously is very correlated with working really hard. But it's not just that, right? It's about hiring great people. It's like being nice to the people around you and making sure the employees are happy because if the employees aren't happy, it's like, that's on me in a lot ways."
+    },
+    {
+      "speaker": null,
+      "text": "And I think that. Having that mentality has helped Tarek and I a lot."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "OK, my last question. Can you give advice to women trying to build something? It might not be the best."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Advice. But I think it's like focusing less on the fact that you're a woman. And the reason for that is like when you're trying to do something very, very, hard, the odds of you doing that are already like 0.01%. The difference of 0.1 from 0.005, they're actually very big difference. But in the grand scale of things, they are both very, very hard. And I think that it's better mentally to just focus on That's my goal and that's what I want to do. I'm not gonna listen to the noise. And obviously like, look, a lot of things suck and I think it's a lot harder. You see the numbers of women starting, it's just obviously it should be a lot better. And I really hope it is. And I think that the world and like investors and VCs need to hire more women and invest in more women and all those things need to be fixed. But."
+    },
+    {
+      "speaker": null,
+      "text": "I think from a woman being a founder and trying to build something, I think it's better to just focus on that in a lot of ways. A lot of the numbers that we see is just very sad and upsetting, but I think is just a matter of focusing on what we can control."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much. So impressive and congratulations on all your success. I appreciate it. It's a huge inspiration for all the immigrants as well. Oh, thank you. Thank you. Thank you, so much!"
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "2NFQ4-6MzuU",
+      "thumbnail": "https://img.youtube.com/vi/2NFQ4-6MzuU/hqdefault.jpg",
+      "title": "The Real AI Opportunity  | The Ultimate Guide to Become Visible in AI"
+    },
+    {
+      "videoId": "VF2FwZ_PXhw",
+      "thumbnail": "https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg",
+      "title": "Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford's Top AI Economist: The Next 10 Years Will Be the Best AND the Worst in History"
+    }
+  ],
+  "topics": []
+}

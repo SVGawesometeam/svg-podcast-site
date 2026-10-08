@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,7 +374,7 @@
       <p class="guest-bio">Blake Scholl is the founder and CEO of Boom Supersonic, a Denver-based aerospace company developing supersonic passenger jets with the goal of making high-speed air travel commercially viable and affordable. Before Boom, he spent roughly 14 years in tech, including roles at Amazon and a startup that was acqui-hired by Groupon. He founded his first company in his parents' basement in high school and has carried an entrepreneurial mindset throughout his career.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -543,7 +556,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> So you worked at Amazon. It was just an absolutely incredible place. They were paying you very well. I was 33. Groupon had acquired my first company. Uh, I was running the world's largest spam operation. So you have a family?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So you worked at Amazon. It was just an absolutely incredible place. They were paying you very well. I was 33. Groupon had acquired my first company. Uh, I was running the world's largest spam operation. So you have a family?</p>
             <p><strong class="speaker">Blake Scholl:</strong> Yes. 14-month old daughter and like twins who had just been born and you decided to quit your corporate job and start something completely new.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> I guess there has not been a startup in aviation for a century. There is opportunity and we have to take advantage of it quickly enough. We raised $150 million from like some of the most amazing investors. Paul Graham, Sam Altman, Y Combinator, Bessemer, Michael Morris, Reid Hoffman, like all of those people put in at least $10 million. The world is very open to supersonic right now. Now we've got runway and then we broke the sound barrier and it was 24 hours from breaking the sound barrier to being in the West Wing of the White House.</p>
             <p>Can you give advice to someone who's stuck with their idea of building a Boom-sized company, but they just can't take the leap of faith? They have a family. Oh yeah. Blake, thank you so much. I'm so excited about this conversation because you did something a lot of people are dreaming of but they don't have enough courage. And I wanted to focus this conversation on basically how you changed your mindset and went from a corporate job at Amazon to building the next generation airline. So you worked at Amazon, right? You were a tech guy for 13 years.</p>
@@ -594,7 +607,6 @@
             <p><strong class="speaker">Blake Scholl:</strong> And like it looks like this works. So you had the first actual industry confirmation.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. And then it just started from there, right? I remember I read something that the industry was still criticizing you and saying it's not viable.</p>
             <p><strong class="speaker">Blake Scholl:</strong> Oh, they still are. They still are.</p>
-
             <p><strong class="speaker-marina">Marina Mogilko:</strong> How do you navigate this? There's one thing when the general public says, &quot;Oh, this is not possible.&quot; But when the industry experts are like, &quot;You know, we've been there, we've done that.&quot;</p>
             <p><strong class="speaker">Blake Scholl:</strong> The industry experts don't know what they're talking about. The quote-unquote experts are often just repeating the same conventional wisdom and haven't done any first principles analysis. Sometimes it gets fed by lore—like the big jet engine companies tell everybody that only the big jet engine companies can build jet engines because of course they do. But then that gets repeated and people accept it as if it's physics, but it's not physics. SpaceX started from nothing and they put stuff in orbit. By the way, they built their own rocket engines. I was very inspired by that. I was like, &quot;Wow, you know, Elon was an internet guy and he put stuff into orbit and like that seems way harder than a supersonic jet.&quot; Actually, it's not. I think the supersonic jet's actually harder, but I didn't know that back then.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Would you agree with the phrase that's kind of related to this? &quot;Ignorance is my superpower.&quot; Is it true or not?</p>
@@ -646,24 +658,28 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, yeah. But also not just New York to London—Miami to Madrid, Seattle to Tokyo, DC to Paris.</p>
             <p><strong class="speaker">Blake Scholl:</strong> That's in four years? Or this is like a, like it could—like it will all be possible in about four years. We won't have enough of the jets yet because we'll be starting production. The whole Boom skeptic thing is going to be like, &quot;Oh, they can't build a supersonic jet. Oops, they did. Then it's they can't build a jet engine. But then be like, oops, they did. They can't certify an airliner. But then be like, oops, they did. Maybe they can't make enough of them. Oops, they did.&quot;</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> It gives me so much energy just hearing you say that and I see how excited you are. That's awesome because we fly so much and that would be amazing.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/QvwI0TTVcwo/" class="related-card">
-                <img src="https://img.youtube.com/vi/QvwI0TTVcwo/hqdefault.jpg" alt="I&#x27;m 35. If you&#x27;re in your 20s, watch this" loading="lazy">
-                <span class="related-title">I&#x27;m 35. If you&#x27;re in your 20s, watch this</span>
+                <img src="https://img.youtube.com/vi/QvwI0TTVcwo/hqdefault.jpg" alt="I'm 35. If you're in your 20s, watch this" loading="lazy">
+                <span class="related-title">I'm 35. If you're in your 20s, watch this</span>
               </a>
+
               <a href="/episode/xuN4jZpaPho/" class="related-card">
                 <img src="https://img.youtube.com/vi/xuN4jZpaPho/hqdefault.jpg" alt="Steal These Money Habits — They Built My 7-Figure Wealth" loading="lazy">
                 <span class="related-title">Steal These Money Habits — They Built My 7-Figure Wealth</span>
               </a>
+
               <a href="/episode/SP76PvgMzVU/" class="related-card">
                 <img src="https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg" alt="CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman" loading="lazy">
                 <span class="related-title">CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman</span>
               </a>
+
               <a href="/episode/ExgNR94SrfI/" class="related-card">
                 <img src="https://img.youtube.com/vi/ExgNR94SrfI/hqdefault.jpg" alt="Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie" loading="lazy">
                 <span class="related-title">Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie</span>

@@ -1,0 +1,309 @@
+{
+  "videoId": "ktpNFfpJ5rw",
+  "title": "LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky",
+  "format": "interview",
+  "guestName": "Ryan Roslansky",
+  "guestTitle": "CEO of LinkedIn and EVP at Microsoft",
+  "aboutGuest": "Ryan Roslansky is the CEO of LinkedIn and Executive Vice President at Microsoft, where he also oversees Microsoft Copilot and Microsoft Office. Under his leadership, LinkedIn grew from $7 billion to $17 billion in revenue and surpassed one billion members globally. He is the author of 'Open to Work,' a new book on navigating AI-driven career change.",
+  "publishedAt": "2026-02-20T13:00:47.000Z",
+  "duration": "24 MIN",
+  "coverArt": "https://img.youtube.com/vi/ktpNFfpJ5rw/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/ktpNFfpJ5rw/maxresdefault.jpg",
+  "summary": "Marina Mogilko sits down with LinkedIn CEO Ryan Roslansky at Davos to discuss what LinkedIn's labor market data actually reveals about AI's impact on jobs. Roslansky breaks down why entry-level hiring is down 12%, identifies the 5 human skills AI cannot replace, and names the 3 job categories poised for explosive growth over the next five years. He also discusses his new book 'Open to Work' and explains why skills-based profiles are replacing traditional resumes.",
+  "keyTakeaways": [
+    "AI is a net positive for jobs so far — LinkedIn data shows 1.3 million new AI-related roles and over 600,000 new data center jobs created on the platform.",
+    "Entry-level job hiring rates are down roughly 12%, but this decline is proportional across all job levels and is driven by macroeconomic conditions and interest rates, not AI.",
+    "Career ladders are giving way to horizontal skill expansion — LinkedIn's most-requested feature is career path visualization, but generalist hiring is now the dominant trend.",
+    "There are currently 75 million LinkedIn members who identify as creators, with 4 million listing it as their full-time job title — a sign of the creator economy's mainstream legitimacy.",
+    "50% of U.S. college graduates this year are expected to be unemployed or underemployed, and student loan debt is outpacing credit card debt for the first time in history."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "2:14",
+      "seconds": 134,
+      "title": "The Real Data"
+    },
+    {
+      "time": "3:33",
+      "seconds": 213,
+      "title": "What's Actually Happening with entry-level jobs"
+    },
+    {
+      "time": "5:18",
+      "seconds": 318,
+      "title": "Career Paths Are Dead (Here's What's Next)"
+    },
+    {
+      "time": "6:54",
+      "seconds": 414,
+      "title": "Top Skills for 2026"
+    },
+    {
+      "time": "8:44",
+      "seconds": 524,
+      "title": "How to Use LinkedIn to Get Hired"
+    },
+    {
+      "time": "13:12",
+      "seconds": 792,
+      "title": "Is College Still Worth It?"
+    },
+    {
+      "time": "14:04",
+      "seconds": 844,
+      "title": "\"Open to Work\": New Book on AI Careers"
+    },
+    {
+      "time": "16:13",
+      "seconds": 973,
+      "title": "The 5 Cs That AI Can't Replace"
+    },
+    {
+      "time": "17:47",
+      "seconds": 1067,
+      "title": "Top 3 Jobs for the Next 5 Years"
+    },
+    {
+      "time": "20:24",
+      "seconds": 1224,
+      "title": "Jobs That Will Disappear"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "At least in the US, 50% of college graduates this year will graduate either unemployed or underemployed, and credit card debt is being outpaced by student loan debt for the first time in history. This is Ryan Roslansky, CEO of LinkedIn. He took LinkedIn from 7 billion to 17 billion in revenue and crossed a billion members by betting big on AI, smarter hiring tools, skills-based matching, and a massive push into video. LinkedIn is the definitive labor market platform of the world. We have amazing insights into what is actually happening across the world. His data doesn't predict the job market. It is the job market."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Great to be here."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I am so happy to have you. So you're the CEO of LinkedIn and also executive vice president of Microsoft Copilot and Microsoft Office, and we're at Davos today."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what is everyone talking about?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "I think there's a lot of things I'm seeing, but I think one of the things that's probably most interesting is that if we were here maybe three years ago, a lot of the conversations would be with traditional media. And this year, it's amazing to see the creator influence up and down the promenade and the role that creators are playing in this new economy. We see it on LinkedIn. There are four million members now whose official job title is creator. It's just amazing to watch this new industry explode and be recognized at Davos, for example."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That is amazing, and I'm happy to be part of it. It's amazing to see that starting 12 years ago and being a creator now is just a huge difference. What do people say about AI? Do you think people hear more positive or negative?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "It's interesting. I think people are all over the place because their opinions are based on what they heard from the last conversation. What I love about LinkedIn is that as the definitive labor market platform of the world, we have amazing insights into what is actually happening across the world. It's interesting—while we see that hiring is sluggish across most markets, the reason doesn't have anything to do with AI in our opinion. It's actually more due to macro conditions, interest rates, not AI. As it relates to AI, we see something totally different. There's actually been almost 1.3 million brand new net jobs on LinkedIn for AI roles like data annotators. Over 600,000 new data center jobs exist on LinkedIn for deployed engineers that companies need to understand AI. So in terms of what we're seeing in the LinkedIn data right now, AI is a net positive addition to the job market, not something that's detracting jobs."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's great. But what about entry-level jobs?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Entry-level jobs across the world right now—the hiring rate we see is down roughly 12%. But they're not disproportionate to any of the other jobs. They're down just as much as all the other jobs in the world. I think a lot of that contraction is due to macroeconomic conditions, interest rates, and companies investing less in general. So the question becomes what do professionals do, and we're seeing two trends emerge. One is micro entrepreneurship—a rise in creators. If the traditional path doesn't exist, people need to take their career into their own hands. And number two is a real affinity toward trade roles. People weren't as into these roles a couple of years ago, but especially Gen Z sees them as a much safer option."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you mean trade, like first-line jobs?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Like typical trade roles, not office jobs. They see those as more resilient in an AI world. These are the types of jobs that AI probably won't take, so we're seeing more affinity toward that as well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. Have you seen a huge uptick in people putting creator as their job title?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Right now there are 75 million people on LinkedIn that somewhere in their profile say they're a creator, and there are 4 million people that say their full-time job is creator. It's fantastic."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do career paths change? You also track people through their career inside companies. You start as assistant and go up and up. But I heard you at a conference saying that a lot of people are hiring generalists now. So you don't necessarily climb up the ladder—you expand horizontally, acquiring new skills. Do you see that trend?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "So the most important thing—since the beginning of LinkedIn, the feature requested most from members is \"show me what a typical career path is supposed to look like.\" LinkedIn has all this data. If I want to become a CFO, CEO, or accountant, what is the path that people take? The reality is in the data, there is no such thing as a linear career path. It's all over the place. The more people recognize that you have to take your career into your own hands—there's no natural path that exists that you just get on—the more important that becomes. Right now it's more critical than ever because skills are changing. The types of skills necessary for specific roles on LinkedIn have changed more than 25% over the last couple of years alone. We expect they'll change by 70% by 2030, largely influenced by AI and new tools and new ways of doing these professions. When I talk to people about their careers, it's less about where do you want to be in five years, and more about over the next few months—what new skills do you want to learn? Because these roles are flattening. Generalists are increasingly where people are going these days."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what are the top skills people should be adding to their LinkedIn right now?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "There's huge demand on both sides of the spectrum. Obviously, AI literacy is important. No matter what your role or profession, familiarizing yourself with these tools is a really smart investment in your career. You don't have to love them or use them all the time, but putting yourself in the mindset that you're going to figure out how to be better at your job through AI is important. But just as important on the other side are human skills—curiosity, creativity, courage, communication, compassion, the ability to work with other people, the ability to sit down with someone and actually have a conversation. You can't just be mired in using technology in a bubble and be successful. In many work settings, you have to be able to disagree and commit with someone, to communicate, to help galvanize people to get something done. The key right now is that combination of learning AI skills while being strong on human skills. They're typically called soft skills, which I think is a misnomer. \"Soft\" feels like it's less important, but they're more important than ever."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When you talk about soft skills, as someone who hires on LinkedIn, I don't really sort people by creative or whatever, but I read their posts. What I found really helpful in hiring is that now we hire based on content that they post because it shows their personality and how deep they are in the subject. We just hired a YouTube strategist who's amazing. We hired him purely based on what he was posting about building a YouTube channel."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "I love that. The extension of your LinkedIn profile isn't just where you went to school, where you've worked, what skills you have—it's the ability to demonstrate the actual knowledge you have in your head by posting on LinkedIn. It's awesome to hear you use that to understand someone's identity better."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, you don't have to jump on a call. You don't have to do anything. You just read the posts. It saves a lot of time. As someone who started posting actively on LinkedIn last year, we made something equal to a full-time salary just on LinkedIn. We grew from 10,000 to almost 50,000 followers in a year."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Wow, congratulations."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So LinkedIn is definitely the social network right now."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Thank you for that. By the way, LinkedIn is unique because our platform exists to create economic opportunity for every member of the global workforce. Our feed exists as a mechanism to showcase your identity—exactly the story you just told. If I'm trying to get hired or make a name for myself in a specific field, the content I share is a way to do that. Other platforms stem from their vision around entertainment or large engagement. Our largest business is recruiting, so we don't come at it from a perspective of trying to help you get a gazillion likes or 10 billion views. We're trying to help you create authentic content that only you can do, based on the skills you have and what you know, get that on the platform to the right people who may learn from it, do something with it, or hire you because of it. That's where we find success. You may not get the views you get on other platforms, but the people you reach, the quality of the audience, the opportunities that come—that's what we're really trying to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You get the right views. Also, what I noticed as a creator is that telling your personal stories, especially if they're tied to some events, really helps grow."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "I think it's interesting. More in the younger generation, it always felt taboo to talk about anything that didn't feel buttoned up and professional on LinkedIn. But more and more, the next generation is not only okay with it—it actually tells a lot more about who they are, their personality, what they know, how they think. It's really refreshing to see that happen on LinkedIn."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. Let's go back to our LinkedIn profiles. There's a huge section for education, right? A lot of people would take top university or small courses just to have that name because it meant a lot. Do you think college means as much these days, or because we can acquire any skill online, is it just kind of fading away?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Two things. One, I dropped out of college very early and was really focused on the skills I needed to start a company and be an entrepreneur, so I had a mixed view on that. Right now, at least in the US, 50% of college graduates this year will graduate either unemployed or underemployed, and credit card debt is being outpaced by student loan debt for the first time in history. So there's something that's not really working in the current system. I'm nowhere close to saying college isn't worth it. The social experience, learning soft skills, being able to be around people and communicate—I think those are critical. If you're fortunate enough to be in a college environment to have that experience, I think it's really worth it. But I think it's more about soft skills for most professions than the typical hard skills we always thought about from college. More importantly, more and more, recruiters and anyone looking to hire on LinkedIn aren't looking at what school you went to. They're looking at what skills you have or what your last post looked like, so they know more about you. It's mattering less than it has in the past."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are you still betting on college for your daughters? I have three daughters, right?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Absolutely. I think the social components are critical. It's a great place to learn how to grow up, to learn how to interact with other people, to form a network, to make mistakes. I don't mandate anything my children do, but so far my oldest has taken that career path and she's having a wonderful time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Have you ever regretted dropping out?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "I think I missed a lot of really fun years by leaving college early. That's for sure."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "All right, still a big question. You are releasing a book, Open to Work. Can you talk about how someone can use this book to navigate their future? I feel like you're the best person to write this book because you have all the data. You're seeing what's happening on the market, and I'm looking forward to reading it."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Thank you. It's been unique because I've spent 25 years building internet products where you can build a product, test it with people, see what happens, and change it quickly. When you write a book, you write it and it's final, and you hope people find value in it. We're excited to release it soon. It's a book written to help people understand and bring clarity to what career paths look like in an AI-first world. There's a lot of uncertainty. People are scared. They don't know where to start or where to turn. This book acts as a guide to help you understand how to think through it—what AI can do, what AI can't do, the importance of human skills we talked about, and how to pull those things together and figure out what you want to do with your career and make the best path for yourself. It's not a crystal ball, but we try to leverage a lot of what we know and see on LinkedIn to help people make smarter career decisions because it's so difficult, especially when you're starting out. Right now there's just so much unique craziness around what AI means for jobs, roles, and skills. If we can help more people make smarter career decisions, that's what we're aiming to do. We do that every day through LinkedIn, but we wanted to try a different approach for people who maybe aren't on LinkedIn or just want to see it in book form."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there a principle from that book you can share that people can use to guide their careers?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Most importantly, I see people on LinkedIn absolutely hyperfocused on hard skills, AI skills, technical skills, and they're completely dismissing human skills. We talk about it in five C's that we think are critical to learn and master and that will make you stand out in the future: curiosity, courage, creativity, compassion, and communication. Learning and understanding the importance of those five skills are where I would invest the majority of my time as a professional."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's interesting because we have a lot of tools on how to develop our hard skills, but when it comes to curiosity, how do you even acquire that?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "It's hard. Some people are fortunate enough to be born with it. But through LinkedIn Learning and the data we have, we help teach techniques and how to think about a lot of these soft skills. People think they can't be learned, but they actually really can be learned. They need to be practiced like any other skill. The most important thing right now is just kind of bringing that to the forefront and realizing that soft doesn't mean it's not important."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I've heard someone say that in the next 5 to 10 years you either become an entrepreneur with a new niche or you die. What would you say?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "I hope that's not the case. I absolutely expect that AI is going to democratize access to opportunity in a way that so many people who have always wanted to create something, start something, or build a business will have the tools to do it. I don't think it's going to be the only path, but I do think we will see many more entrepreneurs, and I think that's a really good thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, me too. Can you give me the top three jobs for the next three to five years?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Top three as in most in demand. Right now there's a role called data annotator. You know what this is?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "No."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "It's fascinating. Anytime you use a large language model, the way those models keep getting better is that many human beings are paid to evaluate the output of those models based on their expertise. Maybe you're a cardiologist in your full-time job in real life, but a large language model company is trying to make their model better for people asking questions around heart health. They'll take the response the model's giving and hand it to the cardiologist and pay them to mark it up—\"Is this right or wrong?\"—and then take that and put it back into the model. Huge companies are sourcing those people. Every topic, every niche topic, every language has to be covered through these models, and there's so much knowledge in people's heads that I think that's going to be a really hot job moving forward."
+    },
+    {
+      "speaker": null,
+      "text": "I also think anything that has to do with building out data centers. These are all types of jobs—trade jobs, hyper-technical jobs, maintenance jobs. Building the infrastructure of data centers moving forward is going to be critical because in order for anything AI-related to actually flourish, there's a foundation that needs to be put in place."
+    },
+    {
+      "speaker": null,
+      "text": "And then the last one I'm paying a lot of attention to is something called a forward deployed engineer. It sounds like an odd term, but basically, when a company decides they want to pull AI into their company and better use AI, it's a tricky thing to figure out. Historically, that was up to the IT department. But this new role is someone who sits in the actual business—in the marketing department, product department—who is skilled at both business needs and understanding how AI works to make that connection inside the company. Companies are frequently hiring these people now to help not just make AI a cool thing in their company, but actually return real value to the business."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. And creator—that's my fourth really important job, sorry."
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Thank you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I feel like we're on the rise this year. That's awesome. Do you think there are any jobs, maybe three jobs, that you think are disappearing?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "If you think about everyone's job—your job, my job, anybody's job—ultimately it's a set of skills and tasks. If you break your job down like that and then think about the ability for each task to be automatable by AI, you can quickly see that if your job is just a set of tasks that can be automated, you need to start finding a new job. AI right now is really good at things like summarizing, rewriting, or translating. Those types of jobs where AI is good at those skills are where we try to help LinkedIn members realize, \"Hey, here are some more skills you should be adding to future-proof yourself.\" That's the framework to think through maybe where jobs will be more impacted."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. Thank you so much, Ryan. That was so insightful."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "0fXGtQoJgNo",
+      "thumbnail": "https://img.youtube.com/vi/0fXGtQoJgNo/hqdefault.jpg",
+      "title": "Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio"
+    },
+    {
+      "videoId": "S0h5oUVv0BY",
+      "thumbnail": "https://img.youtube.com/vi/S0h5oUVv0BY/hqdefault.jpg",
+      "title": "LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman"
+    },
+    {
+      "videoId": "JcvG5P6CW-M",
+      "thumbnail": "https://img.youtube.com/vi/JcvG5P6CW-M/hqdefault.jpg",
+      "title": "9 AI TOOLS You Must Know In 2024"
+    },
+    {
+      "videoId": "4jqrK-hUicQ",
+      "thumbnail": "https://img.youtube.com/vi/4jqrK-hUicQ/hqdefault.jpg",
+      "title": "How to Build a Viral Brand Online ft. @blogilates"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000750778981"
+  }
+}

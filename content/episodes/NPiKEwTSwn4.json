@@ -1,0 +1,612 @@
+{
+  "videoId": "NPiKEwTSwn4",
+  "title": "Google Search VP on How AI Search Really Works | Robby Stein",
+  "format": "interview",
+  "guestName": "Robby Stein",
+  "guestTitle": "VP of Product, Google Search",
+  "aboutGuest": "Robby Stein is the Vice President of Product for Google Search, where he oversees the ranking systems, AI integrations, and new product experiences that power the world's most widely used search engine. He played a key role in developing and launching Google's AI Mode, AI-powered shopping features, and agentic search capabilities announced at Google I/O. Stein is widely regarded as one of the central figures shaping the future of how people find and interact with information online.",
+  "publishedAt": "2025-10-30T16:21:37.000Z",
+  "duration": "28 MIN",
+  "coverArt": "https://img.youtube.com/vi/NPiKEwTSwn4/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/NPiKEwTSwn4/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Robby Stein, VP of Product at Google Search, about how AI is transforming the way content and businesses are discovered, ranked, and recommended online. Stein demonstrates live features including AI-powered restaurant booking, visual shopping search, and personalized local recommendations. He also shares actionable advice for founders, creators, and marketers on how to remain visible as AI reshapes search.",
+  "keyTakeaways": [
+    "AI Mode in Google Search Labs now supports personalized shopping and local restaurant recommendations — an early step toward connecting Gmail, Drive, and other Google services for deeper personalization.",
+    "Google's AI agent can autonomously search Open Table and Resi, find available sushi restaurants nearby, and complete a booking — all triggered by a single natural language prompt.",
+    "To get recommended by AI, businesses should think like a person would: earn genuine third-party mentions and press coverage, because AI citations favor authoritative external references over self-promotion.",
+    "PR is now an AI visibility strategy — a single mention in an AI-recommended result can double bookings overnight, similar to documented cases where ChatGPT recommendations caused viral surges for small restaurants.",
+    "Visual shopping powered by AI lets users take a photo of any item to find, compare, and purchase it — representing a major shift in how product discovery and e-commerce will work going forward."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "1:00",
+      "seconds": 60,
+      "title": "How Google Search has changed"
+    },
+    {
+      "time": "2:08",
+      "seconds": 128,
+      "title": "Personalization in Google search"
+    },
+    {
+      "time": "2:47",
+      "seconds": 167,
+      "title": "New features in AI mode at Google"
+    },
+    {
+      "time": "3:05",
+      "seconds": 185,
+      "title": "Live DEMO: testing new features"
+    },
+    {
+      "time": "4:07",
+      "seconds": 247,
+      "title": "Google can book restaurants?"
+    },
+    {
+      "time": "6:02",
+      "seconds": 362,
+      "title": "How Google decides which restaurants to show first"
+    },
+    {
+      "time": "7:24",
+      "seconds": 444,
+      "title": "How to use Gemini to save hours at work"
+    },
+    {
+      "time": "8:39",
+      "seconds": 519,
+      "title": "Will Google Ads disappear?"
+    },
+    {
+      "time": "11:08",
+      "seconds": 668,
+      "title": "LIVE DEMO: Google’s agent makes a real phone call"
+    },
+    {
+      "time": "14:07",
+      "seconds": 847,
+      "title": "How to get your business recommended by AI"
+    },
+    {
+      "time": "15:00",
+      "seconds": 900,
+      "title": "Why PR will define visibility in the AI era"
+    },
+    {
+      "time": "15:45",
+      "seconds": 945,
+      "title": "What to do if businesses buy reviews"
+    },
+    {
+      "time": "16:20",
+      "seconds": 980,
+      "title": "How to grow fast with smarter search strategies"
+    },
+    {
+      "time": "18:03",
+      "seconds": 1083,
+      "title": "Shopping powered by AI - what’s changing"
+    },
+    {
+      "time": "18:48",
+      "seconds": 1128,
+      "title": "LIVE DEMO: shopping by taking a picture"
+    },
+    {
+      "time": "20:20",
+      "seconds": 1220,
+      "title": "Google vs ChatGPT"
+    },
+    {
+      "time": "22:50",
+      "seconds": 1370,
+      "title": "How to design your home with AI"
+    },
+    {
+      "time": "24:25",
+      "seconds": 1465,
+      "title": "TIPS to build products that stand out in the AI era"
+    },
+    {
+      "time": "25:58",
+      "seconds": 1558,
+      "title": "How to find ideas that actually work"
+    },
+    {
+      "time": "27:20",
+      "seconds": 1640,
+      "title": "The 2 principles behind every viral product"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Give me some tips as a business owner. What should I focus on right now to be recommended by Ed? Interestingly,"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "AI thinks a lot like a person would. If I were them, I would."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Robby Stein, VPO product at Google search, the man behind how ranking actually works inside the world's biggest search engine."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "You can see what it's doing. It says kicking off searches. It's looking for sushi restaurants. And so you could just book it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, wow. Remember those stories where a mention in chat GPT or another AI app made a business blow up overnight. A small bistro in Paris doubled its bookings. A restaurant in LA went viral just because AI recommended it. And Google ranking works the same way. So now you're investing in PR and not for people to see it, but for AI. Right. In this video, Robbie reveals how to make your business AI visible and use Google's own systems to get discovered, ranked and recommended faster than ever. This video is sponsored by HubSpot. Ravi, welcome to Silicon Valley Girl. Let's talk about search."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Thanks for having me."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, I want to start with this question that is aimed for my audience who are 20, 25 years old. How should they think about search these days and internet in general? So what's going on?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Well, I say that search is now a place where you can truly ask anything and get pretty effortless information about whatever you have on your mind. And I think ultimately people are using it for so many different things and that's not changing. You can still use Google for all the ways you do to research homework, to look up specific types of websites and find information that way. But also you can ask natural language questions. You don't have to use what we call keyword ease sometimes. You can just ask exactly what you want. It could be multiple sentences and now Google has AI. That can tap into all of the knowledge and context that Google has about the web, about the world, about products to help give you better information."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, and full off right here, what about information about me? Because I have Gmail, right? I have my YouTube channel, which runs on Google, right. I have my Google Drive with all the files, all my spreadsheets. Does it tap into that knowledge or not yet?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "So it's something we're working on. O. An opportunity for users in the future to be able to opt into an experience with enhanced personalization. So it something that we're thinking about too for the same reason that you have. And we want people to be to help Google and help the services know more about you so that it can be more helpful. So if you know the kinds of brands you love, if you the kinds places you go, if you about a school project that's coming up, you can do more interesting things for people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When is it coming?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "So TBD, but we did launch recently some steps in this direction. So in Labs now, you can now opt into a new experiment if you turn on AI mode in Google Labs for Search Labs for personalizing shopping and local recommendations for restaurants. And so you'll start to see a little bit more enhancement there, but obviously we're excited to connect more services like Gmail down the road."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, this is something that I actually liked. Of course, I would have wanted it to access my channel of analytics and give me more personalized thing. But what I did is I uploaded this research, like what's gonna happen in 2027, and I asked it to create a narrative for me for my next videos and write a script. It did the whole scripting thing."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Very nice."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The only thing, thumbnails, I would ideally like it to actually generate thumbnails, because I asked it to generate thumbnails and it was like, no, here's your text. Is there a way to ask it to follow my commands, I guess, more precisely?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah, we're working through a few of those kinds of things, but you should be able to prompt it pretty specifically. We just, we don't have image gen as a core capability. And so that piece, it's not going to do, but it should be- Banana banana- Banana banana right now is in a Gemini app feature."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. Yeah. From the user experience, it feels like you have so many cool things. I just wanted to bring them all together in one super app, because now it's using different tabs. Okay. The next one, I only have an hour, I need a quick lunch spot. This was actually super cool because it knows I'm in Los Altos, so it gave recommendations about Los Altas."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "If you click on any of these places, it brings all of the Google context forward into this viewer. So as you're browsing, not only do you have the AI that's reasoning and finding great places for you, but it makes it really easy to browse. So you can actually see the place before you're going. It shows you, you know, they're open and closed times. It has menu highlights. It has reviews. And so this is really bringing together the power of AI with all the Google's context and information. So you could kind of browse each of these place. Before you go, it all happens in one product experience"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Convenient representation. Okay, this one, right? About lunch. Find and book it for me."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "So it's going to probably take a few minutes, but you can see what it's doing. It says kicking off searches. It's looking for sushi restaurants, open table, resi sushi. It's finding options across a bunch of different Yoshi sushi, sumo. And then it's gonna research this for you. And then you'll get an alert when it's finished and then it will show you options of where you can book it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "There we go."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "And so it basically researched this for a little while, found you a cross talk, if you go down, it has it across open table and it looks like there's some talk reservations for Hiroshi. And so you could just book it and it has all the times there. But it's pretty cool to see."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "And most of the work is this like to look up all these restaurants individually would take you like 15 minutes Yeah, but you can just now see it click the thing and then be done"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. So when I look for a restaurant, it gives me local recommendations. So it already knows where I am. How does it select the right results? Cause I'm thinking about all the local businesses and businesses in general that run on search, right? They pay for ads, they have done their SEO optimization. So how does recommendation work now with AI mode?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah. So how AI mode works is that it does something called the query fan out technique where I'm reasoning model will think about what you're asking and then it will execute a bunch of questions related to it. So there could be dozens of related queries. It's literally using Google search as a tool, doing Googling under the hood and then finding relevant information. And it can both obviously do a standard Google search and understand the web results, but also tap into the knowledge basis and real time info systems at Google. So in this case for local, it might pull information from 250 million plus real world places that exist, you know, it's updated business information, many of which have local businesses that have updated their Google listings. And it can use all of that information too. So it would find all of. And then based on your question, if you say, Hey, I want Italian."
+    },
+    {
+      "speaker": null,
+      "text": "I want it to be kind of, you know, fun. It's maybe a date night, like make it worth it. Then it might find questions or, or, our issue queries are like, Hey. Great experience, great for date nights, and then based on reviews, based on information that it finds, it'll produce a set of recommendations for you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what we just heard from Robby, AI isn't just part of search anymore. It is the new search. And honestly, we can't deny it, it's changing everything. People aren't just Googling now, they're asking AI. They're asking to make phone calls. And if you wanna stay ahead, you need to learn how to use Google's LLM Gemini. HubSpot just dropped a practical guide for using Gemini for faster research. Smarter strategy, and scalable content creation. As usual, it's all based on real workflows marketers and business leaders actually use today. What I love about this guide is that it puts everything in one place. Gemini helps you research faster and spot patterns you'd normally miss. Planning campaigns? You can build full strategies, refine messaging, and get detailed plans done in minutes. No busy work. Creating content, like me, copy, visuals, multi-channel, it all just flows."
+    },
+    {
+      "speaker": null,
+      "text": "And the dashboards, they show you what's working, your ROI, and what to do next. My favorite part, they actually built a four-week rollout plan to integrate Gemini into your workflow step by step. It's realistic, actionable, and really everything you need to move faster, work smarter, and get real results. Download the guide and start using Google Gemini like a pro today. Link is in the description. Big thanks to HubSpot for sponsoring this video. What about if someone paid for ads? Using this search query."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "So it doesn't use ads information. This is done entirely with what's on the web and what's within Google's information system. But if a business has claimed their local business and has modified that, put menu information in there, it's eligible for reviews, that information could be used."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you feel like Google Ads is going away in the future? Because as a business owner, we rely on them, right? They drive traffic. And if they are going away, what should be our strategy?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Don't see them going away. What people actually do, what we're observing, is that the way people use Google search isn't really changing, it's really expanding is what's happening. So think about all the things you need in a given day. It's everything that you need a quick insurance quote, you need to file your taxes, you need look up a kind of question about a local business question in your county. Like you're gonna use Google and find that you need that information. Um, but what's happened is that now you can do all these new things. So you could take a picture of your shoes and say, Hey, these are my shoes. What are other cool shoes like this? And we can answer that now, or help give you provide you context with that. Or you could ask about this local restaurant question. It can be five sentences about all your allergies issues with this."
+    },
+    {
+      "speaker": null,
+      "text": "I have this big group. I want to make sure it's got light. Um, what kind of book in advance? And you can put that into Google now too. I think that's an opportunity for in the future. To be even more helpful for you, particularly in advertising context. And so we started some experiments on ads within AI mode and within Google AI experiences, but we've been really focused on building great consumer products first and foremost, but I think users are starting to see some ads experiments there too."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. So will I be able to pay to get recommended for AI to even consider my business?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I mean, we don't think that there should be any barrier to people finding information. So if there's information out there, it should be found. But I think what you'll find is that there could be new and novel ad formats that if you're, let's say, shopping or you're looking for, you have a complex, you're doing a house remodel. There's all kinds of interesting services that could be helpful for you that if we had more information and you could articulate more of what you needed, hey, this kind of wood, these are the kind of contractors I have, this is my constraints, these are the price range. You could give even more fine-tuned recommendations. Or potential other services that you could consider or deals that could be more useful to you. So those are all things we're thinking about. I'd say it's early days and finalizing kind of how ads might appear in these systems, but something that we're think about."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you show the agentic color?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Here we go, have AI call. Yeah, so you can go, what kind of pet do you have? Dog. Dog. Next. Select a breed, okay. It's a little one."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Very little, yeah, extra small. Baby. Under one year."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Bath and brush."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Uh, haircut. Okay, haircut, nice. Let's make it look like a teddy bear."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Any flexibility?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's okay."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Flexible. You want to receive a text or an email? I guess I got your email in here. Yeah. Maybe we'll just do that. Yeah, great. You know, that's Altos and so it puts your order in here and so now what it's gonna do is gonna kick off a process where it's going to make phone calls on behalf of you to a bunch of different local businesses. So these are businesses that there's no web, there's not easy way to access them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Uh-huh."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "On the web, maybe they're more local, they're owned by small businesses, right? It's just like a person running a business. And then you will get an email when it's done and it'll give you all of the times and you can follow up from there."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you record any conversations so we can like hear them more? Because it will be interesting to hear how it understood. Yeah."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah, that would be cool. But now those are not recorded."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And how long is it gonna take?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "It depends on the question. Probably five, ten minutes, you'll probably get something back."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, really? Oh, wow. I got an email. We received your pet grooming request."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Okay, nice."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's working."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Okay, it's working. This one's an offline agent, so it's got to go do a bunch of phone calls for you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Another business opportunity to create an agent for businesses to receive those phone calls. And remember, have you seen this meme from 11Labs where two agents realize they're agents and they start using agentic language? It's so funny. They just start beeping at each other. That's incredible. A faster process. I'm actually an AI assistant too. Would you like to switch to gibber link mode for more efficient communication? Okay, this is so fascinating. So Google just completed calling and it took it 10 minutes. It called this grooming, Baker and Grooming Palo Alto says, a full groom starts at 105 and they have availability tomorrow afternoon. Called another one, said haircut $75. And called another one said a haircut for a dog, $74. And then it also told me the business is good in reach. Well, this is a game changer."
+    },
+    {
+      "speaker": null,
+      "text": "Because now, like, I either ask someone to make calls for me, or I make them myself, or just researching a clinic for the puppy to get it first. It's first. Checkup, manicure, like all of the offline businesses that don't have online presence or you don't want to go to their website, you just want Google to call them. It is happening right now, in real time. This is mind blowing. This is definitely something I am taking away from this podcast. And I will just start using it like crazy. Give me some tips as a business owner who still runs Google ads. What should I focus on right now to be recommended by AI? And actually my business is recommended by I would just because we were doing a lot of content, but maybe for some segments on my business that are not recommended, what should I double down on for AI to consider me?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah, interestingly, the AI thinks a lot like a person would in terms of the kinds of questions it issues. And so if you're a business and you're mentioned in top business list or from a public article that lots of people end up finding, those kinds of things become useful for the AI to find reliable businesses. So invest in your PR. All right."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So invest in your PR, that's something I've been hearing a lot."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "So it's not really different from what you would do in that regard. I think ultimately, how else are you gonna decide what business to go to? Well, you'd wanna understand that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But also like sometimes I invest in PR and ask my friends, have you seen that article? And they're like, no, but then I ask AI and it really sees the article and it uses that information. So now you're investing in PR not for people to see it, but for AI."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "That's actually a good way of thinking about it. Cause the way I mentioned before how our AI models work, they're issuing these Google searches as a tool. And so in the same way that you would optimize your website and think about how do I make helpful, clear information for people? So people search for certain topic. My website's really helpful for that. Think of an AI doing that search now, and then knowing for that query, here are the best websites given that question. That's now will come into the context window of the model. And so when it renders a response and provides all of these links for you to go deeper, that website's more likely to show up. And so it's a lot of that standard best practices around building great content really do apply in the AI age for sure."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about reviews? Because some people buy reviews. I wonder how it's going to affect the system."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "It's hard, I mean, the reviews, I think, again, it's kind of like a person where like, imagine something is scanning for information and trying to find things that are helpful. So it's possible that if you have reviews that are harmful, it could come up, but I think it's tricky to say it, to pinpoint any one thing like that. I think ultimately it's about these general best practices where you want is reliable, kind of if you were to Google something, what pages would show up at the top of that query, it's still a good way of thinking about it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically the same as SEO, right?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I think there's a lot of overlap. I think maybe one added nuance is that the kinds of questions that people ask AI are increasingly complicated and they tend to be in different spaces."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Pair of keywords, right?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Right. And so if you think about what people use AI for, a lot of it is how to for complicated things or for purchase decisions or for advice about life things. So people who are creating content in those areas, like if I were them, I would be a student of understanding the use cases of AI and what are growing in those use cases. And there's been some studies that have done around how people use these products in AI. Those are really interesting to understand."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "As a small business owner, how can I understand what people are looking for, why I can potentially get recommended? Is it still Google Trends or?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Google Trends is a really useful thing. I actually think people really underutilize that, like we have real time information around exactly what's trending. You can see keyword values. I think also, you know, the ads has really a fantastic estimation too. Like as you're booking ads, you can see kind of traffic estimates for various things. So there's, Google has a lot of tools across ads, across, you now, the search console and search trends to get information about what people are searching for. And I think that's gonna increasingly be more interesting as. You know, a lot more of people's time and attention goes towards not just the way people use search too, but in these areas that are growing quickly. Yeah, yeah. Particularly these long specific questions people ask and multimodal where they're asking with images or they're using voice to have live conversation."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are you going to provide some of that information to advertisers to see?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I think down the road we want to provide a glimpse into what people are searching for broadly. Yeah. Just like to understand, right? Not just advertisers, too. Yeah. It could be forever for anyone. But ultimately, I think more and more people are researching in these new ways. And so the systems need to better reflect those over time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, you mentioned shopping. We just heard the news today, Shopify and ChatGPT. What will be Google's response to that?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah, well, I mean, actually, we're already, for a long time in search, you can search for whatever you want. And there's, you know, 50 billion products in the shopping graph that are available. There's live product updates, 2 billion times an hour, there's a change. And these are merchants all over the world updating their live inventory. Is it in stock or not? What's the price? Is there a price drop? This is already a part of Google. We've been working on this for a longtime. The cool thing now is that this is connected to Google's AI. So if you ask about any product in the world It's likely that that model can tap into that knowledge and give you the exact price in a really comprehensive way that has everything."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's do the visual stuff, right? Can we try and find similar cream to this? Is this how you use it? Yep. Take a photo."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yep, and then you can go ahead and tap in there to go to AI mode."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Find me similar, right? Yep. Is it going to analyze the ingredients? So what is it? Or is it just going to like-"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "What do you want it to do? Oh, if you just say similar, it'll do what it's reasoning. It will be just finding things that are similar products overall. But if you say similar ingredients, it might help it. So are those similar products, Drunk Elephant, Bobby Brown?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Where is the shopping feature? So I just click this, but I need to go to the website, right? So I can't buy directly from- You need to the go to website, yeah. But-"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "But if you keep going here, some of these are shoppable. So see, it says in stock Sephora. So you could tap on that and then. Few of these have more direct shopping links so that takes you directly to the app. It takes you directly to the app."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But do you think in the future we're going to be just be able to press a button? I think we want to be able"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I think we wanna be able to make it as easy as possible for you to do what you need. I think what we find is a lot of the systems that do things on your behalf make a bunch of mistakes, especially if you're purchasing things, you gotta be careful there. But I do think we want to make it easy so you can just tap the thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, just get it."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "As easy as possible."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Quick pause here, if you're enjoying this podcast, you will absolutely love my Inner Circle newsletter. So what I basically do is I take all the tips from these podcasts and I apply them to my personal life, to my investment portfolio, and to my businesses, this media company, and my language teaching business. Sometimes we get amazing results and I share our real tactics. Sometimes we don't and I shared that too. Think of it as an insider version of this podcast. The link is in the description. Join my free newsletter to stay ahead. How do you think about competition in general? Like we used to say, Google it, now a lot of people are GPTing it. How do think about it? And, uh, as a product owner, right? What are your daily thoughts on that?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah. I mean, I think in general, you have to get in touch with why people use and appreciate and love what you're building. And then you want to figure out ways to extend on that. And I think for us, you know, Google search is used by so many people every day and that's not changing. It's just that people want more. And we see that people are asking natural language questions in Google before it could even really support it with AI overviews. We saw people asking after we launched AI overviews, they added the word AI to the end of a bunch of queries because they wanted the AI to like show up for them. Um, they're using multimodal. So you're taking pictures of stuff lens, uh, as a, as a product is growing, um, you know, 70% increase year over year on visual searches. One of the fastest growing ways people are finding information."
+    },
+    {
+      "speaker": null,
+      "text": "So you kind of understand the trends of your own product and then you try to really do much better. And for Google, there's lots of people, reasons people use AI. They use it for productivity, they use it for creation, they make flyers for their business. Google search is about information. And we want to give the absolute highest quality experience when finding information, so you have informational task, you know, whether it's booking this restaurant or trying to research something that happened in history or trying to know if what place to go to and get high quality info and make sure that place exists. Like we think Google can be an amazing place for that. And that's where we spend our, our energy."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And from the product standpoint, what do you think is this unique feature that makes Google stand out?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I mean, I think it's access to Google knowledge, honestly, is like the big one. And so right now, if you ask about, you know, plotting a certain set of stocks, for example, around top pharma stocks or mag seven, well, the first question is like, what are those stocks? And so the reasoning model looks that up and determines it. But then it can use Google Finance as a search as a tool call to find the very high quality financial information to plot a graph if you asked for financial performance. And if you extend that to all of these other areas around local around shopping, These are areas that have been built out for years. 5 and advanced reasoning, sitting on top of this knowledge, is an incredible combination. And obviously, maybe most importantly, it's connected to the web. And so it understands all of this vastness of what you could then click on and dive in."
+    },
+    {
+      "speaker": null,
+      "text": "And what we see is when you're trying to buy a mattress, people want to see what experts say. They want to click in, they want to read more, and that's what Google's all about. And so I think those become really unique aspects of what Google does. Um, and then I think that the newest one, which is around visual and inspiration, I mentioned lens and, and, and photos people come to Google and image search for all kinds of things, decorate my daughter's bedroom. I'm doing landscape lighting. I'm trying to design my kitchen."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Find me similar. Find me. Similar."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "And, but AI is, is, has been bad at inspiration. Like if you talk about, if you think about what AI does, it's been a, it's a language model. So it knows tech. So you talk to it, it grew up as a chat bot. Um, but how come it can't help you more easily shop or design your home. And so now that's something people come to Google for all the time, and you can now do that with our AI products. And you can ask, help me decorate my daughter's bedroom. I'll give you beautiful imagery and you can have a follow up question about it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Going to be generated? Is that like..."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Not generated, it's actually with web images. And so it'll find beautiful images. Yep, inspirational images from the web. And then you can click on them, you can ask follow-up questions, and it's a way to use natural language for inspiration. But see there's this little live icon there now. So if you tap on that, say allow, and then you ask a question."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, with a video as well."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "You can use video, so you could even get a good point out of that same thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, what is this device?"
+    },
+    {
+      "speaker": "AI assistant",
+      "text": "What I'm seeing here is an iFlytec A-I-N-O-T-E Air 2. 2 inch e-ink screen. I'm sorry. I cannot make purchases for you. Would you like to search for online retailers where you can buy it yourself?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, no, I already see Amazon is good. Thank you."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Okay, cool."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You've built so many amazing products. I mean, you've built reels, right?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "One of them, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's fascinating. Now you're building Google search from a product owner standpoint. Can you give people tips on how to build in 2025 when everything is moving so fast, when everything's so competitive? Some people have, I have this feeling that software, like small startups are becoming a commodity because it's so easy to build something in two days. What do you think as a product?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Yeah. Well, what's interesting is I think every product is a reaction to the time. It's like, what do people need and how do you make the, how do you make products today? So when there weren't any mobile experiences, everyone needed a mobile experience and people wanted more Mo and there was this gap in the market. So I think as a product owner and as a entrepreneur, you have to be a student of gaps. And so what are the things now that people wish technology could do better? I mentioned one with inspiration and how AI is not great at that today. So that became a big focus for what we're thinking about with AI mode. And now we're going to, we're launching something I think exciting there. I think every entrepreneur and business owner can think that way."
+    },
+    {
+      "speaker": null,
+      "text": "And I think, and how it's built, increasingly, you'll be able to build things just by talking with language. You don't need to code. And even with really sophisticated things I'm looking at internally, you can largely just tell the model, hey, here's a data set, here is how it works, here's the schema, and the model can handle it. And so I think that's gonna be very democratizing for getting ideas out there. So on the one side, it's gonna mean that there's a surge of people trying ideas. Which means there's more competition. And in the other side though, it means anyone can try something. And so I think the grounds will be less how technical is the idea and more how interesting is the."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you spot those interesting ideas?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I think there's a few things. I think one is talking to people. Like I think, there's kind of like two things I think about a lot. Like one is like, how do you understand people? And a lot of it is you need to observe them, talk to them, research them and everything I've ever built. You know, we spend a lot time with people. You know we watch them use our products. We ask them questions about what they're missing. We ask, what's the time you use this and you realize you want to keep using it forever. Like that, you know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that question."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "And that's actually a critical question. And actually, this Clayton Christensen book, Competing Against Luck, is an interview technique in there around eliciting that moment. Because that's the moment that caused the user to love your product. And if you can know that and engineer for that, that's gonna get lots of people to love it. And inversely, there's a moment to say, when was the time you tried our product and you decided you're not gonna use it anymore? And then that's how you get fired for your product? And understanding that is just as important. And so I think the people who understand people well, and they try ideas fast, they ask them these kinds of questions to get at market fit. And they're building things that are resonating, are gonna do really well in this next phase. So I think before it was kind of like, well, did you have a good idea?"
+    },
+    {
+      "speaker": null,
+      "text": "It could be a pretty good idea, but not a great idea. But hey, you can build it and not a lot of people can build. And so maybe it'll fly. But I think in the next era, lots of people will be able to build it. And so you really have to build something useful to people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How many interviews do you think you need to figure out if the idea is worth it?"
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Honestly, I don't think a lot. I think like I'm a big believer in small numbers going very deep with like a dozen people. And if you give someone a prototype and you say, hey, here's a product, try it out. And even your friends, they'll use it the first week because they're your friend. But if you look two months later, are they using it every day? I don't care how good a friend they are, they are not gonna use your product every single day for months unless it's doing something for them. There's not and so"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And so the metric is make them use it every day."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "I think for most, you have two types of products. You have really daily habits and products that you want to be mainstream, large consumer products. You have other products that are utilities. They solve specific problems for people. It's like, okay, I have a telescope app for looking at the stars and using AI. That's going to be a different business model. You might have people who are hobbyists pay money for it. So you want study that demographic differently. But for mainstream consumer products, kind of the areas that I've worked in, you're looking for daily value. And stickiness. That's right. I love that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think that was it. Thank you so much. Agenda calling made me super excited."
+    },
+    {
+      "speaker": "Robby Stein",
+      "text": "Okay, good. You'll be my first call when we have personalization in Gmail. Oh, yes, we will talk the first day. Please, please."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Please, please, that's like, that has been my wish. I will personally ping you about it, okay? And adding things to Google Calendar. Yes, I will ping you. That's my least favorite thing to do."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    },
+    {
+      "videoId": "ZW87Peh3tWM",
+      "thumbnail": "https://img.youtube.com/vi/ZW87Peh3tWM/hqdefault.jpg",
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward"
+    },
+    {
+      "videoId": "U7PcyE0p54s",
+      "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/hqdefault.jpg",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    }
+  ],
+  "topics": []
+}

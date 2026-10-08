@@ -1,0 +1,296 @@
+{
+  "videoId": "JFilKfL7_9A",
+  "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus",
+  "format": "interview",
+  "guestName": "Daniela Rus",
+  "guestTitle": "Director, MIT Computer Science and Artificial Intelligence Laboratory (CSAIL); MIT Professor",
+  "aboutGuest": "Daniela Rus is a professor at MIT and the Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL), one of the world's largest and most influential AI research institutions. Over a 30-year career, she has pioneered research in robotics, autonomous systems, and artificial intelligence, with her work spanning soft robots, self-driving vehicles, and AI-powered hardware. She is a member of the National Academy of Engineering and the American Academy of Arts and Sciences, and is widely regarded as one of the foremost authorities on the future of robotics and AI.",
+  "publishedAt": "2026-02-12T13:00:36.000Z",
+  "duration": "25 MIN",
+  "coverArt": "https://img.youtube.com/vi/JFilKfL7_9A/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews MIT AI Lab Director Daniela Rus about the future of work in an AI-driven world. Rus explains that people won't lose jobs to AI itself but to colleagues who know how to use AI effectively, and outlines which skills and roles will remain valuable through 2026 and beyond. The conversation also covers edge AI, humanoid robotics, hybrid human-robot teams, and Rus's long-term vision for reversing aging.",
+  "keyTakeaways": [
+    "People won't lose jobs to AI — they'll lose jobs to people who know how to use AI more effectively, making continuous AI training essential for anyone in a repetitive or high-volume role.",
+    "Edge AI (running AI directly on-device rather than in the cloud) is already here and is poised to democratize innovation the way the PC did in the 1980s, enabling individuals and small companies to build solutions without costly industrial infrastructure.",
+    "AI will handle the cognitive aspects of work while robots handle physical tasks, leading to hybrid human-robot teams rather than fully automated 'lights-out' factories in the near term.",
+    "Even in heavily automated domains like customer service chatbots, human presence remains critical for handling unanticipated edge cases that training data doesn't cover.",
+    "Skills tied to curiosity, creativity, strategic thinking, and human interaction are the hardest for machines to replicate and will remain the most durable career assets through at least 2030."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "01:05",
+      "seconds": 65,
+      "title": "Will AI replace your job?"
+    },
+    {
+      "time": "02:37",
+      "seconds": 157,
+      "title": "The real threat isn't AI"
+    },
+    {
+      "time": "04:36",
+      "seconds": 276,
+      "title": "Technology that will change everything"
+    },
+    {
+      "time": "06:36",
+      "seconds": 396,
+      "title": "EXCLUSIVE: Build startups from your phone"
+    },
+    {
+      "time": "07:51",
+      "seconds": 471,
+      "title": "Your morning routine in 2030"
+    },
+    {
+      "time": "11:39",
+      "seconds": 699,
+      "title": "Robot almost waters $2000 Italian shoes"
+    },
+    {
+      "time": "13:20",
+      "seconds": 800,
+      "title": "Live demo: kitchen robot makes lemonade"
+    },
+    {
+      "time": "14:46",
+      "seconds": 886,
+      "title": "Where the money is (nobody's building)"
+    },
+    {
+      "time": "16:04",
+      "seconds": 964,
+      "title": "Robot that fights back (must see)"
+    },
+    {
+      "time": "17:48",
+      "seconds": 1068,
+      "title": "Skills that will never be obsolete"
+    },
+    {
+      "time": "20:24",
+      "seconds": 1224,
+      "title": "Why memorization still matters"
+    },
+    {
+      "time": "22:15",
+      "seconds": 1335,
+      "title": "Her biggest dream: Reversing aging"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Daniela, thank you so much for doing this. I'm thrilled to have you on Silicon Valley Girl."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Wow. Thank you so much for having me. I'm excited to have this conversation with you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's be futuristic straight away. When you think about the future of workforce, do you see any jobs being replaced in the next two or three years by robots or are we still too far from that?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "A lot of jobs are already enhanced, and in particular the jobs where you have high volume, quite repetitive activity. For instance, chatbots have more or less taken over customer service, but even in the space of chatbots there are aspects that the chatbots cannot handle. I had a recent experience where I was interacting with a chatbot because I had a problem with a shipment and my problem was not captured by the seven options that I could get from the chatbot. I went around and around in circles and then I went to a human at a store and the human said, \"Well, you have to talk to the chatbot because we don't do that kind of work anymore.\" My point is that even in these kinds of repetitive scenarios, it is important to have a human presence because there are aspects of tasks that are not anticipated, that are not captured by the data that has been used to train the chatbots."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone who's doing a repetitive job right now and thinks, well, maybe my job is in line to getting enhanced by a robot or AI, what should they be doing today?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "They should be training in AI and maybe in robotics. AI will support us with the cognitive aspects of our jobs. Robots will support us with the physical aspects of our jobs. In my opinion, people will not lose their jobs to AI, but they will lose their jobs to other people who know how to use AI to be better at their jobs, to be more effective and more efficient. My advice is to keep learning, to stay current, and to understand what is the state-of-the-art with the tools that are most applicable to your domain and to the field you're working in."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you think robots and AI are going to change the job market?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "I don't think we're going to have lights-out factories for a long time. But the question is not whether robots and humans will coordinate and collaborate in the workplace. The question is how they will cooperate and coordinate. What I imagine is hybrid teams with humans and robots working together. This kind of synergy is really a tremendous opportunity for all of us because this synergy between human and machine can free people of doing routine work, can buy people more time to focus on strategic aspects of their jobs, on human interaction, on curiosity and creativity, and the kinds of attributes that are difficult for machines to deliver today."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you could highlight one technology that you think is underutilized by businesses right now and by researchers who are building commercial products, what would it be?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "I would say that edge AI is already here. We already have products. We already have the ability to run AI on device and I would love to see more of this. In fact, I think we're experiencing a moment in time that's very special and it's somewhat analogous to where the world was when we used to have only mainframe computers. This is probably before your time, but there was a point in time where all computing was in mainframes. Those mainframe computers were about as big as this room and we only had a handful of companies with expertise in knowing what to do with these computers. At some point, we had brilliant inventors who brought to us the PC and the PC completely democratized computing and brought such economic well-being and flourishing. With AI, I feel like we're experiencing the same moment in time today because right now AI is bringing most value through industrial installations. These industrial installations are huge and costly, and that means that a handful of companies can take advantage of them and the technology that they enable. But imagine a world where AI moves on device, just like computing moved from mainframes to device. Just imagine how much innovation and economic flourishing we will have when anybody, every company, every individual could innovate, could build solutions and new ideas, could solve problems because they have access to more powerful tools."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically, how would it change my day-to-day? So right now I'm talking to a cloud. When I'm using an LLM, I'm talking to ChatGPT. If I have something on my device, how does the process differ?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, if you have something on device, first of all, it's cheaper. It's not as expensive. It's more private. You will have privacy for your interaction because now every cloud interaction essentially puts all your queries, all your prompts, all your information back in the cloud. But then depending on your ambitions and aspirations, you could build your own startup using the AI tools on your phone right in your living room without support from huge numbers of developers because AI could take on a lot of the development."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically we need a new type of device, right? That has the operating system, the AI system running on itself."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, actually we need the AI phone and the AI computer and the AI glasses and the AI everything. These devices will put the power of AI at your fingertips."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's imagine it's 2030. You wake up, there's probably a robot in your house. What does it do? Something that will blow our minds away today."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "2030 is very soon from the point of view of development and bringing technology into homes. For instance, do you know when was the first self-driving ride on a highway? The first project in Europe was in 1985. The first project in the United States was in 1995—there was a car that drove coast to coast with some human intervention. So what this tells us is that the path from a successful research experiment onto a full-blown product that can be used in everyday life takes a long time. These are the kinds of time scales that we're looking at. If you will allow me to expand and think beyond 2030, then I will say that I imagine the world full of smart robots that help us. Maybe by 2030 we will have our robot garbage can that will take itself out and bring itself back in. By 2030, we could have a humanoid parked at the street corner that watches us and if you're a little bit sad, it could offer you some ice cream and serve some ice cream for you. We would have guiding robots and security robots. By 2030 I think we will have a lot of robots in the service industry. The home is going to be much more challenging, much more demanding. Eventually we will have robotic tutors and robotic assistants. 2030 is soon, so for 2030 I would limit myself to the service field."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think about the household robot? What's the timeline for that one?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, we could imagine all kinds of household robots. Even though today we see so many humanoids that are advancing in their capabilities, there's still a long way to go from where the state-of-the-art in research is right now to the point where we have robotic helpers. I was at a conference recently and I had an interesting conversation with a humanoid. I said, \"Hey robot, what can you do?\" and the answer was, \"Oh, I help people in the homes.\" So then I looked around and there was a watering can and a plant. Then I said, \"Well, can you water that plant?\" The robot went slowly to the watering can, watered the plant, and then came for the next instruction. Then I said, \"Can you water my friend over here?\" The robot went to pick up the watering can and was ready to dump a lot of water on expensive Italian shoes right next to me. I had to say, \"No, no, I'm just kidding.\" The thing is that it really takes a lot of effort to develop the kind of algorithmic and software infrastructure to control complex mechanisms like humanoids. In order to get humanoids to be better, we will need AI to be better. Additionally, today's AI tools do not have common sense. The robot at the conference did not have the common sense to understand when a watering task is appropriate and when it's not appropriate. We also have to make some progress on the symbolic and cognitive level."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, it is 2030. I'm in my kitchen. This is my nanny who's helping me with everything. Let's talk about her. What does she do?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Sure. So we've been looking at how to naturally and easily teach these types of humanoid robots new tasks that they can help us out around the home in places like the kitchen. It can help you cook, it can help you do whatever types of tasks you don't necessarily want to do. In this case, we've been looking at a lot of different kitchen tasks like slicing cucumbers, loading the dishwasher, cleaning the table, or in this case, making lemonade."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How many times do you need to show the robot how a task is done for it to repeat?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Yeah, so part of what we were looking at is how we can learn from fewer data so that the person doesn't need to do it as many times. In this case, it learned from about a hundred examples, but it may work with even less. We're starting to explore that a bit now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when do you think we'll be able to have something like this in our kitchens?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, I think it depends on how much you want the robot to do. For these types of well-defined tasks, I think we're getting much closer."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can I have some lemonade, please?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Nice."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there some kind of problem that is of public interest that you wish more researchers were working on because this is where AI and robotics is needed right now?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "I would say aging in place is an example of a space where we need more progress. We need more work. In part, this is because we don't have the workforce to support the needs of aging. In elder care, there are simple tasks like just getting out of bed or being stable as you go from the bedroom to the kitchen. Right now we don't really have any tools. We don't really have any equipment that can help people along the way. Now imagine a situation where there is a robot that hands you an arm and holds you, ensures that there will be no fall. This is a kind of fairly simple support but nevertheless an essential support."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's an amazing business idea. I saw elderly care as one of the top growing markets because yes, we live longer. We also need that help. I feel like the humanoid robot that I just saw is already kind of capable of doing something like that."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "So the system you're seeing here is called Soft Mimic. The idea behind it is to teach human walking or pick up a box. The problem is when you deploy the robot, it's going to make a lot of unexpected contacts with the environment that aren't captured in that motion capture data. So if it's imitating me picking up a box, it might actually—the box might be in a little bit of a different spot. It might be a different size and that's not something you can predict ahead of time or capture in those motion references. Soft Mimic is a way of training the robot to not only imitate human motions but also have a controllable compliance response to different types of external forces. I'm going to show you what it means for the robot to be very stiff versus very compliant. I've got the stiffness turned up all the way, and when I pull on the robot, it's actually going to lean, to exert. It's trying to stabilize itself, right? It's balancing different objectives of not falling over but also not letting me move its hand. The higher I push this lever, the more it's going to pull against me. It's very, very haptic."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh wow! You're like, \"Let me go. Let me go. What are you doing?\""
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Yeah. So it really wants to—It is really strong. Yeah. What we have is a way of training the robot to be compliant. Now I'm just turning down this knob, and then it's going to—it's still standing, but now it's standing with a very soft and compliant force response. Which again, it's still coordinating its whole body, but now it's coordinating its body to comply and allow you to move it around."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone whose kids are still like minor, four and six, what should I be teaching them to prepare them for the world where we'll have more and more AI and robotic assistance?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, I feel like we live at a point in time where everyone needs technological literacy and this technological literacy includes AI literacy. Everyone needs to understand something about AI and technology but not everyone needs to understand everything about the technologies. Depending on what your job is, whether you want to lead with AI, develop AI, deploy AI, or use AI, there are different things that you need to know. Not everyone needs to be an AI geek but everyone needs to know something. From this point of view, I would advocate literacy not just for children but for everyone. But on top of AI literacy, there are many important subjects that continue to be important. I think math is important. I think sciences are important. Literature is important. History is important. Art is important. Having a kind of inclusive general education that teaches us about our world, that teaches us where we came from, that helps us project where we're going and how we should be going into the future in a way that is positive and supportive of each other and of the planet is very important. On top of that, there are qualities that remain very important, especially as we contemplate a future where machines support us. These have to do with being curious, with being creative, with thinking outside of the box, with having good judgment, with being collaborative, with being able to look at a situation and interpret it with critical thinking. All of these are important traits to teach our children and they should be taught in school."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think formal education is still going to be important in ten or fifteen years? You've done your bachelor's, right? Masters, PhD. Do you feel like everyone, like the amount of people that are following this path today—do you feel it's going to stay the same or less and less people would choose traditional formal university education?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "I believe formal university education is very important because at university you learn how to think, you learn how to solve problems, you learn how to find your way forward. The education at school and at the university is not just about memorizing things. It's really also about thinking, about judgment, about projecting into the future. I also believe that knowing things is important. I think I'm not in the majority camp here because a lot of my colleagues believe that with access to the world's knowledge through the worldwide web, what's the point of knowing things? But knowing things enables us to be creative. Creativity is about connecting concepts that are seemingly disparate. Like you connected biology to AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "If we didn't know about biology and we didn't know about AI, maybe liquid networks would not have been born."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "So creativity and out-of-the-box thinking is about looking at the world in different ways and connecting parts of the world that are seemingly different. Also, knowing things enables us to enjoy the world, to enjoy each other, to understand each other. So there is an aspect of life and living that comes with knowledge."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you could witness one breakthrough in robotics in your lifetime that would make you say we did it, what would it be?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, let's see. We live in a very crowded city and if you walk in the streets, will you see any robot? Probably not, right? So I'd say, where are the robots today? When we see a robot, we pause and think, \"Oh wow. What a miracle. There is a robot.\" What I would like to see is a world where robots are so integrated into the fabric of life that they're just there. They are part of how we approach everyday life and we don't marvel that there is a robot in front of us. That means we have to make machines useful. We have to make them capable. We have to make them trustworthy and reliable. From the point of view of robots, this is what I would like to see. This requires advances in so many ways because we have to advance the hardware. We have to advance the algorithms. We have to advance both the body and the brain of the machine and also the way we interact with machines and the way machines interact with each other. These are really continuous challenges in our field. A non-robotic breakthrough that I would love to see in my lifetime is the ability to age healthily. Longevity and healthy longevity is something that we should put some effort into and maybe even reversing aging. Who knows?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, yeah. That's a big one, totally. If you could give a piece of advice to a nineteen-year-old self when you just arrived in the US, what would it be?"
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Well, I would say life is different from what you imagine and you have to be very flexible and adaptive and open-minded. You have to approach things with a positive, open-minded problem-solving way."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is fascinating. Thank you so much. This inspired me a lot and hopefully inspired a lot of young scientists and entrepreneurs to build something. I'm particularly excited about the longevity part and like taking care of elderly people. So thank you very much for having me on your show."
+    },
+    {
+      "speaker": "Daniela Rus",
+      "text": "Thank you for having me."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "subu-xHrp1w",
+      "thumbnail": "https://img.youtube.com/vi/subu-xHrp1w/hqdefault.jpg",
+      "title": "Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li & Masterclass CEO David Rogier"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson"
+    }
+  ],
+  "topics": []
+}

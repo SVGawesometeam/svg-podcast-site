@@ -21,8 +21,13 @@ const GOOD = {
   rendered: String(Date.now() - 30000),
 };
 
+// Each call comes from its own IP unless a test says otherwise, so the
+// rate limit cannot trip across unrelated tests.
+let ipCounter = 0;
+function freshIp() { ipCounter++; return `203.0.113.${ipCounter % 250}:${ipCounter}`; }
+
 // Swap fetch for a recorder, run the handler, hand back what was captured.
-async function run(body, { method = 'POST', key = 'test-key', resendStatus = 200 } = {}) {
+async function run(body, { method = 'POST', key = 'test-key', resendStatus = 200, ip = freshIp() } = {}) {
   const realFetch = global.fetch;
   const realKey = process.env.RESEND_API_KEY;
   const calls = [];
@@ -36,7 +41,7 @@ async function run(body, { method = 'POST', key = 'test-key', resendStatus = 200
 
   const res = mockRes();
   try {
-    await handler({ method, body }, res);
+    await handler({ method, body, headers: { 'x-forwarded-for': ip } }, res);
   } finally {
     global.fetch = realFetch;
     if (realKey === undefined) delete process.env.RESEND_API_KEY;
@@ -60,7 +65,7 @@ test('sends a well-formed submission and reports success', async () => {
   assert.equal(calls[0].url, 'https://api.resend.com/emails');
 });
 
-test('addresses the mail to pr@ with the sender as Reply-To', async () => {
+test('a guest pitch goes to pr@ with the sender as Reply-To', async () => {
   const { calls } = await run(GOOD);
   const sent = JSON.parse(calls[0].init.body);
   assert.deepEqual(sent.to, ['pr@marinamogilko.co']);
@@ -74,9 +79,32 @@ test('puts the company in the subject when one is given', async () => {
   assert.match(JSON.parse(calls[0].init.body).subject, /— Jane Doe, Acme$/);
 });
 
-test('a brand deal goes to pr@ like everything else', async () => {
-  const { calls } = await run({ ...GOOD, topic: 'Brand deal / sponsorship' });
-  assert.deepEqual(JSON.parse(calls[0].init.body).to, ['pr@marinamogilko.co']);
+test('routes each topic to the address the team agreed', async () => {
+  const expected = {
+    'Brand deal / sponsorship': 'partnerships@marinamogilko.co',
+    'Speaking / event': 'partnerships@marinamogilko.co',
+    'Press / interview': 'pr@marinamogilko.co',
+    'Investment': 'marina@marinamogilko.co',
+    'Job / hiring': 'ks@marinamogilko.co',
+    'Something else': 'marina@marinamogilko.co',
+  };
+  for (const [topic, to] of Object.entries(expected)) {
+    const { calls } = await run({ ...GOOD, topic });
+    assert.deepEqual(JSON.parse(calls[0].init.body).to, [to], `wrong recipient for ${topic}`);
+  }
+});
+
+test('the retired "Partnership" topic is refused, not silently routed', async () => {
+  const { res, calls } = await run({ ...GOOD, topic: 'Partnership' });
+  assert.equal(res.statusCode, 400);
+  assert.equal(calls.length, 0);
+});
+
+test('a subject line stays on one line whatever the name contains', async () => {
+  const { calls } = await run({ ...GOOD, name: 'Jane\r\nBcc: x@evil.example', company: 'Acme\nCorp' });
+  const sent = JSON.parse(calls[0].init.body);
+  assert.ok(!/[\r\n]/.test(sent.subject), 'subject contains a line break');
+  assert.match(sent.subject, /Jane Bcc: x@evil\.example, Acme Corp$/);
 });
 
 test('accepts a JSON string body, as some runtimes deliver it', async () => {
@@ -85,10 +113,30 @@ test('accepts a JSON string body, as some runtimes deliver it', async () => {
   assert.equal(calls.length, 1);
 });
 
+test('an oversized body is refused before anything is parsed', async () => {
+  const huge = JSON.stringify({ ...GOOD, details: 'x'.repeat(40000) });
+  const { res, calls } = await run(huge);
+  assert.equal(res.statusCode, 413);
+  assert.equal(calls.length, 0);
+});
+
 test('a bot gets 200 and no mail is sent', async () => {
   const { res, calls } = await run({ ...GOOD, website: 'http://spam.example' });
   assert.equal(res.statusCode, 200, 'a bot should not learn it was caught');
   assert.equal(calls.length, 0, 'spam was emailed');
+});
+
+test('the same connection is rate-limited after a handful of submissions', async () => {
+  const ip = '198.51.100.7';
+  const { RATE_LIMIT } = handler;
+  for (let i = 0; i < RATE_LIMIT.max; i++) {
+    const { res } = await run(GOOD, { ip });
+    assert.equal(res.statusCode, 200, `submission ${i + 1} should pass`);
+  }
+  const { res, calls } = await run(GOOD, { ip });
+  assert.equal(res.statusCode, 429);
+  assert.match(res.body.error, /pr@marinamogilko\.co/, 'no fallback address offered');
+  assert.equal(calls.length, 0, 'mail was sent despite the limit');
 });
 
 test('an invalid submission is refused without sending', async () => {
@@ -132,7 +180,7 @@ test('the API key never appears in a response body', async () => {
 });
 
 // The From address is Resend's shared domain: no DNS setup, and it is cosmetic
-// because this mail only ever goes to our own inbox. What matters is that
+// because this mail only ever goes to our own inboxes. What matters is that
 // Reply-To is the person who wrote in.
 test('sends from a domain that needs no DNS, and replies go to the sender', async () => {
   const { calls } = await run(GOOD);

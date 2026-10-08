@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>15 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=1gm__VUG2m8" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/1gm__VUG2m8/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/1gm__VUG2m8/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,8 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -434,7 +446,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> AI agents, AI agent. My team and I built a real AI agent. Yes, we're trendy. Yes, we're doing this. And it actually automated a process that used to be very manual. The process is called building like a content factory where we have one video, but we want to make a lot of different content pieces from it. And this AI agent is already running and it's working instead of us. It feels like we just added another person to the team. And this person costs maybe like 40 bucks a month that we spend on all the automation tools. In this video, I'll show you how regular AI tools turn into agents and fully automate content from video to publishing. I'll show you our working system and I want you to remember the tools that we're using because they're very universal. Some automation tools can not only work for content, they can work for anything. And I know that my team at Lingu uses these same tools to automate other things in the company. But basically what's happening, we're in the era of AI agents. It's not just like talking to ChatGPT and getting an answer. It's actually asking an AI agent to repeat a process. And the best thing is you don't need to be a developer to understand how it works in practice.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> AI agents, AI agent. My team and I built a real AI agent. Yes, we're trendy. Yes, we're doing this. And it actually automated a process that used to be very manual. The process is called building like a content factory where we have one video, but we want to make a lot of different content pieces from it. And this AI agent is already running and it's working instead of us. It feels like we just added another person to the team. And this person costs maybe like 40 bucks a month that we spend on all the automation tools. In this video, I'll show you how regular AI tools turn into agents and fully automate content from video to publishing. I'll show you our working system and I want you to remember the tools that we're using because they're very universal. Some automation tools can not only work for content, they can work for anything. And I know that my team at Lingu uses these same tools to automate other things in the company. But basically what's happening, we're in the era of AI agents. It's not just like talking to ChatGPT and getting an answer. It's actually asking an AI agent to repeat a process. And the best thing is you don't need to be a developer to understand how it works in practice.</p>
             <p>So there are three different levels. Level one, regular neural networks, ChatGPT, Gemini, Claude. Then you have AI workflows where you build the logic yourself. What happens when, and why, and AI does it for you. And then there is this cool thing called AI agents where AI thinks, decides, and acts on its own. And most importantly, I'll show you how our AI agent takes a video, cuts it, writes titles, and publishes shorts without human involvement. So, let's start with level one. It is where you ask a question and an LLM gives you an answer. Simple principle, input, output. For example, if I ask my ChatGPT, give me a list of the top five AI tools for YouTube, I get high quality, up-to-date answer. But once you ask, what videos did I publish on YouTube over the last three days? The model cannot answer. Why? Because it doesn't know who you are. It has no access to your YouTube channel, email calendar, unless it's Gemini. Gemini can answer questions about your email, but then you ask Gemini about the weather on a particular day and it's like it freezes. LLM is an isolated system that doesn't see your personal data and that's actually a privacy bonus. But most importantly, these models are passive. They wait for you to give a command and they don't do anything on their own. They can't act. They don't make decisions. They don't build action chains. It's still just a tool. Smart, useful, but not an agent.</p>
             <p>Then we move to level two, AI workflow. At this second level, you're no longer just chatting with a neural network. You start automating. This is where magic starts happening. You build a logical chain of actions yourself. If A, then do B and C. This is called an AI workflow. So here's our real life example. We use apps every day. Weather, Google calendar, notes, email. What if you tell the AI if I ask about my personal events, check my Google calendar first and only then answer. Now, if I ask when is the meeting with Reid Hoffman, the AI checks the calendar and gives the correct answer. But if I immediately follow up with what will the weather be like that day, it fails again because you did not add the step check the weather. It simply doesn't know it has to check the weather. And that's how a workflow operates. You build the route, the AI follows it. No flexibility, no adaptation, but it still does things by itself. And this is called control logic. As long as you decide what to do and when, it's not an agent. It's just a manually built process, which is again cool. But let's talk about AI agents.</p>
             <p>So the entire system that we built, we used a platform called Nathan, an automation tool similar to Make or Zapier but even more flexible. It allows you to visually create a chain of actions between different services without writing a single line of code. Here is how our workflow works. All links to uploaded videos are stored in Google Sheets. This is our starting point where the workflow pulls the new tasks. The Nathan scenario connects Google Sheets and retrieves the most recent uploaded long-form video link. This video is automatically sent to Clap AI, a neural network powered tool that converts long videos into vertical shorts. It detects key moments, emotional peaks, and generates clips in just a few minutes. But we don't stop here. Then we ask ChatGPT to analyze the content of each short and generate viral titles and descriptions optimized for YouTube shorts. We feel like it does it better than the tool itself. We use a custom prompt to ensure the titles are catchy, concise, and designed for maximum reach. And the final step is automated upload of shorts to YouTube. The workflow publishes up to 10 videos per day, saving us a ton of time. It uploads files, adds the generated titles and descriptions, and posts the content to the channel. This basically gives us full automation without any human involvement. No editors, no managers, no manual work. Every day, our AI powered system publishes content that drives views. That means free traffic without spending on ads. This approach allows you to scale yourself, even if you're working solo. And that's a real AI agent.</p>
@@ -447,24 +459,28 @@
             <p>Right now, the workflow that we built is very predictable. It executes every step precisely. Google Sheets, Clap AI, GPT, YouTube. But the logic is still set manually by us. To become a true agent, the system also needs to learn how to choose videos to process on its own. So instead of just picking a link to the video, ideally I'd like it to go to my whole YouTube channel, analyze metadata, audience behavior, and trending topics, and then generate shorts, test multiple title variations, tell me like, Marina, you need to make a video about this, this, and that. Analyze engagement, and then publish the best one.</p>
             <p>You know, I was talking to a guy who built a system where you can test ads in an AI world, like you create an ad and then you launch it to this AI audience and you can kind of predict the outcome. This is where we're going. I feel like we're going to create AI versions of ourselves to test ideas so that every video that we publish on YouTube goes viral instantaneously because we tested it on the AI version of our audience. And ideally the agent also learns, like okay, this video we thought it was going to go viral, it did not. Why didn't it go viral? Let's adjust the workflow. Let's adjust the process.</p>
             <p>So the goal of this video is to inspire you to automate something in your workflow and start simple. Like with hiring, you start with hiring someone who just does personal assistant type of work with this. Try to automate one repetitive task you always do by hand. I don't like typing anymore. I'm talking to my computer and I'm talking a lot and I'm becoming more productive. Ask yourself, what can I automate in my workflow? Maybe you start with something simple and then move on to building your own AI agent.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/3cs09XQ6cb0/" class="related-card">
-                <img src="https://img.youtube.com/vi/3cs09XQ6cb0/hqdefault.jpg" alt="The Future of Work: High-Paying Careers That AI Won&#x27;t Replace" loading="lazy">
-                <span class="related-title">The Future of Work: High-Paying Careers That AI Won&#x27;t Replace</span>
+                <img src="https://img.youtube.com/vi/3cs09XQ6cb0/hqdefault.jpg" alt="The Future of Work: High-Paying Careers That AI Won't Replace" loading="lazy">
+                <span class="related-title">The Future of Work: High-Paying Careers That AI Won't Replace</span>
               </a>
+
               <a href="/episode/8DuxOlkHdy4/" class="related-card">
                 <img src="https://img.youtube.com/vi/8DuxOlkHdy4/hqdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy">
                 <span class="related-title">Become an Entrepreneur Today – AI stack to build your company in 2025</span>
               </a>
+
               <a href="/episode/nBM3_AzNYU8/" class="related-card">
-                <img src="https://img.youtube.com/vi/nBM3_AzNYU8/hqdefault.jpg" alt="$8B Investor: The Only Career Move AI Can&#x27;t Replace | Bill Gurley" loading="lazy">
-                <span class="related-title">$8B Investor: The Only Career Move AI Can&#x27;t Replace | Bill Gurley</span>
+                <img src="https://img.youtube.com/vi/nBM3_AzNYU8/hqdefault.jpg" alt="$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley" loading="lazy">
+                <span class="related-title">$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley</span>
               </a>
+
               <a href="/episode/VHiyfK06n1c/" class="related-card">
                 <img src="https://img.youtube.com/vi/VHiyfK06n1c/hqdefault.jpg" alt="How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)" loading="lazy">
                 <span class="related-title">How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)</span>

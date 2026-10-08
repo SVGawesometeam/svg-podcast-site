@@ -1,0 +1,361 @@
+{
+  "videoId": "EUrkIpq838c",
+  "title": "ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski",
+  "format": "interview",
+  "guestName": "Mati Staniszewski",
+  "guestTitle": "CEO & Co-Founder, ElevenLabs",
+  "aboutGuest": "Mati Staniszewski is the CEO and co-founder of ElevenLabs, a voice AI company valued at $6.6 billion that builds some of the world's most realistic AI voice and speech synthesis technology. Under his leadership, ElevenLabs has expanded from a text-to-speech tool into a full voice AI platform encompassing conversational agents, a voice marketplace, and multilingual cloning capabilities. He is widely regarded as a pioneer in the voice AI space.",
+  "publishedAt": "2025-10-04T14:49:58.000Z",
+  "duration": "44 MIN",
+  "coverArt": "https://img.youtube.com/vi/EUrkIpq838c/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/EUrkIpq838c/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Mati Staniszewski, CEO of ElevenLabs, a $6.6 billion voice AI company, about how voice is becoming the dominant interface for interacting with AI and software. They explore practical use cases for voice agents in sales, customer support, and lead conversion, as well as how creators can earn passive income by licensing their voices through ElevenLabs' marketplace, which has already paid out $5 million to its community. The conversation also covers deepfake safeguards, jobs at risk from AI, and concrete strategies for solo operators and small businesses to generate $10,000 per month using voice agent technology.",
+  "keyTakeaways": [
+    "ElevenLabs has paid approximately $5 million to voice creators through its marketplace, where anyone can clone and license their voice for passive income.",
+    "Voice agents can handle inbound and outbound sales calls end-to-end — ElevenLabs uses its own agent to qualify and even directly convert leads to its business-tier subscription without human involvement.",
+    "Setting up a voice agent requires connecting speech input, an LLM, and text-to-speech output through ElevenLabs' agent platform, which abstracts the technical complexity so non-coders can deploy agents.",
+    "A high-opportunity $10k/month play for solo operators is to sell voice agent setup services to local businesses like doctor's offices, which often don't know the technology exists.",
+    "Mati outlines a 3-layer safeguard model against deepfake misuse: platform-level content policies, technical detection tools, and regulatory/legal frameworks working in combination."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "In this video"
+    },
+    {
+      "time": "01:23",
+      "seconds": 83,
+      "title": "Role of voice in AI"
+    },
+    {
+      "time": "02:28",
+      "seconds": 148,
+      "title": "Can AI Voice agent generate and convert leads"
+    },
+    {
+      "time": "05:22",
+      "seconds": 322,
+      "title": "Get the best domain for your business"
+    },
+    {
+      "time": "07:14",
+      "seconds": 434,
+      "title": "How to set up voice agents in your business"
+    },
+    {
+      "time": "12:00",
+      "seconds": 720,
+      "title": "How to make money by selling your voice"
+    },
+    {
+      "time": "15:18",
+      "seconds": 918,
+      "title": "How to clone your voice"
+    },
+    {
+      "time": "17:37",
+      "seconds": 1057,
+      "title": "The future of Voice AI"
+    },
+    {
+      "time": "21:37",
+      "seconds": 1297,
+      "title": "Deepfakes & the 3-layer safeguard model"
+    },
+    {
+      "time": "25:10",
+      "seconds": 1510,
+      "title": "Main fears of an AI founder"
+    },
+    {
+      "time": "27:35",
+      "seconds": 1655,
+      "title": "Jobs at risk and how to adapt"
+    },
+    {
+      "time": "31:23",
+      "seconds": 1883,
+      "title": "Tops 3 AI tools"
+    },
+    {
+      "time": "33:50",
+      "seconds": 2030,
+      "title": "The $10k/mo voice-agent opportunity"
+    },
+    {
+      "time": "36:49",
+      "seconds": 2209,
+      "title": "Advice for everyone who’s starting out"
+    },
+    {
+      "time": "41:53",
+      "seconds": 2513,
+      "title": "Will we still learn languages?"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We paid about $5 million to the entire community. Meet Mati, CEO and co-founder of ElevenLabs, a company that has grown into a $6.6 billion leader in the voice AI space, shaping how we talk, work, and even earn money. They've created an entire voice marketplace. Now, anyone can clone their voice and earn passive income. Can you name some opportunities that you see that can make people this amount of money so they can make a living like 10k a month? Something that's immediate, a business where you just want to make good money."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "I would try to take those voice agents and go to, let's say, a local doctor's office."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "ElevenLabs built the world's most realistic voice tech. The question is: can they control what happens next? Most of those companies just don't know this is possible. You don't have to be the coder. You just need to—"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "If my voice is authorized to use my credit card to buy anything and then somebody just uses the resemblance of it..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's going to happen. I feel like you're one of the pioneers of this AI industry because when I ask people what apps they're using, or when I'm talking about apps that I'm using, I always mention ElevenLabs because it's been a lifesaver. I wanted to start with a question about the role of voice in AI. So what it feels to me is that in 2023, we started adopting ChatGPT. It was all text, and then these voice capabilities became more and more powerful. It understands what I'm saying now. It understands my accent. If I mispronounce something, it still gets me. Do you feel like we're moving into an era where voice is our main tool to interact with AI?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "I mean, 100%. I do think that voice will be one of the key interfaces to the technology around us. That shift is happening. Like you said, a few years back you wouldn't even dream of this being possible, and now I think it's becoming a reality. Voice allows you to transfer so much more information than text. You can get the emotionality, the inflection pattern, the imperfections reflected in the voice, which of course makes it easier for the technology to understand a lot more about what you're trying to achieve. And then if you hear it back as well, I think it's a lot better and more pleasurable experience."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you see voice transforming businesses? Do you have any cases where people are using voice to generate leads or convert leads?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "There's definitely a few different areas. On the more classic customer support use cases, instead of having an old IVR system or no system, you can now deploy a voice agent that will take the calls instead. It delights the customers on the other side because it understands you, it's quick, it's good, and it also performs better. Outside of customer support, we're seeing voice across the entire lifecycle of the user journey in some places where it adds an experience that wasn't possible before. In a simple case, you might have a voice agent inside or outside of your product that helps you navigate through the product experience. It becomes like a partner, a programmer, a product person that helps you navigate through that lifecycle. We also mentioned inbound and outbound work. We actually use it ourselves at ElevenLabs. We have people that answer replies and take phone calls, but if you want to go quicker, you can speak directly with our agent to understand our product offering, our pricing, what you can do with the product. This helps you accelerate through the pipeline, and sometimes you self-disqualify if you're not the right fit for our product offering. Sometimes it helps you accelerate and route to the right people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it doesn't actually convert?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "In some cases it does. We have a few different tiers—a business tier and an enterprise tier. It does convert immediately sometimes to the business tier program."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's preset?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Because it's preset, it's self-serve. On the enterprise side, we still run KYC checks, so it doesn't do that immediately. But on the business side, it does. We've also seen those voice agents from our platform help in completely different non-commercial aspects too."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Quick follow-up question about the sales process. Have you measured the conversion percentage into sales with the AI voice salesperson?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "We did, but I don't remember the exact number off the top of my head. Given that the alternative before would have been just waiting, it was really just a net new amount of leads we received. We had so much inbound using our products—we're lucky to have that—and it helped us convert so many more leads that we would have otherwise taken weeks or months to reach, or maybe never gotten to."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How can I set this up for my company?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "The easiest way would be to register on our platform. We have two key offerings. First is our agent platform offering. You jump into the platform, and we help you abstract two elements. The first is all the research and experience complexity. We help you connect the speech, the LLM elements, the text-to-speech elements so the agent speaks smoothly and quickly with low latency and reliability. The second part is where you need to spend more time bringing your business logic into place. For example, what's your knowledge base of how your business operates? What are the questions you want to be asked? What materials do you want to surface? You bring that into the platform. Then we have a set of workflows you can set up—effectively, if this happens, then this happens. For example, if someone is calling and you want to schedule an appointment, we have a predefined workflow for you to do that. It can look into your calendar and set appointments."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Selling a course basically, like what we do—we sell courses. Can you do it in different languages using my voice?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "You can."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. So you could switch languages while keeping your voice?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Exactly. So it's selling courses, and people would call in, buy the course, and then they might onboard with the agent later to help them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do they buy over the phone? Do you send them a link, ask for their email, or do they just buy directly?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "It depends. The simplest would be what you suggest. We have an omnichannel solution where you effectively get a link as part of that and can leave additional details or have a follow-up email with a checkout subscription for the course. Both of those would be possible. Or, depending on how your website is set up, you could embed the agent on your website. It helps redirect to the subscription page, guides you through it, and they checkout themselves live with the agent helping them fill in the form. One of the great things on the function side is that you can switch languages."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's fascinating for my business. So it would switch the language and switch it with your own voice if that was your own voice, so it continues speaking in that same manner. And then of course the last piece is all the integrations."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "We support integrations where you headed. Congratulations!"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "It's one of the big ones. Maybe that's a good moment for me as well. When we started the company, we of course started by pioneering research on the speech side—text-to-speech voices—and then we expanded to speech-to-text, orchestration models, now music. As we think about research, it's always about how we can push the audio frontier forward."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love how you found this new opportunity and now it's a bigger chunk of your business. As far as I understand, how much would it cost for a small business like mine to have AI answer calls and sell?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "I think it depends on volume, but what hopefully will happen is you'll see more people coming through, and if we set it up the right way, maybe this will mean opening up the channel, which over time hopefully means even more calls. I think to start, it would be in the order of hundreds of dollars per month."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's also IP calling, right? That's integrated?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Yes. We integrate with Twilio or telephone systems."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So whatever works. You can bring any phone number you already have and it works. Do you currently accept calls coming through the telephone, or is it all on the website?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "We mostly try to navigate them to WhatsApp because a lot of people calling don't speak English, so they don't feel comfortable. But if we advertise that it's Marina's voice AI, nobody's judging your accent—because I feel like when people talk to me and they're non-native speakers, the first thing they do is say, \"I'm sorry, my English is not as good as you.\" I'm like, \"It doesn't matter.\" Even using English to make a phone call is such a huge barrier for non-native speakers. If you understand you're talking to AI, it just makes it so much easier."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "That's true. It doesn't judge. You can make little mistakes. But there's a completely different aspect too. You've been helping people learn languages for a long time. Maybe there's even an aspect where they could practice speaking their language with you. That would be a slightly different deployment, but completely possible, where you can give them tips to improve, and effectively create a Marina's Duolingo where people have a dynamic experience with you. That's another incredible area that's growing in the audio tech space."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, let's talk about that part. So we talked about deploying ElevenLabs as a sales agent. Let's talk about something I have here: you paid $2 million in royalties to people who share their voices with ElevenLabs. Can you talk about that? How can people start making money by sharing their voice with ElevenLabs?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "So it's one of the efforts we launched in the early days where we effectively created a voice marketplace and voice ecosystem. Every person can create their own voice and go through an authentication flow. You need to record roughly 30 minutes or more of yourself speaking. Then you have a perfect replica of your own voice that speaks in the language you recorded, plus all the languages we support—usually about 30 different variations. With the new model we're releasing, it will be 70. So you have the voice that's available for your own use, and then if you decide, you can share it to our marketplace. If you share it with specific conditions of what you're sharing it for, other people can use it across the ElevenLabs ecosystem. When your voice is being used, you get paid back as a result. This way, we now have almost 10,000 voices that people have shared and created. What's incredible is it spans so many different languages, accents, and styles. When you log into the platform, you just have this incredible plethora of voices. We pay voice creators back. It was $2 million at the beginning of the year, and the last time I checked a few months ago, we had paid back $5 million to the entire community."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How much does an average voice creator make?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "It depends. You know, we're approaching close to $10 million total, and we have close to 10,000 voices. So if you take the average, that would be around $1,000 per voice. But I think especially given that a lot of the voices are kind of new and it takes a little bit of time before they get attention, to actually make it successful, ideally you try to engage some of the community around that voice—they can see it whether it's on Discord, Reddit, or other forums. That definitely helps break through that initial phase. If not, over time we also try to surface new voices and get them out to audiences, so it really depends. I think you could expect a lot of people in the few hundred per month category. However, if your voice sounds very similar to other voices, it's much harder. But if you have a unique voice, if you have a new accent, then it can be incredible. Our first Spanish voice that got shared had a very deep way of speaking, and that voice became one of the most popular—not just in Spanish, but in English-speaking countries—and became one of our top 10 voices because it was just such a unique and different sound."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's talk about the nuances of cloning your voice. For example, sometimes in my team we clone my voice using all the different mics I have. But sometimes when we insert it, it's still slightly different from the video because the way we use it is: I recorded something here, then I start traveling, and they ask me to re-record a phrase. So we take a piece from the video, redo it with the phrase the brand asked for, but when we insert it in the video, it sounds slightly different. Are there any ways to fix it?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Yes, of course. When you create a voice, you most likely take the voice throughout the entire video and create that voice. It becomes effectively the average of how you spoke around that video. But in a given scene, you may have changed the intonation pattern a little bit or the emotional pattern slightly off that average. The ideal way would be for us to do more conditioning on what you do before and after in the video. So we take that as an input and try to morph it in a slightly better way. There's also a second thing: sometimes even though you try to clean up the voice and add background sounds and effects, they might be mixed in through the process and don't smooth entirely. From our side, what we hope to do over time is that as you insert those videos, we can precondition it after 3 seconds and it will sound better. That's something we're working on, but not yet applied. In the short term, what we see as the most common pattern is redoing and regenerating. But another thing you could try is instead of taking a longer audio sample across the video, just take a few seconds from that specific fragment. I know that sounds like it will be worse, but if you just take a few seconds from that fragment and create that lower quality version, it actually can sound pretty good."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, thank you. So where do you see all of this going with people recreating their voices? Will everybody have a clone in two or three years? Because I couldn't have thought about ElevenLabs two or three years ago. I couldn't imagine a salesperson using my voice. Now we have it. What do you think is going to happen in two years? What new use case is this going to unlock?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "That's an interesting question. We're seeing entirely new ways of interacting with voices. I do think yes, you will have your digital AI voice. I think even a step further: you will have your own digital voice agent that does things for you. But you want to make sure it's authenticated and people know you operate it. Like the example we spoke about—people can call in and you configure a voice agent—but I think the other side will be true as well. You'll have your own voice agent because they use voice authentication, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's going to be voice authentication?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "I think that's not the best mechanism for the future anymore. But say you want to book a restaurant or follow up about an appointment in healthcare, and you want to make sure they know your most recent details or that it's confirmed. I think you'll want an authenticated version of a voice agent. I'm saying authenticated because most of the verification will fail if they don't know it's a permissioned voice. You'll need to start embedding watermarks and metadata around that. But to go back to your question of where it all evolves, I think there will be an interesting pattern where—and I think it will happen on both sides as a user and as a business—you'll be able to serve so many different voices to your customers. Or you as a customer can decide what voice speaks to you. We're working with a company in Korea and Japan—a multinational company with very different age groups calling in: older patients and much younger people. They want to serve different voices depending on who's calling, both in terms of how it speaks, how it sounds, and the style in which it speaks. Roughly, they want it so that if an older person is calling in, the voice speaks much slower, much calmer, less emotionality. If it's a younger person, much quicker with higher amplitude of emotions. I think this same pattern will start happening across everything. If you're calling a specific region, you might get an accent of that region. If you're calling a restaurant representing a specific cuisine, you get a voice of that cuisine speaking with you. Maybe there are variations of all those different types, which can work. Then separately, as a person calling any of those services, you could pre-select that too. If you're calling a bank and you enjoy speaking with a voice of a specific style, you can select it, and that will be your preference. We've seen this happen in Asia where a company created a travel agent or Google Maps competitor where you can select a voice that narrates your directions. One of the voices they selected became viral—everybody wants to use it for their travel directions because it just made for such a better experience. So if I extrapolate into the future, I think there will be a lot more personalization but also selection that you can choose into. I think 100%, you will have your own authenticated voice that you can use for your voice agent, for your content."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That has all the information?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "That has all the information that you can—that's very interesting. I like that part, like having my voice call and be authorized to use my data. How do you talk about impersonation with voice? Like, if my voice is authorized to use my credit card to buy anything and then somebody just uses the resemblance of it, will there be any metadata that could be detected by other systems? How would it look?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's interesting. I think first of all, I think it's going to happen. The assumption we should be going with is that there will be good actors and good technology trying to avoid it, but then there will also be more permissive technology and bad actors trying to abuse it. With any technology shift, there's already a lot of open-source technology and other commercial technology that doesn't have the same safeguards and could clone your voice to create a mimicking that sounds like you. So any system we devise in the future needs to assume you can create a clone of a voice and make it a perfect replica. Now, at ElevenLabs, we can and do add safeguards as you create a voice, so you cannot do that or if you do, we detect it, moderate it, and can flag it internally if we're not sure. We can trace everything back to the account and moderate what text was used, whether it was trying to do a scam. But to get to the core of your question, the ideal system—and it would require cooperation from a number of parties—would have three different layers. The first layer is instead of trying to check for AI, you actually check for human. That's easy for me to say, of course. But a simpler or original step could be that on the devices you use—on your telephone or laptop—you encode that this is your phone, your laptop. When you're calling from it, it's decoded on the other side, and they know this is a device you use. So most likely, this is you. That's the first layer. The second layer is what we spoke about earlier: you watermark authenticated AI. If I'm using specific tooling, the tools that can add this watermark are known, and I watermark that within the content. It's not super straightforward, especially in audio, because if you add a watermark in content it can affect the quality, but it's roughly good. That's the second layer. So you check for authenticated AI. The third layer is by default, assume it's AI. If it didn't pass the first or second layer and you see content that hasn't been authenticated or proofed as human, it's AI by default and you don't trust it. You can add more mechanisms on top of that third layer where you try to explicitly check or add additional signal. But that would be a mindset shift where today, when you look at content, you're like, \"Oh, maybe this is AI.\" It should be opposite: \"Oh no, this is definitely AI. Is it maybe human? Or is it maybe AI created with the creator's permission?\" And then you have those cases in between that will be interesting as you create the content. You mentioned that sometimes if you need to re-record, you might create an AI voice with your permission. Do you do that across the entire clip, or maybe just 1%, 5%, or 30%, 50% of the content is AI voice? At what stage would you say this is AI delivery or human delivery?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "You know, I think there are two parts to this. The first part I need to mention is that this is such an incredible opportunity with the shift. It's maybe the biggest shift or bigger than the internet. We at ElevenLabs are happy and lucky to be part of that shift and be leading on the voice frontier. I think the team and all of us are feeling that we have a unique opportunity that never happens in your life—where you can create a technology and define how it will be used and hopefully create value, whether it's voice agents and how voice interfaces will look in the future, whether it's making content global, whether it's making content available in audio. But of course, with all of that, as we think about being at the frontier, it also makes us carry some responsibility for how we define that. I think the first is we still think there are innovations on the research level that we can bring into the space—at least one or two big ones in audio. We've been able to do it so far in text-to-speech, speech-to-text, recently in music, but we still want to continue leading and be better than some of the biggest labs in the world, whether it's new AI companies or others. I think we have that opportunity and that's motivating, but it definitely causes less sleep at night. The team is super hardworking too, which makes for shorter nights. Then from the risks perspective, we spoke about some of those. We do feel it's our responsibility to make sure we avoid some of those risks, so we invest a lot of time developing safeguards. The third one is with a lot of the technology and how the economy or jobs in that economy will change. We'd like to do it in a way that brings a lot of people in that economy together with the change rather than just disrupting them. We want to enable some people who want to be part of it to be part of that disruption. That's part of the reason for the voice ecosystem we built. Of course, I think we need to keep hiring amazing people and keep pushing ahead while so much is happening. I still think it's very early—I may be biased and self-serving here, but it's still very early."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You mentioned jobs that are being replaced with voice technologies. What jobs do you think are at most risk? I guess customer support, and what should these people be doing now to not get replaced in a couple of years?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "I think the saying is very true: the people that will be replaced will be replaced by people that use AI. That's the key message. You should effectively go into trying a lot of those tools and products so you stay at the frontier. People in any of those jobs that use AI can actually benefit a lot. Even in customer support, a lot will shift, but what we're seeing is that simple manual tasks—like appointment taking, processing refunds—are very manual and recipe-based. But as you go to the more complex parts, you need a human expert to help close that gap. That part of the process is actually even more in need. Whether it's debugging a harder product problem or understanding what happens after an appointment and deciding whether you need X or Y help—which of course needs to go through regulation—in all of those, expertise is even more valued. Over time, AI will shift and take more of that, so some percentage will go across. But my main piece is: if you understand how AI works, you can become more of the expert and be better and more knowledgeable yourself and help. That's also true in creative spaces. You can iterate so much more frequently. You can produce for a wider audience."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You have to go faster and faster. That's what I'm feeling with this."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "You can definitely do faster iterations. You have to run to stay where you are. I do think it's speeding up, but at the same time, I think it's not zero sum. By speeding up in this category, you're not taking away from another. The entire economy is just growing with that adoption. There will be more creative opportunity than ever before. Yes, to be part of that creative opportunity, you probably need to move faster with innovation than you might have before, but I think a wide set of people can and will benefit. Of course, repetitive, manual, non-intelligent, non-basic intelligence-based work will be replaced with AI workflows. The best way to avoid this is by learning a lot of the AI tooling so you're better yourself. Maybe to finish off and summarize the customer support piece, thinking about it slightly differently: frequently, if you have domain expertise—whichever domain that is—then you can deliver even more value. Combining your domain expertise with AI is much higher value and output. If you don't have domain expertise, then you probably want to gain that domain expertise."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I've seen a lot of graphs for future of jobs reports, and there's this section: \"Your Expertise + AI,\" and it goes like this in terms of demand. What would be the top three AI tools you'd recommend everyone start using now?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Top three AI tools. Okay, outside of ElevenLabs, which you do need to try and use, I would say I really like Black Forest Labs for their image work. Midjourney has been cranking out for so many years, but Black Forest Labs I really like as the new iteration. I think they have good realism and I think they'll go through additional iterations that are great. From the classic ones, Anthropic's Claude—I think it's incredible. It helps you be another level engineer, or even if you're not an engineer, try to be a little more of an engineer. And then last, I really like Lovable, but similarly, V Zero Vercel and Replit are great. Given that we're in Europe, I think Lovable deserves the mention—they're from Sweden. All of them, it's just so incredible to see our go-to-market teams try whether it's Lovable, Vercel, or Replit. I think now Figma also launched their AI, but I haven't tried it yet. It's fun to see how people who haven't been traditionally on the engineering front are closer and understand the product pain points and use cases better. There's both this path of prototyping and showing clients, which is amazing, but then by extension, they're getting closer to what's behind the scenes on the product side too."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When you mentioned Lovable, did you build something for yourself or for ElevenLabs?"
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Both. On the go-to-market side, we frequently do a demonstration to a customer of, let's say, the use case you mentioned. We could build a prototype or mockup website of how the checkout would look like, how the agent would interact with you. That type of use case happens all the time, whether at pre-calls, conferences, or with client calls. But also on a personal side, I recently tried with my two nieces—they're five and seven years old. So I have the best job of trying to be fun. They were speaking about how they could potentially create a story generator for themselves where you would type in the character names and the story would be created."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You're an entrepreneur. You started this company, spotted this opportunity. Do you see any other areas aside from voice where people should be doubling down? Because one of the founders I had on this podcast—a co-founder of Hugging Face—told me that in the next five years you have to be an entrepreneur or you're done. So a lot of people are learning how to become entrepreneurs. Can you name some opportunities that you see that can make people a decent amount of money so they can make a living, like 10k a month? Something that's immediate, something where you see a gap in the market."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "It will be voice-specific, but I think it's so early that it's a huge one. There's definitely a lot of infrastructure being built for voice agents—we build it, but other companies are too. I think there's a big gap between voice agents and actually deploying them in a lot of businesses. You don't have to have engineering expertise to deploy those voice agents. The platform now frequently supports a relatively self-served manner of taking it, but you can easily take that voice agent and deploy it in specific domains. Most businesses in the world still don't know about it. If it's a non-venture-scale business and you just want to make good money, I would try to take those voice agents and go to, let's say, a local doctor's office and help them schedule appointments for the dentist so they can take appointments more easily and focus more on the work instead of a nurse doing that in between or missing appointments. That's actually one of the most common problems—so frequently those appointments don't get booked because there's no one on the phone to take them. You could go to local mechanics and help them take appointments. I think all of these require slight variations of domain expertise, and all of those businesses are in the thousands to tens of thousands of dollars per month if you get it right. The infrastructure is there; you just need to bring it to those domains."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's like B2B, automating businesses with AI."
+    },
+    {
+      "speaker": "Mati Staniszewski",
+      "text": "Yeah, and small businesses. You don't have to be a coder. You just need to spend the time calling them or going to them and asking. I think this category might not be taken off by some of the biggest companies that will focus on bigger enterprise elements. So it's classic small and medium businesses rather than the enterprise segment."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "U7PcyE0p54s",
+      "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/hqdefault.jpg",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity"
+    },
+    {
+      "videoId": "LAEaSbZ2IR8",
+      "thumbnail": "https://img.youtube.com/vi/LAEaSbZ2IR8/hqdefault.jpg",
+      "title": "$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma"
+    },
+    {
+      "videoId": "3FgPLbfs_oY",
+      "thumbnail": "https://img.youtube.com/vi/3FgPLbfs_oY/hqdefault.jpg",
+      "title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "spotify": "https://open.spotify.com/episode/3PNXUm9mFPXumaX0rlZcCp"
+  }
+}

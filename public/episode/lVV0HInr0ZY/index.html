@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Yamini Rangan is the CEO of HubSpot, a publicly traded CRM and marketing software platform valued at over $30 billion. She previously held leadership roles at Dropbox, Workday, and Siebel Systems, building deep expertise across sales, marketing, and customer success. Rangan is known for her cross-functional leadership style and her focus on customer-centric growth strategies.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -484,7 +496,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Today with AI, there is no map. So you have to get comfortable with being an explorer. This is Yam, CEO of HubSpot, a $30 billion company. She arrived in the US in her 20s with a few hundred in her pocket. And now she's running one of the most powerful tech companies in the world. You know, you land in Silicon Valley, which is mostly male, right? I still feel it. I go into some rooms and I'm like, can I do this? She navigated her way in a dotcom crash. First day of my job, they laid off half the class. Years later, she joined HubSpot and almost immediately everything breaks at once. Covid hits and a year later, the founder and CEO, Brian Halagan, had a snowmobile accident and he called me from the hospital and he was like, &quot;Look, I need time to recover, so just run the company.&quot; I was like, &quot;Really? What what do I do?&quot; And he's like, &quot;Don't screw it up.&quot; She steps in to run the company. A lot of people think functionally. I started in sales. Now I'm going to become a senior manager and then I'll become a director. That is great if you want to be just in a function. But sometimes things that got us here are not enough for us to get to our path forward.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Today with AI, there is no map. So you have to get comfortable with being an explorer. This is Yam, CEO of HubSpot, a $30 billion company. She arrived in the US in her 20s with a few hundred in her pocket. And now she's running one of the most powerful tech companies in the world. You know, you land in Silicon Valley, which is mostly male, right? I still feel it. I go into some rooms and I'm like, can I do this? She navigated her way in a dotcom crash. First day of my job, they laid off half the class. Years later, she joined HubSpot and almost immediately everything breaks at once. Covid hits and a year later, the founder and CEO, Brian Halagan, had a snowmobile accident and he called me from the hospital and he was like, &quot;Look, I need time to recover, so just run the company.&quot; I was like, &quot;Really? What what do I do?&quot; And he's like, &quot;Don't screw it up.&quot; She steps in to run the company. A lot of people think functionally. I started in sales. Now I'm going to become a senior manager and then I'll become a director. That is great if you want to be just in a function. But sometimes things that got us here are not enough for us to get to our path forward.</p>
             <p>Can you give advice to someone who feels like they've plateaued in their career? What is the one thing that they should change right now to start growing? Okay, first off, Yemen, you have an amazing story. You arrived in the US in your 20s with a few hundred in your pocket. Now you're running a multi-billion dollar company as a CEO. For anyone who doesn't know you, can you talk about your background and career shortly?</p>
             <p><strong class="speaker">Yamini Rangan:</strong> Yeah, I grew up in India and in a family of two girls. I know you have two girls. We grew up in a super small town, so we should not have been dreaming big, but my mom was just amazing. She really helped us think beyond our little town, our little school. The school didn't go all the way till 12th. So she moved to a different city to make sure that we got an education. And look, I think Marina, if someone takes you seriously, you begin to take yourself very seriously. And so that was a huge thing.</p>
             <p>So the rest of the story is I did come here after my undergrad in electronics engineering. I came here and did a master's in computer engineering, worked as an engineer for a handful of years, and then I was still searching for something. I was like, this is not the thing and I want to do something more. And so, you know, like everybody who doesn't quite know exactly what they want to do, I went to business school.</p>
@@ -556,24 +568,28 @@
             <p><strong class="speaker">Yamini Rangan:</strong> This is what you prioritize. This is what you struggle with. Yeah, this is what you should be doing. There you go. I haven't, you know, created a personal style for AI where I talk about the tone and what my values are. Even when I write, I'm like, you know, I don't want any fluff. I want direct, candid communication. The communication needs to feel human. You know, no offense, AI. I don't want random fluffy words. And I give all of that, and I think over time it learns. But you know, now I'm curious. I'm going to try and use a lot more of my principles as we make decisions.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. I learned this from Mustafa Suleyman. He tells me that every night he talks to his AI, just like reflecting on his day. So basically documenting but with AI. And this way, AI understands the decision-making process, what makes him sad, what makes him happy. So the next time he has a question, AI already comes up with anecdotes from the past like, oh, you did this, you felt that, so here's how you should probably tackle this. I think it's genius.</p>
             <p><strong class="speaker">Yamini Rangan:</strong> I love it. I love it. I try and do the reflections, but not</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/rxR83MF6LF0/" class="related-card">
                 <img src="https://img.youtube.com/vi/rxR83MF6LF0/hqdefault.jpg" alt="7 Founders Told Me What Separates Winners From Everyone Else" loading="lazy">
                 <span class="related-title">7 Founders Told Me What Separates Winners From Everyone Else</span>
               </a>
+
               <a href="/episode/_aUKWYHLKfE/" class="related-card">
                 <img src="https://img.youtube.com/vi/_aUKWYHLKfE/hqdefault.jpg" alt="Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan" loading="lazy">
                 <span class="related-title">Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan</span>
               </a>
+
               <a href="/episode/VF2FwZ_PXhw/" class="related-card">
-                <img src="https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg" alt="Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe&#x27;s Founder  Anne Wojcicki" loading="lazy">
-                <span class="related-title">Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe&#x27;s Founder  Anne Wojcicki</span>
+                <img src="https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg" alt="Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki" loading="lazy">
+                <span class="related-title">Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki</span>
               </a>
+
               <a href="/episode/jVD8pCZeLww/" class="related-card">
                 <img src="https://img.youtube.com/vi/jVD8pCZeLww/hqdefault.jpg" alt="How to Use AI to Go VIRAL on Social Media (full guide)" loading="lazy">
                 <span class="related-title">How to Use AI to Go VIRAL on Social Media (full guide)</span>

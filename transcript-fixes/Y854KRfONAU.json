@@ -17,5 +17,13 @@
   "speakerMapEvidence": "Марина в закадре называет каждого гостя перед его клипом: «I was talking to Luana Lopes Lara, who co-founded Kalshi»; «Erik runs the Digital Economy Lab at Stanford»; «Peter Yang… left Meta, Reddit, Roblox… built 16 apps»; «The next person I want to highlight is Aaron Levie… runs Box»; «Sal Khan runs Khan Academy… 200 engineers».",
   "formatting": "Реплики склеены по говорящему (Speaker 1 и 3 → Marina), длинные монологи разбиты на абзацы до 170 слов, ярлык у первого абзаца. Итого 53 абзаца / 35 подписанных реплик: Marina 18, Aaron Levie 6, Erik 5, Sal Khan 4, Luana 1, Peter Yang 1.",
   "fixes": "Исправлены ASR/бэкенд-искажения имён и брендов: Flight City→Perplexity, Kulshy→Kalshi, Lorna Lopez→Luana Lopes Lara, Eric→Erik Brynjolfsson, Aaron Levy→Aaron Levie; TenSpark/Genspar→Genspark, «GPT Clyde Gemini»→«GPT, Claude, Gemini», Nana Banana→Nano Banana, Vio→Veo, Whisperflow→Wispr Flow, Boris Czerny→Boris Cherny, Proplexity→Perplexity, «download Cloud»→«download Claude», «perplexity/publicity computer»→«Perplexity Comet», «chat, GPT plan»→«ChatGPT plan», «top COs»→«top CEOs».",
-  "metadataFix": "guestName: с «Luana Lopes Lara, Erik Brynjolfsson» (2) на все 5; guestTitle → «Kalshi, Stanford, Box & Khan Academy»."
+  "metadataFix": "guestName: с «Luana Lopes Lara, Erik Brynjolfsson» (2) на все 5; guestTitle → «Kalshi, Stanford, Box & Khan Academy».",
+  "repairs": [
+    {
+      "date": "2026-10-08",
+      "what": "The related-episode cards carried alt texts with the full episode titles while the visible captions are shortened (\"Luana Lopes Lara (Kalshi): …\"); the alt is now the caption, as on every other page. The custom section heading \"Watch the full interviews from this episode\" is kept (relatedHeading in the JSON).",
+      "cause": "Hand edit applied to one copy of a value the page repeats; the data layer keeps one value.",
+      "confirmedBy": "content comparison in scripts/check-render.js during the migration"
+    }
+  ]
 }

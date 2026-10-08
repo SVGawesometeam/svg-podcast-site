@@ -1,0 +1,657 @@
+{
+  "videoId": "U7apPfqHgvg",
+  "title": "$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal",
+  "format": "interview",
+  "guestName": "Chris Pedregal",
+  "guestTitle": "CEO and Co-founder of Granola",
+  "aboutGuest": "Chris Pedregal is the CEO and co-founder of Granola, an AI notepad application that reached a $1.5 billion valuation in just three years. He built Granola in a crowded market where established companies like Zoom and Google already offered similar features, demonstrating that superior product quality and user experience can overcome incumbent advantages. Pedregal's approach emphasizes extended private development, obsessive iteration based on user feedback, and a philosophy of caring more deeply about product excellence than competitors.",
+  "publishedAt": "2026-05-29T14:15:39.000Z",
+  "duration": "45 MIN",
+  "coverArt": "https://img.youtube.com/vi/U7apPfqHgvg/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/U7apPfqHgvg/maxresdefault.jpg",
+  "summary": "Chris Pedregal, CEO and co-founder of Granola (valued at $1.5 billion), shares his playbook for building a standout AI product in a crowded market dominated by giants like Zoom and Google. Rather than rushing to public launch, Pedregal spent the first year in closed beta, sitting next to users and iterating daily based on direct observation of how people interacted with the product. He emphasizes that in today's market where anyone can build software, the only differentiating factor is product quality—caring more than competitors and creating a meaningfully better experience than alternatives. Pedregal discusses the paradox of AI democratizing building (making it easier for more people to start companies) while simultaneously raising the bar for what constitutes a viable product, comparing it to how digital photography made everyone a photographer but didn't diminish professional photographers' value.",
+  "keyTakeaways": [
+    "Build in private/closed beta until your product is meaningfully better than competition — don't follow conventional wisdom of launching early and iterating publicly, especially in a crowded AI market where quality is the primary differentiator.",
+    "The core competitive advantage in 2026 is caring more than everyone else — in a market flooded with products, the willingness to obsess over user experience and product quality separates winners from the noise.",
+    "AI democratizes building but doesn't eliminate the need for quality products — just as digital photography didn't replace professional photographers, easier AI development means more founders but the bar for viable products has risen significantly.",
+    "Learn through direct user observation, not just public feedback — Pedregal's approach of watching 1-2 users daily and fixing specific problems proved more efficient than analyzing broad feedback from a public launch.",
+    "Balance strategic thinking with rapid experimentation — think deeply about market opportunity and whether you're building in a space with a future, but then follow user signals and product reactions rather than abstract planning."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Can you still compete with Big Tech in 2026?"
+    },
+    {
+      "time": "01:16",
+      "seconds": 76,
+      "title": "If anyone can vibe-code, why build anything?"
+    },
+    {
+      "time": "02:31",
+      "seconds": 151,
+      "title": "Is there still room for new AI startups?"
+    },
+    {
+      "time": "04:31",
+      "seconds": 271,
+      "title": "The launch strategy almost nobody uses"
+    },
+    {
+      "time": "06:23",
+      "seconds": 383,
+      "title": "How to find a winning startup idea in 2026"
+    },
+    {
+      "time": "09:55",
+      "seconds": 595,
+      "title": "The startup advantage Big Tech can't copy"
+    },
+    {
+      "time": "14:10",
+      "seconds": 850,
+      "title": "The 2×2 framework for what's worth building"
+    },
+    {
+      "time": "17:00",
+      "seconds": 1020,
+      "title": "The Slack and Dropbox growth playbook"
+    },
+    {
+      "time": "18:20",
+      "seconds": 1100,
+      "title": "500 installs on day one — no marketing"
+    },
+    {
+      "time": "21:40",
+      "seconds": 1300,
+      "title": "The hidden signal of product-market fit"
+    },
+    {
+      "time": "23:56",
+      "seconds": 1436,
+      "title": "Inside Chris's AI workflow"
+    },
+    {
+      "time": "27:07",
+      "seconds": 1627,
+      "title": "The one job Chris won't give to AI"
+    },
+    {
+      "time": "28:42",
+      "seconds": 1722,
+      "title": "The prompt that found Marina's bottleneck"
+    },
+    {
+      "time": "29:20",
+      "seconds": 1760,
+      "title": "The prompt that makes any AI tool better"
+    },
+    {
+      "time": "32:25",
+      "seconds": 1945,
+      "title": "Turn every meeting into a chief of staff"
+    },
+    {
+      "time": "37:40",
+      "seconds": 2260,
+      "title": "Why some AI feels magical and most doesn't"
+    },
+    {
+      "time": "39:22",
+      "seconds": 2362,
+      "title": "What Chris tells people who fear AI"
+    },
+    {
+      "time": "40:52",
+      "seconds": 2452,
+      "title": "Chris on dealing with AI anxiety"
+    },
+    {
+      "time": "43:24",
+      "seconds": 2604,
+      "title": "Chris's #1 warning for AI founders"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Chris Pedregal",
+      "text": "If you believe AI is going to have a big impact, then you should try to stay close to it. Think about the core things that you are good at and figure out how you could augment those with AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Chris Pedregal, CEO and co-founder of Granola, the AI notepad valued at $1.5 billion. He built it in 3 years and turned it into a standout product in a crowded AI market. When it comes to competing with big corporations, is there still opportunity to build something major in 2026?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "There are a lot of products out there, a lot of people trying to do things. It's like, can you care more than everyone else? There's so much advertising that's happening that I think that if you don't have a product that itself can pop out and get noticed and loved, it just feels like a losing proposition."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you had to start from scratch today, what would be your playbook?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I would definitely build."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Welcome to Silicon Valley Girl. I am so excited to be chatting with you because we've been using Granola for I think over 6 months now. I know you launched earlier, but when we discovered it and started using it, it's an amazing product for our team. And what I'm going to do, I'm going to launch a task right now. So, it starts recording so that at the end of the conversation, we'll be able to see how it actually works."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Back in 2024, you said it's so much easier now to build very specialized workflows for a small group of people versus earlier because now you can use AI. Your bet was that with current AI tools, we can build something for a small group of people because we don't have to use so many resources, because we can vibe code all stuff, we can ship faster versus like 10 years ago if you wanted to build something, you would need a huge team. So serving small group of people wouldn't really make sense. Do you think it's still the case in 2026 or we moved to a world where anyone can vibe code anything so that you don't really need to build a very specialized tool? What is your sense of the market right now?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "The one thing I know is that everything's changing and it's hard to predict the future. Just because people can vibe code things doesn't mean that we're only going to use vibecoded software all the time. I think vibe coding, building tools from scratch is incredibly powerful if you're building an internal tool that your team's going to use. I still think that there are certain areas where you want to have the best possible tool and that takes tons of time and effort and care and continued investment. So, I do think there will be lots of software out there that exists, but it's hard to predict exactly where the line of what will be vibe coded versus what will we pay for."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you feel like it's much harder to build now because you have experience building in pre-AI era comparing that to building Granola?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Harder now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Just because I feel like the market is so crowded. You see because anyone can become an entrepreneur. If 10 years ago in order to build something if you were not a coder yourself you needed to find an engineer. If you were an engineer you needed to find a product person. So you needed those resources. It feels like now there are so many solo founders and the market is really crowded."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It's two sides of the same coin. I think it's so much easier to build now. You don't need as many people, as many resources, which means more people are trying it. It's when digital photography became common. It used to be really hard to get a camera, and then only a few people had cameras, there were photographers, and then digital photography made it easy for everyone to take photos. It doesn't mean that professional photographers aren't still needed and way better than your average person. So, I think it's the same thing with starting products today. There are a lot of products out there, a lot of people trying to do things."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "A lot of them aren't that good."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I think that's what it's all about. It's like can you care more than everyone else and can you create something better? What I have seen in terms of the one thing that seems to help an AI company break out from a crowded marketplace is just that the product actually works and the experience of using it is better than the alternatives. We see people are more willing to switch for slight improvements in product now. People are very attuned to the quality of the products that they're using. And in that sense I think it's no different than before. You still have to fight for that and you have to be really focused on it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I really like how you said you have to care more. I feel like that applies to any niche where you're competing, anything that you're doing, if you care more than others then this helps you stand apart. Talk to me about launching a product in the AI era because you didn't do a public launch. You started with a few users, saw their reaction. If you had to start from scratch today, what would be your playbook?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Yeah, I think the conventional startup wisdom before was launch as soon as possible, get feedback from real users, and then iterate your way to something great. And I think because of precisely what you said before, there's so many people putting out slop, putting out crappy products that it is actually a differentiating factor, a differentiating approach if when you launch, when you come out into the world, your product is better. We didn't have this whole strategy about building an AI. We were just like our philosophy when we were building Granola was basically we'll do whatever it takes to learn as quickly as possible what we need to do to make our product better. For the first year, the way we learned the most was literally by sitting next to someone, watching them try to install it and use it, figure out everything that was wrong, go home, try to fix that, do it again the next day with a new person, and do that over and over. We didn't need to launch publicly to learn what was wrong with the product because every day we would see exactly what was wrong with the product by just watching one or two people use it. After about a year, it got to the point where it was actually pretty good for those folks. And we said, \"Okay, it's now time to launch publicly because then we'll learn at scale what's wrong with it, how we can make it better.\" That was the approach we took and I think that really made the difference. In a world where anybody can make software, the only thing that really matters is how good the software is that you're trying to use. So if I was starting it from scratch, I would definitely build in private or closed beta until I felt really secure that the product was meaningfully better than the competition."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. When it comes to picking out idea, was that your initial idea smart notes or did you have to iterate through ideas as well?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Ideas are tricky. On one hand you want to be thoughtful from a strategic standpoint, like if I build in this space, is it a dead end or is there a big opportunity there. And that's high level thinking. On the other hand, a lot of building is better not to think and it's better to just put something in front of people and learn how they react to it and follow that. When you're trying to think about a startup idea, you want to do both of those things. You want to make sure you're building in a space where there's a future."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Yeah. There's a future. Exactly. But then it's sometimes better not to think too deep. Once you make that bet it's almost better not to think at a high level and abstract level and really just follow the scent in terms of what people like. In 2022 I came across LLMs for the first time, this was about 8 months before ChatGPT launched and I was immediately convinced. I was like okay, I don't know what this new technology is but it's going to change everything, it's going to change all the tools we use for work for productivity. I felt that very strongly and I knew that wasn't a space I wanted to build in and be excited about. But then when we had to figure out where to start, that's where we put some prototypes in front of users, in front of people and they didn't care about most of them. But this idea of a real-time notepad that would take notes for me and that I could interact with. People's eyes really lit up when we put that in front of them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Was it like a just word by word description of what you want to build or did you vibe code?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Vibe coding wasn't quite a thing, but it was more the vibe code. I'm a big believer in prototypes."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Cheap basic prototypes that let people actually mess around with a thing. I feel like you're going to learn a lot from that. So my co and I built a few different prototypes and the notes one was just some JavaScript on an HTML page that we threw together manually, but it was enough to give you a flavor of what it would be like if it worked properly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How did you select those first people who were evaluating your idea?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Friends, friends of friends. It was just people we had access to."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Was there any qualification criteria? Because now that I'm thinking about it, if I'm trying to build something I also wanted to put it in front of the right people like people who are maybe paying for a lot of tools, people who are working in a big corporation so they have access to some budget."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "No, that's a good point. Maybe we're a little bit more thoughtful about it than that. We built Granola for ourselves and by ourselves we mean people who are knowledge workers, tech-savvy, using different types of tools like Slack and Linear and Superhuman and Gmail. So the folks that we would talk to were often times folks working at startups of different sizes just because that was the environment that we were in."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What was your criteria of deciding whether to drop an idea or continue working on it? Was it just like somebody said yes or were you tracking something? I was talking to Josh Woodward from Gemini and he said the way they test products at Google, they watch how eyes light up."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When users start testing it, they don't really have a metric. They're relying on intuition that they're seeing. It's surprising for a company like Google where you expect metric after metric."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It was very intuition and qualitative. In the early days, it was the opposite. I was watching a lot of people being frustrated and unable to actually use the thing the way we wanted them to."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When it comes to competing with big corporations, we have Zoom who has AI, like every product now has AI notes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you walk me through your entrepreneurial mindset? Because when I'm building something and I see a large company releasing something similar, my first thought is I'm done. But then I'm like, okay, we're gonna make it through."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Things are moving so quickly and companies are launching things all the time. I think now we've all gotten a bit more used to it. But maybe a year and a half ago, it just felt like the world is falling and changing every five minutes. When we launched Granola, AI notetakers had already been around—the earliest ones had been around for seven or eight years. So there were tons of AI notetakers. The Zooms and the Googles of the world, they already had AI notetakers. Not as advanced as the ones they have now, but they already existed. When we would go and interview people and try to understand if they were using them and if they were being useful, it became really clear that they were only marginally useful. They weren't actually doing the job that people wanted from a tool like that. I guess what I'm saying is we entered this crazy saturated space and I think we were able to break out because even though Zoom or Google create notes and Granola creates notes, the way we've designed Granola, the way we think about it is very different from those tools. Granola is very much a personal tool. It's your personal notepad that you are in control of and you can put notes in there. I can go into Granola and I can basically chat with all my meetings from the past two years. As the AI models get smarter, the level of insights or the level of conversations I can have across that corpus gets smarter and smarter."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I would love to talk to you about that later in this interview because if a company's not recording their meetings, I think they're losing 50% of what they can build later with all of these insights they're getting because this is their employees' taste. This is the way they make decisions. This is the way they move. And the only way to teach AI how to mimic or enhance that is through the context."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's the context. Exactly. All the data."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I want to thank the sponsor of this video, Granola. Granola is one of the apps I use every single day. There is a rule that I made for myself. If a task repeats and it's not the work that actually makes me money, I automate it. Cleaning up meeting notes was one of the first tasks I actually automated with AI. Every call I take—strategy, partnerships, team syncs, intro chats—gets recorded and sorted. Because I've been doing this for a long time now, at the start of every new call with the same person, I have a clean list ready. What we agreed on last time, what I still owe them, what they still owe me. It's not a bot that joins your call. Nothing is really visible to the other side. You stay fully in the conversation and after the meeting, Granola transcribes everything and turns it into a clean summary you can work with. Of course, at the beginning of the call, you disclose that you will be recording this with Granola. Here's my real example. Last week, I was in a partnership call. We were going through financials, timelines, deliverables. There were a lot of moving pieces and my manager was not part of that call, but I really wanted to send her a follow-up email. I felt engaged in the conversation. I could focus on the person I was talking to without having to take notes of every detail because I knew every number and every date would get captured. After the call, I opened the transcript and I just asked Granola to create that follow-up email and pull a list of deadlines. Drafting the email part took me about 25 seconds and I copied and pasted. That's it. As if my manager was on the same call with us. My team and I have been using this for a few months. We miss fewer things, which really matters because with AI, the number of tasks we're tracking has actually gone up a lot. If you want to try it, use the code Marina and get three months free. The link is in the description. And now, let's get back to our conversation with Christopher. For an entrepreneur who's starting today and thinking, \"Okay, I really want to build this tool, but I'm afraid that a big company is going to release a similar tool\"—I don't know if you've watched Google IO, but they release a very similar tool to Wispr Flow where it looks the same. The small bar appears, but the difference is while you're talking to it, it also references all the files you have in Google Drive and Gmail. So you can say, \"Oh, by the way, insert a table using this data,\" and it's going to do it. So it's not only transcribing, it's also adding context. I can see how I'm still using Wispr Flow because I want just the transcription, but I also see how I'll be using more of that as well. Can you give advice to an entrepreneur who's building something but constantly competing with everyone in this era?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It's a great question. If anyone had a crystal ball and could say there's an extreme world where we are only using one tool in the future for everything, and there's a different version of the future where we use even more tools than we have today, I think we'll end up somewhere in the middle, but it's hard to know exactly where we'll be. The way I would think about it is basically a 2x2 matrix. It's how frequent is the use case that you're going after and how important is it for the user. If it's an infrequent use case, then I think it'll be really tough to compete with the larger companies or the larger tools that are more established. If it's an infrequent use case, people will go to ChatGPT or the clouds most likely. In the same way that you didn't see a lot of verticalized search engines in the 2000s because people are just going to Google and it's easier or they have a habit and that's where they would go. So I think you have to choose a use case that's very common. If it's common, you have an opportunity to build a habit around it. The question is: is it a common use case where the user doesn't care if you do a much better job, or is it a use case that's really important to people? I think you want to be in that corner where it's very important to people, where if the product experience is even just 10% better, that's reason enough for people to switch to you and use it. If you're in that quadrant, then I think it goes back to caring more. That's the one thing you can do over the big companies—you can just care more because they have to care about a lot of things. Then you can build a better product and I think you can compete."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think we should add a niche to whatever you just said? Because I feel like if you're just going after a frequent use case for billions of people, then it's a big corporation kind of playfield, but if it's a niche like for your product, it's like people who are fixed on their productivity, want to record, want to be more effective with their notes."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Or you become a really big company one day."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Yeah, we definitely want to have billions of people using granola at some point."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you're moving into B2B. You started as B2C company and now you moved into B2B. How is that shift?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Well, it's a good point. Our strategy was to mimic Slack or Dropbox, those types of bottom-up companies. So it's basically product-led growth. The idea is that someone inside of a company discovers Granola, they fall in love with it, they tell their colleagues, we grow organically inside of the company, and then at some point someone in a position of authority, maybe it's the founder, maybe it's the chief compliance officer, legal officer, security officer, says, \"Whoa, everyone's using the software. We should probably pay for it, have control over it, make sure we know where our data is going and all that stuff.\" That was always the plan. We always knew that we would be selling to companies. But at the beginning we just focused on trying to build something people actually wanted. And that worked. So Granola spread organically throughout companies. Now we have some very large companies who are on enterprise plans with Granola. It all started either bottom-up where it spread through the company virally or the founder or CEO was using it themselves, found it valuable, and said everybody should be using it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's a great B2B marketing plan when you started with a consumer. How did you get to those initial customers?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "We posted on Twitter. That was basically it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "By yourself, like the founding team or?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Yeah, I posted from my account and I didn't really have a Twitter following at all. The way Granola works is it looks like Apple Notes. It's a notepad and then at the end of the meeting it'll take whatever notes you wrote and it'll flesh it out and there's this really nice animation where you see your notes get filled in. We had a GIF of that and at the time a lot of startup founders or leaders were really interested in new UIs or interactions around AI. So we had GMO from Verscell retweet my tweet and then Matt Friedman also retweeted. It somehow just caught a few people's eyes and they tweeted about us and then we started growing. The first day I think we got 500 installs."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's pretty decent."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It's not bad. It was more than I expected, but it's also a drop in the bucket. And then it just started growing little by little because we weren't doing any marketing. The crazy thing about Granola is all the old school AI notetakers are all super optimized for growth hacking. At the end of the meeting, they'll send notes to everybody who is in the meeting, whether they want it or not. Granola doesn't do anything like that. Our only job is to serve the user and give the user wings. The fact that Granola was entering a space that was super crowded and had zero growth loops built into it and it still grew virally, organically, and was able to pop out and become really visible in that space—I think there's something going on there. It's a really strong testament that people are hungry for just better software."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. So basically all your marketing is based on people loving it and great product."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "The whole company is based on that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing. So would it be your advice for any entrepreneur building something? Don't think about marketing yet. Just think about the product and people sharing."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I think so. It's so noisy out there right now. There's so many people doing so many things and there's so much investment and advertising happening. I think if you don't have a product that itself can pop out and get noticed and loved, it just feels like a losing proposition by default. I always think about very user-facing products. I think it's very different if you're going after customer support—there it's all about having the right sales motion and marketing is a part of that. But generally, if you don't have a good product, it's the one thing that you can make better with a small team. And I think you should do that up front rather than doing that later."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I have one final follow-up question. How many initial users did you have? How much feedback were you collecting before pushing it out?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "We had about 150 active users after that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's your friends and your inner circle. What were you tracking when you gave it out, because you couldn't see their eyes, right? Who were you tracking with the frequency of use?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "We would set up a first call in person if we could, otherwise a video call where we would ask them to share their screen and then we would watch them try to install Granola and try to use it without us saying anything. Then we would schedule a call in three days again, share their screen and walk through the meetings they used Granola for and talk about what was good or not. That was the highest signal. That's where you learn the most. But then once the product started getting good enough that people would actually use it, we tracked usage. There's a thing called a dot plot. A dot plot is basically like a spreadsheet where every row is a user and every column is a day. The default dot plot we had would show the last 30 days. In each cell you put, for our case, how many meetings did they use Granola for on that day. And then you change the color of the cell. If they used it for ten meetings you make it dark green. If they used it for zero you make it white. Then you can at a glance very easily see the patterns. The idea is that you start with a dot plot when the product's not very good and then you iterate. What you should see happen is it line up. Normally when you do analytics you group all the usage together and you get a usage graph showing cumulatively if people are doing more meetings or not. But that's not actually very helpful in teaching you what's wrong with your product. With a dot plot you can see things like: this person was using it a lot and then they stopped using it and then they clearly remembered it existed and started using it again, or maybe they went on vacation. Or you could see a few people who started a little bit and then had one day where they did five meetings and from then on it became a habit, they became hooked. You can ask yourself: how do we get people to have that kind of day? So it becomes a very easy visual way to stay on top of the pulse of what's happening with your users."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Amazing. Talk to me about your AI stack. What are you using apart from Granola?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I struggle with this question because I try to use Granola for as many things as possible. I just got this Apple Watch and that's a really nice feeling because it's just here all the time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, this is how I take my notes when I go to conferences. Either I use voice notes and they go to my phone and then I use whatever we're using to transcribe. It's a few steps for my notes."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It's a journey. But in terms of form factor, the Apple Watch—it just feels very natural."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "100%. It should be the form factor for all the conferences and everything."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Yeah, and then next I use Claude, which is probably my second one. One of the engineers at Granola set up this internal agent. We call it Nacho. I actually don't know why we call it Nacho, but it has a little Nacho as the icon. We've connected basically all of our internal tools to this one agent. So literally every single data source that we have is accessible to this agent. There's an internal portal, but we also interact with it in Slack. That one's really interesting. For example, I will often notice something weird in the product because that's my job and I'll post about it in Slack and then someone will ask Nacho to look at the analytics for the last couple months and see if that supports my annoyance or whatnot and then that'll come back and then someone will be like, okay, what if we change the way this worked and put a button here instead, and then you ask Nacho, Nacho goes and talks to Cursor and prepares a change. It still goes off the rails all the time and so we have to be like, no Nacho, that's not what I wanted, or you think harder. You made some assumptions here that aren't right. So there's still a ton of human back and forth, but it definitely changed the way we've worked internally."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's basically—I'm trying to describe this role. What is he? He's not like a chief of staff. He's more like goes to analytics. Does he help you with strategic decisions or is it mostly like pull me data?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It's a lot of pulling me data. Do this thing that would have been 30 clicks before, or opening up three tools and saving data into a file and uploading it somewhere else."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Just do all of that for me."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Maybe an intern would be the right comparison. We're not outsourcing big decisions. We're going to be like, \"Hey, go pull up the data, go pull up this thing, look at how those two connect. Okay, here's what we want to do.\" It's very much the ideas are coming from us, not from Nacho, but Nacho is executing on it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you use a tool for that or was it built from scratch? I wonder because you can totally build this with Perplexity Computer or something like that."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "We didn't use anything like that. It's something like Cloudbot, but it's not Cloudbot. I can't remember what it's called. We run it ourselves. That's why we're comfortable with all that data going through this agent because we run it and control it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. What haven't you delegated to AI yet or what are you doing without AI?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I think a lot of building great product is all about how does this make me feel, and a lot of it is human intuition based. It's trying to put myself in the shoes of another person and imagine how they'd experience that. I just don't use AI for that kind of stuff at all."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What you're describing is something so uniquely human."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "We have some really young people on the team and they just naturally default to using AI for everything. It's just their default behavior."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "And more often than not, I look at that and I'm like, \"Oh, that's clever. I wouldn't have done that, but that's actually really smart and I should do it.\" I think the product stuff is probably one of the last things, at least in our immediate work, that I think we'll get. I don't actually know if AI will ever fully get in there because I think the lived human experience is actually the one thing that we have."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "What it can help do though is, we'll get lots of feedback from users and then grouping and classifying that, basically making that feedback and putting it into a form that's really easy for us to build intuitions on top of and making decisions. Super useful for that. But then actually, what do you do with those intuitions? What changes you want to make? That's still very magical"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "and it's a very founder-driven thing because the soul of the product has your vibes. It has to have your feelings. I don't know if you can even put it into a product."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. Do you have any magic prompts that totally change how you interact with AI? For example, I just asked my Granola, can you identify bottlenecks in my company? And it went and analyzed my conversations and number one was, you know, it's you. You're the bottleneck."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That was my number one. And then it came up with a few more things that we're currently fixing. Do you have any other prompts that anyone can use with their AI that's going to change their work?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It all comes down to the AI needing to have enough context. So if you use Granola in all your meetings, then it does. And then you can ask it some pretty incredible things. The things that really opened up my eyes and I was surprised at how good they were were coaching level things. There's one recipe in Granola which is called Coach Me. What's great about coaching is that it can be harsh. If you ask an AI for feedback, AI can give you harsh feedback and there's no person worried about hurting your feelings. An AI can say something to me and I think I can hear it better than if my wife said something to me. I might be a little bit more defensive. So anything around deep coaching—hey, what are these patterns you observe in how I do things that maybe I'm not aware of that are not helping or that I could improve? That's a really big one. Oftentimes I'll go into other tools. If I use ChatGPT or Claude, they feel quite dumb to me compared to Granola because they don't have all that context baked in."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But you can connect now."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I mean—"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "No, what I mean by that is I have 2,000 meetings in Granola, 2,500 meetings, right? When I ask Claude a question, it doesn't read 2,500 meetings. It'll read 10 and it'll try to form a picture about me from those 10 meetings. So I have a recipe in Granola which basically says, \"Look at my last month of meetings and write me five pages about who I am, what Granola is, what's the Granola product.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can we try that? Can you give me my Granola? Can let's do it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I really like this prompt. Let me see what it tells me."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Perfect. So if I go here and then we just say I'm going to use ChatGPT to do some work and I want ChatGPT to understand who I am, what I'm working on and what I'm trying to achieve so it'll have better context about me. So please look at all my meetings from the last month and write three pages that I can paste into ChatGPT so I'll have all the context on what I'm trying to achieve."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. Oh nice. It even extracted some stats, pushing cadence. Nice."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "So what I find is, now if you take this and you can go to any AI out there—ChatGPT, Claude, anything—and if you just say here's some context about me and you paste this in and then you ask whatever you're going to ask, the AI will do such a better job answering your questions because it understands so much more about you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly. So because it's connected to my Claude, how can I ask Claude to self-update using this to add context to all my projects?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Well, there's probably some way where you could set a trigger where it does it every day or something like that. Or you could just wait for us to launch that soon because it would be kind of cool, right? If this thing basically we're building a version of this where it will auto-update every day."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And then you could just use that context anyway. This is fascinating. So I feel like you are building something like a virtual chief of staff based on this data that you have. I also write a newsletter where I go deeper on AI tools that I use, career strategies and things I can't fit into a 30-minute podcast. It's free. Link is in the description. We've been talking for almost an hour. I'm remembering some things, but there are details that I might be missing that are important to me. How does Granola work in terms of picking out those details? How does it decide what to surface in the notes?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, so—oh, nice. It gave me product strategy and crowded markets. I really like it. Building in the AI era, market dynamics, product strategy."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "What we realized early on is that what are good notes for you would be very different than what are good notes for me. So the point of notes is really dependent on who the person is and what they're trying to achieve. I think we might have been the first to do this. It was basically notes are generated for each person and they're different for each person. And what we do is we take as much about the person into account as possible. So I don't know if this was a calendar event, but let's say you join a Zoom meeting and use Granola. Granola will go and try to do research and figure out who everyone in that meeting is and what their roles are. And then we'll use that to figure out what the meeting is about and what should be highlighted in those notes. If"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I tell Granola my goal for the next few calls is to"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Make sure we follow up with everyone if we had agreed on a to-do list. Would it be highlighting that for me in every meeting? Does it have a universal memory of how I want my notes to be presented?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Not an automatic one yet."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "So that's something you can go and set up a template in Granola. You can have different templates and you can say I want notes in this structure during a call or during a meeting and be like hey Granola make sure to include this in the notes and it'll do that but it doesn't have a memory about you said this in the last call so I'm going to do it in the next call. You have to be careful with memory. Memory is super powerful but with explicit instructions the reality is we underestimate how much things change. You don't want an instruction that you said something last month and Granola still thinks it's really important."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "My ChatGPT still thinks I want to be an actress which was two years ago."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "There's a guy on my team who mentioned muffins to ChatGPT once and now ChatGPT just keeps bringing up muffins all the time. As a muffin connoisseur, no, I just asked about muffins. That's why you have to be careful with it. If you use Granola a lot, there's just so much richness and context in our conversations. It's a little bit like thinking about your best friend and how many hours you've talked to your best friend and how well they know you. It's very different than chatting with ChatGPT or Claude. It's very superficial."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Granular. And once we fix that, if we can make this dynamic memory based on"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Asking AI to identify my priorities on a certain day,"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Then this can become my chief of staff. If it can just pull those things like, oh, now Marina is focused on that. I'm going to help her in this meeting by suggesting these questions. I'm going to identify this process that's broken in her team clearly because I've heard it in other calls within her company."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For me, recording my calls is a way to build a virtual chief of staff which we're trying to achieve."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "And I think almost everyone in AI is trying to achieve something like that, at some level of autonomy."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For now I feel like AI has made us much more productive but it only means we're working more because we see all this productivity gains. We see how much better it is and we just work more. What I want the next step to be is to give us some more free time. It's summer. I want to take a few weeks off. I can't."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I think we do that to ourselves a little bit."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "True. But this is our nature."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And it's interesting whether we're going to cross this period in time where AI is helping us with strategic decisions. So we intentionally take more time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I don't see this happening now."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "On the point you were talking about a second ago, there's this interesting question of how are you going to interact with this chief of staff or this AI and how directive are you going to be. Basically, are you going to be always do this or give it instructions and it always follows that? Or I think there's a different model which is the AI is almost invisible and it just observes what you do and then tries to infer from that what it should be doing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, exactly. That's what I wanted to do. What will Marina bring up in the next meeting based on her free speech?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Exactly. So a good example here, months ago, I tried building a version of Granola generating follow-up emails. So you'll connect your Gmail and it will just learn from your previous messages with that person or both."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Both?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Both. So an example there that's really important is for example let's say often times people will need to send a link to an important doc. For example before this you sent me a doc saying here are some instructions. That doc might change like next month you might decide to use a different doc. And if you had to tell Granola that you changed the doc you might forget. Whereas if it has access to your emails and it notices that you now use this new doc, I'm going to start using this new doc, you don't have to think about it. I think a great model for AI is one where the best designed things become invisible. I think the best AI is going to be stuff that you don't even realize is there."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Self learning, self updating, learning from what's changing. This is exactly what you're describing."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I try to get everyone at Granola to think about product in the same way. When someone new joins the company, I basically paint them this picture where I want Granola to feel like a handrail. You know, when you have stairs, there's that railing and people always look at me like, \"What do you mean by that?\" It's such a weird thing. But I'm saying, \"Well, handrails are basically invisible. They're on every staircase. You never notice them. You don't pay attention to them until you trip. And then your hand shoots out and it needs to be right there and it needs to hold your weight and it's a really important thing and it needs to be super intuitive. But then you go back to living your life and going up and down the stairs. That's how I want Granola to feel. I want Granola to have your back in any moment of need. If you're tired, if you're tripping or whatever, we're right there for you, but otherwise you're the star of the show. You're out there doing things. You're living your life."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Whenever I post like I'm excited this company just launched this and I've been using this company for so long now I can do this, I get comments like oh why are you happy, AI is stealing your data, AI"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "is going to replace you in three months, corporations are just eating us, whatever. What would you say to those people? I think the world's going to change a lot over the next couple years. And I think whenever there's a period of a lot of change, there's going to be turbulence. That is just a reality. And I don't think anyone knows exactly where we're going to end up. I'm excited about AI as a tool that augments us and enables us to do more and better things than ever before. And I think there's a lot of areas where that's the case where AI is not going to replace people. It's actually going to let people do more. And there are all these examples in history where if something becomes more accessible, the demand for it goes up because now people can use it. Like Jevons Paradox, I think it's called."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "It's not going to be everywhere though. There's definitely going to be pockets of society where it's going to be very disruptive. That's happened lots of times in history as well. Change can be exciting, but it can also be really hard. I think it's important to hold the excitement but also the reality of the downsides in our minds at the same time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you tell yourself when you have fears about AI?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "My view there is I think about what I can control. Generally this is my philosophy in life. I think about what I can control and the things I can't control and I don't worry about the things I can't control. The things you can control is if you believe AI is going to have a big impact then you should try to stay close to it. I think you should try to use it and that's really the only thing you can do."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "Honestly, 100%. I've seen what's happening with engineering, and I think the same thing that's going to happen with coding and engineering is going to happen in other sectors later. We have a guy on our team who's 20, and the way he uses AI is incredible. He's able to do all kinds of incredible things that I never would have expected. So I think the only advice I have to people is don't shy away from it and lean into it. That doesn't mean you need to follow every launch. There's a lot of AI theater, productivity theater."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "There's almost more talk about how AI has helped them than it's actually helping them be more productive. I think we're in the productivity AI theater phase. But I think we're going to come out on the other end of that where it just really does augment your productivity tremendously. It doesn't mean you have to spend 24/7 following every single launch. What I mean is think about the core things that you are good at, that you need to achieve in your job, and figure out how you could augment those with AI. For product, for me, it's not \"how do I get ChatGPT to make product decisions,\" but rather \"how do I get AI to get all the data so I can be better informed to make better product decisions.\" That's how I would think about it."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I have a six-year-old and an eight-year-old, and I think about what the world is going to look like when they're older. It's perhaps going to be a little bit easier for them because the world's going to change a lot over the next few years. They're already growing up in a world where AI is normal. Whereas if you are in your mid-20s right now, early in your career, and now there's all this change happening, that's perhaps a harder time. But maybe it's easier than if you're in your 40s. It's hard to tell."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And last advice for founders building in the AI era. What should they be avoiding?"
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "I think this has always been the case, but it's so much more extreme with AI. There's so much noise, so much FOMO, so much imposter syndrome. If you just look at Twitter, you'd assume that everything is solved."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Companies are run by agents. Exactly. All that stuff."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "The reality is very far from that. I think ultimately what you can do—what you can control—is understand a problem and a user better than anybody else in the world if you really wanted to, and just care more about building a really great solution for those folks. You can have peripheral awareness of other stuff that's happening. It's good to understand directionally where things are going, but do not let it mess with your head because it's so easy to obsess and look at those things and assume that they have it figured out. The shiny objects, the fashion of this week versus that week."
+    },
+    {
+      "speaker": "Chris Pedregal",
+      "text": "But the underlying problem that you're trying to solve probably hasn't changed at all in the last two weeks, or even the last two years. That's what you need to work on. That's your job. It's exciting, but you have to manage that mentally because otherwise"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "you'll be too distracted. You have to care more about your particular problem."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. Thank you so much."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much for having me."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "bzfklNb1wjc",
+      "thumbnail": "https://img.youtube.com/vi/bzfklNb1wjc/hqdefault.jpg",
+      "title": "Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu"
+    },
+    {
+      "videoId": "DPe_srf0GlI",
+      "thumbnail": "https://img.youtube.com/vi/DPe_srf0GlI/hqdefault.jpg",
+      "title": "Head of ChatGPT & Codex: Agents for Normal People Are HERE | Thibault Sottiaux"
+    },
+    {
+      "videoId": "ZW87Peh3tWM",
+      "thumbnail": "https://img.youtube.com/vi/ZW87Peh3tWM/hqdefault.jpg",
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward"
+    }
+  ],
+  "topics": []
+}

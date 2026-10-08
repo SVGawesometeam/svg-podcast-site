@@ -1,0 +1,537 @@
+{
+  "videoId": "Gk0n0FjeKj8",
+  "title": "Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh",
+  "format": "interview",
+  "guestName": "Kian Katanforoosh",
+  "guestTitle": "CEO of Workera, Stanford Lecturer, Co-founder of DeepLearning.AI",
+  "aboutGuest": "Kian Katanforoosh is the CEO of Workera, an AI-powered skills intelligence platform that has assessed over one million professionals on their technical and AI capabilities. He is a lecturer at Stanford University and co-founded DeepLearning.AI alongside Andrew Ng, one of the world's most widely used AI education platforms. Kian is a leading voice on AI workforce readiness, skill development, and the practical deployment of AI systems in enterprise environments.",
+  "publishedAt": "2026-03-05T13:00:25.000Z",
+  "duration": "35 MIN",
+  "coverArt": "https://img.youtube.com/vi/Gk0n0FjeKj8/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/Gk0n0FjeKj8/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Stanford AI expert Kian Katanforoosh, who has tested over a million people on their AI skills and found that 71% dangerously misjudge their own proficiency level. Kian breaks down the critical difference between AI adoption and true AI proficiency, explains why 95% of AI agents fail in production, and outlines a 90-day plan to get meaningfully ahead. He also shares which human skills AI cannot replace and offers three concrete moves everyone should make heading into 2026.",
+  "keyTakeaways": [
+    "71% of people misjudge their AI skill level — there is a critical difference between adoption (using AI daily) and proficiency (using advanced techniques like chain-of-thought prompting, few-shot prompting, and retrieval-augmented generation systems).",
+    "The half-life of a skill in tech and AI is now roughly two years, meaning continuous learning velocity — not job title or credentials — is what keeps professionals safe from displacement.",
+    "Kian's 90-day plan to reach real AI proficiency: spend the first phase building foundational knowledge via platforms like DeepLearning.AI, then plug into high-signal networks on X, Reddit, and ML newsletters to stay current as the market moves fast.",
+    "95% of AI agents fail in production, often because builders underestimate the complexity of moving from a single task to the hundreds of interconnected tasks that make up a real-world job or workflow.",
+    "Despite fears, nearly every prediction since ChatGPT's launch that a specific job would disappear within months has not materialized — even autonomous driving took over a decade of intensive research — suggesting job transformation happens over years or decades, not months."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "00:44",
+      "seconds": 44,
+      "title": "The big 2026 question"
+    },
+    {
+      "time": "01:47",
+      "seconds": 107,
+      "title": "When will drivers disappear?"
+    },
+    {
+      "time": "03:03",
+      "seconds": 183,
+      "title": "You use AI the wrong way"
+    },
+    {
+      "time": "04:33",
+      "seconds": 273,
+      "title": "90 days to real proficiency"
+    },
+    {
+      "time": "05:10",
+      "seconds": 310,
+      "title": "Who to follow in AI"
+    },
+    {
+      "time": "06:01",
+      "seconds": 361,
+      "title": "Top AI tools + the bottleneck"
+    },
+    {
+      "time": "07:20",
+      "seconds": 440,
+      "title": "3 questions reveal your AI level"
+    },
+    {
+      "time": "09:50",
+      "seconds": 590,
+      "title": "Make AI 10x more useful"
+    },
+    {
+      "time": "10:52",
+      "seconds": 652,
+      "title": "How Workera cut human approvals"
+    },
+    {
+      "time": "14:16",
+      "seconds": 856,
+      "title": "His AI briefs him every morning"
+    },
+    {
+      "time": "14:45",
+      "seconds": 885,
+      "title": "Hire AI talent or start yourself?"
+    },
+    {
+      "time": "15:25",
+      "seconds": 925,
+      "title": "The skill AI can't replace"
+    },
+    {
+      "time": "19:24",
+      "seconds": 1164,
+      "title": "Real reason Gen Z can't hire"
+    },
+    {
+      "time": "21:52",
+      "seconds": 1312,
+      "title": "Stanford lecturer: degrees are worthless"
+    },
+    {
+      "time": "24:10",
+      "seconds": 1450,
+      "title": "Why 95% of AI agents fail"
+    },
+    {
+      "time": "28:30",
+      "seconds": 1710,
+      "title": "Will AI kill entrepreneurship?"
+    },
+    {
+      "time": "32:04",
+      "seconds": 1924,
+      "title": "3 moves for 2026. Write down"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "How often you use AI. If it's not daily, I think you're generally behind."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's Kian Katanforoosh, Stanford AI professor, who built one of the world's top AI education platforms with Andrew Ng. Now through his company, he's tested over a million people on their AI skills, and today he has a step-by-step plan so you don't fall behind. What are the three moves everyone should make in 2026?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Learn the foundations of AI. Assess yourself to make sure you're ready. Build the habits of learning. If you focus on one thing for a day, you probably are already in the top X percent of the world. For a week, non-stop, you're in the 10 percent. Focus on a month, you are in the 1 percent. 1 percent, you will have to."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Hello, everyone. Welcome back to Silicon Valley Girl and Davos. Kian, let's start with your big idea. 2026 is the year of humans, but also we're getting a completely different narrative, you know, a new model every week, replacing jobs. How do you think we should focus on humans right now? And what is the shift?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "I think the shift that is happening is broadly due to the fact that people generally overestimate the impact of technology on the short term and underestimate what the technology can do on the long term. If you look at all the reports from foundation model labs, OpenAI, Anthropic, and others, there's a lot of task level reports like AI is good at task A, task B, task C is getting automated. And actually going from a task to some human's job changing with a job usually being made up hundreds of tasks is not that simple. It can take decades and every, almost every prediction that I've seen since the launch of ChildGPT of XYZ job is going away. Has not happened. The famous one is the radiologist will go away and the drivers will go away and then you see this meme of radiologists driving to work in their car."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You mentioned drivers. Do you have an estimate, for example, because if you go in San Francisco, it's almost, waymo's are almost everywhere. I don't really see older taxis. So we see the replacement happening, but how soon do you think it's gonna happen for drivers, for examples?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, well, you look like the rise of Waymo, Cruise, all these companies in the self-driving space really started in 2014, 2015. So we're already 11 years into them having hired tons of engineers to build that problem. So even Otono's driving has been a decade of full-on research with people working so hard. So why wouldn't it be the same for the rest? I think like maybe in the next decade, we're going to start. You know, seeing less voice actors, less translators, maybe customer support is going to completely change. I agree fully with that. I just think people thought it would happen within six months and it hasn't."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, so we're safe for now, at least like."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Generally, I think safe in a career comes down to learning velocity. It turns out to, can you reinvent yourself? The UAEF has this metric called the half-life of skill that is going down, meaning on average a skill is not useful that long. It's two years in tech or AI, and so you have to refresh yourself and that's what makes you safe ultimately."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. And your data shows 71% of people misjudged their AI skill level. Can you give us some benchmarks? So what is an AI proficient person? What does his day-to-day look like? Does he start with chatting with his AI or is it not writing emails by yourself or having AI manage your schedule?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I tried to separate adoption of AI and proficiency, so I'll give you an example. Adoption is like you use AI every day and I use it every week. You're a better adopter than I am. But turns out that if we watch you prompt engineer and me, maybe your prompts are just simple prompts. And when you look at what I'm doing, I'm doing, um, a variety of techniques. I'm doing zero-shot prompt, I'm doing few-shot prompts, I am doing a chain of thoughts, I am doing prompt chain that is super complex that feeds one into another. I am a retrieval augmented generation system that I built. My proficiency is higher than you. That's the difference between adoption and proficiency."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, what you just said makes me feel like I'm a beginner because my problems are really, really simple. Okay, if I want to sound like you in 90 days, what should I be doing?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "So first, if you have 90 days, I would say, first, we need to establish the foundations. You take a few foundational classes. ai, on other platforms. There's a lot of content out there, honestly, high quality. Establish the foundation. You will get to a point where what will matter the most in AI, because the market is moving so fast, is that you are plugged in the network. So what I recommend generally is You go to X, you go to Reddit, you go to some of the machine learning popular newsletters, and you register to all of these."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you recommend, like, who do you follow on X for best advice?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Well, actually, if you go on my ex and you look at who I follow, you can follow the same people. But some of them are here like Andrew Ng is a great person to follow, great newsletter called The Batch, Richard Socher, Yoshua Bengio, a lot of great AI scientists that people trust. Actually, it allows you to cut through the noise when there's so much noise coming. Like I tell you, when I was in grad school, we would read a lot of people that come up in archive, the websites where papers are often published. Today, there's just so much that you have to find ways to differentiate signal from noise."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Every time I scroll through my feed on Instagram, there's this new app and this company just changed the game in this market and it happens every day. So, okay, we established this. I follow the right people. What is the next step? Are there top three AI apps that I should be using?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I mean, you know, I recommend, obviously, Workera for testing yourself, although it's mostly used in corporations. Other than that, you depending on AI has a lot of free content out there. It's really good. You also find that the LLMs can help you learn. Like you can actually prompt the LLLs, but the bottleneck is people don't know what to ask the Lllm. And that's where the assessment is so important because at some point, you're gonna be pretty good at AI. And you're going to sort of have a wall in front of yourself, like, what do I do next? Am I actually that good? Do I know? To give you an example, at Stanford, we have, as you said, the class on campus with a lot of students. And we have the class same content published on YouTube with a load of views, like, a lot views."
+    },
+    {
+      "speaker": null,
+      "text": "And those students would tell you that the difference between them and the Stanford kids is that it's not the material. It's that they don't know how good they are. The Stanford students, they have friends at OpenAI, they have friend at Meta, they are friends at Google, they know how good they are compared to the bar, how much does it take to get a job there. But if you're somewhere in the world with no ecosystem, you're not plugged in, it's really hard. And so that's where the assessment is so important. It can tell you, hey, actually, you thought you were very pretty good, but that's not the bar. The bar is actually higher."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Top three questions that you should ask yourself to kind of understand your level."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "How often do you use AI? If it's not daily, I think you're generally behind right now. That's the simple one. The other one is think about 10 products that use AI that you encounter in your daily life. Can you come up with 10 products? And some people would realize, actually, I don't realize, where is AI? Is it here? Is it there? I don't know. I don't have this ability to identify AI. You're probably behind."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When Keyin says that, a lot of people have the same reaction. Okay, by that definition, I'm definitely not using AI enough yet. And honestly, for most teams, it's not a motivation problem. It's that there is no simple visual way to plug AI into the work they're already doing. Right now, AI usually lives in fragments. Cursor in one tab, Claude Code in another. Maybe a copilot or an open AI model somewhere else. That's exactly how my team used to work too before we changed our setup. Ideas in one place, guidelines in another, code somewhere else, video editing on another platform and almost no visibility into how all of it connects. That's why I got excited about partnering with Miro and their MCP server. MCP lets you connect your Miro Canvas directly to the AI coding tools you already use."
+    },
+    {
+      "speaker": null,
+      "text": "So instead of Miro being notes on the side, it becomes the central hub where your specs, diagrams, and context actually feed your agentic coding workflows. Practically, it changes two big things. First, you can take shared context, diagrams docs, notes, system maps, and send that straight into your AI assistance to build better code. Because now Claude or Cursor has actual context from your diagrams and specs. Not just a prompt. Second, you can instantly visualize that code as diagrams in Miro in a collaborative environment where the whole team can understand, comment on, and iterate together without digging through a repo. If you've been wanting to use AI more seriously at work, but it's always felt abstract, fragmented, or messy, Miro's MCP makes it concrete and collaborative in a way that finally clicks. If you want to try it yourself, check out the link in the description and the MCP tutorials on Miroo's YouTube channel."
+    },
+    {
+      "speaker": null,
+      "text": "And now, back to my conversation with Kian. If I want to start using AI for work, what questions should I be asking myself?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "I think when it comes to work, a lot of the value of language models is in the context. So for example, on ChatGPT, there is this feature that allows you to give custom instructions to the model. So, hi, my name is Kian, I'm XYZ, I like to speak in English or in whatever language, and I like be concise or I like to, you know, whatever your style is. That's example of context that you give to the LLM."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's like memory, right?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, memory that you give to the LLM. Although, yeah, memory is slightly different in context. I can explain after, but you know, and at work you sort of want your documents to be accessible to your LLN, if possible. You want your custom instructions to be acceptable. You even want the custom instruction of your coworkers, so that when you talk about your coworkers or you're trying to send an email to XYZ, it will figure it out. So the value of the LM increases with the amount of context it has access to at work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that how proficient organizations use AI?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I'll give you a concrete example. So at Workera, we are a big Anthropic shop internally. We use a lot of Claude. All our engineers are on this version of Claude called Claude Code Max, which is very powerful to code. And across the company, we have things that we call skills, Anthropic called the skills. Where you can think of them as files that define a certain way of doing a certain thing. Like, here is how we recruit at Workera, or here is our brand guidelines. This is the font we use, this is how we speak, these are the color palettes that you can use. Before, if an engineer wanted to build a website, they would have to call the marketing team at the end and say, can you review the font, can you view the alignment, can you reveal XYZ. Today, because it's all coded, you don't need any more to talk to a human."
+    },
+    {
+      "speaker": null,
+      "text": "The engineer just. Asks DLLM, can you just verify that the copywriting is correct, the color palette is right, and they know that the marketing team has maintained that code."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "And so it cuts communication and it's very powerful. You gain actually so much speed and create so much more time for the marketing team to think about, do we need to change our fonts? Do we need, rather than like everyday talk to an engineer and say, no, change that font, change the font, so."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you check the result afterwards? Like, oh."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, the engineer does. Yeah, okay. The engineers do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. So now I'm very curious about your day-to-day as a founder. What has changed in the past three years and how you just deal with your coworkers. So you mentioned using Claude, uh, that cuts communication. What else?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "I would say one thing that has changed is we are getting flatter as an organization, which means we have, for example, our head of AI decided to become an IC, an individual contributor, from a manager role. And that didn't used to happen before. And he's doing great as an individual contributor, and he feels more productive, and he feel like he's back close to the machine. And I think that's a trend that we're going to see a lot. The second aspect is... So in tech, you have this ratio of within a perfect team, how many engineers do you have? How many product managers do you have, how many product designers? Historically, you would have some Jeff Bezos calls it the two pizza team. The team has to be able to eat two pizzas. If it's more than two pizzas, the team is too big, basically."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, he's grown beyond that."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "And so right now, I think historically we've had, I don't know, eight engineers, one product manager, one product designer. I think now it's getting way more efficient on the engineering side, where you can actually probably put a team together with two engineers, 1 product manager and 1 product designer. And the engineers are very empowered to perform, to build everything on their own almost with some input from... You know, the other parties. And so we are seeing at Workera a lot of smaller teams, a lot, you know instead of having three big teams, we might have six, seven smaller teams that have more ownership of their surface area. We have, you now, transcriptions of meetings which is really helpful because I can remember, you know what was the context. You know, we use our own product in our interviewing, so there's an AI interviewer. Oh wow."
+    },
+    {
+      "speaker": null,
+      "text": "I think we just make all these tools accessible to our workforce and we make sure they adopt it very frequently."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Who does your calendar? Is it AI now?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Every morning I have a briefing that my, so my assistant builds AI systems herself. And she has a little agent call it or workflow that tracks my calendar and tracks what I know or what past conversations I've had. And every morning I get a briefing automatically in Slack that tells me this is where you need to be and this is what you need know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Nice."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Pretty much, which is really helpful, you know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Everything that you described, if I want the same in my company, do you think I need to hire someone who's more AI native or my team can just handle it? No, you should not. We're all like creatives and..."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I think you should start yourself. It all starts by yourself. So I think, you should try it yourself and you will actually figure out that you can get a lot done by yourself and you're already very proficient so it will be easier probably for you. If you wanna get in the technical realm, yeah, you will need someone more technical. You need someone who has coded in the past who knows like you can a lot more done."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But the basics like connecting documents and we should have done that."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "I think it's more about having agency to do that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that's agency. I'm glad that you mentioned it. Cause I was thinking a lot being here in Davos, everyone's talking about AI. I was talking about top three skills that everybody should be developing. And I think you mentioned that in one of your talks, there's some skills that die out really fast and some skills that just stay with you. Uh, they have more longevity and I think agency is something that, you know, if we imagine AI as this bar, it's already telling some people what to do, like they're kind of below AI, like if you work in customer support, right? You just prompt something and you read it out loud. Most of us are still beyond this line because we're using AI as helper, but this bar is rising, what do you think? And like the way to stay beyond it and make AI work for you, not control you, is to have agency, maybe something else."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "What do you think? I mean, I'd say 100% agency is a durable skill. We feel it durable as in it will be useful even 10 years from now. It's very important. There's a lot more durable skill, critical thinking, problem solving, effective communication. I think AI literacy is a doable skill. People will need it for a long time. Coding, I think is a very important durable skill"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Mm, still. Even for someone like me, who's..."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I think so. I don't think you'll have to learn syntax, like you don't need to know how to code manually. But if you can tell if the coding agent is, what is it doing, you have a significant advantage. You can catch the errors faster, you can iterate faster. It is hard to negate that. And then to come to the top three skills, I think like I'd separate in three groups. So for technical folks, very technical folks like foundational model level. Right now, companies are fighting for talent that can do reasoning, that can build reasoning loops and reasoning models. There's very few people in the world that can do it and they're very, very valuable. The second one that's underrated, forgotten sometimes is distributed computing. There are not that many people that can field clusters. That can train models on massive clusters. It is very complicated."
+    },
+    {
+      "speaker": null,
+      "text": "It requires a combination of math skills, linear algebra, electrical engineering. It's very, very complicated and those are hardcore engineers, very valuable. And then the third one is reinforcement learning. So in AI, when you look at a model, it usually goes through different phases of training, like pre-training and post-trainging. People that have, and at some point in the, sometimes pre-train, sometimes post-training, There are certain techniques from the world of reinforcement learning. That's why the idea is AlphaGo or chess. Those games that you've seen AI play better, they're based on reinforcement learning methods."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When the machine learns by itself."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "By itself, it learns through experience, not through examples, and that skill is also very valuable. So that's the technical tier. In the tier, applied tier, I would say forward deployed engineering is very popular, meaning if you can also do business and be technical at the same time, that combination is there. And then for day-to-day life, I think identifying AI, being able to use it natively is the most popular skill for general awareness."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Kian just talked about how most people use AI every day, but their prompts are still super basic. Take my example. For months, I was struggling with AI writing. It just didn't sound like me. It used the wrong words, it used the own tone, it invented facts, and overall sounded like AI. So I decided to build a system. Three files that teach AI your real voice, real facts about your background, and even new phrases you'd never say. And this transformed my entire workflow because I can now write better LinkedIn posts. I can write better emails and come up with better ideas. All of these files are free for my newsletter subscribers. There is a link in the description. Go ahead, download those files and they come with an instruction on how to teach your AI to speak like you. The technology is amazing. Start using it in a proper way."
+    },
+    {
+      "speaker": null,
+      "text": "The link is in the Description. So do you see jobs market going down at all or? What was your projection for the next five years?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "So a few things, I would say one, people say Gen Z's, there's no job for Gen Zs. We've heard that over the last couple of years. I think last year was definitely the hardest life scene for university grads."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Was it about AI? Because a lot of people- I don't think so. Yeah, over hiring during COVID."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "I think companies have over hired during COVID. And now they're saying AI is automating our stuff because it makes the stock go up. The truth is they're performance managing a lot. They're roaster managing. They are exating people. And maybe there's a little bit of that job is not as important as it used to be, but there's lot of like we want to keep our best people and they hide it behind the AI lingo. Why would Meta exit people from their Metaverse team if it was AI. No, it's because they wanted to make more out of that team and he probably thinks they can get a lot more done keeping the best people and getting them to work hard. Otherwise you wouldn't have heard about the Metaverse team exiting people, you would have heard of something else. So I think it's really performance management that is happening."
+    },
+    {
+      "speaker": null,
+      "text": "And I think they don't find enough AI native talent. The reason Gen Z has struggled to find jobs in the last year is that there's just not enough AI-native talent in the market. They're still just pockets that are in hubs. And if you're in the hub as a Gen Z, actually, you can do fairly well today. There's good offers, there's good opportunities. When you're outside of the hub, it's very hard. It's much more difficult. So long story short, what I think is gonna happen is over time, companies are going to figure out how to update their workflows. So yes, you will see productivity go up and you will a lot of movement internally. I think we're gonna see more internal mobility than we've ever seen in our life."
+    },
+    {
+      "speaker": null,
+      "text": "It will be very common for you to start in the marketing team and go to the sales team, start in a sales team and then go to HRBP team whenever you need to move. That's the movement inside the company is going to grow. The company's total headcount, I think, is going decrease. I think on average, companies are going to be slightly smaller, but it's not going to be a massive cut. It's going to every year, maybe they don't backfill people who retire. They just don't hire more. You know, or if someone leaves. They probably try to do a cultural refresh by bringing AI native talent that is coming out of universities. And at the same time, they invest in their talents to build AI native mindset inside the company."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think university loses its value in the next 10 years?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I think so. I think unless you're a top-tier university where you have brand defensibility, people don't join for the content. They join for the network, the brands, the being surrounded by people that work hard, that are ambitious. Those will not lose their values. So when you think about the university, you think of a bundle. Universities have content, mentorship, research, blah, blah. And that bundle will for sure change. I think it's gonna be a different offer. Maybe it's not gonna be four-year bachelor's degree, two years master's, it's going to chair. I think one of the weaknesses of universities today is the mismatch of the job market skills needed. Like you have too many universities that still teach skills that you won't need."
+    },
+    {
+      "speaker": null,
+      "text": "You know, I come from France and I recall when I was a student, we had double the amount of physical educator being trained and the amount of jobs available after they graduate. You don't want a society that has that. You want a facility that has a zero skills gap. At all points, the people that are joining the job market have the exact skills that the market needs. It's not an easy problem, but I think universities could be better at it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, and it's really hard for universities to do that, right? Because you have a program that's established."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "One model is universities focused on durable skills and then companies build the capabilities to teach perishable skills. So for example, the problem is reasoning. The people who know reasoning, they're PhD students from the top AI labs in the world. That's where they come from. So it is coming from universities generally. Ideally, you would want all universities to give you AI native talents. Everyone who graduates has amazing AI skills. They're not in a specific area, but they have great durable skills. Join the company. And the company has somehow a stack, an HR and learning stack that can take on board an employee and instead of them becoming a partner at a consulting firm in seven years, they become in six months. And that would be ideal."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that's what you do at Workerra, right?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, we help a lot of companies do that. We do part of this problem. But the general idea is durable skills taught at school, perishable skills taught the company."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. This is exactly how universities should be working, right? Not only now, but also like 20 years ago, because skills keep changing. I think in Workerra, you have AI agents, right, that work in production. And a lot of companies are failing to build those AI agents. Also, we tried, like in my company, we have a media company, we're not that technical. But from what I see, agents sound great. But then in real world, it's still like a set of steps that they're following and you still need a lot of human work. Can you tell me why in your company they're working and they're not working for a lot of other companies?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah. Yeah, for sure. I think it is very, very hard to put an agent in production. People don't realize that. A demo is not a production agent. Demos are so easy to do now. You see so many of them. If you can tell the difference between a demo and a production system, then you know how hard it is. And that's why MIT's study said only 5% of agents work in production. So I'll give you some examples. The reason I think... So we've done... Large deployments. One of the companies that is here, Bill McDermott, the CEO of ServiceNow, is here. ServiceNow uses Workera enterprise-wide. So everybody is being measured, mentored, skills gap identified, and they get sort of an AI drivering license, essentially, a certificate for the year. That agent has been deployed very large scale. For this to happen, there's so many things that can go wrong."
+    },
+    {
+      "speaker": null,
+      "text": "OpenAI can fail. We have a model routing layer that allows us to route immediately to the next best model. Translation, people have different languages. It's not as easy as just saying, oh, do the assessment in Japanese. It's no at all as easy. If a Japanese person looks at that, they will say it has a lot of cultural gaps. It is not culturally intelligent. So it's so much hard work in there. The agent has to be connected to the UI and somehow. The agent misses a button, it just doesn't see it, and then you're stuck. Oh, the agent actually scored you very unfairly. Your score should have been 200, and you got 150, and you don't agree with it."
+    },
+    {
+      "speaker": null,
+      "text": "Well, we have a feature that allows the person to say, I think the agent was wrong, and then, you send a human expert in the loop that will review within four business days and respond to the person. We've upgraded your score, and we've corrected the agent. And when you do that across thousands and thousands of people, well, of course, the agent gets better over time. And yeah, the first deployment is a mess. The second one is a little bit less of a mess and, you know, at some point, you just build that muscle of looking between the lines and in the details, because that's what matters. In a lot of cases, we even removed AI. Like we realized that, you know, we started we were like everything has to be stochastic, meaning sort of non-deterministic. And then we got some feedback and."
+    },
+    {
+      "speaker": null,
+      "text": "User said, no, actually, I really like when part of the experience is deterministic, where I don't need to be real time talking to the AI interviewer, because it stresses me out. I want to take my pause and I want be able to look at the multiple choice question and take my time to check A. That doesn't need agentic AI, and so we had to decide Where do we do deterministic and where do we do stochastic? Because stochastics... Allows you to understand the reasoning of the person. You have a live conversation with an agent, you can dig deeper in their thoughts, but it's not always the right solution."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow, so from what you're describing, it feels like in order to deploy an AI agent in your company, you need a very technical person who can do the right reasoning and ask, and like pave the right path for that agent."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "I think it's like, so companies now have these agent marketplaces, like you can go on their internal platform and create an agent with a prompt. That is very different than building an agent company, where the bar is just super high. So for example, if you want to create a bot on Slack that reads a channel and summarizes it for you every day, you don't need a team that is technical. You now can have someone go on the marketplace of agents, hook it, connect it to Slack and tell it what to do, it will do it. But we're building an AI agent that is supposed to be the best in the world at measuring someone's skills to give them feedback. That's a different problem. You can't get it wrong. The bar is extremely high. And there you need a research team, you need an applied team, a product team."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And talking about jobs, I feel like we need more and more people these days because of all of the tools, all of opportunities that open up. But do you think there'll be more companies? Because it's easier to start a company."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I think it will be more complex."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is it going to help even out the market?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yes, I think so. I think there will be more entrepreneurship, there will be more small businesses. You know, last year I saw on X some of these Vibe Coding tools, I'm not going to say which one, people would know, did a marketing campaign saying, oh, one of our users rebuilt Calendly and rebuilt DocuSign in six hours. Where is that product? Who has used it? Nobody has ever used that product. Nobody has never seen it. It's probably not even maintained anymore. Because what makes Calendly and DocuSign, by the way, opened a new office in San Francisco and they're growing. So what's interesting is if you don't have the best product, if you're not significantly better than DocuSign, why would I change to your product? The bar is high. Yes, it's easy to build a simple signature tool or calendar scheduling, but Calendley is very actually powerful. It has so many features."
+    },
+    {
+      "speaker": null,
+      "text": "And so the only way to replace that is if actually you build a product, The product is not only as good, but actually maybe 50% better for the cost of switching to be worth it for a user, 50% and on top of that, you will have to make sure it keeps being 50% better."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, you do the right marketing."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Marketing as well. So I don't buy this idea of personal software. I don t buy that people are going to build their calendly and they're going to be blah blah blah. I think some company will build a calendly that is 50% better than calendly, that is AI native, and everybody will use that agent. And because you don't want to, you don t have the time, we don't have the time to build our personal software and maintain it, you know? So I think it's just marketing campaigns."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes, totally makes sense. In the next five years, we just don't know what's going to happen in 10 years when AI is so good and it just gets all the knowledge. I don't know what I'm thinking about the lawyers who are using AI. An AI tool has all the legal knowledge. It's just so much better than anything."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "For sure, I agree it will be an AI agentic tool. I just don't think there will be hundreds of them. I think people will use the best, you know? So I don't buy that there will."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But it will be one major company, don't you think?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "It will be, it will be."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It will probably be one of the top."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Three or four of them. I don't know. But you look like Calendly has built an amazing business. There is a feature that is the exact replica of Calendley in Google. Exactly. So how did they build that business? Because there's still a need for innovation in that niche. I don't think we will be using thousands of agents in the future, like you and I. I think we'll be using a smaller number that are specialized and the teams behind it make them consistently better, continuously better. Not only it will have the ability to teach itself, but there will be a user feedback loop so that they get the UI right, they get UX right, they get the lingo rights. These things are very important at the end of the day."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it sounds very positive for entrepreneurship, because sometimes as an entrepreneur, when I think about AI, if AI can identify the problem, like when it comes to Amazon Marketplace, for example, identify the product where demand is more than supply, just ship it from China automatically and just sell it, makes me a little sad, but from what you said, because it takes a human to constantly improve something and think about the details and innovate."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "And that's the, the defensibility is not the software. It's not going to be the code because that's easy. It's the expertise that it put into it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And the founder and the"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "The user feedback, the agency of the founding team, things like that matter more, and that's what makes them win."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love it. Okay, for everyone who is listening, our audience is 25 to 40 years old. They all want to become better in the age of AI, build something. What are the three moves that they should make in 2026?"
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "You know, learn the foundations of AI, assess yourself to make sure you're ready. Build the habits of learning like every, every day when you wake up, take five minutes. Ex-posts of the people that you trust in the space. And it turns out, you know, you won't feel better after a week, but you will feel a lot better after you're, you'll feel like you're at the, you're probably at the cutting edge. You know, some, someone said I saw like, you know, if you focus on one thing for a day, you probably are already in the top, you know, X percent of the world in that thing. If you focus on it for a week nonstop, you're in the top 10 percent. Focus on the month, you're in the top 1 percent. 1%, you will have to build that habit and follow it for five, 10 years. And you might be the top 0."
+    },
+    {
+      "speaker": null,
+      "text": "1% at what you're trying to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. I also like your point about joining a hub because this helps you evaluate yourself against other people and compare notes and learn from each other. Maybe start locally and then change groups."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Yeah, I think especially if you're early in your career, today hubs have significant advantages because, so AI started in the Silicon Valley, pretty much the, I guess, the new wave of AI agents. So companies came. So there was more opportunities. So more people came, because more people, more companies came, and now if you are in San Francisco, you don't even need to put an effort to learn what's happening in AI. I go out at the dinner. We talk about voice AI, somehow. People talk about Tesla Autonomous Autopilots. You just learn constantly because you're in the hub. I think in the next few years, it will be like that. The hubs are way advanced compared to the rest. But I think that in the five, 10 years horizon, people will get slightly older. They would want to build families. They will leave the hubs, a lot of them."
+    },
+    {
+      "speaker": null,
+      "text": "They will take that knowledge with them. They will probably start building somewhere else."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Local hubs."
+    },
+    {
+      "speaker": "Kian Katanforoosh",
+      "text": "Exactly. And there, that's what happened in the dot-com when software engineering was concentrated. And a few years later, actually it became democratized because of online learning, because of access to information, but also because a lot of these experts moved elsewhere. And I think the same thing will happen in 10 years. Even outside the hubs, you will find great AI native micro hubs or local communities."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, that's amazing. Thank you so much for this conversation. I love podcasts when, uh, after the podcast, I'm going to just text my team. We're going to build the cloud thing. Uh, we're going make sure we have all of the documents. Everything's synced. Thank you. So much love this feeling. Let's get to work. Thank you, Kian is the reason why I came back home from Davos and started implementing cloud across everything that I do was set up multiple Claude projects for all the social media that we're running. And honestly, it's been so transformational. Another conversation that's been really transformational was my conversation that I recorded at Davos with Ryan Roslansky. So if you're all about AI, if you are interested what's happening to jobs and how you can get a better job by posting on LinkedIn, watch that episode. It's live on my channel and I'll see you very soon."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "s-Iz-lLAhdg",
+      "thumbnail": "https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg",
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan"
+    },
+    {
+      "videoId": "GDeEATJcbJo",
+      "thumbnail": "https://img.youtube.com/vi/GDeEATJcbJo/hqdefault.jpg",
+      "title": "Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn"
+    },
+    {
+      "videoId": "JFilKfL7_9A",
+      "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg",
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson"
+    }
+  ],
+  "topics": []
+}

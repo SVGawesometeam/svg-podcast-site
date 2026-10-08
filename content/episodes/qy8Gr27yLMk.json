@@ -1,0 +1,472 @@
+{
+  "videoId": "qy8Gr27yLMk",
+  "title": "OpenAI Co-Founder: Start Building With AI Before You Feel Ready | Greg Brockman",
+  "format": "interview",
+  "guestName": "Greg Brockman",
+  "guestTitle": "Co-Founder of OpenAI · Former CTO at Stripe",
+  "aboutGuest": "Greg Brockman is the co-founder of OpenAI, the company behind ChatGPT, which has reached 1.2 billion weekly active users. Previously, he served as CTO of Stripe, where he led the company's technical direction. Brockman is a recognized expert on AI applications and entrepreneurship, actively exploring how AI agents and automation can augment human productivity and reshape business operations.",
+  "publishedAt": "2026-09-30T16:00:23.000Z",
+  "duration": "31 MIN",
+  "coverArt": "https://img.youtube.com/vi/qy8Gr27yLMk/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/qy8Gr27yLMk/maxresdefault.jpg",
+  "summary": "Greg Brockman, co-founder of OpenAI, discusses why AI adoption remains underutilized despite its capabilities and how proactive AI agents can transform productivity. With 1.2 billion weekly active users on ChatGPT, Brockman notes that reaching just three different use cases within the app converts users into power users who continue engaging. He explains that the gap between AI's potential and its application stems from users struggling to discover what AI can actually do for them—and AI systems themselves need to become more proactive in suggesting capabilities. Brockman demonstrates this through personal examples, including how he no longer writes software himself but directs AI to write code while providing feedback, and shares how AI agents now handle tasks like flagging ignored emails with draft responses. The conversation emphasizes that AI's real value emerges when systems understand context—email, calendar, domain expertise—and can offer unprompted assistance. Brockman predicts a \"massive renaissance of entrepreneurship\" within the next one to two years, as AI amplifies individual capabilities at scale. He argues that fundamental business principles remain unchanged: building relationships with customers, understanding their needs, and creating genuine value. However, the mechanics of business will evolve, particularly for consumer-facing companies that can now maintain personalized relationships at unprecedented scale using AI-powered relationships and customer care systems.",
+  "keyTakeaways": [
+    "OpenAI's 1.2 billion weekly active users reveal a massive adoption gap—reaching just three different use cases converts casual users into power users, indicating most people are barely scratching the surface of what AI can do.",
+    "Greg Brockman no longer writes code himself; instead he directs AI to write software and provides feedback and guidance, demonstrating the shift from doing work directly to orchestrating AI systems.",
+    "Proactive AI assistants that understand context (email, calendar, domain expertise) can independently identify opportunities and suggest solutions without being asked—such as flagging ignored emails and drafting responses—representing a fundamental capability shift.",
+    "Small businesses are easier to start than ever, and the gap is ambition, not access: an antique watch store owner who was sure AI was useless for him ended up with a website and the story behind each watch, built just by talking to the AI.",
+    "Brockman expects a “massive renaissance of entrepreneurship” over the next one to two years, and a blurrier line between consumer and enterprise: if AI lets you build meaningful relationships at scale, the enterprise sales motion can start to make sense for consumer businesses too.",
+    "Products that only work around today's model limitations won't last. What stays durable is deep domain expertise and trust with every stakeholder in an industry, so a smarter model makes your product better and more defensible instead of obsolete."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Why aren’t we using more of what AI can do?"
+    },
+    {
+      "time": "00:59",
+      "seconds": 59,
+      "title": "What a proactive AI assistant could do for you"
+    },
+    {
+      "time": "02:16",
+      "seconds": 136,
+      "title": "Why Greg no longer writes software himself"
+    },
+    {
+      "time": "04:15",
+      "seconds": 255,
+      "title": "I show Greg the AI app I built for this interview"
+    },
+    {
+      "time": "06:00",
+      "seconds": 360,
+      "title": "How the app could help produce the final episode"
+    },
+    {
+      "time": "07:10",
+      "seconds": 430,
+      "title": "What small-business owners should focus on"
+    },
+    {
+      "time": "08:39",
+      "seconds": 519,
+      "title": "The watch store and the world’s best programmer"
+    },
+    {
+      "time": "09:18",
+      "seconds": 558,
+      "title": "Raising the ceiling of ambition"
+    },
+    {
+      "time": "10:01",
+      "seconds": 601,
+      "title": "What makes an AI app worth paying for?"
+    },
+    {
+      "time": "11:16",
+      "seconds": 676,
+      "title": "The coming renaissance of entrepreneurship"
+    },
+    {
+      "time": "12:56",
+      "seconds": 776,
+      "title": "HubSpot Smart CRM"
+    },
+    {
+      "time": "13:50",
+      "seconds": 830,
+      "title": "How to build something better models won’t make obsolete"
+    },
+    {
+      "time": "15:48",
+      "seconds": 948,
+      "title": "Why domain expertise is an AI advantage"
+    },
+    {
+      "time": "17:38",
+      "seconds": 1058,
+      "title": "Greg’s AI briefing agent"
+    },
+    {
+      "time": "19:48",
+      "seconds": 1188,
+      "title": "How OpenAI measures AI’s effect on productivity"
+    },
+    {
+      "time": "20:59",
+      "seconds": 1259,
+      "title": "Greg’s AI chief of staff"
+    },
+    {
+      "time": "21:54",
+      "seconds": 1314,
+      "title": "When is more AI compute worth it?"
+    },
+    {
+      "time": "23:51",
+      "seconds": 1431,
+      "title": "Where to start with agents—and when to automate"
+    },
+    {
+      "time": "25:29",
+      "seconds": 1529,
+      "title": "What should stay under human control?"
+    },
+    {
+      "time": "26:18",
+      "seconds": 1578,
+      "title": "What to try with AI if you have one hour"
+    },
+    {
+      "time": "27:48",
+      "seconds": 1668,
+      "title": "What work with AI could look like in five years"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Greg Brockman",
+      "text": "We're going to see this massive renaissance of entrepreneurship. Like, I think it is coming. I think, it's really going to kick in over the next year to two years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Greg, co-founder of OpenAI, the company behind ChatGPT, which more than a billion users use every week."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Pretty good at writing software. I don't write software anymore. I direct an AI for it to write software. I provide lots of feedback and guidance."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When people are building software, how do you strategize around building something that's not gonna be made obsolete with the new models? I'm just about to show you something that I've built recently. Am I ambitious enough with AI?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Well, I think the answer to being ambitious enough will always be no, because there's always more we can do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone who is willing to step up their agent game and they have one hour, where do they start this weekend?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I'd say first of all."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I want to talk all things practical. I was recently talking to Nobel Prize laureate in economics and the one theme kept coming up that we have such capable AI models, but we lack applications. What do you think that you're launching this year will help change that and help people realize what's the power of AI?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Well, it's been very interesting to see, first of all, how many people use ChatGPT. We have 1.2 billion weekly active users. We have 300 million people who use Chat every single week for health queries, to help them in their personal lives. At the same time, how many of those use cases just scratch the surface. We see this in the metrics that if people use chat for three different use cases, so three different things that you realize Chat could do for you, you become a power user, you become- you retain, you keep using chat and you want to use it more. But getting to those three use cases, it's such a hard challenge. And in some ways, it kind of makes sense because, okay, so here's this AI that can do anything, but what's one thing it can do, right? It's like sometimes, sometimes- What is the-"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is the magic thing? Exactly."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Exactly. So really find that magic that speaks to you. But also at the same time, I think it shows this massive opportunity, this massive space that's almost a gap where you're talking to an AI and the AI knows what it's capable of. It could suggest to you, hey, you asked me to do this thing for you. Actually, I could do even more. Here's an idea, I can make a whole presentation, a spreadsheet. So that's actually been something we've been exploring. But I feel like there's something here about the fact that what you want out of AI is simplicity. You don't want an interface that has buttons, and sliders, and model pickers, none of that. That's not the AI we were promised. You want something you can talk to that can solve problems, that can help you, can help solve goals, but they can actually even be proactive."
+    },
+    {
+      "speaker": null,
+      "text": "They can say to you, hey, you've got this email that's in your inbox that you've been ignoring this person for the past couple of days and that actually I did some research, and it turns out that here's the right answer to the question and I've drafted an answer, do you approve? And by the way, the use case I just mentioned, it's not theoretical with Dots. I actually got that exactly, this use case happening to me right before we started this podcast. And so I think we're at a point now where AI is actually able to be much more proactive and to remove so much of the burden of figuring out what is this system capable of and to really help you and then help you be able to achieve whatever it is that you wanna do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are there any other use cases that were unimaginable a year ago that are possible now and that people should be trying out?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Well, I think so many, right? There's a whole spectrum of them from, and I think the way that I always recommend going to discovery is you got to play with the system, or you got see what it's capable of. And so when it comes to coding, like these models, they're now better at writing software than basically anyone I know, right. I'm pretty good at writing software, like I don't write software anymore. I direct an AI for it to write software, I provide lots of feedback and guidance. So it's always fun to make a little game and just get this quick hit on just seeing how long did it take to deliver on that and then ask for something more complex. I think that we're at a point now where Astra is so good at Blender, so good 3D modeling and so it's fun to ask it to produce 3D models of a photo and those things."
+    },
+    {
+      "speaker": null,
+      "text": "You can see it using software like using Microsoft Paint to sketch out a photo. But you can ask for more real things too. I know, for example, a friend who designing or wanted to have a guest house built, and used Astra to actually produce CAD plans, and then brought those to a contractor, and now it's being built. So it's a very empowering thing. Normally, you'd have to hire someone else, like, I don't know how to make CAD plans. But now we have this intelligence in our pocket that can actually do these kinds of things for us. To me, one of the things I really like to do is to try to push the AI in different dimensions of my life. And so. I think that voice mode is something that makes AI so accessible. You just go into voice mode and you start talking to it."
+    },
+    {
+      "speaker": null,
+      "text": "Voice mode now is hooked up to tools. So you can actually ask it to do anything that your chat can do, and if you're hooked up your email to your calendar, now you can ask it about what's my schedule for today, or I want to free up some time for some deep thought. How can I do that? It can actually go and have context on what's going on in each part of your calendar. So I think in my mind, there's this activity of just stepping back and thinking about what's a slightly more ambitious thing I can ask my AI to do than it's done for me to date. Let's see if it works."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, and I'm just about to show you something that I've built recently. I think we're in this era where everyone can build a personal productivity app, multiple. And this one that I built, so I basically asked it to create an app that's going to prepare me for the podcast. I tell it who I'm interviewing for how long, and what's my success metric, and it's basically the views on YouTube. And then it goes ahead and creates a podcast, It does the research, suggests topic to discuss. This is great, but how do I make it? Learn from my experience, right? And is there anywhere I can push this further? Because I'm gonna record this conversation, it's gonna come here, and it's going to check now, it's checking my previous conversations. But what do you think is missing here, and am I ambitious enough with AI?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Well, I think the answer to being ambitious enough will always be no, because there's always more we can do. And that's the beauty of AI is that it's really about solving problems, helping you achieve what you want to achieve. There's no ceiling to what you might imagine, right? And so it's just really about. Tuning that you were able to achieve a thing, means maybe you can dream a little bit bigger. In my mind, yeah, I think this is a super cool app. First of all, in terms of just doing the background research, and maybe when this was being built, the AI already went and looked at all my interviews that I've ever done. It did. There we go. It did all the background."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It did, it did the background. The only thing is it still can't connect to social media, but I think it's a plug-in thing. But then, yes, it went through your conversations."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "There we go. And then all of OpenAI's past press releases. Oh, there we got a questions tab. I like that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We've got a questions tab and that's the title and thumbnail already here and these are the questions that I can copy."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Yes. I'd be curious how much it helps with the post-processing and the actual production of the final video once it's done. Because this thing has all this context on me, on OpenAI, on the things that you've covered in your past episodes, and then how do you want to cut it? I've heard there's so many good use cases of Astra helping with post-production for videos, and proactively being able to do that. So I think actually I'd be very curious if you could have an app where it's just like, the only thing you have to do is Basically. Look over the questions, make sure you like them. And if you don't, provide some feedback and it can do better. You show up, you actually do the interview and then everything else is taken care of. How much work do you put in right now from the interview part to something actually being live on YouTube?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, a lot of work. I have a big team. But it's also, we've documented a lot, and I've been doing this for 12 years. So we have all the files that we reference to. So it's easier to build with AI now, but it's still, every episode is at least 40 hours."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "And if you could get back that time, so that all of the mechanics are taken care of, and so you can spend so much time really thinking about what the right interview is and all of other things that go into this, or really thinking if you can scale, you could do way more interviews like, yeah, what would you do with that additional time?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the question to you with small businesses that are applying AI for their day-to-day jobs. What is the role of the business owner? What should they be thinking more of? And where is actually the bottleneck for the business now?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I think that there's something fundamental. So first of all, we see so many small businesses that are being started because people feel secure with the fact that they have ChatGPT, right? There's so many pieces of expertise that if you want to get a business off the ground, it's hard, right, but you actually have a PhD level of intelligence, a world expert business consultant. You have all these things in your pocket now for free. It's like pretty remarkable, right. If you're willing, if you're able to pay, you can get even so much more depth and so much for compute towards any problem you want. So, small businesses, easier to start than ever, and we're seeing it very concretely. And then people are able to, when you talk to many small business owners, there's just so many tasks that they outsource to an AI that, certainly there's the ones that they knew that they had to do, but there's so many task that no one would have done it before."
+    },
+    {
+      "speaker": null,
+      "text": "So, little holes in their business strategy or thinking about how do you actually produce this document. The other thing too is small business owners who don't even realize what they could be doing. Like one of our employees was telling me that he was on shopping for watches in this antique watch store, and he started talking to the owner about AI, and the owner was like, 'Oh, AI, I can't use that for anything. I'm a watch store.' He was like 'No, no, AI can help everyone. Let me show you.' So he talked about some of the problems he has and he's like, 'Well, yeah, he doesn't really have a website.'"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the easiest one, actually."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "And just like chatty voice being like, build me a website, build an awesome website. And then the owner said, hey, I also have each watch has its own story, right? And so it's just like then becomes very easy, but okay, talk to the AI about the story behind each watch and you end up with this beautiful visualization of everything. And you just realize that there's this way that technology becomes alive, that normally it's almost inaccessible to so many people. And so I think that this really pushing on, if you had like the world's best programmer on your payroll, what would you put them to work on? And that now you can do it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think you mentioned somewhere that it's actually ambition that small businesses have to start working on, right?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Yes. Yes. And I think that is."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's fascinating."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I agree, and I think it is really about, we can all raise a ceiling of ambition, right? We can all accomplish more. People who really lean into that, I think we're already starting to see really remarkable things. I'll tell you another example, by the way, is that we have, there are these two brothers who are blind who use our technology, and that they use it to both in their daily life and for their work, and even for tasks like being able to plug the cable into the right port on a computer. You can use ChatGPT to actually basically provide that information, but normally they would have to ask someone for help. So I think this kind of empowerment, being able to help people, be able to be more independent, be able live their life the way that they want, all of that, it's happening. It's happening right now at massive scale."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When someone is thinking of building something in software, when OpenAI is building so much around like work and productivity, what do you think makes an app worth paying for?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "There's definitely parts of what app building used to be that's becoming commoditized, it's becoming accessible to everyone, it's become massively democratized. And I think that's a really important thing, a beautiful thing, right? That there can just be more software. And so then the question of, yeah, what is differentiation becomes even more important. I think there is going to be more room than ever for software that adds value in unique ways. And some of this is really about deeply understanding the problem. Some of this deeply understanding your users, right. That you think about. Something like if you want to build something for education, there's teachers, there's parents, there are students, that there's so many stakeholders that you have to really think about."
+    },
+    {
+      "speaker": null,
+      "text": "There's the administrators. How do you build a product that actually gives the right information, has the right guardrails that is useful in the right ways, and who are you selling to, all these questions. So I think that these human factors, what is the core of the business? What is it that you have discovered? What is your insight? What is you unique way of looking at the world? I think the mechanics of how you. Instantiate that how does you know, do you have to write in C++ or Swift or something like who cares about that? Like that was never what the barrier should have been"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I've seen that YC startups, the recent batches are 60% B2B, and my intuition is telling me with these tools available to us, if I want to become an entrepreneur, I have seen so many problems in the consumer, do you think we're going to enter this era when more and more people are building consumer businesses?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Well, I think that the line between what enterprise and consumer are is going to blur. I think what a company is, is going become just less well-defined in some ways, or it's going to be less like, okay, a company has these big masses of humans that are organized in certain ways. I think people are going to so empowered. We're going to see this massive renaissance of entrepreneurship. I think it is coming. I think we're seeing the leading edges of it, but it's really going to kick in over the next year to two years. And I think that the question of, are you selling to consumers or enterprises? There are some things that will remain true in terms of the split. Like, I think when I think about what enterprise sales is, it's fundamentally about relationships. But if you think about it as relationships, it's like, well, the reason that you can't really do enterprise sales to consumers is because there's just too many consumers, right?"
+    },
+    {
+      "speaker": null,
+      "text": "It's just to high of a scale, it's too expensive. But if have AI that really amplifies your ability to have relationships, really meaningful ones, and really take care of people at massive scale. Then actually, maybe the enterprise sales motion becomes something that makes sense even for more consumer businesses. But the mechanics of what a business is, I think, will evolve. I think that the how you relate to your users will evolve, but the fundamentals of that you want to be delivering value and you want build a relationship with the people who are receiving that value and have it be a bidirectional exchange, all of that is gonna become much more front and center regardless of which domain."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Greg is talking about how much more you can do now, even with a tiny team. If that makes you think, maybe I can start that business, I want you to think about your first customer. You want to listen, understand what they need and do a great job. And you also have notes, follow-ups and a spreadsheet to update. Our sponsor HubSpot helps with that. Its new Smart CRM is a CRM that updates itself, keeping your customer information and conversations together. Its AI note taker captures customer calls, drafts follow-ups, and suggests next steps and updates to customer records for you to approve. So more of your attention can go to the people you're building this business for. Check out HubSpot Smart CRM through the link in the description, and thanks HubSpot for sponsoring this episode. Now back to Greg."
+    },
+    {
+      "speaker": null,
+      "text": "When people are building software, how do you strategize around building something that's not going to be made obsolete with the new models?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "There's some activities I think scale well as the models get smarter, and some activities that are kind of working around limitations in the model. The second one is pretty hard to be durable. And so I think there are, at various points, been startups that really focus on it. We take the model, we add some prompts, we have some very handcrafted whatever. And it's not to say that there's a point in time where that is valuable. And sometimes it's even about the interface, right? That at each level of model capability, there's almost a new interface that suggests itself. In 2022. We had an AI that was personalized enough that it was worthwhile reading the responses, GPT-4. So it's like, of course you want to turn, make a ChatGPT and it at 3.5 and GPT-4."
+    },
+    {
+      "speaker": null,
+      "text": "End of 2025, I'd say, is when the coding agent era really started. And that was like, you had AI that kind of shifted from being 20% of your software production to 80% of the software production. And so you just want a very different product that captures that and that thing, this is the thing that everyone's going to utilize. Now, I think we're starting to enter this era of the personalized agent. So, you're going to have a cloud-based AI and this is being reified number of different form factors, opening up. We just released Dots. I'm super excited about it. I think it's got the smartest model backing up this kind of technology and it's so useful. It's useful to me. I think this will be useful for lots of people. So, I thinks that the core thing is thinking about where will you scale as the models get smarter?"
+    },
+    {
+      "speaker": null,
+      "text": "Again, some of this is about understanding the industry. Some of this about building relationships with. Back to if you think about hospitals, there's so many different stakeholders there, that there's the patient, the doctor, the hospital admin, there's the insurance provider, there are so many different parties and so how do you build trust across each of those and have a product that's useful to them, and then actually be able to, even if you're, when you think about if you have a model that's just even better, if you are already in that industry, you have these customers that actually your product gets better and more defensible as a result."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there anything you are particularly looking forward to seeing startups use models to build something?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I think the domain expertise is also really key, because one thing that's easy to miss is that, as something like OpenAI, we have this technology that's so broad. It touches every single aspect of economic growth and development, people in their personal lives, work lives. There's something for everyone, something that can really help them, something that help them achieve their goals. But often in any specific vertical, we're so far from optimal, that if you once think of the economy as this fractal, thing, right, where it's like you zoom in and you're like, okay, here's a sector of like healthcare, and then you zoom and you like really look at the number of different companies and the number different ways of doing things."
+    },
+    {
+      "speaker": null,
+      "text": "And no matter what sector you pick, there's just so much low-hanging fruit. That's actually one of the most interesting and surprising things for me in building OpenAI is to realize that there's just so much sub-optimality in the economy. In terms of how you can actually have much more efficient process that gives people their time back, that actually delivers the value. Being able to connect across different fields is not something we do very much, right? It's like people specialize."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And now it makes economic sense to build them out because five years ago, they would be like a feature of a company. Now you can build a small company around that feature."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Exactly. And I think that even these like classic sectors and domains are really because of the limitation of our tools. Again, you think about how do you become good, like an expert in any field. You go to school, you specialize, and as humanities learn more things, what it means to specialize becomes narrower and narrower. Like if you're a biologist now, you get a PhD, there's like one specific reaction that you got your PhD on, right? And it's like, it's not connected to the whole system. And, I think, that when it when it comes to to building a business, the question of can you have these much more hybrid things? So you think about things like ed tech is an example of like, you take people who understand about education, they understand technology, they mash them up, and that they're able to innovate and do new things. I wonder if we're going to find that there's going to be other domains that we've never thought about that actually mesh together super well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the future of entrepreneurship, matching those domains and finding the right solution. Can you talk to me about a setup that you have that is sophisticated enough for me to compare this? Because sometimes people bash me in the comments for asking people like you about morning briefing agents. So let's not do morning briefing agents, let's do something that helps you run a company and be efficient and something that people see they will think it's an aha moment for their productivity."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I would not pooh-pooh the morning briefing agent too much, because I think the morning briefing agent has so much depth to it. There's like, okay, yeah, it's like it gave me some info where it's honest, I could have just scrolled the notification myself. There's the version of it where. It says, like, here are the things that are pending, right, like here are these slacks that you have not answered, and you really should get back to these people with this prioritization order. There's the next level of, I have like done the research, you know, there's this question about like what our strategy should be in some particular market, and like I've actually gone and I even looked at all the presentations and here's the things you need to be paying attention to to make this decision."
+    },
+    {
+      "speaker": null,
+      "text": "That third thing is where I think we're at. It's the AI that really can do very sophisticated research across a bunch of different things and provide a very compressed version of what I should be paying attention to thing I'm actually very excited about. As a next step that we're not quite there yet is the- morning briefing agent, so to speak, that is like, hey, I actually called, I called up these people, I talked to these coworkers of yours, I talked this external partner, and I got everything into perfect order. I just need you to approve this purchase order, and we're ready to go on the new whatever. Yeah, that really is proactive and able to do things on your behalf. That's coming, and I think with Dots, we actually have the technology for it."
+    },
+    {
+      "speaker": null,
+      "text": "So I think we're going to start seeing people really start to utilize that. I think, we have improvements to make and things like that. But I'd say, in my mind, any of these use cases, there's so much depth to them, and that is to me the key thing about AI. If you just look at the label of an AI that writes software, okay, sure, we've had an AI that writes the software for five years now. But AI that write software today, totally different from AI that wrote software five years ago. And so, I have a lot of appreciation for the depth of application that's possible, even if the label on the tin is like the same thing and kind of everyone's heard it a hundred times."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When you look at these use cases at OpenAI, do you have like an internal metric how advances and models are actually translating into people's productivity?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "We published blog posts on this as well, so we've done a decent amount of work looking at token usage, looking at how it correlates with lines of code or commits and PRs and things like that. And again, all these are proxy metrics, they're not perfect, but I think that another way that you can tell is AI really changing productivity and how much is if you ever have an internal outage, like if internally people can't get access to a model, how much they feel upset, and everyone's like, I can't do my work. And you're like, okay, six months ago, you had nothing like this, and now you're saying you can't do your work when you don't have it for two hours?"
+    },
+    {
+      "speaker": null,
+      "text": "It's like, how is that possible? But we see this all the time. It's so, so cool. And I feel it for myself. The kinds of things on the morning briefing agent access that I do a lot of is, anytime I have a question about OpenAI, I just ask. My agent like I don't know why I would do anything else to start because it's just so efficient it's like often and sometimes I even feel like I'm like being a little bit lazy of like there's like some message of someone has sent me with a doc in it I'm just like trying to vaguely remember where was it"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's just connected to everything. It's going to do a mail, a Slack, whatever you're using. And it has all the information. So whenever you need something, just ask it. And it's has all of the info."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Yes. With computer use, it really closes the last mile of being able to connect to all my enterprise context. So then that makes it so useful because I really have this chief of staff. I actually have a human chief of staff is also incredible and that I am able to give her so much more leverage by not having to ask these basic questions that now by AI can answer. Some of these call basic questions are also quite sophisticated. Like for example, asking questions about different business metrics. So it actually has to then go and issue queries into our data warehouse and come up with the growth in some market or the retention curves or something like that. And I remember in my last job when I was at Stripe that we had a data team that you would send an email to, and then a week later they would come back with an answer to that query. And now I just ask the AI and it just does it. It's incredible."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you ever see areas where people are under-utilizing tokens? Do you want to tell people, like, use more tokens for this?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Oh, absolutely. And look, I think there's two dimensions to it. So one is that there was this era of token maxing, where it's just like they were just blind to saying throw more tokens at it, which is clearly not a primary objective. But it is a good proxy metric. If you're not trying to optimize tokens, you're probably going to then see improved productivity correlated with increased number of tokens. And we really do see it. We have leaderboards, we kind of look at that. And I think that we see the people who tend to be the most sophisticated in their usage, are just able to do really incredible things. Again, it all depends on the domain and things like that. But I love seeing, for example, in our finance team, that they've really gone full AI first, and I think that there's just so many things where workflows that used to take a long time for closing the books that are now just so much faster."
+    },
+    {
+      "speaker": null,
+      "text": "None of those are like everyone just feels that increased productivity and how helpful it is. We have some early adopters from our comms team. I think that they're just like being able to manage, like you have an event with a bunch of journalists coming, and you're putting together a seating chart, and trying to figure out everyone's dietary preferences, and being able manage all of that as one person, because you have codecs that's actually taking care of so much of the backend for you. Like that's all been happening since earlier this year. So we see these kinds of use cases for knowledge where productivity everywhere. Then of course, the thing that I think is also very easy to miss, and I think is actually coming soon for everyone, is the scientific discovery side of things. That we put a ton of compute into solving Navier-Stokes, this big millennium problem, and that was like 10,000 agents for some number of days, like it's a lot of compute, and we're able to create new knowledge for humanity, and you think about actually at much smaller scale, I think it still is the case that we're seeing lots of breakthroughs happening, and so I just- have this feeling of, I think that people who really point compute at the right problem, have some judgment and some real thought on what really matters, where is the compute going to be utilized, and then are willing to push that token budget high."
+    },
+    {
+      "speaker": null,
+      "text": "We're really seeing this sort of outsize impact."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's a big question that a lot of people have who are starting using agents and automating for the first time. What do you start with? How do you think about that?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "This white page problem is like the hardest problem in AI in some ways and utilizing AI is this question of where do you get started, what do you use? I think my answer is always start small. Like just try something, type something random, push enter, see what happens, right? And like, I think that then, as soon as you get that feedback loop, then you can iterate, right, you can improve. And so I think find like a little pain point in your life, right. Whether it's, maybe it's an email in your inbox that you have been dreading replying to, or that it's gonna take a lot of work to get there. And so then the first question as well, how do I get the email to the AI, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And so there's one answer, which you copy paste it. There's another answer where you have your Gmail connector connected. And so I think that you can start very mechanically, very much going through the effort yourself and then realize, okay, I've done this three times, I've this five times, and now I understand how this process works, let's automate it. And that by the way, is like a general software engineering maxim, like that's very much how I've always approached when you. Build software versus when you just kind of do it mechanically is after you've done it five times, it's probably a good time to start automating. And so I think- And so I think-"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like that. The five times metric. It's a pretty good one. Before you automate."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Exactly. I think they're doing that for AI, because that way you keep your finger on the pulse of the problem, which I think is very important. At the end of the day, back to the question of what our small business owners doing with AI, accountability is something that remains with them. It's still the business is operating a certain way, and the customer either signs up or doesn't, and either pays or doesn't and so they should really care about that outcome to be deep on the details."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Another side of this problem is how do you decide what not to automate? And I wanted to ask you about with your mission in mind, how do you at OpenAI decide what to not build next?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I think it's very important that humans remain in control and in charge, right, that the goals come from people. The point of this technology is to help people, right? To help empower everyone, to help achieve more of what they want to do. And so I think that that human first, team humanity kind of vibe is very important, very core to our mission. And that's something that really bleeds through into how we think about things. And so. When we think about what to build, we always think about how do you put in the right guardrails? How do you build trust? How do ensure that there's good oversight monitorability? And that that is something that has been a very core focus of building all that technology for us for really since inception."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone who is willing to step up their agent game and they have one hour, where do they start this weekend?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "I'd say, first of all, sign up for ChatGPT Dots. It's, I think, just like a really cool new form factor. Again, you can chat a little bit, get some sense of what it does. But connecting it to the appropriate context can really do work. It has its own cloud computer, and it can optionally hook to your local computer. I think that this picture that we all had of the way the coding agents work is this task-based system that you kind of micromanage that lives on your laptop. You close your laptop, it stops working. Like clearly, that was never the AI that was promised. That was never that AI we pictured five years ago. So I think we now have something that really looks like the AI that we were always picturing. So again, start with a little task, like ask it to go buy something for you, or try to, I really like texting mine, just go and really set up some connectors so that it feels like, okay, I've got a communication channel to this now, and ask it do some recurring task, or ask it for to do some research."
+    },
+    {
+      "speaker": null,
+      "text": "The thing that's very interesting is that Dots can really- it's quite sophisticated, it's powered by GPT-6 Astra, so it's actually got basically this incredible brain, like the smart, incredible, most intelligent model for any of these kinds of assistants powering it, and that means that it makes some connections between things, like you ask it a question about, hey, what's going on in this particular geography or something, and it will realize that that's something you care about, and then it might proactively then surface if there's a new news report about that region, then maybe it will say, hey, here's this other thing. Extra We'll say, hey, here's this other thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Just some extra thinking for you, which I really appreciate. Do you think that's the future work, or do you think in five years it's gonna be something we can't even imagine now?"
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Well, I think AI is always surprising. So I think that there's going to be somehow that the fundamentals will be, we'll have smarter AI that's like more accessible and more empowering and all those things, but that the way in which you'll utilize it will be surprising relative to what we expect today. So I do think that the form factors will continue to change. And I think if you think about really, we're gonna have this AI that is able to solve these unsolved math problems in everyone's hands. And so what are people gonna do with that? What are the kinds of breakthroughs that are gonna become possible? And I think about that for medicine, for drug discovery, it's gonna be incredible. Material science, we're just going to live in a world where people are gonna be able to solve problems that before required a very small set of specialized experts to be mobilized behind them. You will be able do that."
+    },
+    {
+      "speaker": null,
+      "text": "You will able to to solve these challenges that no one else has ever thought about. And there are gonna some challenges that no ones ever faced before that you're going to be able to just like be the first person to solve. And I think that we're going to do this as this broad community. And so the tools for that, I think, there's going to be so much more collaboration and these AIs are going to, I, be something that will represent you, that you are going have an AI that, that is kind of there working for your interests. Companies will have their own AIs. So it will be, I think there's like a lot of infrastructure to be built and building this in a way that's trustworthy and that is observable and that really uplifts humanity like that is I think very core to what we should collectively be doing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think that's an amazing answer and I think we'll have homework to work on our ambition this weekend, not just agents."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Alright, I love it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much, Greg. That was amazing."
+    },
+    {
+      "speaker": "Greg Brockman",
+      "text": "Thank you. Thank you very much."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "oOpF0ZXSXuk",
+      "thumbnail": "https://img.youtube.com/vi/oOpF0ZXSXuk/hqdefault.jpg",
+      "title": "Stanford Doctor: The Right Way To Ask AI About Your Health"
+    },
+    {
+      "videoId": "KEAYPqQG2-M",
+      "thumbnail": "https://img.youtube.com/vi/KEAYPqQG2-M/hqdefault.jpg",
+      "title": "$13B Lovable Co-Founder: Turn Your AI Side Project Into a Real Business"
+    },
+    {
+      "videoId": "cVGHg4Vd9uM",
+      "thumbnail": "https://img.youtube.com/vi/cVGHg4Vd9uM/hqdefault.jpg",
+      "title": "The Biggest AI Opportunities Are Hiding in Boring Businesses"
+    },
+    {
+      "videoId": "ael24TrS0ws",
+      "thumbnail": "https://img.youtube.com/vi/ael24TrS0ws/hqdefault.jpg",
+      "title": "TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000792835630"
+  }
+}

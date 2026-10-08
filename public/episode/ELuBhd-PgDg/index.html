@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>16 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=ELuBhd-PgDg" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/ELuBhd-PgDg/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/ELuBhd-PgDg/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,9 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -445,7 +456,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> In the next 12 months, the biggest paychecks won't go to people with fancy degrees or fancy titles. They'll go to the ones who master AI skills that matter. They'll go to solopreneurs who single-handedly solve problems with AI. What we're seeing right now is that entry-level jobs are being disrupted. Software is becoming a commodity. I recently interviewed the founder of Replit and he told me about people who just vibe coded companies that are making millions. Basically what they're doing is building on top of ChatGPT. Yes, they're wrapping it beautifully, but a lot of AI companies that we see these days are basically a set of prompts for ChatGPT and they're making hundreds of thousands of dollars. I personally know some of those people.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> In the next 12 months, the biggest paychecks won't go to people with fancy degrees or fancy titles. They'll go to the ones who master AI skills that matter. They'll go to solopreneurs who single-handedly solve problems with AI. What we're seeing right now is that entry-level jobs are being disrupted. Software is becoming a commodity. I recently interviewed the founder of Replit and he told me about people who just vibe coded companies that are making millions. Basically what they're doing is building on top of ChatGPT. Yes, they're wrapping it beautifully, but a lot of AI companies that we see these days are basically a set of prompts for ChatGPT and they're making hundreds of thousands of dollars. I personally know some of those people.</p>
             <p>So what makes these people different? Number one, deep understanding of their target market and customers. They are solving problems for a very particular group of people. A lot of those people are solving problems they once experienced. Number two, AI skills. They know exactly what tool to use, how to use that tool to quickly build a product of their dreams or automate a function at a top level. In this video, I'll break down nine AI skills anyone can start from zero. They'll help you work faster, earn more, and maybe even build the next billion dollar company. Trust me, the last one is a total game changer. So let's dive in.</p>
             <p>Skill number one is no code AI app development. Something that I've mentioned already in this video. It's just fascinating how today you don't need to be a programmer to launch your own AI powered product. While I was talking to Jud at Replit, I was actually vibe coding something and he was like your prompts are not good enough and there were some bugs. But he told me it's going to take me two days to build a fully working AI app. That means I can start testing things within a week.</p>
             <p>A simple example would be building a service that automatically writes blog posts based on YouTube videos. You choose a video that went viral and got millions of views. The app extracts the transcript, generates an article, and publishes it on your site. Of course, you have to say like this is what I learned from this video and refer to the author. But content creation is getting really commoditized and you can build this app for yourself. You can also let others use it and there is no code involved in this.</p>
@@ -479,23 +490,28 @@
             <p>I feel like for everyone who's watching, a great way to start is to build something for yourself, see if you're actually using it, and then just talk to your friends about it like, &quot;Hey, I built this. Look what it delivers. Would you pay for something like that?&quot; Because if you use a vibe coding platform like Replit, you can connect Stripe and you can start collecting payments.</p>
             <p>For example, we created a bot called Ghostwriter on Telegram that is trained to write in a style that performs well on LinkedIn or X or email. You can basically choose where you want to post. This is something I built for myself because if I have an idea, I want it to be on every single platform. So I just talk to this bot and then I click LinkedIn or I click email and it generates text. And I can also do both languages because I'm present both in Russian and English. So it's basically my copywriter and we decided to make it available to everyone as a Telegram bot. We installed monetization inside Telegram and voila, we have a small but stable income stream. I think it's a pretty cool tool. I think it's pretty useful for all of you guys who are building cool projects but never make money.</p>
             <p>Monetization isn't about selling. It's about delivering value in a way people will pay for. I hope this video inspired you to not only build something, but also think about ways you can turn what you've built into an actual business. Because as you know, I love building multiple income streams and it gives me some kind of stability, but also gives my imagination a way to experiment with different ideas.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/3FgPLbfs_oY/" class="related-card">
                 <img src="https://img.youtube.com/vi/3FgPLbfs_oY/hqdefault.jpg" alt="AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit" loading="lazy">
                 <span class="related-title">AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit</span>
               </a>
+
               <a href="/episode/UJo_MiMA7qE/" class="related-card">
                 <img src="https://img.youtube.com/vi/UJo_MiMA7qE/hqdefault.jpg" alt="$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon" loading="lazy">
                 <span class="related-title">$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon</span>
               </a>
+
               <a href="/episode/E0Q96IKXx6Q/" class="related-card">
                 <img src="https://img.youtube.com/vi/E0Q96IKXx6Q/hqdefault.jpg" alt="Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat" loading="lazy">
                 <span class="related-title">Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat</span>
               </a>
+
               <a href="/episode/VN_0zJXBO6E/" class="related-card">
                 <img src="https://img.youtube.com/vi/VN_0zJXBO6E/hqdefault.jpg" alt="How to make $1000/month on social media with 0 followers" loading="lazy">
                 <span class="related-title">How to make $1000/month on social media with 0 followers</span>

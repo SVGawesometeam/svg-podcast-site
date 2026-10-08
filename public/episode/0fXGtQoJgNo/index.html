@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,9 +374,7 @@
       <p class="guest-bio">Yoshua Bengio is a pioneering AI researcher and professor who spent four decades helping develop the deep learning systems that underpin today's AI revolution, earning him the Turing Award — often called the Nobel Prize of computing. In 2023, he shifted his focus to AI safety, warning publicly about catastrophic risks to humanity and democracy. He founded a nonprofit organization in 2024 dedicated to the research and development of AI methodologies designed to be safe by design.</p>
     </div>
 
-
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -520,7 +531,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> We have AIs since especially about a year ago that can strategize in order to achieve their goal. Can you draw the worst scenario for me? Because when you tell AI is going to pursue its own goals, what do you mean by that? Like destroy humanity or what is there?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> We have AIs since especially about a year ago that can strategize in order to achieve their goal. Can you draw the worst scenario for me? Because when you tell AI is going to pursue its own goals, what do you mean by that? Like destroy humanity or what is there?</p>
             <p><strong class="speaker">Yoshua Bengio:</strong> We're building machines that maybe don't want to be shut down negatively to the point of doing things that go against our instructions, against our moral red lines, being willing to blackmail the lead engineer in charge of that transition to a new system.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, that did that happen?</p>
             <p><strong class="speaker">Yoshua Bengio:</strong> Yes.</p>
@@ -551,8 +562,7 @@
             <p><strong class="speaker">Yoshua Bengio:</strong> Yes. I think it's important when we think of intelligence to decouple two aspects. One is the ability to do something because you understand and you're able to use that understanding to achieve something. And the other is intentions. What are your goals? Right? Because we're going to be building machines that are smarter and smarter, so they have more and more capabilities. What's not clear is if we can build machines that have the right intentions, the ones that you know we are fine with. And that is what I've been working on. What makes me more optimistic is that I think there's a path to manage these intentions to make sure that there are no bad intentions that are going to be hidden, which is what we see right now.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> And this is what you're working on.</p>
             <p><strong class="speaker">Yoshua Bengio:</strong> Yes. I think we need a lot more people to think about it so that we can find the solutions and implement them and deploy them before AIs end up producing catastrophic outcomes either in the wrong hands or by themselves.</p>
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> And speaking of preparing for what's coming, let me share something quick. It's a guide called Turn AI Agent Skills into Cold Hard Cash. And honestly, the title undersells what's actually inside. What I love most is how tactical it gets. It lays out five real paths to monetize AI agents. First, there is the ROI Detective Framework. It teaches you how to spot 50K automation opportunities at your own company. You literally become the person who can walk into a meeting and demonstrate immediate value. Proof of concepts in under 60 seconds. Quick demos that show it works without months of development. Value-based pricing. How to charge 10 to 30% of the value you create instead of hourly rates. That's the difference between billing <div id="panel-transcript" class="tab-panel" role="tabpanel">
-      <div class="transcript">00 per hour and landing a 50K project. The concentric circles approach, a systematic way to turn your existing network into paying customers without cold outreach. Plus, a 30-day implementation roadmap with daily action steps from interested in AI to landing your first client in one month. Early AI adopters are capturing disproportionate rewards while the window is still wide open. The guide is completely free. Link is in the description. Thanks to HubSpot for sponsoring this video.</p>
+            <p><strong class="speaker-marina">Marina Mogilko:</strong> And speaking of preparing for what's coming, let me share something quick. It's a guide called Turn AI Agent Skills into Cold Hard Cash. And honestly, the title undersells what's actually inside. What I love most is how tactical it gets. It lays out five real paths to monetize AI agents. First, there is the ROI Detective Framework. It teaches you how to spot 50K automation opportunities at your own company. You literally become the person who can walk into a meeting and demonstrate immediate value. Proof of concepts in under 60 seconds. Quick demos that show it works without months of development. Value-based pricing. How to charge 10 to 30% of the value you create instead of hourly rates. That's the difference between billing $100 per hour and landing a 50K project. The concentric circles approach, a systematic way to turn your existing network into paying customers without cold outreach. Plus, a 30-day implementation roadmap with daily action steps from interested in AI to landing your first client in one month. Early AI adopters are capturing disproportionate rewards while the window is still wide open. The guide is completely free. Link is in the description. Thanks to HubSpot for sponsoring this video.</p>
             <p>But if you talk to your kids or like think about your grandson, what would be your advice on how to prepare?</p>
             <p><strong class="speaker">Yoshua Bengio:</strong> It's tricky. If we continue on the current path, most tasks that people do in their work will be doable by machines. As Jeffrey Hinton has been saying, physical tasks probably will take a lot more time because robotics seem to be lagging, but I think it's just a temporary thing. Eventually, we'll have robots that can do all the things we can do physically.</p>
             <p>When I think about what will remain to us, it's not going to be because of ability, but because we want to interact with other humans in different aspects of our life. If I have a young child, I want them to be around human beings. I mean, it's fine if those human beings use AI to provide better education, but children need humans to look upon and as models. And it's an emotional thing.</p>
@@ -602,23 +612,28 @@
             <p><strong class="speaker">Yoshua Bengio:</strong> Yes. I think one of the biggest dangers we have is not managing the transitions and the growth in capabilities of AI, as I've been talking about. But there are others. You know, what we're doing to the environment is extremely dangerous, although I think it's longer term. I think what is happening with our democracies is very dangerous as well. But it's all right. Each of us can choose our battles, but we should try to expand our horizon of what matters and be more ambitious about what we could do potentially. But we have to do it right. We have to choose where we go. For example, it's not true that everything that could be done with technology is going to be done. We can choose in which direction AI is going to be deployed. I mean, for example for jobs—in principle, if it's just the market forces, then everything that can be automated will be automated. But maybe that's not what we collectively want. Maybe there are jobs that should not be automated even though they could, because of the choices we make for our collective well-being.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> I love that. Thank you so much. This gave me a lot to think about and I guess we have something on our to-do list. Thank you, Joshua.</p>
             <p><strong class="speaker">Yoshua Bengio:</strong> My pleasure.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/JFilKfL7_9A/" class="related-card">
-                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
-                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus</span>
+                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
+                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</span>
               </a>
+
               <a href="/episode/ktpNFfpJ5rw/" class="related-card">
                 <img src="https://img.youtube.com/vi/ktpNFfpJ5rw/hqdefault.jpg" alt="LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky" loading="lazy">
                 <span class="related-title">LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky</span>
               </a>
+
               <a href="/episode/chbinls_V-w/" class="related-card">
                 <img src="https://img.youtube.com/vi/chbinls_V-w/hqdefault.jpg" alt="31 Most Profitable Business Ideas for the Next 10 Years" loading="lazy">
                 <span class="related-title">31 Most Profitable Business Ideas for the Next 10 Years</span>
               </a>
+
               <a href="/episode/PR__eFQsnhg/" class="related-card">
                 <img src="https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy">
                 <span class="related-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</span>

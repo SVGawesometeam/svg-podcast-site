@@ -1,0 +1,465 @@
+{
+  "videoId": "fxIVCIoLOys",
+  "title": "Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson",
+  "format": "interview",
+  "guestName": "Steve Jurvetson",
+  "guestTitle": "Early-stage venture investor · Former partner at Draper Fisher Jurvetson",
+  "aboutGuest": "Steve Jurvetson was one of the earliest venture investors in SpaceX and Tesla, backing both companies when private space and electric vehicles weren't even recognized investment categories. With 29 years of history with Elon Musk, he has invested in every company Musk founded and brings deep expertise in identifying transformative technological trends and predicting industry disruption.",
+  "publishedAt": "2026-07-07T13:00:15.000Z",
+  "duration": "44 MIN",
+  "coverArt": "https://img.youtube.com/vi/fxIVCIoLOys/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/fxIVCIoLOys/maxresdefault.jpg",
+  "summary": "Steve Jurvetson, who has known Elon Musk for 29 years and invested in all of his companies, shares his perspective on the next three years of AI and technology disruption. He discusses Ray Kurzweil's exponential compute graph showing a 10,000 billion billion X improvement in computation over 130 years, and explains why this trend will continue driving innovation rather than hitting a wall as some predict. Jurvetson identifies three massive industries—energy, agriculture, and construction—as the least digitized sectors that will experience rapid transformation as AI and software-centric approaches reshape them. He emphasizes that the breakthrough may come from architecturally variant approaches like reinforcement learning and agentic systems rather than incremental improvements to current large language models.",
+  "keyTakeaways": [
+    "The exponential growth in computing power (Moore's Law extended across 130 years and five technology substrates) is the single most important graph ever drawn—it's why disruptive innovation and startups exist at all, and it will continue for the next 3 years despite predictions of slowdown",
+    "Energy, agriculture, and construction are the three enormous, fastest-growing industries that are also the least digitized on the planet—they're about to experience unprecedented change as software-centric approaches transform them",
+    "The next breakthrough in AI may come from architecturally novel approaches like reinforcement learning and agentic systems rather than just larger language models—this represents a return to DeepMind's founding premises that were set aside during the LLM boom",
+    "Finding a co-founder is critical for anyone with just an idea—the pattern of successful founders (Jobs and Wozniak, Batman and Robin) shows that rare individuals build alone, but the best startups require complementary partnerships",
+    "The best people say yes to Elon and other great entrepreneurs because they have a 50-year vision and the ability to execute on it, maintaining conviction even when everyone says 'too early'—this long-term thinking is what separates exceptional founders from the rest"
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "What the next 3 years actually look like"
+    },
+    {
+      "time": "00:47",
+      "seconds": 47,
+      "title": "Backing SpaceX when \"space\" wasn't even a category"
+    },
+    {
+      "time": "02:12",
+      "seconds": 132,
+      "title": "The one graph Steve calls the most important ever drawn"
+    },
+    {
+      "time": "03:58",
+      "seconds": 238,
+      "title": "The 3 giant industries about to wake up"
+    },
+    {
+      "time": "05:15",
+      "seconds": 315,
+      "title": "The breakthrough still hiding in plain sight"
+    },
+    {
+      "time": "07:53",
+      "seconds": 473,
+      "title": "Superintelligence: a 30% chance by next year?"
+    },
+    {
+      "time": "10:18",
+      "seconds": 618,
+      "title": "Why the robots are ready but we're not"
+    },
+    {
+      "time": "12:29",
+      "seconds": 749,
+      "title": "How much \"AI code\" humans still actually touch"
+    },
+    {
+      "time": "13:52",
+      "seconds": 832,
+      "title": "Elon's actual secret (yes, I asked)"
+    },
+    {
+      "time": "17:25",
+      "seconds": 1045,
+      "title": "Why the best people keep saying yes to Elon"
+    },
+    {
+      "time": "18:04",
+      "seconds": 1084,
+      "title": "Holding a 50-year vision when everyone says \"too early\""
+    },
+    {
+      "time": "20:52",
+      "seconds": 1252,
+      "title": "What still surprises him after 30 years of betting"
+    },
+    {
+      "time": "23:02",
+      "seconds": 1382,
+      "title": "What Steve is quietly betting on right now"
+    },
+    {
+      "time": "26:17",
+      "seconds": 1577,
+      "title": "Can you just copy this with ETFs? (nice try)"
+    },
+    {
+      "time": "26:51",
+      "seconds": 1611,
+      "title": "The 30-day plan when all you have is an idea"
+    },
+    {
+      "time": "29:33",
+      "seconds": 1773,
+      "title": "Where the best co-founders actually meet"
+    },
+    {
+      "time": "31:21",
+      "seconds": 1881,
+      "title": "When machines do everything, what's left for us?"
+    },
+    {
+      "time": "35:22",
+      "seconds": 2122,
+      "title": "Q&A: the Neuralink question everyone asks"
+    },
+    {
+      "time": "39:12",
+      "seconds": 2352,
+      "title": "Q&A: can a machine ever be conscious?"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What will the next three years look like?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "I have this gut feeling that it'll be something architecturally variant."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Steve Jurvetson, an early investor in SpaceX when almost nobody believed in private space. He backed Tesla before electric cars went mainstream. For over 30 years, he's been betting on the future, and history keeps proving him right. When someone comes to you with just an idea, what would be the best thing that they could do?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Single person with an idea? I might try to find a co-founder. It's rarely an individual. Jobs and Wozniak, Batman and Robin."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You're working a lot with Elon, top three principles that everyone should learn from him."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "I do try to observe leaders in action. Even with a focused effort, it's not always obvious, but a few things. One is this insane ability to."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much. This is going to be very exciting, Steve. I am so excited to have you on this stage. What a fun time, right? IPO and you were there super early, what did you see that most investors didn't see back then?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "So the simple answer to the question is, there were almost no investors considering space. It wasn't a category on any site. So the slightly varying, the question is why in the world would we invest in a sector that is just not a sector for venture? Same could be said for automotive, with Tesla, energy, with nuclear fusion. There were a handful of investments, but very few. So the short version is obviously an incredible entrepreneur, someone we've worked with before. I've known him for, oh gosh, 29 years now, and invested in. All of his companies of the century and his cousins too. So all in, if you will, the uniqueness of the opportunity."
+    },
+    {
+      "speaker": null,
+      "text": "So what we've come to appreciate in a sort of fuzzy way then, but now in a more crystallized manner is the way in which a sort of software centric system engineering approach to a sleepy industry that hasn't had any change for decades can actually unlock incredible value and opportunity. You can see it in aerospace, you can see in automotive now. It was sort of a long bet. When we first invested, but now we can sort of see in retrospect how that's gonna play out in almost every industry over time, how they become information businesses."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Obviously you're so good at predicting future and part of this podcast, I really want to understand how you think about the future. You have this amazing graph, 130 years of compute, and it basically grows exponentially. What does it mean for all of us? What will the next three years look like because of what's happening to compute?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "I'm just curious, how many people have seen this version or this abstraction of Moore's law? It was originally by Ray Kurzweil in like 99 book, Ages of Spiritual Machines. It looks to be like 25% of the room. Okay, I always ask because I'm curious how much it has entered the zeitgeist because I think it's the most important thing ever graphed and I give credit to Kurzweil for even seeing this pattern back when no one knew they were fitting to a curve. So just for those who don't know. This covers like five different technology substrates from mechanical devices to relay-based computers to discrete transistors and integrated circuits. And only in the most recent era would what Gordon Moore called Moore's law be almost a refraction of a much longer-term trend transcending all kinds of dramas of companies that came and went. It's almost cosmological. Why has humanity's capacity to compute compounded for 130 years?"
+    },
+    {
+      "speaker": null,
+      "text": "And for a sense of scale, that's an exponential scale, right? The logarithmic scale, so straight line is exponential. This graph shows a 10,000 billion billion X improvement in computation that a dollar can buy. This is what customers care about. No one buys transistors when they're buying ICs. They don't say, how many, how may transistors does that one have? I'll buy the one that has more. Now they buy compute capacity or memory and both have been on rails. And so to your question, the first and foremost thing would be to just predict that it's gonna keep going for three more years. Like why would it suddenly just stop and hit a red brick wall the way Intel's been saying it would? And when companies say that, like Intel usually assign their losing their business to someone new like Nvidia 15 years ago."
+    },
+    {
+      "speaker": null,
+      "text": "So in the next three years, I think you'll see the analog chips continue to carry the mantle of Moore's law. Some of the more esoteric and customized AI silicon that does discrete matrix multiply and add really efficiently. And this is what's gonna carry the juggernaut that we all just take for granted. That it keeps going. In fact, I'd say without this sort of exponential change in technology, you wouldn't have startups. You wouldn't this disruptive innovation opportunity like we talked about in SpaceX or in a bunch of companies, because if business is predictable, if there isn't disruptive technological change, the big get bigger. They have all kinds of ways to prevent new entrants from competing with them. It's usually somebody reinvents an industry, and usually it's based on something computationally based. I think AI and everything we're talking about at today's conference is the epitome of this. It's like the most."
+    },
+    {
+      "speaker": null,
+      "text": "The intense crucible of compute-centric innovation, economic growth, and sort of innovation of the economy, the translation of formerly industrial crappy gross margin businesses into information age, information-centric businesses, that over the next three years means it ripples to, I think, energy, agriculture, construction, three industries that are enormous, growing as a percentage of GDP, and the least digitized industries on the planet. Not to mention healthcare, soon behind that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are those the industries where you think we're going to see the most change? And what will cause the change? Is it going to be a more advanced LLMs or do you think there's something else? I know people are building world models. Uh, people are deep into robotics. What will be the technological driver for the most changes in the next three years?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "That's a great question because it's very difficult to answer with any certainty. I have this gut feeling that it'll be something architecturally variant. It might subsume the models that we know now. You could almost think of like a mixture of experts that's subsuming other architectures or the diffusion model we heard about earlier today that ultimately translates to a transformer, but it's a different way of thinking about the transformer, massively parallel form of the diffusion models. And in the back of my mind, I- We have not, so what I'm about to share, we've not invested in this. So I've met with some companies and I've been intrigued and something in my gut says they're gonna, they're probably gonna make a breakthrough."
+    },
+    {
+      "speaker": null,
+      "text": "And this is the whole new generation of NeoLabs focused on reinforcement learning because we're almost going back to the founding premise of DeepMind, which then they kind of just put to the side for a while when the whole Elan thing took off. And so if you could imagine what would be the, you could phrase in the Syngentics language, to say what is the. You know, multi-decade long, agentic process, not minutes or hours, not driven by some outsider, you know pulling puppet strings, but something that says almost like the drive evolutionarily for creatures or for humanity, for whatever we consider the mission statement of our lives or humanity in general. What will be that thing? Is it, you know to understand the universe, the way Grok and XAI says it, does that become a driver for. On a hardest like that."
+    },
+    {
+      "speaker": null,
+      "text": "Is it something like a novelty-seeking algorithm that says, I'm gonna continue to learn about the world and use novelty as my filter for, oh, I just discovered something new. How do I know if I'm making progress? What is, if you will, the selection pressure in an evolutionary algorithm? What is success? It's not just reproductive fitness in the biological sense, it's something grander. And I know that some of these groups are working on what is, is there a single reinforcement learning algorithm with continuous learning? Let loose in the wild with all the data sets of the internet that could bootstrap intelligence in that sense in the way that we think we're seeing in the large language malls today, but it's largely, we ascribe, I think consciousness to other beings, we ascribed meaning to other things, and we see patterns whether or not."
+    },
+    {
+      "speaker": null,
+      "text": "And so I think a lot of it is a bit of, it's a fun interaction, but it is not quite the same thing, right? We know there's nothing there inside, there's no light on inside, if you will."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you're describing, I think, is it super intelligence when it's learning by itself, setting goals to itself? Are we gonna see some version of that in the next three years?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "I know Jack Clark, co-founder of Anthropic, gives it a 30% chance it happens next year, which I think is kind of- Superintelligence or- Yeah, yeah, absolutely. So I thought, well, that's kind of fun. There's at least one person putting a stake in the ground. I don't know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But I don't think they have a lot of strong opinions, but they do."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "But they do, but they also think that they're on the path and there's a big debate as to whether this recursive self-improvement thing that they wrote about today and that Jack's been talking about for a few weeks now, I spoke with him about it last month or two months ago. Is there going to be some leap that we don't currently see for how these systems take on purpose and meaning in the widow's referring to just a moment ago? Because right now, everything that they do is directed by a human. And there's like, yes. The self-improving AI loop that they're witnessing already, these huge improvements, are coming from a number of steps that are still directed by humans. There's automated verification, improvement loops in the process of training itself, adjusting hyperparameters from one training run to the next. A bunch of ways you could imagine high-throughward experimentation being mediated by the AIs. But what is the goal?"
+    },
+    {
+      "speaker": null,
+      "text": "The goal setting is still by the human. And so it may only be a thin veneer of activity that it's not yet doing. But it's in some ways the most important, right? And they'll admit, they're not sure how does that just happen, right, what makes that transition. And I don't know if it'll need to recapitulate some of the functional specialization in our own brain like we evolved to where we are today with a history of reactive limbic systems and what have you, emotional centers that then cortex and more and more cortex layered on top of it, that whole. Construct may, as we heard in earlier speech, be the bootstrap to consciousness as a perception of what we perceive, do we need to have the same things in our robotic slash AI systems, right? There may be, so it's a philosophical argument. The main answer to your question would be I do not know."
+    },
+    {
+      "speaker": null,
+      "text": "And I don't really even have the odds on it. I give it the fuzzy future kind of, yeah, that might happen, but only because that's more convenient as an intellectual shortcut to actually thinking about it. As a serious hard problem, is to put off that three years feels far enough in the future that it's hard to predict almost anything."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So we're seeing all the demos of robots and current technology, I think is stronger than the deployment itself. We're still adopting, we're still adjusting. What's this gap? How big is it from, from what technology is actually capable of versus how we're using it."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Oh, right, yes, that's a very good point. And there'll be inherently very differential domains of acceptance. So here's a great example, very simple to understand is if it involves the world of atoms, it takes time. So even though it is obvious today that fully autonomous vehicles are the inevitable future, that every car will be autonomous, every train, every airplane, everything that moves on earth will be fully autonomous in the future, how could it not? It's insane to think now or to argue that it's not, even though we've been saying this for decades. The pace of switchover is gonna be, it's gonna feel glacial in certain parts of the world, right? People keep cars for an average of like 11 to 12 years, so you just have the physical swap-out cycle for the car cycles. You have, you know, the change in mobility doesn't happen overnight. Okay, that's an obvious one."
+    },
+    {
+      "speaker": null,
+      "text": "Physical robotics might be the same. How long does it take to make a billion robots that take some time, even with recursive manufacturing techniques? And so the place where I think it just sweeps like wildfire can be in areas, strangely, that we sometimes held as uniquely human are the creative arts, you know, the movie making, the images, what have you, which we've already seen. It's only shocking that that came first. And then the white collar jobs, as was mentioned, because the white-collar job capability, take call centers, right? It's like 1% of US GDP. That just happens like that, right. I mean, you just. Do not need to wait for decades for that to switch over almost entirely. And interestingly, people will increasingly prefer these two human interactions when they're better, show more emotional understanding, more reading of the situation."
+    },
+    {
+      "speaker": null,
+      "text": "And that's seen in everything from physician bedside manner to chatbots and or customer agents is that the AIs do a better job with emotional connection than humans."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's crazy how in some industries it's happening super fast, especially when it comes to software engineering. Some of my friends were editing 70% of AI written code a year ago. Now it's down to 30%. I wonder what it's going to be in a year. I am constantly looking at our AI stack. What can we make faster, smoother, more useful for the team? So I want to tell you about a workspace we genuinely keep coming back to, and it's also sponsoring this episode. That's Miro. Miro is the AI innovation workspace where AI lives on the canvas, not in a separate chat. It sees the whole canvas, every note, every source, every decision the team already put there. We've picked a few specific use cases where it actually helps us. One of them is guest research."
+    },
+    {
+      "speaker": null,
+      "text": "The team drops everything onto the board, interview transcripts, articles, podcast clips, a dozen sources on one person. Then we run flows with a custom site gig. That reads all of it and pulls the angle, the best quotes, the questions worth asking. That used to take a full day. Now the guest dossier is ready in 30 minutes, which means my team and I actually have time to prepare properly for the next interview instead of just surviving the deadline. Especially now when my schedule's so crazy, I do four to five podcasts every single week. And it works for a lot more than guest prep. The same setup turns a messy retro into an action plan or planning session into a prioritized backlog. You can now build something similar yourself in Miro. The link is in the description."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "It's funny, people have been sending me these books that just, I guess, they directed in AI to write about AI, you know, about Elon, how he thinks, the secrets of Elon. I've actually been accumulating them on my bedside, but I'm not sure if the human's written any of them. A lot of people ask Elon's mom, you, know, hey, May, how did you, how do you parent Elon? How did you get him to be the way he is? And that's a tough question. She hasn't been able to answer either. And so I'll take it with a bit of humility that even as a close observer, by the way, I do try to observe leaders and actions. I worked with Steve Jobs briefly. Briefly and it's like I put all kinds of energy trying to understand how that guy works. But even with a focused effort, it's not always obvious, people are complex, but a few things."
+    },
+    {
+      "speaker": null,
+      "text": "One is this insane ability to focus, which may seem ironic given how many companies he's simultaneously running, setting new records for that in a way that, you know, once the jobs of the CO2 companies, that seems strange, now it's all the rage. But one thing that allows you to do is use. The fact that you've got obvious competing needs for your attention as a way to focus, prioritize, and not go to meetings. So the normal CEO of one company didn't go to their holiday party, you know, and it might be seen as weird and like, whoa, but I mean, no one questions that feel on, he's got other things to do, he's go to the company. So whether it's an excuse or just works out this way, he says no to things so effectively that are distractions that are not mission critical right now."
+    },
+    {
+      "speaker": null,
+      "text": "I mean for example, years ago, I was trying to hook him up with Craig Venner to brainstorm ways we could. You know, terraform Mars more easily and do a sample return of life from Mars with gene sequencers and reinstantiating. Anyway, microbes on Earth. It was a fascinating topic to me. I was like, whoa, this is so fascinating. But he's like, no, it doesn't matter until we get Starship flying. None of this stuff on Mars matters. I got to get that thing working for us before we think about what we do when we get there. There's, I think maybe more importantly than what I just said, even more importantly is this maniacal focus on the, what I would generalize is the cycle time of innovation. Question, which is how rapidly can we run experiments or iterate in our learning loop?"
+    },
+    {
+      "speaker": null,
+      "text": "What is the core learning loop, whether it's the launch cadence, whether the data gathered from all the Teslas before fully self-driving vehicles came that could be used to train the models? How can we make sure that we have a leg up on anyone else on the rate at which we're learning from customer interaction, product features, and technology in general? And as an example of like how powerful that is. When you do it right and the data flyway you can make for AI, just one example, Tesla cars today in their cameras gather for their AI training set more data every four days than Waymo has in its entire history. And the brilliance was enabling every vehicle, whether or not the customer paid for full self-driving to be a data collecting vehicle. So focus, learning loops, and this whole series of well-honed skills on identifying talent. That I wish I could replicate, I just can't."
+    },
+    {
+      "speaker": null,
+      "text": "Sometimes there's a pattern recognition and it'll share bits and pieces of this, not leaning on credentials or specific background or experience, in fact, it's often an albatross, but having people really walk through major engineering crises or problem solving things and then drilling down further and further and farther to show if they really master the, do they have mastery of the understanding of what it took to make something successful. So broadly defined. Being a magnet for talent, finding a way to pitch and refine a vision that people want to join you. So like one of his brilliant things at Tesla, SpaceX, everywhere is not just saying, oh, we're making rockets, we are making cars, but to really think of something much grander, right? Catalyzing the transition to sustainable energy or making humanity multi-planetary, understanding the universe, now that XAI has merged into it. These are the sort of lofty goals that..."
+    },
+    {
+      "speaker": null,
+      "text": "That motivate some of the best and the brightest to want to work with you, and that is a sort of compounding benefit that ripples out to our whole organization, right? Because great people want to work with other great people, right."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And also this ability that I think a lot of great entrepreneurs and investors share believing in something very far away, like a long distant goal and pushing to it for many, many years. How do you learn that? Or are you born with that? I'm talking to a lot entrepreneurs and especially these days with things moving so fast. There's this new shiny thing every single week. How do stay true to your mission when the rest of the world, 99% of world tells you it's too early, like. Talking about space, we have so many problems here on Earth."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "That's an interesting question. And I realize I have a bit of a sample selection bias in that I've tried as best I can. I've done VC now for 30 years to only work with the people who have a true, sincere, messianic mission in mind that is driving them. And they're not the arbitrary shaking opportunists to see the next bright shining object or oh gosh, where should I go to next? And one of the ways, and I'll get to your question, but one of ways, by the way, that I filter for that in meetings. Is let's say I'm gonna get really excited about a company, I'll often ask, you know, okay, what does your business look like in 50 years? And I get usually two reactions most off. One would be a chuckle. What a ridiculous question. You know, like the arbitrage seeking opportunist is gonna be like, I'll be my third startup by then."
+    },
+    {
+      "speaker": null,
+      "text": "Like, what, how would I possibly know what my startup is in 50 year? Like there's a laugh at the question and then we pass on those. And then the best is when the person's like so relieved, like, oh, thank God. Now I can actually tell you what I've been wanting to say all day long, which is, this is what's driving me. It's this thing that's so many steps ahead of what you would probably want to invest in today. Like making, you know, colonizing Mars is an uninvestable proposition. Go back in the founding days. So like when you start a business day one, I'm gonna colonize Mars, like, you're next, right? For most investors, right, like that's not a door opener. And so most entrepreneurs that have that true sincere vision have found a way to like, subjugate and put off what their true dreams are and talk about something much more prosaic and near-term."
+    },
+    {
+      "speaker": null,
+      "text": "So I think the answer would be as the entrepreneur, it just happens naturally and try to find investors and partners and certainly employees who are with you for that long ride and have a path to get there that is plausible. So, you know, this is sort of the joint. Tension, I think, in the best startups that's hard to simultaneously satisfy, which is an indacious, you know, 50 to 500 year vision. This is what this company is going to do to the economy or the universe. Coupled with, oh, and by the way, over the next three years, we're going to iterate with real customers, learn from that, and have a, can paint the path from where we are now to that future that is chaining. Sometimes they chain back from the past to the present, like to get there, what we have to build an adi and then move forward on that path."
+    },
+    {
+      "speaker": null,
+      "text": "But it's not like go into a research lab, pop out in 20 years and solve all the world's problems."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, this is a really fascinating feature that I see with a lot of greatest entrepreneurs. It's like if they reverse engineering from 50 years ahead. Is there anything surprising that still surprises you about those amazing entrepreneurs?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Well, I suppose it's a bit surprising in a way, each and every time it goes incredibly right. Weirdly, this may sound weird, I don't think I've ever thought about that question before or been asked it before. And so the perpetual surprise for me is like, wow, like in the year eight, nine, 12, some new opportunity that opens up and unfolds from, in a sense, the expanding option value of going into some new frontier of the unknown. So what I mean by this is we try to invest in, by the way, at our firm, Future Ventures, in things that are unlike anything we've seen before, yet adjacent to where we've been. So ideally, it's a company that's literally one of a kind, based on things we are used to, whether it's AI, whether it is something in synthetic biology, whatever it might be, but they're taking it in some new direction."
+    },
+    {
+      "speaker": null,
+      "text": "So the window, as long as you have an agile mind and you're looking at it. Wow, like no one thought of that when we started. So for example, when we first invested in Tesla, there was no concept whatsoever of autonomous driving. It was not in the business plan, there was not talk of it, it was not on anyone's mind. The way in which electric drive train uniquely enables that and control the fidelity was fascinating. Or in SpaceX, the Starlink opportunity, like, oh yes, of course, when you lower cost of launch that much, you can have mega constellations, but what would be the new thing that would make sense that we weren't doing before?"
+    },
+    {
+      "speaker": null,
+      "text": "Not just we invested in planet labs for Earth observation, yes, constellation of telescopes, but this whole notion of building a network backbone for the internet and the sky was, and then direct the cell phone, like each one of these things is unfolding, then orbital data centers, right? Not on the dance card even five years ago. So that continues to surprise me. In some ways, it's not easy, but it seems so much more powerful as a business vector than purposeful design, if you will. It's almost like exploring the option space or the light cone, if you will, of possibilities in an economy versus planning out something 10 years in advance and having it go according to plan, if you will."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It is so fascinating how you are successful in so many different bets that you made in the past and they're so different from each other in different industries. What are you betting on now? What should we be looking out for?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "No, let me think of that. Some people who know the old movie, let's see. So taking that thesis that AI and information technology will innervate every economy, meaning add a nervous system to everything, we saw an automotive and aerospace. Just expanding on that thought a bit, we are looking for additional things in energy. We've invested in a variety of nuclear fusion and subcritical fission that doesn't trigger NRC regulations, basically avoiding the Nuclear Regulatory Commission, but figuring out energy, which by the way is the third bottleneck for AI. It's not just good people and a lot of compute, it's also energy. There are a bunch of things that you could imagine 500 years now have been solved and we're trying to figure out, the entrepreneur will open their eyes to how we get there."
+    },
+    {
+      "speaker": null,
+      "text": "So free healthcare forever via cell phone, all diagnostic information you could possibly need for your personal health should be a free service globally, trying to get there. There probably won't be in the US that it launches. Bypassing FDA, bypassing insurance and reimbursement. On food, we won't slaughter animals for meat. The products are getting there, but you can sort of see the future. It's so close, you can almost taste it, so to speak, whether it's cellular, ag, mycelium, or other techniques, mycelia being the fastest growing thing, but we are gonna eat meat-like things that are delicious, healthy, and not involve slaughter of animals. Construction, growing as a percentage of GDP and like. Labor productivity has been flat for 30 years, so it's such a hard industry to change that we've tried and failed a few times, but we're looking."
+    },
+    {
+      "speaker": null,
+      "text": "Again, so the best I can do to answer your question is I don't know what the answer is, but I know there are these categories that we wanna look at. Recently we've been investing in epigenetic editing across a variety of things, crop health, pesticides, herbicides, human health. It's fascinating. It's basically the software of biology. Instead of going to the firmware of our genome. And we've been investing in materials, critical minerals and metals, everything from deep sea mining to copper refining because of incredible need. It's sort of like the workhorse of all these chips is you need these materials to make the stuff. And there's a couple of that, a reshoring or bringing back to the US capacity to build at which we had. At our feet over many years."
+    },
+    {
+      "speaker": null,
+      "text": "Analog AI, I mentioned to you, we have three different investments coming out from different angles using AI to develop, to design AI chips, sorry, analog chips. Analog chips. Yep. Analog in-memory compute from Mythic where they can do eight-bit multiply and add in a single transistor, and then unconventional, which is taking a very, very strange and forward-looking big bet on, you know, in every case, trying to get in a hundred X and then another hundred X on power reduction, power per, per. Per calculation. Overall, we're about 40% life sciences, 60% IT, and we, in the life sciences side, just see, we look for the weird things that are like on the edge, you know, harvesting organs for transplant, growing humans without brains so that you can use their organs. There's a company here actually in the audience doing the same thing, a male birth control pill, improving IVF dramatically, things that fall through the cracks of a traditional pharma VC."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So I'm hearing agriculture, uh, biotech. I'm just thinking in my head, how can I replicate your strategy with ETFs?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Well, it's hard to see our strategy. I can say it's very unusual. I can state it openly and then it's hard to replicate because when I say we invest in things that are unlike anything we've seen before, well, that's great. But how do you know what we've seen? So."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But at least it's in the areas, so if they are dramatically changing a market, then it's going to be reflective. Especially if it's an old craft."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Especially if it's an old crappy business that hasn't seen a new entry in years. So like boring company for tunnel boring machines. Like the four largest companies were all started in the 1800s. That's who you're competing with."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We have a lot of entrepreneurs who have crazy ideas. Can you give them a 30-day plan to execute on that idea? What would be the best thing that they can do?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "What stage are they, are you saying? They just have an idea. Oh, single person with an idea? Hmm, 30 day plan. I might try to find a co-founder who agrees with you, or whoever this person is. And the reason I say that is a lot of startups tend to have a dynamic duo at their founding. It's rarely an individual. And you can imagine Jobs and Wozniak as a mental model for this. So these superheroes, Batman and Robin. Uh, you know, certainly in Larry Page, even Larry Ellison had Bob Miner who's less well known because he's an introvert, but you know there was not like a singular cult of personality of a founder."
+    },
+    {
+      "speaker": null,
+      "text": "And part of the reason to have someone is I found this as an investor, having a colleague, Mariana, my co-founder is I am so much better as an investor, heading some of the bounce ideas off versus like being the sole, you don't like an angel investor or something. And similarly for startup having a diversity of backgrounds, like an engineer and a marketing person, an extrovert and introvert whatever it be. That have mutual respect for each other. Not only makes it better that you got someone to bounce ideas off of in a rapid iteration loop when it's just two of you, but it also sets the culture for everyone that you'll hire. It's not like, oh, there's a singular person that everyone works for. It's more like there was a pair and they're very different and that ripples through the culture of a firm and types of people that are hired and the cognitive diversity that follows."
+    },
+    {
+      "speaker": null,
+      "text": "So finding, and the reason I say that is, finding someone who agrees that your crazy idea is worth pursuing is better than finding zero people. In other words, I think the best outcome is, if you're literally, your premise, your question is a crazy startup where no one else is doing it, it's one of a kind, and most people tell you it's crazy, well, it is possible that it's a crazy, right? So if 100% of people that you've ever met think it's great, take that as feedback. If it's nine out of 10, that's pretty good. If it eight out of ten, that pretty good too. If it like only two people think it crazy, that's bad, because it's clearly not bold enough. If it an obvious idea, other people will do it, right, Ask yourself. Is this a business that couldn't have been started three years ago? If the answer is yes, that's good, right?"
+    },
+    {
+      "speaker": null,
+      "text": "If it's like, oh yeah, I know it's, anyone could have started this business if they just had this idea, probably a bad sign. And then somebody, your co-founder, agrees with you and thinks, oh my God, that just shows that it's almost like a test case. You can persuade someone to give up their job and join you in this mission. Then before you go out and fundraise, that says a lot more than just this old person with an idea. Like the inventor in a garage, you know, off all by themselves. There's so many cases like that that just never manifest as a business because they just never made that first step of being able to persuade anyone to join them in the mission."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's great advice because a lot of people start with building an MVP or like even pitching investors right away. The co-founder sounds incredible. From all the startups you founded, where did the best co-founders meet? Is that university or?"
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Good question. I'm not sure. I haven't thought through that. Because it's so hard. They often come to us having already done that. And often, yes. So for all the university ones, many of them are from, that's probably your question had embedded within it the most common answer, which is we met in some interdisciplinary way at a university. Which is fascinating, by the way. The word disciplinary or disciplines, academic disciplines, are a way of stove-fiping information. Into assistance vernacular and domain expertise that often doesn't cross-pollinate. And universities, one of those few places where you get these spanners, you get this undergrads or other people who take courses outside their department, unlike the professors and their little stovepipes. And despite a lot of institutional efforts to share information, it's often the students that are the cross-polynation between academic disciplines."
+    },
+    {
+      "speaker": null,
+      "text": "And that's at those boundaries or interstices between formally discrete disciplines that you find, I think, most breakthrough innovations, certainly in the sciences. It's a quick aside. That's something that large language models do very well, translating between academic domains, seeing patterns in the, you know, almost the translation, if you will, between languages, between concepts. And that, I think, is allowing a fountainhead of possible idea discovery using AI to figure out new ways of cross-pollinating between academic disciplines that I think we're only beginning to tap into."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This makes total sense. I think I can be talking to you for hours because you are someone who's really good at predicting future and betting on it and seeing where we're going. I have one last question before we open it up for Q&A. When machines do everything, what's the meaning of life? Yeah."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Yeah, and your question I think is an interesting one to contemplate. What do we do when machines do everything that we do better than we can? Every physical activity, everything that involves employment, and it's going to come soon. Roughly 19% of global employment is in driving vehicles, and that's obviously going away, just not as rapidly as we might imagine. I think we want meaningful work. I think all humans have a fundamental desire for symbolic immortality, this belief that we've contributed something to the world that transcends our brief time on this world. And we see that, of course, in the drive to have children or in writing works or in philanthropy or creating companies, sometimes even named after their founders like Hewlett-Packard or what have you. These are instantiations of that urge. And so I think there's still a creative desire and translate. A question to be like, what is the mission statement for humanity?"
+    },
+    {
+      "speaker": null,
+      "text": "It's a question that Yuri Milner and Elon Musk and others have asked, and they come to similar conclusion, which is to understand the universe, to try to contribute to the wisdom, the accumulated knowledge that we have. You could think of human culture and our knowledge base that we pass on from generation to generation as the primary vector of our own evolutionary progress. It's not biological evolution, that's glacial in comparison. And any progress we feel humanity is making is not because we changed our biology, it's because we've changed our accumulated basis of knowledge that. The way we comport ourselves, the rule of law, the understanding we have around what works and helps with human flourishing. So I think we all want to contribute to that. It. Doesn't have to be paid employment though. So you can't imagine some sort of hyperspace jump because that's conceptually what it requires."
+    },
+    {
+      "speaker": null,
+      "text": "Because there's no way to imagine how we get here from here to there. But somehow if we just jump there to world of abundance like Peter Diamandis envisions, everything physical costs a dollar a pound. There's nothing that requires human labor. We all are in the indentured rich like in the days of yore, we had servants or serfs or slaves that did all menial work and we could just be philosopher kings or artists or pursue whatever we might want. And some people, some, not all, but some people really love that era. Well, the machines will be those slaves, right? Because even in slavery, humans will not be cost effective. And I say that somewhat tongue in cheek, but it's like, finally, the scourge of human slavery might finally end when that's no longer even cost effective compared to machines. What does that leave for the rest of us?"
+    },
+    {
+      "speaker": null,
+      "text": "And so I think it's gonna be a man's search for meaning that really is the core question. I think is gonna be really fun if we could hyperspace there. But I will add the caveat, that's not the path we're taking. There's nothing that indicates that we're just gonna peacefully march from an economy of full employment to an economy and no employment and pass through the 30, 40, 50% unemployment points, but on some issues. That's gonna tough and I don't see any. Politicians taking long-term perspectives on any of that. So I don't want to end on a downer Let's go back to that hyperspace to abundance. I think I think we inherently find that in our curious exploration of the universe"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I really like the rule of going back to your mission statement, because a lot of us these days are questioning our jobs, what we're doing, is it going to exist in the same shape and form in three years? And again, going back your mission statements, I think this is brilliant. Thank you so much, Steve. And let's open it up for Q&A. Quick pause here. If you're enjoying this podcast, you will absolutely love my Inner Circle newsletter. So what I basically do is I take all the tips from these podcasts and I apply them to my personal life, to my investment portfolio and to my businesses, this media company and my language teaching business. Sometimes we get amazing results and I share our real tactics. Sometimes we don't and I shared that too. Think of it as an insider version of this podcast. The link is in the description."
+    },
+    {
+      "speaker": null,
+      "text": "Join my free newsletter to stay ahead."
+    },
+    {
+      "speaker": "Audience question",
+      "text": "Thank you, Steve, for your fireside chat. Since you're a big investor in Elon Musk companies, I'm curious, have you invested in Neuralink? Yeah. Yeah, so honestly, in my opinion, everybody is excited about SpaceX. But I'm looking forward for an IPO of Neuralynk. Do you think it's happening soon? And honestly, I think it is basically brain machine interface is the future. But essentially currently If we use voice mode or charging PT or open AI, or we type, we are limited in our throughput of how many tokens we send to the LLMs. And if we have brain machine interface from Neuralink, we're able to unlock even more creativity and faster throughput from our brain to machine."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "Thank you. Yeah, I can't comment on IPO timelines, but the enthusiasm there is interesting. It was originally sparked, as many things are, from a science fiction novel, Ian Banks, Surface Detail, where they have a neural lace fascinating book, I recommend it. And I think what you see, so I have a somewhat unique perspective not shared by Neuralik, but I'll just share my perspective, which is I think it is an amazing capability for expanding. The sensory cortex, adding the prosthesis to the mind. In other words, restoring function when it's broken, expanding function, like let's say seeing in more wavelengths or hearing better than we could hear, not just repairing hearing, fixing spinal cords, basically working from the periphery of these systems, as opposed to a much more difficult and yet to be solved task, which is upgrading core functionality, like just making someone smarter. So I think. The example you gave is a very interesting one."
+    },
+    {
+      "speaker": null,
+      "text": "Could you have a higher data rate communication? Absolutely, I think that is very doable. And the reason I have this belief, it's more of a pattern recognition across decades of complex system development. Basically, the high level statement would be, any product produced from an iterative algorithm, which would be evolution, genetic programming, all neural networks, cellular automata, whatever it might be. If you iterate something billions of times and accumulate complexity from that algorithm, the thing you make is inherently inscrutable. It is an artifact of absolute inscrutable complexity. Despite attempts at mechanistic interpretability in AI, I don't think that's going to bear fruit. I don't think control and alignment is possible in a cutting-edge system that is pushing, back to AI for a moment, pushing the capabilities of what we can build. Similarly, It'd be like asking about controlling, aligning, mind controlling a teenager. So I swap teenager and AI whenever I think about this."
+    },
+    {
+      "speaker": null,
+      "text": "The reason that's relevant is when the brain is a complex system itself and reverse engineering its inner workings for uploading or for brain to brain or adding speech, like the way Jeff Hawkins thinks you just cut and paste a French speaking module into a human brain or a neural net. I don't think that's gonna be possible on a timeframe of relevance, meaning. To be easier to build a new intelligence than it is to reverse engineer one you've made. So I do think Neuralink is fascinating, but I don't personally. To get faith that it's gonna keep up with AI. Maybe that'd be the safest way to phrase it. Not that it can't be done, but the time scales, you know, FDA cycles, human biology, nothing happens on a time scale comparable to the learning loops. Back to Elon Musk saying like, focus on learning, where do you learn more quickly?"
+    },
+    {
+      "speaker": null,
+      "text": "You're gonna learn more more quickly in the synthetic domain. I think humanity always wants to believe it's part of the future in that regard, but the curse while it's uploading, I can just see why he wants that to be true within his lifetime, and that's what he predicts will happen, but it doesn't mean it will."
+    },
+    {
+      "speaker": "Audience question",
+      "text": "Steve, I'm really curious, what do you think about Penrose's argument that the consciousness is go far beyond algorithmic processes to quantum level processes, meaning that AI would never be able to develop consciousness itself just by its nature. So what do think, can AI, develop consciousness or it will be only imitated and that's it."
+    },
+    {
+      "speaker": "Steve Jurvetson",
+      "text": "And you were referencing Penrose's quantum? Yeah, so Penrose is a brilliant guy in UK, generally. But here, he has this gut feeling that there's some quantum process in the brain that makes it unique. And yet, there's no real clear mechanism by which that would happen. There's some argument around some lithium isotopes that might be a coupling, but it's wishful thinking. We don't, so to speak. But I can also generalize your question. Is there something vitalistic, naturalistic, unique, to our brain that is irreproducible in others. And there was a reference earlier to Neil Seth's work. I find the arguments completely uncompelling that there's something vitalistic or unique to the substrate. Just because it's the only example we know of of consciousness, and consciousness, for example, is a tricky thing. How do we know if the dog is conscious? How do test for this, right? But we believe we see it in ourselves."
+    },
+    {
+      "speaker": null,
+      "text": "I mean, I don't know if you're conscious, but I'm kind of just guessing you are, right. And you seem awake and you're human, therefore we generalize it conscious. Okay, so. I have not seen a compelling argument. Just because we have an example of one doesn't mean it's the only possible example. You could make a similar argument that says does all life need to be carbon-based, right? And there is something unique about carbon and it's being able to do single, double, and triple bonds and all the weak bonds. It is kind of, you could actually make, I think, a better argument that says carbon is special to life than you could to say neurons as we have them are essential to consciousness. Now a totally different question is, but I won't. Digress is like, is anything that we're doing in AI development gonna lead to conscious? That's a different question."
+    },
+    {
+      "speaker": null,
+      "text": "Cause you could, you could argue that's a dead end and won't get us to conscious, but it doesn't mean it's not possible. It's much higher order proposition say something is impossible than to say, I don't know. And so my answer would be, I dunno, but I certainly wouldn't say it's impossible. And I don't believe that we have any evidence of a quantum process going on in the brain. And if we did, why couldn't we replicate that with quantum computers? I mean, that's different question, and then if I broaden your question a little farther, Just animus or spirit or life is, does it have to be a living thing to be conscious? And the analogy I would use is imagine you substitute the word memory for consciousness. And I just picked memory just randomly. It's an overloaded term. Do we mean memory?"
+    },
+    {
+      "speaker": null,
+      "text": "Like I have memories in a human sense, human memories, which are holographic and it can have graceful degradation. And they're not at all the way we do memories in computer chip. But when we talk about computers, they have memories too. And we don't debate is memory possible in a computer. Can it remember things? Well, at that level of abstraction, of course it can. And yet, it doesn't have human memory. And that's fine. So consciousness, it may not have human consciousness, but maybe it has a different kind of consciousness, whatever that thing is. If we could be more precise about defining it. And I don't think you make the argument that everything we have in our brain is essential for conscious. In other words, there's a lot of there is a garbage collection for our metabolism, you know, things that happen when we sleep and cleaning up waste products and the way mitochondria work."
+    },
+    {
+      "speaker": null,
+      "text": "You don't have to have all of that. In a computer to be intelligent or to have memories, you don't need all that baggage for consciousness either. But that doesn't mean we know what the minimum set is, but it does, I think we'll figure it out one day. So in other words, I'm more on the, my gut tells me, oh sure, I think one day they will be conscious. I don't know if we're on a path to get us there. Maybe something more akin to evolution and reinforcement learning algorithms would get us more obviously, just because whenever you recapitulate what we've already done with our biology. That makes me give hope that, well, why can't we do it in a different substrate?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much. Thank you. Woo-hoo!"
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "2j9yjRSpMSo",
+      "thumbnail": "https://img.youtube.com/vi/2j9yjRSpMSo/hqdefault.jpg",
+      "title": "AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher"
+    },
+    {
+      "videoId": "subu-xHrp1w",
+      "thumbnail": "https://img.youtube.com/vi/subu-xHrp1w/hqdefault.jpg",
+      "title": "Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li & Masterclass CEO David Rogier"
+    },
+    {
+      "videoId": "Yu0z7-KMHpo",
+      "thumbnail": "https://img.youtube.com/vi/Yu0z7-KMHpo/hqdefault.jpg",
+      "title": "AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang"
+    }
+  ],
+  "topics": []
+}

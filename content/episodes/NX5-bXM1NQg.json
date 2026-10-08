@@ -1,0 +1,605 @@
+{
+  "videoId": "NX5-bXM1NQg",
+  "title": "Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl",
+  "format": "interview",
+  "guestName": "Blake Scholl",
+  "guestTitle": "Founder & CEO, Boom Supersonic",
+  "aboutGuest": "Blake Scholl is the founder and CEO of Boom Supersonic, a Denver-based aerospace company developing supersonic passenger jets with the goal of making high-speed air travel commercially viable and affordable. Before Boom, he spent roughly 14 years in tech, including roles at Amazon and a startup that was acqui-hired by Groupon. He founded his first company in his parents' basement in high school and has carried an entrepreneurial mindset throughout his career.",
+  "publishedAt": "2025-03-21T16:45:00.000Z",
+  "duration": "40 MIN",
+  "coverArt": "https://img.youtube.com/vi/NX5-bXM1NQg/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/NX5-bXM1NQg/maxresdefault.jpg",
+  "summary": "Blake Scholl shares how he transitioned from a software engineer at Amazon (engineer ~#200) to founding Boom Supersonic, a supersonic jet company valued at over $1 billion. He discusses the mindset shifts required to overcome self-doubt, family pressures, and industry skepticism when starting a company in a field untouched by startups for nearly a century. The conversation covers his journey from raising early funding through Y Combinator to breaking the sound barrier and earning a visit to the White House within 24 hours of that milestone.",
+  "keyTakeaways": [
+    "Blake was 33 years old with a 14-month-old daughter and newborn twins when he left his well-paying corporate job to start Boom Supersonic — proof that a 'perfect' life stage rarely exists for big leaps.",
+    "He reframed his fear of failure by deciding he would rather be 'dark matter' — an entrepreneur who tried and failed — than someone who never tried at all.",
+    "Boom Supersonic raised $150 million from investors including Paul Graham, Sam Altman, Y Combinator, Bessemer, Reid Hoffman, and Michael Morris, with each putting in at least $10 million.",
+    "At Amazon as engineer ~#200, Blake built the first automated ad management system on the internet, which at its peak drove an estimated 7% of Amazon's revenue and 7% of Google's revenue simultaneously.",
+    "Boom broke the sound barrier and within 24 hours was invited to the West Wing of the White House, signaling strong governmental and public appetite for supersonic commercial travel."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "0:54",
+      "seconds": 54,
+      "title": "His early career, 14 years in tech"
+    },
+    {
+      "time": "2:12",
+      "seconds": 132,
+      "title": "\"People have to declare big things for big things to actually happen.\""
+    },
+    {
+      "time": "3:31",
+      "seconds": 211,
+      "title": "Working at Amazon with Jeff Bezos, the lessons he learned there"
+    },
+    {
+      "time": "7:38",
+      "seconds": 458,
+      "title": "What led him to transition from a corporate job to starting Boom"
+    },
+    {
+      "time": "8:20",
+      "seconds": 500,
+      "title": "Why he quit his stable job at 33, with newborn twins and a toddler daughter"
+    },
+    {
+      "time": "9:06",
+      "seconds": 546,
+      "title": "How much money he saved for his startup"
+    },
+    {
+      "time": "9:44",
+      "seconds": 584,
+      "title": "How he managed his time with family while building a startup"
+    },
+    {
+      "time": "10:30",
+      "seconds": 630,
+      "title": "How he started a company without formal education"
+    },
+    {
+      "time": "12:57",
+      "seconds": 777,
+      "title": "How he moved from theory to practice"
+    },
+    {
+      "time": "14:30",
+      "seconds": 870,
+      "title": "Challenges in hiring the right people"
+    },
+    {
+      "time": "15:50",
+      "seconds": 950,
+      "title": "\"When I told people I was building a supersonic jet, they said, 'Are you crazy?'\""
+    },
+    {
+      "time": "17:18",
+      "seconds": 1038,
+      "title": "Why you shouldn’t listen to industry experts and should check the information yourself"
+    },
+    {
+      "time": "19:20",
+      "seconds": 1160,
+      "title": "No one can tell you what you’re capable of, except yourself"
+    },
+    {
+      "time": "19:56",
+      "seconds": 1196,
+      "title": "The failures that can turn out to be winning moments"
+    },
+    {
+      "time": "20:33",
+      "seconds": 1233,
+      "title": "The hardest day at Boom"
+    },
+    {
+      "time": "21:17",
+      "seconds": 1277,
+      "title": "3 weeks from bankruptcy – What separates a successful founder from a failing one?"
+    },
+    {
+      "time": "22:00",
+      "seconds": 1320,
+      "title": "Why 99% of startups fail"
+    },
+    {
+      "time": "22:30",
+      "seconds": 1350,
+      "title": "How close they are to launching"
+    },
+    {
+      "time": "24:00",
+      "seconds": 1440,
+      "title": "Legal bans and challenges that stopped them"
+    },
+    {
+      "time": "26:12",
+      "seconds": 1572,
+      "title": "How everything can change in just 4 weeks"
+    },
+    {
+      "time": "26:20",
+      "seconds": 1580,
+      "title": "How to navigate the challenge of 3x the carbon emissions that jets use"
+    },
+    {
+      "time": "28:58",
+      "seconds": 1738,
+      "title": "The costs of flying on a supersonic jet"
+    },
+    {
+      "time": "30:18",
+      "seconds": 1818,
+      "title": "Why increasing speed is important and how it can drive growth in other fields"
+    },
+    {
+      "time": "32:45",
+      "seconds": 1965,
+      "title": "How he manages work-life balance while working at a startup"
+    },
+    {
+      "time": "33:35",
+      "seconds": 2015,
+      "title": "\"The world is really open to supersonic right now. We have to move fast. I haven't had a day off in 4 months.\""
+    },
+    {
+      "time": "34:40",
+      "seconds": 2080,
+      "title": "The story behind the Trump photo"
+    },
+    {
+      "time": "37:00",
+      "seconds": 2220,
+      "title": "Advice for someone who’s stuck with their idea of building a startup but is facing obstacles"
+    },
+    {
+      "time": "38:00",
+      "seconds": 2280,
+      "title": "Stop being afraid of failure"
+    },
+    {
+      "time": "39:18",
+      "seconds": 2358,
+      "title": "What he would say to the younger version of himself"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you worked at Amazon. It was just an absolutely incredible place. They were paying you very well. I was 33. Groupon had acquired my first company. Uh, I was running the world's largest spam operation. So you have a family?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yes. 14-month old daughter and like twins who had just been born and you decided to quit your corporate job and start something completely new."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I guess there has not been a startup in aviation for a century. There is opportunity and we have to take advantage of it quickly enough. We raised $150 million from like some of the most amazing investors. Paul Graham, Sam Altman, Y Combinator, Bessemer, Michael Morris, Reid Hoffman, like all of those people put in at least $10 million. The world is very open to supersonic right now. Now we've got runway and then we broke the sound barrier and it was 24 hours from breaking the sound barrier to being in the West Wing of the White House."
+    },
+    {
+      "speaker": null,
+      "text": "Can you give advice to someone who's stuck with their idea of building a Boom-sized company, but they just can't take the leap of faith? They have a family. Oh yeah. Blake, thank you so much. I'm so excited about this conversation because you did something a lot of people are dreaming of but they don't have enough courage. And I wanted to focus this conversation on basically how you changed your mindset and went from a corporate job at Amazon to building the next generation airline. So you worked at Amazon, right? You were a tech guy for 13 years."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Uh, I was at Amazon for about five and then another startup and then a startup I founded and then that got acquired by Groupon. But yeah, I was bopping around tech for like 14 years. I started my first company in my parents' basement in high school and uh and I always just wanted to go where the most interesting stuff was happening and like build something new."
+    },
+    {
+      "speaker": null,
+      "text": "That was one of the things that was sort of a trigger for me. I didn't see myself as radically different and the decision I remember really struggling with was the decision to start Boom. It was like, if by going and starting a supersonic jet company I'm almost like telling the world that I'm different, because if it succeeds it will like by definition be historic and I'm like, who am I to do this? I don't have the resume for this."
+    },
+    {
+      "speaker": null,
+      "text": "And then the way I kind of got my mind around it was a couple things. One was I was very inspired by that 1997 Apple ad campaign where the tagline was, \"The people who are crazy enough to think they can change the world are the ones who do.\" And it's really true. And then I thought of Bill Gates, you know, who had started Microsoft in the 70s and had set a goal of putting a computer in every home and on every desk running Microsoft software. And at the time he said that, it was like absurd. And yet he did it. And I was like, wow, okay. So people have to be willing to declare big things in order for the big things to actually happen."
+    },
+    {
+      "speaker": null,
+      "text": "The ones who try and succeed—we know who they are. Our history knows their names. The Wright brothers who were bicycle entrepreneurs turned inventors of literally the airplane. Jobs, Gates, like everyone else we know at that level. And there's probably also like a dark matter of entrepreneurs—the people who tried and they didn't succeed. Exactly. And we don't hear about those. We don't hear about them. And I was like, okay, really my choice is like, do I want to be in that category if I fail or would I rather be in the category of people who didn't try? And once I saw it that way, I was like, I'd rather be in the dark matter of entrepreneurs than in the, \"didn't try\" category."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you have an opportunity to work with Jeff Bezos directly?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I did a little bit. You know, I was approximately engineer number 200. It was after IPO, like the place was established. I think I got in two weeks before the dot-com hiring freeze. The bubble was like imploding as I was rushing in the door. Yeah, I was something like engineer number 200. Amazon back then was just an absolutely incredible place. Everyone worked hard. There was more important stuff to be done than people to do it, which makes it very apolitical. It's like no one's competing for what work and projects. Projects are just sitting on the floor and if you want to do one, you just pick it up and do it."
+    },
+    {
+      "speaker": null,
+      "text": "And so I got to work on something that Jeff cared about just because I was excited about it. Basically, I was doing Amazon's first ad buy from Google. It was like 2003. It wasn't obvious that web search was going to be important. It wasn't obvious that search engine marketing was going to be important. We ended up building this thing that was the first automated ad management system on the internet. At one time, I think it was responsible for 7% of Amazon's revenue and 7% of Google's revenue."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. Wow."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "And it was just like—I managed to extrapolate. I visualize it as I'm standing next to a rocket and my jacket gets caught on the rocket and the rocket launches and I'm like up there with the rocket, kind of hanging on, like, wow, can I survive this? I always felt like I was just an inch from screwing it up enough that they would fire me and put somebody who actually knew what they were doing in charge of it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What was your key learning?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "There was a bunch of key learnings out of it. The experience—reflecting back on it many years later—was looking at a space where everyone's doing it one way. Back then, search engine marketing was all done by hand. People would choose their keywords, write their ads. They could only have a few keywords and a few ads. Amazon had millions of products. Most competitors would buy keywords like \"camera\" or \"cell phone\" and those would be bid up with tons of ads. But there were 300 million unique searches per month. Most of them had no ads. I was like, \"Oh, we should just buy all the rest of them. We'll do it with automation.\""
+    },
+    {
+      "speaker": null,
+      "text": "At a meta level, it was this experience of looking at a space, everyone's doing it one way, there's actually a completely different way. Let's go do that. And we actually made it work. I hadn't really had this thought until right now, but probably that ticked something in me of like, okay, we can go look at a space, think differently about it than everyone else has ever done, and make something successful."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you remember that day when you woke up and you thought like, I want to take the leap and build an airline?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Oh yeah. A couple threads connected up to it. One was I'd seen a Concord in a museum in my 20s and I'd set a lifetime goal of flying supersonic and I put a Google alert on it. That was one thread. Another thread was, every time I would get on an airplane, I would ask what would this be like if somebody like Johnny Ive had designed it, not whoever actually did it, Boeing. That would rattle around my head."
+    },
+    {
+      "speaker": null,
+      "text": "I sort of had in my head like, oh, I want to become an internet billionaire and then start an aviation company. The first part never happened. I had this thing on my to-do list that was, figure out how to start an aerospace company. Nothing happened with it for 10 years. Eventually, Groupon had acquired my first company. I was running the world's largest spam operation and it was just so demoralizing. They were paying me very well and I was saving up money in my head to buy myself an airplane. At some point I'm like, it's not worth staying here longer for the airplane to be better. I'm just going to fire myself and go do something else."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How old were you?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I was 33."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you have a family back then?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yes. I think I had a 14-month old daughter and twins who had just been born and you decided to quit your corporate job and start something completely new. Were you scared?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For me, I have a three-year-old and a five-year-old. For us with my husband to like change our lives completely just seems unimaginable right now."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "It didn't feel so crazy to me at the time. My then wife was like, \"Okay, honey, you've got a year to screw around with this jet thing. And then I expect you to get a job.\" I had saved up enough money—and I think this is actually important. I had budgeted for two failed startups. I could start one, seed it with a little bit of money, fail, start another one, seed it with a little money, fail before I'd actually have to get a job."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But it's also about time, right? It's not just about money. At a startup you work like 20 hours a day, maybe 28 some days. How do you manage that with kids? Do you regret missing that time when they were so young?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I mean, I struggled with it for sure. In some ways, I was a very reluctant father back then. And then along the way, I got divorced and it actually made me a better father. I realized when I only have the kids half the time and when I have them I want to be really present. It's not like the situation I ever would have designed but it probably actually made me a better father and a better CEO. It sort of forced just getting efficient. Like, okay, I'm not going to be the dad that spends the most time but the time I spend better be good."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay so you decided to start an airline company with no formal education in aerospace engineering whatsoever. Can you walk me through this mindset where you're like, \"Yeah, I can just learn it by myself.\""
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I think it mattered that I gave myself a year to wander around. I sort of thought, okay, supersonic jets would obviously be great. No one's doing it. Conventional wisdom says that means there's something wrong with the idea. You get told that in Silicon Valley all the time. If your idea is any good, there are three or four teams already working on it. And by the way, it's terrible advice."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you. Terrible advice."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "What that does is it creates a herd mentality. You know, there are zillions of people building ChatGPT wrappers. Back in the day there were zillions of people building photo-sharing apps. Then there are entire things that have nobody working on them and nobody will work on them because they don't want to be alone or they figure if this were good, there'd be another team. It's just terrible advice."
+    },
+    {
+      "speaker": null,
+      "text": "So I thought, okay, well it probably will be a bad idea but I want to know for myself why. The internet was full of conventional wisdom about why supersonic jets couldn't exist. Like, people won't pay more for speed, it's inherently more expensive, and you can't have a big enough market unless you can solve supersonic flight over land, which is technical and regulatory and requires decades of R&D. These are all qualitative claims about quantitative questions. Supersonic flight costs more—okay, why? And how much more? People won't pay more for speed—well, that doesn't seem right. People pay more for direct flights than connecting flights all the time. It's a question of how much. The market's not big enough without supersonic flight over land—is it? How big is big enough? It's a measurable thing."
+    },
+    {
+      "speaker": null,
+      "text": "I just started building spreadsheets. I like this approach. Quantify everything."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Quantify everything."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "And don't accept other people's conclusions about quantitative questions. I've seen that over and over again. There are claims and sometimes I still make the mistake of accepting them and then I go build the spreadsheet model and find it's very surprising what the real truth is."
+    },
+    {
+      "speaker": null,
+      "text": "So I discovered that if you could build basically a single-digit efficiency improvement—just a few percent better than Concord designed in the 1960s—you could build a supersonic seat with the economics of a business class flat bed. Once I had those calculations, I was like, I need to hire the best people. Well, that was a three-line spreadsheet and I was like, \"Okay, it doesn't on the face of it, it seems plausible.\""
+    },
+    {
+      "speaker": null,
+      "text": "At that point, I bought every textbook I could find and started reading. I did remedial calculus and physics because I hadn't had any since high school. I started building a more detailed spreadsheet model of the airplane and a more detailed spreadsheet model of the market. In the middle of 2014, I took it to a professor at Stanford because sometimes it's assumptions in, conclusions out. But the quality of the answer is only as good as the quality of the assumptions."
+    },
+    {
+      "speaker": null,
+      "text": "There were assumptions in there about lift-drag ratios, which is aerodynamic efficiency, and specific fuel consumption, which is how efficient an engine is. A couple of key parameters would impact whether the end product was practical or not. I took it to a professor at Stanford who had done a bunch of supersonic research and I'm like, \"Dude, I have not—you know, I've been at this for like two seconds. I don't know what I'm doing. Where is R&D at on these things now? Are any of these assumptions reasonable?\""
+    },
+    {
+      "speaker": null,
+      "text": "He said, \"Blake, if you're going to do this, you need to push your team way harder because all of these are conservative.\" I remember leaving his office in this state of shock, like, wow. I don't know how it could be that I'm the human who stumbled across the practicality of supersonic passenger flight when nobody else did. But either I have no courage or I'm going to go find some people and see how far we can get this. That decision really did come down to just a choice of courage."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How was it hiring people from major airline companies without having the experience?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "People think that the engineering of building a supersonic jet must be really hard and it is in a way, but it's like the third hardest thing at Boom. The second hardest thing is financing and the actual hardest thing is team. The reason team is so hard is that there has not been a startup in aviation for a century. Literally, the last new commercial airplane company was Douglas Aircraft, founded in 1921. All the founders retired in the 1960s, which is a big part of why we don't have supersonic already."
+    },
+    {
+      "speaker": null,
+      "text": "You've got the founders, then the founders retire, then you've got the people who work with the founders, then those people retire, and then god help us, the accountants take over. That's very much the story of Boeing. There's the PayPal mafia, right? There's the Amazon mafia. There is no Boeing mafia. There are no entrepreneurial-minded people who come out of these big companies. So we had to find people from bizarre other corners of the universe or find people who had gone to Boeing and were still early in their career, and we could rescue them before they were destroyed."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Was it hard to persuade them?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Well, yes and no. When I would tell people I'm building a supersonic passenger jet, the first question was always, \"Are you crazy?\" They didn't always say it out loud, but I could always tell. And if I could persuade them that the answer was maybe no, then the second question is, how do I get involved and help?"
+    },
+    {
+      "speaker": null,
+      "text": "I'm thinking of the person we hired as our first chief engineer. We met kind of through six degrees of Kevin Bacon and he and I met in the subway outside SFO. I'm like, \"Hey dude, I want to show you my spreadsheet and what I've figured out so far.\""
+    },
+    {
+      "speaker": null,
+      "text": "He said, \"Man, I'm used to seeing all these internet people who have crackpot airplane ideas. This is not a crackpot airplane idea. I had no idea you'd be this far. This actually makes sense.\" He's like, \"I want you to hire me as a consultant and I'll consult with you.\" I'm like, \"Nope, that's not an option. It's full-time or nothing.\""
+    },
+    {
+      "speaker": null,
+      "text": "He's like, \"Oh, I don't want to do a full-time job. This will burn me out.\" I'm like, \"Okay.\" But he couldn't stop himself because he was in love with the idea. He comes back like the next week and he's like, \"I built a spreadsheet an order of magnitude more sophisticated than what you built. It gives the same answer.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, that's awesome."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "And like it looks like this works. So you had the first actual industry confirmation."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And then it just started from there, right? I remember I read something that the industry was still criticizing you and saying it's not viable."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Oh, they still are. They still are."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you navigate this? There's one thing when the general public says, \"Oh, this is not possible.\" But when the industry experts are like, \"You know, we've been there, we've done that.\""
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "The industry experts don't know what they're talking about. The quote-unquote experts are often just repeating the same conventional wisdom and haven't done any first principles analysis. Sometimes it gets fed by lore—like the big jet engine companies tell everybody that only the big jet engine companies can build jet engines because of course they do. But then that gets repeated and people accept it as if it's physics, but it's not physics. SpaceX started from nothing and they put stuff in orbit. By the way, they built their own rocket engines. I was very inspired by that. I was like, \"Wow, you know, Elon was an internet guy and he put stuff into orbit and like that seems way harder than a supersonic jet.\" Actually, it's not. I think the supersonic jet's actually harder, but I didn't know that back then."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Would you agree with the phrase that's kind of related to this? \"Ignorance is my superpower.\" Is it true or not?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I don't think that's actually true. Ignorance is definitely not good. I think the superpower is coming into a new domain and seeking out first principles. It's about actually getting rid of ignorance quickly and not by hoovering up opinions. The wrong way to come into a new domain is to go around and ask a bunch of people what they think. A much better way is to go into a new domain and ask a bunch of people to teach you what they know."
+    },
+    {
+      "speaker": null,
+      "text": "My favorite interview question at Boom is, \"Teach me something.\" It still is, by the way. I don't mind if everybody knows that because you can't fake your way through that interview question even if you know it's coming. You can't teach something unless you actually understand it. On one hand, this is a great filter for people who really understand. On the other hand, I learned a lot just interviewing people."
+    },
+    {
+      "speaker": null,
+      "text": "My approach was not to find out people's conclusions and fit them together into a picture, but rather to hoover up all that knowledge myself. It was very much the opposite of ignorance is a superpower. Getting rid of ignorance quickly is a superpower."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But also believing that you can crack a problem that a lot of people tried to crack and then gave up on it."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yeah, I mean I don't know if I actually had that belief and some days I still don't have that belief. The thing I believe is it is impossible to know one's own limits except by picking something incredibly motivating and going all-in. Like, what can someone do or not do? How do you know on day one? The SAT doesn't tell you. Your grades in college don't tell you. Your friends don't tell you. The only way to find out is pick something you'll never give up on and see how far you can go."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. What if you're later in your life? Because some people will tell like, \"Oh, if you're talented, you should have had some wins already, right?\""
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "My experience has been it's irrelevant. I had some really big early wins. I'm 24, I've got a P&L at Amazon. I got to work with Jeff. And then boom, two failed startups. I could have been like, \"Oh, I guess I'm not so good. I guess I shouldn't try anything.\" I don't know—it could have been true. It could still be true. We could screw this Boom thing up. But we've gotten pretty far so far."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What was your hardest day building Boom?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "It seems like we have a near-death experience about once a year. I'm thinking of last year. We got down to seven days of cash and the HR team and the legal team had a plan to file for bankruptcy. We'd been on the verge of it for a long time and everyone was nervous. A bunch of people quit over it. I had board members quit over it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh wow."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "It was really obnoxious actually. It was like a filter for people who are really committed. But that was incredibly tough. We had to do a down round and a recap to get the company back together. That was one of the most painful things I've ever gone through."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Have you ever thought of giving up? Like, it's not working."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I mean, there are all kinds of days where I'm looking at a problem and I feel like I'm staring down the barrel of a gun and it's like that could be the thing that kills us. And then the answer has always been, don't give up. I remember when we got down to three weeks of cash and I called Paul Graham and I was like, \"Dude, I need your advice. We've got three weeks of cash. I'm trying to figure out how to bridge our way to the next milestone.\""
+    },
+    {
+      "speaker": null,
+      "text": "He's like, \"Aren't you shutting the company down? Usually when people call me and they say they got three weeks of cash, they're telling me they're shutting the company down.\" I said, \"No, I'm not giving up. We're finding our way through this. I don't know the way right now, but I'm absolutely not shutting the company down. I don't care if I have to take it through bankruptcy and restart it. I'm not giving up.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing. I think this is what really defines success for entrepreneurs. Some people say companies fail when they run out of money. In a certain sense it's true, but I think they actually fail when the founder gives up. The whole like, I'm just going to put myself through whatever quantity of hell it takes to succeed, is really powerful."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yeah, I guess I could spend the rest of my life foolishly failing, but I don't think that's what's going to happen."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's awesome. Let's talk about what's going on right now. You just had your supersonic flight. Congratulations."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Uh, the test flight, right. Just, uh, so what's going on? How far are you from actually launching?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "About four years from carrying passengers. Our goal is first passenger on board by the end of 2029. It's not that far away. To concretize where we are right now, we've built and flown the first ever supersonic jet outside of a government or military. I asked ChatGPT a few weeks ago which governments have made supersonic jets and ChatGPT is like, \"Here are the seven governments that have done it.\" But there's an eighth that's not a government. It's called Boom."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, that's awesome."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yeah, so we've built the first supersonic jet outside of a government or military. It is the first civil supersonic jet made in America. It's the first one since Concord and it's the first one made out of airliner technology. We basically took 20-year-old proven Boeing 787-level technology and said, let's go build a supersonic jet that is safe enough to put a person on, that can break the sound barrier, and learn 100% of what it takes to actually do that technically, with the team, and management-wise. And then we can take it and scale up."
+    },
+    {
+      "speaker": null,
+      "text": "That's where we are now. We've broken the sound barrier. We've done it on two flights. We've broken the sound barrier six times. We did it all six times without any audible sonic boom. Now it's time to take all those lessons, scale it up, and build the airplane that you and I can fly on."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And also the legal ban, right?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yeah. We actually started the company with the assumption no new technology and no change in regulations because otherwise it would just be way too much for a startup to take on. Our assumption was that we would not solve the sonic boom problem—we wouldn't solve it technically and we wouldn't solve it politically, at least not for version one."
+    },
+    {
+      "speaker": null,
+      "text": "But it turned out as we got down the path there was a technical solution. It wasn't even that hard. The problem was described as way more difficult than it actually is. Now when I look at the administration we have today and how the political climate has shifted in the last 12 months, I'm very confident that the supersonic ban over the continental US is going to be lifted."
+    },
+    {
+      "speaker": null,
+      "text": "But then you will have to work with other governments as well because what's actually worse in the US than it is elsewhere. The US and Canada have an outright supersonic ban. It doesn't exist everywhere. The rules are a little bit different in the rest of the world. I think the reason is that Concord was a European project and there was an American competitor which got cancelled. Only after the American competitor was cancelled was like, \"Oh, we can't have this sonic stuff.\""
+    },
+    {
+      "speaker": null,
+      "text": "I think the real reason is regulations have a moral cover story—like, oh, we have to do this because sonic booms are bad or this is to protect children. But the real reality is it's to protect Boeing. And nobody wants to say that out loud. So they invent a cover story and tell everybody booms are bad."
+    },
+    {
+      "speaker": null,
+      "text": "It's actually a speed limit. Literally, 14 CFR 91.817 says, \"Thou shalt not exceed Mach 1.\" Mach 1 is the speed of sound. It's a speed limit in the sky. What it should say is, \"Thou shalt not make bad noises.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's really a really stupid regulation."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "My suspicion is that the reason it's a speed limit, not a noise limit, is because if it was a reasonable noise limit, a whole bunch of things would have passed."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. So how soon do you think this will change?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "I don't know how to predict this but the things are either less than four years or more than four years because you have... Oh, I mean, it could be four weeks."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yeah, like it could happen very quickly. We'll see."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Fingers crossed. Fingers, toes, and eyes are crossed. Awesome. I had another question about carbon emissions because when I posted a story of your talk from that party, people were like, \"But this is like 3x more carbon emissions than a business class seat.\""
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Yeah, so it's supersonic is more energy intensive. We're designing around next-generation sustainable aviation fuel. When enough of that is available, actually the carbon could potentially go all the way down to zero on synthetic fuel. But it is more energy intensive and I think there's a big mindset question around this."
+    },
+    {
+      "speaker": null,
+      "text": "You know, the reason why we haven't had supersonic already is in the 1970s humanity shifted from an abundance mindset to a conservation mindset. There's this amazing chart—up until about 1970 there was an exponential increase, like a Moore's Law of energy. Energy per human is going up rapidly, standard of living is going up rapidly. All kinds of new technologies are possible because we have energy abundance, including things that make climate livable like air conditioners and heaters."
+    },
+    {
+      "speaker": null,
+      "text": "Then the mindset shifted into a conservation mindset. The exponential curve flattened and became a linear growth curve. I think it's very important that we plan for and create an energy abundance future and find a way to do it that works out large for humanity and for the planet. We can do that. If you look back at the history of energy, it shows it over and over again."
+    },
+    {
+      "speaker": null,
+      "text": "At some point somebody invented fire or discovered it. And then like, oh, fire has obvious pros. We don't freeze. And it has cons like it's not super healthy to breathe the smoke, right? Okay, so now we invent the log cabin and the potbellied stove and we put the fire in the stove and there's a smoke stack. That's much better. It's much healthier. It's much better for our environment."
+    },
+    {
+      "speaker": null,
+      "text": "My point is, every generation of technology has pros and cons. As you go from generation to generation, you can increase the pros and decrease the cons. That's the story of why we're not in the cave anymore. That's where we have to go with energy and supersonic jets. It's okay to use more energy. It's a good thing to use more energy. Let's figure out how to have more abundant, reliable, cheap energy and let's minimize the downsides."
+    },
+    {
+      "speaker": null,
+      "text": "If there's too much carbon, great, let's figure out how to synthesize jet fuel. Let's synthesize it more affordably than you can pump it out of the ground. There's good work happening on that. It's difficult to do but it's progressing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, that that gives me hope. What do you think would be the cost for the average person?"
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "Our ultimate goal is to make supersonic flight attainable for anybody. But there's a question of where do we start. Concord was a marvelous technical accomplishment, but it never had product-market fit. There were a hundred seats on the airplane. They're really uncomfortable. If you look at the Concord seats we have in our office, you might think they came out of the back of a Ryanair or Southwest jet. It was really small and yet it's $20,000 a ticket. Concord was for rockstars and royalty."
+    },
+    {
+      "speaker": null,
+      "text": "Especially in the 70s and 80s, $20,000 back in the day was a lot of money, and still adjusted for inflation it's a lot, right? Who wants to pay $20,000 to go somewhere really fast? Well, not nobody, but it's rockstars and royalty. It only kind of works on a couple of routes because you can't fill a hundred seats."
+    },
+    {
+      "speaker": null,
+      "text": "Overture, which is our first airplane, is like the Model S of supersonic jets. It's not for everybody, but it's for a whole lot of people. The fares will be like business class. I think a typical fare would be like $5,000 round trip. It will be a nice seat—lie flat. Well, not lie flat. You don't need a lie-flat bed for a three or four hour flight. So it's going to be three to four hours from New York to London, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, yeah. But also not just New York to London—Miami to Madrid, Seattle to Tokyo, DC to Paris."
+    },
+    {
+      "speaker": "Blake Scholl",
+      "text": "That's in four years? Or this is like a, like it could—like it will all be possible in about four years. We won't have enough of the jets yet because we'll be starting production. The whole Boom skeptic thing is going to be like, \"Oh, they can't build a supersonic jet. Oops, they did. Then it's they can't build a jet engine. But then be like, oops, they did. They can't certify an airliner. But then be like, oops, they did. Maybe they can't make enough of them. Oops, they did.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It gives me so much energy just hearing you say that and I see how excited you are. That's awesome because we fly so much and that would be amazing."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "QvwI0TTVcwo",
+      "thumbnail": "https://img.youtube.com/vi/QvwI0TTVcwo/hqdefault.jpg",
+      "title": "I'm 35. If you're in your 20s, watch this"
+    },
+    {
+      "videoId": "xuN4jZpaPho",
+      "thumbnail": "https://img.youtube.com/vi/xuN4jZpaPho/hqdefault.jpg",
+      "title": "Steal These Money Habits — They Built My 7-Figure Wealth"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    },
+    {
+      "videoId": "ExgNR94SrfI",
+      "thumbnail": "https://img.youtube.com/vi/ExgNR94SrfI/hqdefault.jpg",
+      "title": "Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie"
+    }
+  ],
+  "topics": []
+}

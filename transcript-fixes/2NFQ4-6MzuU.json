@@ -1,0 +1,11 @@
+{
+  "videoId": "2NFQ4-6MzuU",
+  "repairs": [
+    {
+      "date": "2026-10-08",
+      "what": "The guest card heading read \"About the Guest\" on this solo episode; every other solo page says \"About the Host\". The template now decides by format.",
+      "cause": "Hand edit applied to one copy of a value the page repeats; the data layer keeps one value.",
+      "confirmedBy": "content comparison in scripts/check-render.js during the migration"
+    }
+  ]
+}

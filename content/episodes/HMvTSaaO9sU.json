@@ -1,0 +1,494 @@
+{
+  "videoId": "HMvTSaaO9sU",
+  "title": "Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers",
+  "format": "interview",
+  "guestName": "Daniil and David Liberman",
+  "guestTitle": "Founders of Gonka · Former founders (sold to Snap) · Investors",
+  "aboutGuest": "Daniil and David Liberman are investors and founders who previously built and sold a company to Snap. They are now building Gonka, a decentralized AI network designed to make artificial intelligence more open and affordable to everyone. The brothers have been in technology circles since at least 2015 and were early believers in Marina Mogilko's vision, leading her first venture round in 2021.",
+  "publishedAt": "2026-07-17T13:30:07.000Z",
+  "duration": "41 MIN",
+  "coverArt": "https://img.youtube.com/vi/HMvTSaaO9sU/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/HMvTSaaO9sU/maxresdefault.jpg",
+  "summary": "Marina Mogilko sits down with the Liberman brothers to discuss who will control AI access and wealth over the next 3 years. The brothers argue that while AI is often dismissed as overhyped for everyday users, it has already fundamentally changed how people consume information—shifting from multi-source research to trusting single AI sources like ChatGPT. They present a concrete example of how AI solved a 3-year plumbing problem in Marina's house by diagnosing a missing pipe, demonstrating AI's potential to enhance rather than replace skilled labor. The key question they explore is whether AI becomes a freely accessible commodity or remains gated behind Big Tech companies. The brothers predict that within 2 years, several AI breakthroughs—particularly in biotech, genome understanding, and new materials—will create undeniable tipping points where there's no turning back. They emphasize that the window to influence whether the market or a handful of people control AI access is closing, making consumer demand and participation critical right now.",
+  "keyTakeaways": [
+    "AI has already changed human behavior — people now trust single AI sources like ChatGPT instead of doing multi-source research, which has real consequences for information consumption and decision-making",
+    "The plumber example shows AI's true role: enhancing skilled workers' productivity rather than replacing them entirely, but adoption depends on whether workers actively participate in innovation or passively resist it",
+    "Within 2 years, expect several AI breakthroughs in biotech, genome understanding, and materials science that will be undeniable tipping points — there's a narrow window right now to shape whether these advances benefit everyone or just a few",
+    "The real wealth and control in AI won't go to the founders who build it — the Anthropic founder owns just 1.5% of his own company — but to whoever controls access and distribution of the technology",
+    "Consumers still have power right now to demand open AI access and fair rules, but this leverage closes as AI becomes more centralized; every profession will be disrupted on different timelines (software first, then physical industries), giving some groups time to adapt if they actively participate rather than resist"
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Meet the Liberman brothers"
+    },
+    {
+      "time": "01:20",
+      "seconds": 80,
+      "title": "Is AI actually overhyped?"
+    },
+    {
+      "time": "03:22",
+      "seconds": 202,
+      "title": "ChatGPT solved a 3-year house problem"
+    },
+    {
+      "time": "04:48",
+      "seconds": 288,
+      "title": "How much time do we really have?"
+    },
+    {
+      "time": "06:36",
+      "seconds": 396,
+      "title": "The AI moment that hits everyone"
+    },
+    {
+      "time": "07:58",
+      "seconds": 478,
+      "title": "Anthropic's founder owns just 1.5%"
+    },
+    {
+      "time": "10:34",
+      "seconds": 634,
+      "title": "How China's AI game really works"
+    },
+    {
+      "time": "12:48",
+      "seconds": 768,
+      "title": "Why leaving your AI gets hard"
+    },
+    {
+      "time": "14:20",
+      "seconds": 860,
+      "title": "Who really owns 70% of our future"
+    },
+    {
+      "time": "14:50",
+      "seconds": 890,
+      "title": "Two futures. Which one is yours?"
+    },
+    {
+      "time": "17:08",
+      "seconds": 1028,
+      "title": "Who controls your answers controls you"
+    },
+    {
+      "time": "18:12",
+      "seconds": 1092,
+      "title": "Should the government step in?"
+    },
+    {
+      "time": "21:23",
+      "seconds": 1283,
+      "title": "What one person can actually do"
+    },
+    {
+      "time": "24:37",
+      "seconds": 1477,
+      "title": "AI that's more empathetic than people"
+    },
+    {
+      "time": "26:48",
+      "seconds": 1608,
+      "title": "How Bitcoin beat the untouchable giants"
+    },
+    {
+      "time": "31:54",
+      "seconds": 1914,
+      "title": "The coming boom in small businesses"
+    },
+    {
+      "time": "33:00",
+      "seconds": 1980,
+      "title": "What to do in 2 years"
+    },
+    {
+      "time": "33:47",
+      "seconds": 2027,
+      "title": "Where AI can take you: real story"
+    },
+    {
+      "time": "35:24",
+      "seconds": 2124,
+      "title": "What non-coders build in one hour"
+    },
+    {
+      "time": "36:43",
+      "seconds": 2203,
+      "title": "Rapid-fire predictions for 5 years"
+    },
+    {
+      "time": "39:53",
+      "seconds": 2393,
+      "title": "The smartest move you can make today"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Hello, everyone. Welcome to Silicon Valley Girl. I have my amazing friends today, Liberman Brothers. They're not only friends who I've known since 2015, they're also my first investors who believed in me and the whole round that happened in 2021, which became the first ever venture round in a creator happened because of you guys. Thank you so much."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Because of you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you for believing in me and yeah it's fascinating to see how much happened after that. You've been in technology circles and building stuff for a while so I really want to focus on what's going on right now and what's happening with AI and AI has been the most discussed technological revolution in the past two years but what I'm noticing and I'm sure a lot of people who are watching this will agree that we're talking a lot about AI and obviously it's changing like for coders because a lot of people. Generate 80% of their code, maybe more. But when you take an ordinary person, yes, the search is better now, the productivity's maybe up, but there hasn't been a life-changing event for humanity yet. So do you think AI is overhyped?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "I would start, start with like contradicting to what they said. The life changed because people started trusting one source of information, like in a chat, like, what is this? What is that? And they don't check multiple sources as they used to with the internet. And this is something pivotal, honestly, already, therefore, like we will have some consequences about that already from this point. When was the last time you were actually doing your research in Google? Like not through the chat GPT or other platform with agents doing all the swarming research for you and stuff. Like this changed. We somehow started trusting this technology, which not always is correct. What kind of reality we will see in the future mostly depend on whether someone will be able to get access to artificial intelligence. If artificial intelligence will be freely accessible by every human on earth, if it will become actually commodity when it's like cheap, as cheap as possible, then. Each of us for sure will use AI to increase our productivity, but definitely in other scenarios possible if big tech firms will be able to gate the access and decide who can have the access or not. I'll give you an example. Someone recently asked us about like, what about the plumbers? Will they be actually replaced with the robots or like with AI, what's gonna happen there? How can AI actually make innovation in there? In our house, where we moved three years ago. For this past three years, we had the problem with hot water and we were complaining to that landlord. He called for the plumber several times. They came there and it's like... Oh, you need to replace the entire heating system. It's going to be very expensive. And then at some point, we basically pointed the chat GPT through the camera into the piping system. And it's like, what's wrong here? And the chat said, looks like it's missing one small part here, like a pipe, which will actually close the loop here and blah, blah, and blah. So we started discussing this problem with the plumbers. After three years. We now have instant hot water with just one tiny... But you still needed physical labor, yes? Absolutely. But imagine that it's not us who should convince the climber that they should do this job, but the AI in their own earpiece, which is like, looks like there's this stuff missing there. And they fixed everything. And the first time when we called them three years ago... Yeah. And they were like oh best guys ever five stars you fix the problem hooray instead we were suffering for three years before actually AI came in"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you see any jobs completely being disrupted when we don't need those people at all?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Like, I mean, drivers, like the cars will be driving themselves, but the people inside of the car can still be there. I mean like for services, safety, whatever. This is actually a good example of the industry which had a chance to gradually adapt if all the drivers will see the future, the future will be definitely self-driving in if they would invest in. Joining forces together, in building the future together. Instead, when people, they're reluctant to participate in the innovation, and when they use innovations in their passive form, when they're just consumers, they don't understand that they actually can also contribute. Eventually, 15 years later, their profession can be disrupted. So actually, for every profession, There will be enough time to. If you actually see that the future is coming. Like clearly accept, everything will be disrupted, every single job will be disrupted."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How much time do we have?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "It depends on what the profession for some professional profession is like next year for some profession is maybe in half a year from now for some professions it will take five to ten years because the robots are first going to be in the factories and it's going to be there and there it's gonna be there a specific professions will require more time for the physical world to adapt there is a lot of stuff like physical world is not moving as software that's why software engineers was disrupted first because it's software"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think in three years we're still gonna need them?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Has to run this system? So when people are passionate about something and when they are really deep into their profession, AI actually augments their capabilities. And in any case, even when you have the most powerful AI helping you to write the code, still this person will use this AI in a much more advanced way than you, just because they understand what actually should be done. I believe that for some time this definitely will be important."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think in the next two or three years, we're going to see an event that is directed by AI and it's going to change lives for everyone? Because again, for example, going to, I don't know, my mom's example, right? She uses AI to search. Her life hasn't really been affected with AI. What do you think the timeline is when everyone experiences something COVID-like? When they're like, oh my God."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Honestly, in the next two years, probably we'll experience several events like that. We will see a lot of breakthroughs, like an eye-opening breakthroughs in Biotac, like understanding genome and a lot chemistry as well, new materials, like we will see a lot mind-blowing, something which we consider impossible before events within the next two years. In the software engineering itself, I think that we will the entire operating systems and coding languages. To be rewritten and like written from the scratch, something which we're actually changing everything we understood before. It will happen likely in the next couple of years. For sure, in the coming year or so, we will get through several tipping points where there is no way back. It will be already hard to influence where this progress will lead us."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like, what, do you have any examples?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "So for example, whether big tech companies will have control on who has access. So now it still can be changed in consumer scan effects that consumers can demand rules. The question is, like, where the... Rather, market defines the access to the technology or a handful of people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But if they all become publicly traded, then it's up for stakeholders."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Most interesting conversation. Who are the stakeholders? Yes, so one of the subjects which is not really discussed right now is that you It's rated. They will become publicly traded, who will control these companies then? For example, do you know what is the share of Dario Amadea, founder of Anthropic, creator of Clot, in his own company? What is the shared?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is it? I know Google owns a lot."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "1.5 percent of really so when you understand that it's just 1.4 percent you understand People who build it, people who brought their values into this, they are not in control anymore. Who then in control then you you find some it called Long-term trust or something like that and you see people in this trust and you won't recognize anyone on this list"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Why would those people who control those organizations? Decide to stop or pause access."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Because if you create artificial scarcity you can increase price for as long as you want."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But then an open model, China releases an open model."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "But China is not releasing open models. Chinese doing the old corporate trick, except they're doing this on like on the government level. They lure you with same open sourceness, because none of their model is actually open source. They're open weight, so no one can repeat. And then when the next version is released, they can easily not open weighted, just like that. And no one will be able to even continue or do anything with this. It's not theoretical. You can see how most of the US-based companies, they used to have open models."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "No, none. Yeah, it's so interesting when you see like the change."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "The Chinese models start to be not open from the very first day of the model release. They put it on the market for a month or two or three, only accessible from their own servers. And then they still play with the open weight game because what they play, they want for as many people in the world as possible to use their models, to actually create the competition to the American models. And then basically lure everyone to use their servers, not open weight on your own server, but our servers in China, with Chinese data centers and Chinese chips. Any tech organization which sells digital products. The first thing that they need to acquire users. As soon as they acquire users, then they usually change the rules. Remember, like in 2003, 2004, still Google had ads. Promise that ads will never be in the main feed. Ads will be on the site."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But they're still at the top and they're highlighted, so they're not in the surge."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "No, but the promise was that it will never be in the main feed. Then the rules changed and that's what we see in many cases."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because it's so, it's kind of easy, not very easy, but it's kind of easier to move from one model to another. We still have competition on the market. We have Google, Claude, ChatGPT, right? And from my own experience, I switch maybe like every two weeks. Yes, with now long-term memory that goes across all your chats, it's becoming harder. But if one model decides to 10X their price, I can easily switch. Do you think it's not gonna be the case?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "But look at then what is also happening in parallel with this luxury of changing between models tools which used to be independent for coding like cursor or or figma for design those tools are being steadily integrated into the main product or similar product"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, they're becoming the feeders for your chat window."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Everything you use from the calendar to the email to documentation to picture generation to music listening to like buying products as soon as all of this is already in one ecosystem that's when it's going to be much more complicated for you to change between the models just because all of your ecosystem will be in one So from this perspective, still, you're right that existence of all of these independent companies, it helps."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, they prevent authoritarian regimes inside the AI companies. Pain me this worst case scenario. Is that one company?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "It doesn't have to be one"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Or three company-coordinating their accords."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Or three company coordinate their efforts. Like Google, Microsoft, and Amazon today combined is 65 to 70% of global cloud compute."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So they basically own 70% of our future."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "When we're talking about AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's everything."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Now it's everything. It will disrupt every single industry over the course of the next five years. Let me give you two versions of the future. In each version, three of us increased productivity four times. In one version of the feature, this productivity increased because of these three companies, three corporations. What they can easily do is to get the entire growth of these margins by increasing the prices of their services. If your productivity, my productivity, depends on whether we have access to those models or not, they can set any price, and that's what we experienced recently. Models haven't become cheaper. Opposite to that, there is a version of the future when access guaranteed and we have it as cheap as possible. In this case, each of us become four times more productive. We produce four times more goods. And the only question is going to be. Is going to be whether we need that much or we will work less."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, we adapt to..."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "We will adapt and we will have more and more and more. Like it's just like details of every single product will be more details, better quality, all of that. Maybe like our houses will be bigger. It's going to be easier and faster."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, we'll have more inside our houses like we will have more stuff inside"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "We will have more stuff inside our houses. Our house finally will become smart houses. The free tree actually buys its own grocery."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the pipe that fixes itself, yeah."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "All the stuff, the promised future of the IoT, likely see some kind of a combination of that. The worst case scenario is not going to look like abruptly everything is stolen. The worst-case scenario will look like one by one, industry by industry, absorbed by this new technology, like big groceries will be replaced with online delivery, which will be then give more jobs. At some specific period of time, but then less, as soon as people will be replaced with robots as well. So, like, there will be a spike of additional small businesses and additional jobs in some areas, but the decline as well, so it's not going to look like, oh, we're going to hell. Something which we're not going notice, our freedom will be taken away."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you talk more about the loss of freedom? Because the analog situation that I see here, social media, right? We all have access to these amazing videos, but then some people can't stop consumption and they just spend their days scrolling and fake information is affecting how they make decisions. Do you think it's gonna be worse?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "I started with this decision-making and your research. If you actually ask the question, get the singular answer to this, the source of this information, if it's controlled, defines what you think about the reality around you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's what we're talking with some of my friends, because all of our AIs gave us advice to work less. We're like, are they coordinating? Like, what's going on?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "We know how powerful narratives are. It's not because of AI in general, it's a part of human nature, how storytelling affects us. The question is like who is behind it and what's the purpose of people who provide users?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Does it have to be regulated then? Do you think the government should step in with all the declarations that we have that we agreed on together as Western world? Should that be the guidance for AI?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "The government's already doing this?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, in the U.S., I think it's hands off."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "If you listen to all the current leaders of the industry, they all want the industry to be regulated. We are not so fond of governments in general. We believe that some sort of regulation is nice, but it will be really hard to prevent governments to abuse this power as well. We really like being in United States because of how much freedom people have, how much a government is actually decentralized. Not everything is decided on federal level. Many things decided on the state level or even the municipal level. At the same time, when we talk about E.A. Regulations, likely it will be federal levels. So not much freedom out there. So we are not as... Optimistic. Optimistic about regulations where they will take us. But at the same time, we are quite believers in consumer power, how consumers can change, how all these companies behave, how they can demand, what should be right. And actually, even just being vocal about what they want to have."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But I'm thinking about Open AI Anthropic and the defense situation. Yeah, people cancel this. I actually we see, I don't know how much that affected what's going on internally."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Somewhat affected, clearly somewhat affected. It affects employees of these companies as well, because this time it's all about the researchers. Oh, yeah. The only successful AI labs are those which manage together the brilliant minds of the AI researchers, not even engineers, but AI researchers. Because the engineering part is now done by AI itself. So like you need to actually think about this rather than code. Multiple times how those researchers left some organizations because of the epic disagreements. So I do believe that right now, it's still consumers have quite a big power. It won't be like that in a couple of years even. So we don't have... Oh, you think so? Yes. I'm pretty sure that the power of these organizations will only... Increase in our dependence on particular models, in our dependence on having access to the latest model will only increase our time. And I think that's probably the most urgency in the process right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What can we do about it?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "We can be vocal. We can support every independent project. We do believe that decentralization will play a significant role when people will build AI not based on data centers, but on the community of people who join in forces. It's happening step by step. So like several companies are right now providing the service of actually building some micro data center in your house or like it's a greed of micro data centers when it's less about like centralized control of a specific corporation. I mean, not necessarily these particular companies are the ones which will leads to this sort of decentralization. But it happened with the power, with the disconnecting from the grid, having the solar panels and the batteries actually providing all of the electricity at home. This is happening with increasing speed now, as the battery technology and the solar panel technologies are getting cheaper, cheaper, and more efficient. Similar is actually boiling in a lot of people's minds on how do we decentralize a lot this. And there is also a chance that because of significant centralization, there are some additional physical barriers like enough of electricity for such large data centers. Well, if you actually decentralize this home by home with micro data centers, then every single house solar panel with a battery actually can power the massive infrastructure of the AI cloud data center. So participating in projects like this, like even just... Browsing and searching and researching on what's possible and what's going on in there and then jumping on to being early adapters of technologies like this. This will actually help a lot in creating a pressing alternative, like the alternative which not necessarily will become bigger than the large corporations themselves, but will become visible and annoying enough the large corporations to adopt and change and be less monopolistic. The trick is AI itself, as soon as it's achieving, will achieve, soon, like in a year from now likely, a certain level of precision and false tolerance and mistake tolerance will be making decisions more more incorruptible, more immutable than people themselves, less biased, like all of this. We can see now how the call centers industry has been disrupted by AI. Like it's sort of invisible for majority of people because the call centers are somewhere there, like in, in Asia, somewhere far away. It's been significantly disrupted. We, we know several multi-billion dollar companies and smaller businesses, which are right now completely switching to the AI call centers, moreover, it's more efficient. So like friend of ours, their, their banking system. They're given loans and they used to have the collectors call center. People would call you and say like, hey, we can help you to restructure your debt. And usually the people in the bad situation, when they're already under the pressure of their actual life situation, plus the bank is calling and they're demanding the money, they are not quite willing to actually even reply to the phone call. So, what they managed to do for themselves, they completely replaced. The actual real human beings on the other side of the phone. Why? Because the AI happened to be more empathetic. They designed it to be empathetic, the AI getting into the human being situation much deeper and help the human being to actually get out of the shitty hesitation of owning money to the bank."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And they laid off the agency that they used to work with, the call center?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Yes, India, somewhere like Philippines, a lot of this somewhere outside, so that's why we probably don't see this. We don't feel this change, but there is a lot moving into the call centers because of this, as I said, and empathy. It's a human being quality to be empathetic, but AI can be much more empathetic and AI can be more truthful. And as soon as we're getting to this level, the governmental services, logically... Should be AI driven. A lot of it. And there will be a huge resistance from the very government itself to be replaced, to be augmented, to become incorruptible. And that's where we can see that there will tension. If you want to create this uncorruptible bureaucracy, it's quite important that this type of artificial intelligence shouldn't be controlled by anyone. Should not be centralized. Centralized and none of us wants the future bureaucracy to be controlled by a corporation."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Which won't happen, right? Already. Like, because these corporations exist, do you think there is a chance that there is a world where it's decentralized?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "But remember what was with the Bitcoin? The financial world was the most powerful, the Wall Street and the central banks of the world. No one could have challenged them. And then Bitcoin just happened. Yes, it started like a little bit early, but it was like an invisible toy. But right now it's a rails of financial world. No one can affect the records in the ledger. For example, privacy and encryption in messengers. The big players didn't want encryption. They didn't care. But then smaller players, signal and telegram. And they all had to adopt it. And they had to have it. And this is an example of consumers demanding. At some point, there will no be difference for the majority of the consumers, whether it's Opus, or GPT-5, or something which they don't even understand the name of it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For a lot of people, it's already the case."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Exactly. But they prefer to use it because of the aspects which we are saying. Some people will step by step, like it was with Bitcoin. It started with Satoshi himself, then 10 people, then 20, then 100, then 1000. Now it's hundreds of millions of people actually holding the Bitcoin world."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, but Satoshi, he remains unknown to public. I know you're building something in decentralized AI and you're going to podcasts. Do you have any fears from the corporation?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Of us disappearing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "No, because you're entering a huge market and you're trying to disrupt and build a competitor."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "We are not afraid. You know, with Bitcoin, the privacy of the owner was part of the pitch. So it was an important aspect of the service which Bitcoin provided. With the AI systems, I don't think that that portion is important. Similar with Ethereum, the founder of Ethereum. He's out there, everyone. No With AIs, it will be more like with messengers. You actually want people to find your name there because you want to get connected with people. So you want businesses and individuals to be identified, verified inside of the world of AI. Honestly, that's what we actually all should want. Was I ever a participant of the Future Network of AI? Is verified and identified. Just because there will be so many of the fake generated for the scam purpose or just like entertainment purpose. It doesn't really matter why, but the internet is getting trashed with a lot of unchecked information."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, but at the same time, like, you know, world ID, right? People are so like, some people love it. Some people absolutely say, no, never will I provide my retinol can."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "But because the trick is, it's like..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's a private company."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "It's a private company. Moreover, the storage..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think when it's decentralized, more people will be willing to do that? If..."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "If you can demonstrate in open-source manner that no one can have access to this data, for sure. The problem with WorldID is that it's a black box, and this black box is controlled by one company. No one knows what is inside of this eyeball and things like that. So that's what scares people. For sure, in the world we are entering, this all will be important subjects to discuss. And I hope that people will be more educated about the abundance which AI can bring. At the same time, what are the risks and how we can mitigate them. With that type of change, it's quite new. It's actually one of the important things that it is first technology. Which speaks our language. And this, it is like, affects us all because all of the previous protections, psychological protections, barriers which we had, this. System can overcome, because now it's like human being, because it speaks our language. But at the same time, it's greatest opportunity because there is no barrier. Even when you software engineer, you only talk with those systems. Yeah. You stop coding, like you stop writing. Yeah, we're talking to our computers. So because of that, I think that this also... The greatest opportunity for equality, because everyone can. If everyone have equal access to this technology, then everyone can achieve their highest potential. In the world where people will be losing jobs, if you can come back home saying, I'm unemployed now, and then AI will tell you what next you can do, and you can just like choose in between. A vibe code in your startup. A vibe, like not necessarily everyone is gonna be a startup, but at the same time, I personally believe that we will see the explosion of smaller businesses, like we will see the de-corporatization of industries if we have equal access to AI. The same way social media affected small businesses in terms of like now anyone can start a business online and sell whatever like clothes, jewelry, cosmetics, like whatever it is, products for docs, for keys, like through this new channel. More small businesses happen to be successful. We will see that tenfold with AI if access is not limited. If."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Access is not limited. What should people be doing now to thrive in two or three years?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "First of all, you definitely need to at least try to adopt these tools. You know, in our bubble, everyone tried to use agents, but in reality, it's just a fraction of us. Dire world. Actually. So people should be much more open to educate themselves and to implement this in their current workflows in the way how they plan their days, do their job. Do their household planning, like all of this. This is quite an important thing. I remember that when we used to have a game development studio, we hired an artist. He didn't have much of the portfolio at that moment. I remember it was just a couple pictures, but they impressed us quite a bit. So. The talent was clearly there. And, uh, all our other artists had much greater experience at that moment. But this guy, every time when you tool appeared, he wasn't resisting, but just jumped in. Try to use it, try to understand what the best you can get out of it. And in just a couple of years, we got a message from him that he got a proposal from Blizzard. The top game development studio in the world. Uh, and he will not refuse it. And for us, it was for sure. He will want to work in this company, especially in the cinematic division, when you do this beautiful movie shots. And so he got there and like in then a couple of years. He advanced himself, advanced himself into robotics, into this, into that, like as soon as you consume the change, the new accept, it fuels you into continuing and never stopping. I know that for some it is a little bit scary to use these tools, or when they are new they are a little sloppy. But just make it a habit to spend at least an hour a day instead of watching Netflix or browsing Instagram to actually see what you can do, to deploy research. We recently found ourselves with several groups of friends doing hackathons at house, at the dinner, you know, it's a culture when you just sit down and you have one hour to build some stuff. It's important to say it's not technical people. Yeah, yeah, so we did multiple times in so fun, so fun like we, what you can build just in one hour and you can have it on your phone immediately and you all can try and you all, can laugh. Not necessarily it is going to be useful, but the fact that you have this physical experience of achieving this in just one hour with a group of your friends who actually never had experience of building software before, it changes the perspective. So like our advice would be just use the AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. I could talk about this for another hour. I have a blitz to wrap up with. So it's like a short answer. Will AI be able to do most intellectual work for humans in three years? Yes. If it does what is left for humans."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "The same creativity decisions in your life, what you want to have in your life, this is, uh, would be quite important in world of abundance is actually will be a more complex task to decide what exactly, how you want to live your life."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because you have everything, yeah. Well, yeah, it create more jobs than it destroys."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "The nature of jobs might change, but it might change in a much longer horizon. I believe AI first will create a lot of new jobs and then the idea of job might change and dissipate in 10-15 years from now. Maybe 30 years. Like this is a longer horizon"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Will today's market leaders still be leading five years from now, or will we have some emergent player?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Likely, so look, Anthropic haven't existed. Three years, four years ago. Actually, if you look all the incumbents, all the big companies we had before, all of them lost the AI game. Maybe Google still have some place, but all the rest, they actually weren't successful. Every time when someone points out that all this big company will be competitor to you, I don't take it seriously because big companies, they're really slow. And smaller players, they have much more chances to actually build something. So, yes, we will see a lot of them. Someone new likely those who we see right now might change a little bit in terms of like murders inquisitions like becoming one some of them or just disappearing and losing the competition to the rest but there will still be the same 10 companies of the silicon valley which are trillion each trillion dollar company multi-trillion dollar company in three five ten years from now likely they're not going to go away will something new happen Totally, totally."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Will humanity choose to limit AI development, or will we keep building at full speed?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "I think that there is no much way to limit the development. But at the same time, the limiting factor is already, right now, hardware. Chip manufacturing. And hardware is much lower in the way it develops. So we already will see a slowdown of development of VA in the nearest future. But at the same time... Yet it likely tenfold in the next five years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And the last question, I think I know the answer, but what's the most underrated move someone could make tomorrow to have more control over their life in 10 years?"
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Love yourself. Invest time in your development, for sure. It always was a good advice. Currently, it's actually much more important. No, no, it's like The world is changing and without actually educating yourself, you're losing a lot of opportunities."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I thought you were going to say, run a little data center. And say, oh, this is what I'm saying in different words. Thank you so much, guys. Thank you for being modern age philosophers and also for building something that's really exciting for this new age."
+    },
+    {
+      "speaker": "Daniil and David Liberman",
+      "text": "Thank you. Thank you for this great conversation."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "s-Iz-lLAhdg",
+      "thumbnail": "https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg",
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson"
+    },
+    {
+      "videoId": "fxIVCIoLOys",
+      "thumbnail": "https://img.youtube.com/vi/fxIVCIoLOys/hqdefault.jpg",
+      "title": "Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson"
+    }
+  ],
+  "topics": [],
+  "performer": {
+    "alternateName": "The Liberman Brothers"
+  }
+}

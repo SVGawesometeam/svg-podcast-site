@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Jenny Lei is the founder and CEO of Freja New York, a direct-to-consumer vegan leather handbag brand she launched in 2020 with an initial run of 300 bags. Born in China and raised largely in the United States, Jenny built Freja without a design background, leveraging years of e-commerce and dropshipping experience to scale the company to over $9 million in revenue. She secured an EB-1 visa through her entrepreneurial achievements and has grown Freja into a brand worn by high-profile celebrities and influencers worldwide.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -479,7 +491,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Your business makes over $10 million in revenue annually. I love New York. If I want to stay in this country, I need to make money. You're from China. Did you have a US passport by then?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Your business makes over $10 million in revenue annually. I love New York. If I want to stay in this country, I need to make money. You're from China. Did you have a US passport by then?</p>
             <p><strong class="speaker">Jenny Lei:</strong> I don't have a US passport.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, so you were still on a visa. I'm also trying to sell a work bag right before launch. Hey, we're live. Not a single person bought. Oh my goodness. But now Haley Bieber wearing one of our bags. And then I saw Amal wore your bag to court.</p>
             <p><strong class="speaker">Jenny Lei:</strong> It's a part of our story now.</p>
@@ -531,7 +543,6 @@
             <p><strong class="speaker">Jenny Lei:</strong> Have you ever thought of hiring a designer?</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> I have a creative director now that I hired, maybe like last summer. It's funny. I actually hired her to do some content for us when I first started, like 4 years ago. And I was thinking this past summer like, who was the perfect person? Belle. And I reached out and she was free and now she's our creative director. Now we work on designs together. It's really really helpful to have another pair of eyes with amazing and similar design sense to me.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Now, your business makes over $10 million in revenue annually. What has changed in terms of marketing? Are you still doing the paid ads? Are they still the number one source for you?</p>
-
             <p><strong class="speaker">Jenny Lei:</strong> Yeah, paid ads are bread and butter. I think we're always in customer acquisition mode because we're very small and a very young brand. Last year I started thinking like, okay, paid ads aren't going to work forever. Obviously they're working great now, but let's also start some other channels before we have to. I don't want to wait until it stops working. So we're investing heavily into influencer. I have a good program for that. UGC with influencers. And then throwing events and more collaborations, driving affiliate sales. Because I'm thinking like, I don't really buy things off ads. I buy things when I see someone I like wearing it, right? I don't really shop from ads. So we're really building that out. I also want to offer a lot of value to our customer. I think something that resonates really deeply with our customer is the backstory. It's the behind the scenes. It's the little design choices, why we're doing this, why we're doing that. It's my life, honestly. They want to hear what I'm up to every day. They like our newsletters—we send two a week. Tuesday is a bit more product focused and then Friday I'll just send what we call Jenny's journals. I'll just send like this is what I'm working on or this is what I've been thinking about. I was feeling a lot of imposter syndrome this week and this is how I walk through it. People really resonate with that.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> But you still avoid bright colors and like trends. Does it bother you like, oh, I'm not following the market. Where's the burgundy?</p>
             <p><strong class="speaker">Jenny Lei:</strong> No. I think a lot of my design decisions are—I am lazy. I don't want to think about seasonality. I don't really want to think about colors. I want everything to be sellable all year round. Also, I'm not a designer. I don't even know what rules I should be following. I look back at the first bag and as I designed it, I'm like, there's no way I would design it like that today. But it still sells, right? It still sells. I want to redesign it, but people like it. It's kind of a part of our story now. So I'm like, maybe I just leave that alone. It's really fun to see the progression.</p>
@@ -585,23 +596,28 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Thank you so much for having me. That was so fun.</p>
             <p><strong class="speaker">Jenny Lei:</strong> Awesome. That was great. That was my favorite podcast ever.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Oh, really? I love your questions. Thank you so much.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/PmpaFWBFy_c/" class="related-card">
                 <img src="https://img.youtube.com/vi/PmpaFWBFy_c/hqdefault.jpg" alt="Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt" loading="lazy">
                 <span class="related-title">Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt</span>
               </a>
+
               <a href="/episode/mtfB8GtJAWM/" class="related-card">
                 <img src="https://img.youtube.com/vi/mtfB8GtJAWM/hqdefault.jpg" alt="Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini" loading="lazy">
                 <span class="related-title">Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini</span>
               </a>
+
               <a href="/episode/RvYv90ftf2M/" class="related-card">
                 <img src="https://img.youtube.com/vi/RvYv90ftf2M/hqdefault.jpg" alt="$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro" loading="lazy">
                 <span class="related-title">$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro</span>
               </a>
+
               <a href="/episode/qNt5TNn9D9Y/" class="related-card">
                 <img src="https://img.youtube.com/vi/qNt5TNn9D9Y/hqdefault.jpg" alt="She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley" loading="lazy">
                 <span class="related-title">She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley</span>

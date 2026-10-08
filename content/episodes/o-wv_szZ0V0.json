@@ -1,0 +1,448 @@
+{
+  "videoId": "o-wv_szZ0V0",
+  "title": "Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think",
+  "format": "interview",
+  "guestName": "Andrew Ng",
+  "guestTitle": "Co-founder of Coursera · Founder of Google Brain · AI educator",
+  "aboutGuest": "Andrew Ng is the co-founder of Coursera, built the founding team at Google Brain, and has taught approximately 8 million people artificial intelligence through various educational platforms. He is recognized as one of the most influential voices in AI today and brings both deep technical expertise in machine learning and extensive experience in AI education to his analysis of the technology's real-world impact.",
+  "publishedAt": "2026-08-28T13:35:25.000Z",
+  "duration": "38 MIN",
+  "coverArt": "https://img.youtube.com/vi/o-wv_szZ0V0/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/o-wv_szZ0V0/maxresdefault.jpg",
+  "summary": "Andrew Ng challenges the prevailing narrative of AI doom that has dominated headlines, attributing much of the fear-mongering to a deliberate PR campaign by leading AI companies seeking favorable regulations. He argues that the \"job apocalypse\" narrative is fundamentally flawed: while AI may automate 30-40% of many jobs, the remaining 60% of human work becomes more valuable as an economic complement. Ng emphasizes that software engineering, the most AI-affected profession, has actually seen job openings increase, though developers must adapt their skills to leverage AI tools rather than resist them. He identifies a critical gap between university curriculum timelines and AI's rapid evolution—universities teach skills for 2022 when they should prepare students for 2028—and recommends new graduates supplement traditional education with online learning from platforms like Coursera and Deep Learning.AI to stay competitive.",
+  "keyTakeaways": [
+    "Fear-mongering about AI has been systematically amplified by leading AI companies over the past 2-3 years to create regulatory barriers that protect incumbents and stifle open-source alternatives, which is hurting American competitiveness rather than public safety.",
+    "AI will not cause mass joblessness; instead, it will shift which skills are valuable. Workers who use AI tools to automate routine tasks (30-40% of their work) while developing uniquely human capabilities (60-70%) will thrive, while those clinging to pre-ChatGPT workflows will struggle.",
+    "Software engineering job openings have increased despite AI's capability to write code, proving that AI complements rather than replaces skilled workers—but only those who actively use AI tools in their workflow.",
+    "Universities lag 2+ years behind AI innovation in curriculum development, creating a critical skills gap for new graduates; supplementing formal education with online courses in cutting-edge AI skills is now essential for competitive entry into the job market.",
+    "The biggest AI opportunity in 2026-27 isn't in model development but in building applications and workflows on top of existing models; hiring managers will prioritize candidates who can build with AI rather than simply use it."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Why AI Fear-Mongering Started"
+    },
+    {
+      "time": "2:12",
+      "seconds": 132,
+      "title": "The \"Job Apocalypse\" Myth"
+    },
+    {
+      "time": "4:26",
+      "seconds": 266,
+      "title": "Advice for New Grads in the AI Era"
+    },
+    {
+      "time": "11:59",
+      "seconds": 719,
+      "title": "Why AI Is Bad for Learning"
+    },
+    {
+      "time": "13:56",
+      "seconds": 836,
+      "title": "Inside LearnVector: Andrew's $100M Bet"
+    },
+    {
+      "time": "14:55",
+      "seconds": 895,
+      "title": "What to Study If AI Scares You"
+    },
+    {
+      "time": "23:57",
+      "seconds": 1437,
+      "title": "Is Your Financial Data Safe With AI?"
+    },
+    {
+      "time": "27:07",
+      "seconds": 1627,
+      "title": "Can Anyone Actually Control AI?"
+    },
+    {
+      "time": "30:44",
+      "seconds": 1844,
+      "title": "Raising Kids in the AI Era"
+    },
+    {
+      "time": "33:07",
+      "seconds": 1987,
+      "title": "Best AI Opportunities to Build in 2027"
+    },
+    {
+      "time": "36:11",
+      "seconds": 2171,
+      "title": "When Will We Actually Reach AGI?"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Andrew Ng",
+      "text": "There's been a lot of misinformation about AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Andrew. He co-founded Google Brain and Coursera. His machine learning course has reached millions of learners, and he is one of the most influential voices in AI today."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "So a handful of leading AI companies have been very loud voices of fear-mongering around AI? To try to get regulations passed, this drumbeat of fear based messaging has skewed societal's perception to be really negative on AI?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "People talk to me about data centers and job loss."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Maybe AI could do 30, 40% of many jobs. And what that means is, well, that 60% that the human does has become even more valuable."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about loss of human control over AI?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I think about something else that we can't control."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think you're one of the voices in AI who comes with a huge background and machine learning and teaching AI, and also your positive voice, because this is something that I've been seeing especially this summer, how poor lives the society has become, especially on social media when I'm posting about AI and people talk to me about data centers and job loss. Why do you think this wave started recently? What do you think the causes are?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "There's been a lot of misinformation about AI, and the root cause of a lot of this is an unfortunate attempt that started two, three years ago of I think PR and regulatory capture. It turns out that one of the most valuable things in AI right now is the giant AI models, giant large language models that some places have trained, but if you spend billions of dollars training a model, it's really inconvenient if someone else trains a model and wants to give it to anyone in the world to use for free."
+    },
+    {
+      "speaker": null,
+      "text": "So a handful of leading AI companies, I think as you know, have been very loud voices, fear-mongering around AI to try to get regulations passed, to create an unfair playing field that favors incumbents so that we all have to pay a high toll for use of AI while stymieing the other teams, be it researchers or other companies that wanna just give away open weight to open source models that anyone could use much cheaper. Unfortunately, fear mongering works on when you go and say AI is like nuclear weapons, which is an analogy that has no basis in fact, what do they have to even do with each other? Or when you go around and cherry pick cases of AI, making a misstep and make it much bigger than it is. Or even spread misinformation about how AI uses data centers, uses a lot more water than the actual reality. This drum beat of fear-based messaging has skewed societal's perception to be really negative on AI."
+    },
+    {
+      "speaker": null,
+      "text": "Which is unfortunate because this is slowing down American adoption in AI. This is making America less competitive. And unless we get the truth about AI out there, which is that it's fantastic benefit with some problems, but not nearly the degree to which they're blown up to be, it will hurt individuals."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm going to read out some of the problems that people are highlighting, job loss and inequality."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "What do you think? The job apocalypse, the job pocalypse, this idea that AI will take over 50% of jobs, people will be out of work, rotting in the streets, that's just not going to happen. With every wave of technology, including AI, the skills we need to do great work shifts. And so AI is changing job professions. But boy, I wish AI just doesn't work well enough. I know that handful of businesses want to hype up AI to say We have super intelligence, or we have artificial intelligence, or whatever, and can do all the stuff that humans do. I wish AI worked better. We're just not good enough to make AI do everything a human does. And if you look at the analysis of jobs, economists, like my friend Erik Brynjolfsson at Stanford, Andy McAfee at MIT, economists have analyzed many people's jobs by breaking it down into individual tasks. And maybe AI could do 30, 40% of many jobs."
+    },
+    {
+      "speaker": null,
+      "text": "And what that means is, well, that 60% that the human does has become even more valuable because it's called an economic compliment to the 30, 40% is now cheaper. And so what will happen is people that use AI, maybe people that used AI will replace people that don't use AI. But AI is not in a position for the vast majority of jobs to replace people. Of all the different professions, the one that's most affected by AI now is software engineering because AI is actually fantastic at writing code. And what we see is that the number of job openings in software engineering is up, contrary to what, you know, the doom-mongers would say, right? AI is now actually able to replace software engineers and all the good software engineers I know are busier than ever. Now the flip side of it is If someone still write code, like this 2022 before ChatGPT, they're in trouble, they need new skills."
+    },
+    {
+      "speaker": null,
+      "text": "Like don't do stuff that 30, 40% AI can automate. You've got to stop doing that, let AI do that. But then gain your skills to do the other 60, 70% that AI cannot do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would your advice be to new graduates? Because I talked to Eric on this podcast, and he was talking about that there is not really a lot of impact on the job market, except for, I think he mentioned, people from 18 to 25 who just graduated. What would be your advice to those people who don't have the expertise maybe to strategize in their job yet? They can only do manual work that AI can do as well."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "So one real challenge for fresh college grads is that the university system is slow to adapt. And so, you know, I love academia, I think we should all support academia and universities. And when AI comes and transforms the way software is written, universities often take like a year or two for the faculty to master skills, then create new courses, get curriculum committee approval, whatever, get the faculty senate to vote. It just takes years and that speed of change in academia is very poorly matched to the speed of changing AI. So sadly, many universities are still teaching students to be ready for the jobs of 2022 when we shouldn't even be teaching them for the job of 2026, we should be teaching for the drops of 2028 and beyond. And what this means is the job openings are there. Tons of employers I know just can't find enough skill, you know, people at any level of seniority."
+    },
+    {
+      "speaker": null,
+      "text": "But it turns out in my office right now, we have a lot of interns. There are current college students, fresh college grad, we also have one high school intern, and they're amazing and productive. But the key is they're all very AI native. They all use AI tools to do the things that I could do, but then also, you know, lean in to doing the things that humans can do that AI can't for a long time. So there's plenty of work for people to do."
+    },
+    {
+      "speaker": null,
+      "text": "But so my advice to fresh college graduates or the people currently in college is, By all means, work hard in classes, get good grades, learn from the instructors, but to the extent that there's still additional skills the university has not yet adapted to teaching, then find other ways to learn online, be it from Coursera or deeplearning.ai or Udemy or other places where you can gain the more cutting-edge skills, especially AI skills, that universities have not yet worked on the curricula."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Quick pause because what Andrew just said about workflows connects to something that HubSpot just put out for free. The thing is the real opportunity right now is not just in the models themselves, but in what you build on top of them, how you turn AI from a chat window into workflows that actually do work for you. And the good news is you don't have to start by building a full agent. You can start much simpler. With better prompts. Hubspot just released the advanced ChatGPT prompt engineering playbook and the idea is very simple. In seven days, it helps you move from getting generic AI answers to building prompts that give you much more consistent and useful options. Because we've all had this moment. You type in one vague sentence, get something mediocre back, and then spend the next 20 minutes fixing it yourself. This playbook is basically built for that exact problem. And it walks you through a single progression."
+    },
+    {
+      "speaker": null,
+      "text": "First, you learn how to structure prompts with things like role, context, format, and parameters. Then it gets more advanced. Few shot examples, chain of thought reasoning, more precise prompt structures, and ways to make outputs more reliable. What I like is that it doesn't stop at individual prompts. It also shows you how to build reusable AI personas, modular prompt components, and eventually your own signature prompt engineering system. So instead of starting from scratch every time, you're building a repeatable way to work with AI, whether you're creating content, analyzing data, or making business decisions. The playbook is free, links in the description. Thanks to Hopspot for sponsoring this video. And now back to our conversation with Andrew."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I want to say one other thing. Um, it turns out one, if you look at the skill map changes, one of the most important changes is, um, it's so much easier to build with AI than before. When something becomes much easier, a lot more people should do it. And so now not only should professional software engineers build software with AI is becoming much easier for everyone to build. With AI and people that embrace that and do so. Will be more productive and will accomplish more. And I think have more fun than the ones that don't. And AI lets you build really fast. So for people that are not just software engineers, but marketers, recruiters, HR professionals, operations specialists, I think if they learn to build with AI, they'll really just do much more whatever the job role is."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you, by the way, measure the increase in productivity when you deploy AI? Do you have like a KPI in your company?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I wish that it was a simple answer. I find that the business outcome of AI is more a function of the business than a function of the AI. For some, it may be an increase in customer growth and retention, or maybe a faster to serve customers, or it would be increased accuracy in some tasks. So the KPIs tend to be related to the business rather than the AI"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you can't like directly measure just AI, because it's an interesting thing to do because we've been deploying AI actively in my company. And I think for me as a media company, it's probably the amount of views, the output. It's just interesting how different people measure, even revenue, like if you're becoming more effective with how you make money."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Actually, how are you using AI in your business?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh my god. So first of all, we have Claude for all of us, and we have certain projects for every social media that we're on. So for example, for this podcast, we had a project that's called Guests, and it knows all the analytics from previous guests, and has certain criteria on which we rank every single person who comes to the podcast, whether he or she's cited, whether they have a certain opinion on AI, whether they've been active with AI in their company, or if they're a recent founder in AI. So it gives them different weights, and it comes up with a grade based out of 40. 40 meaning tier one, 30 meaning tier three, et cetera. And then we have another one that analyzes every single podcast and gives me tips on how to ask questions. Same for Instagram, same for LinkedIn. It has my tone of voice, personal dossier, my business strategy."
+    },
+    {
+      "speaker": null,
+      "text": "So whenever it writes something, it knows all the facts about me, how I sound. Every social media is run by a person. So a person makes a strategic call. And by the way, if you can give me feedback on this, if I can improve. So what I'm working on right now is closing the loop because sometimes they send me a text and I'm like, oh, we need to change this, this and that. But that happens in a chat in Telegram. And we have this feedback. We have a bot that scans all of our chats. But I really want AI to be able to learn continuously from this feedback to just know my taste better."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "There's one thing I see a lot in AI, which is, it turns out for AI's data scientists or AI's brainstorming partner, it often comes up with one or two good ideas, two or three mediocre ones, and four atrocious ones. And sometimes you wonder, how could my AI have thought that could even be a plausible idea? And to me, this relates to the job-pocalypse point of view, which is that for a long time, humans, you, me, everyone watching this, will have a significant context advantage over AI, which is that you know something that's incredibly obvious to you that that was an awful idea, but the AI did not. And it turns out that one of the reasons why AI will not replace our jobs or whatever a large percentage of the time soon is because humans have a massive context advantage compared to AI."
+    },
+    {
+      "speaker": null,
+      "text": "We know so much that from our years of experience that we talk to customer, we saw the funny facial expression that told us, ah, they don't like this. Or we talked to business or our manager said, hey, blah, blah blah, I really care about this. And so it turns out that almost all humans, well maybe all humans just know a lot of stuff that the plumbing does not exist and I don't think exists for the foreseeable future for AI to get. I know sometimes people talk about the importance of human judgment or human taste. Some people wonder, all right, what is taste? Is this fuzzy thing? But to me, the technical thing that underlies why humans have better judgment and better taste in AI is this context advantage."
+    },
+    {
+      "speaker": null,
+      "text": "And because this is a long-term advantage, like no one's gonna solve this in a few years, this is why we just need a lot more humans with that judgment and taste to keep on complimenting the AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And doesn't this make education even more important? Because education gives us context. This is another thing I'm hearing about AI, like you won't need education because all the information is at your fingertips. You just ask ChatGPT. But when you say context and taste for me, that's years of acquiring knowledge and learning from the best and seeing how they perform versus just asking a chat."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I'm going to say something that may be controversial. I don't know if I've said this publicly, but I think it's true, which is frankly, AI models are terrible for learning. I know people think AI is wonderful at getting things done. Use it all the time, love it. But all the data that's coming out is that when, say, college students use AI, we know this. It's just the studies now back up as well, so we also have numbers, but the data is very clear. Students go higher on homeworks when they use AI. Yay, higher homework schools. But retention, their long-term performance is much worse because their AI do the work for them. More and more studies are coming out to back this up now that I think people think, oh, it turns out, you know, I think Wikipedia is a wonderful tool. It has tons of facts. Web search is a a wonderful tools, tons of fact."
+    },
+    {
+      "speaker": null,
+      "text": "But it turns that when you ask AI to do work for you, you are cognitive offloading to AI, which is great, because that's how society moves forward and gets work done. But human retention is much worse. It's just so clear that LLMs, as they are most commonly used, are terrible for learning. I'm not saying there's no way to use it in a way that is good for learning, I think there are ways to use that are good for learning, but even for myself, there's so many things that are also AI model over the last, you know, six months or whatever, like, I don't know. Building some project, how does this front-end, back-end component work, whatever. Give me the answer, get the job done. It was fantastic. But six months later, I don't remember the answer. When I need to redo that front-and back-and component, I ask the AI again. So data is really clear. We should stop thinking of AI as hopeful for learning."
+    },
+    {
+      "speaker": null,
+      "text": "At least the vast majority of ways that the vast of majority of people are using AI models today is absolutely terrible for learning"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But you're building a company helping solve that, right? Because the one-to-one tutoring with AI is that where you just announced with a $100 million investment from Coursera."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Yes, so I'm excited about leading a new organization called Learn Vector that is focused on building new learning experiences that is much more one-to-one than one-to-many. So 15 years ago, I was privileged to participate in the online causes movement that I think changed the way a lot of people learn. But that was and still remains largely a one-to-many experience where everyone kind of watches the same video, which is actually okay. It actually works well. But the technology now exists to create much more personalized, customized one-to-one experiences. And so our team is working hard on that. I think we'll have a lot more to show by early next year. When I think about human skill development, I feel like because AI has so heavily impacted software engineering, what we see happening in the job market for software engineering is a harbinger or a forerunner of what we'll see in other disciplines as well."
+    },
+    {
+      "speaker": null,
+      "text": "And in software engineering, people need to learn new skills, but when they do, they are thriving and creating more value and frankly getting raises and doing even more exciting projects. And what I'm seeing the early signs of in other disciplines as well, for example, in software engine, most developers like front-end, back-end developers have now become full stack developers because of AI Hub, you could take on broader scope. I'm seen early signs of this in other disciples as well where For example, someone that in marketing, that did marketing coordination, coordinated marketing campaigns, with AI help, they can now become more of a full cycle marketer and take on a broader scope. And I'm seeing, you know, frankly, sources and recruiting become more full cycle to end to end recruiting. So now the good news and bad news is for people to step up to these broader roles, you do need to learn AI skills. But also it's not just learning AI."
+    },
+    {
+      "speaker": null,
+      "text": "You also need to learn these other skills, like how do you do the other parts of marketing of recruiting or software engineering or AI engineering. So I think this actually creates a heavy need, a big need for people to gain new skills, but when they do, which is both AI skills, but also disciplinary skills, then they can do much more, hopefully have more fun, work on more exciting projects, hopefully get paid more as well. And one reason I kind of worry about the fear-mongering is, I got an email from someone that was about to enter college, and he emailed me saying, hey, Andrew, taking online courses, but I'm really struggling with what I should major in college because in four years, won't AI do all this and everything I learn will be obsolete? And the answer is no, of course it won't all be obsolete."
+    },
+    {
+      "speaker": null,
+      "text": "But when we keep on pushing these fear messages, we make people wonder if they will even be relevant, and it makes people not lean in to gain these skills. They'll put them in a much better position. So I see very clearly that these fear-mongering messages are distorting how many people, including high school students, college students, fresh grads, think about the economy. And frankly, making people give up is one of the worst things we've been doing in this era when people that lean in will thrive."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Andrew has taught over 8 million people AI. He started teaching machine learning online back in 2011, years before the current AI boom. Now one of the companies he's building is focused on AI agents. From the way that it sounds, it can still feel way too technical. So I put together a step-by-step guide to building your first AI agent with no coding required. It walks you through what to automate, how to set it up, and how to make it actually useful. It is in my newsletter this week. The newsletter is called Future Proof. It's free. Link is in the description. What would you reply back to that email that somebody sent you? What would say is the best major to study now, to thrive in AI era? Do you think it's like going deep into a niche or just broader computer science so that you can acquire AI skills really fast?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I don't know what's the best major. There are awful lot of great majors. It's like, um, I kind of feel like what's the best job in the world is like, what's the best measure in the world? That's something that you love, right? Yeah. My daughter wants to be an astronaut. I don't t know if she can major in becoming an astronaut, I have to think about that. When she gets older, she may change her mind. I see so many opportunities, um across, across so many job roles, it all seems very exciting to me, but do learn AI, do learn to build with AI. The other thing that my teams have been working on an AI engineering skills map to try to map out the most important skills for AI engineering."
+    },
+    {
+      "speaker": null,
+      "text": "One thing that I felt intuitively, but I was surprised to see it show up in the data was that a lot more job descriptions seem to be saying that they want people that demonstrate a very high sense of agency. Because it turns out with AI, there are a lot of more opportunities for individuals to spot problems and go build something or do something to go solve it. So I think we're really evolving. Well, we've long been evolving, but we're acerbating past the era where people sit around and wait for their boss to tell them what to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is what I've been feeling a lot, especially when we started doing remote work. I want people to be entrepreneurs within their niche. Like if you're helping me with LinkedIn, you're an entrepreneur there. You can hire more contractors, you can deploy different tools, you make the strategic decision whether this topic is good or not. Shall we proceed with it? I really think, and tell me if you agree with me, we're moving into that job market where everyone is kind of independent in their workplace."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I think people will have much more autonomy and creativity. So I agree with that. And I'd even go one step further, which is I talked to a lot of people, engineers and others in large companies that tell me that their manager tells them to stay in their swim lane. They'll say, oh, I have this creative idea, but the manager says, no, and they should have focused on this one thing, frankly, often because their manager's career depends on it. But I feel like the number of opportunities for people to spot things outside their swimlane and then in a responsible way explore how to get it done. That feels very exciting to me. And I think that in the future, the businesses that serve a culture that encourage people to learn AI, build fast, responsibly, talk to customers would drive a lot more value than the more hierarchical silo organizations."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it starts with hiring the right people and then nurturing this in your organization. When you say learn how to use AI and become proficient with AI, can you give me some benchmarks like of a person who's like say marketer, knowledge worker, advanced with AI? What are you looking for when you're interviewing this person?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I'm pretty sure my team's ahead of the curve. All of my marketers know how to code. So as part of how I interview marketers, we asked them what they've built and if they have not built any software."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If it's a dashboard, is it good or bad? Like is it too basic or?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Dashboards, again, my team's pretty, you know, somewhat ahead of the curve."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Mine was good to hear like that."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "All of my marketers have built much less of these things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like what? To me?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Oh, I feel like, um, I don't know, the other day, uh, one of our, someone on the marketing team was talking about the tools that he had built to, uh when he's considering writing an article on something, it will crawl the web, find related work, has a custom desktop app, actually build a desktop app that runs on his Mac to, um highlight related articles for him. Then you can chat to the whole system, navigate, you know, the thing he's writing as well as the related work and hear the large dashboard for trolling the internet to highlight to him exciting things that are popping up. Now even on my team, I think that Markla is ahead of the curve."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But that's great to hear. Any other interesting use cases that will inspire people to build something similar?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Let's see, maybe my finance team uses AI extensively. So I think one of my CFOs realized that, you know, her team was spending hours every week clicking through documents, open this, copy, paste this number here. And so she started building automation strips that runs on a routine that automatically opens files, checks what's in there, checks for consistency, highlights her team if there's something. If there's something they need to be paying attention to, if a new document has showed up. So, I find that rather than waiting around for an engineer to do the work for them, the team's ability to kind of, not just build dashboards, but build kind of a data management infrastructures. They can adjust data, alert them if something's happening. I think my finance and marketing teams are doing that. My recruiting team, well, we actually have recruiting engineers, which are really professional engineers that sit in a recruiting team that are building very sophisticated tools for recruiting."
+    },
+    {
+      "speaker": null,
+      "text": "And this is actually the other trend. I think marketers, recruiters, HR professionals, office people should all learn AI. But the other thing is when you take an engineer and embed them in these teams, then that further accelerates what you can do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We do the same. We start with something basic, build it ourselves, then we hit the wall, an engineer comes in, we build it further."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Frankly, when you look at not just software engineers, but recruiting engineers, marketing engineers, HR engineers, I think there's so much valuable engineering work that can now be done. I'm just, you know, not worried about running out of... Frankly, all my friends were so busy. We think, boy, how could we run out of engineering jobs?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, there are so many cool ideas you can experiment on, but you touched up on something that is actually one of the fears when we talk about like financial information, how much you're giving to AI. So I gave my perplexity permission to scan my Fidelity account so it can track my portfolio, tell me when to rebalance, it doesn't do anything on my behalf, but it has access. Do you think there is any problem with that?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "This is complicated. I think AI and privacy is a complex area. And it depends a lot on the company that you are sharing your data with. So for example, I trust all the hyperscalers to really 100% follow their terms of service and to do what they say. My personal opinion, not giving legal business advice, but I'd be shocked if... You know, the largest hyperscalers publish the terms of service with some privacy notice. And if they reach that, because that'd be not the culture, it'd be so damaging of the long-term business model. Now that's on the largest hyper-scaler side. If you look at the AI company side, there's been, you know at least one company that I won't name that seems to occasionally change the terms of service. And if you're using it, you go to the website so you pop up, hey, we changed the terms of service to retain your data or train your data."
+    },
+    {
+      "speaker": null,
+      "text": "If you aren't paying attention then click the wrong button. Then they suddenly gave themselves permission to access your data in a way that I'm not that comfortable with. I feel like I handle some sensitive information. So then I tend to be very careful with the businesses that I just don't feel the culture and the DNA, and frankly, the long-term business model is as tight to protecting individual user privacy than the hyperscalers. And I see businesses get this as well. For example, one of my teams, AI Aspire, We work with very large corporations, including banks, with incredibly sensitive financial data. And as you can imagine, AI Aspire and our clients do not willingly share, you know, really sensitive, often material non-public information, right, MNPI, with frontier labs without really careful thinking about the guardrails in privacy. So I think it's complicated."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So trusting hyperscalers, but also another thing that you can do, you can download an open source model and just run it on your computer and then it just stays on your."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Yeah. Yes. I think, yes, it turns out a lot of banks will actually run, um, the things in, uh, you know, like a virtual private call or on-prem. So they, so it never even leaves their control. But I think for individuals, for the very sense of things, um uh, I sometimes run a local model and it's been interesting with the open weight models. So the latest open weight models are approaching frontier capability and that are, you know actually small enough. They're actually really good models. Now they can run on."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, the one from Meta, right? The recent one."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Oh yes, Llama is a good model, and I'm thinking also the latest version of Qwen is also very good. But I think frankly these models change every other week, so I think the best practice is to not get stuck on one, but keep on trying new models."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically, when there is a situation that you don't trust anyone, you run a local model. And this is how you keep your data safe."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I do trust the hyperscalers, but sometimes for literally MNPI, material non-public information, that I won't even send to that. I just can't even sent that to the cloud. So that I'll either do it manually without AI help, or if I really need to use AI, then really carefully only use a local model."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. Okay, this is an interesting one. Okay. What about loss of human control over AI? Because I've talked to Yoshua Bengio, who is very negative when it comes to free AI without any regulation. And he painted me some very scary pictures of AI taking over control because We basically, the whole scenario is. We can't control something that's smarter than us, and if AI gets smarter and smarter, where do we end up? What do you think about that?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "I think about something else that we can't control, which is airplanes. No one can build an airplane that you can fly perfectly. Winds will buff it around. And then, candidly, in the early days of developing airplanes, some airplanes crashed and people died, and it was tragic and awful. But through the early lessons learned, we then learned to control airplanes better and better so that today we can mostly get in an airplane and not fear too much. For lies. And it's really like that too of AI. No one can perfectly control AI because it generates tokens or outputs that are a little bit random, so we don't really know what exactly it'll do. But as we run them, and you know, there's been a small number of mishaps, which is unfortunate, and some number of mishaps have done some real damage."
+    },
+    {
+      "speaker": null,
+      "text": "But the way we engineer almost any system, from an airplane to electric circuits to Now AI is carefully grow their capabilities so that we can have a controlled environment in which to measure what's wrong and then to shape it, to make sure we can control it well enough that it behaves responsibly and safely. And to this day, we can't perfectly control any airplane and we will never perfectly control AI either. But I think we are certainly controlling them well enough that this loss of control doesn't feel like science, if it's a science fiction. Yeah, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about deep fakes?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Deepfakes are a problem. Well, one of the most disgusting things I've ever seen or heard of is non-consensual, intimate deepfake imagery. Oh, I'm really glad that, you know, U.S. Congress has been moving to, right, let's pass laws, get rid of that. Penalties for that. I'm just, I think there's some really problematic uses of AI that we should outlaw, heavily penalize. Let's just get rid that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think about children and social connection when it comes to AI, with kids using more of AI? Because we've seen social media, how there are people who are dumb-scrolling all day. And my daughter, who is five years old now, whenever I don't have an answer, is like, ask ChatGPT. And like, who's that person? I'm like, I don't know. Ask ChatGPT. And like she thinks ChatGPT knows everything. What would you say about kids' future with AI?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "First, I think kids have a bright future. It's such an exciting time to be a child to grow up in this environment with tools that none of us ever had before. At the same time, we've seen that social media, I think social media has probably been blamed a bit more than it deserves, but it does deserve blame, has kind of not been great for kids. I actually worry a lot about, it's a wonderful tool, but AI damaging learning is something I worry a long about. So it turns out, of a five year old and a seven year old. When I teach them math, they're so young enough that I can basically, you know, not let them use the calculator, can say, how do you multiply these numbers? And I don't give them a calculator and practice that with them."
+    },
+    {
+      "speaker": null,
+      "text": "But as they're a little bit older, I worry a lot about students using cognitive offloading to AI in a way that damages the long-term learning retention. But then at the same time, oh, I actually built an app. I did not like any of the, you now, free online learning types of things, so I actually build my own. To have my daughter learn to type and I'm hoping that she's actually getting pretty decent now for a seven year old. Oh, so she's seven year-old? Oh yeah. She actually typed all the lowercase letters. She's a little bit fit, you know, not her shift uppercase letters a little but not quite there. But I think that this unlocks, you now, responsible adult supervised use of online tools and I think it's really tricky, you know."
+    },
+    {
+      "speaker": null,
+      "text": "I think I'm Adult supervised use of digital tools seems a great thing for kids, but too many adults don't have time to supervise the use of the tools, and then the incentives of, say, social media, right, to do funny things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Has to be the right incentive when it comes to AI. Okay, you mentioned, we talked about the fears, we talked how you can improve your work with AI. Can you name some of the biggest opportunities in AI in 2026 for people who want to build?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "For an individual that wants to build, I don't think it's one size fits all. But because the cost of building has plummeted, I encourage people to learn AI, build fast, and talk to customers. I find myself building things, I donno, every week, every weekend, because I or someone on our team will have some problem and I have some idea for building some AI thing. To automated. Last weekend, I was using a frontier model to analyze a lot of our key business metrics because I didn't have time to do it myself. But it was kind of measuring, you know, deep endized key business metrics. And I didn t have time go find a data scientist to go work me on it. So I just did a variety of frontier models, being really careful on their data retention policies."
+    },
+    {
+      "speaker": null,
+      "text": "I did not use models with data retention policy that I don't like in order to analyze data, but, and then I find that What's happened with AI is the cost of building has plummeted. And so the challenge is shifting to deciding what to build, which I was calling, which I've been calling the product management bottleneck. And so people, founders, engineers, product managers, they can talk to customers, get a sense for the taste of judgment on what to bill and then build with AI and iterate quickly. I think there's just a ton of exciting things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you've been starting so many companies. You're like, when I looked at your portfolio, do you think for beginners, when you said you built something during the weekend, how do you decide what to focus on? Or you can pursue multiple ideas because of AI now, and you can just be, you know, playing in different companies at the same time."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "It turns out building a company is still really, really hard. And so there's a lot to be said for a single-threaded leadership or someone that's fully focused on just one thing. I find that over a weekend, I can often build an own wrapper, build a simple application, but I wish it was that easy to build a large company. I find it building something meaningful often takes either real technical depth and or deep customer insight and integration of customers. And Yes, we can now use AI to code something in a few hours, but that's a small piece of the puzzle. So spending time understanding the technical complexity and building the really complex software that takes us like months, maybe years, or having that deep, cuspid insight to decide what to build, that also just takes a lot. Talking to people, reading facial expressions, surveys, doing that over and over until we figure out what to built."
+    },
+    {
+      "speaker": null,
+      "text": "And so I think it's sometimes a lot of value to. Sampling widely, but then having that focus for an individual to go really deep in the couple sectors, that still seems important for building a business."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "My last question, I know it's we don't have much time, but I wanted to ask you about AGI just because people use this word so much and some people say, I think Jensen Huang said we already reached AGI. You said it's decades away. What's the one criteria when you're going to say we reach AGI?"
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "So different people say we reach AGI at different times because of different definitions of AGI. The definition I'm most familiar with is AI that could do any intellectual tasks that a human can. But so the human brain can take, say, five years to study and do a PhD thesis. And so can AI write a PhD Thesis? Or a human learn to drive a truck through a dense rainforest with tens of minutes of practice. So when can AI... Do that, to drive a new environment with tens of minutes of practice, it feels like there's a long list of these things that AI cannot do for what feels to me decades. I hope it's only decades. Maybe it will turn out to be longer. So that's what I think for that definition of AI or AGI. AGI is still very far away. But it turns out because of economic consensus, I think OpenAI and Microsoft had an agreement."
+    },
+    {
+      "speaker": null,
+      "text": "There's actually been me go shit now so that's gone away but open AI had economic incentive to try to declare reaching AGI earlier. And so it turns out that if you come up with other definitions of AI, depending on how far you lower the bar, then you could totally have reached AGI already, or even 30 years ago, depending on how you want to define it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, true. Andrew, thank you so much for this positive conversation, very applicable. I like when you watch something and then you go and you measure yourself against what people are doing with AI, look at your process, and maybe expand it. So thank you so much, for showing what your team is doing. And thank you for your insights."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Yeah, I think given the huge benefits of AI to come, I hope whoever's watching this is motivated to really go learn AI, apply it, and even to go build some things."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford Economist on the Best and Worst Decade in History"
+    },
+    {
+      "videoId": "Y854KRfONAU",
+      "thumbnail": "https://img.youtube.com/vi/Y854KRfONAU/hqdefault.jpg",
+      "title": "The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up"
+    },
+    {
+      "videoId": "xiJsfvaxzRY",
+      "thumbnail": "https://img.youtube.com/vi/xiJsfvaxzRY/hqdefault.jpg",
+      "title": "$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000786527866"
+  }
+}

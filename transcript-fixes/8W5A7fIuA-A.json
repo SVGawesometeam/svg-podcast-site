@@ -1,0 +1,11 @@
+{
+  "videoId": "8W5A7fIuA-A",
+  "repairs": [
+    {
+      "date": "2026-10-08",
+      "what": "The meta description and og:description read \"I Spent property=\\\"og:description\\\" content=\\\"...\" because the title contains a dollar amount; they are now derived from the intact <title> again.",
+      "cause": "Same replace-pattern bug as the transcript repairs, applied to the head.",
+      "confirmedBy": "mechanical; the <title> element on the same page was never affected"
+    }
+  ]
+}

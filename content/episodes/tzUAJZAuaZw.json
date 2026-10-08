@@ -1,0 +1,499 @@
+{
+  "videoId": "tzUAJZAuaZw",
+  "title": "Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company",
+  "format": "interview",
+  "guestName": "Raj Gokal",
+  "guestTitle": "Co-Founder, Solana",
+  "aboutGuest": "Raj Gokal is the co-founder of Solana, a high-performance blockchain platform with a peak valuation exceeding $83 billion. Before Solana, he spent nearly a decade founding and co-founding companies in the health-tech space, including roles at Omada Health. He is known for his focus on rebuilding large, regulated industries through decentralized technology.",
+  "publishedAt": "2024-11-07T14:04:00.000Z",
+  "duration": "60 MIN",
+  "coverArt": "https://img.youtube.com/vi/tzUAJZAuaZw/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/tzUAJZAuaZw/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Raj Gokal, co-founder of Solana, about the mindset and decisions that led him to build one of the world's most valuable blockchain platforms. Raj shares his journey from failed health-tech startups to discovering crypto, finding co-founder Anatoly Yakovenko, and giving the Solana project just 6 months before committing fully. The conversation also covers Solana's growth strategy, the crypto device Saga, NFTs as audience engagement tools, and the emerging concept of DePIN.",
+  "keyTakeaways": [
+    "Co-founder relationship is the single most important factor in starting a company — Raj left his first startup (a glucose sensor company acquired by One Drop) partly due to a misaligned partnership dynamic.",
+    "Raj spent 6 years in health-tech before pivoting to crypto, concluding that healthcare incumbents like insurance companies and the FDA are too powerful to disrupt quickly without the backing of a company like Apple or Google.",
+    "He gave co-founder Anatoly Yakovenko only 6 months to prove Solana's concept before fully committing — a deliberate, risk-managed approach to joining a new venture.",
+    "Crypto's global nature diversifies regulatory and market risk: when the US clamps down, markets like Korea, Dubai, Singapore, and London compete to attract crypto startups.",
+    "Solana's daily trading volume runs between $1–3 billion, and the network's valuation reached $83 billion, built on the thesis that removing financial intermediaries with peer-to-peer technology is far faster than rebuilding regulated industries like healthcare."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Meet Raj Gokal"
+    },
+    {
+      "time": "02:00",
+      "seconds": 120,
+      "title": "“Having a really good co-founder relationship is the most important part of starting companies”"
+    },
+    {
+      "time": "04:29",
+      "seconds": 269,
+      "title": "The smart journal for personal growth"
+    },
+    {
+      "time": "05:40",
+      "seconds": 340,
+      "title": "How did he get into crypto?"
+    },
+    {
+      "time": "07:55",
+      "seconds": 475,
+      "title": "“Any really important innovation is very volatile at first”"
+    },
+    {
+      "time": "08:52",
+      "seconds": 532,
+      "title": "What helps Raj keep going in the face of constant instability?"
+    },
+    {
+      "time": "10:33",
+      "seconds": 633,
+      "title": "“The belief that Bitcoin is valuable is a fundamental property of the asset”"
+    },
+    {
+      "time": "14:55",
+      "seconds": 895,
+      "title": "How did he start working with Solana?"
+    },
+    {
+      "time": "18:42",
+      "seconds": 1122,
+      "title": "How did he find his co-founder, Anatoly Yakovenko?"
+    },
+    {
+      "time": "23:58",
+      "seconds": 1438,
+      "title": "“I gave Anatoly 6 months”"
+    },
+    {
+      "time": "29:28",
+      "seconds": 1768,
+      "title": "How does Solana grow capital?"
+    },
+    {
+      "time": "35:03",
+      "seconds": 2103,
+      "title": "What is Raj’s role at Solana now?"
+    },
+    {
+      "time": "36:06",
+      "seconds": 2166,
+      "title": "“Tokens are just spam prevention”"
+    },
+    {
+      "time": "38:27",
+      "seconds": 2307,
+      "title": "What is crypto device Saga?"
+    },
+    {
+      "time": "40:16",
+      "seconds": 2416,
+      "title": "Why was Saga created?"
+    },
+    {
+      "time": "43:40",
+      "seconds": 2620,
+      "title": "How can NFTs become a new way to communicate with an audience? Could this become a business?"
+    },
+    {
+      "time": "48:29",
+      "seconds": 2909,
+      "title": "What is DePIN?"
+    },
+    {
+      "time": "50:02",
+      "seconds": 3002,
+      "title": "How can you use this in business?"
+    },
+    {
+      "time": "54:49",
+      "seconds": 3289,
+      "title": "What was the toughest moment for Raj while he was building Solana?"
+    },
+    {
+      "time": "58:21",
+      "seconds": 3501,
+      "title": "Raj’s most important commitment"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I would be in San Francisco in Silicon Valley in the technology industry starting companies over and over and over until something really worked. Having a really good co-founder relationship is the most important part of starting companies. I spent a year starting like nine companies."
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "How did you decide when to give up on the idea? I did not say to myself I'm going to go spend the next 10 years working on this with Anatoli. What I said is I'll give Solana six months. How do you feel about that? I love roller coasters. I love diversity of experience in life. I like experiencing the highs and lows. I don't even list all the companies that I have started on there because most of them were failures. I think that was always my commitment to myself—that I would be in San Francisco in Silicon Valley in the technology industry starting companies over and over and over until something really worked."
+    },
+    {
+      "speaker": null,
+      "text": "My journey started with the first company I started in my very early twenties with one of my very good friends from college. We started a glucose sensor company for consumers and athletes. It didn't get all the way to market, but it got acquired by a company called One Drop, and that was the beginning of my journey."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In your first company, you got acquired?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Yes. My co-founder really did all of the work. I left before the acquisition because it was going to be a long slog. I think one of the big learnings I had is that having a really good co-founder relationship is maybe the most important part of starting companies. To me, it's all about the journey together. I would never see myself being a solo co-founder. Ashwin, my co-founder there, led that company for another I think six years after I left, and he got it acquired. Hopefully that technology will see the light of day soon."
+    },
+    {
+      "speaker": null,
+      "text": "The other learning there was just that in a very regulated industry, if you're going to rebuild a critical part of the stack, you should be very aware of how valuable your product is and when you're going to run up against the forces that tend to want to keep things the same."
+    },
+    {
+      "speaker": null,
+      "text": "I spent the next six years afterward in healthtech. I was at a company called Omada Health, where Anatoli was actually on the board, and that was where I started to learn about crypto. But in all the companies in healthtech that I started and helped co-found and was part of the founding teams, what I noticed was that the health plans, the insurance companies in the US, and the regulators—mainly the FDA—were extremely risk averse. They hold all the keys. Nothing gets paid for and nothing gets to market without the approval of a very small set of very powerful decision makers."
+    },
+    {
+      "speaker": null,
+      "text": "I always wanted to try and rebuild industries like healthcare or finance or education—these big regulated industries with giant incumbents that had kind of avoided, through one way or another, getting completely blindsided and rebuilt with technology. That's what I think is some of the biggest opportunities in the next 20 to 50 years—rebuilding those industries."
+    },
+    {
+      "speaker": null,
+      "text": "What I realized about healthcare was just that the incumbents are incredibly powerful, and there's not really a quick way to displace those incumbents. I think now you start to see things like Apple making a lot of the sensor tech that unlocks data that unlocks insights more as a consumer purchasing decision instead of a health plan purchasing decision. The cracks are showing, but it takes a large company like Apple or Amazon or Google, who's doing Verily, to start to actually attack that industry."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "A lot of people ask how did you get into crypto?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "I think crypto, conceptually, is rebuilding finance without having to go through a very regulated system. It's a very regulated industry, so you're switching from one very regulated industry to another. But a lot of existing regulation in finance was written with intermediaries in mind. The idea is that there's no such thing as peer-to-peer lending that regulation cares about—there's only lending that we care about when there's an intermediary, which is called a bank, that facilitates that lending."
+    },
+    {
+      "speaker": null,
+      "text": "The fact that finance is built around intermediaries and that's what is being removed in crypto is what unlocks the ability for crypto to rebuild that industry much faster than healthcare can be rebuilt right now. You can't deliver care without a doctor in healthcare or without somebody who's a licensed professional. That may change over time, but we're not quite there yet. In finance, we have the ability to have a peer-to-peer relationship, remove that intermediary, and replace them with technology. It's a lot harder for those big incumbent forces to decide what gets used or not. At the end of the day, if people want something like crypto, if they want to trade tokens or NFTs, they can. There's no stopping it."
+    },
+    {
+      "speaker": null,
+      "text": "Also, crypto is global. It immediately became a global phenomenon. Everybody in every country uses crypto. The regulatory risk, legal risk, and market risk all get much more diversified. When crypto's dead in the US, it can be huge in Korea. If the US government is not interested in facilitating crypto startups and allowing them to flourish, Dubai, Abu Dhabi, Singapore, and London—all these other places will compete on creating a better regulatory environment."
+    },
+    {
+      "speaker": null,
+      "text": "I think crypto in that way—a lot of people think that it's being held back or the world isn't ready for it—I love it. I think it's moving super fast relative to something like healthcare innovation in the US."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But when you entered the market, healthcare is pretty much stable, right? Yes, it's very regulated, but it's stable. You know, we see it growing, et cetera. With crypto, it's just up and down. I think the first time we met, the first question I asked you was how do you mentally handle that? Did you think about it going into the industry, and how has it been so far?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "I think any really important innovation is very volatile at first when it enters the market, and as it proliferates—I mean, you know, in the internet boom, the dot-com boom and bust was very volatile, right? People who had built a lot of expertise and skills in very hard trade work, learning how to develop software, getting funding, building giant teams, building headquarters—all of that got wiped away when the bubble burst."
+    },
+    {
+      "speaker": null,
+      "text": "I think anything that's important inherently comes with a lot of great speculative energy that overheats the space and then it dissipates. I almost think that the more valuable it is, the more transformative it is, the more those bubbles and bursts will come. And I think the world's also just getting faster, right? It's easier to get to 100 million users of a thing now than it was ten years ago or ten years prior."
+    },
+    {
+      "speaker": null,
+      "text": "If you look at the curve of adoption of electricity and light bulbs, telephones, the internet, mobile, and now crypto and AI, the curves are just getting much steeper. You can get to 100 million or a billion users much faster. So I think that speculation and that excitement is actually justified because these things can transform our lives very quickly. But in the moment, in the three or four years of doing a startup within that very volatile, long-term trajectory, it can feel pretty up and down. It has."
+    },
+    {
+      "speaker": null,
+      "text": "I think I always tell myself—when I go through something like that—this is why I got into it. I love roller coasters. I love diversity of experience in life. I like experiencing the highs and lows. I think it's a lot of fun to see what remains constant through those great highs and great lows because that's where you start to see truths about what it is you're building and what's valuable and what you're going to be doing twenty years from now. That's often hard to zero in on in a fast-changing world."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, but like also with crypto, my concern is—for example, if I'm building something in crypto, a lot of the ups and downs actually depend on people believing in it, right? Because sometimes, okay, we have fundamental factors, but here I feel like for crypto, belief is a fundamental factor. And in the era of social media, if somebody starts saying \"oh, let's just sell Bitcoin, it's a scam,\" and like the whole crypto industry goes down, how do you feel about that? Because with the medical industry, it was still stable. Healthcare has been around for hundreds of years, so it's different. I want to understand your mindset around that."
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "That's a good point. I think for something like Bitcoin, belief that it's valuable is a fundamental property of that asset. Bitcoin is the bellwether asset for all of crypto—it's the oldest, it's the one that established the idea that decentralized ledgers could exist at all."
+    },
+    {
+      "speaker": null,
+      "text": "So if you're thinking about the store of value use case—belief that a digital asset that isn't backed by a physical asset or a government is a very important property for that thing to retain its value and become more stable—I would argue that we're past the point of Bitcoin being on a shaky foundation of belief with humans."
+    },
+    {
+      "speaker": null,
+      "text": "Two, you see institutions who are the stewards of capital for less sophisticated people. You see ETFs being filed and approved from big institutions like BlackRock. And you see that they're not just doing that as a small feature. Actually, the CEO of BlackRock goes on Bloomberg all the time and talks about what he understands to be the value in something like Bitcoin."
+    },
+    {
+      "speaker": null,
+      "text": "Three, governments right now—El Salvador and others—are starting to think about Bitcoin as something like a non-state-backed currency that they can treat as legal tender. Three years before that, in 2017, 2016, back to 2014, it was basically a crazy idea. Like, nobody really thought it would work six or seven years ago. Where we're at now is I think the onus is on the non-believers to prove what's going to shake this thing off course, because it's kind of been through everything."
+    },
+    {
+      "speaker": null,
+      "text": "For the store of value use case, belief is important because it's just value. I mean, gold is a multi-trillion-dollar asset for that reason. Art is stored somewhere you don't see it. I think my belief is that Bitcoin has solidly crossed the chasm into that class of store of value. Store of value is very mature in its adoption curve."
+    },
+    {
+      "speaker": null,
+      "text": "I think payments is immature with end consumers, but you know, we see Visa using Solana for settlement between banks and merchants and issuers using Solana and using USDC on Solana. That's a large institution with great opportunity cost, with a great technical team, who looks at the state of the technology and bets, independent of the market cycles, that the future of settlement will happen on these rails. They're starting to build it."
+    },
+    {
+      "speaker": null,
+      "text": "You see the same thing with Stripe, who just restarted their crypto payments acceptance. John Collison demoed Solana USDC on stage, and it was instant. For them, the speed and reliability of a network like Solana was very important."
+    },
+    {
+      "speaker": null,
+      "text": "So in payments, that's starting to happen. In all the other use cases, I think there's a lot of volatility, but what makes me really happy is that, similar to the 1995 to 2005 window of internet adoption, it was never just one thing, right? It was important to get your email address because generally that would be your username and it would be a way that you access a lot of different services. But every month, every quarter, there was always something different. And then it emerged over time—the main ways that a billion people would want to use that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You joined—or you started—Solana when it was still not obvious?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Yes, that's right. So in 2017, 2018, where were we at? Basically, Ethereum had proven that beyond store of value, you could have a programmable layer for decentralized applications of any type to run on—not just a decentralized ledger, but really like a decentralized database. That was a super new, novel concept."
+    },
+    {
+      "speaker": null,
+      "text": "But CryptoKitties hit tens of thousands of users on Ethereum, and the gas fees started to go way up and the latency was very high. It was an incredible accomplishment to build what they built, and it's still underpinning this giant on-chain economy. But it was clear that if the scale was being stress tested and sort of cracking at the seams at that level, then we needed to explore very different options for scaling blockchain."
+    },
+    {
+      "speaker": null,
+      "text": "It was clear that every path for scaling would be funded and explored because investors understood, users understood, the media understood, that this thing really had a chance, but it was largely infrastructure bottlenecked. A lot of infrastructure got funded. Solana's approach was our belief that sharding—splitting these networks into many networks that interoperate in order to scale—should be the last thing we do to scale blockchain. The first thing we should do is parallelize transaction processing and create a shared source of time across the network that doesn't require trusting a centralized entity to coordinate messaging. So you could have a high throughput, non-sharded, single global state machine that would scale with Moore's law."
+    },
+    {
+      "speaker": null,
+      "text": "Our bet was let's just go build the thing we know would be designed today, given what we know about the limitations of Ethereum scalability. Let's build with Moore's law in mind, assuming that hardware is going to get cheaper over time—which it has—and let's build it from scratch, just optimizing in every single engineering decision for performance. So that if there's some high-performance thing that comes up that people really need—the most scalable, the most fast, the most cheap blockchain—we'll have the best thing for that."
+    },
+    {
+      "speaker": null,
+      "text": "We didn't really have many opinions about what that would be. I think at the time, there were a lot of writings and podcasts, and it was just information overload about how the world could be changed with blockchain. It's like being in the mid-nineties and trying to imagine YouTube, Uber, and Instacart. It's useful to dream, but more importantly, what gets built first? What unlocks that thing getting built? How do you give that thing a predictable path to scale as soon as it starts to work?"
+    },
+    {
+      "speaker": null,
+      "text": "Because if something works, we've seen this in technology—it can go from 30,000 to 30 million to three billion users very quickly. So you want to be in an environment where you're not scale-constrained. CryptoKitties could have become a three-million-user application in six months, like maybe, right? But it became clearly cost-prohibitive to participate in. So our bet was like, let's just focus on scale and hope that the use cases come. And then what we found is they came very quickly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you talk about the idea itself? Who came up with this idea? Did you have background understanding whatever you're telling right now? If you were like in medical startups, right, can you talk about that transition and how did you find your co-founders?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Yeah, so the idea really has to completely go to Anatoli, because Anatoli's whole career was in scaling distributed systems. How did I meet him? So at Omada, there was a guy named Eric Williams who was a former particle physicist, and he ran data science when I ran product management. We found a very good, almost co-founder relationship within that company where we worked very closely together. We were probably working 100 hours a week. We had teams that we formed, so it felt like a startup within a startup, and we worked very well together."
+    },
+    {
+      "speaker": null,
+      "text": "When I left Omada to start a new company—Omada was company number two, and I was early but not a co-founder—I then spent a year starting like nine companies. That's nine companies in a year. That's like a whole other story, but all of it was within healthtech."
+    },
+    {
+      "speaker": null,
+      "text": "One question to that year, because I feel it's very important for people who are watching—how did you decide when to give up on the idea?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Great question. So my approach was, at first, it was very thematic and it was outcome-driven. I wanted to create a product within healthtech that would reach product-market fit quickly, be capital-efficient, raise as little money as possible, deliver some value that was newly technically possible, and then be able to expand the product offering from there to rebuild other parts of the stack in healthcare. Otherwise, I wasn't interested. I didn't want to make a product that made a billion dollars and then you sell it and then no health outcomes are changed. For me, it was healthcare is super broken—we have to find the wedge to rebuild it."
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Yeah, so I get it. One was ambition, right? Did I see that possibility on a reasonable time frame within any product that I started and built? Number two was the team, right? So how do you find the right person for this?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You know, all my time in Silicon Valley was spent, and in college really, my whole life—all I was doing was meeting people and evaluating whether we could build something together, right? And then if it wasn't them, did they know somebody? I would—for me, finding a co-founder is like looking for a life partner, right? You're always looking. You can't not be looking. And you know, that's how you expose yourself to more luck."
+    },
+    {
+      "speaker": null,
+      "text": "So I had engineers that I had worked with, people that I went to college with, people that they knew, people I met over coffee. I was always starting from somewhere. What's the one thing we can experiment with? Can we hack on a weekend? Can we build an MVP of this product? Can we just hack on something on the weekends that is not even the product we want to work on, just to see if we work well together, right?"
+    },
+    {
+      "speaker": null,
+      "text": "It's sort of like—I think musicians in studios sometimes are constantly having people come in and out to see if their style matches. Because, again, to me, that style match, if you're going to go through this crazy roller coaster that you couldn't possibly foresee what you're about to go through together, the match is really important."
+    },
+    {
+      "speaker": null,
+      "text": "So within the year, I hit a point where I said I'm done here with this class of ideas and the same co-founders—no, it was many different teams. Yeah, many different teams. I probably worked with 30 people differently. Did you launch them simultaneously? No, no. I had a whiteboard with kind of like a kanban board of filtering from ideas to what was actually being built to what I got into like co-founder negotiations with people at, you know, where we're talking about equity split and how much money we raise and planning out our life together."
+    },
+    {
+      "speaker": null,
+      "text": "I probably hit three or four of those where I just realized I don't feel like I can do this for the next five or ten years with this person. None of them felt the same as when Eric—the particle physicist—told me you have to start spending time with Anatoli. The next time I heard about him was Eric just saying, like, Anatoli thinks he might want to get into crypto and he thinks scalability is a big problem and he thinks he knows how to solve it and he can't stop thinking about it and you need to talk to him."
+    },
+    {
+      "speaker": null,
+      "text": "So I started having coffee with Anatoli, and you know, the realization I had was: okay, first of all, remember Anatoli was on the board of Omada. He had left to start Earn.co. And many of the engineers that I had worked with over the years had jumped into the Ethereum ecosystem or were like all they wanted to do at night was work on crypto stuff."
+    },
+    {
+      "speaker": null,
+      "text": "I had been following, and I had been investing a little bit—not enough to make real money—but my big question was: is this a technology that's going to be impactful on a twenty-year timeline or a ten-year timeline? Or is it ready for prime time? And as I talked to Anatoli, what I realized, and what he did a great job of convincing everyone of, was that scalability was the main problem with this distributed system. We had solved it before. We solved it in wireless networks. We solved it in the internet. We solved it in data centers. The principles for scaling these distributed systems are not novel."
+    },
+    {
+      "speaker": null,
+      "text": "I did not say to myself I'm going to go spend the next ten years working on this with Anatoli. What I said is I'll give Anatoli six months, because I think he is capable of doing this on his own, but I want to make sure he gets fundraising done correctly. I know how to do that. I want to make sure he hires the right first five or ten people. I know how to do that."
+    },
+    {
+      "speaker": null,
+      "text": "I think you know, as important as the co-founder relationship is, the founding team and the first ten people you hire is incredibly important. I think of it like writing DNA. You're basically designing what the thousand-person organization is going to look like when you hire the first ten, because they'll hire the next ten, that hire ten each, and then it happens before you ever thought it could happen so quickly."
+    },
+    {
+      "speaker": null,
+      "text": "I've seen it before. I've seen how the DNA of a company and a team can go off track, it can get conflicted. Those early decisions are very important. So I just said I'll give Anatoli six months of my time fulltime. I'm just going to dive all the way in. I really just want to see this vision that he has of this architecture see the light of day. If I'm confident it'll see the light of day, then I'll come back to the healthtech stuff. I'll think about what I really want to start and I'll look at things that are more thematic around outcomes that I care about that I'd been spending my time around."
+    },
+    {
+      "speaker": null,
+      "text": "I think that was partially just my way of convincing myself to make such a big switch so quickly as well, right? It was not actually that big of a commitment from what I'm hearing. You're basically deciding on whether to participate in an idea or not—first of all the idea itself, but second the team. And it's actually the most important, right? That's why you switched ideas."
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "I think that was a big mental switch for me. I decided that it was more important to spend my time with someone that I knew I worked well with and that I knew was probably the best in the world for the problem at hand—whatever the problem was—rather than focusing on the problem and trying to assemble the best team for that."
+    },
+    {
+      "speaker": null,
+      "text": "So you're basically the business person, right? You take someone who's very deep into a topic and you do the business part—hiring, fundraising, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, so that. And that's your role in Solana. It was six years ago now. It's a totally different role. I think I wear many different hats. Can you explain the whole structure? Because you have Solana Labs, you have Solana Foundation. How does this structure work for a person who's coming from a standard business background? Like the ownership—what? Like, the money, the valuation that's traded on the market is different from the company's valuation, right? Can you explain that a little bit?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Yeah, so keep in mind the gold standard here is Bitcoin, right? Bitcoin doesn't have a central foundation or planning organization. It's completely community-driven. Satoshi is or was a person or a group of people—we don't even know—and that identity has now disappeared. You just don't hear from Satoshi."
+    },
+    {
+      "speaker": null,
+      "text": "I think an important component of crypto networks is that they eventually become something like a complete public good, like the internet. There's nobody who cares about what companies are maintaining the internet. They're out there somewhere, and they have less power than everyone else that's building on and using and contributing to the internet as a public good."
+    },
+    {
+      "speaker": null,
+      "text": "So I'd say we're very far along on that roadmap for even Solana at this point. Ethereum is similar, but the organizations that Anatoli and I started were Solana Labs and Solana Foundation. Solana at this point, they're very small—dozens of people. People leave all the time to go start new companies on top of the network."
+    },
+    {
+      "speaker": null,
+      "text": "Solana Labs focuses on building products, mostly on top of the Solana network. It started by building reference implementations for DeFi borrowing and lending protocols, AMM protocols—the types of things that people would trade and participate in finance using it. It also built Metaplex, which is the NFT protocol that underpins all the NFT marketplaces that are now all multi-billion dollar businesses."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How does this company get paid?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "So it launches these products and it takes a very small percentage of ownership as if it were like an investor in those products. And again, it's a very small team, so it doesn't need to make that much money. But I'm trying to understand—so you start Solana, for example, right? So you basically take some coins to operate. They grow, and this is how you grow your capital—is that correct? Or if people invest in you, the investment itself—they buy Solana? They don't just give you money? Because I'm confused, because if we're talking about Satoshi, right, if they're raising money, like how does that happen?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Right, well. You know, I think there was a big shift. So when Ethereum launched and it launched its ICO, people were able to buy ETH. That was the foundational model for a lot of startups like that. Yeah. After that, you know, it became clear that that would not be okay in the US. You can't just sell tokens in an open market to anybody, you know, whether or not they're accredited."
+    },
+    {
+      "speaker": null,
+      "text": "That year was crazy. Yeah, everybody did an ICO, right?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Right, so we, you know, we started in a time when you had to be much more cautious, much more compliant. So the financings in the early days were sales of Solana, and it was through SAFTs. Those were tokens that were held back in the genesis block when the network was created. It was very small. The first funding round was $20 million, and many of the other networks had raised hundreds of millions of dollars through their token sales."
+    },
+    {
+      "speaker": null,
+      "text": "But it was all through accredited investors in the US and offshore. So there were a lot of protections put in place to stay compliant on that front. But you know, it is different from a centralized business because we don't—these organizations don't—take fees from the network, right? Just building products on top of the network is profitable enough to keep a good group of engineers."
+    },
+    {
+      "speaker": null,
+      "text": "So basically, you build the world, you're building something in that world, you're making money with something you're building in that world?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, yeah, that's right. And I, you know, again, I think there's a world where the network can build all the products that it needs, the ecosystem can build all the products that it needs, and there's very little expertise that that original group of developers can have that out-competes, you know, the world of developers that are building on the network. If that's the case, like, Solana Labs just goes away. Same with Solana Foundation, right?"
+    },
+    {
+      "speaker": null,
+      "text": "It is—you know, it manages a treasury of Solana tokens. The main focus for Solana Foundation is just improving the decentralization and censorship resistance of the network. So tokens are delegated to new validators who can't necessarily compete in this group of many thousands of validators competing for stake. You know, it helps to have a little bit of a boost when you get started. So the Solana Foundation delegation program does that delegation, and then pulls the stake away as these validators get more mature."
+    },
+    {
+      "speaker": null,
+      "text": "So the foundation—I think in the long term—has its scope decrease over time, and it really focuses on these foundational things that are sort of hundred-year problems. In the interim, there are things that the foundation can do that it's very difficult for any other actor in the ecosystem to do."
+    },
+    {
+      "speaker": null,
+      "text": "For example, if Visa is asking about the design of the network and they have a team of engineers kicking the tires and they want their questions answered, they're going to want to come to some of the people who built the network. And we're not in a phase yet—I hope we'll get there relatively soon—where Visa doesn't have to talk to anybody to build on Solana."
+    },
+    {
+      "speaker": null,
+      "text": "I think we're actually there—or may be there this year—because I see a lot of things like PayPal just started issuing their stablecoin on Solana. The Stripe integration—like I don't, that just happened, right? People just know how to build on the network now the same way they know how to interact with email protocol or Internet protocol."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So do you get anything from those projects? No, no. So they're just independent, and if they talk to you, that's just basically—you just explain how it works, that's it?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "I think there are opportunities for these organizations to make a lot more money than they do, but that's not the focus. You know, because if there's a profit motive to extract value from the network, that's a business that somebody else could be running. It's more of a public good. It's more of an equal, fair playing field if those businesses actually start and do those things as independent companies."
+    },
+    {
+      "speaker": null,
+      "text": "So you want to see many companies, see the world grow. You don't want to just extract profit from it because it hurts growth?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I think it's about contributing to the network being as diverse and self-sustaining and self-growing as possible. And again, I think it's very hard to see what parts of the ecosystem aren't growing on their own at this point. You know, most of the time when people ask what did you do to make X happen, I tell them well, I learned about X the same way that you did through the press or through Twitter. And that's a cool feeling—that means that it's very organic, it's happening on its own."
+    },
+    {
+      "speaker": null,
+      "text": "What's your role right now?"
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "Yeah, so I'm on the board of the Solana Foundation, and I am president at Solana Labs. So Anatoli and I spend our time at Solana Labs mostly, focusing on new products like, for example, we launched Saga, the mobile device, and there's a followup to that coming. There's a bunch of products that we just work on, building and delivering to the market at Solana Labs. And then Solana Foundation, you know, it has a really great team, so I check in with that team from a board level. But I'm not part of the day-to-day operations at Foundation."
+    },
+    {
+      "speaker": null,
+      "text": "But you're the co-founder, right? Formally. And how can you say what's the stake or how is it even defined in a company like this? Do you get Solanas as a founder?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, so we—the founders, the founding team—got some. This is all public, it's on the blockchain, right? But the founders, the founding team, got some tokens. This is to be able to compensate the team that contributed to building the network. And I think the same is true of a lot of open-source software, operating systems. You know, people build software sometimes just because it's useful and they want it to be used and they want it to solve a problem."
+    },
+    {
+      "speaker": null,
+      "text": "In crypto, tokens are useful because these are protocols that manage and govern real-world value that is tradable for real money and assets, which means they are at risk. There's an opportunity to gain a lot of value if you can game that system in some way. So one way to think about tokens is that they are simply a spam prevention mechanism. You can't just access this protocol for free because that means you would do all the things you can do for free with a protocol that might want to—they might game it, you would spam it, and you would try to DOS it. There are all these things you can do to manipulate the protocol if it's completely free."
+    },
+    {
+      "speaker": null,
+      "text": "So you need some mechanism to be able to pay for access to that protocol, and that's one way to think about what tokens are—it's just spam prevention. It's like if email cost one one-thousandth of a cent to send an email, well, what company would you go to to pay them? There's not a company. You have to have a mechanism for paying a protocol to use it."
+    },
+    {
+      "speaker": null,
+      "text": "A lot of people who designed the early internet and were part of early companies like Marc Andreessen at Netscape say that if we could go back, we would have some form of value and spam resistance and the ability to pay to use open protocols. It would probably look something like crypto if we had thought about the second and third-order effects of not having that thing. It is new, and I think the way that companies start tends to be a bit of a mind shift for somebody that's used to startups with equity and stuff. But I would just think about it more as like how do you build open-source software that's spam resistant. And I don't think anybody serious is really thinking too much about exits and stuff."
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "The Saga was the first device that we launched. That one is sort of a higher-end device. You know, it's made of titanium—before the iPhone was made of titanium—it was designed by the lead architect of the iPad Pro. So a really sort of higher-end crypto device that had no restrictions on NFTs or tokens."
+    },
+    {
+      "speaker": null,
+      "text": "So in the App Store, you know, today as a developer, you can't really launch anything you want using crypto. It's actually very restrictive. And the App Store fee model of thirty percent of digital content doesn't really work if I create an NFT and want to sell it to you. I don't want to pay a thirty percent fee. You don't want thirty percent to go to Apple. This is a peer-to-peer relationship."
+    },
+    {
+      "speaker": null,
+      "text": "So a lot of the models for things that we've seen on desktop in crypto don't work well in the Apple App Store or the Google Play Store. Turns out a lot of people are fine with that in the US. So twenty thousand—yeah, there were twenty thousand Sagas ever produced. They all sold out within about two days in late 2023."
+    },
+    {
+      "speaker": null,
+      "text": "And what we've seen is you know, there are crypto power users who, if they're in the US and they're primarily using an Apple phone, they will carry two phones. A lot of people use it for work. They use it for trading. They use it to sign transactions for things that are really time-sensitive."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This isn't really a phone. Do people use it for calling at all? I don't know. We don't have track analytics or anything like that, but I know that I've called people and they said they were on their Saga. So it works for phone calls. It's an Android phone."
+    },
+    {
+      "speaker": "Raj Gokal",
+      "text": "But I feel like that use case will be like, yeah, transactions, yeah. And you know, Ledger also has launched like an e-ink display that's a more, you know, configurable interface for interacting with transaction signing. But they're less focused on that thing coming with you everywhere you go. What we see with Solana across the board—if you look at like NFT traders on slower networks."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "JqcK4b3wRGU",
+      "thumbnail": "https://img.youtube.com/vi/JqcK4b3wRGU/hqdefault.jpg",
+      "title": "How I Made $50,000 on My Airbnb in 6 Months"
+    },
+    {
+      "videoId": "VHiyfK06n1c",
+      "thumbnail": "https://img.youtube.com/vi/VHiyfK06n1c/hqdefault.jpg",
+      "title": "How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)"
+    },
+    {
+      "videoId": "3cs09XQ6cb0",
+      "thumbnail": "https://img.youtube.com/vi/3cs09XQ6cb0/hqdefault.jpg",
+      "title": "The Future of Work: High-Paying Careers That AI Won't Replace"
+    },
+    {
+      "videoId": "czItVEAINqw",
+      "thumbnail": "https://img.youtube.com/vi/czItVEAINqw/hqdefault.jpg",
+      "title": "$1.3B AI CEO: \"You ONLY Need 2 People and 90 Days to Build a $1M Business\" | Higgsfield Founder Alex Mashrabov"
+    }
+  ],
+  "topics": []
+}

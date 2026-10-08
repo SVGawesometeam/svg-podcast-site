@@ -1,0 +1,767 @@
+{
+  "videoId": "GDeEATJcbJo",
+  "title": "Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn",
+  "format": "interview",
+  "guestName": "Luis von Ahn",
+  "guestTitle": "Co-founder & CEO, Duolingo",
+  "aboutGuest": "",
+  "publishedAt": "2026-04-10T15:00:29.000Z",
+  "duration": "45 MIN",
+  "coverArt": "https://img.youtube.com/vi/GDeEATJcbJo/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/GDeEATJcbJo/maxresdefault.jpg",
+  "summary": "",
+  "keyTakeaways": [],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Duo showed up uninvited"
+    },
+    {
+      "time": "01:07",
+      "seconds": 67,
+      "title": "Can you still get hired without AI skills?"
+    },
+    {
+      "time": "04:03",
+      "seconds": 243,
+      "title": "Why everyone should start vibe coding"
+    },
+    {
+      "time": "05:06",
+      "seconds": 306,
+      "title": "How 2 non-coders built Duolingo's newest product"
+    },
+    {
+      "time": "08:25",
+      "seconds": 505,
+      "title": "The exact steps to start your AI business in 2026"
+    },
+    {
+      "time": "10:36",
+      "seconds": 636,
+      "title": "Where AI actually fails — real internal data"
+    },
+    {
+      "time": "12:30",
+      "seconds": 750,
+      "title": "Did AI make Duolingo 10x more productive? Honest answer"
+    },
+    {
+      "time": "15:21",
+      "seconds": 921,
+      "title": "How the Duolingo founder actually uses AI"
+    },
+    {
+      "time": "16:10",
+      "seconds": 970,
+      "title": "Will AI kill the need to learn languages?"
+    },
+    {
+      "time": "19:22",
+      "seconds": 1162,
+      "title": "Marina and Luis got the same investor rejection"
+    },
+    {
+      "time": "20:19",
+      "seconds": 1219,
+      "title": "Can anyone build their own app in 2026?"
+    },
+    {
+      "time": "22:57",
+      "seconds": 1377,
+      "title": "\"We have never done a layoff\" — the full story"
+    },
+    {
+      "time": "25:21",
+      "seconds": 1521,
+      "title": "No regrets on the 82% stock crash"
+    },
+    {
+      "time": "28:20",
+      "seconds": 1700,
+      "title": "Why your metrics shouldn't define your worth"
+    },
+    {
+      "time": "31:40",
+      "seconds": 1900,
+      "title": "Don't know where to start with AI? Watch this"
+    },
+    {
+      "time": "33:00",
+      "seconds": 1980,
+      "title": "The one thing Luis is actually nervous about"
+    },
+    {
+      "time": "34:24",
+      "seconds": 2064,
+      "title": "Blitz: which jobs survive AI and which don't"
+    },
+    {
+      "time": "39:46",
+      "seconds": 2386,
+      "title": "What business would Luis start in 2026?"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Hey guys, welcome to Silicon Valley Girl. We are about to interview the founder of Duolingo. No, no, no. No, do not you. No. No Do we have the actual founder? Hi. Hi. Hello. Your employees are getting a little creative."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "We pay that guy and he has his own personality, he just does what he wants. AI is not gonna take your job. Somebody using AI is gonna take you job."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Luis Von Ahn, CEO of Duolingo. Recently, two of his employees built a ches. S course with AI in six months. No engineering background, no knowledge of the subject. It became the fastest growing course in the company. There are a lot of rumors that large companies fire people and they say it's AI."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "We have never done a layoff. Despite what the internet may think, it is important to continue hiring people because a single employee is just way more productive now than they used to be."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm going to name five professions and you're going to make some predictions. Gone in five years or not going anywhere."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "There will be fewer and fewer."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You told your team that nobody gets hired unless Team Proof's AI can do the work first. Can you tell me how you actually track that as a founder?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Our goal here is to use AI to benefit our users. Internally, we have this golden rule. We're only going to use a AI to benefit our learners. Some people may imagine that, you know, some companies may be firing people and having AI do their job. That's not what we're doing whatsoever. Our team has gotten significantly better at using AI over the last couple of years. And that has allowed us to do a lot more. It has allowed to put out a lot more content, a lot more learning content, et cetera. We, as a management team, are not necessarily tracking, like, oh, are you doing something that AI can do or not? We're just really trying to tell everyone, try to be as efficient as possible with AI and our employees are doing that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you give me some of the best examples for someone who's watching this and they're like, okay, my manager tells me to start using AI, but I have no idea how to do it? Do you have, like, best case examples."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "It depends on what your job role is. I think most of our engineers have basically really changed their workflows. They're using AI coding tools. A lot of our product managers, what they've decided to do is using AI to make prototypes of things. So the product manager may not be implementing the thing in the full production app, but rather than coming to us with a written document, they come with a prototype. Now, that's— way better because it allows for much better decision making. So if somebody comes to me with a written proposal and says, you know, I'm going to do a way to teach Spanish better. It's hard for me to know what that actually means, but if they just show me the prototype and I can see that it really does seem to teach spanish better, it's much easier to give approval to that type of thing. So it depends a lot in the role."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you give them any guidance? Like, okay, instead of doing this, do that next time? Or how do they even find out they can do these things with AI?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "We try to do some things in the whole company to try to, you know, we had, for example, a few months ago, we had a day where everybody in the company had to vibe code something, not just engineers, every single person, people from, you know HR, people, from the finance team, everybody had to Vibe code something. So everybody could see the power of it. We also have a lot of documentation about best practices, but generally people here. In Duolingo are pretty smart. They're always finding new things. And I think what happens is rather than management telling them what to do, they tell each other what to there. We have a lot of Slack channels. You know, one of them is called Best AI Practices."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm sorry."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "And so people are just saying stuff. We also have another one that's called AI Fails, which is all the times, all the things that people try. That's such a great one. It is an incredible thing, very empowering for people. They're like, oh my God, I made, you know, usually they're very small apps, but it's like I made an app. One of the things that has happened inside this company is, everybody has made their own dashboard. It's 100%."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For their KPIs or something? Yeah, for whatever."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "For whatever it is, whatever it is they're tracking. I mean, I see a few product managers that have vibe coded a whole thing with like our users in every country and what they're doing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's super impressive. And is that how you track AI proficiency? Cause now it's part of performance reviews, right? At Duolingo."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "For a while, it was part of performance reviews. We decided not to do it, and I'll tell you why. I sent a memo to the company that said part of your performance review is going to be usage of AI. And we found that people were, I don't know if they were doing that, but they were kind of asking, do you just want us to use AI for AI's sake? And at the end, we backtrack, and we said, no. Look, the most important thing in your performance is that you are doing whatever your job is as well as possible. A lot of times AI can help you with that. But if it can't, I'm not gonna force you to do that. So I think we backtrack from that because it really, it felt like rather than being held accountable for the actual outcome, we're trying to just push something that in some cases did not fit."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "] Did it give you more ideas to add more courses that are non-language related?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah, it's given us a lot of ideas. We're not, we're not yet working on other stuff, but we have a long list of things that we, you know, we want to teach all kinds of things, K through 12 science. We want to, again, we are not yet working on that. We want teach K through 12 science, we wanna teach how to draw, there's all kinds of things but at the moment we're not really working on them because we want to continue working on chess, math, music and languages."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But then any employee can just go and wipe code. One of these courses and show you, and maybe they'll make it to the end. Yeah, that's right."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah, that's what I tell the company by the way. A lot of times people come to me and they're like, what course are you going to add next? And you know, one of the things I tell them is I wanted to add K through 12 science and then we added math. I wanted to add k through 12 signs and then, we added music. I want it to add k through twelve signs and we added chess. At this point, I also want to add K through twelve science, but it turns out that what people do here is somebody comes up with a really good idea and if it's good and they are passionate about it, we let them do it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, they do it. Let's go back to the actually the AI failure chat. Can you recall any examples of AI actually failing in a task?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Oh, yeah. I mean, there's a lot of things where it's failing. I'll tell you the biggest one, which I think we're starting to see a difference here, but it wasn't the case a year ago. If you were to look at Twitter and just read what people are saying on Twitter, two years ago, I should have fired all our engineers. Because on Twitter they're like, AI is better at coding than engineers. For the last two years, this is what they've been saying on twitter. And it was an interesting thing, because I would come here and I would not really see a speed up on engineering. And I'm like, well, what's the disconnect by it? There's all these people saying that AI is better at coding than humans. And the reality is, it's not yet the case that AI is better coding than human."
+    },
+    {
+      "speaker": null,
+      "text": "I think you still really need engineers, and you're going to need them for a long time, I think. But we've just seen a lot of cases where you tell the AI to program something, and sometimes it works. But the other, I don't know what fraction of time it doesn't work. But when it doesn' work, there's a real problem in that because you don't really know what it did, It's really hard to debug it. And that's kind of what has happened that you get into the happy path is really fast. Okay, it worked, but the unhappy path makes it so that it takes so long that you end up spending more effort on that than the time you saved on the other thing. So we've seen that quite a bit. We've also seen AI not be able to generate things like narrative, like stories. Sometimes it does a good job."
+    },
+    {
+      "speaker": null,
+      "text": "Sometimes it doesn't do a great job. And it just comes up with things that don't make any sense. You know, it's interesting because when you see a demo. And you ask it to come up with a story, somehow those demos always look amazing. But then when you try to come up with 100 stories, you realize that only like 30 are good and the other seven are."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So human still needs to check and select."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "All check yeah yeah all our content needs to be there there's a lot of steps to try to either check it or spot check it, or something to make sure that the quality is high."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if we compare today and a year ago, how much more productive the company is with AI?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I don't know, it's more in pockets. And I don't know if any larger company that has seen like a 10x speed up."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I don't think so. I think start-ups really see it because when you're a one-person team, then you can work straight."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "How one person can do a lot of stuff with a larger company, it's harder. It just turns out, for example, most engineers don't spend. Eight hours a day coding, they have to go to meetings. They have to, so there's a part of it that you just cannot speed up. Then there's the part that they spend coding. Okay. Maybe you can speed that up, but you cannot speed it up. At least at the moment, you cannot beat it up by a thousand X. You can just maybe, I don't know, a little faster. Yeah. So overall we're not seeing. Like we're putting out 10 times as many features, we're not. We're seeing some speed ups here and there in different pockets of the company. But again, it's what you said."
+    },
+    {
+      "speaker": null,
+      "text": "One person companies are a lot faster, but it's because you don't have to interface with all the other parts of the companies, et cetera. Also AI is not as good with existing code bases rather than with a brand new code base."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We've been talking a lot about how AI is changing the way people learn and retain information. And that got me thinking about something I changed in how I organized my own daily life and work. Someone told me once, if you're not capturing everything that happens in your calls with your team, you're actually losing to other companies. You're losing decisions that were made. You're loosing context that gets dropped, things you're committed to, and then you just forgot. Team Sank's strategy sessions cold with investors Even a quick conversation with a contractor, it all disappears the moment the call ends. And I don't know about you, but I'm on calls every single day. Sometimes I forget to press record. Sometimes I don't think the conversation is worth recording, but then after the conversation, I realized I had to actually record that. One of my friends told me, Marina, you should start using Granola, you'll be blown away."
+    },
+    {
+      "speaker": null,
+      "text": "And now I use it on every single call. Now it is an AI notepad for meetings. But it's not a bot that joins your Zoom and makes everyone uncomfortable. It transcribes your computer's audio in the background while you stay completely present in the conversation. It listens to every call automatically. And if it's a recurring call, it merges them by folders. So by the time the meeting ends, you have clean, structured notes ready to go. And after the call, I chat with my notes. I'm like, okay, we just had this conversation. Can you create a follow-up email that I'm gonna send to Monica, my manager? We're going to proceed with this, this and that. Creates the email and I just send it. Takes 15 seconds. It works across Zoom, Google Meet, and Teams. It's one of those tools I genuinely can't work without anymore."
+    },
+    {
+      "speaker": null,
+      "text": "And I don't think you'll be able to either once you try it. Try it on your very first meeting after this episode. ai slash marina to get three months of granola for free or enter the code marina at checkout. I left a link in the description. And now back to my conversation with Louis. What about you as a founder? Does AI help you make decisions or any workflows that work for you?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Research, sure, it used to be the case that whenever I had something that needed to be researched, like, I don't know, what is the chess landscape in India, for example. You know, it use to be a case that I needed to either spend a lot of time myself or get a team of people to help me, whereas now I can get a pretty good idea by just asking Gemini or something like that. So research I do a lot more by myself. That has helped me. But ultimately the decisions are made by me. It's not like I asked the computer, what would you decide? Okay. I haven't."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you don't use it as a coach or you haven't pipe coded your own KPIs or whatever."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I've done a bunch of I-coding for things, but yeah, certainly my KPIs, but it's not decisions I still make myself."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. Okay. I interview a lot of cool people on this podcast. In the past three weeks, I had Reid Hoffman and Bill Gurley, who are legendary investors. And I asked them a question, what is the first market that's going to be completely changed by AI and market you should be looking at? And they told me language. Thank you so much. You know, it's been my thing for 10 years. What do you think?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I don't know what that means, change. So."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like you don't have to learn a language because everything is translated"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Oh no, I just don't buy that. If you look at our users, we have more than 100 million active users. Half of them are learning as a hobby. It's a hobby, whether AI can do it or not, it's a hobby. Actually chess is a great example. You know, computers have been better at chess than humans since 1997. A lot more people are learning chess today than they were in 1997. It's a habit. So for half of our learners, it is a hobby, and I don't think whether computers can do it, or not. I don´t think it will matter. The other half are learning English. And I think anybody who tells you that people don't want to learn a language has not had to learn English."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's interesting how you say like 50% they're probably learning other languages, hobby, English necessity."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "But that's how it is in the world. If you're learning, I'm sure there are, I am generalizing here. But generally, if you're learn French, it's a hobby. It's not always true. I'm sure there're people who actually need to move to France, but it's just a small fraction. The majority of people in the World that are learning French, you know, want to feel cool when they go to Paris so they can order a croissant. And that's our uses. S. Has never had to learn English because that's their native language, etc. Will say something like, well, languages are unnecessary, et cetera, but somebody who's had to learn English, it's a different thing. It is. You just need to learn english and you may want to move to an english speaking country."
+    },
+    {
+      "speaker": null,
+      "text": "You may need to do an educational, like you may need to go to a university and nobody's going to be allowing you to go to a University with like a phone that translates everything the professor says. Like that's just not, so I'm just not particularly worried about."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there a fraction of the market? So I'm thinking about translators, for example. Somebody spends like four years learning that. What would you say to those people?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Depends on what it is, but there are fractions of the market that are probably going to change quite a bit. Also, in terms of the demand, I agree that some people may have wanted to learn a little bit of a language if they were going to, you know, just visit Germany for two days, that maybe now they're just not going to do that because they can just, but at least when you look at Duolingo's users, that's a very small minority of our users. The majority really are hobby or English. So you're not worried? I'm not. The other thing about language translation... Simultaneous language translation has been really good for it. This is not an LLM thing. Like LLMs are good at it too, but Google Translate did not use LLms and it was really good 10 years ago."
+    },
+    {
+      "speaker": null,
+      "text": "So I just, you know, we've seen the demand to learn a language actually go up as opposed to go down. This is something that we internally are worried about, but I understand people say that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I'm also thinking like, if you have glasses, for example, that are smart and they translate everything for you automatically, I haven't seen the case with headphones, I don't think people really use the, the AirPods to translate. I'm thinking maybe it's glasses that translate the science. I don't know, it's cause when we came to Silicon Valley, I think 2015, we were pitching our company linguatrip that does like language travel, language courses, and I think 50%, but to your note, American investors were like, oh, this is not."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Look, we've had this problem and the entirety of the company of Duolingo, we're a company based in the United States. When we first pitched Duolingo to investors here, I don't know, however many years ago, the most common thing is like, nobody really wants to learn a language. Math though. People want to learn math. I'm sure investors think that because they're good at math and they wanted to learn math, but the reality is there are more people learning languages in the world and are people learning math."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What was your mindset when the smartest people in the world tell you that? You're like, I don't care. I just-"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I mean, I grew up in Guatemala. I could see what it was to have to learn English. Look, it is a huge thing to learn english. It changes people's lives."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I know that's my case as well."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "It changes people's lives."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have another worry that, so you have an app, right? But now we're in the era when anyone can vibe code an app for themselves. What if I go to, like I'm learning English, I go the quad and ask, can you gamify my experience, create me an app that's personalized to me, you know, my interests, you know my hobbies. Do you worry about that?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "A little bit, but not really. I mean, it's funny. Inside the company, we never talk about this. This is, you know, we see, again, we see Twitter talking about that or investors talking about it, but we internally don't talk about that. Look, ultimately, I think you can ask AI to make you an app, but making a really good app is not that easy. You know, ultimately we, for example, have data. Hundreds of millions of people about how they learn a language. Every single day, more than a billion exercises are answered on Duolingo. And we use that data to teach you better. And so we just have a lot of data on how to keep you motivated. You know, there's probably two, 3000 language learning apps in the world. They've been there. And now with vibe coding, they are now there will be probably 20,000 rather than two, 3000."
+    },
+    {
+      "speaker": null,
+      "text": "But at the moment, we're just not particularly concerned. You know, something may happen."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there anything you'd sort of because I'm asking a question about it because I talked to people and they're like all this is going to be Eliminated that's gonna be we're done and you're like"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "No, I wouldn't say that it's like all is fine. I do think a lot of things are gonna change."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think is gonna change? What are you preparing for?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I think that... User expectations are going to change, and I think we have to stay ahead of it. So a good example is, one of the things we have in the app is conversation practice with AI. When we first put that out there, the cost of it was high for us. So we put it behind the most expensive tier. So you have to pay a lot of prescription to get the conversation practice. At the moment, the cost that has come down enough. That we're gonna start giving it to a much cheaper tiers and we are probably gonna eventually give it away for free. We're doing that because I believe that customers are gonna start expecting that. Like I think there will be apps that start doing this for free and if we don't do it now, we'll be forced to do it in a few years."
+    },
+    {
+      "speaker": null,
+      "text": "So that's the type of stuff we're doing to prepare for this because again, I think we just need to stay ahead."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, so users will expect more."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I think users will expect the apps to be a lot more intelligent, which they should. We're undergoing kind of a platform shift here. And what ends up happening in platform shifts is that the companies who were the winner before the platform shift may or may not remain the winner after that. So I hope that we can do that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Also talking about AI and workforce. I just talked to Gary Vaynerchuk and I really like what he said. Like there are a lot of rumors of people and news people firing, like the large companies firing people and they say it's AI. Then Gary said something that struck me. Cause he said, like, if I fire a hundred people, my competitor hires them and they still 10X their output, like I'm dumb for firing them. How do you think about that?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "We have never laid anybody off here. We have ever done a layoff. Despite what the internet may think. The internet may thing that we've done."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I think they misunderstood yours."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah, we've never done a layoff here. I think that it is important to continue hiring people because now, you know, the way I see it is a single employee is just way more productive now than they used to be. So, you know, I get better return on investment by having another employee. So that's how I see it. I mean, my sense, I of course, cannot speak about the very specific companies, but my sense is that at least in some of the cases, AI is just an easy"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "PR reasons."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah. I mean, usually what happens is you over-hired and when you over hire, you're like, oh, okay, because of AI, we're going to do that. I don't, at least at Duolingo, the way we run the company, I am surprised that there are companies doing that because I see no reason."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I talked, I was just at Davos and I was talking to somebody who releases their jobs report. All the layoffs are structural, like over hire during COVID. So it's not"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "A lot of companies over-hired during COVID and I understand that and then you know if you over- hired you probably don't need these people but you know blaming AI is an easy scapegoat."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It is, it is. What he just said actually worries me the most. Everyone's talking about like AI replacing jobs and big companies firing people. This is not what's happening here, right? He's actually hiring people, but he's hiring those who know AI. Same for me, where we're just hiring a social media manager and the questions I was asking them during the interview, how are you gonna automate this? How are you going to use AI in this process? Founders are looking for people. Who utilize AI in their work. And this is actually what my newsletter is about. It's called Future Proof, and every week I share what we learned with AI. Like my PR person just vibe coded the whole website with all the transcripts from this podcast. And we share things like that in the newsletter."
+    },
+    {
+      "speaker": null,
+      "text": "So first of all, subscribe to this channel, and second, subscribe the newsletter, Can we talk about the stock price? Because when I was preparing for this, I saw the 82% collapse of the stock. But what I really want to talk about, because you explained that to your shareholders, can you walk me through your mindset as a founder when you make such decisions who make your users happy, but they don't make your investors happy?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Well, the decision was made by AI. So that is a joke. That is not what happened. Uh, I made that decision. Uh, my look, we made a conscious shift in how we run the company. I made the conscious shift and certainly the executive team was behind me, but we got to a point where, you know, if you look at over the last five years, we've grown a lot, we became a public company in 2021. We have grown our user base by more like our active users by more than 5x since then so we've grown a lot We've also grown our revenue by a similar amount. It's ever grown a log, but two things happened One is that?"
+    },
+    {
+      "speaker": null,
+      "text": "Throughout 2025 We we've been still growing but we were growing slower than we're growing in previous years So that's one thing that happened like our userbase was growing slower Than in previous year's the second thing that happen is because of AI I really do believe that education is going to change quite a bit And we are a really important player in the education category. And I want to be in a situation where we're going to lead some of that change through AI. So the combination of I want lead through that change in AI and our user growth slowing down told me we need to do something important, change how we operate so that we continue grabbing as many users as possible. Now that comes with a cost. We are not going to be monetizing our user base as much as we were before. And investors don't love that."
+    },
+    {
+      "speaker": null,
+      "text": "But we knew, you know, when we made this decision, we talked to, of course, all internally, our finance team, everybody agreed, this is going to decrease our stock price."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you expect that number, like 80, 82?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I didn't know exactly what to expect, honestly, but I knew that it was going to be a lot. So we knew that, but we made the decision consciously because we think that if we continued operating the way we were operating, you know, we probably could have continued growing a little bit, et cetera. But at some point it was gonna be capped, whereas I think if we really try to get a much larger user base, we're gonna be a much large company in the long term. And the thing is I'm operating this company, I mean, I'm hoping that this is my last job and this is the last thing that I do. And I have many more years of energy left."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you never regretted the decision. Oh, no, no. That is amazing. Cause as a founder, like again, hearing from the market, what they think about your decision is tough. It's tough. Wow."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I know, I agree. Look, it's not that it hasn't been tough. I mean, I don't regret the decision because I believe that it is the right decision, but it's, you know, yeah, it has been tough, I really still, I'm very convinced this is the the right position."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you feel like, because you're a founder of a publicly traded company, does your mood defend your stock price?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "It used to. When we first went public, it used to, I learned to stop looking like at least every day. I mean, it's not that I don't know the ballpark, but I don´t look every day, it used to be the case. The first year or so, it would be like, it went up by a dollar, it went down by a $1. Now..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like you're used to it because as a creator my self-worth depends on how my last video is performing which is Not right, which is not good for my mental health. I'm learning how to not look at it"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Well, I will tell you this, the same is true for me, but not with our stock price, it's with daily active users."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, so you still have the same versus different metric."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I just moved it to daily active users. So every morning, yes, it's growing and everything, but every morning I, you know, our daily active user report for the previous day comes at 5 AM. Exactly. I am, I wake up very early every morning at 5 0 1 AM. It's not good."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think you should adjust it?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah, it's not good mentally, but hey, I prefer this than the stock price though. This makes more sense at least."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is something you can control. This is something I can control and."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Measure of the health of this company. The stock price, some of it is, you know, over the long term, it is a good measure of health of the company, but on a day to day basis. You know, there used to be days that the stock price went down because like oil prices changed and I'm like, okay."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "How is that related to me?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Any other mental hacks? Cause I'm talking to you again, you're not really worried about AI. You learned how to make start price, not control your mood. Uh, do you have any mental life hacks that you developed as a founder during these years? What helps you? What do you think, what, what do you do when something goes bad? Do you go on walks to create ideas?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I mean, don't get me wrong. When something goes bad, I, you know, it gets to me, it definitely gets to me, um, I try to really think about the long-term, one of the things that has helped me the most is really thinking about this. This is not just about the company. This is in general. And of course I didn't invent this. This is a lot of people say this thinking about anything. Will this matter in six months? The vast majority of things will not matter in six months, the vast majority. So sometimes I get really upset and I think about it, will this matter and six months. Some things will, but the vast majority of things will not matter in six months. And I, that, that makes me feel a lot better because I think, okay, I'm, I'm upset for no reason because this is going to fizzle out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about other things like marketing or content? Do you think it matters for a founder?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Depending on what type of company you're doing, certainly if you're doing a consumer company, marketing is going to end up."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "One of the most important things."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "It's gonna end up mattering a lot. I mean, I love our marketing team. They are excellent. They've done some really creative things over the years and have helped us grow a lot I don't know of any hacks. I ultimately you need to figure out how to get the word out for your product. I will say I have seen many people try to cover a bad product with good marketing and that can only get you so far. The reality is if you want to really succeed your product has be good. I think good product, bad marketing is not very good. Bad product, good marketing is worse."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have time set for yourself every week when you play with the new AI tools?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "To discover on the go. I don't know if I have time that I've set for myself like that, but I mean, basically what happens is I talk to some of the employees. I know who in the company is at the forefront and I talk them and then they tell me, oh, you should try that, you try that. And then I go, you know, I try it and."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And for someone who's employed at a company and they want to hear advice from a founder whose company is using AI, what would you say to them? How do they start implementing AI in their job?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Again, it depends a lot on their job, a lot of different tools for a lot of different things, it's not that hard to find the right tool for your job. And then try to use it and see if you can automate parts of your job with it. I mean, a lots of our employees have automated part of parts of their job. Not the whole thing, but parts of the job."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like that they're doing this by themselves. That actually says a lot about the way you hire."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah, people are doing this by themselves."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And when you're doing interviews now, are you asking about like..."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "We do ask, we want people here is to be open to it. I mean, we really are, you know, you do see the people who are just a lot more open to using AI versus the people who are like, nah, we, we want people who aren't more open. I mean there's a good thing that somebody said that I pretty much believe AI is not gonna take your job. Somebody using AI is gonna take your job and I believe that is mostly true."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's 10x more productive. This is way more productive, yeah. Uh, do you believe that in 10 years we'll have millions of AI agents in our companies?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Probably, I mean, what I've learned in the last, especially the last few years, is that predicting the future has gotten much harder because of AI. If you talk to me 10 years ago, I sort of could have told you what the next year was gonna look like or what the three years were gonna look like is probably we're gonna have a new version of the iPhone, it's gonna have better screen. It's like, it was just not that hard to predict. It was kind of boring, it wasn't that hard to predict it. Whereas now, I'm very bad at predicting what's going to happen."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But you're not nervous."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I am nervous. It's not for the immediate term and not necessarily for this company, but I am nervous about... I do believe that some shift is going to happen and I'm nervous in that I just don't know what that's going to be. I mean, there's... If you listen to different founders, everybody's telling you things that are pretty self-serving. Like, you know, if you work in a company that makes AI for lawyers, they'll tell you lawyers are going to disappear. Like everybody's saying all these self- serving things. I don't what they are, but i do think something's going change and I am what that is."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Nobody knows. Nobody does. Go with the flow."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Nobody does. And I think the best thing you can do is try to adapt as fast as possible. And by the way, I am glad that I'm not having to choose a college career right now because I have no idea what I would choose."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's even tougher now. I have no idea what I would choose. I have a blitz for you. So I'm going to name five professions and you're going to make some predictions what you think."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Oh man Priggs, I'm very bad at that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like what your gut tells you. Gone in five years, gone in 10 years, or not going anywhere. Social Media Manager."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "You mean for like a company?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like coming up with scripts and I don't think that's going."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "That's what I think. I don't."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Translator"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I think there will be, see gone is a hard term because I think they will still be cases where we're going to want real human translation but there'll be fe wer and fewer. But I do think that for certain situations we're gonna want that. Like a premium service. It's gonna turn into very premium. Yeah. But for most, you know, everyday uses, yeah, it's gonna go."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Teacher."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Oh, not going away."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are we going to have more language teachers, you think?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Teachers serve a lot of things, and I cannot imagine they're gonna go away. So I have a lot thoughts about this. I mean, I'm a former teacher, I used to be a professor. I think AI is going to be great at teaching certain parts, certainly giving you a lot repetition, maybe even adapting to what you learn, but ultimately teachers are great at putting things into context. They're also really great. Make people want to do something, they're very inspiring. When I was growing up, I wanted to be like my teachers. And it's kind of hard to want to be an AI. Like, I don't really want to be like an AI, but a teacher, they are very inspiring, they put things into context. At the moment, I'm pretty certain that if you have a really great teacher, that is better than not having a teacher."
+    },
+    {
+      "speaker": null,
+      "text": "Again, not all teachers are equally good, et cetera, et cetera. But by the way, today, Computers are not as good at teaching as a really great teacher. That has not yet happened. I think it may start getting to the point where in certain aspects they're about as good, but I think having a teacher will always be better than no."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I agree."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "That's what I think. So I don't believe that it's going anywhere."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We're going to learn with AI, like do some stuff, but we still need someone human to reply to."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "This is what I think, this is what i think. It's also, it's incredibly hard to keep people motivated and teachers have ways to get people motivated to do certain things and just you know they start noticing things like oh that student feels left out, I'm going to do something about it. This is pretty hard to do with AI so I just can't imagine this is going to go away."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Strategist. I don't know if you tried AI for strategy, but for me, It's good. So good. Sometimes it notices things I wouldn't even think about. Like, it was like, you were not working on Geo for your podcast. I'm like, oh shoot. Yes, I am not. Uh, I recently- And I'm not appearing in any searches."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I recently asked the Slack has a Slack bot and sees all my conversations and I asked it to give me what are my areas for improvement and it was excellent. That's a very good prompt. It basically told me exactly what my 360 told me, but in a much more concise way and certain things is really excellent. Strategy, I don't know the answer to that question. I would say there's probably still some... The thing about AI is that it's really good at kind of known things. I still think that there's going to be some amount of human ingenuity necessary for certain types of strategy. So again, it may be that it just becomes a very premium thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, project manager."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Oh, no, I don't think that's gonna go away. In my experience, project managers, if you need multiple people working on something, really good project managers have really good EQ and end up figuring out why a project is not working. And a lot of times the project is working because that person doesn't get along with that person. Like stuff like that. I think that that's going to be hard. Again, there's parts of the process that are. That can't be automated. But in general, I can't imagine that the AI is gonna be really good at sitting to people there and being like, you too are not getting along, you need to start getting along. That seems hard."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So as someone who's running a company, do you think there are any positions that are going away in the nearest future or are they just going to be transformed?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I think most of it is going to be transformed. And I think what I think will happen is that some companies, particular companies that are not growing a lot are going to find that they can do the same with fewer people. So it may not be very specific professions, but it will be like, do we need a hundred people doing customer service or can we do so with only 10? I think that will happen. The entire profession going away is kind of hard. I mean, even customer service, where a lot of people say, like, ah, customer service is going to go away. You probably still need a couple of humans there being. Still need to orchestrate the. Yeah, you probably still some people to orchestrated. So I do think that you'll find some companies that will need fewer people over time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I totally, uh, totally feel that we wanted to hire someone who would do my scripting for Instagram. But then like, okay, I'll just try quad. And then I created a quad project and it was so good. I'm like, Okay, I don't need to hire anyone that we can, my social media manager can just do that. No. So it's basically doing more with less people. Would you want to start again in 2026? If you could, like if you could go back to your, how old you were when you started."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I probably would start again, but if you ask me to choose between whether I want to start today or 15 years ago, I'm very happy we started 15 years. Yeah, because we now got to this point where, you know, with Duolingo we have a lot of money because we're profitable, we have like, I don't know, more than a billion dollars in the bank, we a large user base, we are a large install base, so I feel pretty good about the situation that we're in, whereas if we were to start today, boy, I mean, it's pretty hard to start to day, I think. I mean I would do it, but I... You like? You like me to do What would you like you like you like"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would you start? Same thing?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "If Duolingo didn't exist, yeah. I mean, given that Duolingo exists, I don't know if I would start that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Would it be languages or something else like teaching people AI or chess?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "No, I would start with languages. Interestingly, I am personally not a major language learning nerd. I'm not. Neither is my co founder, Severin. What is interesting is that in retrospect, I'm very happy we started with languages, I don't know of another subject, even though we've done a lot of research, I didn't know if another subject that gets learned as much. If you look, there's about 2 billion people in the world learning languages. That's the number. There's any other subject is less. I mean, math is a Thank you. One billion people, it's math is basically, you know the number of people learning math in the world is highly, highly correlated, like identical almost as the number people in the world that are in K through 12 education. It is about a billion. Nobody has to learn any math outside of K through twelve."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So nobody's learning math for pleasure as a hobby."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "No. I mean, I'm sure there are, but this is a tiny fraction of the population. So math is about a billion. Anything, you know, chess is like a hundred million, something like that. Any subject, K through 12 science is a few hundred million. Programming is like 20 million."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And when it comes to spending money."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "So language is 60 billion. It depends on who's spending the money. Governments are spending a ton teaching math, but it's governments. And that's hard, that money is hard to get to because the governments are, but so there's probably more spend on math, but it is because it's the governments."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what about, so consumers, it's still the language. Consumers? It's still the language?"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I think so. 8 billion are learning English. Yeah. So English is just really big."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's crazy. I didn't realize that because I thought it would be like math or now AI, maybe software engineering."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "You and I live in a bubble."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We do. That's true because we got out of their cultures into this bubble and now we're here to forget."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "I mean, maybe programming right now with AI coding, who knows what's going to happen. But a few years ago, whenever we would meet investors, they would be like, you know, the thing everybody wants to learn is coding. Yeah. It's about 20 million people in the world that we're learning coding. That's it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Maybe they're willing to pay more like if you want to take a programming course Yeah, they probably pay like a thousand two thousand because you know, we're gonna get a job. Yes language. It's a long long journey"
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yes, a hundred percent. Now, if we're an app, this is one of the things, one of the reasons we never did programming. We as an app cannot charge $10,000. It's an app. Like, we charge $6 a month. That is how much we charge. Maybe we could charge $20 a month, we can't charge$ 10,000, so this is why we go for things that have hundreds of millions of people learning them, because we need to be a larger business and so these things that require people paying..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like service business. Wow. That's fascinating. Thank you so much. Thank you for being positive in 2026. That really rare."
+    },
+    {
+      "speaker": "Luis von Ahn",
+      "text": "Yeah, thank you. I'm nervous, but it's no use to be thinking like the world's gonna end."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Going outside Silicon Valley, you see how, like, I was expecting you to say, oh, I use OpenClaw to automate all the reports. I'm not writing my emails. Like, you're not saying that. Same Gary Vaynerchuk. I was expected him to do like, oh, this is my con is full automation. But he said, I just hired two copywriters. I'm like, okay, New York is very different from Silicon Valley. And it's very refreshing. And for everyone who's watching, it's a great idea to start a business like helping people learn AI. I think so. Yeah, yeah, yeah. Thank you so much. Thank you. I mentioned Gary Wee several times throughout this episode. I actually filmed a podcast with him on the same trip when I filmed Lewis. He's thinking positively about everything that's happening right now."
+    },
+    {
+      "speaker": null,
+      "text": "So if you're someone who wants to start a business now, but if you are afraid that a bigger company is going to take over, watch that episode. It's going to give you a lot of enthusiasm about starting in 2026."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "s-Iz-lLAhdg",
+      "thumbnail": "https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg",
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson"
+    }
+  ],
+  "topics": []
+}

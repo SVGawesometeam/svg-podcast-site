@@ -1,0 +1,691 @@
+{
+  "videoId": "Yu0z7-KMHpo",
+  "title": "AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang",
+  "format": "interview",
+  "guestName": "Peter Yang",
+  "guestTitle": "Product Leader · Founder · 140K Newsletter",
+  "aboutGuest": "Peter Yang is a product leader who spent a decade at Meta, Reddit, and Roblox before going independent. He now runs a 140,000-subscriber newsletter and has built 16 apps without writing any code, using an AI-first approach to automate his entire workflow. His work focuses on demonstrating how to scale creative and business operations through intelligent AI systems rather than hiring teams.",
+  "publishedAt": "2026-06-16T14:00:06.000Z",
+  "duration": "30 MIN",
+  "coverArt": "https://img.youtube.com/vi/Yu0z7-KMHpo/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/Yu0z7-KMHpo/maxresdefault.jpg",
+  "summary": "Peter Yang, formerly a product leader at Meta, Reddit, and Roblox, has completely rebuilt his workflow around AI to run a 140,000-subscriber newsletter and build 16 apps without writing code. He demonstrates how he uses AI systems to automate repetitive creative work—from podcast post-production to cross-platform social posting on X, LinkedIn, Threads, and Substack—by leveraging tools like Codex and Claude to sniff out internal APIs and handle browser automation. His AI systems include a weekly strategic brief that analyzes his performance across YouTube and Substack, providing insights on earnings, content performance, and competitive analysis that would otherwise take an hour to compile manually. Yang emphasizes that the key to effective AI integration is treating the last 10% of output as requiring human touch, avoiding what he calls \"AI slop,\" and building self-improving skills by instructing AI to refine its instructions based on feedback loops rather than starting from scratch each time.",
+  "keyTakeaways": [
+    "Move from prompting AI like a search engine to building persistent AI skills—text files with instructions that improve over time through feedback loops and can automate entire workflows like social posting, newsletter editing, and strategic analysis.",
+    "Use AI's computer vision and API-sniffing capabilities to post across platforms with platform-specific nuances (e.g., tagging on X but not LinkedIn), creating one unified system that handles four different social platforms from a single voice dictation.",
+    "Build a personal AI advisor connected to a Google Doc containing your business strategy and personal information so it can give contextually aware business advice rather than generic guidance.",
+    "The 5 Layers of AI Adoption framework moves from using AI as a tool (Level 1) to building agent systems that run your work autonomously (Level 5), requiring systematic thinking about which repetitive tasks to automate first.",
+    "Always reserve the final 10% of AI-generated output for human review and editing to maintain quality and avoid low-quality \"AI slop\"—the difference between professional content and viral low-effort content is human judgment applied at the end."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "02:51",
+      "seconds": 171,
+      "title": "How his AI posting system works across platforms"
+    },
+    {
+      "time": "08:54",
+      "seconds": 534,
+      "title": "The weekly strategic brief Peter built in Codex"
+    },
+    {
+      "time": "11:59",
+      "seconds": 719,
+      "title": "The 5 Layers of AI Adoption framework explained"
+    },
+    {
+      "time": "14:09",
+      "seconds": 849,
+      "title": "How to move from Level 1 to Level 5 (practical walkthrough)"
+    },
+    {
+      "time": "24:32",
+      "seconds": 1472,
+      "title": "AI that learns your decision-making style"
+    },
+    {
+      "time": "25:53",
+      "seconds": 1553,
+      "title": "Step-by-step: how to go from Level 2 to Level 5"
+    },
+    {
+      "time": "27:57",
+      "seconds": 1677,
+      "title": "Peter's honest fear about AI"
+    },
+    {
+      "time": "29:06",
+      "seconds": 1746,
+      "title": "Peter's radical solution for raising kids in the AI era"
+    },
+    {
+      "time": "30:18",
+      "seconds": 1818,
+      "title": "Action plan: what to do this week to stay ahead"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It almost feels like cheating."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I fear that I'm getting dumber and lazier. If I'm on a flight and there's no internet connection, I just don't feel like working anymore."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's Peter Yang. He spent a decade building products at Reddit, Meta, and Roblox. Now he runs a newsletter for 140,000 people with no team. Almost all of it through AI."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Unlike an employee, AI is never going to leave you."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And it's only getting exponentially better."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "The last 10% you got to add your human touch to it. You don't have to be a creator to make this. I see a lot of creators who get AI to generate 10 posts per hour and the slop goes viral. This is disheartening."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone who's trying to stay ahead in this AI era, what should they be doing?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Step number one is use Codex or Claude Code. Step two is to..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I really wanted to make this podcast practical for everyone who's watching. There is something going on in AI right now that everyone is talking about: self-improving. You recently built custom self-improving skills and the whole narrative is like stop prompting your AI, make it figure out what to do next. Can you talk about that and is self-improving a reality for people who are just using AI versus researchers?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "There are different ways to do it. First of all, I think all your audience knows a skill is just a text file with a bunch of instructions. I have skills for making my podcast, for editing my newsletter post, and so on. The most basic way to do self-improvement is after you use the skill and you have a back and forth conversation with the AI because it never gets it right in one shot, then you just say \"Hey, based on our conversation, can you please update the skill to account for trying to get to it in one shot faster?\" and then it'll make a bunch of changes and you should review it and hopefully it will do it better the next time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When I integrated AI into every part of my work, it almost feels like cheating. A year before that you said you were drowning in meetings and projects. What are the top three things that you deployed this year that dramatically changed how productive you are?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I can talk about my creative work since we're both creators and being a creator is a lot of repetitive work. There's a lot of repetitive copy and pasting back and forth and changing things from a newsletter post to a YouTube description to a social post. There are a lot of different formats and I decided to spend one day with no meetings and just sat down with Codex and basically brain dumped all my workflows to Codex and here's how I do it manually. I use this thing called Wispr Flow just bringing it up through my voice. There are a couple major ones: prepping the podcast post-production, editing my newsletter posts, posting to the various social media platforms. And then another one is setting up an advisor to give me business advice like checking ideas."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is it like an agent that's running?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It's just a skill that's linked to a Google Doc file that has a bunch of personal information about my business and then it gives me advice."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Talk to me about posting on different platforms. How does it work? Do you dictate something with your voice or does it see what kind of videos you produce and repurpose them?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I have some cron jobs which are basically like morning briefings and weekly reports that send me how other channels are doing and what kind of videos are popular. Now I post to social media platforms through Codex directly. Before I was using this tool called Typefully, but some of the platforms I post to like Substack Notes don't have any kind of API or integrations. So I told Codex, \"Hey, I want to schedule posts on Substack Notes. Can you help me figure it out?\" and then it went to the browser and sniffed out some internal APIs that they're using to post."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it sniffed out internal APIs and it can also do computer use, right?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It can do both. Now I can post to four platforms: X, LinkedIn, Threads, and Substack. In the skill it has nuances. For example, on X you want to tag the person that you interviewed and find their handle, but on LinkedIn you cannot really tag, it's hard to tag. So I brain dump it all to Codex and now it can do the tweaks for me."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So it saves you a lot of time. Do you get"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "final approval before it posts or does it just go ahead and post by itself?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I still draft it. I don't just get it to generate copy to post. I use Wispr Flow and brain dump some random thing into Codex."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you talk to it, it takes your voice and creates different social media posts?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It creates different social media posts."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It also has my examples of posts that I've done that have gone really viral so it can help me clean out my brain dump into a more polished post."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And then you'll take a look and say okay, go post it to all four platforms?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Does it have access to your analytics to assess what's going on right now?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yes, it has access to analytics from various platforms and also Typefully, which I use, has analytics. So it did some analysis. For example, it found that on LinkedIn, if you do a post with a bunch of links to all your tutorials and stuff, it tends to do better than if you do a single one."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I had no idea about that, so I'm going to do more of that now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about newsletter? Is it the same process where you talk about what you want in your newsletter and it creates it?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Newsletter depends on what kind of post I'm making. For example, I published a post about why I'm leaving my job. I went on a walk and dictated to Wispr Flow's voice tools and brain dumped my real thoughts directly into Codex."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "No?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I could do it to Codex, but I use this tool called Super Whisper that records 10 minutes of my brain dump and then I copy and paste the whole thing into Codex because I'm worried if I dictate for 10 minutes, Codex will get confused."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's my worry too. Or something stops working and it just keeps processing and nothing happens. That happened to me a couple times. It's not just Codex. I think it's the context field that is not designed for a 10-minute prompt."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How many edits do you typically do in this process?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It's interesting because with AI, I'm giving feedback for it to edit. It's actually harder to just edit yourself and give it feedback. So I bring it up, I give it the Codex, it does a bunch of editing and uses my best examples to edit and then inevitably there's something wrong. So I have to read through and I give it voice feedback and it doesn't pass and then maybe the last 10% I have to manually change stuff. It's actually important. I always emphasize the last 10% you got to add your human touch to it. You can't just AI slopify everything."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Basically all your written content is created with the help of AI?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Talk to me about the strategic thing that you're doing. Is it like in the morning it briefs you on what's performing, what's not?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Every week it sends me a brief about how much money I made this week and how my past 30 days of content performed and also all the other channels that make similar content. Is there any kind of outliers? It does that for YouTube and also for Substack."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "For Substack, it doesn't have API, so it has to use browser use to look up everything."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "That would take you an hour to do manually, but it does it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You mentioned some of your editing is done with AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that where you dump a transcript and it edits it out or what's the process?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, for video editing, I feel like maybe I haven't gone deep into it yet, but I still use a human video editor."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "But the transcript is very useful because I dump the transcript into Claude and it tells me here's the moments where you had awkward pauses or stuff you should cut. Here's the timestamps and also for the intro, here's what you should pick. Here's the spicy quotes from the interview that you should pick."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's fascinating how this has become so much faster versus a year ago. It's a different reality these days."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you've described all of these things that you've built. How often do you build something new?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Pretty much every single time I talk to AI, something changes. I update some skills or something changes. But is that from zero to one or something?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Well, my hope is that I can streamline a lot of my content production for my audience. I'm not going to simplify everything. I'm still applying taste, but I want to streamline all of it so I can save more time because I actually want to be a builder. I spent a decade of my career just building products inside big companies and I want to now that we have all these agents and tokens we can use, build different tools like open source tools or things that solve my own problems."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So I want to do both. I don't want to just be a creator. I want to be a creator and a builder. I'm going to spend more time doing that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you make a decision when to build something and when it's okay the way it is?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It's usually best to build stuff to solve your own problems. So for example, I built a fitness app. Everyone is building fitness apps, but I built a fitness app that helps me track my workouts and then it has an MCP to send me emails on my health. You know, that's one thing I built. I'm doing something else right now. In Gmail, you get a lot of scammers and my parents have no idea. Their bank sends them an email, but it's actually xyz@hotmail.com, so I'm trying to build some sort of extension to just highlight that this is a scam."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How long does it take you to build something like that?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I think to get to 80% there, it probably takes a couple of hours because you just make a plan and you get to do it. But to actually make it good and to test it and polish it, that takes more time. That takes a couple of days or depending on where your quality bar is and where you want to go."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Before we start building something, you have this system with five layers of AI adoption. Can you walk me through them and let's decide which layer do we want to land on today?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I made this five layer thing about 6 months ago. Most people are in layer one, which is just using AI for everyday answers. They're using ChatGPT and Claude and asking questions. I think the second layer is using AI for daily work. You're still in ChatGPT and Claude, but you're using projects and other things to not do so much copy and pasting, to set up projects for different things like giving you life advice or automating your content stuff. But because it's in ChatGPT and Claude, you still have to copy and paste the output to somewhere else, so it's still a lot of going back and forth."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Then from a product perspective, a lot of people as a product manager want to use AI for prototyping because product managers used to just write a bunch of doc documents that none of our engineers wanted to actually read. So now with all these tools like Lovable and Replit and Claude, you can actually build prototypes of your products. I usually take a screenshot of my product and I say \"can you make a prototype of this and make some changes and show it to my engineer and the designer?\""
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Then you can use AI level four to build different apps. There's a difference between building a personal app for yourself and trying to build an app that millions of people use. When I say building apps, it's a lot about personal apps for yourself."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Where do the agents go in these layers?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Well, if you're just building an app, you can just put it on Vercel or something and then have a link that people can use. So it's not really looping or anything."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, yeah. So that's layer four. And layer five?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Layer five is what we've been talking about, which is using AI as a personal agent to streamline and automate as much as you can. And it sounds complicated, but really it's just about sitting down, canceling all your meetings for a day, and thinking through your past week. Think about all the time you spent manually doing stuff and just share it with your AI friend."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you walk me through a process that we just talked about in a very practical way so that people who've been using AI at level one or maybe some level two can move to ideally level five where it's more automated? I think"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "the most practical step that most people should take is to stop using ChatGPT and start using Claude or Codex. That's step one. People get intimidated by this stuff like Codex and Claude, but in reality, it's just chatting with the AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It sounds very nerdy."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, but in reality, when I use Codex, 80% of the time I'm not coding or doing any of that. It's just more powerful because these two apps have the ability to build skills for them. They have access to APIs and integrations, so they can actually get work done across your other apps. They're way more powerful than just default ChatGPT."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "What I recommend is use Claude or Codex and set up a new folder. Call it your personal OS or whatever you want to call it. And then ask it what are the main workflows it can do here, and you can see what it sets up."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, you asked Claude to come up with those?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Well, this is all the stuff that I've set up over time. Basically, I've set up various different skills, and skills are just text files to do work for me. For example, to edit my newsletter, it has this skill to shape a rough note into a transcript, and then it uses this other skill called Last 30 Days to add fresh research, and then uses another skill called No AI Slop to make the writing clear."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like that. What if you don't ask it for Last 30 Days? Is it just going to omit it?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I think somewhere in the skill I have instructions that say \"do some online searches to make sure I'm saying stuff that's actually true.\" Another thing people should recognize is that there's a lot of open source skills that are really good. Last 30 Days is an open source skill that I found on GitHub, and it does searches across Reddit, X, and all these other platforms."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Genius. I need this."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And then it uses No Slop, and eventually the newsletter post gets to a point and I use Social Writer skill to turn a newsletter into threads. So that's for newsletter, and then for podcast it's a very similar format. I use this podcast prep skill to research guests that I have, and then as part of making stuff on YouTube, you've got to have a really good thumbnail, title, and copy. I have a whole skill to test different thumbnails and titles, and then based on that I decide if the podcast is even worth doing. Then I do a post-production skill like turning it into all kinds of stuff."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Sponsors, we both have sponsors—that's a lot of work."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I asked it to keep track of my sponsors through different skills and also help me draft and brainstorm sponsor copy, help me schedule stuff on the inventory, and all that kind of stuff. So the TL;DR is these workflows are done by connecting different skills together that you build, and for all these skills I don't actually..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you show one of them? Like go into strategy for example and walk me through how you built it."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Sure. Let's say open personal the sound."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I think one of the most useful skills that I built is just a personal advisor skill because my wife is tired of me asking for advice all the time. It literally is just a text file. Give me honest advice and you're my trusted life and business advisor and then keep your tone warm. And then this stuff is a little bit more fancy. There's evals and stuff but we can talk about that later."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Learnings is that your file?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, Codex itself has memory, but I asked it to save a text file called learnings.md to save memory from our past conversations. So it learns about me. This is the self-improving stuff that we talked about."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "With something they've released yesterday because they released something when it now remembers all of your conversations like has this expanded memory. Do people still need learnings.md?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Well, I don't actually know how their system-wide memory works. So maybe you don't need it, but it's also useful for me to read learnings.md and see what conversations I've had with it in the past."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For learnings.md file, do you ask it how do you prompt so that every conversation contributes to that file?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "You also have to think about managing the context window because you don't want it to be super long. I have some instructions saying after every conversation you should ask me to recognize patterns and learnings that you have and ask me if I want to save it to learnings.md. It uses its best judgment whether it wants to ask me or not. And then I also ask it if you're going to save it there just have a few lines, just one or two sentences. Don't write huge paragraphs."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So that's interesting with these, what AI actually remembers about you because sometimes you think maybe it remembers everything and you hope that it does but in reality it doesn't or remembers stuff that you don't really care about."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So these learnings, you basically prompted it, where does this prompt go?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It's just in the skill file, the main skill file of like before you answer any questions I have, just quickly skim through learnings.md. And once we finish a conversation or in the middle of a conversation when you see something, ask me if this should be added to this learnings.md file and the skill runs across everything that you do because the skill is triggered based on your description, your skill description in the top which is like I say use whenever the user is stuck on a decision or working through a hard problem or asking for a gut. But sometimes it doesn't trigger, sometimes I have to actually do slash give me a slash personal advisor and then ask a question."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you come up with all the like for me when I'm building this? There is so much brain work going into this like when to trigger this skill, all the nuances. Do you use Codex for that as well?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I never write any of these files manually. But you still, it's not even writing, it's"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "thinking about all the nuances. I can think about a lot of things for you. But then there are so many different things that you want to remember like when to trigger this skill, what types of information you want to go there, and then you wake up in the middle of the night and think oh, I forgot to add this."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I have a skill to build skills, and Anthropic actually has a skill to build skills too. Personally, I'm very worried about it becoming sloppy, like it just starts adding stuff I don't read and it becomes super sloppy if it's super long"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "because you also want to make sure you're in control of whatever is in the skill. And if AI just built a huge skill for you, then you don't have time to read it."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So my skill editor skill is very basic. It just looks for duplicate instructions or sloppy content and tries to remove it. I tell myself to keep all my skills to one page max so I can actually read through it and see if it makes sense or not."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's take a deeper look at what's next."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So for this personal advisor thing I have, why don't I just ask it to can you read my plan Google doc and share its overall structure without sharing confidential info. So basically I have my actual plan or my business plan or whatever in a Google doc and I find it's very useful as a creator to have some principles to help you make decisions. So basically it's a one pager with my goal, my principles, background of my business, positioning and other stuff like energy and other stuff. My goal is just to make a certain amount of money and actually be in control of my time and who I want to meet with. And then my principles are I have a problem where I tend to take on too much stuff. So I asked to keep the main thing the main thing. That's one of my principles, which is people invite you to conferences and try to write a book or do all kinds of stuff and you have to say no because you want to focus on making a newsletter and a podcast."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And it's so hard to stay focused but because you"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "have that principle so when it gives you advice it has that principle in mind so it can check you."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And then the business stuff is more just financial information and I think an important section is what gives me energy and what takes energy away, just a couple bullet points. What gives me energy is like vibe coding with Codex. What takes energy away is doing too many Zoom calls or something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Totally."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So I think it's very important you don't have to be a creator to make this document. For any kind of career you have, just make this document and put it in a Google Doc somewhere and then set up a skill to reference this document when it gives you advice."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I think it's literally one of my most useful skills. It's not super complicated, but it helps me make a lot of decisions. Most people use Claude like a search engine. They type in a question, they get an answer. Most times they're not really satisfied with it and they close the tab. I did the same thing for months and I was looking at people who were saying AI is changing their life and I'm wondering why, and then I spent one afternoon setting it up properly. I uploaded a few files about how I think and how I work and it completely changed. I wrote the whole process up step by step. You get it when you subscribe to my newsletter, Future Proof. It's free. The link is in the description."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, this is very powerful because then you can use it for anything that you do. So it adheres to your principles."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have a team?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I have a video editor and a few contractors, but no, I don't have a full-time team."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Have you ever tried building an AI chief of staff?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I have one right now. I'm using this thing called Hermes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What can you talk about this?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "It's open call but it's a little bit more reliable. And there's a team that built it. But you can also just set up in Codex too. But I'm using Hermes right now because I like having it in my messaging apps like in Telegram and wherever I want to use it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you use it? Talk to me about that because I'm trying to build something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm trying to build an AI chief of staff. My strategic decision making happens on Zoom calls and in Telegram where I give feedback to my team and say yes or no. So I want AI to learn my strategic decision-making style."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I interviewed the founder of Kalshi and she has a team of developers but they built this thing where it goes across all the Slack chats every Sunday and tells her where the team is stuck, what was promised to be delivered, what hasn't been delivered. So somebody who just watches the whole operation and keeps everyone accountable."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Is that where you're trying to build with Hermes? You just have to think about what are the inputs, what are you trying to do and what are the outputs. So the inputs for any kind of business is probably Slack."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And if you use Granola to record your media meetings, there's transcripts there."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Just set up all the integrations. Just ask Codex or Hermes or whatever, just set up all the integrations like \"Hey, can you hook up to my Granola? Can you hook up to my Slack?\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So for anyone who's at level two and wants to get to level five, what are the steps they should be taking? I think step number one is to really build something like a strategic mindset behind all of your AIs and projects and agents. What are the next steps?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So step number one is to just actually use Codex or Claude code, just start using that instead of the regular stuff."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And even projects like you—"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, I switched away from projects because I set up all my projects here instead. With a project, if I want to edit a newsletter post it spits out an output and I have to copy and paste the output to Google Doc or manually update stuff. But this stuff can just update Google Doc for me. So it saves a step. So step one is to use the right apps. And step two is to just ask the right questions. Brain dump your workflows and ask the right questions because I feel like a lot of people don't realize what this stuff is capable of doing. This stuff is basically capable of doing, in my opinion, any kind of knowledge work that you have as long as you're patient with it and give it the right context."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, so just ask the right questions and then set up the workflows like we just talked about, and then build the skills and integrations, and then you're off to the races."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think your life is going to look like in a year?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "A year. I've always worked in big companies where there's always a lot of cross-functional alignment. You got to align different teams and different orgs. I really do miss my engineering team and people like that I enjoy working with at work. But I feel like these days this is the era of solopreneurs and I feel like you can get so much done with agents and stuff that you don't want to do. That means you can really free up your time to do stuff that gives you more energy."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And even the stuff that's strategic or gives me energy, I feel like now I have this partner that knows me and can be my pair programmer or partner to figure stuff out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think you're going to be working less or more in a year? Well,"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I'm pretty type A, so I don't know if I'm going to completely check out, but I hope I'll be doing more work that I enjoy. At the end of the day, if you and I retire, we'll be borrowing or play golf or something, but it would be very boring."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Of course, yeah. I think we're going to keep working."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, we'll keep working, but we want to do work that we actually enjoy, not like the monotonous copy and paste work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have any fear around AI?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I feel like I fear that I'm getting dumber and lazier. If I'm on a flight and there's no internet connection, I just don't feel like working anymore because I don't have this partner."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's evolution. If you take our grandparents, even my grandparents, they would never understand my lifestyle because they were constantly working—either at home. My mom raised me while working, while cooking, while cleaning. And I'm like, \"Oh, I can't clean. I need a cleaner.\" Going, \"Oh, I just bought a robot vacuum cleaner. I don't know how I lived without it.\" We're becoming lazier and lazier. But I think it's actually then we have more time for kids and meaningful time with our loved ones."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I do worry about our kids because at least you and I grew up without AI, so we have 20 years of doing the basic stuff, basic critical thinking skills and learning how to do math and stuff. But I feel like our kids these days can start using Codex right now, talk to a computer."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So you have to make sure they actually still learn the fundamentals."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's your solution to that? What are you trying to do with your kids that's different from how you were raised?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, I have something radical. I feel like they need to, and maybe this is my bias, but I feel like they need to start a business or something and learn the real things. Because reflecting on my journey, my education, I didn't learn a ton from the classroom. I learn by failing and making mistakes. So I feel like they need to have the right mentality to do that kind of stuff and learn how to fail and just go out there and try to do something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you ever have fear for your career?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Yeah, my career."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm talking to a lot of creators these days and I see them at events and a lot of people think that creator economy is getting oversaturated because everyone is suddenly a creator because it's so much easier to create content. Do you think that might be a problem?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "I do think it's a problem because I see a lot of creators just making slop. They get AI to generate 10 posts per hour and the slop goes viral and it's disheartening to see that."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "But I feel like that's why it's so important to find your principles and values. I never want to be someone who just makes tons of slop even if it goes viral and makes me a lot of money. But maybe people get tired of the slop and people will be like, \"Hey, I actually want human craft and human touch on this stuff.\" Let's finish with an action plan."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone who's trying to stay ahead in this AI era for the next week, what should they be doing?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Okay, I think to stay ahead, get the $20 ChatGPT plan, download Codex, and just start saving time and building workflows and building skills to save time. Ask it to do stuff because I feel like that's more productive for you because you will immediately recognize that you can start saving time versus what a lot of people do, which is they go on Twitter and try to read all the news and take some courses or switch from consumption mode to actual build mode."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Output, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What if they come back and say, \"Oh, I tried but it didn't work. I don't know what you're talking about. It's so bad. It's so much easier to just do everything by myself\"?"
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Well, it does take longer. It's interesting because with AI, you have to set up the system first before you can see the fruits of the output. It does take time to set up the system, but it probably only takes one day to do it. And you have to have some patience because even now with all this stuff I built, it still cannot one-shot exactly what I want."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "So there's always a back and forth. And as long as you're patient and you give it feedback and tell it to save it in your skills and memory, it will get better over time. And unlike an employee, it's never going to leave you. It's going to be there."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's never going to leave you and it's only getting exponentially better. The model will get better every single month."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Peter, thank you so much. It was a very productive conversation."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "Thanks for coming."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "fxIVCIoLOys",
+      "thumbnail": "https://img.youtube.com/vi/fxIVCIoLOys/hqdefault.jpg",
+      "title": "Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson"
+    },
+    {
+      "videoId": "2j9yjRSpMSo",
+      "thumbnail": "https://img.youtube.com/vi/2j9yjRSpMSo/hqdefault.jpg",
+      "title": "AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher"
+    },
+    {
+      "videoId": "subu-xHrp1w",
+      "thumbnail": "https://img.youtube.com/vi/subu-xHrp1w/hqdefault.jpg",
+      "title": "Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li & Masterclass CEO David Rogier"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "spotify": "https://open.spotify.com/episode/1B4ntfNDdOh32CjRJCWll6"
+  }
+}

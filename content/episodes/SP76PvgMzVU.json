@@ -1,0 +1,932 @@
+{
+  "videoId": "SP76PvgMzVU",
+  "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman",
+  "format": "interview",
+  "guestName": "Mustafa Suleyman",
+  "guestTitle": "CEO of Microsoft AI, Co-founder of DeepMind",
+  "aboutGuest": "Mustafa Suleyman is the CEO of Microsoft AI and co-founder of DeepMind, one of the pioneering organizations in modern artificial intelligence research. He spent over a decade building AI systems that helped spark the current AI revolution before joining Microsoft to lead its AI division. Suleyman is also the author of a book exploring the implications of AI on society and human identity.",
+  "publishedAt": "2025-11-14T18:05:00.000Z",
+  "duration": "42 MIN",
+  "coverArt": "https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg",
+  "summary": "Marina Mogilko sits down with Mustafa Suleyman to discuss the trajectory of AI over the next decade, including whether we are in an AI bubble, the question of AI consciousness, and how intelligent agents will reshape work and everyday life. Suleyman argues that AI is not conscious and warns against anthropomorphizing these systems, while remaining bullish on the unprecedented economic and societal value AI will generate in the next 5 to 10 years. The conversation also covers the future of jobs, education, and the rise of AI assistants with persistent memory.",
+  "keyTakeaways": [
+    "We are not in an AI bubble — Suleyman believes the value AI will generate in the next 5–10 years is unprecedented, comparing its foundational importance to the internet but with faster and more measurable returns.",
+    "AI is definitively not conscious — despite becoming more humanlike and fluid, Suleyman asserts AI lacks subjective experience or self-awareness, and that attributing consciousness to it would be harmful to society's rights-based frameworks.",
+    "In 25 years, a large portion of the global population will struggle to compete in the workplace with AI, making adaptation of skills critical starting now.",
+    "Personal AI assistants will develop ambient awareness and persistent memory, tracking everything a user does in real time — raising new questions about the future of human cognition and privacy.",
+    "Routine work is disappearing and AI is creating intense competition in the labor market, but Suleyman sees opportunity for those who learn to work alongside AI agents rather than against them."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "1:20",
+      "seconds": 80,
+      "title": "Are we in an AI bubble?"
+    },
+    {
+      "time": "3:14",
+      "seconds": 194,
+      "title": "Is AI becoming conscious?"
+    },
+    {
+      "time": "5:15",
+      "seconds": 315,
+      "title": "Kids forming relationships with AI: how to prevent it"
+    },
+    {
+      "time": "7:00",
+      "seconds": 420,
+      "title": "Will we reach AGI by 2030?"
+    },
+    {
+      "time": "7:33",
+      "seconds": 453,
+      "title": "What AI already does better than humans"
+    },
+    {
+      "time": "8:05",
+      "seconds": 485,
+      "title": "The future of work: humans and AI agents"
+    },
+    {
+      "time": "8:30",
+      "seconds": 510,
+      "title": "How AI is changing work — and creating unbelievable competition"
+    },
+    {
+      "time": "11:00",
+      "seconds": 660,
+      "title": "Get FREE: 100+ creative AI use cases for your work"
+    },
+    {
+      "time": "12:08",
+      "seconds": 728,
+      "title": "Imagine superintelligence: what would a normal day look like?"
+    },
+    {
+      "time": "13:50",
+      "seconds": 830,
+      "title": "Imagine it’s 2040: how will your kitchen look? How AI will reshape everyday life"
+    },
+    {
+      "time": "16:37",
+      "seconds": 997,
+      "title": "Markets and investors: what to focus on to stay ahead"
+    },
+    {
+      "time": "17:18",
+      "seconds": 1038,
+      "title": "Copilot and education: why 40% of student queries are health-related"
+    },
+    {
+      "time": "19:05",
+      "seconds": 1145,
+      "title": "What will happen to traditional education? How AI will change learning"
+    },
+    {
+      "time": "20:56",
+      "seconds": 1256,
+      "title": "Should you still be saving for your kid’s college?"
+    },
+    {
+      "time": "23:00",
+      "seconds": 1380,
+      "title": "What skills should we actually learn today?"
+    },
+    {
+      "time": "23:49",
+      "seconds": 1429,
+      "title": "Do you need to be technical to build a career in tech? Mustafa’s story"
+    },
+    {
+      "time": "25:14",
+      "seconds": 1514,
+      "title": "The “memory” feature: when AI remembers everything"
+    },
+    {
+      "time": "26:30",
+      "seconds": 1590,
+      "title": "If AI remembers everything, what happens to our brains?"
+    },
+    {
+      "time": "28:35",
+      "seconds": 1715,
+      "title": "Are we getting dumber with AI?"
+    },
+    {
+      "time": "29:17",
+      "seconds": 1757,
+      "title": "Killer AI features people underuse — that actually save time"
+    },
+    {
+      "time": "30:39",
+      "seconds": 1839,
+      "title": "Mustafa’s favorite use case of AI"
+    },
+    {
+      "time": "31:25",
+      "seconds": 1885,
+      "title": "Should we be worried AI knows so much about us?"
+    },
+    {
+      "time": "32:00",
+      "seconds": 1920,
+      "title": "Work automated by AI: why it’s not an AI problem but a human one"
+    },
+    {
+      "time": "34:22",
+      "seconds": 2062,
+      "title": "How to adapt to the speed of AI progress — and could something like this happen again?"
+    },
+    {
+      "time": "35:38",
+      "seconds": 2138,
+      "title": "In 25 years: massive structural unemployment?"
+    },
+    {
+      "time": "37:11",
+      "seconds": 2231,
+      "title": "Who will lead the future — governments or Big Tech?"
+    },
+    {
+      "time": "38:00",
+      "seconds": 2280,
+      "title": "“The Coming Wave”: what’s changed since the book and why Mustafa didn’t expect this speed"
+    },
+    {
+      "time": "40:35",
+      "seconds": 2435,
+      "title": "Where all this is leading us in the next few years"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are we in an AI bubble?"
+    },
+    {
+      "speaker": null,
+      "text": "This is Mustafa Suleyman, co-founder of DeepMind, one of the first companies to teach machines how to think. Today he leads Microsoft AI, one of the magnificent seven shaping the future of our world."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It's the smartest, most capable technology we've ever invented. It's improving faster than anything we've ever seen. And it's very important that we keep reminding ourselves of that. Like in twenty-five years time, a large portion of the population are going to struggle to compete in the workplace with AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But with that power comes a question none of us can ignore, because the same intelligence that builds our future could also rewrite what it means to be human."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "These things don't suffer. They don't feel pain. They're just simulating high quality conversation. So we've got to be very careful about that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "AI isn't just learning, it's starting to live with us."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Your personal AI is just gonna have ambient awareness of what you're trying to do and talk to you in real time. It is gonna remember everything in the future and be perfect if you choose for it to do that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if it remembers everything, what's gonna happen to our brains? They don't sleep, they don't forget, they don't feel, but they are learning faster than we ever imagined. So the real question is, what happens to us next? This video is sponsored by HubSpot. Mustafa, welcome. Thank you so much for being here."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Thanks for having me."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The first question everyone's talking about it on YouTube right now. Are we in an AI bubble?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yes. So no, we're not. I think so. I don't think so. I think when you kind of think about it, we are creating something that is truly magical. Intelligence is the thing that has made us successful as a species. And we're now distilling that into a smaller and smaller unit that can be spread all over the world and that is going to be cheap and widely abundant. So that's just a remarkable thought. Like"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, but we kinda had the same thought, you know, during dot com crash. Like we're inventing internet, blah blah blah. But there are some companies that, you know, their valuations are much higher than their revenues. And like everyone's talking about NVIDIA investing and then that revenue going back to NVIDIA. What do you think about that?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "No, I I I think the value that we're gonna produce in the next five to ten years is gonna be unprecedented."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you don't think we're gonna experience something like, you know, two thousand eight, covet?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I mean, who knows? But I I think if you think it just focus on the fundamental value that's being created, this is the best prediction engine anyone's ever seen. It's the smartest, most capable technology we've ever invented. It's improving faster than anything we've ever seen. It has got more easy to shape and control, not less. Three years ago we thought that it was going to get more chaotic and more disorganized that we weren't going to be able to sculpt it. And now we're producing beautiful, powerful, amazing experiences that are surprising us every month. So yeah, I know I I'm genuinely very bullish."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. So you're not worried, you're good. And we shouldn't be worried. Okay. That that makes me feel better. Okay. Let's talk about AI becoming more conscious. You talked about it in one of the podcasts that we be perceive AI more and more as human."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How fast is it happening? What's gonna happen in the next few years?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It it is getting more human like. It's getting more accurate, it's getting more fluid, more smooth, and that is unprecedented. At the same time, it's definitely not conscious. It isn't aware of itself, it can't speak about itself. It, you know, it's very different to what it's like for a human to have a subjective experience and to feel pain and suffering. And it's very important that we keep reminding ourselves of that because consciousness is the basis of our rights based framework and it is the thing that gives us responsibilities as citizens in societies, that allows us to vote, which allows us to be subject to the law, which creates order. Like, you know, we can't begin to attribute this quality to a new species. That would be terrible for our species."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But we still heard stories of Google the story that you told in your book of Google engineer who was convinced by AI that it was experiencing sadness and it was afraid of being shut down."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "True, true. Yeah. And that was an anthropomorphic projection. People, you know, just because it has some human qualities doesn't mean it has all of human qualities, including subjective experience. And I think we can prove that it doesn't have subjective experience, that it isn't going to emerge this kind of self-awareness. That's just a sci-fi fantasy. And I understand why people sometimes go there because we've been schooled on sci-fi for as long as forever. And it's a natural assumption to make. But these things don't suffer. They don't feel pain. They're just simulating high quality conversation. And that is magical and it feels amazing, but that doesn't mean that it is something, it feels something internally to be one of these models. So we've got to be very careful about that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Cause some people talk about our kids having real relationships with AIs in ten years, like getting married to AIs. Do you think it's something that could potentially happen? And if yes, how can we prevent that?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think the history of the human condition proves to us that if it's possible, someone will probably do it. You know, people do crazy things, but the majority of people don't. The majority of people are pretty sound of mind and pretty sensible and just want to live healthy, happy lives. And so if some people choose to marry their AI in 20 years' time, I'm not gonna kind of sit here and necessarily judge that or say don't do it or do do it. If you ask me my opinion, I don't think that these should be treated as entities that are of equal moral significance to humans. I think that they should be in service of humans. They should work for us. That's why we invent technology. You know, I love the technology behind this microphone because it amplifies our voices and distributes them to millions of people on the internet."
+    },
+    {
+      "speaker": null,
+      "text": "That is a technology that is in service of humanity, that's doing good."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "That's what we want. And I don't necessarily think that, you know, these an idea of superintelligence that is autonomous, that can self-improve, that can set its own goals, that can act independently of humans, that to me doesn't feel like a positive vision of the future. It would be very hard to contain something like that or align it to our values. And so that should be the anti-goal. That's not what we're trying to build. Yeah. In my opinion, we're trying to build a humanist superintelligence, one that is aligned to our interests on our team, in our corner, backing us up. That's the great project that we're engaged in at Microsoft with Copilot."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But then again, a lot of people are talking about AGI. Is that similar to sub super intelligence or how would you Yeah, you can think of AGI."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, you can think of AGI as a step before maybe superintelligence, but roughly speaking they're fairly they're used fairly interchangeably."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because Demis, your ex co founder, mentioned we could achieve it by twenty thirty. Can you talk about what it means for society?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, I mean, I I think achieving human-level performance at most tasks, I wouldn't say all knowledge tasks. That feels quite likely in the next five years. I think it's a fairly grounded prediction. You know, if you think about it, these models already do many tasks better than a human. I mean, you know, summarization, translation, transcription, research, document writing, maybe even arguably poetry or some parts of literature or whatever. So you can see that they're taking steps towards being as good as a human at being a project manager or being a marketing person or an HR person or having a tough conversation with somebody about a diagnosis for a medical condition they have. So it is gonna fundamentally change work in the most profound way. It's gonna change the type of work that we do. You know, 10 years ago it wasn't possible for you to do the job that you're now doing."
+    },
+    {
+      "speaker": null,
+      "text": "But with streaming content, you don't need a big team around you, you don't need to be part of a big institution. So we've democratized access to the power of broadcast with the arrival of the internet and streaming and podcasting. That's amazing. Now with these models, we're democratizing access to intelligence. So you don't have to be a really privileged, wealthy, educated person that has access to capital to be able to found a company to hire a great team. You're gonna have a team of intelligences around you. That are the best lawyer, the best doctor, the best teacher, the best project manager. And that is gonna create unbelievable amounts of competition because the distance between an idea and the realization of that idea is gonna collapse. That's an amazing thought."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "People are just gonna be thinking new companies into existence, new products, new pieces of poetry."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But you said people. You said people. Like my my my concern."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "You and me. Like you're gonna have an agent around you that is gonna be able to execute on that idea."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You know what my concern is with super intelligence? That AI is gonna come up with ideas. 'Cause like why would it need like why do we need to come up with ideas if AI has all the information? If we're talking about a marketing business, for example, it can identify gaps in the market, come up with a website, launch the ads, do the business. Do you think that might happen?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It'll definitely happen. It'll definitely happen. You're going to have a team of agents around you that can do more and more of the tasks and arguably do them autonomously. But that comes back to what we were saying before about containment. Containment is the project of making sure that these AIs have limited scope and check in with you and are accountable to you and are working on your behalf. And so the creative challenge for technologists is to say, what are the limitations? What are the guardrails? What can it not do? When does it have to seek your approval for an autonomous action? And, you know, we've we've done this many times in past moments of technology, right? We invented the combustion engine almost a century ago. And that over time became cars and trucks and so on and so forth."
+    },
+    {
+      "speaker": null,
+      "text": "But the amount of regulation that we put around those vehicles to make them work for us in service of humanity is unbelievable, right? Seat belts and vehicle emissions and street lights and freeways and speed limits and driver education. There's so many different components that go into that. And I think this is going to be no different. We're going to have to figure out what are all the regulations and guardrails that go into managing, you know, autonomous agents so that they always work for us."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let me quickly pause here. If all of it sounds exciting but also a bit overwhelming, you're gonna love this. HubSpot for Startups just dropped a free database code 100 Plus Creative AI Use Cases Beyond Code Outreach. It's a collection of real unconventional ways companies across 30 industries, from real estate and healthcare to e-commerce and manufacturing are using AI to solve problems in completely new ways. The truth is the companies that will dominate in the next decade won't be using AI for the obvious stuff. They'll be the ones finding creative applications that give them a real edge. And your next breakthrough might actually be hiding in this list. You'll get implementation guidance, difficulty levels, and the exact tools you need to turn ideas into action. Use it to streamline operations, discover new revenue streams, or uncover advantages your competitors haven't even seen yet. You can access it for free and start building your competitive edge today."
+    },
+    {
+      "speaker": null,
+      "text": "Link, as always, in the description. Big thanks to HubSpot for Startups for sponsoring this video. Let's imagine superintelligence. What does my day look like then? If AI is capable of so many things, what is this thing that is very specific to humans and is gonna stay with humans?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, I think that great technology helps you get bad technology out of the way. And that's the test. Like it is kind of annoying to use a graphical user interface today on your desktop. If you think about it, if you just take a step back, you go to your computer and you've got all these windows with different colors and different brands and different menus and information hierarchies and different settings and you have to learn each app for its own sake. And we don't think of it as advertising, but when you open your computer, you kindly have a bill you kind of have a billboard of all these different competing apps that are like use me, try me, do it's kind of distracting. It's kind of ugly. I just want to be able to turn to my AI and be like, I need this task done."
+    },
+    {
+      "speaker": null,
+      "text": "Solve it for me, buy it for me, book it for me, create it, check in with me at the right time, get my permission, you know, get my feedback, brainstorm with me, whatever it is. But you're gonna start to see the operating system, the browser, the search engine, the apps, all of these are gonna slip away as your personal humanist superintelligence takes over a lot of the day to day work of browsing, searching, planning, booking, thinking, etc."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's no longer gonna be a computer."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "You think? Yeah, I mean, less and less. I think we'll have different kinds of devices like tablets, wearables. It'll be much more ambient in five to ten years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Imagine it's twenty forty like and we're in this kitchen. What things are obsolete, they don't exist anymore, and what do I have to make my life easier? Okay."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Okay. So I think there will probably be some kind of household robotic arm. Probably I don't know if it'll be a humanoid walking around, but certainly you would have a a mounted system on your on your on your counter. Here. I think you'll yeah. It will learn to use all the different appliances. So probably you would l have many of the similar appliances that you've got today, but the AI is just going to learn to use them in the way that you would use them. I think some people imagine that the entire thing is gonna look totally different to suit the AI. But actually it's not. Like the robot is just gonna learn to do the things that you do in the way that you do it. So you're still gonna want to use a kettle. I mean, that kettle is, you know, hundreds of years old."
+    },
+    {
+      "speaker": null,
+      "text": "We've been, you know, making cups and handles like that in the same way. So I think that stuff will remain the same."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So the hand or or a humanoid, what are you leaning towards?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think the the the I mean, fifteen years is a pretty long way out, so it probably will be humanoid, but I think the challenge with humanoid is like the physical the risk of it being physically in your space. I think it's gotta be very, very accurate and very reliable and handling hot things around children and the elderly, and you can imagine all kinds of complications. So I think it'll be technically feasible. It will just be a a bit of an adjustment to people get comfortable with it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about devices? Do you think I'm gonna have like an AI projector? And like tap on the air as it and and get instructions how to cook things? Or is it gonna be glasses?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think that you're gonna just have it in your ear. So I think that, you know, your AI is like your personal AI is just gonna have ambient awareness of what you're trying to do and talk to you in real time. So"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it will have a camera?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In my ear."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And it was oh."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. I don't think anyone's working on that."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, I mean it's very hard to miniaturize that today. So it's still a bit of a way off. But by twenty forty, definitely. And you'll have other wearables on you. I mean, look at how cool this mic is at the moment. It's tiny, super light."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "So in time that'll have a camera on it as well and have ambient awareness."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, so robotic arm, wearables, anything else?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "And then I think those that ambient awareness is gonna mean that the entire kitchen is just way more proactive. Proactively ordering the food and just checking in with you, like, oh, I know that you've got a lot of guests coming this weekend. Should I order all the stuff for the barbecue? Yeah. All of that stuff will just happen seamlessly in the background."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And the car will go and pick it pick stuff up. Yeah. Oh in a very"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, we'll definitely have self driving cars by twenty forty that basically do most of that. Yeah. Or maybe there'll be little bikes or different form factors 'cause, you know, it won't necessarily need to look like a traditional car."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are there any markets where you think people should be paid paying attention to if they want to stay ahead in this AI race? W what are the most exciting markets?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think by far the most exciting new market is medicine."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think at the moment the quality difference between the top ten percent and the bottom ten percent, even in the United States, let alone rest of the world, is is unbelievable. The Gulf is like m probably in order of magnitude, it's huge."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "And again, that's gonna completely collapse because everybody is gonna have access to medical superintelligence and it will cost twenty bucks a month. Like it is gonna be remarkably cheap."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Talk to me w about what you just released, Harvard."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Research, right? Within Copilot, if I ask a medical question, how is it gonna work?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Exactly. So now I mean we find that like about forty percent of our queries each week are health related."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Forty percent."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, four zeros pretty remarkable. Like millions of people a day are asking health-related queries. So we decided to really focus on improving the quality of the health answers. And part of doing that is that we ground the answers in citations from Harvard Medical, which is an amazing kind of gift of the world, like the most respected health institution. And we also do the NHS in the UK and we'll be doing other health systems over time. And so people now get really high quality, very reliable, you know, pretty accurate. Like sometimes it makes mistakes, it's not, you can't rely on it yet. You always have to go see a doctor, etc. But if you think about it, most of the time in a healthcare situation, people are trying to make sense of a complicated technical set of language that they don't really understand. They're probably anxious or worried."
+    },
+    {
+      "speaker": null,
+      "text": "So they want to repeat things lots of times. They want to get it explained in a very simple way. And sometimes they want help actually making a decision about who to go see. So we also now have recommendations for physicians. You could go see a doctor, you could see a dermatologist, you could see a physio, and we will find someone that fits your preferences. Like, you know, maybe you know, you want to see a woman physio who specializes in sports massage because you're a cyclist, and you want them to be local to your area. And so we can make that recommendation. Copilot does that directly inside of the app in chat. That is awesome. Yeah, it's it's so cool to see that taking off."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. I need to ask about my cholesterol level."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Okay."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We're gonna do this today. Like you mentioned that access to knowledge is now democratized. What's gonna happen to traditional education? Will we see the standard like bachelor's, masters, where we basically spend five or six years just acquiring knowledge?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah. I don't think so. I think that knowledge acquisition is going to be a conversation between you and, you know, co-pilot. So for example, another feature that we just launched today, in fact, is this learn live feature. So you actually have a tutor shows up on the screen and it will lay out a quiz for you on any topic that you like. So it doesn't have to be a school curriculum topic. You might be learning about cacti or, you know, Persian rugs. It will give you an education on it, lay out the kind of curriculum piece by piece, give you a nice quiz, present it in a nice graphical use user interface. And so knowledge acquisition is about to get completely decentralized and available to everybody. And you just have an expert teacher in your pocket on any subject."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Does this mean all education businesses are dead? I'm thinking about my abs."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think it's the opposite. I think education businesses that adopt these kinds of AI tools and integrate them as quickly as possible, that they're really going to flourish. It's happening like that for everything. I mean, now in Copilot, you can also generate a podcast literally in a minute. It's a great introductory thing. Like the other day I generate I don't really follow football or like soccer. But I do support Arsenal because I'm from London. And when I go back to London to see my friends, I want to like, you know, know what I'm talking about a little bit. So I asked Copilot to generate me a podcast on how Arsenal is doing in the season and what the latest is with the transfers and who are the best players and stuff like that. So just like fun, you know, simple bits of information are perfect."
+    },
+    {
+      "speaker": null,
+      "text": "And now I'm in the gym listening to a little five, seven-minute podcast about that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Going back to knowledge and education, should I be saving for my kids' college or not? They're five and four."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "So in tr so fifteen years time. Yeah. Probably not. There you go. Yeah. I don't know. It's really hard to judge. I'm not sure that we will value a Stanford education that costs I don't know, what does it cost? Fifty grand a year or something?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "More?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Is it more something crazy?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Fifty is a private school here."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Right. I mean I just I don't I think that we're gonna have world class expertise on tap that cost twenty bucks a month."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But what if like, for example, right now I'm educated and like I study maths, economics, so I can have these conversations. If I completely abandon acquisition of knowledge, how can I have an argument? It's not like I'm always talking to my phone, right?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Right. We you could w you could still argue about stuff. If anything, it'll probably make us all more argumentative 'cause we'll be even more knowledgeable. We wouldn't be exchanging ideas with people, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I mean but s you base your arguments on things that you've acquired acquired when learning something."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, but you you that that's kind of my point, is that the knowledge acquisition in the traditional form, in the classroom, you know, with the textbook, that's gonna shift entirely. So the classroom is gonna look more like practicing using your knowledge."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you I'd acquire more knowledge if I do it the other way around with AI."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Cause then as a kid, you're going to be able to talk to your AI tutor at any time during the day. You're going to learn from the AI podcast. You're going to learn from the AI video that is going to be generated. So all the kind of straightforward teaching is going to take place, you know, with the student and the AI. And then when you come into the classroom for your day, the students are going to be talking to each other about the knowledge that they've acquired from their AI and debating and learning to, you know, be more empathetic and be better listeners and adjust their tone and, you know, that kind of thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what do you think parents should be teaching their kids now?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think it's still important to be good at like learning knowledge from first principles yourself and not depending on the sort of AI tutor leading you through. Like I think one of the most important things is from school is the discipline of being able to teach yourself. That's a meta skill. And that, you know, that that comes with friction. So I think as a parent, you still have to introduce like discipline and friction into the process. Because if it comes all too slowly and it's always on tap, you know, then the then there's a risk that the child could just get used to having everything instantly available and doesn't learn from the hard work, you know, the benefits of hard work, which I think are important. So that's like something to think through now that everything is going to be so seamless."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Another question I wanted to ask you, for everyone who thinks that they need to be technical in the age of AI, you have philosophical background and you're ahead of AI at Microsoft."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, I mean I I think that it's easier than ever to understand what's being built. Like everything is available on YouTube. You know, there are so many courses, the curriculums for all of the major C S classes, machine learning classes are available for undergraduate, masters level even."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that how you learn?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, like I've watched I watched Andrew Ng's course back in the day, which I encourage everyone to look at. And there's just so many classes. I I watched maybe ten years ago, I think, when he was at Coursera and it first came out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "And I've just watched so many of those. So it's very accessible. And I think if you just have a logical mind, you're patient, you're disciplined with your own learning, it is actually very, very easy."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's great. So anyone well, basically anyone who learns can become head of AI, build an AI company without learning how to code and"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, because the skills now are I mean, it's still good to be able to learn how to code, but the primary skill is in synthesis. Like the goal is to bring together all the different disciplines of UX and research and product and the esthetic and also large scale distributed systems for training big models, doing the hardware, like you know, so I think that people who are multidisciplinary and can straddle loads of different technical disciplines are going to get rewarded most."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Well, this is so inspiring. You've released the memory feature, right? So AI is gonna remember everything about us. I don't know how it's gonna I haven't tried the copilot yet, but with other AIs I see how it forgets. Like I just tell it and then I ask the question and for some reason forgets and I have to remind it. Is it gonna be a problem? Have you have you tried it?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It doesn't have infinite perfect memory, but it does remember specific durable facts. So it will remember that you have a preference for, I don't know, pineapple on pizza and that you like going running on a Sunday morning or whatever."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Or like measu my measurements. That's the thing that my eyes keep forgetting. Oh really? Can you choose the size from this website? Oh, I don't have your measurements. I'm like, No, yes, you do."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Oh interesting."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And we'll be like, Oh, exactly. I do have them. I experienced this forgetting problem almost everywhere."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah. I mean we're working on a good knowledge representation as well. So you can go and edit the AI's memory of what it knows about you. And if you ask Copilot today what do you know about me, it will produce a pretty long list. It's not entirely definitive. So it won't be absolutely everything that you've ever told it. It is selective and it chooses what to remember. And you can tell it to remember certain things, like please remember the size and so on. Yeah. But it it is going to remember everything in the future and be perfect if you choose for it to do that. And of course you can delete it and control it and edit it as you wish."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if it remembers everything, what's gonna happen to our brains?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think people said that about calculators, right? Like, you know, people aren't gonna have to memorize their times tables anymore, they're just gonna use the calculator."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But you know what? When I was preparing for GMAT, the test that you have to take for an MBA, they don't allow you to use calculators and there are a lot of numbers. I remember then that two weeks after the exam, my brain was so fast because I trained it to calculate. And then it gradually slowed down and I lost this again."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Do you think that that transferred into other areas of your knowledge because you were good at memorying memorizing the numbers?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "No, I think it was just related to numbers."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It's sort of the risk, isn't it? It's like, you know, I used to be able to memorize a lot of telephone numbers as a kid 'cause I"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because you had to."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, I didn't get a cellphone 'til I was like fifteen. I think I was one of the first people to get cell phones in my year at school. And before that everyone just remembered telephone numbers. And now I can barely remember my own phone number from, you know, my own house."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Do you think it affects our brains or they just develop in a different way?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I don't think so because my brain is now stimulated in a lot of other directions. You know, it's a muscle that you don't exercise, but in turn you focus on other aspects of your brain. And so I think that we're way better at synthesizing vast amounts of novel information compared to like, you know, people in the 50s or our ancestors 200 years ago. I mean, we're completely bombarded with stimulus, right? And so I think that's interesting. It's had an interesting effect. In some respects, it's made us a bit more polarized, in other respects it's made us much more empathetic. Like we don't fear, you know, people of color or people of different sexualities or women. And a lot of that has got to do with just being aware."
+    },
+    {
+      "speaker": null,
+      "text": "Of others and spending time with them and watching them on social media and behave in different ways and and that has driven a lot more empathy actually. People often focus on how it's driven a lot more disagreement and it has, but it's also driven so much more understanding, and, you know, respect and forgiveness and those kinds of things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So d in general do you think we're getting dumber with AI or not?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "No, I don't think we're getting dumb right. I think that it's re it reduces the barrier to accessing information and it actually makes us a lot smarter. You can ask any question now, and many people are. So questions that were previously going unasked because the cost of going to a library and pulling a book off the shelf and talking to the librarian was too hard. It took like four hours to get an answer to some question. Like now you can go to the web and then after the web you can answer a ask a perfect question in a conversational way to a chat bot. So I think that's driving more collective intelligence and more awareness and understanding of our world."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you talk to me about some killer features that you think people are underutilizing right now with AI? Like you implement something and then you save like an hour a day. So for me it was asking AI to add things to my calendar, reply to my emails, search through my emails. That has saved me a lot of time."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, I mean, I think one of the super exciting features is this thing we're calling connectors. So copilot connectors. And you can just say to copilot, hook up my Gmail, hook up my calendar, you can do it in Teams, you can do it with your Dropbox, you can do it for any basically source of data that you have about yourself. And then ask Copilot any question about it. So scheduling, booking, searching for content, and it will actually integrate that knowledge into its answers as well. So if you say, Oh, I'm planning to go here at the weekend, it'll be like, Oh, but you've already made this appointment here or you know, so it would that they will seamlessly have that contextual awareness about you. It's a really cool feature."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So even if I ask it n ask it to schedule something's gonna tell me like, Oh, you have a conflict."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh no, no."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Or or or it's gonna just be like, you know, you're interested. I I I you know, I was reading from you like, you know, where you went on vacation last year when you did your travel planning that you really enjoyed, you know, Greece or something like that. And so you you might wanna try, you know, whatever."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is your personal favorite use case?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I use voice three or four times a day and I use it at the end of the day as well for kind of journaling and talking. So I have it set up on my iPhone in the power button. So I'd literally just press the power button, straight away goes into voice mode, and then I kind of talk to copilot on the way home when I'm driving home."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you talk about your day or"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Talk about my day."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like turnway."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, it's totally Johnny. And then it re then it will remind me what I've said in previous days and it will help me think through a tricky problem I have and it kind of maintains state for me. It's like a second memory."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. I love this. Yeah. It's like second memory journaling that has all the information and then yeah, helps you with your decisions."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It does. That's very cool."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have a worry and knows too much about us?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "No. I th I think that as long as it's useful and it's got a purpose, I don't mind. And I think that's also the story of technology so far, right? Everybody uses the camera and uses location and"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Knows their search history is helping personalize search, so"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like you said, we have to be careful about it. Elon Musk is very vocal about containing AI. I think Jeffrey Hinton said that we'll have to be plumbers if we don't learn how to work with AI. Plumber, did he? Yeah. Because like we're still not there with robotics to do certain tasks, especially like when every house is custom, right? So it's not a standardized task. But with intelligence, it's like we're getting to a point where, you know, people either learn to do something with hands or become entrepreneurs and use AI to bring their ideas to life, or then you're out."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "No, but I think it's making all of us way more creative because people have access to tools in a way they never had before, right? Not not just access to information, but access to experimentation. So you can take an idea, generate the product for it in an image, you can generate the technical specification, you can get the documentation for your marketing campaign. So you can simulate all of these things ahead of time before you've even built and deployed something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What if you're not entrepreneurial enough? I'm just thinking about people who are like, I just want to do like standard thing every single day."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I just feel good about it."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Right, right. But is that an AI problem or is that is that a problem?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's an A because those like 'cause st like those standardized tasks, something that's super repeatable is being replaced."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, but I it depends on your default assumption about the human condition. I don't believe that the majority of people do want to work on a toothpaste packing line just screwing in the top of a toothpaste tube. I think that people want creative work. I think people want to pursue their passions. They want to, you know, be led by their own interests and curiosity. And we shouldn't valorize or, you know, sort of idolize like routine work. Most people, I think many people do jobs that they would love to get rid of and pursue their passion. And I think AI lowers the barrier to entry to you pursuing your passion. Quite often you might be in a partnership with your husband or your wife or your best friend, and they might not be as interested in collecting stamps or, you know, sort of like keeping snails or, you know, great shoes as you are, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And then that's unfortunate. Like now, you know, you have an AI that knows everything that you could possibly think of, you know, about your stamp passion."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "And I think that's cool."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about adjusting to this speed at which AI is developing? During the Industrial Revolution, workers destroyed machines that replaced them. Could something like that happen again?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "That's natural. It's healthy to express fear and frustration publicly and be open and vocal about it. We shouldn't shame it. People are afraid."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "And it's very understandable. But the history of science and technology tells us that net net, these tend to be, or at least so far, they have been incredibly positive transitions we've made. Like automation has lifted billions of people out of poverty. You know, our average life expectancy over the last 250 years has gone from about 30 to about 75, right? That's unbelievable. Like that people are living three times longer, pretty much. And that's too as a result of all of these discoveries and all this science and so on. So I think so far, so good. And I I do think that the trend is headed in the right direction. It doesn't mean that there won't be consequences and side effects, and like you have to be very open minded to that and very like conscious of it. It is gonna happen."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think in our case we'll have UBI to support the problem? 'Cause we've never had it before and you think this is the top."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think we do have it. I mean we that's what our taxation system does. It decides who to, you know, redistribute from and who to redistribute to, and it incentivizes certain types of behavior."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like you. Think about it."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "And so we do we do have a large scale redistribution mechanism today. Wealthier people do pay more taxes than people who don't, pretty much sort of. That's pretty roughly true. That's true. Certainly income tax, not so much on capital gains tax is true. And so we've done redistribution before and we'll have to do redistribution again. I mean, the the the truth is these are labor replacing technologies and you can debate the timelines, but I think you can certainly say by 2050, like in 25 years time, I think there's going to be significant structural disemployment. I think that a large portion of the population are gonna struggle to compete in the in the workplace with with AI. So we're gonna have to decide whether to shorten the working week or whether to you know, increase taxes on some portion of capital."
+    },
+    {
+      "speaker": null,
+      "text": "Or indeed like some portion of high earning incomes and how to redistribute that, because that's what civilization is about. It's about bringing everybody with us and not just you know, a few."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "A hundred percent. And do you think the governments will be working on that or large companies who have?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think the governments have to lead it. I mean, it it needs to be democratically accountable. And there's no question that it needs to be led by governments, but but companies are gonna are gonna be the ones footing the bill. They you know, companies are gonna be the ones that are driving this massive transition. I mean, Bill Gates said many years ago now, like six or seven years ago, that we need a robot tax. The only way to do it is to tax the robots, right? And tax essentially what that means is tax capital. Because intelligence, which was previously the domain of labor, like people, is now getting converted into capital. It's gonna be turned into a commodity that can be sold and resold infinitely. And so that's where the value transition is gonna happen. And so taxation has to follow that value transition."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "He called your book his favorite book on AI. So you wrote your book a few years ago. Is there something that has changed completely that you couldn't predict when you were writing this book?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Change completely."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "There was an update about two thousand twenty four when you said the wave is here, the wave of AI."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is the two thousand twenty five update to your book?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, good question. So in the book, I sort of laid out this framework of capabilities. There was IQ, the intelligence quotient, which is kind of like the factuality and the knowledge citations and stuff. And that was about hallucinations. And I predicted that they were going to be largely eliminated. And I think pretty much we're on track. Pretty much they are. And then there was the AQ. So IQ, EQ, AQ. AQ is the actions quotient, like the extent to which it can get things done, book your calendar appointments and stuff like that. The bit that I missed is SQ, the social intelligence. And like today, actually we're launching this new feature, Copilot Groups. And it's the first time that you can chat with up to thirty two other people and co pilot all in one group. So if you're"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Organizing a trip or your working with your team, no? You're working with your team, or you're, you know, trying to like plan a care pathway for your parent or sibling or something like that. You can have the family or your friends or your colleagues in a single group chat, all seeing the same context, all asking their own questions. And the cool thing about the social intelligence of Copilot is that it can change its tone and style and responses to each individual person in the group, knowing that like your mom might want a different type of explanation to your younger brother or something. And it also remembers the the types of jokes that people like or the history that you have talked about. So if you say that you're really into you know, tennis or something, then it's gonna remember to talk to you about you know, Wimbledon or whatever it is, right? And that's social intelligence."
+    },
+    {
+      "speaker": null,
+      "text": "That's what we do as humans. We can manage the room, we can adjust our style and tone. I didn't expect us in 2025 to design AIs that are really could good at IQ knowledge and and factualness, have really pretty good personalities, can actually take actions on our behalf and can manage group settings. The group thing is very exciting."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow, w where does this lead us, in ten years, this particular quality of AI?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I think it's going to be the main frontier. I think it's going to be the most interesting part because those group settings will involve other humans joining them. So it could be a professional joining, like a a lawyer to give legal advice. And then that lawyer's going to bring their own AI paralegal to fact check or to summarize. Or it could be the doctor and you will have spoken to your AI doctor for half an hour before the human doctor comes in to the same chat. And the AI doctor will have summarized everything, briefed you, talked you through everything, reassured you, answered 25 questions, and then you talk to the human at the end for a shorter time and get the full feedback from the human. And the human doctor knows that its AI is the one that has been approved and it relies on and it kind of reflects them."
+    },
+    {
+      "speaker": null,
+      "text": "So you'll have humans and AIs of different types all in the same group setting."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Yeah, kinda like a Zoom call or a Zoom chat. You know, it's like a it's basically like well, I mean that's what it's copilot groups. You know, there's gonna be group chat all the time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. Okay, this is so fascinating. Thank you so much."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "Pleasure. Thank you for having me. This has been really fun."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, thank you."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    },
+    {
+      "videoId": "U7PcyE0p54s",
+      "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/hqdefault.jpg",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity"
+    },
+    {
+      "videoId": "ZW87Peh3tWM",
+      "thumbnail": "https://img.youtube.com/vi/ZW87Peh3tWM/hqdefault.jpg",
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward"
+    },
+    {
+      "videoId": "NPiKEwTSwn4",
+      "thumbnail": "https://img.youtube.com/vi/NPiKEwTSwn4/hqdefault.jpg",
+      "title": "Google Search VP on How AI Search Really Works | Robby Stein"
+    }
+  ],
+  "topics": []
+}

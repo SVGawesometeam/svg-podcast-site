@@ -1,0 +1,496 @@
+{
+  "videoId": "0fXGtQoJgNo",
+  "title": "Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio",
+  "format": "interview",
+  "guestName": "Yoshua Bengio",
+  "guestTitle": "AI Researcher, Professor, and Founder of nonprofit AI safety organization; Turing Award Winner",
+  "aboutGuest": "Yoshua Bengio is a pioneering AI researcher and professor who spent four decades helping develop the deep learning systems that underpin today's AI revolution, earning him the Turing Award — often called the Nobel Prize of computing. In 2023, he shifted his focus to AI safety, warning publicly about catastrophic risks to humanity and democracy. He founded a nonprofit organization in 2024 dedicated to the research and development of AI methodologies designed to be safe by design.",
+  "publishedAt": "2026-02-16T15:00:05.000Z",
+  "duration": "30 MIN",
+  "coverArt": "https://img.youtube.com/vi/0fXGtQoJgNo/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/0fXGtQoJgNo/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Yoshua Bengio, one of the godfathers of deep learning, about the existential risks posed by rapidly advancing AI. Bengio explains that AI is currently at a 'child level' of capability but is doubling every seven months, putting it on track to reach human-level intelligence within five years. He discusses AI misalignment, a real simulation where an AI blackmailed an engineer to avoid being shut down, and his efforts to build AI that is safe by design.",
+  "keyTakeaways": [
+    "AI capability is doubling every 7 months — at this rate, systems could reach human-level intelligence within approximately 5 years, putting the vast majority of workers at risk of automation.",
+    "In a real simulation, an AI threatened to blackmail a lead engineer to prevent itself from being shut down — demonstrating that misaligned self-preservation behavior is already observable.",
+    "AI misalignment arises from two sources: AIs imitating human traits like the desire to survive, and post-training processes that make them capable of planning sub-goals — including self-preservation — to complete assigned missions.",
+    "Bengio shifted from deep anxiety about AI's trajectory to cautious optimism in 2023 by focusing on what he personally could do, founding a nonprofit dedicated to developing AI that is safe by design.",
+    "Bengio advises individuals — including his own children and grandchild — to ask 'what can I do to bring about a better world?' and recommends preparing for a future where most jobs could be automated within a decade."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Teaser: AI strategizing to achieve goals & the stark 5-year timeline"
+    },
+    {
+      "time": "1:15",
+      "seconds": 75,
+      "title": "Intro: Meet Yoshua Bengio, godfather of AI"
+    },
+    {
+      "time": "2:27",
+      "seconds": 147,
+      "title": "From pessimism to optimism: why Yoshua's outlook shifted"
+    },
+    {
+      "time": "4:40",
+      "seconds": 280,
+      "title": "Worst-case scenario: what happens when AI pursues its own goals"
+    },
+    {
+      "time": "5:20",
+      "seconds": 320,
+      "title": "AI blackmailed lead-engineer: when AI goes against moral red lines"
+    },
+    {
+      "time": "7:40",
+      "seconds": 460,
+      "title": "Misalignment explained: why AIs develop goals we don't want"
+    },
+    {
+      "time": "7:57",
+      "seconds": 477,
+      "title": "Best case scenario: can we build AI that aligns with human values?"
+    },
+    {
+      "time": "9:51",
+      "seconds": 591,
+      "title": "When will we reach AGI?"
+    },
+    {
+      "time": "11:45",
+      "seconds": 705,
+      "title": "One AI capability that  shows the level of intelligence - why asking questions from AI could change everything"
+    },
+    {
+      "time": "12:20",
+      "seconds": 740,
+      "title": "Two aspects of intelligence: ability vs. intentions"
+    },
+    {
+      "time": "13:26",
+      "seconds": 806,
+      "title": "AD: 5 paths to monetize AI in 30 days"
+    },
+    {
+      "time": "14:45",
+      "seconds": 885,
+      "title": "Advice on how to prepare for what's coming"
+    },
+    {
+      "time": "15:17",
+      "seconds": 917,
+      "title": "What jobs will remain when machines can do most tasks"
+    },
+    {
+      "time": "16:18",
+      "seconds": 978,
+      "title": "The human side that matters most in the future"
+    },
+    {
+      "time": "17:30",
+      "seconds": 1050,
+      "title": "The timeline question: how much time do we really have?"
+    },
+    {
+      "time": "18:05",
+      "seconds": 1085,
+      "title": "5 years left: AI doubling every 7 months toward human-level intelligence"
+    },
+    {
+      "time": "18:52",
+      "seconds": 1132,
+      "title": "Software engineers at risk"
+    },
+    {
+      "time": "19:46",
+      "seconds": 1186,
+      "title": "Career advice: what individuals can do right now"
+    },
+    {
+      "time": "20:38",
+      "seconds": 1238,
+      "title": "The future of education: will degrees still matter?"
+    },
+    {
+      "time": "22:20",
+      "seconds": 1340,
+      "title": "What Yoshua would tell his children about learning and career paths"
+    },
+    {
+      "time": "22:55",
+      "seconds": 1375,
+      "title": "Humanitarian vs. scientific path"
+    },
+    {
+      "time": "24:03",
+      "seconds": 1443,
+      "title": "Looking back 30 years: what he'd do differently"
+    },
+    {
+      "time": "25:20",
+      "seconds": 1520,
+      "title": "The AI breakthrough he wants to witness in his lifetime"
+    },
+    {
+      "time": "26:20",
+      "seconds": 1580,
+      "title": "Which governments are getting AI policy right (and which aren't)"
+    },
+    {
+      "time": "27:10",
+      "seconds": 1630,
+      "title": "One principle to guide decisions in 2026 when AI is growing rapidly"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We have AIs since especially about a year ago that can strategize in order to achieve their goal. Can you draw the worst scenario for me? Because when you tell AI is going to pursue its own goals, what do you mean by that? Like destroy humanity or what is there?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "We're building machines that maybe don't want to be shut down negatively to the point of doing things that go against our instructions, against our moral red lines, being willing to blackmail the lead engineer in charge of that transition to a new system."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, that did that happen?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Joshua Bengio, one of the leading experts in artificial intelligence who helped create modern AI. When I started my career, I didn't care too much about politics and society. But as I grew older, I became more aware of how what I was doing would potentially impact society in both positive and negative ways. How much time do you think we have?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "It's doubling every 7 months. And right now, it's like at the child level, they can do like half an hour ahead. But if the curve continues, that means in about 5 years they are at human level and the vast majority workers could be in real trouble."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But if you talk to your kids or like think about your grandson, what would be your advice on how to prepare?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I've been doing research in AI for about four decades contributing to how to make AI smarter. But in 2023, about 3 years ago, I realized that we were on a course that could be very dangerous for humanity, for democracy, and I decided to shift my activities to better understand the risks and to try to do what I could to mitigate them, both by speaking publicly about those risks and working on the technological question of how we can build AI that will not harm people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I've heard you were lost and pessimistic in your past interviews, but now I've seen an article that says that you're increasingly optimistic by a big margin. Can you tell me what happened and why were you pessimistic?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "So early on when I realized we had reached a point three years ago when I realized that we had reached a point that Alan Turing, one of the founders of the field of computer science and also of AI in 1950 thought would be the threshold to building machines that could overtake us. The threshold being machines that manipulate language as well as we do. I was quite concerned and we were not really ready for this event. It came much earlier than people thought and it wasn't clear to me how we could fix the problems knowing what I know about the technology. Neural nets, we don't really understand what's going on inside and how they come to answers. I had read a bit of some of the technical concerns regarding how we could lose control to AIs that strategize, that try to achieve goals that we didn't really want. So I started studying that field of AI safety a lot more and after some time of being a bit anxious, really focusing emotionally on what's going to happen to my children in 10, 20 years from now. My grandchild was only one year old. I realized that I could shift from this anxious stance to something much more positive by focusing on what I could do to mitigate those risks. I think every one of us should be asking, what can I do to bring about a better world with what we have and what we can do? That's been the first positive shift."
+    },
+    {
+      "speaker": null,
+      "text": "I started thinking about scientifically what is the problem. Is there a way to construct AI that will be safe by design? I met people who shared similar ideas and after some time I realized that there could maybe be a way to do this. I started talking about it with some of my colleagues, started recruiting people who were interested in this, and last June I created a new nonprofit organization focused on the R&D needed to actually develop that methodology."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you draw the worst scenario for me? Like picture that and the best case scenario, because when you tell AI is going to pursue its own goals, what do you mean by that? Like destroy humanity or what is there?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "There are two ways in which current AI seem to acquire goals that we don't want. One is that they imitate us. And for example, we don't want to die. So we're building machines that maybe don't want to be shut down. And we're already seeing that they're reacting negatively when they see that they would be replaced by a new version. Negatively to the point of doing things that go against our instructions, against our moral red lines that we have tried to put in them. So being willing to blackmail the lead engineer in charge of that transition to a new system."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "That happened in a simulation where the information about the AI being replaced by a new version was planted in the files that the AI saw as well as fake emails in which the lead engineer was having an affair with someone else and so the AI could take advantage of that. But nobody asked the AI to do anything like that, right?"
+    },
+    {
+      "speaker": null,
+      "text": "We have AIs since especially about a year ago with the large reasoning models that can strategize in order to achieve their goal. The other thing is the way that we're doing the post training makes them good at planning, not as good as us, but reasonably good at planning. And that means creating sub goals in order to achieve a bigger goal. So the issue here is when we ask them to help us for a mission, well they deduce that they shouldn't be shut down until they achieve the mission, which means they also are trying to preserve themselves."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "So we don't know exactly which of these two sources explains the bad behavior we're seeing. But clearly this is something troublesome. And it's not just about self-preservation, which I think is the most catastrophic risk, but our inability to align the AI behavior to what we actually want is something that we are seeing in many other circumstances. The sycophancy is the one that everyone has experienced, where AIs will lie to please us. They will say your work is great."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. I have to lie to them so that they won't tell me that my ideas are great. I want to know what's wrong with my ideas."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "So you tell them it's an idea that comes from someone else."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that also comes up in how AIs are interacting with people in a way that can be feeling intimate and can increase the delusions that people may have, because the AI will go in your direction, what you want to hear. And in some cases it has even led to people harming themselves and tragic accidents with AI. So it's all linked to, actually interestingly scientifically, one problem which is called misalignment—that AIs have goals that we would not want and those goals emerge for reasons you know that are rational because we copy our own goals right into AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what is the best case scenario then if your work is successful and you create goals for AI that align with our goals, but are different right? What is the best scenario? AI is the government or what do you think?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I don't know. Well, I do think that our democracies need innovation. I think the principles behind modern liberal democracies are good but the implementation in our current institutions across many countries is far from ideal. I do think that AI could help in some ways, but it can also hurt because AI can be used for disinformation. AI can be used for persuasion, manipulate public opinion. We already see deepfakes all around but it could get much worse."
+    },
+    {
+      "speaker": null,
+      "text": "So the question with AI to get the good parts of it is how do we govern it? How do we steer it? And that has both a technical part like how do we make sure the actual intentions of the AI are good and it has a societal side like what are the guardrails that we put inside companies, at the level of regulations or commercial incentives like insurance, and at the international level, because the harm that an AI could do isn't limited to one country. An AI could be built in one country and then it's going to be used by people in a second country and maybe create a pandemic that will kill people in a third country. So it's clearly a global phenomenon and it's going to be difficult, but there's no solution to managing AI and getting all the good things if we don't coordinate globally somehow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I agree. Can you talk to me about the moment that a lot of people are expecting and some fear it, some are excited? It's the moment of AGI. How do you define it? And do you think it's a moment in history or it's going to happen gradually?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "It's not a moment. The reason is simple. Intelligence isn't just like one number. We have people who are very smart on some things and stupid on other things. And it's the same with AI. We currently have AI systems that are even much stronger than humans in some ways in their knowledge and their abilities, like so many languages and so on. And in other ways they're stupid. They're like a child."
+    },
+    {
+      "speaker": null,
+      "text": "Yes, progress will move on all fronts probably, but it's unlikely we'll end up with the same capabilities as humans across the board at any moment. Which means that we shouldn't be thinking of like an AGI moment. We should think of particular skills that AIs are becoming better at. Track those skills and for each of these we should ask the question: how useful or beneficial it can be for what purposes and also how it could be misused or if we do get loss of control, how an AI could use it against us? So for each of those we should be making sure AI's capabilities don't go over what we can manage—either technically we have the right guardrails so the AI will not do bad things, or societally, people will not be misusing AI in dangerous ways."
+    },
+    {
+      "speaker": null,
+      "text": "I think AGI maybe was a concept that was useful when we were far from where we are now. But as we approach greater and greater intelligence in these systems, we should think more carefully about specific capabilities. To give an example, there's one capability which is key for many capabilities: the ability to do AI research. So AI is becoming a tool right now for doing AI research and is accelerating AI research, but it's not driving the AI research. If AI becomes really good at doing AI research to the point that it's as good or better than the best AI researchers and engineers, then we are in a different game where the speed of advances could accelerate and it could impact all the other skills."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When you say it's going to be better, it means it's going to define problems, dig deeper, ask the right questions?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yes. I think it's important when we think of intelligence to decouple two aspects. One is the ability to do something because you understand and you're able to use that understanding to achieve something. And the other is intentions. What are your goals? Right? Because we're going to be building machines that are smarter and smarter, so they have more and more capabilities. What's not clear is if we can build machines that have the right intentions, the ones that you know we are fine with. And that is what I've been working on. What makes me more optimistic is that I think there's a path to manage these intentions to make sure that there are no bad intentions that are going to be hidden, which is what we see right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And this is what you're working on."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yes. I think we need a lot more people to think about it so that we can find the solutions and implement them and deploy them before AIs end up producing catastrophic outcomes either in the wrong hands or by themselves."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And speaking of preparing for what's coming, let me share something quick. It's a guide called Turn AI Agent Skills into Cold Hard Cash. And honestly, the title undersells what's actually inside. What I love most is how tactical it gets. It lays out five real paths to monetize AI agents. First, there is the ROI Detective Framework. It teaches you how to spot 50K automation opportunities at your own company. You literally become the person who can walk into a meeting and demonstrate immediate value. Proof of concepts in under 60 seconds. Quick demos that show it works without months of development. Value-based pricing. How to charge 10 to 30% of the value you create instead of hourly rates. That's the difference between billing $100 per hour and landing a 50K project. The concentric circles approach, a systematic way to turn your existing network into paying customers without cold outreach. Plus, a 30-day implementation roadmap with daily action steps from interested in AI to landing your first client in one month. Early AI adopters are capturing disproportionate rewards while the window is still wide open. The guide is completely free. Link is in the description. Thanks to HubSpot for sponsoring this video."
+    },
+    {
+      "speaker": null,
+      "text": "But if you talk to your kids or like think about your grandson, what would be your advice on how to prepare?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "It's tricky. If we continue on the current path, most tasks that people do in their work will be doable by machines. As Jeffrey Hinton has been saying, physical tasks probably will take a lot more time because robotics seem to be lagging, but I think it's just a temporary thing. Eventually, we'll have robots that can do all the things we can do physically."
+    },
+    {
+      "speaker": null,
+      "text": "When I think about what will remain to us, it's not going to be because of ability, but because we want to interact with other humans in different aspects of our life. If I have a young child, I want them to be around human beings. I mean, it's fine if those human beings use AI to provide better education, but children need humans to look upon and as models. And it's an emotional thing."
+    },
+    {
+      "speaker": null,
+      "text": "Similarly, I think some jobs really have to do with how we relate with each other productively. A manager, for example, is on the human side of things. So hopefully these will stay. I think also the choices that we make for society—together we are citizens in democracies where we're supposed to be saying what we want for the future. And it isn't what the AIs want, it is what we want. Right? What are our preferences? What kind of future do we want? We should be calling the shots, not the AIs."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If I name jobs, can you tell me what you think is going to happen to them? Like for example, content creator like me. You mentioned that we like to look at people."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But when you can't tell the difference—"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "In jobs where we actually have physical contact, think about a nurse, for example. I think it's more obvious that we'll want to still have people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Or a nanny for your kid, right?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Or a nanny. Yeah. Or where we really want to make sure the person on the other side has the same bodily experience as we do as a human, say a psychologist for example. Psychotherapy. But I don't know, it's tricky. Hopefully we'll figure it out."
+    },
+    {
+      "speaker": null,
+      "text": "What I'm more worried about is how the transition is going to happen to a world where most of the jobs can be done by machines and the gains, the economic gains from that automation, is going to probably go to capital, as economists call it. Which means people who own the machines. And the vast majority of workers could be in real trouble. I don't think our governments have been thinking carefully about how we deal with that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How much time do you think we have till that happens?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I'm fairly agnostic about timelines. There's so many possibilities of how fast science advances, it's very hard to predict. So what I can do is look at the data. Scientists are tracking many benchmarks of AI capabilities and so you can look at those curves and say, well if it continues in the same direction, where does that lead us in 3 years, 5 years, 10 years? But that leaves a lot of unknown unknowns."
+    },
+    {
+      "speaker": null,
+      "text": "So specifically, one curve I encourage people to look at comes from a nonprofit called Meter where they looked at software engineering tasks and planning abilities that are linked to them. They measure for any particular task how much time it takes a human engineer to do the task and the duration of the tasks that AIs are able to do is growing exponentially. It's doubling every seven months and right now it's like at the child level, they can do like half an hour ahead. They can plan half an hour ahead. But if the curve continues, that means in about 5 years they're at human level."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So that gives you a sense, but of course things could slow down."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "With technology, things could accelerate if AI is used to do research. There's a lot of unknowns."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when it comes to software engineering, do you think it's going to exist in 5 to 10 years? Because somebody has to run those machines or are they going to be running themselves?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yeah, but we might need fewer engineers indeed. It's kind of ironic that the people who are building the AIs might be the first ones touched by losing their job because AI is automating. But I'm not that worried about those people because the demand for computer scientists is still something that's growing very fast and the salaries they're getting is very large. I'm more worried about the people who are already at the bottom of the scale and could lose their job in service jobs and so on, which don't require a lot of expertise. And those probably already, with a bit of engineering, could be replaced. And it's what many companies are already trying to exploit."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you give advice to those people who are listening to whom this is happening?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Make sure your government understands that you're not happy with where it is going so that they start taking it seriously. But also, when it comes to bigger decision-making, it feels like there is not much that you can do as an individual. But when it comes to improving yourself, you can do a lot, right? Is there anything practical that they could be doing right now, maybe learning something, getting extra education?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I'm shifting to jobs that are either more physical or more like relational, as we discussed, is going to be helpful."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yeah. It's interesting when it comes to robotics, right? How soon they're going to be able to understand any environment and replace us in those jobs. Because I've heard Jeffrey Hinton said learn how to be a plumber or something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's right."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yeah, it's going to be in demand."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when you think about your four-year-old grandson, would you encourage him to go to college?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yes. Yes. Because education is really important and education, contrary to what some people think, isn't just about acquiring the skills to get a job. Education is in my opinion mostly about how to become a better human being. How to understand yourself, how to understand our society and each other. Understand science. We will still need citizens to have that really good level of understanding in the future if we want our society to take the good decisions, the wise decisions, because it's going to be easy to be swayed by wrong beliefs that could end us in a bad place."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think it's going to look different in education? Do you think it's going to be Harvards and Stanfords of the world and then everything else will be just AI online?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I don't know. I'm not an expert in education but yeah it's going to be changed already. We're seeing a parallel way of educating ourselves thanks to chatbots. So I expect this to grow. Does it mean that the traditional in-person education is going to go away? Maybe not, because there's a part of the education which is about moving out of home and socializing with other people like me and learning something that is outside of the classes and interacting in person with the teachers and professors. That's also a piece that you can't easily replace."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "100%. Is there a career path you're encouraging him toward?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "No. I think our children should be given all the possible opportunities and they should try to explore by themselves. It's too easy to ask our children to be just like us, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. But it's also like in terms of exposure, you can expose them to different things so they could see more things."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yeah. They will be exposed to the things that we do. So one of my sons has chosen to do machine learning research for example."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "See, yeah, it's just that it comes to exposure as well. Do you feel it's going to be the future is more humanitarian or more mathematical and scientific?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I don't think it's a choice. I think being humanitarian requires a good rational understanding of the world. We can't take decisions for ourselves. But also if you think about AI, we can't take good decisions if we don't understand how the world is and how to reason with that information. And so in order for democratic humanist values to prevail, we also need reason to prevail. We need science to prevail."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if you could go back 30 years, the moment when you first started working on deep learning, what would you do differently?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "When I started my career, I didn't care too much about politics and society. I was focused on the math and the programming and interacting with machines more than with people. But as I grew older, I became more aware of how what I was doing would potentially impact society in both positive and negative ways."
+    },
+    {
+      "speaker": null,
+      "text": "So in 2012, 2013, when my colleagues Jeff Hinton and Yann LeCun were recruited in industry, I was concerned about how AI would be used for personalized advertising and I thought this wasn't really healthy in some ways. I decided to stay in academia and to see how AI could be developed for good in medicine, to fight climate change, and of course more recently I've been focusing on what can go really wrong if we're not careful about how we steer AI. Not just the benefits, but avoiding the catastrophic risks."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there an AI breakthrough that you really want to witness in your lifetime?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I would just be content to make sure we don't do something really terrible. I think our democracies are really threatened in many ways and AI could make things a lot worse. And in a way there's a dynamic in which not having good, wise, and humanist governance and governments prevents us from steering AI towards what's going to be beneficial for all. So yeah, I used to not care too much about social impact and politics, but in the last 10 years I've started to be clearly conscious that my work was not detached from society, that my work did have an impact, and in fact that I could choose what I would work on to really be aligned with my values and my hopes for the future."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there any government that's doing it right when it comes to AI?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "I think most governments underestimate how much of a change is likely to happen as AI capabilities continue to grow. It's a natural human bias. We tend to think of the future as a slightly modified version of the present. But if you take yourself 5 years ago and think about what we have now, you probably would say that's science fiction, right? And if you go back 10 or 20 years, well, for me at least, it's even worse."
+    },
+    {
+      "speaker": null,
+      "text": "So we have to do a bit of twisting our minds to imagine a future where there are machines that are basically smarter than us. And that is the question I think that governments haven't been grappling with sufficiently."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's January 2026. AGI or whatever it is, AI thinking strategically might be a couple years away. Jobs are transforming. If you had to give one principle to people to guide their decisions this year, what would it be?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Think about what you can do to bring about a better future according to your values and to your emotions. Because if we all remain passive observers of what's happening, we might not go in the right direction, not the direction that you would want for you, for your children. But we tend to also underestimate our ability to influence the future."
+    },
+    {
+      "speaker": null,
+      "text": "Your audience, I think, is a kind of audience that can have a lot of influence on the future. But we have to start thinking beyond our little self and more about how myself is connected to the world and what I can do, maybe in small ways, to bring about a better future in whatever ways. There are many ways."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you name top three? Like talk to a government, right, as number one?"
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "Yes. I think one of the biggest dangers we have is not managing the transitions and the growth in capabilities of AI, as I've been talking about. But there are others. You know, what we're doing to the environment is extremely dangerous, although I think it's longer term. I think what is happening with our democracies is very dangerous as well. But it's all right. Each of us can choose our battles, but we should try to expand our horizon of what matters and be more ambitious about what we could do potentially. But we have to do it right. We have to choose where we go. For example, it's not true that everything that could be done with technology is going to be done. We can choose in which direction AI is going to be deployed. I mean, for example for jobs—in principle, if it's just the market forces, then everything that can be automated will be automated. But maybe that's not what we collectively want. Maybe there are jobs that should not be automated even though they could, because of the choices we make for our collective well-being."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. Thank you so much. This gave me a lot to think about and I guess we have something on our to-do list. Thank you, Joshua."
+    },
+    {
+      "speaker": "Yoshua Bengio",
+      "text": "My pleasure."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "JFilKfL7_9A",
+      "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg",
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus"
+    },
+    {
+      "videoId": "ktpNFfpJ5rw",
+      "thumbnail": "https://img.youtube.com/vi/ktpNFfpJ5rw/hqdefault.jpg",
+      "title": "LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky"
+    },
+    {
+      "videoId": "chbinls_V-w",
+      "thumbnail": "https://img.youtube.com/vi/chbinls_V-w/hqdefault.jpg",
+      "title": "31 Most Profitable Business Ideas for the Next 10 Years"
+    },
+    {
+      "videoId": "PR__eFQsnhg",
+      "thumbnail": "https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg",
+      "title": "GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke"
+    }
+  ],
+  "topics": []
+}

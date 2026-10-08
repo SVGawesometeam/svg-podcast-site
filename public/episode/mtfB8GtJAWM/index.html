@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Gaurav Munjal is a serial entrepreneur who began coding at age 12 and sold his first company at 23 before co-founding Unacademy, India's largest online education platform valued at approximately $3 billion. Roman Saini is a medical doctor and former civil services aspirant whose educational videos attracted millions of views and helped validate Unacademy's model of connecting top subject-matter experts with students online. Together they have scaled Unacademy from a single YouTube channel to a multi-product edtech company with offline centers, 100+ content channels, and an AI-driven English learning app expanding into the US market.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -504,7 +516,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Started as a YouTube channel and now the largest educational company in India valued at around $3 billion. You had like 1,000 educators creating. Are you replacing some teachers with AI? You should not think that you are the only one who can do it. You're preparing for your IPO, right? And you're still losing money.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Started as a YouTube channel and now the largest educational company in India valued at around $3 billion. You had like 1,000 educators creating. Are you replacing some teachers with AI? You should not think that you are the only one who can do it. You're preparing for your IPO, right? And you're still losing money.</p>
             <p>Men usually don't talk about it, but 50% of whatever crying has happened in that case. I was having a panic attack once a month. That was quite terrible. We were losing 150 million a year. Have you ever had this conversation like let's just shut down the company. It's not working. You know, we just need a big win also again. Maybe we should build a Duolingo competitor. And it just worked.</p>
             <p><strong class="speaker">Gaurav Munjal and Roman Saini:</strong> I think I was in college and Roman and I went to tuition together. It's coaching for examinations in India. Test prep is a big market. So we used to go to this coaching center together and then I went to Mumbai and he went to Delhi. Then I think it was the third year of college where Khan Academy was super big. I was always tweaking around stuff. I started coding when I was 12. I was blogging when I was 17. So my parents got a $200 check from Google AdSense when I was 17. So they thought I'm doing some fraud or something like that. It's been an interesting journey where we have been content creators first and then product people.</p>
             <p>Third year of college we launched a channel called Unacademy back in 2010 and started creating content. Then we went on to do other stuff. I started a company that I sold when I was 23, but the channel was always growing. At some point Roman, who was a medical doctor and was the one good in academics—I used to just somehow pass my subjects—he started creating content and those got millions of views. Then we decided that we'll create Unacademy, which is like a YouTube for education. We had seen Twitch was recently acquired by Amazon. So the thesis was that there is unbundling of YouTube happening, and if Twitch can be so valuable, that's how Unacademy started.</p>
@@ -544,7 +556,6 @@
             <p>Test prep is not technically education. It's a competition, a tournament. When you are preparing for like if it's cricket or badminton or baseball, the players want ex-coaches to train them—coaches who have been successful in that sport themselves. The mindset and everything. It's a discipline as a product. You really need someone to discipline you on a day-to-day basis.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Let's go back to the beginning of Unacademy. So you had two separate channels, right? On medical things and on coding, right?</p>
             <p><strong class="speaker">Gaurav Munjal and Roman Saini:</strong> Yes, that I understand. So when was the shift? Like, I no longer want to create content myself. I'm going to start hiring people. So that's a huge mindset shift for a lot of creators because my journey was like no one can do it like me. It has to be me. Now I understand it's not the truth. But when did you feel it like, hey, we can start hiring?</p>
-
             <p>For us, I think even before we started the company, we knew that it's not going to be just a YouTube channel. I knew very early. I think I was in sixth or seventh standard when I was 12 years old. I told my dad that I want to start a company called Doors because Bill Gates has launched Windows. I think the journey has been interesting. We knew way early that YouTube is a stepping stone and not the end goal.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Roman, how did that feel for you? Like you had this stable career, you passed all the examinations at first attempt and then suddenly just going to a completely different thing.</p>
             <p><strong class="speaker">Gaurav Munjal and Roman Saini:</strong> I knew Gaurav like for more than half of my life. We always stayed in touch on and off. It was very difficult for me to create content initially in 2011, 2012 because of so much software involved—editing—and we didn't have any help. So he had launched an app where it was very easy to create content using that. So it was kind of democratizing content creation. So I tried that and I was hooked on it, and we were using that to push content. I did that for one to two years on YouTube. We were in the top 20, top 30 YouTube channels in India at that time.</p>
@@ -585,24 +596,28 @@
             <p>So his view was that historically edtech had not made money. But in fact, what we did in India—Unacademy, Physics Wallah—these are the companies that changed the game for the world. We made edtech interesting. So my view is that it will become a product business from a services business. With AI, what will happen is that whether it's language learning, whether it's test prep—maybe supplemental test prep to begin with—or whether it's school education, you would not need your next door teacher again.</p>
             <p>Services business for homework help is the biggest market there ever is because parents are busy with their jobs. So usually what happens in India and other parts I don't know about the US is the parents would send somebody to the next door neighbor who would do tuition classes—again one to four, one to eight batches. But again, a services business. So I think that will change a lot. It will become a product business specifically for edtech. But it is very tough to imagine what will happen to the rest of the world with AI. It's very tough. I mean, I don't think our human mind can comprehend it.</p>
             <p>For example, I definitely think that in five years, robots will be cooking 30% of the food in the world. Please, like I need a robot in my house. I can't just manage the whole household anymore. So yeah. Or we'll see more vertical use cases of robotics like that. What is called Roomba? Yeah, something like that. More vertical use cases of that. And then you know, we already have self-driving cars, and crazy San Francisco—a lot of my friends, they just switched to Waymo just because it's so much more convenient. I heard it's 27% market share in San Francisco now. Yeah, and if it continues at that pace, it's going to replace 200,000 drivers in the US. And the speed of innovation is so fast. You saw what happened with those DALL-E images or whatever</p>
-          </div>
+      </div>
     </div>
 
     <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/s-Iz-lLAhdg/" class="related-card">
                 <img src="https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg" alt="Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan" loading="lazy">
                 <span class="related-title">Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan</span>
               </a>
+
               <a href="/episode/GDeEATJcbJo/" class="related-card">
                 <img src="https://img.youtube.com/vi/GDeEATJcbJo/hqdefault.jpg" alt="Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn" loading="lazy">
                 <span class="related-title">Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn</span>
               </a>
+
               <a href="/episode/3FgPLbfs_oY/" class="related-card">
                 <img src="https://img.youtube.com/vi/3FgPLbfs_oY/hqdefault.jpg" alt="AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit" loading="lazy">
                 <span class="related-title">AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit</span>
               </a>
+
               <a href="/episode/U7apPfqHgvg/" class="related-card">
                 <img src="https://img.youtube.com/vi/U7apPfqHgvg/hqdefault.jpg" alt="$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal" loading="lazy">
                 <span class="related-title">$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal</span>

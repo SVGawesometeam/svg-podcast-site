@@ -1,6 +1,18 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "podcast.marinamogilko.co" }],
+      "destination": "https://marinamogilko.co/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.marinamogilko.co" }],
+      "destination": "https://marinamogilko.co/:path*",
+      "permanent": true
+    },
+    {
       "source": "/podcast/ryan-roslansky-linkedin-ceo-future-of-jobs",
       "destination": "/episode/ktpNFfpJ5rw/",
       "permanent": true
@@ -69,6 +81,22 @@
       "source": "/yt_channel/:path*",
       "destination": "https://www.youtube.com/@SiliconValleyGirl",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()" },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://img.youtube.com https://i.ytimg.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+        }
+      ]
     }
   ]
 }

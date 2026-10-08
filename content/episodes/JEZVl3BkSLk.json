@@ -1,0 +1,562 @@
+{
+  "videoId": "JEZVl3BkSLk",
+  "title": "Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra",
+  "format": "interview",
+  "guestName": "Shishir Mehrotra",
+  "guestTitle": "CEO of Superhuman · Founder of Coda · Former CPO of YouTube · Spotify Board Member",
+  "aboutGuest": "Shishir Mehrotra is CEO of Superhuman (which acquired Grammarly, serving 40 million daily users) and founder of Coda. He previously served as Chief Product Officer of YouTube and has been a Spotify board member for over a decade. Throughout his career, he has focused on promotion frameworks, management philosophy, and how AI reshapes career development in tech.",
+  "publishedAt": "2026-09-08T18:01:02.000Z",
+  "duration": "39 MIN",
+  "coverArt": "https://img.youtube.com/vi/JEZVl3BkSLk/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/JEZVl3BkSLk/maxresdefault.jpg",
+  "summary": "Shishir Mehrotra, who spent 20 years making promotion decisions at major tech companies, shares how to position yourself for career growth before the next phase of AI (2026–2027). He emphasizes that the best opportunities never come through traditional recruiting funnels—instead, they emerge from interesting projects, thought leadership, and unexpected interactions. Mehrotra introduces the PSHE framework for how promotions actually work and explains that as AI automates execution-level work, the entire career ladder shifts upward, requiring managers to develop judgment and decision-making skills rather than pure execution ability. He reveals that he uses three AI agents daily and focuses on hiring for \"eigenquestions\"—the ability to ask the right questions—which has become his primary indicator for identifying talent. The episode covers low-stakes skill practice, the \"trough of disillusionment\" mid-career, and Bill Campbell's pivotal advice that changed how Mehrotra measures personal success.",
+  "keyTakeaways": [
+    "Stay out of the recruiting folder — the best jobs come through organic interactions around interesting ideas, not traditional job applications. Mehrotra uses email auto-splits to separate job seekers from interesting people, and most of his career transitions (including his Spotify board role) started with shared work, not job conversations.",
+    "Learn to be a manager, not just a better executor — as AI tools automate execution, the critical skill shifts to judgment and decision-making. The best managers can still do the work themselves, but the world is reversing: proficiency in execution is still important, but management skills are now the differentiator.",
+    "Practice new skills in low-stakes environments before applying them in high-pressure situations — learning judgment, eigenquestions, and AI-centric design should happen in side projects, with friends, or in repeatable scenarios with quick feedback loops, not during your highest-stakes work moments.",
+    "AI pushes the entire career ladder up, not down — jobs don't disappear; they shift upward. Entry-level roles and execution-focused work transform rather than vanish, which is why learning to manage judgment becomes critical as you advance.",
+    "Eigenquestions—asking the right questions—is now the top hiring signal — this skill has become Mehrotra's number one indicator for candidates he wants to work with, and it requires deliberate practice in lower-stakes settings to develop effectively."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "00:38",
+      "seconds": 38,
+      "title": "If you started your career from scratch today"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "title": "Stay out of the recruiting folder"
+    },
+    {
+      "time": "02:56",
+      "seconds": 176,
+      "title": "Why \"learn every AI tool\" is the wrong advice"
+    },
+    {
+      "time": "04:26",
+      "seconds": 266,
+      "title": "We're hiring judgment"
+    },
+    {
+      "time": "04:50",
+      "seconds": 290,
+      "title": "Every skill is best learned in low-stakes places"
+    },
+    {
+      "time": "06:37",
+      "seconds": 397,
+      "title": "Is the career ladder getting erased?"
+    },
+    {
+      "time": "06:55",
+      "seconds": 415,
+      "title": "PSHE: how promotions actually work"
+    },
+    {
+      "time": "08:00",
+      "seconds": 480,
+      "title": "The trough of disillusionment"
+    },
+    {
+      "time": "08:36",
+      "seconds": 516,
+      "title": "AI pushes the entire ladder up"
+    },
+    {
+      "time": "10:08",
+      "seconds": 608,
+      "title": "Why he doesn't like the word \"replaced\""
+    },
+    {
+      "time": "13:18",
+      "seconds": 798,
+      "title": "What happens to entry-level careers"
+    },
+    {
+      "time": "15:42",
+      "seconds": 942,
+      "title": "Eigenquestions: the skill he hires for"
+    },
+    {
+      "time": "16:40",
+      "seconds": 1000,
+      "title": "The teleportation interview question"
+    },
+    {
+      "time": "20:24",
+      "seconds": 1224,
+      "title": "How to practice this without risking your job"
+    },
+    {
+      "time": "22:10",
+      "seconds": 1330,
+      "title": "Inside Grammarly: 100 billion AI queries a week"
+    },
+    {
+      "time": "24:54",
+      "seconds": 1494,
+      "title": "Demo: building agents that work where you work"
+    },
+    {
+      "time": "28:14",
+      "seconds": 1694,
+      "title": "Chat, do, assist — three ways to think about AI"
+    },
+    {
+      "time": "29:40",
+      "seconds": 1780,
+      "title": "The three agents he uses every day"
+    },
+    {
+      "time": "34:37",
+      "seconds": 2077,
+      "title": "Bill Campbell's advice"
+    },
+    {
+      "time": "37:20",
+      "seconds": 2240,
+      "title": "The metric he still measures himself by"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "You learn to be a manager. I spent years giving people the opposite advice."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would you say to people whose job is already automated? This is Shishir. He spent 20 years deciding who gets promoted. He ran product for YouTube, he sits on the board of Spotify, and now he runs the company behind Grammarly. 40 million people use it every day."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "You think about a world with AI everywhere, what happens? It actually pushes that entire ladder up. The original skill didn't go away, it just shifted."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The job you're doing today and the job you get promoted for aren't the same anymore."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Since it's become my number one indicator of someone I want to work with, someone I wanna hire, is how good are you at-"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You represent someone who's been in multiple careers. So you worked at YouTube, you worked at Spotify, you started your own company. Now you're the CEO of Superhuman, which also incorporates Grammarly and helps humans become super humans. So if you had to start your career from scratch today, what would you do in the next 12 months to stand out on the market?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I'll give a couple pieces of advice. I think one thing that people often don't think about is how to stay out of the recruiting folder. What I mean by that is the most interesting jobs. In fact, all my transitions for the most part have happened through an interaction where we weren't talking about recruiting, we weren, we weren't going through a job conversation. And so I think a lot of people focus their energy on how do I interview well and how do we get through the screening and so on. But actually, the most interesting candidates I've ever hired or places I've jumped in usually happened through some interaction that didn't start with a I'd like a job or would you take this job. So for that, I think it's be interesting in the world. Start projects that people might see, write things that people may see. Not only is it easy to produce those things, the outlets for being able to spread them are so wide."
+    },
+    {
+      "speaker": null,
+      "text": "I think that's really important. I mean, the way I ended up... At, I've been on the board of Spotify for over a decade now. And the, you know, it started with a paper I wrote, you know, Daniel was interested in it. And we started talking about it. And then it led to, Hey, would you, would you do more of the company? On social media? It actually wasn't even shared. But in this case, it was passed around through different people. It was called formats of bundling. It's how, how to think about bundles. Somebody sent them the idea and said, you should talk to share about it and we ended up chatting about it, so I think the main advice I give people that in a world full of candidates trying to find spots, you have to find your way to stand out. And the best thing to do is actually avoid recruiting. That's not the funnel you want to be in."
+    },
+    {
+      "speaker": null,
+      "text": "You want to, everybody has a, uh, you know, in your email, you've got your, you know we use superhuman, so they, we have our splits and, you know, I have my one for recruiting. It's a lot of people looking for jobs and, you know those all go right through my, uh recruiting team. Then there's other ones that are interesting people I want to have a conversation with. And that's, that's the pile you want."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like how you visually presented it to me right now, because once you're applying for a job, you're ending up in a folder that's full of other candidates."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I mean, I have, I haven't auto-split for it. Superhuman allows you to write AI based prompts for auto-organizing your emails. And so the, I had one that explicitly takes everybody looking for a job and puts them in a, in a corner and I go through them and I read them, but you know, all I'm doing is directing where, where they, where do they might go? I'm not really thinking, is this an interesting person that I want to come spend time with and learn something? And then unexpectedly it might lead to, lead to an interesting opportunity. The second thing I'd say is I think it's fairly generic advice that everybody should learn every AI tool that you possibly can. I think the more interesting advice is you learn to be a manager. This is tricky because I spent years giving people the opposite advice, learn to a proficient executor."
+    },
+    {
+      "speaker": null,
+      "text": "The best managers we hire are ones that can do the job themselves and kind of work their way into management. And I think, the world is reversing a little bit. And the skill of the how do you write code or how do, you know, how do you write the specific blog post and so on is very important still. But... As we use AI tools, we're put in a position of feeling like managers. And I think that's a different skill."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you learn it when, in my opinion, becoming a manager? And I've learned this through practice, right? I started by myself. I did a lot of manual things by myself, I learned what's good, what's bad, and then I hired. So this is how I transitioned into becoming a Manager. What would you say to people whose job is already, like manual job is, already automated? How do even learn what's, good or bad?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "To be honest, that's what we're hiring, right? So we were hiring judgment. I think it's really important that every skill that you learn takes practice and you have to put yourself in a position to, to practice. I also think every skill you learn is best learned in low-stake scenarios. So one of the things I have a framework for, um, something we call eigen questions, which is the art of asking the right question, just very related to, To what being a manager feels like I also, I wrote a post about it and a huge section of the post was how do you learn to do this? And one of the things that I think people miss in learning is they try to apply it in the highest stakes situation they can. As you think about other things you learn in life, you learn an instrument, you learn to play a sport. Imagine if the only way to learn was to do it."
+    },
+    {
+      "speaker": null,
+      "text": "You could only learn the sport and you could only play in broadcast games or you're trying to learn an instruments. And every single practice was actually a recital and everybody was watching and the stakes were super high. It wouldn't make any sense. You got to, you know, you got to come down in your basement and play your guitar. You got get out on the driveway and shoot some hoops. Like that, that's how you, that how you learn. And so I think what I advise people is if you're trying to learn the skill, if you trying to be good at how to do AI centered design, for example, do it in a side project, do in something that's very low stakes. Do it with a friend. Do it in a thing that you can repeat over and over again and get very quick feedback loops on because then you'll get good at it before it's in that high stakes situation."
+    },
+    {
+      "speaker": null,
+      "text": "And I think it's not easy to do because you have to force yourself to, you know, the equivalent of get out on the driveway and shoot hoops is different in every job, but it's become easier now than ever before. As you're learning your skills, find your way to practice, find your partners to practice with and do it, do it in the lower stakes situation"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically work on a project by yourself, and then when you're applying for a job, you have something that you can show."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "It might not be by yourself, but don't do it. You don't have to do it in the main work scenario. It's particularly true of skills that are creative, that are judgment, that are, you know, how do you learn that form of judgment? Well, it's hard when you're in the job, you're the recital. Every meeting has lots of people in it and you're, the one that's trying to learn. And so for you to be vulnerable and say, well, I thought that was pretty good, is, you're gonna get judged. And so you wanna find lower stakes places to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when this happens, when somebody who comes to your company has already some management skills, has some experience starting a side project, what happens to career ladder? When you came in, no experience, did manual things, then you got promoted. Do you think it's getting erased?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "No, actually I think, so let me tell you a little about my view on career ladders. I have a framework I use for this, it's called PSHE. Problem, Solution, How, Execution. So you start off as, in this case I'll say product manager and I'll describe the others in a minute. You start at the bottom, we hand you a problem, we hand your solution, we hang you the how. We tell you, you should go talk to this team, you should write this document, so on. And all you have to do is execute. You just have to that, do that task. At some point we hand to a problem. We hand you your solution. You figure out the how, so you figure out how to organize the team. You figure out how to do the milestones, you figure out the cadence. At some point we hand you a problem and you come back with creative solutions."
+    },
+    {
+      "speaker": null,
+      "text": "You know, and ideally solutions that nobody thought of, solutions that are really solve the problem beyond what people expected. And at the very top of this, we hand to a space and you tell us the problems. I know you told me to go work on activation, but actually our biggest problem is brand, or I know, you told me to work on sales, but our biggest problem was marketing. That latter PSHE is a very different access than, than, then scope. And one of the the leaders is the woman who's running infrastructure for Google. She went and very mathematically took her whole team and put them on both axes. What came back was really interesting. It came back as an S curve. So what she said is early in people's careers, they mostly moved on the scope axis. You're mostly working at that E level, you know, where you're the execution level, and we're just giving you bigger and bigger projects."
+    },
+    {
+      "speaker": null,
+      "text": "Later in your career, that happens again, you're at that that P level, um, and were handing you spaces, and you're working on bigger and bigger projects, but in the middle, it reverses and then so it looks like an S. And she put, drew a big circle around it and she called it the trough of disillusionment. And she said, this is the moment where everybody freaks out. Employees look and say, I thought you told me the game was scope. And now it's not scope anymore. And managers and promotion committees look and they say, well, these two people... Actually the same scope but what matters now is how they do the job. You can use the exact same technique for engineers, for designers, actually for salespeople, marketers, so on. It changes your value system. It says what are we actually valuing with our more senior employees? What is the ladder guide about?"
+    },
+    {
+      "speaker": null,
+      "text": "It's about identifying the right problem, about finding the best solutions, about figuring out how to take that and deliver it, and then how to execute. You think about a world with AI everywhere, what happens? It actually pushes that entire ladder up."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it seems like the problem and solution can now partially be handled by AI, but at least that's what I'm seeing in my company."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I think, actually, I would say executing, if you can define a problem and if you're good enough to find the right frame for the solution, then sometimes, and if you can figure out how you're going to get to market, AI can help you execute it. Sometimes AI can you one level up and say, all right, I understand you can build this, can you help me understand how to get everybody on board? Can you help understand how the test the market? So on, sometimes it can invent solutions. But your ability to judge that is in your head. And it can very rarely do something without a good prompt. And so the ability to identify the problem you should be going and working on is almost entirely in the human's head. I mean, AI can help at every level. So it's just like having a great thought partner. But the idea of, does the ladder guide go away?"
+    },
+    {
+      "speaker": null,
+      "text": "If anything, what we've done is we've just given everybody this great set of executors."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically the execution part then, how much of it is getting replaced by AI?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I don't like the word replaced, because I feel like replaced signals a zero-sum game. It's interesting that this particular technology has drawn that word in a way that most past technologies have not. Maybe I'll give you an example. When power drills came out, there was a lot of questions about, does this change the need for a construction worker, for any man, for so on? And of course, that's not at all what happened because what happened, we decided we're going to build skyscrapers. Did it replace jobs is one is a very interesting way to think about it. The net number of people who worked in construction skyrocketed. I think change is hard. I do think we're gonna change faster than most people are used to. And I think it's easy to paint a boogeyman narrative around any new technology. Amazon came as the end of bookstores and we've watched these stories before. And I don't mean to say that there's not going to be change."
+    },
+    {
+      "speaker": null,
+      "text": "But I think the word replace in particular, I don't like that word. Cause I feel like it starts with a zero sum frame."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what's happening at that execution level then?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I think you're getting a much broader workforce. What do you do with that workforce when, when all of a sudden you can deploy them, you, you go and build skyscrapers, go build bigger and bigger things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Quick pause here because what Shishir just said is such an important shift. AI is turning young professionals into managers much earlier, not just managers of people, but managers of workflows, tools, and agents. And the real advantage is not just using AI, but knowing how to build systems around it. And that's why I want to mention today's sponsor, MongoDB. If you're building an AI product right now, or even experimenting with agents, you run into one problem very quickly. Where does the agent keep memory? Where does it get context? How does it retrieve the right information without you rebuilding the whole stack? MongoDB is built to be the data layer for AI applications and agents. What I like is that it already fits into the tools builders use every day. Claude, Claude Code, ChatGPT, Codex, Devin, Cursor. So you can connect your data to AI without jumping into separate system. And that matters because a real agent needs current context, reliable retrieval, memory, and state."
+    },
+    {
+      "speaker": null,
+      "text": "It needs to understand what's happening in your app right now, not answer from a stale copy of your data from three days ago. With MongoDB Atlas, you can keep your operational data, embeddings, retrieval and context in one platform so you can build rack apps and AI agents without adding a bunch of extra infrastructure or locking yourself into a completely new stack. And if you want to learn it hands-on, MongoDB also has the Atlas Learning Hub with free courses and skilled badges, including vector search fundamentals. You can spin up a free cluster and start testing today. If you want be the person who doesn't just use AI but actually knows how to build with it, this is a good place to start. The link is in the description. Big thanks to MongoDB for sponsoring this video. And now let's get back to our conversation with Shishir. Tell me. About the progression from execution to problem in terms of a career."
+    },
+    {
+      "speaker": null,
+      "text": "This is something that's already happening, right? The careers have diminished for people from, I think it's 18 to 25 beginners in their career. And sometimes, you know, I am hiring someone who is just starting and they're a social media manager and all they can do is can come up with stories, but I don't want them to just be able to draft a story. I want the strategy, because I already have Claude, right, and it can do so many things. What would you say to those people then?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I think you have to adapt. I mean, I think every industry change is, leads to a change in roles. I mean if I go back to the construction analogy, being the person who can, you know, run a screwdriver really fast, stop being important once power drills came out. Now there's a different set of skills and so you have to retrain and I do agree with you. It's happening so quickly that sometimes, sometimes people haven't adjusted. I think marketing, the example you gave is a really interesting one. This change in marketing is large. But if you go back in time, 20 years, this is, you know, marketing has dramatically changed. And in the last, you go to 50 years, you think about marketing in the Mad Men days. Marketing at the time was, you would hire an agency. They would work with a very small number of companies. They would build one ad. would last an entire year with one jingle, one perfectly crafted thing."
+    },
+    {
+      "speaker": null,
+      "text": "And then digital marketing started coming out and I watched this happen. While we were at Google, we'd watch these firms change over, uh, how they operate and said, Hey, you're not building one ad, you building millions. And now the type of people they hire completely changed. And as people that were systems thinkers, people that had a different approach to, to, uh to marketing, but honestly, like the original skill didn't go away, it just shifted. And you said... Actually taste in coming up with that great message and that great jingle was actually elevated. But now you have to do it in a way that scales across a million ads instead of across one."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You don't have to be like this genius who comes up with just one good thing a year. You have to able to produce like multiple times a day."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I actually, I think you need to like, if I go back to your, your example of, I don't need someone that comes up with stories because I have Claude, actually, I don't think that's true. You need somebody who comes up with great stories."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Great stories, it gives great ideas, not just editing."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "That's right. They give the great ideas and Claude can go amplify them. Yeah. And Claude can create hundreds of variations of them. But if you can't come up with that great idea, then you're not, you're never going to be able to create the next ones. And then you, now that you have hundreds, now you have to be able to judge. And so that ability to come up with great stories makes you also need to be a great reviewer of great stories."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you learn that?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "This is back to where we started. I think you have to practice. I don't think it's an easy thing to learn, but it's a thing that, you know, how do you learn judgment is you practice over and over again. Um, maybe it's worth, uh, I mentioned earlier this, this, um, this technique I call Eigen questions, so Eigen question, it's a made up word, it comes from a mathematical term, Eigen values and Eigen vectors from linear algebra. Um, so an Eigen vector is the most discriminating vector in a multi-dimensional space, the math doesn't really matter. An Eigen question is the most discriminated question in a set of questions or another way to say that it's, it is the question when where one answered, it will answer the most other questions, the question that was number six on the list. Is actually the one that answers all the other ones. So this idea became called Eigen questions."
+    },
+    {
+      "speaker": null,
+      "text": "Or another way to say this is the hard part is not about finding the right answer. It's about asking the right question. And so you go back to PSHE, that's what P versus S versus H versus Z. P is the question, S is the answer. H is the delivery mechanism and E is the actual execution. So it's a very connected idea. This technique, Eigen questions, became a technique that we trained for. That we recruited for, since it's become my number one indicator of someone I want to work with, someone I wanna hire, is how good are you at EigenQuestions? And so we spend a lot of energy on how do you learn this? And I'm coming back to your questions. Yeah, it's fascinating. And it turns out that it's a very learnable skill, but the easiest way to learn EigenQuestion is to do it in safe environments. So I'll give you an example."
+    },
+    {
+      "speaker": null,
+      "text": "One of my favorite interview questions, I can't use this question anymore because I've talked about it publicly too much, so I can give it away. But I've probably done hundreds of interviews for this question. So I said, okay, a group of scientists have invented a teleportation device. How do you bring it to market? I've asked this question to engineers, to salespeople, to marketers, doesn't really matter. Usually what happens is people then start asking me questions. Teleportation, what do you mean? I'll answer a little bit, but mostly I'll say, why don't you get all your questions out? And so they'll start asking questions and they'll say, how big is it? And it does just destroy the person or not. Is it two-sided? Is it, you know, is it fast? Is it slow? Is it expensive? Is it safe? People ask all sorts of questions. Is it black? Is it green? Is it the other, they'll ask all sort of different questions."
+    },
+    {
+      "speaker": null,
+      "text": "And I'll just say, okay, keep asking questions. We'll make a list. And then I say, Okay, hold on a second. These scientists, they are really annoyed with all your questions. You only get to ask two questions. Which two questions do you, do you ask? And it's really interesting to watch people go back to that list and say, okay, I only get to ask two questions. Which one? There's lots of good answers. No, there's no right answer, but one, one answer that stood out to me was this person ended up drawing a two axis chart and said, one question I would ask is how safe is it? And he said, I think it can, like, all I really care is, is it safe enough for humans or not that's a really important question."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If it's not safe then."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "And if it's not, well, actually it's interesting. If it's is not safe enough for humans, does it have a market? And I think that's actually a good question and I'll get to that in a second. And then the second access was, is it more expensive CapEx or OpEx? So CapEx, you know, is it more expensive to buy the teleportation units or is it expensive to use the units? So if you just think about that as a two by two, you get these interesting quadrants. So you say, well if it is safe for humans. And it's more expensive OpEx and CapEx, meaning that's pretty cheap to buy, but expensive to use, then you want to put them everywhere. You want to them where you put telephones and fax machines and in every house and every corner, you never know when you're going to need one, but we're going to put a teleportation device there. Okay. Let's take another corner."
+    },
+    {
+      "speaker": null,
+      "text": "So it's safe enough for humans, but it's more expensive CapEx and OpEx. Well, then, you want them where you put airports, like we're pretty good at finding. And then your go-to-market motion is probably pretty close to how airports get, uh, get funded."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's a brilliant answer."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "You got to work through the government. What about the other axis? What if it's not safe enough for humans? So what are the cases where it's not safe for enough for the humans? Like, what would you do with it? And I mean, I often will prompt people into that category if they pick this axis and say, oh, actually, maybe what we should do is use it for hauling away trash. I don't really care if it disappears. I don't care if gets all mangled up. It's going to get disappeared anyway. Trash anyway. Or maybe it's actually things that are really high stakes. So like one of my favorite answers was, we're gonna use it to ship organs to Africa. You know, people need transplants. How do you get organs there? It's actually really hard to get them there. You know this is maybe a way to get there. So this idea of like, how do you come up with an eigen question is really hard."
+    },
+    {
+      "speaker": null,
+      "text": "That particular prompt, the teleportation device, what would you do with it? You can ask a five-year-old that question. You should try with yours. And you'll get good answers. I mean, and interestingly, sometimes you'll actually get better answers than you get from adults. Cause they'll like, they'll even say it in a funny way. I say, teleportation, do you blow up? But they'll quickly get."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But that's a great question, because this is the safety issue, blow it off. So they're asking their questions."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Yeah, that's right. That's the question, right? So they may not frame it in the like, in the businessy terms, but they get to the heart of the idea very quickly. This idea of teleportation as an example, I have a list of a hundred of these and you can come up with them. If you want to get good at asking right questions, find domains that maybe it's low stakes, do it as a game, do it with friends. I think it's important to practice in very low stakes environments."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think you highlighted a very important mind problem that we're all having. We're focused on a problem we want to solve immediately and we're not thinking about big picture. And the bit where you're talking about reminds me how we were discussing with my husband having a live-in nanny versus like just hiring help by hours and like all my arguments, but oh my God, we need help in the morning. But his big picture is like completely different. Shishir has been hiring for the same thing for 20 years. He ran product for YouTube, founded Coda, and now runs Superhuman, the company behind Grammarly. 40 million people use it every day. Because Shishir is hiring a lot, I thought that pulling out the seven skills he's actually hiring for is an interesting exercise. What do these skills look like and how to practice them without putting anything at work at risk? It is in this week's Future Proof newsletter. It's free, link is in the description."
+    },
+    {
+      "speaker": null,
+      "text": "Okay, we're working on taste. Can you actually show me some AI workflows that you're using since you're running an AI company? And what my audience is really interested in is not another morning briefing agent because we've heard of them, we know how to set them up."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Not the morning briefings. Now I need a morning briefing of the morning briefing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because there are so many, but is there something that a lot of people who are watching can set up in their job to make themselves stand out in their company or if they're a solopreneur in their business? In their business."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I'm happy to share. I think I'll take the excuse to talk my own book. And so I'll talk about a product we're building. I'll just give a little context before I give you the demo. So I run a company called Superhuman. We build an AI native productivity suite made of multiple different products. We make a really popular mail product, really popular document product. But the product that we're probably best known for is a product called Grammarly. Grammarly is a very popular product. Over 40 million daily active users. It does hundreds of millions of dollars in revenue. The interesting thing about Grammarly, is that the core technology of Grammarly is actually not about grammar. So the core of Grammarly is about bringing AI to work right where you work. So two fun stats about Grammarly. One, Grammarly does over 100 billion LLM queries a week. Works out to per user per day, over 3,000 per user, per day."
+    },
+    {
+      "speaker": null,
+      "text": "So if you use Grammarly, we are likely your number one generator of LLm queries. It's mind blowing to people to think about it. And it's easy to understand why, because it works at the speed of typing. As you type, we're constantly trying to figure out what are the different suggestions that we can give you. Right in this moment. So we have to do it very quickly and we do it at that huge scale. Second interesting stat is Grammarly works in a million unique surfaces a day. It works in every web app, desktop app and mobile app that you can think of where we can observe what you're doing. We can annotate it in a way that's unobtrusive to you in the application and we can make changes on your behalf. We sometimes describe this technology, we call it the AI super highway. It's we bring AI right to where you work."
+    },
+    {
+      "speaker": null,
+      "text": "The interesting part of that analogy is today We are up till three weeks ago. We only ran one car on that highway. And that's the one that happened to be, uh, happened to have your high school grammar teacher in it. And it's an incredibly valuable car. Tens of millions of people find it, uh immensely valuable every single day. Um, but it's a vast underutilization of that infrastructure. So we decided to split the product into two. And so we, uh took Grammarly and turned it into what we call an agent. And we took the bottom half, the AI superhighway, and we built a new product around it called Superhuman Go. And it's a very simple idea. It allows you to build AI agents that can do everything that the rest of the agents can do, including sending you morning briefings. But the unique thing it can do is it can work right where you work."
+    },
+    {
+      "speaker": null,
+      "text": "It's like Grammarly, but with your own knowledge, your own connectors, your own tools, so on, and with your prompts. Okay, so let's talk about Go. So the core idea of Go is very simple. It's just like Grammarly, but you can make your own agents. If you download Grammarly, you'll get... A big G in your extension bar, or you can do the same thing with the desktop app, and you can just go and say, use superhuman go, and it'll flip it over to go mode. And at that point, what used to be a G turns into the superhuman logo, which we call it hero, and you get a set of agents. And you can go add your own agents."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is all yours or is this?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "These are, I have a demo account here, but I use a very similar set for myself. So, but you end up with very personal data. So this is, but it's very close to what I do. So I'll show you some examples. So one of my personal favorite agents is this one. So this called a knowledge checker. And so what this is doing, so this is the agent builder. So you can build an agent that does anything. And I think a lot of agent builders are quite similar these days. You give it a set of tools that it has access to. You can connect any different tool to it. We have a wide set of connectors that'll, that synchronize data or you can connect to any MCP. You have some instructions on what you want it to do. But the most important part is the triggers. So these triggers are, you can trigger on anything. You can trigger a schedule."
+    },
+    {
+      "speaker": null,
+      "text": "So that's like you were saying, the morning briefing every day. There's a set of events you can trigger on every time I get a Slack message or so on. But the more important trigger for us is what we call the while writing trigger. That says while I'm writing, I want you to go and make these types of suggestions. You can pick a color and so on."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do I understand this correctly? Or are you saying, when I have this agent on, like if I'm replying to someone with a summary of another email, like I'm planning a party and somebody send me information about their home and I'm applying to guests, I can just ask superhuman to pull that information, like fact check what I'm saying, like. Exactly. Oh. Exactly. So you don't have to have multiple windows and I go back."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "So it's not only just not multiple windows. So I think if you think about some of these cases here, I'll show you a couple of different cases. This is a professional use case. I'm writing a launch announcement, I'm a marketer. So these underlines look like Grammarly. And some of them are, this one is literally from Grammarly, but some of the more coming from other agents. So this one, for example, is coming from, I have a launch project manager agent that tells me that this is not actually pending legal review, I still need to go deal with the design review. Or this one might come and this is my legal guard rail agent that says you're not supposed to say it that way, here's a more correct way to say it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it checks everything you wrote."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "It checks everything. So you could use it, maybe you use it in Gmail, or maybe use it and in a document. Here's an example where maybe you want to use it in an email."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If I write, so my revenue for this quarter is this. And if it's connected to whatever is connected."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "It'll go fact check it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And I don't have to trigger it, it's just fact check."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "It just fact checks it as one of fact checking is one of my favorite agents."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Where does the knowledge come from? So it's fully resolved, meaning it's a project somewhere."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Each of the agents has different data sources. And so, for example, that agent I just gave is the source finder agent, is this one I have here. And I can go see, this one has access to, in this case, I gave it access to my mail, my calendar, and my docs. But you can give it access anything. And so that'll come through and give you suggestions based off of what's happening with. Each of these tickets, or you'll check a revenue number, or so on. And I think in that way, you can design an agent that feels like, I mean, one way to think about it is if Grammarly felt like it's magical to have your grammar teacher follow you everywhere, it's like sitting on your shoulder, who else do you want sitting on your shoulder?"
+    },
+    {
+      "speaker": null,
+      "text": "And one of the things, that's the main part of the demo, but one of ways I think about this is, if you think about the world of AI, I think there's sort of three metaphors for how people think about AI. So one is, the most common one is chat. And that's like this. It's like, I have this agent that feels like a human and it's magical. And so, obviously captured everybody's imagination is lots of products that have a chat metaphor. Another metaphor is what we call do. So that's a metaphor of I have a task list, I want you to take things off my task list. It's also a really powerful metaphor There are many tools that are focused on that. Our view is that there's a third metaphor we call assist. So you can think about assist chat too. Assist is I need an agent that comes where I'm working before I ask anything. And helps me in a way that I didn't expect."
+    },
+    {
+      "speaker": null,
+      "text": "So for example, this, you know, would I go check a fact on a particular email? You might remember to do that. And if you're like you're saying, you're writing an email to somebody about the party and you put in the wrong address or you put it in the long time or you're putting the wrong name. You know, would you remember to take that and put it into one of your chat bots that's connected to the right data and actually get back that reply? Probably not. And that's the reason why we get out, you know, our users give thousands of queries per day. If you're a really good chat GPT or cloud user, maybe you would generate 10 queries a day. That would be a lot of interaction, but we get thousands. And the reason is because we're there working with you right where you work without you having to ask. So I think it's a very interesting way to rethink AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what are the top three life-changing agents? The fact checker."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "The fact checker is a really interesting one for all the reasons you already got to."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "No, because this is what I'm doing like I have two phones because I'm checking one email and replying to another"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "to another. That one's amazing. I have another one I use personally called the placeholder filler. And I have a, they're very personal, by the way, cause if you think about like, you want an assistant that knows you. So mine is, I have writing pattern, which is when I'm writing, I'll often leave empty things that I'll come back to. And I just put them in brackets. And so I'll say, you know, I'll be outlining something. I'll I should start with a quote, a customer quote about this, and then I'll keep writing. And I'll just put it in brackets and it'll go and find it. And it'll go and try to fill in my placeholders with whatever the best suggestions it can. And I give the agent access to all my information and so I can go and fill those things in. Um, so that's a really productive one for me."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can I do online search as well? Yeah."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Anything. Yeah, so anything you want to connect it to, I mean, you have to decide what you want to give it access to. You can have these agents be, they can be collaborative. So you can, you can share them with other people, you can put them in collaborative spaces, you can put in Slack or wherever else you like as well. So like another common use case we see from customers is customers will use it, for example, for compliance checks. So for, for some companies that's, they were working right now with a major magazine publisher, actually they have a dozen or so magazines and they have 16 review departments. So if you're a reporter and you're writing a story, you go to the fact checker, you go to brand people, you the citation checker and the source checker, and they gave all these different folks to do, I'm not even sure I know all the departments they go to."
+    },
+    {
+      "speaker": null,
+      "text": "They took all of them and turned it into an assistant that they just deployed and it works everywhere. And so rather than remembering to go to every department, now your story slowed down, it's just happening while you're going. And you also get it much earlier. So instead of waiting till the end when, oh, I thought my story was done. And I wrote the whole story based off of this fact that turned out to be wrong. Like you wanna know that much earlier in your process."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I really like the proactivity and also being where you are in the moment. Anything else? Number three?"
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Oh boy, let's see, number three. I mean, I think there's a set of use cases. For me, the calendar one is really interesting. So I have it connected to my calendar and it'll do the, like the example you gave of you're suggesting a time check that that's accurate. The more interesting ones is it'll come and see if I'm trying to schedule something and it will underline it with my availability and with an option to go and book the meeting. And so I'll come in and say, we should meet tomorrow and I'll underline and say actually I've checked both your calendars and tomorrow at 2 p.m. Works."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Would it highlight if, because this is what happens to me all the time, I have two different email threads where I'm discussing the same date. Would it tell you like, hey, you actually propose, you would just propose that."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "You just have to build that in your prompt. Just imagine you can take grammar and give it to your own instructions. And you know, anything that you want it to do, you can do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, so the main difference I see, because my audience experienced and like using this little Claude extension or like Comet browser is that you don't have to trigger anything. It's just there."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Those are still in this frame of a syschat dude, those are still chat, right, those are still I need to remember to open it and think about. Hey, can you check that that time I didn't promise to anyone else? And if you remember that, you know, that's great. But how many times are you going to remember that?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You're going to forget, yeah."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "And the key about what made Grammarly so interesting is it works everywhere. Every web app, desktop app, it'll work in iMessage, it'll in Apple Notes, it will work in Google Docs and Word, and all the different tools that you might be in. And so this idea of just really feels ever present. And now you can design that assistant to do the set of them to do whatever you like."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's great. I think this is really the mode that you have, because people want their assistance, want them there without asking for that."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Otherwise it's AI becomes a chore, because I have to remember to go use it. To use AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "By the way, if you want to know what actually gets you promoted now, subscribe to this channel. I sit down with the people making those decisions, founders and CEOs who write the promotion criteria, and I ask them what they are really looking for. Okay, I wanted to wrap up this conversation with the most valuable advice you got from Bill Campbell. You worked with one of the most iconic coaches in Silicon Valley who unfortunately already passed, but he mentored some of the top CEOs. And whenever I have a problem, I ask my chat GPT to become a coach like him. What would you tell people who are watching or in this transition era, maybe they're scared, maybe they're excited because they see all the opportunities. Something that he told you."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "I worked with Bill, I started working with Bill in 2000. So this was, at the time he had left Intuit, he was hanging out at Kleiner Perkins. But this is, I'd say I got him, I got to know Bill at a period where he was in his coach mode, but it was before all the big shots. And so I, you know, I get lucky and that period is helping out all. I had started a company that was funded by Kleiner Perkins and he would hang out. And help out whatever he saw as the most interesting companies. Immensely helpful person. I mean, he was, I don't know, I can't overstate how much impact he had on me and on the team. Um, you know, almost, I was a 21 year old seat, first time CEO learning how to do everything he told me, he taught me how to run my first staff meeting. He taught me first time I had to fire someone."
+    },
+    {
+      "speaker": null,
+      "text": "He walked me through. This is how your talk track is going to work, how to deal with my investors, how to hire people. Like there's so many different pieces. The most memorable conversation with Bill was he, I'd been working with him for about a year and I came to him. And I said, hey, Bill, I just realized that we haven't done an advisor agreement with you. And I felt really bad because we had other advisors at the company and we had given them in some cases some compensation, some equity, or so on. And you've been immensely valuable. And I don't want to take advantage of that. So I'm happy to put something in place. And he said, she sure don't worry. I don t need it. I was offended. Honestly, it was the, you know, what's wrong with my equity? And, uh, and he said, no, no. I didn't mean it that way."
+    },
+    {
+      "speaker": null,
+      "text": "He says, you know, I've been lucky through my life at this point. Everything I get goes right to charity. So if you want to give it to me, it's fine, but you could also just give it to charity and that, that that's okay too, but honestly, you should hold onto it and use it to grow the company. Cause not, not the, not, the way you should use it right now. Um, and I said, well, that's really interesting build. Uh, it feels like I'm surrounded by people that all want a little piece of the company and you're like the only one that's putting you adding so much value in that. That somehow that's not what's motivating you, so what motivates you?"
+    },
+    {
+      "speaker": null,
+      "text": "And he gave me this really interesting answer and he said, well, I just look at all the people that have worked for me or that I've mentored and I just make a list of how many of them are Fortune 500 CEOs, and that's my bar. This was back in 2000, so since then, it's Larry Page and Steve Jobs and Jeff Bezos and so on, but in 2000 he already had a list to 20 people. Wow. And they can, and it's just working through this list. And you could just see this sense of finding success in other people's success. It was such a different way of thinking about, uh, about the world. And it completely changed my worldview of, you know, zero-sum games. What are you, and I'm sure everybody's had that experience of somebody, somebody you love is working for you and decides to go on to do something else."
+    },
+    {
+      "speaker": null,
+      "text": "And Bill taught me if you're going to be a good partner, a good manager, You're a good leader. You need to root for your people's success. You need a judge your success that way. It's actually, that's how, that how it carries on. And it was interesting when Bill passed, they held his funeral at Sacred Heart, um, you know, up the road here and, um. Every single person who came up to the stage, uh, had Almost the identical story. He had infinite time for me and he only cared about me being successful. And as far as I could tell, you know, that that's, that's all that mattered to him. And every person looked around and said, how do you have time for you?"
+    },
+    {
+      "speaker": null,
+      "text": "And how did, and how did he, you know, it could just seem like he was in your corner, rooting for you in a way that was, that was very different and said very much changed my way of thinking about interacting with people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is such a great metric to optimize for, because we're always looking at numbers. This could be a number, a number of people. Number of people."
+    },
+    {
+      "speaker": "Shishir Mehrotra",
+      "text": "Oh, he was very numeric about it. I mean, he's not a, you know, he was a sales guy. I mean he had, he had a, he had a metric, is it? And he had the list. He knew them by heart."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing. I think everyone who's watching this, try, if you don't have this metric yet, think about it. Like, how do you measure people who become successful thanks to your work? Yeah. That's awesome. Thank you so much. Thank you. If Shishir made you rethink what are you being promoted for, watch my conversation with Ryan Roslansky. He was the CEO of LinkedIn at the time of the interview and Ryan will tell you exactly which jobs are appearing and what companies are looking for right now in the age of AI."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "213rSCulKUQ",
+      "thumbnail": "https://img.youtube.com/vi/213rSCulKUQ/hqdefault.jpg",
+      "title": "Top 1% Career Strategy: How to Get Hired in the AI Era"
+    },
+    {
+      "videoId": "o-wv_szZ0V0",
+      "thumbnail": "https://img.youtube.com/vi/o-wv_szZ0V0/hqdefault.jpg",
+      "title": "Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think"
+    },
+    {
+      "videoId": "Y854KRfONAU",
+      "thumbnail": "https://img.youtube.com/vi/Y854KRfONAU/hqdefault.jpg",
+      "title": "The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up"
+    }
+  ],
+  "topics": [],
+  "platformLinks": {
+    "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000788495064"
+  }
+}

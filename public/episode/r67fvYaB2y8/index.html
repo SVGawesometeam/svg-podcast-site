@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>11 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=r67fvYaB2y8" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/r67fvYaB2y8/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/r67fvYaB2y8/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,7 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -448,7 +461,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> AI has blown my mind again in this video. I'm sharing another set of incredible AI apps that are so impressive you'll have to see them to believe they're real. I'm going to show them to you and we're going to talk a lot about them. But just imagine an app that analyzes everything you see, hear, or say to become the ultimate personal assistant, or one that directly interacts with your computer to handle all those routine tasks for you. It's seriously exciting stuff, so let's dive in. Here are the 10 AI apps I've been loving this November.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> AI has blown my mind again in this video. I'm sharing another set of incredible AI apps that are so impressive you'll have to see them to believe they're real. I'm going to show them to you and we're going to talk a lot about them. But just imagine an app that analyzes everything you see, hear, or say to become the ultimate personal assistant, or one that directly interacts with your computer to handle all those routine tasks for you. It's seriously exciting stuff, so let's dive in. Here are the 10 AI apps I've been loving this November.</p>
             <p>Number one is Claude's AI Computer Use. I've already shared how Claude AI has become my team's go-to tool for copywriting, but this Anthropic creation is way more than a writing assistant. Just a couple weeks ago, Anthropic rolled out two updated versions of Claude AI which now allows developers granted access to and control over certain aspects of their computers through the API. Developers can now guide Claude to operate computers just like a person by viewing the screen, moving the cursor, clicking, and typing. Basically, it's available for developers now, but the way I see it, it's just crazy.</p>
             <p>I interviewed someone who was building the same tool for customer support because a lot of things that we do on our computers are very repetitive actions. Like check my email, reply to email, add this to calendar, check the finances, see how much money is left in the account, etc. It's all very manual, and now we'll be able to do that just by telling our computer: go to my email, check all the emails, reply, add things to calendar, return my Amazon packages, click on return, ask for a refund. It is basically the first public beta of an AI model with computer use capabilities, which is a huge milestone.</p>
             <p>Well, it's still experimental and a bit rough around the edges. Anthropic is releasing its early version to gather feedback from developers and fine-tune the experience. Instead of designing specific tools for each task, they're teaching Claude general computer skills so it can work across a variety of standard programs built for humans. I haven't had a chance to test this feature yet because it's developer exclusive, but I just can't imagine the huge impact it'll have when it's available to everyone. Tell me in the comments what would be the first thing you'll delegate to an AI like this in this new AI world.</p>
@@ -470,28 +483,31 @@
             <p>And let's wrap up this video with an app that lets you stay organized and be in control. This AI productivity tool keeps you on track with all tasks. Connect to your calendar, add tasks, and connect the apps you use on a daily basis. Time Hero makes it easy and automatic to create an adaptive work plan for getting things done. Time Hero's magic is that it automatically builds an action plan for when to work on what based on your current availability. If things change, tasks are automatically rescheduled into the future while keeping you aware of impact and risk level.</p>
             <p>Plus, you can track your team workload and capacity at a glance, seeing who's busy and forecasting upcoming demands. This tool offers a realistic, adaptable way to stay focused on your goals and manage time effectively, individually or as a team. So if you're on the lookout for a smart assistant for planning and productivity, give this app a try.</p>
             <p>These are all the AI apps I wanted to share today. If you're using any AI tools that are worth mentioning, let me know down in the comments below. I always like to discover something new.</p>
-          </div>
+      </div>
     </div>
 
-
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/VHiyfK06n1c/" class="related-card">
                 <img src="https://img.youtube.com/vi/VHiyfK06n1c/hqdefault.jpg" alt="How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)" loading="lazy">
                 <span class="related-title">How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)</span>
               </a>
+
               <a href="/episode/2kWPqccrb-o/" class="related-card">
                 <img src="https://img.youtube.com/vi/2kWPqccrb-o/hqdefault.jpg" alt="9 Work From Home Business Ideas To Quit Your Job" loading="lazy">
                 <span class="related-title">9 Work From Home Business Ideas To Quit Your Job</span>
               </a>
+
               <a href="/episode/8DuxOlkHdy4/" class="related-card">
                 <img src="https://img.youtube.com/vi/8DuxOlkHdy4/hqdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy">
                 <span class="related-title">Become an Entrepreneur Today – AI stack to build your company in 2025</span>
               </a>
+
               <a href="/episode/nBM3_AzNYU8/" class="related-card">
-                <img src="https://img.youtube.com/vi/nBM3_AzNYU8/hqdefault.jpg" alt="$8B Investor: The Only Career Move AI Can&#x27;t Replace | Bill Gurley" loading="lazy">
-                <span class="related-title">$8B Investor: The Only Career Move AI Can&#x27;t Replace | Bill Gurley</span>
+                <img src="https://img.youtube.com/vi/nBM3_AzNYU8/hqdefault.jpg" alt="$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley" loading="lazy">
+                <span class="related-title">$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley</span>
               </a>
       </div>
     </section>

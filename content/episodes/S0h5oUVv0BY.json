@@ -1,0 +1,463 @@
+{
+  "videoId": "S0h5oUVv0BY",
+  "title": "LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman",
+  "format": "interview",
+  "guestName": "Reid Hoffman",
+  "guestTitle": "Co-founder of LinkedIn, Partner at Greylock Partners",
+  "aboutGuest": "Reid Hoffman is the co-founder of LinkedIn, which he built into the world's largest professional network before its $26 billion acquisition by Microsoft. He is a partner at Greylock Partners, where he has been an early investor in companies including Facebook, Airbnb, and Convoy. Hoffman is also the author of several books on entrepreneurship and the host of the podcast Masters of Scale.",
+  "publishedAt": "2026-02-24T15:00:52.000Z",
+  "duration": "28 MIN",
+  "coverArt": "https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg",
+  "summary": "Reid Hoffman returns to Silicon Valley Girl to argue that we are only 5% into the AI revolution and that most people using AI are not using it seriously enough. He outlines a 3-level framework for AI usage — from basic voice prompting to role-based reasoning to agentic workflows — and explains how non-technical professionals can double their income by becoming the AI-fluent person companies urgently need. He also addresses the $300 billion market shock triggered by AI coding developments and warns that the window to adapt closes around February 2027.",
+  "keyTakeaways": [
+    "We are only 5% into the AI boom — Reid believes we may even be as early as 2%, with the full transformation of every domain of human work still ahead.",
+    "Basic AI usage means speaking to AI tools in full, detailed voice prompts rather than typing 7-word queries, and even asking the AI to generate the ideal research prompt for you.",
+    "Advanced (non-coding) AI usage involves role-based prompting — asking the AI to answer your question from the perspective of a technologist, a venture investor, a government policy expert, and a nuclear safety official, then comparing the lenses.",
+    "The simplest path to doubling income is becoming the AI-fluent person on your team — companies are desperate to hire people who can deploy AI agents effectively, even without a technical background.",
+    "Reid sets a concrete deadline: build serious AI habits before February 2027, or risk being left behind as individual contributors are replaced by workers who each manage a personal suite of AI agents."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "0:51",
+      "seconds": 51,
+      "title": "Teaser"
+    },
+    {
+      "time": "0:53",
+      "seconds": 53,
+      "title": "We're only at 5% of the AI boom — what's actually coming"
+    },
+    {
+      "time": "3:12",
+      "seconds": 192,
+      "title": "AI basics every non-technical person needs to know right now"
+    },
+    {
+      "time": "4:47",
+      "seconds": 287,
+      "title": "Role-based prompting: the technique that changes how you think with AI"
+    },
+    {
+      "time": "7:08",
+      "seconds": 428,
+      "title": "Reid evaluates Marina's AI setup: easy, medium, or advanced?"
+    },
+    {
+      "time": "9:26",
+      "seconds": 566,
+      "title": "The fastest way to double your income in 2026 (with a 9-to-5)"
+    },
+    {
+      "time": "10:58",
+      "seconds": 658,
+      "title": "How to rethink your business when AI changes the rules"
+    },
+    {
+      "time": "13:34",
+      "seconds": 814,
+      "title": "The $300B SaaS crash: why AI is breaking the software business model"
+    },
+    {
+      "time": "15:48",
+      "seconds": 948,
+      "title": "Will software engineers lose their jobs?"
+    },
+    {
+      "time": "16:02",
+      "seconds": 962,
+      "title": "Will we lose jobs to AI in 2 years? The future of jobs"
+    },
+    {
+      "time": "17:17",
+      "seconds": 1037,
+      "title": "Why small businesses might actually beat big companies in the AI era"
+    },
+    {
+      "time": "18:56",
+      "seconds": 1136,
+      "title": "Advice for entrepreneurs afraid of being replaced by big AI"
+    },
+    {
+      "time": "21:50",
+      "seconds": 1310,
+      "title": "What markets will explode in the AI era"
+    },
+    {
+      "time": "23:38",
+      "seconds": 1418,
+      "title": "Will AI be the last revolution created by humans? Reid's prediction"
+    },
+    {
+      "time": "25:30",
+      "seconds": 1530,
+      "title": "One thing to do before February 2027 to not fall behind"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We've seen Claude releasing this 200-line code that brought the B2B market down. We lost $300 billion of market value. All of that is literally just beginning, but it's all line of sight. This is Reid Hoffman, co-founder of LinkedIn, legendary investor who was among the first to see every major tech wave coming. And what he's saying now should concern anyone with a career. There aren't individual contributing workers anymore that we all deploy with a set of AIs. So what do I do? What people like me do? Even most people who say, \"Oh yeah, I'm using AI,\" are not using it seriously enough. You've been mentioning this a lot—everyone will have a set of agents working for them. Is it possible now or are we still not quite there yet?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "It's totally possible now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So for someone who has a 9-to-5 job, what's the first thing they should do to double their income this year?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Oh, that's interesting."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And we're super excited that we're talking again a year later so we can revisit some of the things that you said last year. It's been a crazy year."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And I see ChatGPT everywhere. People are using different tools to build their own things. Is this the AI boom or is it like 10% of what we're going to see?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Maybe 5%."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "5%?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yeah. Obviously, last couple years people have been talking about it a lot, and one of the things we should get you—we'll figure out how to get to you—but I actually made an AI Christmas record. You know, kind of AI music I'd want to see around Christmas, and it's just beginning to scratch what these kinds of possibilities are. Because by the way, I'm not qualified to make a record. I have none of the skills, but with AI, you can do that. And so what I think people are undertracking is they're seeing, of course, the general discussion of Codex and Claude Code and other things, and they're not realizing how that spreads out to every portion of human work and creativity. It isn't just, oh, we all have a software agent as our co-pilot doing stuff for us. Yes, that'll be true, too. But the coding capabilities are like generalized reasoning capabilities that then enable a bunch of things. They enable you to say, \"Well, you know what, I've always wanted someone working with me as a travel agent, as someone who really understood my love of particular kinds of archaeology. Could you then be the travel agent that figured out where and what and could possibly book things?\" And all of that is literally just beginning, but it's all line of sight. So I think we're literally like—for example, we're a small number of years away from what I've been saying for the last couple of years—there aren't individual contributing workers anymore; we all deploy with a set of AIs. Like, for example, almost for sure when we're doing this conversation, let's just project to next year since we did last year, we'll have your tablet with an AI agent that's going, \"Oh, ask him about this,\" or \"When he said this, do this,\" or you know, like that kind of thing will be amongst what we're doing. That's the reason why I'm like, not 10%, maybe 5%, maybe 2%."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you said in our last interview that we have around 2 years to adapt."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So as someone nontechnical, I want to start adapting. So what do I do if I'm a creator, a salesperson, a marketer? What are the steps that I can take today?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, table stakes is if you're not already interacting with the easy AI agents—the chatbots—today in a substantive way. And I don't just mean that as a casual interaction. For example, you're thinking, \"Okay, how do I take my podcast and media to the next level? What are the things I should consider? What are the different kinds of ideas for it?\" Or, \"I'm traveling to this fun place. What should I do there?\" All this stuff. But some basics I mean is in prompting—you don't just type in seven words and see what you get. One of the things I think is key now is being voice-based. You speak a lot faster, and it's actually much better if you just throw out lots of things. But even when speaking to it, one of the things I'll do when interacting with various AI agents is I'll say, \"I'm really interested in the prospects of fusion technology. Which companies are doing really interesting things? What new things have come from labs?\" And then I'll say, \"Now write me the right prompt to do all the research for that.\" Even when I do voicemail, it comes back with a two-page prompt, and I run the two-page prompt, and then I get something very interesting. So that's what I mean by basics. That's basic."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, this is basic."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Talk to me about advanced but without coding."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Like, one of the things that as you begin to get experience with this, you realize is that these chatbot agents are very good at ascribing roles. So you might have an idea, but you say, \"Hey, I have an interest in—let's just continue the fusion example—I have an interest in fusion for climate change and fusion for energy and what it's going to mean for AI. Let's ask that question. Get an answer: What would a technologist say? What would a venture investor say? What would a government policy person say? What would a nuclear safety person say?\" And then you might even ask the AI, \"Are there other roles that I haven't thought of?\" And then you ask it to adopt each role in giving you an answer. Because then you begin to realize there's a whole lens of things, and thinking about AI as a role-taker is useful. Even in very simple things—like, I'd really like to argue this. When I'm writing, I do this and I say, \"Well, argue against me. What's the thing that the contrarian would say? What would the naysayer say to what I'm saying?\" That's a simple role. By the way, you can also get it to say, \"What are things I'm missing to argue for what I want to be?\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's a great exercise, by the way."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yes. So you do all that, but then it also gets interesting when you say, \"Well, hey, I'm thinking about how the next generation of AI is impacting social media and internet media.\" Even the question you're asking—it's a great question to ask AI. But you have to ask it in a way that you're prompting it to do web research. This is maybe a little bit more on the slightly more advanced side. The thing people don't realize is they think this is a deeply knowledgeable AI, which it is. They don't realize its training run finished 18 months ago, so it's actually 18 months out of date in terms of AI tools. When you're asking a question like, \"Which AI tools are best right now?\" you actually have to ask it to do research, to look at and pull a whole bunch of information—like GPT-4o thinking mode. Pull in information and give me a report on it. Because if you're relying on just the information in the model, and its view of something is 18 months out of date, that's a problem."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Is a problem."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you evaluate my setup? For example, I have a Notion where we have the whole operations. I have 35 people on my team. We log every episode. We have a transcript, and then we have Claude projects for every social media that we're running, which has access to performance data and scripts. It acts like a strategist. So we gave it instructions so it knows what our goals are. Do you think it's easy, medium, or advanced? What else?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I would say that's probably medium."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Medium. Okay. So part of it is you've got Claude agents with assigned roles in a constant, active part of the process—not one-off."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "So that takes you from easy to medium. Okay, right, kind of doing that. Now on advanced, you probably want to say, \"Well, what are the additional skills? What pulls from other sorts of data might be useful?\" Like, should we have one that's going to talk to all the agents or all the projects and say, \"Is there through-lines? What can we derive from what's working, what's not working? Are there through-lines that can give us good ideas for things we should be doing in the next month or two?\" Right, kind of doing almost a meta-level analysis. Meta both of internal data but also external data, like how other podcasters are doing things."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "And you might go, \"This one did this really interesting thing with—and I'm just choosing a random one—CryptoPunks, and we could do something with that, right?\" Like that kind of thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, gathering ideas from other fields for you."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Right. And that would be the advanced level. Because, again, part of it is thinking about AI agents as intelligence that scales—processes information with basically the price of electricity, the price of computing electricity. Well, that means in vectors where you can give it instructions, you don't want it to spend infinitely. You could obviously easily spend $200,000 on AI processing that's not useful. But in anything where it's kind of bounded into a vector that's useful, you go, \"Well, actually, in fact, spending even call it $10,000 doing a bunch of compute could suddenly give you 15 different useful things.\""
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "And that's easily valuable."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. So, for someone who's listening who has a 9-to-5 job doing $80k and they're like, \"Okay, how do I use it to double my income this year?\" What would you say?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Oh, that's interesting. Doubling income is an interesting question, partially because maybe the simplest one is—everyone who is running businesses that they're investing in knows that they have a massive need for AI transformation and AI talent. So part of it is to start demonstrating your engagement and knowledge with AI in ways that you're easily findable—whether it's through LinkedIn or through social media platforms or elsewhere. Literally people are like, \"We're looking for this because we know we need this transformation.\" So I think a whole raft of lucrative jobs won't just be the super high price, like, \"Oh, we need AI researchers,\" but like, we're literally now, I think this year is when we're really beginning to see more of the applications. Like, \"How do I run my business better? How do I do financial analysis, risk analysis, marketing, or sales better?\" And they're going to start looking at it. Sure, they'll go to some internal people, but everyone's going to start going, \"Well, I've been doing this job, and adopting the jump to this totally new thing is hard for me.\" So part of it is, okay, start jumping to the new thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. So basically the business idea or the double income idea—you get proficient in tools in some area and go help others."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And demonstrate it. Yes. And demonstrate it. Because I feel like we're also in a bubble where in Silicon Valley everyone's using AI, and then you travel abroad and you're like, \"What?\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes. \"What, GPT?\""
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, yes, with really interesting asterisks. So, like, for example, I think it was about 18 months ago I was talking to a friend of mine who was traveling in Morocco, and the taxi driver who didn't speak English was making their whole business work because they were just using ChatGPT as a translator. So literally it was just like people are figuring it out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes, exactly. It's just a beginner stage, but then you need to become medium and advanced. We've been talking with Reid about AI changing how we work, how we build, how we create. And I want to show you a tool that we've actually been using on Silicon Valley Girl for a while. This is Helix. You might have seen some of my posts with my dream guests for this podcast and my dream blog in New York City. Those videos and images were all generated in Helix. It is a platform where you can get all the top AI models in one place—DALL-E, Sane, Cling, Google Veo, Sora. You don't need 10 subscriptions. Everything is right there. Helix just dropped Cinema Studio 2.0, and this is the next level because it's not just an AI video. It's closer to actual filmmaking. You start with a text prompt. You pick your camera, your lens, your focal length—like you're setting up a real shoot, except you're doing it in your browser. You generate an image and then you can step inside it as a 3D scene. Move around, find the exact angle you want, and then you turn it into a video. Camera movements—pan, dolly, drone shot—you just select it and it happens. No timelines, no keyframes, nothing. You can build full sequences up to six shots, each up to 12 seconds in 1080p. You add characters, give them emotions, write dialogue, and it handles lip-sync automatically. Characters stay consistent across every single shot. And here's what got me: there are genre presets—action, horror, comedy, suspense. And they don't just change how it looks. They change how it feels. A horror sequence builds tension slowly. Action speeds everything up. Comedy holds the reaction shots longer for timing. The genre actually shapes the pacing of the whole scene. This is probably the closest thing to real AI filmmaking that exists right now. Not just clips, but actual scenes with characters and story. If you want to try it, I'll leave the link to Cinema Studio 2.0 in the description. All right, let's get back to our interview with Reid. Talk to me as an entrepreneur. I built a company, and I've been building this business since 2011, helping people learn languages, study abroad. But from what I'm seeing right now with these systems getting more and more advanced—Codex can now do the task thing, right, that we thought is irreplaceable. And then we've seen Claude releasing this 200-line code that brought the B2B market down. We lost $300 billion of market value. Is this the end of B2B software? Like, what's going on?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, markets tend to be very good measurement devices over time, but they can do crazy short-term things—short-term lows, short-term highs. They can do both. Right, because they kind of don't know how to absorb something. And part of what the transformation of the SaaS B2B software market is—the way it used to run is I would build something valuable, like Salesforce. In building Salesforce, it would ultimately take so many features because one feature for company one, one feature for company two, three features for company three. But having them all there meant that for someone who wanted to compete with me, they'd have to spend a billion dollars just to create the product to start the sales competition against me. And even then, the problem is that sales is a very hard thing because Salesforce is here forever. Do you want to switch your mission-critical system to a new provider? Sure, they spent a billion dollars building the product, but are they going to still be here or not? So it's very hard to do, and that's the economics that created SaaS as a valuable business category. Because then Salesforce, because it was hard to get competition in, could charge—I don't know what their actual margins are—let's call it 40%. And that could allow them to reinvest in their business and everything else. Now with AI coding, it's like, \"Well, actually, in fact, I'm company four, and they have these two features that I want. I didn't want all of them, and there were another two features that weren't even in there that I really wanted. Now it might just be more economical for me to maintain my own system with AI because generating, maintaining, and evolving the software is so much cheaper.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It is."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Right. One counterpoint—because everybody's like, \"Oh, software engineers are getting out of jobs.\" No, they're not, because they're going to be employed everywhere. Like, the grocery store is going to be employing software engineers and these things. Like, you still need to think about this. Like, you say, \"I want to have a CRM system. You can't go to an AI and go, 'Give me a CRM system.'\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What? No. What about in two years?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, maybe eventually. But like, for example, part of it is—I have confidence that for a number of years, and maybe it's shorter than I would believe—the human plus the AI will be much better. Right? Like, when you're understanding, for example, you know, Sarah or Bob is walking around, they're looking at how we use the CRM system, and they're like, \"Oh, but this would be a good idea.\" The AI doesn't really have that ability to walk around and do it. It'll have the ability to do internet research and bring that in, which is really useful per our earlier comments. But that's the reason why I think the combo will be useful, and that's why I think software engineers will have jobs for a while, because it's a way of thinking. Now, how a software engineer operates is already starting to change. Like, as opposed to, \"Oh, I'm sitting down and typing code,\" it's like, \"Well, actually, in fact, I've got 20 coding agents that I'm managing through voice, going, 'Generate this, generate this, cross-check this, do that.'\" Like, I'm more of a conductor than I am a violin player or a piano player, right? Is the kind of thing. And that is changing. People will be surprised at how much room there is in the business world for conductors."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. But so I've heard this a lot on social media, and I feel like I'm kind of starting to believe it—that we only have a few years to make money as small business entrepreneurs because then it's going to be taken away by large models. Do you agree with that?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, I do think that we're going to see a sea of content creation by AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "And you know, people say, \"Well, but people don't want that. They want only human.\" And it's like, \"Well, there will be a persistent demand for human.\" That's good, by the way. Just like there's elevator music—music in elevators—and so like, there's lots of things out there that people are not like, \"Well, I'm really looking to make sure it's only a person who made that.\" It's just, \"Does it fit my particular need and circumstance? Is it easily available? Is it free, cheap, not expensive?\" Etc., etc. So there's going to be a flood of stuff. I do think what that means for small business is—but it may be a feature of small business versus call it large businesses. Which is small businesses usually tend to be able to be more adaptive. Our large businesses are almost more on the industrial model, the tailored models. Like, we tuned our efficiency, and we work really well, and we own these distribution channels. I don't know, you know, I love Disney, so I'm not picking on Disney, but like, Disney is doing it. Small business adopts AI? I think they'll have a lot of interesting, unique shots because of the platform transition, and so it'll be an advantage to them versus the large companies. The small businesses don't adopt AI—"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's going to be very hard."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would be your advice then for entrepreneurs who are building a smaller AI-based business and are afraid that two weeks somebody releases—like with SAT prep? Because I'm in test prep."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And SAT prep I released, and I'm like, \"Okay, my thing is TOEFL. When is TOEFL coming to Gemini?\""
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Probably very soon. But you know, sorry to say, I did register your specific question, but my guess is it's very soon."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "So what do"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I do? What do people like me do?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, I think what you do is you refactor to go, \"Look, I realize I'm going to have to rebase my entire business on AI, and AI is a dynamic, changing platform. So insofar as it's not tooled on AI, I got to retool.\" Now, part of it is, \"Okay, TOEFL will be available on AI platforms for entrepreneurial, or kind of call it, people who want to pull it together themselves, just as they were pulling together through Google searches, whatever else, for free.\" So that's why the question is, what are the things I can do that cause people to engage with me?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, what's my value add, right?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, build a personal brand. We're doing this, yeah?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there anything else?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, that's definitely one. But it's also like, you could imagine it's like, \"Well, actually, in fact, most of these—Gemini, ChatGPT, Claude, etc.—will be solo experiences for a number of years. We're going to be so focused on solo experiences. Well, maybe there are ways we can do group experiences, and the group experiences really work. And it doesn't mean that you can't inject ChatGPT into a group experience and have it be useful. But maybe like, what are the ways that we use this trajectory and then we are adding in something else?\" Because it's not going to be like—for example, you say, \"Well, but it could do that itself,\" or someone who says, \"I want to do it myself. Sure.\" But people don't want to do everything themselves. One, they don't have the ideas. Two, they don't have the time. I think AI prompting is only going to slowly, at human speeds, grow as a skill. And I even talked to people who are pretty expert, and they go, \"Oh, wait a minute. I was voice-building, but I wasn't doing it right. Tell me—write the prompt for me.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Off it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Oh, yeah. It takes it to the next level. Because the problem is like this."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yes, right. That kind of thing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is very interesting. If you're watching this, you are probably thinking about growing your own LinkedIn profile. Here's what we found: the people crushing it aren't guessing what to post. They have a system. That's why we built a free database of 300 post ideas. It's literally 300 ready-to-use post ideas you can use across your LinkedIn right now. We organize the ideas based on audience segments, type of content to use—whether it's an image, text, or video—frequency, because you can post one idea multiple times, and even time needed to create. If it sounds good to you, we're giving it for free to my inner circle newsletter subscribers, which is again, free to subscribe. The link is in the comments. Grab it and you're set for the next year of content. So, are there any industries that you think are more—so from what you're saying, like, groups experience? Everything I feel like offline is going to get way bigger just because people want to stay off our devices and do things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Any other markets?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, offline for sure. And also, I said we are social animals. But that's the reason why the groups—and not just, you know, being one of the earliest social network people with LinkedIn, etc. But I think that will matter. Even as these AI systems get a lot of capability, there still will be uncertainties and trust. And part of the uncertainties and trust is the incentive of who—the entity that's offering it versus others. And there are ways that we—and it kind of gets back to personal brand—the set of things that kind of get to how that trust is established and maintained. We're both familiar from our Silicon Valley context. You know, there's obviously a whole bunch of people who say everything that's done with bits is going to be completely done with AI, and that's it. I'd be very surprised if that were true. Like, everything that's being done with bits in a particular way today will be very different in six months, 12 months, 18 months, 24 months, etc. And you have to adapt to it, adapt to it, and adopt it. But I tend to think there's still like—for, oh, well, I shouldn't bother writing science fiction anymore. It's like, it's not clear to me. Like, I think writing science fiction could still work. But if your process of writing science fiction is you disappear for three years into a cubicle typing, it's not going to work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, okay. Do you think AI is the last human-driven revolution, and all of the next revolutions will be AI-created?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "I think it's call it probability 60 to 70% that future inventions over the next call it 50 to 100 years—who knows after that—will be human plus AI-created. It doesn't mean that, like, every human doing an invention might not be actually in fact using AI to do it. I have some, actually, you know, kind of unfortunately, some things I can't talk about because they're confidential, but like, they will be revealed in the next month, around like physicists working with AI to solve stuff. And it's not, \"Oh my God, we discovered what dark matter is,\" but solving physics problems. But it's the human plus AI together. And I think 60, 70%."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yeah. Then I think there is, like, inventions, and then I think there's probably going to be call it another 25, 30%, depending on where it is exactly, that is actually in fact primarily AI-driven, right? Over time, in part because we'll begin to kind of get zones of, \"Oh, that's a much better problem for the AI to solve,\" and there might be some human checking in. But it won't even be that depth of being a conductor. It would be more like cross-checking, like, \"Hey, you know, does this make sense? Or could I spend $10 million doing the compute to analyze fusion containment in the following way?\" And you're like, \"Well, $10 million is a lot of money, you know? If it's in today's dollars, let's cross-check it.\" And then I think there will be still 5% that's still the human eureka—like, without AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, only 5%?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Yes, unassisted."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For unassisted?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Unassisted, okay. So sounds good. Sounds positive. Okay, my last question. It is February 2026. If you could give one piece of advice to someone watching now, what is one thing they should do before February 2027 to not get left behind?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Well, the very central thing—a little bit like what echoes what we were talking about before—is even most people who say, \"Oh yeah, I'm using AI,\" are not using it seriously enough. Right? Which is like, in everything that I do, I think about how I would use AI. I don't always do it because you don't always have to, and certainly not now. But how would I use AI to help me do that or to make that happen? And it ranges from everything—I'm planning a vacation in Rome to I am thinking about writing a piece or what's the way that I would analyze what's going on with Malta—in the whole range. I think, \"Okay, if I were going to try to use AI to really help with that, what might I do?\" And having that kind of always be a question. And look, it could even be, \"I'm going to have a difficult conversation with my mother. Okay, think about how AI could help with that.\" Like, just get in the reflex. Think of it as kind of doing like the simple training."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like, before everything you do, just think about how you could deploy AI."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "And you might go, \"No, I'm not going to do this one.\" That's fine, because you have limited time and all the rest, but like, be thinking about that."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "Because that is a reflex. Because literally, my belief is today, everything you do, AI can be helpful. Doesn't mean it's the answer. So, for example, I still wouldn't go, \"Here's the money I'm investing in AI, just have an AI do it.\" I think that would be a way to lose money today."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Right?"
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "I'm still doing it myself. Yeah."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "But I also, by the way, think about like what new capabilities the AI is bringing to my ability to invest, including in AI."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. Love it. Thank you so much. And thank you from everyone who's posting on LinkedIn. I feel like 2025 was the year of LinkedIn when we all saw tremendous growth and so many great deals. So, thank you so much for creating it."
+    },
+    {
+      "speaker": "Reid Hoffman",
+      "text": "My pleasure."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "ktpNFfpJ5rw",
+      "thumbnail": "https://img.youtube.com/vi/ktpNFfpJ5rw/hqdefault.jpg",
+      "title": "LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky"
+    },
+    {
+      "videoId": "czItVEAINqw",
+      "thumbnail": "https://img.youtube.com/vi/czItVEAINqw/hqdefault.jpg",
+      "title": "$1.3B AI CEO: \"You ONLY Need 2 People and 90 Days to Build a $1M Business\" | Higgsfield Founder Alex Mashrabov"
+    },
+    {
+      "videoId": "JqcK4b3wRGU",
+      "thumbnail": "https://img.youtube.com/vi/JqcK4b3wRGU/hqdefault.jpg",
+      "title": "How I Made $50,000 on My Airbnb in 6 Months"
+    },
+    {
+      "videoId": "KfoenLbhOTI",
+      "thumbnail": "https://img.youtube.com/vi/KfoenLbhOTI/hqdefault.jpg",
+      "title": "How to Build a Profitable Personal Brand with AI (In Just 30 Days)"
+    }
+  ],
+  "topics": []
+}

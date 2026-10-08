@@ -1,0 +1,682 @@
+{
+  "videoId": "ExgNR94SrfI",
+  "title": "Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie",
+  "format": "interview",
+  "guestName": "Aaron Levie",
+  "guestTitle": "Founder & CEO of Box",
+  "aboutGuest": "Aaron Levie is the founder and CEO of Box, a cloud content management platform valued at $4 billion that serves 64% of the Fortune 500. He regularly meets with enterprise CIOs to understand AI deployment patterns and has deep visibility into how large organizations are implementing AI across their operations. Levie built Box from his college dorm into a market leader in enterprise software.",
+  "publishedAt": "2026-05-15T13:00:26.000Z",
+  "duration": "53 MIN",
+  "coverArt": "https://img.youtube.com/vi/ExgNR94SrfI/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/ExgNR94SrfI/maxresdefault.jpg",
+  "summary": "Aaron Levie, founder of Box (a $4 billion company used by 64% of the Fortune 500), discusses the unprecedented opportunity window for AI-native startups over the next three years. He meets with 20+ enterprise CIOs monthly and has unique visibility into real AI deployment data across Fortune 500 companies. Levie challenges the narrative that AI will simply replace workers, arguing instead that automation will enable businesses to expand into new markets and create net new roles. He uses the example of a three-person business that, with AI agents handling marketing and website optimization, grows to five or ten people by unlocking previously constrained opportunities rather than simply cutting headcount.\n\nLevie emphasizes that successful AI implementation requires human oversight at the beginning and end of every workflow, as agents can be confused by undigitized data or make unintended errors. He advises aspiring founders that this moment democratizes expertise—ambitious individuals with technical skills can now overcome years of traditional experience requirements by leveraging AI tools effectively. However, he warns that the wrong mindset or premature application of AI can backfire, while experienced practitioners who adopt these tools gain exponential advantages. Levie believes the next three years will create the next wave of technology giants, similar to previous major shifts (mainframe, PC, internet, cloud/mobile), making this a critical window for founders.",
+  "keyTakeaways": [
+    "The next three years represent a historic technology inflection point comparable to the mainframe, personal computer, internet, and cloud/mobile revolutions—creating significant opportunity to build the next generation of billion-dollar companies",
+    "AI agents will augment rather than replace most roles because undigitized data and agent errors require human supervision at the beginning and end of workflows, meaning businesses will grow headcount as they automate constraints",
+    "Young or less-experienced founders can now compete with seasoned professionals by developing technical skills and the right mindset to leverage AI tools, effectively compressing years of required experience",
+    "Enterprise AI adoption is slower than Silicon Valley expects because real-world data isn't digitized in formats agents can access, and integration across legacy systems and databases remains complex",
+    "The biggest opportunities exist in helping small businesses scale by automating specific bottlenecks—a three-person business with AI agents becomes a five to ten-person business pursuing previously impossible market opportunities"
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "2:44",
+      "seconds": 164,
+      "title": "What to Tell Someone Scared of AI Layoffs"
+    },
+    {
+      "time": "4:43",
+      "seconds": 283,
+      "title": "Why Agents Always Need a Human Supervisor"
+    },
+    {
+      "time": "15:00",
+      "seconds": 900,
+      "title": "Why Enterprise AI Adoption Is Slower Than Silicon Valley Thinks"
+    },
+    {
+      "time": "19:07",
+      "seconds": 1147,
+      "title": "What Aaron Looks for When Hiring Right Now"
+    },
+    {
+      "time": "20:31",
+      "seconds": 1231,
+      "title": "Top 3 AI Tools Everyone Should Be Using"
+    },
+    {
+      "time": "28:17",
+      "seconds": 1697,
+      "title": "Why the 3-Year Window Is Real"
+    },
+    {
+      "time": "30:39",
+      "seconds": 1839,
+      "title": "Where the Real Market Gaps Are Right Now"
+    },
+    {
+      "time": "33:04",
+      "seconds": 1984,
+      "title": "Which Industries Have the Biggest Opportunity"
+    },
+    {
+      "time": "44:19",
+      "seconds": 2659,
+      "title": "Which Jobs Will Disappear in the Next 5 Years?"
+    },
+    {
+      "time": "51:05",
+      "seconds": 3065,
+      "title": "Final Advice for Entrepreneurs Starting Today"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The more I play with AI agents, I do realize that I need a person at the beginning of the process and the end of the process, so I still end up having more people."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Some of it will be different roles, but I'm very optimistic that we're going to use this technology to grow more and do more as opposed to just replace."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Aaron Levy, founder of Box. Welcome! Four billion dollar company. 64% of the Fortune 500 uses his platform. He says we have three years to build the next generation of AI companies."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "These market windows happen every 10, 20, 30 years in technology. The mainframe, the personal computer, the internet, the cloud slash mobile."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you were starting today, what would you do to find the right idea to test it and to make first money? My first thing would be Five days ago, you hosted this. We're at a unique moment in history where anyone with high level of ambition and core skills in any area can overcome a lot of historical experience requirements, but a role. Can you talk more about that?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "So it's this interesting dynamic where a younger group, not necessarily an age, but maybe in skill or time in that domain, so an earlier group in that domain can have as much leverage and in many cases even more because of their mindset differences than somebody that is like super experienced in a field. Now, interestingly, the advice can go in all directions because you can have somebody maybe too early in that field and then use AI in the wrong way and get the wrong outcomes. Uh... People you got somebody extremely experience the decides to adopt the technology and then they have a total superpower because they understand all of the contours of of whatever they're working on you know whether it's writing code or doing health care or doing biotech and they will be actually uh... Even more capable of of letters in these tools if they have the kind of right mindset wiring uh..."
+    },
+    {
+      "speaker": null,
+      "text": "To be a lot of them allot levers and so i think that the core ideas that were just as amazing moment where if you're super ambitious You want to go deep in the technology Ideally you're technical or becoming technicals. You can kind of really know your way around these tools. You can make up for, again, lots and lots of years of skills that you would have otherwise had to go and develop. And I think that's an incredible thing for democratizing, you know, knowledge and skill sets and expertise. I often am building things or designing things or coming up with things that I have, you now, in any other version of the world I would never have been able to go do. But now I know just enough to be dangerous in those areas. And it helps me prototype. It helps me generate new ideas."
+    },
+    {
+      "speaker": null,
+      "text": "It helps kind of work with call-ins faster because I can kind of highlight the way I'm thinking about something where normally I wouldn't be able to draw on paper what I'm coming up with, but that I just say, okay, this is the rendering that we're looking to do. And so again, I think that's an incredible technology that's available to everybody for those that want to adopt it and lean in right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would you say to someone who's watching this, but they've also heard a lot of news about layoffs, about college graduates not getting enough jobs because they're being replaced by AI. What would say to those people?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, I think we're at a moment right now where, and these happen in history every couple of decades or every 50 or 100 years where there's a major technology disruption or transformation, and there's lot of questions around, okay, where does that show up? Who are the people that get enabled by that and they can do even more? Who are people that may get displaced by that and what do they do next? So we're in one of those periods where it's a serious topic and a real conversation. I do think that some of the negative kind of commentary and messaging out of the industry or even kind of political institutions probably is overweighting the negative side and underweighting the positive side. For instance, I'll give you one example. So there's the sort of death of the software engineer topic that comes up. And that comes up because these AI models are really, really good at code."
+    },
+    {
+      "speaker": null,
+      "text": "Generation so they're really good at writing code and like you you look at them and you're like oh my god that's incredible how much code it just wrote and it it wrote that code as as well as another engineer would have and that's all totally true but to get that code into production to make sure that it's secure to have it maintain an application on an ongoing basis that doesn't get hacked to make sure it's integrated across all your other data systems and database and infrastructure that still requires a tremendous amount of knowledge and expertise in the field broadly of coding and in software development. And so the people that are gonna be able to best leverage the technology are actually gonna be software engineers using code agents to be able to generate vastly more code output than they would have been able to before. So, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But that's today. Do you ever think about like in five years, AI is gonna be able to do that? I don't know, look at the market, strategize around some problem that the market is not solving yet. Build a company, develop software, and that's it."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "There's a lot of data signal that isn't, you know, digitized in a format that the agent can go with. And there's a lotta ways the agent can get confused by accessing the wrong information or doing the wrong thing that you didn't intend. And so for all of these reasons, it leaves humans in some kind of supervisory capacity for what these agents need to go do. And so, does it need the same number of humans as we have today for the exact same workflow? No, not usually. But are there a lot new workflows that businesses will now do because they have access to those agents? That's the sort of bet that I have. And so the way I kind of think about it is, if you think about that five-year-out scenario, let me paint a slightly different one. I'm a small business, you know, pre-AI I was three people. We were selling something online."
+    },
+    {
+      "speaker": null,
+      "text": "It was a good business. It sort of paid the salaries of these three people, but let's pretend I had even more ambition and I wanted to go after a bigger market. What do I do if I'm those three people? Well, it's like, I have to hire a sales team. I have to. Hire a marketing team. And a lot of people are just like, that's a really high barrier to entry to grow my business, you know, meaningfully. Now, enter agents. And you're like, oh, I want an agent to go and generate this marketing campaign. Or I want this agent to go in, build a better website that delivers a better experience for my customers. Well, what happens next? If it works, now you have more customers. Now you have a more supply chain issues. Now you more customer kind of interaction challenges. You have new features they want you to build."
+    },
+    {
+      "speaker": null,
+      "text": "Then all of a sudden, because you had agents going. Get you some of the way to getting some of the work automated. My hunch is that same three person business becomes five people or becomes 10 people because they now have automation that's augmenting the prior constraints and limitations that they had. I think that's going to happen as much if not more than the scenarios where you have a company that is sort of saying OK I have 2000 engineers today I'm going to have 1500 in the future. I think it'll be a much more diffuse set of growth that happens through the economy. Some of it will be different roles. But I'm very optimistic that we're going to use this technology to grow more and do more as opposed to just replace."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So, Aaron and I have been talking about building an AI native business. One quick thing before we get to it. Look at your work right now. You maybe have one tab for emails, one tab research, one for decks. They all run inside your company. The problem is, none of them really know the others exist. Here's what that looks like for us. We record a podcast episode. To turn it into a LinkedIn post, somebody on my team opens the transcript, copies it to another tool. Prompts a writing agent, then copies the output somewhere else. We do that for every single episode. The agents already exist. The bottleneck is that they can't pass work to each other. A person has to sit in the middle and move files around. That's what Outshift by Cisco is here to solve."
+    },
+    {
+      "speaker": null,
+      "text": "They call it the internet of agents, an open infrastructure where your transcription agent can pass a file directly to your writing agent which can pass the output to your scheduling agent. And there is no human in the middle, no manual copy paste. These agents are coming from different vendors or might be built on different frameworks. Doesn't matter. Verify who they're talking to and move the work forward on their own. It runs on existing protocols like A2A and MCP and it works with whatever you're already building. org. It's a Linux foundation project. Outshift by Cisco was a co-founder with 80 plus members contributing to it today. com. Discover the internet of agents and open interoperable internet for agent to agent collaboration. Now let's get back to Erin. And because we're doing more, we're basically consuming more, right? And solving more problems. So we're becoming a more abundant world."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "More abundant and you can't escape some ultimate constraint. There's always some constraint in the system. There's a new bottleneck that emerges. I have lots of things that I've tried to automate where at the end of the automation, the very next thing you have to do is a human has to do some work. It has to follow up with the customer because I just can't fully automate that entire process. It has update data in some system. It has... Go into three meetings and kind of coordinate with some other kind of set of people. It has to go to the customer site and do some implementation. So there's always constraints in the system. We just haven't identified all of the new ones that happen when agents kind of arise. There was a funny article about a week ago in the Financial Times where lawyers are now being inundated."
+    },
+    {
+      "speaker": null,
+      "text": "With questions from their clients, because their clients are going to AI agents and asking questions about legal issues and they're drafting documents or whatever. But guess what? If you were to go draft a contract right now, the very next thing I predict you would do is you'd go and send it to a lawyer and say, can you just make sure this is gonna hold up in court? Because in the 3% chance it's not, which is basically maybe the hit rate of what an agent will get right or wrong, that's not worth the risk of saving $500 of talking to that lawyer."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, same with like, financial advisors, right? You still want to run something through a hit list."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I am not that interested in automating my personal tax process. I am totally fine with the one-time fee to just make sure that that is just a clean process from somebody that has done this for 10 years or 20 years or 30 years. And there are just some parts of the economy which is naturally already where dollars tend to flow. Where you're like, I just want this done well. I want my doctor to be really good. I want to my lawyer to be good. I want tax advisor to be real good. I want them using AI because if they could somehow review more of my data or look at more of my patient history or look more at more of my legal history, that would only be a net positive. But I want that person ultimately to have some degree of accountability that's on the line. These agents have no accountability."
+    },
+    {
+      "speaker": null,
+      "text": "They're not on the lines for anything. They're gonna disappear in two seconds later."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you're not going to blame Claude or Neha. I can't blame Claude. I can blame Neha, no."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I can't blame Claude. I can blame Claudes weights. I can't sue Anthropic. Like, all of those things, we have rules. We have laws. We have accountability for the rest of the economy. You don't in agents. And so, somebody eventually needs to take on that accountability. And this is more of like the legal related issues. But there's still lots of things where you're like, you want to look at your contractor in the eye and say, can you deliver this thing for me? Not in a, I'm not gonna sue you, but just like I wanna make sure that you can deliver on that brand campaign and it is gonna go super well. One is human brain. Yes. And it's going to go super well. Human brain."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Human brain behind it. I even feel it with social media, right? I could totally generate a lot of posts with AI, but I just don't want to post AI-generated posts. I want a person who knows my taste and my tone of voice to look at them, yes, maybe generate ideas with AI."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "There's another funny thing, this is like totally random and not, and this is probably more tractable in software over time, but there's another fun thing, which is I do think people will kind of get like, they'll probably get prompt fatigued at some point, which is like, man, I have to always prompt this agent the same way every single time just to make sure that it like works or whatever, like humans don't require that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But then you can do Claude Project with instructions."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Oh, sure sure sure I know and some people will get really really optimized on that But the nuance is there are some parts of your business Where you just want the person to be able to have that context and you just won't like there's a lot of things I could probably automate if I like put my mind to it really really hard But like now I am basically doing the work of like five people and it's just now I have to hold all of that context in my head as opposed to previously that context was in the head of of those teammates. And I, at some point, like my brain's going to explode. I'd rather those people hold onto that context. And it's sort of worth it. The value of the, of the thing being done well is worth it and worth paying for."
+    },
+    {
+      "speaker": null,
+      "text": "And so I, again, I want that person to use agents, but I don't want to have to keep track of all their contacts either, because I run into a"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You're responsible for the process and it's in your brain."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I don't want to be responsible for our company's legal review process. I don't want to responsible for the invoice process. I don't want to to be the brand creation process. But actually that's maybe a really key point that you just said, which is the more agents you deploy for yourself, you take on the role of the equivalent manager in another you know, kind of organization, the human manager. You basically have to be responsible for whatever the output is, and so the more horizontal you go in what you're giving agents, the more functions you now have to..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The more your brain explodes. Yeah, exactly. Really."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "And you see this in the Valley, people are totally tired. Like, I have never met a founder right now or somebody working on a startup that's like, I'm getting great sleep and like, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh yeah, my 50 agents are running my startup and I'm just sleeping."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Nobody's doing that. It's the exact opposite. They are managing the 50 agents and they are stressed out of their minds."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I was talking to a lot of scientists and they're the ones who tend to be most worried. I talked to Godfather of AI, somebody who has been studying AI for 15 years, and they are the ones painting the picture."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Was it Hinton or who? Yoshio Benjiro. Oh, Yoshio, yeah, yeah. Yoshio."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Joshua is like we have two years like what are they not getting?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "He can say we've had two years, though, for probably ten years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But what are they not getting? I want to see."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Listen, I have deep respect, obviously. Like, these are the best minds in AI, and we are riding on their work. So, obviously, a tremendous amount of respect for what all of this kind of category people have contributed and their ideas. I don't know if you've interviewed like Yann LeCun. No, yeah. Okay. Well, it'll come. And I kind of, you know, mourn in Yann's camp, which is there's still just a fundamental limit to these systems. They. They have to be, the work has to be reviewed. Any error rate above like 2%, you know, you still then need some accountability in the process. And everybody kind of says, well, humans are already doing that. And it's like, yes, but back to the point, I can fire the human. And so there's some accountability at scale in the structure that exists, where the agent just doesn't have any of that."
+    },
+    {
+      "speaker": null,
+      "text": "And so somebody has to take on accountability for the output of that agent in your workflow at some point. Because what you're not going to do is be fine when Bank of America says, we lost your money because the agent, you know, kind of like made the wrong investment decision and you're like, okay, but that's not why I hired you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "And so that part exists very broadly throughout our organizations and throughout the economy. And so I think what some people in the AI ecosystem that lean more to the sort of rapid takeoff, you know, kind of quick takeoff scenario is that they're thinking that because the agent can do lots of stuff really well, that that sort of diffuses across the economy in a way that is sort of this destructive scenario. An end. And I have, I don't know if it's a benefit, but it's certainly a reality. I have the fun, pragmatic reality of like, I work with enterprises day in and day out. And these are enterprises outside of Silicon Valley. They're in the real world. They're the manufacturers of our products. They're banks that we kind of bank with. They're life sciences companies that develop drugs."
+    },
+    {
+      "speaker": null,
+      "text": "And what these really amazing researchers and thinkers don't do is they don't talk to those people who are actually implementing these systems. And so they see this incredible capability take off, but they don't realize the diffusion of that AI across our organizations is ultimately constrained by and bound by 30 other things that doesn't really relate to the super intelligence that's in that model. It relates to how do I implement this thing in a safe way with the right safeguard so it doesn't blow up my data structure? I just think that the time scales are wrong. The way that people imagine the AI being implemented in society is generally wrong. Now there's a one real risk that I agree with, which is there is cybersecurity risks. There are risks of miss or disinformation challenges. Those are very real."
+    },
+    {
+      "speaker": null,
+      "text": "We need to work through those, but I'm much less inclined to believe this thing takes off, it replaces all white-collar work, and then we're in some really bad scenario on that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But we still hear all the news about layoffs happening due to AI. Do you think it's due to the AI?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Some of it is definitely not due to AI. It's over hiring during the kind of zero interest rate era, the COVID era. So there's some phenomenon that kind of relates to that. I would say that some of it, it definitely could be related to AI, like there are some organizations that they're like, listen, I had 3000 people working in engineering before. My product roadmap is sort of not, doesn't need to triple in sort of scale. It needs to grow by 50%. And so I think that if each engineer can be, you know, 2x more productive and my roadmap only scales, you know, 50%, then I think there's some sort of savings there as a result of that. And then they might do a layoff in that scenario. So I think is real. It's not something that I can sort of gloss over."
+    },
+    {
+      "speaker": null,
+      "text": "But what I see from customers, and you can go online right now, and I guarantee if you took five random companies in the Fortune 500, just as an example. Take five random companies. I guarantee that every one of those five companies is hiring software engineers right now. And so where are they hiring their software engineers? They're hiring them. There's an interesting posting right now on Eli Lilly's career website, which is a lab software automation engineer. This is a role to use AI to help sort of automate and increase review of lab results and automate the lab process in life sciences discovery. The kind of general idea of AI is going to just raise software jobs, that is not playing out empirically, and I predict it will not play out ultimately."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Here in that story, the thing I keep coming back to is that it wasn't talent. It was the system around her. And it made me think about something very simple. Most people use Claude like a search engine. They type in a question. They get an answer. Most times they're not really satisfied with it and they close the tab. I did the same thing for months. And I was looking at people who were saying AI is changing their life and I'm like, hmm. Then I spent one afternoon setting it up properly, uploaded a few files about how I think and how I work and it completely changed. I wrote the whole process up step-by-step. You get it when you subscribe to my newsletter, Future Proof. It's free. The link is in the description. Interesting. So you think we're going to get more jobs in the next few years."
+    },
+    {
+      "speaker": null,
+      "text": "When you're hiring now, how is it different from hiring five years ago? What are you looking for in a candidate?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "So I think right now is a great time to be going deeper technically. You don't have to like, doesn't mean like, you have to be vibe coding all the time and building entire products, but you should try and really understand what is the agent doing? How does it work? How does MCP work? How do CLIs work? How do skills work? And getting really well versed in that. The people that are doing that will have a huge leg up in the next kind of three to five years because all of these companies will be hiring for people that can do that within their workflows. So we're definitely looking for people whose technical acumen is growing, whose AI sort of savviness and fluency is growing. You want to be using these tools in your free time as much as possible so you again understand kind of how they're working and what's going on."
+    },
+    {
+      "speaker": null,
+      "text": "At the same time, I don't think a lot of the, I think it actually still matters that you have like some degree of domain expertise, like you're really good at marketing, you understand what customers want, you're good at selling. You're good at product management and interviewing customers and assessing markets. Those are these timeless skills that transcend any kind of technology revolution. And so AI is just a way of augmenting those domain skills. So in some respects, any role that we're hiring for, marketing, sales, finance, engineering, et cetera, we need all of those domain skill, but also we need you to be increasingly kind of AI fluent or a little bit more technical."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you recommend top three apps that people should be using?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Uh... You're probably the prior will be much as a rise i would i would download codex are down the cloud"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's been for non-technical people."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, 100%. Well, partly is because Codex is becoming more inclined toward knowledge work use cases."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what should they be doing with it? Like automate a process within their? Automate a process."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "To process, give it just a crazy problem and see what happens. Like go do this research in this market. You know, wire up multiple MCP servers to data sources you have so you understand how does it work? Like how is it querying that other system? How is it accessing my email? Like, oh, scary. Oh, no, actually I understand it now. Like get a sense of how that all kind of is working together. So I think just any one of the AI tools for productivity, maybe for coding. Is a good way to get started and it'll already get you like 90% of the way there. So Codex Probably Claude co-work perplexity. Like these are some just easy ones to just get started with Yeah, and you'll have a good sense of kind of what the market looks like"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have any examples of workflows that you've automated for yourself and you'll never go back to manual?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "The kind of things that I'll never do, again, is I'll never do market research in a traditional way. So I'm often asking an agent to go and analyze 100 different companies' worth of trends or information. I'll just never do that again. I'll ever go to Google and type each company in and do the research. I'm going to have an agent go in and fan out, do all that, and then maybe I'll click all the underlying sources and verify something or double check something. So. Lots of market analysis. I'll never open up code editor and type code again. And I wasn't for the past many years anyway, but the reverse is true, which is now I can actually get prototypes built when I couldn't have before. So anything coding related, even design is like, you just go to Chatchaputee and you're like, hey, I need this idea done. Could you just make it like this?"
+    },
+    {
+      "speaker": null,
+      "text": "And then it gets you the new image rendering model, gets you 75% of the way there. You hand that off to a real designer and then they kind of do the full thing. So there's a lot in the ideation, the creative process, the market analysis, customer research, all those domains that I'm heavily using AI for."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there a certain way you structured memory, like did you, because I hear some people like upload personal constitution, like their principles of work, is there anything like that that you've done?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I'm less fancy on that front and partly because I don't even know what I would write down Because I'm all over the place. So so I am I don't have a lot of things yet that I would I would know how to really document It's more process specific in which case in which cases back to this sort of reprompting issue I'm more just on the fly just giving it pretty clear instructions of exactly what to go do so like I feel like I'm a pretty good prompter like like"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So every time it's a long, long prompt, right?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Every time it's a long, long prompt, and I'll store those off in various places, by virtue of Box, we store lots of data. So I have lots of documents that have information in them that I'm using constantly, but it's not as awesome as a sole file or a personal constitution."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's not like we're talking right now and 50 agents are replying to emails. It's not that."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "At the moment, if you get an email from me, that's a huge mistake in our system. So I am not emailing you right now via an agent. Got it, got it. OK, so another thing. Now, five years from now, could that be a process that gets automated somewhere? For sure. Like, just as we've always had automated email systems for sales reps or whatever, but it probably won't be that it would be like, oh, hey, Erin, I have a question about this thing. And then I'm gonna have like an agent go do that, partly because like, that's actually just like the kind of context that informs me of what's going well, what's not working well. If I automated all of that, we wouldn't know the next thing in the business to go fix."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you don't have an agent that's running your business, basically, is there like, because I talked to someone from Norris and they're like, I share all my business decisions with my AI. And then it looks at all the conversations I've had with my team, and it gives me strategies."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I think, first of all, I think that's really cool, that use case. I think more startups are doing that. I think if we were at a brand new company and it was like five employees, there's a very real chance I'd be doing more of those types of things. Because I would be like, okay, I probably need to like build out our first marketing engine and I need to build out a sales engine. And so I would kind of, I would documenting way more of that. At our scale, you know, the really interesting, important work is being done across the organization. Thank you. So that type of work is more knowledge that like our head of brand design or our head of product design or best brand designer needs to know or our product managers and each of the individual no mains."
+    },
+    {
+      "speaker": null,
+      "text": "The stuff that I do is sort of look across those areas and try and add extra nudges in the right direction and kind of course correct and you know, an agent could certainly help, you know, give me advice for how to do that. But. But I'm still at the point in my life where I'm like I'm gonna see if my brain can do it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because those are the founder energy, right? When you're talking to your team, you don't want your agent to be talking to you team."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I think there's some, there'll be some spectacularly hilarious examples like that, that probably over time sort of subside."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We're already seeing them, like company data being deleted. Yeah, yeah."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, yeah, you're gonna do that kind of stuff and and and I I like Y-you know, the- these agents are like, I-I-I I could be proven wrong about this and maybe five years, I'll be like, yeah, I was totally wrong. And this is where Yann LeCun I think would agree and some other, you have a really interesting divide in the industry, which is are these like probabilistic pattern recognition machines or are they truly able to kind of go off on their own and think for themselves? And depending on kind of where you land on that continuum, then you have some big judgments that get made. So I kind of think about it as There's lots of business decisions I have to make. Or that lots of people have to make where just it's a brand new event that happens. And I couldn't have documented what to do in that situation."
+    },
+    {
+      "speaker": null,
+      "text": "And maybe I could have if I spent like a year writing down every single thing. But it's just a new thing that happened. And so if I try and imagine an agent running around, everybody's asking the agent questions, it's only gonna be able to answer the thing that previously I have in my sort repertoire of answers. Many of the things I'm working on are the brand new things in the organization. So me being an agent across the company would kind of be useless because it would only have helped with the things we already know."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That, that makes sense."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Now, just to share the opposite for one second, there's a lot of stuff. I'd say 80% of our corporate information is to be reused, purposefully. You don't need people making up a new answer to an HR policy. You don t need people make up a answer to what is Box's security functionality and how should I position it to a customer. So in those cases, actually, all of your enterprise information, which is what we as a business is that enterprise information becomes valuable for agents. Because they can look at the documentation, they can't look at sales pitch, they can at the meeting that was recorded. That actually becomes very useful information for that kind of run rate 80% of your company's work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, but it's for specific works, not like a founder strategy. And you said some next great companies are going to be founded in the next three years. And you gave a very specific timeline. Why three years?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Um, well, uh, I mean, it could be three and a half years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's like not 10. It looks like we have a very limited gap in the market where you can build something great because then it's going to be another like boring 10 years."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Basic theory is like, you know, these market windows happen every 10, 20, 30 years in technology. The mainframe, the personal computer, the internet, the cloud, slash mobile. So there's already been kind of four of these eras. And if you look at the biggest companies in tech, they generally correspond with when these windows open. There's a couple of sort of examples that don't. Facebook sort of didn't correspond with any particular window. It was more of a a social change that occurred as opposed to a technological change. But most other things, Google, Amazon, Microsoft, Apple, you know, sort of the real turbocharging of IBM and in that era and Intel and so on, they kind of correspond to a new technology kind of found at the foundation level emerges and then you have this opening where a bunch of new companies kind of respond to that."
+    },
+    {
+      "speaker": null,
+      "text": "In our era, it was It was Salesforce and Workday and sort of enterprise software companies like Box that sort of were able to capture that moment. And then in mobile, it was like Uber and DoorDash and another set of companies. So we're in a window right now that has all of the makings of that, which is AI is now emerging. Companies are going to want to apply this intelligence in various areas. And so there are going be a lot of applied AI companies that bring that intelligence to to businesses, to society, to consumers in these applied use cases. And the only reason it's not like 10 years is because there's a lot of network effects remotes that get built."
+    },
+    {
+      "speaker": null,
+      "text": "So if you build one of these companies and you're capturing data from the customer and you are improving the feedback loop of the agent, that will just make your technology better and better over time, whereby, at least on paper, that product should become more. Sort of strengthen in its competitive advantage over time. So that's why it's like, yeah, it's not like an infinitely long window because it's very hard to disrupt Walmart today because customers have been using it for decades. And so you kind of want to be in one of those spots as these markets are emerging."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are you seeing any gaps in the market where a startup should be working on right now?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Still I mean tons, but I Think they're still like I think you know everyone sort of knows the example like Harvey right now for legal Yeah, I think there's still lots of of job functions industries that will have their Harvey Like I don't think we've heard the end of the the Harvey for X I think There's gonna be new infrastructure that gets built out because these agents are gonna need new kinds of tools beneath them There's all this new, interesting stuff around when agents are doing work within software, they need more headless technology that they have access to. They might need payments. They might, and so, you know, Stripe and this new company Tempo is providing payments for agents. Well, now if an agent can pay money, then you can start to think through, like, well, what would the agent pay money for? And there might be new businesses that emerge that the agent is now going to transact with."
+    },
+    {
+      "speaker": null,
+      "text": "Like, they're going to need data probably. They're going to need infrastructure. They're gonna need to do tasks for you in the economy. Like, there's lots of things that you can start to imagine that will become these new business models because of what happens with agents doing this work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "With a whole new layer of active creatures in the market, which are agents. Yeah, 100%. If you were starting today, can you walk me through a plan? What would you do to find the right idea to test it and to make first money?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "My first thing would be some mix of like, you know, assume that we've got the most intelligent sort of system on the planet. So that we have this incredible AI intelligence and just imagine that emerges. Then the question is where in the economy would that add the most amount of value and then try and think through like, like, are there spots where like an incumbent isn't effectively responding to that? So that'd be like one framework. Another framework would be like where in the economy is it hard to deploy agents because there's a lot of other kind of systems That that those agents need access to and that's usually where like there's lots of work to be done to get the agent to work Within the environment."
+    },
+    {
+      "speaker": null,
+      "text": "I'm pretty excited by a lot these new kind of professional services IT integration consulting firms that are emerging because When you go to the real world and you're like, oh would you like to automate your work with you know? Coworker or Codex or any of these systems are like, yeah, that'd be awesome And then they show you their environment and it's like, Ooh, like this could be a lot harder than you think."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What markets?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Anything. Healthcare, law, life sciences, bank, just every industry. Because if your company's more than five years old, pre-AI, your data is all over the place. You've got 30 different systems you're working with. Your workflows aren't documented, to the prior point. So that's a lot of change management you need to go do to implement agents. So what does that spell? That spells opportunity for new services startups. That spells opportunity for the existing Accenture's and Deloitte's of the world. It's kind of like a little bit of an up-for-grab market at the moment because of how much work there's gonna be."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you decide between, like, building versus..."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Maybe the only thing is like Mark Cuban has had this riff and I fully agree with it There's gonna be like a lot of opportunity both for companies But even just these will be roles that if you're like graduating right now You might want to think about is like who's the person that shows up at the 10 person? Consulting firm in Minneapolis just to like pick a non Valley location Who is the person shows up that helps them take advantage of AI? Yeah, because they don't have like a big IT department They don't a way to wire up their agentic workflows very easily That's going to be like, there's going to be tens of billions of dollars, hundreds of billions of dollars that get made between jobs and services firms in just that over the next decade."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Also, as an entrepreneur, when I'm thinking about that, but what if Clot just makes the process really easy? I don't know. You just deploy an agent, they build a specific agent who goes into your email, whatever you have, your box, and creates the whole ecosystem for you. How do you think about that? Because these companies are getting more and more powerful, right?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "If I took the exact scenario and I'm like, okay, an agent is going to read through my entire email inbox in that scenario, and then it's going to access Salesforce and then it's gonna have some kind of like workflow that participates in. Like even me, as a, I've been building software for 25 years and I use every single tool that has ever been produced in AI, obviously not literally, but like pretty Thank you very much. I don't feel comfortable implementing that workflow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Now."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "So the idea that that 10 person company is gonna go and set that up, and just because Claude became super powerful, I am skeptical that we ever get to that point. Because the reason why I'm not comfortable with that is like, I have to think through the guardrails of like, what happens if somebody emails me and then says, hey, Aaron, I need you to pull up this Salesforce record for me that you told me you would look at. And you can send me that information. Well, if my agent has access to my email and my Salesforce, then the agent should, by design, answer that email question and go pull in the Salesforce record and then send it out. That's like a non-starter. Like, you can't just like take any untrusted email coming in and then have the agent."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Distributed information."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "And distribute information that your tool has access to. So even me trying to think through how to implement whatever your scenario was just now, I would have a hard time thinking through, how do I set the right guardrails? How do I have the right alert mechanisms to me? How do have the human in the loop of like, should I review all of the emails before they go out and have an interface to do that? Should I have some escalation mechanism that pings me on my cell if I need to look at something? How does the person on the other end of that email inbox?"
+    },
+    {
+      "speaker": null,
+      "text": "Not how do they how they get to me as the real person and like get you know how do they escape the agentic loop that they're in there's like 30 questions that I even have thinking through whatever that workflow is so it's not a matter of Claude is so powerful it's a matter like how the systems talk to each other the safety mechanisms of those systems how do you define the how do define the actual workflow so it it gets done in a kind of safe and reliable way that's the work that a technical person generally needs to go Yep."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. So that's like a big shift from, you know, being manual to getting automated as a company. What about niches where like we see Figma stock go down when Clot releases the design feature, right? And if somebody is working on that type of feature and they're afraid, you know with the next Clot upgrade, it's going to be gone."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Well, that's a different issue. So that's the different category altogether, which is how much will Claude or these AI models eat into the business models of different industries or different providers? I think that's more of something where you just have to be very thoughtful right now to not just build anything. You have to build things that like, what are you building where, even as AI agent progress continues, no matter what, no matter how much it continues, it could be infinitely powerful. There's still some other thing that that agent is gonna need to do. It's gonna need put its data somewhere. It's going to need to incorporate into a workflow. It's gotta need a human to take the information and put it into the real world. Over time, more and more value will start to look like things where, where again, like it's a well governed process that has lots of security or compliance needs."
+    },
+    {
+      "speaker": null,
+      "text": "You have to trust the underlying system. You know, probably just like quick personal productivity tools. Maybe will be less relevant. At the same time, like in the Figma example, I think Claude design is actually very, very cool, very powerful, I play with it a bunch, and it generates amazing designs. But at the same I still want our design team kind of going and doing the last mile of work, and right now, they're doing that last mile still in Figma. Even these things are not as binary as I think maybe Wall Street, for instance, would suggest, so that's why it's still kind of a, we're in a pretty dynamic period right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And it's also because I feel like the stock reflects what we're thinking about the next two years. And because this is evolving so, so fast, sometimes as an entrepreneur I'm like asking myself, okay, I'm building these apps. Why don't a language learner just go into chat GPT and like build the app, a vibe code, an app for themselves?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I mean, I think it's a question that every entrepreneur should have a very big whiteboard that thinks through various game theory events that could happen, and where will your value get compressed and where it will not. And it's hard to, in any kind of generic way, have a perfect answer, because it is a very busy, complicated time. But again, kind of ironically, in the more macro sense, I the more that AI is of doing. In these kind of automated things, you're just gonna see new constraints begin to emerge. Like, a lot of people have healthcare classically as this example, and I think Jeff Hinton had, I don't have the perfect quote, but I think he felt like radiology would reduce as an example, because AI will get really good at looking through radiology images, and yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And self-driving cars. And now we still have radiologists driving to work every day. Sure, yeah. I think it's the way it was then."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Oh, yeah, yeah. So, what also happens is these other things that occur, right? So, like, we might have, like AI that gets the radiologist 90% of the way there to, like look at the right thing or get some suggestions. At the exact same time, what that's meaning is we're doing vastly more imaging. We're doing, vastly more scanning. Way more people now can go do it. More accessible. It's more accessible. And so, actually, now the demands on that role end up increasing as a result of that. I. Facilitates lowering the barrier to doing that work, and by lowering the barriers to doing that work more people participate in it. And as more people to participate in it a new constraint gets kind of backed up that now real people need to go and kind of, you know, get involved in or go and work on."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, I feel like the more I play with AI agents, I do realize that I need a person at the beginning of the process and the end of the process, so I still end up having more people."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah. And again, it's just like a question of like, how many roles do you want to play within your company or your team? Like, do you wanna play designer, developer, marketer, strategist, sales rep? No, you're just like, ah, I just wanna sleep at some point. So, yeah, the solo entrepreneur is already used to that, because we or they have been doing that forever. Like, when I did. Startups before Box, and I was a solo founder, like, man, you had to do 10 things. And you're like, you're so tired. And if I could have ever hired somebody to go do half of those things, I would have. So could AI allow us to get these companies to a little bit more scale to the point where then you can hire that next person? That's more of where I think this would go."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And do you think it's the best time to start a company?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I'm kind of stickler for this one key point, which is it's only the best time to start a company if you've got a great idea. I think that great ideas can exist in any kind of period of time, but I'm not in the camp of just like, everybody should start companies. Because because it's a I mean, you know, it's like it's really hard work. It's it's extremely stressful. You're working like mad. I don't think that people should feel pressured into into starting something because because it is one of these windows. When I say it's one of these windows, it's just to re-inverse the point that, like, this is the moment where the best ideas probably will get built. That doesn't mean that you should start one. It just means..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It doesn't mean you have to rush yourself to starting now. Yeah, because if you..."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, because if you rush yourself to starting a bad idea with one of these moments, you're no better off. So I would say it's a good moment. You have an incredible amount of leverage. That also comes with more competition because basically, by lowering the barrier of getting ideas out in the market, what do you get? You get more competing ideas. If you get more compete ideas, that's more noise that customers have to deal with. So interestingly, and back to the job thing again, interestingly... It's not so much like now the idea, getting the idea out there that's gonna matter. It's gonna be like, man, do you have like, do you somebody talking to customers? Do you, are you doing sales? Are you doing marketing? And so there's a new constraint, which is like the constraint isn't code generation. The code, this constraint is, are you in front of customers enough?"
+    },
+    {
+      "speaker": null,
+      "text": "And are you marketing enough?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are you marketing enough, which is a new set of dollars? If you could become 19 again today and start over, would you exchange that to what you've currently built? Like, to start over again, would do you do that? Am I starting in 2026 or back in 2005? 2026, as a 19-year-old. Would you do or would you just stay put with what you have done?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Oh, I see. I see well, I'm the most excited we've ever been on what we're doing now. So I would certainly pursue what we are currently doing because part of it is historical, which is, you know, we've earned the trust of 120,000 customers, which is a good launch pad for the next set of things we want to go do. So and then I just love the kind of things that we get to do with customers, we get to work with every industry and every size company and we get the help. Space launches, and medical discoveries, and blockbuster films get produced, so I'm very excited by what our platform does with agents. At the same time, I have lots of friends that are doing companies, and I'm like, oh, that's a really cool idea right now, and it looks very exciting."
+    },
+    {
+      "speaker": null,
+      "text": "And so I am just in a period of I'm impressed and excited by lots of stuff, while also being, again, incredibly stressed constantly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Any jobs that are going to disappear in the next five years."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I think there's gonna be work that gets compressed, and then I think you're going to take those people and often repurpose for, again, more of the agent manager escalation path or proactive versions of that work. A very kind of clearly obvious one is, and this is something that companies always try to sort of automate to some degree, like if you're emailing a company, you're saying, like, I need you to reset my password. Is probably not going to be a person. Like customer support, right? Customer support. But even that, customer support is this funny one which is like, we think about it as a monolithic thing because we call it customer support. There's tiers of customer support there's like the first line of customer support that we will most certainly automate. Change password."
+    },
+    {
+      "speaker": null,
+      "text": "Change password, and I don't mean to like, you know, over minimize that thing but like there's a lot of tasks like that which is like I need to download this thing, I can't log in, I have this issue, whatever. That, we're gonna fully automate. There's a lot of customer support which is like, I need you to get on this call with me and look at my specific problem in my computer and why this thing isn't working. And we just have no way to automate that. Like maybe we'll automate like the next line of the set of questions, but you can't get to the final thing. I had a friend have a problem with Box two weeks ago. 0 chance that he would be able I've asked the question with an agent."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It had to be you."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Well, in this case, actually, it had to be a senior product manager. I had to get the senior product managers to the person, but he couldn't have talked to a chat bot and answered the question."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But what about, like, Book Keeper, something manual?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I had an issue with my Mac last week. I spent 10, 20, 30 minutes on AI trying to diagnose it, never worked. Had to call IT. They had to come and diagnose it. Couldn't replace that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, what about jobs like bookkeepers or..."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "You know, some of these jobs, like again, they've been on the path already to how do you already automate as much of that away as possible. And so agents kind of are just another sort of layer in that, but again, you know, sort of the same answer. There's still always an escalation path because there's always the exception. There's always the weird anomaly that occurred. And you can't have, like the thing that you can do is I can't moonlight as a bookkeeper. I can't moonlight as a lawyer. So, at some point, there still is this final path in the escalation, which is I may have been able to automate 90 percent, but you saw that one part. I had this legal question two months ago, and I asked every AI agent the same legal question, and every single one basically gave me the same answer."
+    },
+    {
+      "speaker": null,
+      "text": "And then I called a lawyer, and they basically gave a much more kind of contextualized answer."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Hmm"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "because they could decide how much risk I wanted to take on or not take on. Knowing your personal situation, right? No, they know my personal situation. They also know the fact pattern of like, how does the industry tend to think about this one thing? And all the AI agents were giving the sort of mean answer of that particular topic, which is in this case, it's like, it's the more conservative answer. It's the thing that it should be trained against because it can't give you the, it's not gonna give you the more liberal risky answer. But when you talk to a lawyer, they're like, well, actually, yeah, this situation won't actually occur because of XYZ fact patterns. And so those are the kind of things where you then are like, I want somebody that has seen 20 years of this stuff."
+    },
+    {
+      "speaker": null,
+      "text": "I don't want a model that was just looking at Reddit and deciding how to use that information."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "My two last questions. You have."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Six-year-old right almost seven, but yes, okay and four and seven and seven-and-a-half months"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, congratulations! Okay, are they going to go to college?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Shoot, maybe I shouldn't have leaned in so much to the question. I, okay, I'm, here's the one problem with me. As a B2B enterprise software person, I am, like, boringly pragmatic, and so I just think change happens more slowly. And it's funny because I have this, like weird duality, which is, like I adopt every tool. Like I was I was wearing Google Glass like like in week two I buy every VR headset. I lean into every one of these tools because I'm just like, I'm excited as a personal user. I love technology breakthroughs. It's amazing. And then I go in the real world and I'm like, man, that whole system over 300, 500 years that we've built up is like, is that really going to change because of this one variable? So on the college thing I struggle because I'm like on one hand From first principles, it doesn't have to exist."
+    },
+    {
+      "speaker": null,
+      "text": "My seven-year-old, almost seven- year-old is already way smarter than I was because he can, every question that comes to his mind, we're looking up the answer right away. Whereas, I don't have a perfect memory of being seven, but I didn't have an instant resource for every question. But he wants to know how fast a peregrine falcon can fly, we get the answer. He wants to how big the... The Atlantic Ocean is, we get the answer. Like, and so he's just like a sponge for like unlimited information. On one hand, you're like, wow, that could probably replace like a lot of the traditional sort of, you know, ways that we think about these institutions."
+    },
+    {
+      "speaker": null,
+      "text": "But then you're on their hand, you're, like, well, you, know, what is college other than another four years of high school, but with a little bit more vocational, you know kind of orientation, a network of people that you want to be with and learn with and make connections with. A kind of transition period into the real world, because you're still kind of young at 18. So then I'm like a pragmatist. I'm, like, does that really change in this superintelligence world? Or is the curriculum just changing, and the format maybe changes? But does everybody want to just be at home with their parents, talking to an AI bot? Like, no. So it's like, I have these other kind of... Sort of counter pressures. Now, things that should and must change, like at a social, like societal level, is like, man, can we have college cost a fifth of what it does, because it's insane."
+    },
+    {
+      "speaker": null,
+      "text": "Like, should you really go into debt for 20 years because you went to medical school or you went, you know, get X degree? Like, that's incredibly insane. So like, should we use abundance to bring the cost down and try and do that as much as possible? Absolutely. So there's some things that need to change about college, but does the very concept change? I always. I always struggle with that one."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, same here. I feel like as a society we're really slow to just change dramatically when it comes to foundations when college is one of them. Okay, last question. Advice for entrepreneurs who are starting today."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I would say just, back to the earlier point, lean into the tools. Learn the technology, see what's possible with it. Make sure you're riding the tailwind of what's happening in technology. You don't want to be hitting a headwind where you're going against the grain of the AI. You want to riding the AI wave out, which can mean a number of things. It might mean do things that actually, in a world of AI, become more important because people don't want. AI to do that thing. So it's like, it's like this counterintuitive like riding the AI wave might mean do a live events business."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's what all the people are doing."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, like do something where we will appreciate this other thing in the economy because AI is sort of so abundant or AI makes getting health care questions answered so quickly. So you should probably be doing hospitals like because now more people are going to be, you know, go like, like actually needing real-"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wellness clinics. Wellness clinics, yeah."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Wellness clinics like like so there's just like so sometimes it's a technology thing that you do sometimes It's a thing that the technology sort of is is related to an underlying broader societal trend that will become more important as well Build one of these, you know consulting businesses that helps deploy the AI I just think there's gonna be like a build a child care service because we're all sort of our brains are exploding We need help with kids. Yeah, there's all this kind of stuff that that that is gonna need to exist"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Thank you so much. I like your positivity, especially after talking to some scientists. Thank you. Thanks a lot."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    },
+    {
+      "videoId": "PR__eFQsnhg",
+      "thumbnail": "https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg",
+      "title": "GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke"
+    },
+    {
+      "videoId": "U7PcyE0p54s",
+      "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/hqdefault.jpg",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity"
+    },
+    {
+      "videoId": "Q66gsBJnKKQ",
+      "thumbnail": "https://img.youtube.com/vi/Q66gsBJnKKQ/hqdefault.jpg",
+      "title": "Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger"
+    }
+  ],
+  "topics": []
+}

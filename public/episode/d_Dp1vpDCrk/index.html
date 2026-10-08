@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,25 +274,31 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
-      display: flex; align-items: baseline; gap: 1rem;
+      display: flex; align-items: baseline; gap: 0.85rem;
       padding: 0.6rem 0; text-decoration: none;
       border-bottom: 1px solid #f0f0f0; transition: background 0.1s;
     }
     .timestamp-link:hover { background: #fafafa; }
     .ts-time {
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem; color: #2563eb; min-width: 3.5rem; font-weight: 500;
+      font-size: 0.85rem; color: #2563eb; min-width: 4ch;
+      text-align: right; font-weight: 500;
     }
+    .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -298,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -347,7 +362,7 @@
         <span>21 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=d_Dp1vpDCrk" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/d_Dp1vpDCrk/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/d_Dp1vpDCrk/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -359,7 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -392,7 +407,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> I came to the US 9 years ago as an immigrant and an entrepreneur aspiring to build a huge international company. Our startup, Language Trip, just received investment from 500 Startups, and while that might sound impressive, my personal financial situation and startup situation at that time was far from ideal. I was blown away that we had to pay $2,600 to rent a one-bedroom apartment. So all three of us—me, my husband, and our co-founder—lived in this one-bedroom apartment. We barely had money for a car, so we got a $2,500 police interceptor off Craigslist. I was wondering how do people even survive in the US? Back in my hometown, St. Petersburg, Russia, we only needed maybe like $700 to live comfortably. So I just didn't understand how America worked.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> I came to the US 9 years ago as an immigrant and an entrepreneur aspiring to build a huge international company. Our startup, Language Trip, just received investment from 500 Startups, and while that might sound impressive, my personal financial situation and startup situation at that time was far from ideal. I was blown away that we had to pay $2,600 to rent a one-bedroom apartment. So all three of us—me, my husband, and our co-founder—lived in this one-bedroom apartment. We barely had money for a car, so we got a $2,500 police interceptor off Craigslist. I was wondering how do people even survive in the US? Back in my hometown, St. Petersburg, Russia, we only needed maybe like $700 to live comfortably. So I just didn't understand how America worked.</p>
             <p>Over the years, I've made more mistakes, spent lots of money, and learned valuable lessons along the way. Those lessons have led me to where I am right now, making over $100,000 a month from all 19 income sources. When I calculated all of those income sources, I'm like, this really comes from your insecurity, Marina. This comes from you having lived in a shared apartment back in St. Petersburg, not having a car, nothing like this. It definitely comes from insecurity, coming from a poorer background, not having the resources. Now I'm like, every year I'm adding another extra income stream just to be sure. But this video is for you to start diversifying.</p>
             <p>Actually, this year my investments are on par with my business results, which as an entrepreneur I think I could do better, but as an investor I think I'm doing pretty well. If you still believe that the key to financial success is to work harder at your 9-to-5, climb the corporate ladder, and eventually make it, first of all, you're taking a big risk. I don't know how you feel in that environment, but for me I have to be my own manager, so I have all the time in the world to build my different income streams. But I also understand how safe the corporate job feels. Because I pay for my own insurance, I create my own 401K, I am saving for my kids' colleges. I don't get free lunches in the office, I don't get vacations. I don't get whatever. But basically all what a lot of entrepreneurs and creators like me go through—we start with trading our time for money, and then we feel the limit, and then we come up with creative ways to make more money without making more videos or working harder.</p>
             <p>Second, if you're just working one job, you're putting all your eggs in one basket, hoping that the single source of income will always be there. There are different types of people. Some people are better built for that. I always talk about how Brian Chesky is so committed to just building Airbnb. I'm a person who wants to be everywhere, to try everything. I'm more like—I really want to compare myself to Elon Musk, but I don't think I'm there at all. But anyway, that guy starts a lot of different things, and I like his approach more because it just suits my personality more. Anyway, I am a huge believer in creating multiple sources of income streams.</p>
@@ -422,25 +437,28 @@
             <p>Again, when it comes to investments, because I'm not selling, I can't really say income. These are unrealized gains that can just be wiped off, and probably some of them will be wiped off next year. But the strategy with investment is set aside part of your income monthly and invest it and don't look at your portfolios. But also stay diversified. I'm glad I have a professional doing that just because I'm super emotional. When I was doing that myself, first of all, I forgot to look at the market, so I lost some money. Then I stopped investing when markets crashed because I thought they were going to crash even further. But he helps me stay on track.</p>
             <p>These were my income sources. So that was it. Please don't forget that these income streams—some of them are unrealized, some of them have a lot of expenses attached to them. So I just wanted to provide an honest picture of what I've been doing for the past eight years as an immigrant, hustling from $0 in my bank account to whatever it is these days.</p>
             <p>My goal is well, ideally $40 million in savings. I remember I started like 2.5. Ideally, 40. Let's see what happens. Let's see. I'll keep you updated. I feel like it's an ambitious goal, but it's reachable, especially like looking at people around you and you see how much money there is in the world and how much money people are making. It's not like somebody is taking from me or I'm taking from someone. There's more and more money every year. If you're really doing something good for the world and if you're helping people—this is how I feel—the money will come back to you. This is how I feel is the best way to make money.</p>
-          </div>
+      </div>
     </div>
 
-
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/ZE1AjTnsubI/" class="related-card">
                 <img src="https://img.youtube.com/vi/ZE1AjTnsubI/hqdefault.jpg" alt="LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman" loading="lazy">
                 <span class="related-title">LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman</span>
               </a>
+
               <a href="/episode/QvwI0TTVcwo/" class="related-card">
-                <img src="https://img.youtube.com/vi/QvwI0TTVcwo/hqdefault.jpg" alt="I&#x27;m 35. If you&#x27;re in your 20s, watch this" loading="lazy">
-                <span class="related-title">I&#x27;m 35. If you&#x27;re in your 20s, watch this</span>
+                <img src="https://img.youtube.com/vi/QvwI0TTVcwo/hqdefault.jpg" alt="I'm 35. If you're in your 20s, watch this" loading="lazy">
+                <span class="related-title">I'm 35. If you're in your 20s, watch this</span>
               </a>
+
               <a href="/episode/NPiKEwTSwn4/" class="related-card">
                 <img src="https://img.youtube.com/vi/NPiKEwTSwn4/hqdefault.jpg" alt="Google Search VP on How AI Search Really Works | Robby Stein" loading="lazy">
                 <span class="related-title">Google Search VP on How AI Search Really Works | Robby Stein</span>
               </a>
+
               <a href="/episode/WOmRB6jNiSU/" class="related-card">
                 <img src="https://img.youtube.com/vi/WOmRB6jNiSU/hqdefault.jpg" alt="AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price" loading="lazy">
                 <span class="related-title">AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price</span>

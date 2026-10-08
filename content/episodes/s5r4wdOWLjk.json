@@ -1,0 +1,435 @@
+{
+  "videoId": "s5r4wdOWLjk",
+  "title": "AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise",
+  "format": "interview",
+  "guestName": "Samir Vasavada",
+  "guestTitle": "Co-founder & CEO, Vise",
+  "aboutGuest": "Samir Vasavada is the co-founder and CEO of Vise, an AI-powered wealth management platform he founded at age 16 in Cleveland, Ohio. Vise reached a billion-dollar valuation when Samir was 20, making him one of the youngest founders in history to reach that milestone. He built the company without a college degree, growing up as the child of Indian immigrants who had envisioned a more traditional career path for him.",
+  "publishedAt": "2025-05-24T15:01:31.000Z",
+  "duration": "45 MIN",
+  "coverArt": "https://img.youtube.com/vi/s5r4wdOWLjk/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/s5r4wdOWLjk/maxresdefault.jpg",
+  "summary": "Samir Vasavada, who dropped out of high school at 16 and founded AI-driven wealth management company Vise, shares how he built a billion-dollar company by age 20 without a college degree. He discusses his decision to reject the traditional Indian immigrant path his parents envisioned, how he met his co-founder at 12 and launched their first business at 14, and why he believes universities teach students what to think rather than how to think. He also explains how Vise uses AI to help financial advisors manage portfolios and close the wealth access gap.",
+  "keyTakeaways": [
+    "Samir founded Vise at 16 and reached a $1 billion valuation by age 20, making him one of the youngest founders to achieve that milestone without a college degree.",
+    "He decided as early as 7th and 8th grade that he would not attend college, concluding that the only real value a university offered him was networking — something he believed he could build independently through cold emails.",
+    "His parents, traditional Indian immigrants, did not accept his entrepreneurial path until Vise was accepted into Lightspeed Ventures' fellowship program, which served as the first credible proof point for them.",
+    "Vise's core product allows financial advisors to upload a client portfolio and use AI to instantly generate insights, customize holdings, and respond to real-time events like tariff announcements — democratizing access to sophisticated wealth management.",
+    "When hiring, Samir prioritizes qualities over skills, believing that with AI changing the nature of work, a person's character, curiosity, and adaptability matter more than their existing technical knowledge."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "title": "Why Did Samir Drop Out Despite His Traditional Indian Upbringing?"
+    },
+    {
+      "time": "06:30",
+      "seconds": 390,
+      "title": "Meeting the Co-founder and First Business Steps"
+    },
+    {
+      "time": "09:26",
+      "seconds": 566,
+      "title": "Startup Spending Philosophy and The Power of Team"
+    },
+    {
+      "time": "13:38",
+      "seconds": 818,
+      "title": "How to Hire? Qualities Over Skills, Building Culture"
+    },
+    {
+      "time": "15:42",
+      "seconds": 942,
+      "title": "How Hiring Changed with AI? Advanced Insights from Samir"
+    },
+    {
+      "time": "18:45",
+      "seconds": 1125,
+      "title": "The Vise Idea: AI is Transforming Wealth Management"
+    },
+    {
+      "time": "21:00",
+      "seconds": 1260,
+      "title": "Overcoming Challenges: Pitching AI to Banks and Advisors"
+    },
+    {
+      "time": "24:48",
+      "seconds": 1488,
+      "title": "AI-Driven Portfolio Insights: Upload, Customize, and Optimize Your Investments"
+    },
+    {
+      "time": "28:50",
+      "seconds": 1730,
+      "title": "What Keeps Samir Going Through Hard Times? The Struggles of Building a Startup"
+    },
+    {
+      "time": "31:30",
+      "seconds": 1890,
+      "title": "College vs. Real-World Learning: How to Build Credibility Without a Degree"
+    },
+    {
+      "time": "33:30",
+      "seconds": 2010,
+      "title": "Samir’s North Star — Building a Company That Transforms Generations"
+    },
+    {
+      "time": "34:23",
+      "seconds": 2063,
+      "title": "Investing Tips: Balancing Long-Term Growth with Small Risks"
+    },
+    {
+      "time": "38:16",
+      "seconds": 2296,
+      "title": "Democratizing Wealth: Can Vise Serve Everyone?"
+    },
+    {
+      "time": "38:56",
+      "seconds": 2336,
+      "title": "Rethinking College: Will AI Replace Traditional Education?"
+    },
+    {
+      "time": "41:45",
+      "seconds": 2505,
+      "title": "How to Become Successful in the AI Era: Find and Master Your Superpower"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You were the youngest person to become a billionaire at 20, right?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I wasn't a billionaire, but the billion dollar valuation, yeah. You know, media gets that confused sometimes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Got it. Can you walk me through your childhood? Because your parents are immigrants from India, and I feel like immigrant upbringing really contributes to successful people. How were you growing up? Were your parents pushing you towards traditional education? Was money an issue?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Yeah. So my parents came from India to the US. They were relatively young when they came over, unlike my co-founder's parents who came much later. But they had a lot of traditional Indian values—going to school, doing a doctorate, becoming a doctor or an engineer. As much as it is a stereotype, it's true. They really pushed me growing up to be a doctor, and I just didn't want to do that. I always loved building things. The first thing that ever got me was a Lego set. I started playing around with Legos and I'm like, I like to build things. So how can I express my need to build things? I eventually discovered entrepreneurship, but that was such an uncharted path and territory for anyone in the Indian community that they kind of rejected it. There was such aversion to risk. The idea of spending money frivolously, taking risks, skipping college—it was completely foreign to them. For such a long time they tried to push me in the direction of the traditional path, but I rebelled on it from an extremely early age."
+    },
+    {
+      "speaker": null,
+      "text": "For a while I was just confused until I figured out the entrepreneurial path. Then I thought from a first principles perspective: what would college help me with? What would the traditional path help me with if I want to start a big business and become really successful? I couldn't really think of anything other than network. So I tried to understand if I could build a network on my own outside of going to university. If I could do that through cold emails, then I would eliminate any need to go to university."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when did you understand that you weren't going to college?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I had started saying it at the end of seventh grade. I was already thinking about it in sixth grade, but by the end of seventh and eighth grade, I kind of knew I wasn't going to do it. There was this honors society at the end of school where they give kids awards for first and second honors. I didn't get any of the awards because I decided I was no longer going to spend my time and effort on school, and my grades took a huge hit. My parents were so depressed. We had a dinner after the graduation ceremony and everyone had a pouty face. I'm like, why are you guys so upset? And they're like, you didn't get first and second honors. How are you going to get into a good college? And my answer was, I don't really care. I'm not going to go to college. That just started this huge fight. It was really challenging to change the conventional means, but I eventually recovered from it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You met your co-founder at 12, so you started your first business at 14. Was that some kind of proof for your parents that you were actually making it without formal education because you started making money?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "No, it wasn't. I wish it was. The thing that was actually a proof point was when we got funded at our seed round. Lightseed Ventures had a fellowship program and they invited us to be part of it. The only reason we were able to get into their fellowship program is because my co-founder was going to UPenn. A fellowship sounded really exciting and formal, almost like a certification. So they thought, \"Oh wow, this kid is getting a fellowship. That sounds legitimate.\" They weren't all too excited when I raised my seed round. But it was probably five or six years into our journey that we finally got some accreditation where they were like excited about it. For a long time, until it was such a foregone conclusion that the business was going to work, they weren't too excited about me taking an atypical path."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think? Why did your co-founder become your co-founder? What are the traits you were looking for? Did you just connect with him on a personal level?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "We became friends. So on the opposite end of the spectrum, my parents didn't let me do traditional summer camp as a kid. Instead, they sent me starting in sixth grade to Northwestern to do college classes—math, physics, and all kinds of interesting college classes for gifted youth. I did it every summer from fifth and sixth grade onwards, for three weeks at a time. I'd live in Chicago in the dorm. The value of that program was learning how to live independently, doing laundry, things I wasn't excited about. But I learned how to be independent to some extent."
+    },
+    {
+      "speaker": null,
+      "text": "The summer of eighth grade, my co-founder Ranick was in the dorm across the hall from me. We started to become friends and hang out. I was like, you know what? How am I going to get out of school? The only way I can get out of school is if I make a lot of money. How do I think I'm going to make a lot of money? Well, I think I could start building mobile apps for small businesses. iOS came out with this programming language called Swift, which was easier than Objective C. I thought I could learn and teach myself Swift. Ranick said he already knew how to program. The real truth was he wasn't an amazing programmer, but after the course ends, he said we could build apps together. It was more out of necessity than anything else."
+    },
+    {
+      "speaker": null,
+      "text": "The interesting thing was he was on a more traditional path than I was. He was doing math classes on Saturday, and school was the most important thing in his life. I kind of took him to the dark side and said no, capitalism and building a business is the actual path you should follow. Over time I slowly cracked away at him to the point where I was almost able to sculpt him into the person I needed him to be in order to build the business we were looking to build."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Since then, have you had any moments of regret like, oh, I should have just finished high school, should have done college?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "No, not a single thing. I don't look back and I don't regret a single thing. Maybe I could have focused a little bit more. The challenge is that most businesses take a long time to build. We've been building our business for eight and a half years. I think we could have sped up time a little bit. Part of the immigrant mindset is to conserve capital. For a long time we were bootstrapping the company with all the money we made building apps and consulting with big financial institutions. We charged $500 to $1,000 an hour, which is a lot, but bootstrapping a company is pretty expensive. For a long time we weren't willing to spend money or raise money. No one would give us money for a while anyway. We were always in constant capital conservation mode."
+    },
+    {
+      "speaker": null,
+      "text": "The challenge with that was that sometimes money can be used the right way to speed up time. If we had spent a little bit more money pushing growth earlier on, running more experiments, I probably would be even further along than I am today. But the important thing is you do make mistakes, and you have to make mistakes in order to learn and grow. It was one of those immigrant mindsets that I had to kind of unlearn."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How did you unlearn it?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Well, I unlearned it a little bit too much because after we raised back-to-back financing rounds and raised well over a hundred million, the investors said your job is to grow really fast. The way you grow really fast is by spending a lot of money, hiring people, and scaling. The reality is hiring more people doesn't often make you grow faster, especially now with AI. We actually spent a little too much. We thought money was free because people were willing to give us money left, right, and center. I could make two phone calls and raise tens of millions of dollars. That gave us this weird relationship with money."
+    },
+    {
+      "speaker": null,
+      "text": "For so long, money was such a scarce asset. For six plus years we had basically no money personally. The business had no money. It was so hard to get money that we were trying to conserve as much as we could. Then overnight we get hundreds of millions of dollars and we start to think, wow, money is free. Our equity is more valuable than our money. We should just spend money at whatever it costs. That was the wrong way to think too."
+    },
+    {
+      "speaker": null,
+      "text": "The reality was somewhere in the middle, and we had to course correct. But some things we learned along the way is that we had the right idea in the beginning and we unlearned some of those lessons. We had to relearn some of those lessons. It's been an interesting journey from that standpoint."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have a rule now of what perfect spending for a startup looks like?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "There's no perfect spending, but the simple way to think about it is you should find the right people. Find the few people. It's usually people who are why you're going to be successful. Your team is why you're going to win. So work extra hard in the interview process, the diligence process, and the sourcing process to find the few right people that you think are going to make a world of difference. Understand how to compensate them and how to align your incentives with their incentives so they're going to work just as hard and be just as excited as you are. I think it's worth making that investment, whether it's cash or equity."
+    },
+    {
+      "speaker": null,
+      "text": "Then understand what are the few areas it's important to spend money on. For example, if you're an in-person company that works in the office, having a nice office is really important because you're going to spend a lot of time there. That's something you should spend a lot of money on. Or if sales is a key aspect of your business, driving growth is probably something you should invest in. But you can't invest in every single area, or you're going to run out of money. You have to understand what the few things are that are really important to you, then invest in those areas. Consistently track and understand what your metrics for success are. Think about almost everything as an experiment. If you're running an ad campaign, rather than spending a ton of money on a ton of different campaigns, run one small ad campaign. If it works, then put a little bit more money in, and a little bit more money in. Think about it iteratively, not as a huge pile of money that you just throw at something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you define a good hire? You said identifying that person. Is that through experience? Do you start working with them or do you know exactly what you're looking for when you start looking for a person?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I have two frameworks. The first is this idea of skills, knowledge, and qualities—SKQs. Most people overemphasize and overly focus on skills and knowledge and forget about qualities. I think really understanding someone's qualities is important. Who are they as a person? What does the 360 person look like? What are the struggles they've had to overcome in life? How did they go through those struggles? Because skills and knowledge, if you have the right qualities, can be learned. That's one really important thing—understanding who the person is and what their qualities are."
+    },
+    {
+      "speaker": null,
+      "text": "The other aspect is how that person is going to fit in your culture. Do you get along with them? Do they buy into the overall organization? Do you feel like you have a close personal connection with them? You're going to be really invested and really involved with that person. So it's really important you get along and you like each other."
+    },
+    {
+      "speaker": null,
+      "text": "The last thing is from one of our investors, Keith Rabois, this idea of barrels and ammunition. Barrels are the types of people that can take a project from start to finish. You can give them high-level directives and they can just run with it. You need these barrels in your company to move it forward. You need people you can trust and say, \"I'm going to let you handle marketing and you're going to figure it out with some high-level direction\" or \"I'm going to give you a vague problem—drive adoption of our existing customers—and they can figure it out.\""
+    },
+    {
+      "speaker": null,
+      "text": "Ammunition are people that if you give them a highly scoped, highly directed thing to do, they'll do it. But if you give them some vague, complex problem, they're not going to figure it out on their own. Not everyone is going to be a barrel. You're only going to have 10 to 20% of your company be these barrels, but you need to find those barrels."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love it. Has your hiring changed with AI? Are you still actively hiring, or do you think it's going to slow down?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "We are hiring, but I'm trying to find as many barrels as I can—people I can give high-level, big directives to, and then they can understand here's where we're going to use AI agents, here's where we're going to parallel process certain things, here's how we're going to create scalability in everything we do. I think we can be a company that does hundreds of millions, if not a billion dollars in revenue, with a hundred people."
+    },
+    {
+      "speaker": null,
+      "text": "It's funny because we had 150, 160 people at one point in time, and now we're closer to 40. We're doing 10 times better from a metric standpoint with 40 people than what we were doing with 160 people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What changed?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "AI. AI changed. Scalability changed. The idea is how do we think about automating everything we do? Sometimes with AI, we think about managing 10 times the amount of accounts next year and 20 times the accounts the years after. How do we design everything from scratch from a scalability standpoint?"
+    },
+    {
+      "speaker": null,
+      "text": "A good example is client service. We had a six, seven-person client service team that was manually sending out DocuSigns, doing account openings, processing, all these different things. Now we have a three or two-person team that handles probably 20 to 30 times the amount of accounts we had back then. They figured out how to automate everything. The first thing they did was, I'm not going to focus on client service. I'm going to focus on all the jobs to be done with client service. How do I eliminate myself? And then they're overseeing all the systems so they can be highly scalable."
+    },
+    {
+      "speaker": null,
+      "text": "Those people you hire to manage customer service are really the barrels, right? When you interviewed them, did you ask them questions like, can you guide me because I'm trying to hire barrels for my company? What are the questions you ask to determine whether they're a barrel?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, first you want to understand who they are as people. Understand their lives. Understand what they've gone through. Some people have gone through struggles, some haven't. You want to understand what is something that you had to take from a previous career, something that you had to take from start to finish where you had deep ownership over. Then they'll tell you a story like, \"I built this product. We had this problem. Here's what we were solving for.\" The thing I'm looking for is, can they operate at all levels? Can they operate from the top down? Can they understand from the bottom up?"
+    },
+    {
+      "speaker": null,
+      "text": "The best CEOs in the world, even CEOs of trillion-dollar companies, understand every single part of their assembly line, their production, the customer problem, the nuances of the customer problem, how their product works. People with deep understanding of what they did typically have the agency and ownership to have a deep understanding of what you do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm going to call my COO after this interview and change processes. I love it. Can you walk me through your product? Your product is helping financial managers manage capital with AI. Let me start with the basics. Do you think financial managers are still going to exist?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Yeah. When you zoom out, the financial advisory wealth management space is one of the biggest markets in the world. These advisers manage over $160 trillion globally, $80 trillion in the US. Most affluent and mass affluent wealth is managed through a human. We had a unique perspective because I grew up in the Midwest, in Cleveland. My co-founder grew up in Detroit. We had classic Midwestern values, but we had a family financial adviser—a person my dad grew up with, my dad's best friend. Every major life decision went through this adviser. These advisers were oftentimes coaches, marriage counselors. They do so much more than just managing the money."
+    },
+    {
+      "speaker": null,
+      "text": "The challenge is this idea of personalization is taking over our lives in every single thing we do—how we shop with Amazon, how we consume content with Netflix, personalized movie recommendations, personalized shopping recommendations, personalized news. But investors for the first time want personalization in their portfolios. The challenge is advisers can't deliver deep personalization because it's so time-intensive to understand all their clients' needs, understand what companies fit into those client needs, manage the asset allocation towards those client needs, and scale their firm to manage a lot of clients."
+    },
+    {
+      "speaker": null,
+      "text": "Our belief was rather than advisers having to make a trade-off between managing a handful of high net worth clients versus a generic one-size-fits-all solution for a lot of mass clients, they should be able to deliver deeply personalized portfolios that help their clients hit their financial goals and manage a lot of clients. The way they'll do that is through the merger of investment management and artificial intelligence through one platform that can deeply understand their clients' financial needs, goals and objectives, their investment strategies, and can do the execution and management all in an entirely automated way."
+    },
+    {
+      "speaker": null,
+      "text": "The reality is that true AI is going to empower these human advisers because the relationship is going to be too hard to replace. Advisers need to be able to deliver a more efficient experience and manage more relationships, but they have to leverage technology to do that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you get this idea from talking to your father's friend, or did you just look at the industry and think, oh, this is actually...?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I was really fascinated by AI. The long story short is eight years ago we had been building apps for small businesses and we thought every small business should have an app. What if we use AI to automate app development? What if we put all this recycled code we'd been developing into a neural network and you could type in your app idea and it would generate you an app? We were a little ahead of our time in that sense. But because we were ahead of our time, we didn't quite understand how the technology worked. It was too difficult of a technical problem. Maybe we should have stuck with it and could have built an OpenAI-like business, but you miss out sometimes."
+    },
+    {
+      "speaker": null,
+      "text": "One of our advisers at the time said, you guys know so much about AI and machine learning. You should start consulting with these investment institutions on expert consulting networks. We started consulting on Gerson Lehrman Group and Coleman Research. These expert consulting networks connected us with big investment banks, Mass Mutual, RBC Royal, Deutsche Asset Management. We would teach them about how AI worked. One of those projects was with Mass Mutual. They said we have all these financial advisors who are really good at relationship management but not the best at managing money. Is there a way we can use AI to augment these advisers? Is there a way they could tap into our investment resources and AI would recommend advice?"
+    },
+    {
+      "speaker": null,
+      "text": "We thought, wow, this is a super interesting idea. What if we build AI and sell it to big banks, insurance companies, and big wealth management institutions? Jamie Dimon was speaking at Detroit Startup Week. I told my co-founder you need to rush him on stage and pitch him Vise. It was called FSAI—Financial Services Artificial Intelligence—at the time. Jamie said, \"Look, JP Morgan has a lot of data scientists. I don't think this is too interesting to us, but a lot of our competitors have advisers leaving and going independent. You guys can power the independent advisers.\""
+    },
+    {
+      "speaker": null,
+      "text": "Every day after school, I would cold call independent advisers. I'd learn how they think, how they make decisions. Trillions of dollars a year was leaving big institutions and going independent. People were starting these small financial advisory firms. We thought, wow, we could power these firms. That's how we first started."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How many nos have you heard when you called them?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Oh, I mean we got an unbelievable amount of nos. We got more nos from people we tried to recruit and people who tried to give us capital. A lot of what kept us going was talking to these advisers when we could get them on the phone. Them talking about how interesting this idea could be and how transformative it could be for them and their lives, and understanding the problem, seeing that this is where the industry is going. The one area we didn't get nos on was customer insights. That's why we kept going. That was the fuel. Every time I talked to a customer, that was the fuel that refilled the tank. I got tons more nos in a ton of different areas, but the one area I found success was learning from and talking to my customers. That was super important to continue moving forward."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing. Can you also talk about the AI itself? Can anyone use it? Maybe tips for portfolio building in this age? Can you just upload your portfolio and AI will tell you what to do?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Yeah. You can functionally upload your portfolio and understand your financial goals. We're going to understand who you are as a 360 person and what portfolio and what asset allocation should fit for you. Then understand how to customize that portfolio and the individual nuances."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is it going to do the rebalancing?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Yeah, it'll do the rebalancing, tax management. Every single day we'll look for tax harvesting opportunities. So when a client calls and says, \"Hey, Trump just announced these tariffs. I'm freaking out. How's this going to impact my portfolio?\" the adviser instead of having to understand what the client was in and how Trump tariffs were working and how their portfolio might have been impacted, they can just ask Vise. Vise is going to tell them, here's how the Trump tariffs impacted your portfolios. It really hit shipping companies, and those shipping companies are only 3% of your portfolio. We actually rebalanced out of shipping companies. Your tech positions are not hit all too hard, and you're still on your portfolio goals. You're going to be okay. The adviser can ask Vise and we'll tell them very quickly so they can build more trust with the client and tactically answer those questions in real time and be proactive in areas they couldn't have been proactive before."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's interesting you're talking about this like a financial adviser understanding the market. How did you learn the craft of investing without a college degree, without going to high school?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I spent a lot of time reading. An unbelievable amount of time reading. I spent an unbelievable amount of time watching YouTube videos. I was lucky that I grew up watching YouTube videos. Some of yours actually. Just trying to understand how the markets work, how advisers think, all these interesting historical backdrops to the industry, how it's evolved. But the most important way I learned, and the way I learn best, is by talking to people."
+    },
+    {
+      "speaker": null,
+      "text": "Learning from all these different advisors, watching them work. The most interesting way to actually learn from someone isn't just to talk to them, but to shadow them. To observe them. I actually do this with new hires. Instead of just teaching them things, I have them follow me around and shadow me for a month or shadow my co-founder or shadow other people on the team. You will learn by observation and you'll pick up new insights and takeaways—things that someone might not have thought to teach you, but you'll see it and you'll realize it anyway."
+    },
+    {
+      "speaker": null,
+      "text": "So books, YouTube, and talking to people is how I learned best."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Have you had any backlash from the industry like, hey, you don't have a formal degree? Why are you building this for financial advisors?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "For a while I was really scared about my age. I would basically lie to people or not tell them my age. I would turn off video, try to avoid the conversation as much as possible. I think until I turned 20 and we raised a lot of capital, I didn't lean into it all too much. Once it was 20ish, I started to talk about it more, and people actually started to like us more because we were young."
+    },
+    {
+      "speaker": null,
+      "text": "But for a long time I was very scared. I think the big breakthrough was realizing that your credentials, your status as a byproduct of credentials, doesn't really matter. What matters is how much detail, how much depth, how much understanding can you talk about an industry, a set of problems, and perspective solutions to that? If you do, you will build a lot of credibility as a result."
+    },
+    {
+      "speaker": null,
+      "text": "I just tried to understand how can I know more than anyone else in this industry and have a differentiated perspective, and I will build credibility as a result. That worked. People were like, okay, this kid is smart and he seems to know something. We'll give him a shot. Then all of these learnings and wins start to compound on each other."
+    },
+    {
+      "speaker": null,
+      "text": "The other aspect was credibility by association. How can I surround myself with people that are really smart, with people that have credentials, that I can rely on? People will say, okay, those people are associated with him, so he must be good."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Surrounding you, you mean your clients, your investors?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Investors, clients, and most importantly my team. You know, we might run the company and we might be the youngest people at the company, but our co-CIOs have been working in the investing world for 20 plus years running various things. We have a lot of what I call high Y-intercept people—high-experienced people that have pedigree and experience and status in the industry—and they can lend that credibility to the overall organization."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When you were building this over the course of eight years, have you ever had thoughts of like, this is not the right industry for me? There are so many things happening. You mentioned building an OpenAI..."
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "All the time. I've wanted to quit 15 times at least. I've just been so depressed. I had a bad client call, some issue with an investor, a bunch of my team members quit, the platform broke, and I would just come home super depressed, put my head in a pillow, and wish I was quitting."
+    },
+    {
+      "speaker": null,
+      "text": "But the reality is every business is really hard. You'll feel that way about any business. It's just hard until it's not, and you just gotta keep pushing forward."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When was the last time you felt it?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Maybe like a week ago. It probably goes away pretty fast now. But the challenge is it takes a long time to build these businesses. If you really want to be disruptive, and everyone would do it if it was easy, your true alpha is in your resilience, your ability to stick it out and continue learning, iterating, and growing where no one else will."
+    },
+    {
+      "speaker": null,
+      "text": "Very few people are willing to do it. Very few people think on long time horizons. I think the most important thing is you have a vision for yourself, a vision for your business and where you're going to fit into it, and where your company will fit into the vision for your industry, and you're willing to be stubborn about that vision. For the most part you can change it on the margins, but if you have a vision, you will fall through into that vision. If you don't and you're just trying to make money or get rich quick or build something that attracts attention very quickly, you're not going to stick it out when times are tough because you don't have a vision."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's the phrase that you keep telling yourself when you feel like quitting?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I come back to two things. I come back to believing it's kind of my destiny to be successful in this. It's very rare you're able to build a business when you're in your teens and kind of stick it out through today with the same fundamental vision and fundamental business. I think it's this idea of how the world's going to look different with Vise in it."
+    },
+    {
+      "speaker": null,
+      "text": "I believe the world's largest asset manager should be a technology platform that can deliver true personalized portfolios across every asset class all in one place that functionally democratizes wealth. It functionally brings down the wealth access gap. It allows the same advice that the ultra wealthy had to go to everyone and set them all up for an advantage to hit their financial goals and to win."
+    },
+    {
+      "speaker": null,
+      "text": "That vision, that mission really inspires me and it always has. As long as I remember what the big picture is, what the destination I'm heading towards is, the bumps along the journey will all get smoothed out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you give advice to someone who's 17, 18, deciding whether they should go to college or not? They do realize college gives you network, but also credibility."
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I think college has kind of started to lose its credibility. The university system now teaches you what to think and not how to think. A lot of students coming out of college now are realizing they wasted so much time there and didn't really learn as much as they could."
+    },
+    {
+      "speaker": null,
+      "text": "I would say the best way to grow yourself is to find someone who you think is really impressive and who you want to be in five and ten years. Shadow that person. Learn from that person. The way that person will take you seriously is you do the work. You learn about their business. You learn about their job. Get an introduction—get a warm introduction to that person or send a really thoughtful cold email. Really show that person, I'm going to go above and beyond for you, and you hustle."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "qkGuzV50JWI",
+      "thumbnail": "https://img.youtube.com/vi/qkGuzV50JWI/hqdefault.jpg",
+      "title": "Must Have AI Skills to Save your Career in 2026"
+    },
+    {
+      "videoId": "ZYT81iUfBK4",
+      "thumbnail": "https://img.youtube.com/vi/ZYT81iUfBK4/hqdefault.jpg",
+      "title": "How I Launched My Merch Store in 7 Minutes Using AI Tools"
+    },
+    {
+      "videoId": "6es0HhfpQlQ",
+      "thumbnail": "https://img.youtube.com/vi/6es0HhfpQlQ/hqdefault.jpg",
+      "title": "Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It"
+    },
+    {
+      "videoId": "2j9yjRSpMSo",
+      "thumbnail": "https://img.youtube.com/vi/2j9yjRSpMSo/hqdefault.jpg",
+      "title": "AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher"
+    }
+  ],
+  "topics": []
+}

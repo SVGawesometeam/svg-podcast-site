@@ -31,5 +31,13 @@
   "nameSpelling": "Allie K. Miller — написание из описания ролика на YouTube; на её собственной странице сайта (YfRkj9kmQf0) и в компиляции zL2PIa72gJ4 она подписана «Allie Miller».",
   "relatedAdded": "К трём карточкам бэкенда (JEZVl3BkSLk, 213rSCulKUQ, o-wv_szZ0V0) добавлена четвёртая — выпуск Сала Хана s-Iz-lLAhdg «Khan Academy CEO: The Real AI Opportunity Is in Boring Industries», заголовок прочитан с той страницы.",
   "lastmod": "Запись для страницы удалена из sitemap-lastmod.json после ручной правки, чтобы первая дата в sitemap была датой публикации (2026-09-11), а не днём правки.",
-  "confirmedBy": "не подтверждено; собрано Claude 2026-09-15, ждёт проверки Марины (см. unresolvedNote)"
+  "confirmedBy": "не подтверждено; собрано Claude 2026-09-15, ждёт проверки Марины (см. unresolvedNote)",
+  "repairs": [
+    {
+      "date": "2026-10-08",
+      "what": "The breadcrumb listed seven guests while the guest card, the JSON-LD performer and the transcript (one labelled turn) include Alex Mashrabov as the eighth. The breadcrumb is now derived from the guest list.",
+      "cause": "Hand edit applied to one copy of a value the page repeats; the data layer keeps one value.",
+      "confirmedBy": "content comparison in scripts/check-render.js during the migration"
+    }
+  ]
 }

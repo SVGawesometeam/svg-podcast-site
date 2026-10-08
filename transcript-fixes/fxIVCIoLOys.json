@@ -22,5 +22,11 @@
     "from": "The Next 3 Years of AI: Lessons from Elon Musk's First Investor",
     "to": "Elon Musk's First Investor on the Next 3 Years of AI | Steve Jurvetson",
     "reason": "В старом заголовке не было имени гостя, поэтому страница не ловила fanout-запрос «Steve Jurvetson podcast». Роль была, имени нет. Новый заголовок закрывает обе формулы, как эталонная страница Ryan Roslansky."
-  }
+  },
+  "knownSpeakers": [
+    "Audience question"
+  ],
+  "notes": [
+    "2026-10-08: \"Audience question\" is a real label on this recording (live Q&A), listed here so the build does not warn about it."
+  ]
 }

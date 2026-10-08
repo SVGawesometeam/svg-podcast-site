@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>19 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=qkGuzV50JWI" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/qkGuzV50JWI/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/qkGuzV50JWI/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,8 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -444,7 +456,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> What's going on with AI right now isn't just hype. Something happened yesterday. I came back home from a conference in San Francisco where we were talking about AI, and things are moving crazy fast in Silicon Valley. Somebody told me to try an app called Replit to code something I'm missing in my process. I had this idea of a content distributor, came back home, and started talking to Replit in my native language. In 20 minutes, it coded me a website that looked exactly like I imagined it. Yes, of course it wasn't working, but I was able to connect my OpenAI API and Tribe API. I think if I take a couple more hours to play with it, I'll be able to build a full-scale app.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> What's going on with AI right now isn't just hype. Something happened yesterday. I came back home from a conference in San Francisco where we were talking about AI, and things are moving crazy fast in Silicon Valley. Somebody told me to try an app called Replit to code something I'm missing in my process. I had this idea of a content distributor, came back home, and started talking to Replit in my native language. In 20 minutes, it coded me a website that looked exactly like I imagined it. Yes, of course it wasn't working, but I was able to connect my OpenAI API and Tribe API. I think if I take a couple more hours to play with it, I'll be able to build a full-scale app.</p>
             <p>At that conference, somebody shared a story of a girl who was trying to buy a CRM for her small business. All the big players on the market were too expensive, so she decided to build her own with one of those tools. My experiment yesterday left me with mixed feelings. Yes, it's not perfect now—AI is not perfect and it's not building the perfect website—but it's very close. In two years, it looks like we'll be able to just talk to AI and say, &quot;Hey, can you make this app for me?&quot; and it will be able to do that. This isn't just hype. Things are moving fast, and the people who act now will be the ones leading tomorrow.</p>
             <p>Here's another crazy statistic: 60% of major companies already have chief AI officers, and by 2026 that number is projected to reach 86%. When I read that research while preparing for this video, I called my COO right away and said, &quot;Oh, shoot. We need to add something to our hiring process. Not only are we going to ask about how they come up with video ideas, but whoever we're hiring also needs to start telling us what AI tools they're using, how deep they are with AI, and how they think some of their functionality can be replaced with AI.&quot; We're interviewing them for one channel, but we have three channels. Maybe they can take all three.</p>
             <p>Nearly half of businesses are already integrating AI into core operations right now. I saw a post by Duolingo's founder saying they are AI first and the content in their app is generated by AI. I saw a post by Fiverr's co-founder and CEO saying AI is coming for your job. Damn, it's coming for my job too. The moment right now is so intense with so many things changing. I'm seeing very good signals where startups are growing like crazy and making a lot of money, but I'm also seeing really bad signals where revenues are dropping. I have a friend I'm going to meet up with today. She works in sales and finance. She said she wasn't able to make any sales this year. She's in San Francisco and has to live on a very tight budget because the sales aren't happening. It's time to act for all of us.</p>
@@ -476,24 +488,28 @@
             <p>I want to wrap up this video by giving you a 90-day challenge. The next 90 days represent a critical window. While others are still debating whether AI matters and what's going to happen, you can position yourself at the forefront of this transformation. History shows us that every technological revolution ultimately creates more opportunities than it eliminates, but these opportunities require different skills and mindsets.</p>
             <p>Here's my challenge to you: Choose one principle from this video and commit to implementing it over the next 90 days. Drop a comment below sharing what you're going to focus on, and we're going to comment with different AI tools that could help with that. For example, if you're a mom trying to optimize your kids' education or you're a content creator trying to optimize building content, comment with a process that you want to optimize, and we'll try to be as helpful as possible with AI tools that have helped people with these tasks.</p>
             <p>Remember, the future belongs to those who adapt most efficiently, and that adaptation starts today.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/gW51vYIJgUs/" class="related-card">
                 <img src="https://img.youtube.com/vi/gW51vYIJgUs/hqdefault.jpg" alt="Life-Changing Lessons I Learned From The Top 1%" loading="lazy">
                 <span class="related-title">Life-Changing Lessons I Learned From The Top 1%</span>
               </a>
+
               <a href="/episode/s5r4wdOWLjk/" class="related-card">
                 <img src="https://img.youtube.com/vi/s5r4wdOWLjk/hqdefault.jpg" alt="AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise" loading="lazy">
                 <span class="related-title">AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise</span>
               </a>
+
               <a href="/episode/HQ3eVt2jgAY/" class="related-card">
                 <img src="https://img.youtube.com/vi/HQ3eVt2jgAY/hqdefault.jpg" alt="$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip" loading="lazy">
                 <span class="related-title">$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip</span>
               </a>
+
               <a href="/episode/subu-xHrp1w/" class="related-card">
                 <img src="https://img.youtube.com/vi/subu-xHrp1w/hqdefault.jpg" alt="Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier" loading="lazy">
                 <span class="related-title">Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier</span>

@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Conor Grennan is the Chief AI Architect at NYU Stern School of Business and the founder of AI Mindset, a training and consulting organization that works with Fortune 500 companies and business leaders. Rather than focusing on specific tools or features, his work centers on a behavioral framework for fundamentally changing how individuals and organizations think about and interact with AI. Grennan is a writer and entrepreneur who has become one of the leading voices on practical, day-to-day AI adoption.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -474,7 +486,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Look, even if the technology doesn't change from today, it can still wipe out 25% of entry-level white collar workforce. Conor Grennan is the chief AI architect and founder of AI Mindset, a training organization helping people to adopt AI into their daily life. Reinventing a process gets noticed way more than you just doing more work. New tools drop daily. You're using it a few times in a week and wondering, &quot;Am I already behind? How do you even keep up? And if I don't figure this out, my job is going to disappear.&quot; So, first of all, don't stress, right? Everybody's going crazy with, &quot;Oh, I just made this into this.&quot; Don't worry about that. To me, like a power user is using it across everything from home to work and back again and also are having long conversations because this is not Google. This is a companion. In this conversation, Conor reveals why we naturally misunderstand AI, how to transform AI from a search tool into your most powerful companion, how to navigate the changing job market, and what skills actually matter when nobody knows where the technology is headed. Conor, thank you so much for doing this. I'm so excited to be talking to you. You're teaching thousands of future business leaders AI. You're talking to huge companies, teaching their leadership. Can you introduce yourself in 60 seconds and tell me why people should be listening to you when it comes to AI?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Look, even if the technology doesn't change from today, it can still wipe out 25% of entry-level white collar workforce. Conor Grennan is the chief AI architect and founder of AI Mindset, a training organization helping people to adopt AI into their daily life. Reinventing a process gets noticed way more than you just doing more work. New tools drop daily. You're using it a few times in a week and wondering, &quot;Am I already behind? How do you even keep up? And if I don't figure this out, my job is going to disappear.&quot; So, first of all, don't stress, right? Everybody's going crazy with, &quot;Oh, I just made this into this.&quot; Don't worry about that. To me, like a power user is using it across everything from home to work and back again and also are having long conversations because this is not Google. This is a companion. In this conversation, Conor reveals why we naturally misunderstand AI, how to transform AI from a search tool into your most powerful companion, how to navigate the changing job market, and what skills actually matter when nobody knows where the technology is headed. Conor, thank you so much for doing this. I'm so excited to be talking to you. You're teaching thousands of future business leaders AI. You're talking to huge companies, teaching their leadership. Can you introduce yourself in 60 seconds and tell me why people should be listening to you when it comes to AI?</p>
             <p><strong class="speaker">Conor Grennan:</strong> Thank you so much for having me. It's really an honor to be on your show here. Yeah, so I'm Conor Grennan. I am chief AI architect over at NYU Stern School of Business here in New York City. And a lot of what I do is I run AI Mindset, which is a training consulting organization. We train big organizations and kind of like everybody but on a completely new way of thinking about AI. It's a behavioral framework rather than just, hey, here's a few features and a tool that everybody should use. And the idea is when you're actually sitting with people in the room, a lot of them are just using it, you know, a couple of times a week or a few times a month or just for a couple of different things for queries for just asking questions.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> So that's exactly—we can end the podcast right now. That was it, right? Like the idea is that when they are using it well, two things are sort of going wrong with the statistics, I think. First of all, imagine if you were in a big room and you said, &quot;Hey, who here is using Excel?&quot; Every hand goes up, right? But if you say, &quot;Who's using it and knows at least 40 formulas and has done one half million dollar deal?&quot; Three investment banker hands go up. So, everybody's quote unquote using it. But who's actually really using it to change how they work and how they do everything?</p>
             <p><strong class="speaker">Conor Grennan:</strong> To me like a power user is using it across everything from home to work and back again and also using it like 30 times a day and also are having long conversations because as you said this is not Google, it's not Google search, this is a companion.</p>
@@ -524,24 +536,28 @@
             <p><strong class="speaker">Conor Grennan:</strong> I mean, you and I live in this world, right? And we're watching it every day, and it is very hard to tell what's going away and what's staying. You can kind of tell in the short term, but we could never have predicted where we are right now either. So it's easy to say to people, &quot;Oh, we need like adaptability. We need curiosity.&quot; But it drives me a little nuts when people say that because what does that mean? Like we were talking before we came on air, right, about like practical, right? Practical is always more interesting. And I hate when people are just like, &quot;Oh, you know, just be more curious.&quot; I'm like, &quot;How do you tell somebody to be more curious?&quot;</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> So what do you tell them?</p>
             <p><strong class="speaker">Conor Grennan:</strong> What I tell, you know, our kids, and what I do at scale—tens of thousands of people in one single organization—which is it doesn't matter if you're curious or not. Like you can behave in a curious way. And so what does that look like? Well, let's give you some steps. First, understand sort of, again, like what we do—which is like, what is the brain malfunctioning here? Like what are these three paradigms? What are these steps? All that kind of stuff. And take them through what it's not and what it is. And then say, &quot;Just lean into what you are passionate about.&quot; And I don't mean that as a touchy-feely kind of like, &quot;Oh, do what you love,&quot; because I actually don't believe that. I come from a business school. We don't tend to work in that way. But what I do think is that no matter what you do, AI can enhance it and come up with a new way of doing this. This is what's so interesting about this technology. The history of technology has been the creators of the technology or the service have always defined like what the role is like. If you invented the computer, you know that we need silicon chips and</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/lVV0HInr0ZY/" class="related-card">
                 <img src="https://img.youtube.com/vi/lVV0HInr0ZY/hqdefault.jpg" alt="$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO" loading="lazy">
                 <span class="related-title">$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO</span>
               </a>
+
               <a href="/episode/JFilKfL7_9A/" class="related-card">
-                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
-                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus</span>
+                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
+                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</span>
               </a>
+
               <a href="/episode/kvlMhVz-DeM/" class="related-card">
                 <img src="https://img.youtube.com/vi/kvlMhVz-DeM/hqdefault.jpg" alt="His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)" loading="lazy">
                 <span class="related-title">His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)</span>
               </a>
+
               <a href="/episode/Ab1FyDL4HEY/" class="related-card">
                 <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/hqdefault.jpg" alt="High-income AI business ideas for 2025 (no coding, no budget)" loading="lazy">
                 <span class="related-title">High-income AI business ideas for 2025 (no coding, no budget)</span>

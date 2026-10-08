@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,7 +374,7 @@
       <p class="guest-bio">Kian Katanforoosh is the CEO of Workera, an AI-powered skills intelligence platform that has assessed over one million professionals on their technical and AI capabilities. He is a lecturer at Stanford University and co-founded DeepLearning.AI alongside Andrew Ng, one of the world's most widely used AI education platforms. Kian is a leading voice on AI workforce readiness, skill development, and the practical deployment of AI systems in enterprise environments.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -483,7 +496,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker">Kian Katanforoosh:</strong> How often you use AI. If it's not daily, I think you're generally behind.</p>
+        <p><strong class="speaker">Kian Katanforoosh:</strong> How often you use AI. If it's not daily, I think you're generally behind.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> That's Kian Katanforoosh, Stanford AI professor, who built one of the world's top AI education platforms with Andrew Ng. Now through his company, he's tested over a million people on their AI skills, and today he has a step-by-step plan so you don't fall behind. What are the three moves everyone should make in 2026?</p>
             <p><strong class="speaker">Kian Katanforoosh:</strong> Learn the foundations of AI. Assess yourself to make sure you're ready. Build the habits of learning. If you focus on one thing for a day, you probably are already in the top X percent of the world. For a week, non-stop, you're in the 10 percent. Focus on a month, you are in the 1 percent. 1 percent, you will have to.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Hello, everyone. Welcome back to Silicon Valley Girl and Davos. Kian, let's start with your big idea. 2026 is the year of humans, but also we're getting a completely different narrative, you know, a new model every week, replacing jobs. How do you think we should focus on humans right now? And what is the shift?</p>
@@ -533,7 +546,6 @@
             <p><strong class="speaker">Kian Katanforoosh:</strong> What do you think? I mean, I'd say 100% agency is a durable skill. We feel it durable as in it will be useful even 10 years from now. It's very important. There's a lot more durable skill, critical thinking, problem solving, effective communication. I think AI literacy is a doable skill. People will need it for a long time. Coding, I think is a very important durable skill</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Mm, still. Even for someone like me, who's...</p>
             <p><strong class="speaker">Kian Katanforoosh:</strong> Yeah, I think so. I don't think you'll have to learn syntax, like you don't need to know how to code manually. But if you can tell if the coding agent is, what is it doing, you have a significant advantage. You can catch the errors faster, you can iterate faster. It is hard to negate that. And then to come to the top three skills, I think like I'd separate in three groups. So for technical folks, very technical folks like foundational model level. Right now, companies are fighting for talent that can do reasoning, that can build reasoning loops and reasoning models. There's very few people in the world that can do it and they're very, very valuable. The second one that's underrated, forgotten sometimes is distributed computing. There are not that many people that can field clusters. That can train models on massive clusters. It is very complicated.</p>
-
             <p>It requires a combination of math skills, linear algebra, electrical engineering. It's very, very complicated and those are hardcore engineers, very valuable. And then the third one is reinforcement learning. So in AI, when you look at a model, it usually goes through different phases of training, like pre-training and post-trainging. People that have, and at some point in the, sometimes pre-train, sometimes post-training, There are certain techniques from the world of reinforcement learning. That's why the idea is AlphaGo or chess. Those games that you've seen AI play better, they're based on reinforcement learning methods.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> When the machine learns by itself.</p>
             <p><strong class="speaker">Kian Katanforoosh:</strong> By itself, it learns through experience, not through examples, and that skill is also very valuable. So that's the technical tier. In the tier, applied tier, I would say forward deployed engineering is very popular, meaning if you can also do business and be technical at the same time, that combination is there. And then for day-to-day life, I think identifying AI, being able to use it natively is the most popular skill for general awareness.</p>
@@ -584,24 +596,28 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Local hubs.</p>
             <p><strong class="speaker">Kian Katanforoosh:</strong> Exactly. And there, that's what happened in the dot-com when software engineering was concentrated. And a few years later, actually it became democratized because of online learning, because of access to information, but also because a lot of these experts moved elsewhere. And I think the same thing will happen in 10 years. Even outside the hubs, you will find great AI native micro hubs or local communities.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah, that's amazing. Thank you so much for this conversation. I love podcasts when, uh, after the podcast, I'm going to just text my team. We're going to build the cloud thing. Uh, we're going make sure we have all of the documents. Everything's synced. Thank you. So much love this feeling. Let's get to work. Thank you, Kian is the reason why I came back home from Davos and started implementing cloud across everything that I do was set up multiple Claude projects for all the social media that we're running. And honestly, it's been so transformational. Another conversation that's been really transformational was my conversation that I recorded at Davos with Ryan Roslansky. So if you're all about AI, if you are interested what's happening to jobs and how you can get a better job by posting on LinkedIn, watch that episode. It's live on my channel and I'll see you very soon.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/s-Iz-lLAhdg/" class="related-card">
                 <img src="https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg" alt="Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan" loading="lazy">
                 <span class="related-title">Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan</span>
               </a>
+
               <a href="/episode/GDeEATJcbJo/" class="related-card">
                 <img src="https://img.youtube.com/vi/GDeEATJcbJo/hqdefault.jpg" alt="Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn" loading="lazy">
                 <span class="related-title">Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn</span>
               </a>
+
               <a href="/episode/JFilKfL7_9A/" class="related-card">
                 <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
                 <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</span>
               </a>
+
               <a href="/episode/72duHF7iZiU/" class="related-card">
                 <img src="https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg" alt="Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson" loading="lazy">
                 <span class="related-title">Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson</span>

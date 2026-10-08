@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>21 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=eaZ2R1K-SjQ" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,8 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -429,7 +441,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> By the end of 2025, AI can do what used to require a 4-year degree, and the numbers prove it. Entry-level job postings in the US are down about 35% compared to January 2023. Unemployment for recent graduates is 5.8%, one of the worst numbers we've seen in years. At the same time, AI tools like ChatGPT, Claude, Copilot, and Perplexity are getting better and better every month. They write, they summarize, they analyze code faster, cheaper, and more reliably than a lot of juniors. And the data shows the impact. According to Harvard Business Review, AI can already do 50 to 60% of typical junior tasks. Entry-level hiring in European tech has collapsed by over 70%. Starter jobs don't slow down. They kind of vanishing. Which raises the uncomfortable question, if AI can do the job, what's the degree actually for?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> By the end of 2025, AI can do what used to require a 4-year degree, and the numbers prove it. Entry-level job postings in the US are down about 35% compared to January 2023. Unemployment for recent graduates is 5.8%, one of the worst numbers we've seen in years. At the same time, AI tools like ChatGPT, Claude, Copilot, and Perplexity are getting better and better every month. They write, they summarize, they analyze code faster, cheaper, and more reliably than a lot of juniors. And the data shows the impact. According to Harvard Business Review, AI can already do 50 to 60% of typical junior tasks. Entry-level hiring in European tech has collapsed by over 70%. Starter jobs don't slow down. They kind of vanishing. Which raises the uncomfortable question, if AI can do the job, what's the degree actually for?</p>
             <p>And here is why this hits home for me. I am someone who grew up in a world where education was everything. I spent 5 years studying mathematics and economics in my university. I spent a semester at Technische University at Dresden studying mathematics. I took endless trips to learn languages. I applied to top US universities to do my master's in MBA. Every major opportunity I've had in my life started with education. And it was the same with my whole family. But now I'm raising my kids in a completely different era and I want to understand whether the system that shaped my life still works for theirs.</p>
             <p>So in this video I'm bringing together insights from the guests of my podcast—founders, CEOs, investors, and people who are actually building AI. And I'm going to ask them these three questions. What is really happening to education and entry-level jobs? When is a university degree actually worth it, and when is it a bad investment? And how do you build your own education roadmap in the age of AI?</p>
             <p>Let's talk about what's actually breaking. The US labor market looks okay on the surface, but the picture is getting worse for young and entry-level workers. In September 2025, the economy added 119,000 jobs, yet unemployment still climbed to 4.4%, the highest level in nearly four decades. Companies like Salesforce and Shopify are openly telling investors they're meeting growth targets with AI instead of junior staff. Why? Because entry-level roles are exactly what today's AI is best at. Repetitive, rule-based, heavy on routine, light on judgment. Naturally, companies are asking why pay a junior 60k a year when you can pay $10 a month for a model that never sleeps.</p>
@@ -451,7 +463,6 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> I think that college has kind of started to lose its credibility. The university system now teaches you what to think and not how to think. So I would say that the best way to grow yourself is to find someone who you think is really impressive and who you want to be in five years and 10 years. Shadow that person, learn from that person. And the way that person will take you seriously is you do the work. You learn about their business or their job. Get an introduction, get a warm introduction to that person, or send a really thoughtful cold email and really show that person you're going to go above and beyond for them. You hustle, and they will take you seriously. Then you will get credibility as a result, and then those things will compound over and over again.</p>
             <p>When you're ready to do your own thing, you'll start to build your network, you'll start to have a little bit of experience, and that'll help you carry forward. And I would really say that it's important to think long-term about who you want to be over a 10-year period, over a 15-year period. I had an idea when I was 15. I had written down a set of things about what I wanted my life to look like when I was 20, and I had accomplished every single thing on that list other than getting a dog—that was on my list and I do not have a dog.</p>
             <p>And I have another version of that for when I'm 30. You know, sometimes you're going to miss it on the margins, but when you have this kind of vision, this thing you're working towards, this north star, that'll guide you to some extent. You will fall into that. But you really have to be introspective and understand what are the things that I care about, what are the things that I'm good at, and where's the intersection? And am I willing to make this my life's work?</p>
-
             <p><strong class="speaker-marina">Marina Mogilko:</strong> So if universities are losing their monopoly, what comes next? My conversation with Mustafa Suleyman, head of AI at Microsoft. I asked him something I've been thinking about a lot. If access to knowledge is now democratized, what happens to traditional education? Do bachelor's and master's degrees even make sense when you can learn almost anything through an AI conversation?</p>
             <p><strong class="speaker">Mustafa Suleyman:</strong> I don't think so. I think that knowledge acquisition is going to be a conversation between you and Copilot. For example, another feature that we just launched is this &quot;Learn Live&quot; feature. You actually have a tutor that shows up on the screen and it will lay out a quiz for you on any topic that you like. It doesn't have to be a school curriculum topic. You might be learning about cacti or Persian rugs. It will give you an education on it, lay out the curriculum piece by piece, give you a nice quiz, present it in a nice graphical user interface.</p>
             <p>Knowledge acquisition is about to get completely decentralized and available to everybody. You just have an expert teacher in your pocket on any subject.</p>
@@ -474,23 +485,28 @@
             <p>And step number five: use AI every day, but don't let it think for you. Let AI explain concepts, quiz you, review your work, help you practice, but keep some friction. Struggle with hard things yourself. AI should be your co-pilot, not your replacement.</p>
             <p>And of course, network. Get close to people five to 10 years ahead. Try to mingle with them. Start a podcast—that's how I do it. I started a podcast to sit next to them right here in the studio and ask them how you can be helpful or ask them if they could mentor you. That's how you get real opportunities and references.</p>
             <p>I hope this video helps you make the right decision for you. In my case, I graduated from university. I'm grateful for that. I will still save for my daughter's college just in case. You know, it's never a bad idea to have some savings. I want them to have this freedom to choose. Maybe they will tell me, &quot;Mom, university is outdated. I will just invest in my own business.&quot; Go do it, right? But I want to make sure I'm prepared for any outcome.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/l6d_0PB0Pbg/" class="related-card">
                 <img src="https://img.youtube.com/vi/l6d_0PB0Pbg/hqdefault.jpg" alt="Future of Work 2026: The Only Jobs That Will Survive the AI Era" loading="lazy">
                 <span class="related-title">Future of Work 2026: The Only Jobs That Will Survive the AI Era</span>
               </a>
+
               <a href="/episode/RvYv90ftf2M/" class="related-card">
                 <img src="https://img.youtube.com/vi/RvYv90ftf2M/hqdefault.jpg" alt="$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro" loading="lazy">
                 <span class="related-title">$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro</span>
               </a>
+
               <a href="/episode/qNt5TNn9D9Y/" class="related-card">
                 <img src="https://img.youtube.com/vi/qNt5TNn9D9Y/hqdefault.jpg" alt="She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley" loading="lazy">
                 <span class="related-title">She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley</span>
               </a>
+
               <a href="/episode/PmpaFWBFy_c/" class="related-card">
                 <img src="https://img.youtube.com/vi/PmpaFWBFy_c/hqdefault.jpg" alt="Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt" loading="lazy">
                 <span class="related-title">Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt</span>
