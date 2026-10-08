@@ -160,3 +160,12 @@ test('unknown speaker labels are reported against the guest list and the fix fil
   assert.deepEqual(unknownSpeakers(d, null), ['Reed Hoffman']);
   assert.deepEqual(unknownSpeakers(d, { knownSpeakers: ['Reed Hoffman'] }), []);
 });
+
+test('a title containing a closing script tag cannot end the JSON-LD block', () => {
+  const d = { ...INTERVIEW, title: 'Evil </script><script>alert(1)</script> | X' };
+  const html = renderEpisodePage(JSON.parse(JSON.stringify(d)));
+  const block = html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1];
+  assert.ok(!block.includes('</script>'), 'closing tag leaked into the JSON-LD block');
+  assert.equal(JSON.parse(block).name, d.title, 'the escaped JSON no longer parses to the same title');
+  assert.ok(!html.includes('<script>alert(1)</script>'), 'raw script tag reached the page');
+});

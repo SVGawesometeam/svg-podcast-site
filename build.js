@@ -3,7 +3,7 @@ const path = require("path");
 const crypto = require("crypto");
 const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
 const { TOPICS, FIELDS } = require("./lib/contact-fields");
-const { esc } = require("./lib/html");
+const { esc, jsonForScript } = require("./lib/html");
 const {
   fromApi,
   validate,
@@ -602,7 +602,7 @@ function renderHomePage(episodes) {
   <meta name="twitter:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta name="twitter:image" content="https://marinamogilko.co/og-image.png">
   <link rel="canonical" href="${SITE_URL}/">
-  <script type="application/ld+json">${JSON.stringify(homeJsonLd())}</script>
+  <script type="application/ld+json">${jsonForScript(homeJsonLd())}</script>
   ${SHARED_HEAD}
   <style>
     /* CHROME-START */${CHROME_CSS}
@@ -1132,7 +1132,7 @@ function renderEpisodePage(d) {
   const canonicalUrl = `https://marinamogilko.co/episode/${d.videoId}/`;
 
 
-  const jsonLd = JSON.stringify({
+  const jsonLd = jsonForScript({
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: d.title,
