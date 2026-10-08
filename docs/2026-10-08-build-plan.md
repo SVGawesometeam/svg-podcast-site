@@ -120,10 +120,10 @@ Releases 1 and 2 can be built today in this session; they are the safest and nee
 | Input | Needed for |
 | --- | --- |
 | Routing emails confirmed; GA4 ID; Vercel previews confirmed on | R1 |
-| Episode-level Apple and Spotify URLs for the six pilots; roles at recording | R3 |
+| Episode-level Apple and Spotify URLs for the six pilots (done for five of six on 2026-10-08, see `content/PLATFORM-LINKS.md`; the sixth, `L1EmhDYc11g`, has no podcast release found); roles at recording | R3 |
 | Biography facts with sources; counts with dates; legal texts; press list; portrait | R4 |
 | Tilda export or filled template; demographics; formats; logo permissions; case-study sign-off; Tilda sitemap; DNS change | R5 |
 | Topic tags confirmed; hub answers reviewed | R6 |
 | Sources for numbers; guide review | R7 |
 | Trint API access or backend diarisation decision; YouTube API key; merge policy | R8 |
-| RSS feed host and URL (for `webFeed` and the distribution work) | R1 onward |
+| RSS feed URL (host identified on 2026-10-08: Spotify for Creators, formerly Anchor; the feed URL is in its settings) | R1 onward |

@@ -168,6 +168,17 @@ async function build() {
 // build hands Google the same dates and the edits we make to old pages never
 // register. Keyed on a hash of the rendered page so it survives a fresh clone,
 // which mtime would not.
+// What a reader or a machine gets from a page: its text, its links and its
+// structured data. Markup, CSS and scripts are not part of it.
+function contentFingerprint(html) {
+  const ld = (html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) || [, ""])[1];
+  const links = [...html.matchAll(/(?:href|src)="([^"]*)"/g)].map((m) => m[1]).join("\n");
+  const text = html
+    .replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ")
+    .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return `${text}\n${links}\n${ld}`;
+}
+
 function lastmodFor(episodes) {
   const cacheFile = path.join(__dirname, "sitemap-lastmod.json");
   const cache = fs.existsSync(cacheFile)
@@ -177,23 +188,24 @@ function lastmodFor(episodes) {
   const out = {};
 
   for (const ep of episodes) {
-    // The hash is over the reviewed data, not the rendered HTML, so a
-    // template-only change does not announce every page as updated.
+    // The hash is over what a visitor can see on the rendered page (text,
+    // links, structured data), so neither a CSS-only template change nor a
+    // data field that is not rendered yet announces the page as updated.
     const hash = fs.existsSync(dataFile(ep.videoId))
-      ? crypto.createHash("sha1").update(fs.readFileSync(dataFile(ep.videoId))).digest("hex")
+      ? crypto.createHash("sha1").update(contentFingerprint(renderEpisodePage(readEpisodeData(ep.videoId)))).digest("hex")
       : "";
     const prev = cache[ep.videoId];
     let date;
     if (!prev) {
       // A page we have never seen is dated by publication, not by today.
       date = new Date(ep.publishedAt).toISOString().split("T")[0];
-    } else if (prev.basis !== "data") {
-      // First run on the data basis: keep the published date, adopt the hash.
+    } else if (prev.basis !== "content") {
+      // First run on this basis: keep the published date, adopt the hash.
       date = prev.date;
     } else {
       date = prev.hash !== hash ? today : prev.date;
     }
-    out[ep.videoId] = { hash, date, basis: "data" };
+    out[ep.videoId] = { hash, date, basis: "content" };
   }
 
   fs.writeFileSync(cacheFile, JSON.stringify(out, null, 2) + "\n");
