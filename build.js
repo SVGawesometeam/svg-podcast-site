@@ -4,6 +4,7 @@ const crypto = require("crypto");
 const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
 const { TOPICS, FIELDS } = require("./lib/contact-fields");
 const { esc, jsonForScript } = require("./lib/html");
+const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
 const {
   fromApi,
   validate,
@@ -1099,6 +1100,8 @@ function newsletterCta() {
 }
 
 function renderEpisodePage(d) {
+  // Template v2 (Release 3) is opt-in per page; see lib/render-episode-v2.js.
+  if (d.template === "v2") return renderEpisodePageV2(d, { newsletterCta, formatDate });
   const published = formatDate(d.publishedAt);
   const isoDate = new Date(d.publishedAt).toISOString();
   const isSolo = d.format === "solo";

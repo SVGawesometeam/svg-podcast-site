@@ -155,5 +155,6 @@
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000758651130",
     "spotify": "https://open.spotify.com/episode/23JaKg8DRLsWs7DxbVXC1o"
-  }
+  },
+  "template": "v2"
 }
