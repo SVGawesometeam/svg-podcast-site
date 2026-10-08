@@ -1,0 +1,511 @@
+{
+  "videoId": "-Epp6VmpezI",
+  "title": "The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Oscar Hoglund, Epidemic Sound",
+  "format": "interview",
+  "guestName": "Oscar Hoglund",
+  "guestTitle": "Co-founder and CEO, Epidemic Sound",
+  "aboutGuest": "Oscar Hoglund is the co-founder and CEO of Epidemic Sound, a Stockholm-based music licensing platform valued at $1.4 billion. Under his leadership, Epidemic Sound has become one of the world's leading music solutions for content creators, with its catalog soundtracking billions of daily video views across major platforms. Oscar is also an active voice on AI's role in democratizing creative tools for founders and creators.",
+  "publishedAt": "2026-01-09T16:00:00.000Z",
+  "duration": "38 MIN",
+  "coverArt": "https://img.youtube.com/vi/-Epp6VmpezI/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/-Epp6VmpezI/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Oscar Hoglund, the co-founder and CEO of Epidemic Sound, a company powering over 3 billion daily views on YouTube alone with a $1.4 billion valuation. Oscar shares frameworks for scaling businesses through value chain analysis, AI-driven content tools, and strategic hiring. He also opens up about his personal breaking point as a CEO and how he rebuilt his approach to leadership and life balance.",
+  "keyTakeaways": [
+    "Epidemic Sound soundtracks content generating 3 billion views per day on YouTube alone, giving Oscar rare data-driven insight into what makes content resonate emotionally and go viral.",
+    "The 'CROSS' strategy — rooted in cognitive dissonance — explains why audiences are drawn to unexpected combinations, such as a sports star discussing addiction rather than athletic success.",
+    "Understanding your value chain is critical: Oscar defines leverage as achieving a large output from a small input, and says it was one of the most important frameworks Epidemic Sound ever applied.",
+    "The 'Three WHY' framework helps founders avoid rushing into AI products by forcing them to dig beneath surface-level problems before building solutions.",
+    "Oscar's wife telling him 'our life is better when you're not here' was his personal breaking point, prompting him to fundamentally restructure how he operates as a CEO and maintain his sanity."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "01:02",
+      "seconds": 62,
+      "title": "What makes content viral"
+    },
+    {
+      "time": "03:58",
+      "seconds": 238,
+      "title": "The \"CROSS\" strategy explained"
+    },
+    {
+      "time": "07:47",
+      "seconds": 467,
+      "title": "The AI content revolution"
+    },
+    {
+      "time": "11:09",
+      "seconds": 669,
+      "title": "Content framework 2026"
+    },
+    {
+      "time": "12:20",
+      "seconds": 740,
+      "title": "Must-Have creator tool"
+    },
+    {
+      "time": "13:50",
+      "seconds": 830,
+      "title": "From feature to platform"
+    },
+    {
+      "time": "20:18",
+      "seconds": 1218,
+      "title": "Value chain leverage"
+    },
+    {
+      "time": "23:03",
+      "seconds": 1383,
+      "title": "Hiring A-Players secret"
+    },
+    {
+      "time": "23:59",
+      "seconds": 1439,
+      "title": "Why hustle fails"
+    },
+    {
+      "time": "27:51",
+      "seconds": 1671,
+      "title": "Give more than you take"
+    },
+    {
+      "time": "29:30",
+      "seconds": 1770,
+      "title": "Oscar's network strategy"
+    },
+    {
+      "time": "31:10",
+      "seconds": 1870,
+      "title": "Staying sane as a CEO"
+    },
+    {
+      "time": "33:04",
+      "seconds": 1984,
+      "title": "Oscar's breaking point"
+    },
+    {
+      "time": "34:33",
+      "seconds": 2073,
+      "title": "Top AI tools Oscar uses"
+    },
+    {
+      "time": "35:30",
+      "seconds": 2130,
+      "title": "The three WHY framework"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The world is crazy right now. You're building a company in a very competitive market. How do you stay sane?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "If I were to boil it down into one word, it's discipline."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Hello everyone, I have Oscar from Epidemic Sound. Today, Oscar's company is behind 3 billion views on social media every single day, and that's just YouTube, right?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Correct."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you know a thing or two about going viral. Have you seen any patterns behind videos that stand out, that use your music? Is there anything like, \"Oh, this is happening right now.\""
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Well, first off, thanks for having me. And then to answer your question, we soundtrack huge amounts of online video every single day across all platforms. And so we're privy to see a lot of different trends. I think that what's at the core of all of those trends, however, is like a very philosophical thing, which is content creation and going viral is ultimately about helping create meaningful human connections. And so what we do is we facilitate creativity and we help spark interest."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you see any correlation? Like if I'm a YouTuber, because I use music, but I feel like the way I use music is like, okay, I was at Sharon's concert yesterday. Let me just use that shirt and that's the way it works for me. But I'm trying to understand the mechanics. Like, do you see anything like, \"Oh, this certain music performs better with this.\" Have you noticed something while analyzing that data?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Ultimately what you're trying to achieve with music as we said on the outset is you want to help create an emotion. And this, similar to common belief, if you only use commercially well-known music as a storyteller, as a person looking to help create a specific feeling, you abdicate from that power because you don't know exactly who's had what kind of experience with a Nine Inch Nails track or an Ed Sheeran track, regardless of how romantic the track might be or how full of energy it might be."
+    },
+    {
+      "speaker": null,
+      "text": "I'll share one interesting trend which we saw a few years ago, which was coming out of COVID. I don't know what the American expression is, but I think it's called comfort food. As in, if you're feeling down, you'll eat a bucket of ice cream to make you feel good. And we could literally see in the world that there was a world where the world was feeling low post-COVID and there was a lot of comfort food going on. So a lot of music which was very reassuring, calming, warm, classical music had a huge spike because people wanted to feel reassured. It's going to be okay."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Have you seen any zero to one examples where creators came with not a lot of views, then they added music and boom, it started exploding?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "To be quite honest, we see that all the time when there is a unique and distinct connection between what's being said visually and then what's being said from an audio perspective. When that creates either an extreme symbiosis or an extreme dissonance, there's something which people find fascinating."
+    },
+    {
+      "speaker": null,
+      "text": "There was a story that I heard many, many years ago which relates to what we call \"the crosses.\" The background was that one of my co-founders was having lunch with a tabloid editor, and this is many years ago here in downtown Stockholm. The tabloid editor was eating and looking at my colleague and he said, \"Have you understood this? The crosses.\""
+    },
+    {
+      "speaker": null,
+      "text": "My colleague goes, \"The crosses? What do you mean?\" And he said, \"Well, humans are drawn to crosses. In the sense that if on my tablet I put a very famous sports star and they talk about their sports success, nobody cares. However, if I put that sports star on the front of the magazine and they tell me about how they're battling alcoholism or some kind of substance abuse, nobody's anticipating that that's going to happen. And so people are immediately drawn to something where there's a cognitive dissonance.\""
+    },
+    {
+      "speaker": null,
+      "text": "And so my co-founder was like, \"Wow, that's insightful. I don't know what to do with that information, but I'll save it for a rainy day.\" And so years passed. My co-founder, who's a serial entrepreneur named Zach, was running one of the biggest commercial TV broadcasters in Northern Sweden, and he was their head of content. At the time, they were looking to go from being a small insignificant player to try and break through and become the big broadcaster of their time. They had tried many things and struggled. Eventually, they decided to go all in on this one format. The format was the most commercial TV show you can imagine. It was an entertainment show designed for Saturday slots at 8:00 p.m., and it was all about two teams battling it out together. It had been engineered in such a way that the show was meant to be great for men, women, young, old. There was adventure, an element of competition, you could be eliminated, there was danger, there was humor. They basically created almost like a Frankenstein, putting together different parts and engineering the most commercial show you can think about."
+    },
+    {
+      "speaker": null,
+      "text": "But the show needed a frontrunner, somebody who was going to be the face of the most commercial show ever. This broadcaster's entire future was betting on this show because it was incredibly expensive. So my co-founder was put back to the point in time where he was thinking about that lunch, and he needed to create a cross, something that people were excited about. He said, \"Okay, what's the polar opposite of the most commercial thing ever?\" And he thought about it. This was back in Sweden, and we have this incredibly beloved cross-country skier named Gunde Svan. He's from the north of Sweden and he's about as far from commercial television as you can imagine. Always wearing a hat, always in the bushes, always out skiing."
+    },
+    {
+      "speaker": null,
+      "text": "He said that this guy has to be the frontrunner of the show. It makes no sense whatsoever, but if I've ever felt a cross in my life, this is one of those. So he suggested to his boss. They all thought he'd had a stroke, and they said, \"This is not going to happen.\" And he says, \"It has to happen or I'm going to quit.\" They didn't want him to quit. And so they put him on the show. This was a show that altered the course of history in Swedish TV production. It became the most popular show ever. It still runs ten years later. And it's one of those crosses."
+    },
+    {
+      "speaker": null,
+      "text": "I bring it up because I think that's the role that music can play as well. When music really sets something apart and when you see huge engagement, virality, and things exploding, it's when music can play the role of a cross. You can tell a visual story and a different audio story. Building out crosses, I think, is incredibly important when you build businesses, when you build podcasts, when you tell stories."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. And you're building a tool for that, right? I was talking to your CTO and I think he mentioned something. If you can talk about it, because this is fascinating for me, because we still can't figure out music progression. I have amazing editors but I feel like we have to have an additional person on the team, which you know is expensive. But if we could have a tool that could analyze the video and tell us, \"Hey, this is where progression needs to start. This is where you pause.\""
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "So if I were to frame it, I'd say the following. What we're trying to do is usher in a new world where everyone who's a storyteller, whether you're a 200-person editing team and a full production or if you're a solo entrepreneur, we feel that it's about time such that everyone gets access to the same kind of tooling and a level playing field. You'd want recommendations like a music supervisor, somebody who can help you edit, somebody who can help you understand when music makes sense, when it doesn't, sound effects, how you master, how you make it all come together."
+    },
+    {
+      "speaker": null,
+      "text": "Historically, that's been incredibly expensive and difficult to pull together. But we've found that we've come to an inflection point now where we have the roster of music, the roster of catalog customers, and the understanding of the platforms out there such that we're very confident that AI has an incredibly important role to play here as an unlock. It's never going to be the case that AI could or should replace the human connection, but it can play a crucial role in facilitating that."
+    },
+    {
+      "speaker": null,
+      "text": "What we're able to see now is we can accumulate huge amounts of data. This is the music that we have at hand. These are all the artists. This is all the art that we work with. And we've known historically over time, this is how it's performed. This is where there's engagement. This is where there is feedback. And we can start to play that back individually to content creators such that we're going to be in a position where basically everyone has access to all of these insights. You can start to utilize services which were previously only made available if you had huge budgets. You can analyze how your own video is performing, the music you've used, what your peers are using, what the different platform trends are."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when is it going to happen?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "So this is something that we are working on as we speak. We've already started to release quite a few tools within this area. We released AI voice a few months ago. We've released the ability to alter the length of the track. That was actually a pretty big breakthrough because historically, the way an editor has had to work is if you found a track that you liked, you would typically have to re-edit your content and story to fit the track because it was very cumbersome to do it the other way around."
+    },
+    {
+      "speaker": null,
+      "text": "We've now gotten to a point where we can actually do the opposite. You have an edit, you're super happy, the story works, you've cut it the way you want, you have this incredible track, but it turns out it's one minute too long or a little bit too short. Well, you can now use our AI tools to allow for the artist's track and vision to be slightly adapted such that it fits better to the actual stories that you're looking to make."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So can you give advice to a creator or maybe a small business owner who's doing some content for their business? What are the steps that they should take to increase the views and create this emotional connection with their brand?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "I think the first job to do is okay, let's establish what would I like to sound like? What are the values? What are the core stories I'm trying to tell? And then using that insight, that's when you come to Epidemic, right? You create a free account and then you can start to use the tools to look at your videos. We would come with suggestions. You tell us this is my channel. This is the direction I want to go. And we then can aggregate huge amounts of data to determine where we think you're going. And then we can start to serve you suggestions. The more we interact with you, the more we get to know you, and the better our suggestions can become."
+    },
+    {
+      "speaker": null,
+      "text": "And then I think it also comes down to being a ferocious learner. I love that term. As a storyteller, as passionate as you tend to be about the stories you want to tell, I think you should be similarly passionate about who do I look up to. Who else sounds or feels or creates that emotion and connection? And then from that information, we can derive a lot of insights as well and help build recommendations around that too."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So I heard you say when you build a product, you start with a feature, then it becomes a product, then it becomes a platform."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Yes, I absolutely love that quote. I didn't come up with it myself, but I've used it profoundly. So feature to product to platform."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And I absolutely love that because as someone who loves building companies, it's really hard to start when you think about your company. \"Oh, I'm going to build the next marketplace.\" But it's really easy to think about your company when you think, \"I'm going to build a feature which is going to make people's lives easier.\" Can you talk about Epidemic Sound? How you built it out?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Absolutely. So in the early days when Epidemic launched, I would 100% argue that we were a feature. We were a one-trick pony. We were a nice to have and not a need to have. The initial innovation that we came up with was that we were five co-founders. We came from storytelling. We'd made TV shows. But we saw earlier than most that the internet was transforming. It was moving from a world which was initially very tech-centric, but over time, we were utterly convinced that everything online was going to be video-centric. But we also knew coming from traditional TV production that most problems could be solved except for the music one, because music was a very complex legacy business. It had evolved over time and despite best intentions, it was a complex beast where it was very difficult to clear music to use it in television and barring impossible to use it online where consumption would happen instantaneously all over the world."
+    },
+    {
+      "speaker": null,
+      "text": "So we were pulling out the little hair that I had left and saying that this needs to be solved. Step one for us was a legal innovation. We took a step back and said the traditional music industry hinges on representation. A track that's created has multiple interests. There's a producer, there's an artist, there's a songwriter, there are labels, there are publishers, there are PROs, and they all contribute fractional pieces of value. They all feel entitled to the upside, but nobody has final say. Nobody can determine how or where this track gets used."
+    },
+    {
+      "speaker": null,
+      "text": "And they have two things in common. They all sort of hate each other with a passion quite often because they have very competing views on who's contributed the most value. And they all have veto rights. If one party was unhappy with any commercial deal, the track was made void and you couldn't use it in your video. It couldn't go on YouTube or on TikTok and other places."
+    },
+    {
+      "speaker": null,
+      "text": "So at its core, our initial big innovation was, let's move away from a model of representation to one of ownership. And the only way of doing that is by doing right by artists. We said we'll start to pay handsomely upfront and acquire all of the rights. We make sure that we keep the artist whole because we think that if we can build a huge compelling catalog of amazing music made specifically for soundtracking content and bringing stories to life, we think that will be a huge breakthrough because we can then be the only provider in the world which has a complete catalog."
+    },
+    {
+      "speaker": null,
+      "text": "We can reach out to storytellers and say, \"Hey, similar to everyone else, we have 100% of all the rights here. We can indemnify you and say you can use this for all of your content across all platforms across all of the world.\" And Epidemic exploded. There was instant product-market fit. But we were a one-trick pony. That's what I mean by we were a feature. We were nice to have. But we were more like a vitamin, which is great if you take your vitamin in the morning, but if you forget, you still live."
+    },
+    {
+      "speaker": null,
+      "text": "You want to be something which is a necessity. So the first innovation, the first part of the journey was being a feature. What we did number two is we said, let's complement the legal innovation with software. Let's make sure we become a soundtracking platform. We want to be at a point where we understand our customers so well that they cannot think about editing a video without having all of our tools made available to them. That was point number two. That's when we became a product. We realized we were past feature. We're a product now. We're integrated into and work with millions of content creators. We soundtrack 70% of all the world's biggest YouTubers. That was our version of getting to a product."
+    },
+    {
+      "speaker": null,
+      "text": "The third point was how do you become a platform? How do you get to a point where there are more people seeing value and providing value through the infrastructure that you've built? About six months ago, we realized that we're having our Amazon moment. What I mean by that is there was probably a point in time where people at Amazon said, \"Okay, we've been building out the best tools, the best infrastructure for years to help our business grow, to scale, to be insightful. We've developed processes and hired people such that our infrastructure is amazing. Why don't we open this up as a product for the rest of the world such that other people can scale using our internal infrastructure?\" A version of that discussion probably happened. They decided to call it AWS, and the rest is history."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "AWS is the cloud."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "AWS was the result of an internal tool that was so good that they turned it into a platform and everyone started using AWS to power and scale their businesses. Now, how does that relate to us? Well, six months ago, we realized we've gotten to a point where we are probably the best positioned. We have the most amount of data. We have the most sophisticated group of employees. We've built the most amount of proprietary data stack such that we understand better than anyone else how music travels online, what kind of emotions it makes, how it can commercially make or break content creators, where music could and shouldn't be launched, and in what order."
+    },
+    {
+      "speaker": null,
+      "text": "We said, \"I think this is our platform moment. We should probably open this up, similar to what Amazon did.\" We're called Epidemic, so let's call it Antidote. We become a platform for helping both storytellers and artists and people who have IP to connect to each other."
+    },
+    {
+      "speaker": null,
+      "text": "From a tactical perspective, one of the most important things that we ever did was trying to understand value chains."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you explain value chain?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Before we had a product which was good enough for online creators, we started in our local vicinity, which was broadcasting in the Nordic. We realized that there were roughly about 5,000 freelance editors in Sweden sixteen years ago when we launched the company. No matter how hard we racked our brains, we couldn't come up with a plan to reach, let alone persuade, 5,000 freelancers to use our music instead of everything else out there."
+    },
+    {
+      "speaker": null,
+      "text": "So we needed to understand what was the ecosystem. And it turned out the following was true in Sweden back then. There were 5,000 freelance editors, but they're freelancers. And there were a total of 50 production companies that produce the vast majority of all the TV shows in Sweden. We said, \"Okay, can we entertain the idea of reaching out to 50 production companies and trying to persuade them?\" And the answer was still no. We didn't have enough clout. And then we took another step in the value chain and we said, \"Okay, of the 50 production companies, who do they work for?\""
+    },
+    {
+      "speaker": null,
+      "text": "And it turns out that there were four major broadcasters who were commissioning the vast majority of all the shows from the 50 production companies and from the 5,000 editors. We said, \"Okay, can we pull together four meetings with four major broadcasters?\" And the answer was, \"Yes. Of course we can.\" And because we understood their pain points, the following happened. All four deals closed within weeks—or months as I remember it. They said, \"You've understood where we're heading. We're on the journey. Our catalog at the time was tiny, but the vision was right. The empathy and customer centricity was there.\" So we signed multi-year deals with all of these broadcasters."
+    },
+    {
+      "speaker": null,
+      "text": "Day number two, what they did is they called a meeting the day after and summoned 50 production companies to come and meet Epidemic. They did the work for us. And then the week after, the 50 production companies booked 50 separate meetings where they summoned 5,000 editors and said, \"If you want to make any of our shows, you have to come meet Epidemic because they're a new kid in town.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. So they did the work for you."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Exactly. And so that's how I came to understand the power of understanding. If you understand the value chain you are in, you can get leverage. And leverage in my world is like with a small amount of input, you can get a huge amount of output."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love this story. Is that also how you hire people? Because your team is amazing. Your product officer used to build the initial Amazon app. You have the ex-CTO of Klarna. I was like reading through the list. I'm like, this guy knows how to hire."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Yes, well first, thank you. I tend to agree. I have a very strong belief, obviously, but in terms of philosophy when you hire, I only believe in hiring people smarter than myself because I fundamentally want to hire smart people to tell me what to do. Again, I'm taking impressions from others who've said this before me, but I strongly feel that if I'm the smartest person in the room, we're all doomed. So I need to make sure that I have other people who are way smarter than myself."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And then you find the crosses."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Exactly. And then you find the crosses."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. And you don't believe in hustle culture as a sweet, right? Because what I've seen from the last weekend when we spent time with your company, we're doing snaps. We're eating crayfish. So you're proving it's actually possible to build a billion-dollar company without having to hustle all the time, and everyone is relaxed. What do you think is wrong then with American culture-wise in the US?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "I love the US. I deeply respect US culture and I take a lot of inspiration. I try and mix the best of as many worlds as I can. I studied at Wharton in the US and there was this term I learned which is being a ferocious learner, and I really took that to heart. I try to learn as much as I can, read as much, study as much as I can."
+    },
+    {
+      "speaker": null,
+      "text": "Where I come down on hustle culture and basically what you need to succeed, it's not as clearcut as \"I don't believe in hustle culture.\" I think that in order to be successful as an entrepreneur in general and as a storyteller in particular, my current best thinking until I come up with something better is that there are four components."
+    },
+    {
+      "speaker": null,
+      "text": "I think it starts with talent. I'm going to take a hot take here. I think this is the least important. You need to have talent when you start, but talent isn't enough. Talent is a ticket to ride and it allows you to participate. It's less about talent in absolute terms, but more talent relative to your competitor set. Like, do you have an edge from a talent perspective? But that's just a starting point."
+    },
+    {
+      "speaker": null,
+      "text": "Point number two, I think, is grit. If I ever were to get a tattoo, Swedes are the most tattooed people in the world."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Really?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "A fun fact. I have zero tattoos as of yet. I'm 47."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's not too late."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "It's coming. If I get one, my favorite word across all categories is relentless. I have it on sweatshirts because it just reminds me. It's cousin to the word grit. And I think it's such an important component. You need to start with talent, but then you need grit. You need to be relentless. You need to acknowledge and be willing to sacrifice. It's probably going to take 70, 80-hour weeks for many, many years before you even lift."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you have those weeks in your life?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Oh yes, very much so."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So witnessing like fast hustle."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Very much so. And so I think hustle can mean different things for different people. One version, like the harsh definition of hustle, is dishonest. Hustle is saying that this is great when it's not, and then trying to sell. That's one version. I think hustle also means just going at it constantly all the time, like 70-hour weeks."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "And so that's why I wanted to create some nuance because I think it's super important that you need to acknowledge that there is a lot of grit, a lot of relentless. And I think that I rate that higher than talent because talent is your ticket to play, but then grit on top of that, which you can choose, that's like a very important component of success."
+    },
+    {
+      "speaker": null,
+      "text": "But then I think the third part is lost on most people, and we alluded to it before. You need to acknowledge that in your career, in your line of work, in the industry you choose, there are tons of taste makers, facilitators, and gatekeepers. And you only identify, let alone meet, a fraction of them. So there are so many people who have a say in your ultimate success and in your liftoff. The only takeaway that makes sense for me is that you need to create a culture. You need to conduct yourself as a person who other people want to succeed because they will have infinite amounts of opportunity to either help or destroy your opportunity to grow."
+    },
+    {
+      "speaker": null,
+      "text": "The only way I've come up with to do that is to make sure that you are a person who, like, when I'm dead on my tombstone, I think there's one phrase. This was Oscar. He gave more than he took. I use that phrase all the time. I think as an individual, you should conduct yourself where you want to make sure that you're always giving more than you're taking off the table."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I absolutely love that. So if you push that out there, and it's deeply selfish because if you do that, it makes you feel good in the moment because it feels good to give, much more so than to get. It's selfish because it scales so incredibly well. Such that I try, often when people reach out to me, one way to prime yourself is that when I'm introduced to somebody that I've not met before, the first thing I say is, \"Hey, how can I help?\" It's just a reminder, not also \"hey, how are you\" or \"who are you,\" but \"hey, how can I help,\" and invite them to ask me to do something. Because if I can be helpful in any way, not only will that compound because suddenly, oh, that compounds over time. I'll have hundreds and eventually thousands of people who are indirect backers of me and my colleagues and my company because I've helped them. When they mention it, it's like, \"He's always so helpful. Yeah, they helped me do this. They didn't have to. They opened the door. They made an intro.\" If you do that enough times, there is going to be an opportunity when they have the chance to reciprocate. You never know where it comes from. There are always opportunities."
+    },
+    {
+      "speaker": null,
+      "text": "Can you recommend anyone? Like, we're doing this new Netflix show. Who should we reach out to? Like, Epidemic is great. I've spoken to them so many times. I can only endorse them. And so I think that you need to really sort of lean into that point. It's great because it gives you also a sense of giving."
+    },
+    {
+      "speaker": null,
+      "text": "I'll give you another example, a concrete way of doing that: introductions. I pride myself in doing great introductions. I don't do them often. I do them about once a week. But if somebody wants an intro, I always do an open intro. So let's say you want to meet a friend of mine here in the industry. Of course I'll reach out: \"Are you okay?\" And then: \"Are you okay?\" I'll do a little bit of homework. You can use ChatGPT or something else or just read up online. And then I take what I know and I do like two paragraphs. I explain you in a serious but also like a fun fact about you. And I'll take the other person also serious and then a fun fact which I somehow weirdly relate to your first fun fact. And then you should meet. And then I also tend to write in there like, \"I love introducing smart people to each other because two things happen. One, the world is a better place when great people know each other.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And two, when two smart people know each other and I'm the source of that, your genius like reflects positive on me because you think about me in a better way."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Exactly. And so I think that that's the third component. You just do that. We just had a great weekend together. Same thing here. We just do great stuff, and then we think that over time, we don't know how, but this is going to play out well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The world is crazy right now. You're building a company in a very competitive market. You know, all the labels are after everything. How do you stay sane?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "If I were to boil it down into one word, it's discipline. I think that the best thing you can do in order to stay sane is be disciplined. I can give you a case in point. My wife and I have three children. They're older now, but throughout the first ten years of Epidemic, discipline was the key."
+    },
+    {
+      "speaker": null,
+      "text": "Everyone, if you're an entrepreneur, finance people always want morning meetings. I would always say no to them because it was crucial for me. I knew that the likelihood of Epidemic being successful, if I ran the numbers, was very low. So I knew there was a chance for failure. And I said, \"I'm willing to bet on that, but I'm not willing to bet on my relationship with my family.\" And so I put guardrails in place."
+    },
+    {
+      "speaker": null,
+      "text": "I said that I never do meetings before 9:00 a.m. Because I always went up and took the kids to school. I had a bike. I would drive them to daycare and make sure that was done. It would always be to the detriment of finance people, but they had to adapt to me, not the other way around. So I didn't do anything before 9. And then between 9 and 6, I would go at it work-wise like a crazy person. But then at 6, I have a function in my phone that stops working, shuts down. And between 6:00 and 9, I'm unreachable. I never do meetings. I never do exceptions. Monday to Friday, that was the case. Go home with the family, have dinner, put the kids to bed, read a bedtime story."
+    },
+    {
+      "speaker": null,
+      "text": "My wife is up in the morning. She's a superwoman. And then she falls to sleep around 9:00. That's when my phone starts working again. And that's when I did my second run. I would work from 9 to 1 in the night when the US got up or Asia got up."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. And so you did a night run and then you'd go to bed."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "But then I would never work weekends ever. I would typically travel during the weeks. So I'd keep the travels Monday to Friday. And then I made a big point of taking proper vacation in the summer."
+    },
+    {
+      "speaker": null,
+      "text": "The hardest moment in my entrepreneurial journey was when I couldn't reconcile family life with business life. Our kids were young at the time. I'd been out traveling non-stop the entire year. It was probably my sixth or seventh trip to the US in that same year. And when I came back, my wife and I sat down, and my wife said something to the tune of, \"This doesn't work anymore because our life now is better when you're not here.\""
+    },
+    {
+      "speaker": null,
+      "text": "And that was, without compromise or without any comparison, the darkest moment in my entire life. Day after, I called my co-founder and said, \"I'm gonna quit.\" I get all stoked up when I talk about it. We made some incredible changes. We rethought the business. I rethought my role. We made a ton of big changes. And I was super close to quitting because I've always been family first. And as I said, I work to live. I don't live to work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that when you discovered this discipline thing that works for you now? Especially when it comes to kids, right?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Yes. But it's true for exercise. Being disciplined is true for food and alcohol, like everything in moderation. But just having structure."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Swedes have a different understanding of moderation."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Okay, alcohol. Fair point. Alcohol. Fair point. But otherwise, I think that discipline is the unsexy answer to success."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love it. That's how you get somewhere."
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What are your top three favorite AI apps?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Oh, so I'm a huge user of the different Google suites within Gemini. I use ChatGPT all the time. I think I'll stop there because these are the two where I'm investing most of my time now to make sure that I understand them, and more importantly, they understand me, so I get more and more value from them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Playing with anything right now like VoiceCode or?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "Yes, so I can't disclose too much, but from a voice coding perspective, we think that there's a huge opportunity to be the default provider of music to voice coders. If you think about voice coding, I think it's a beautiful thing because roughly what, one percent of the world's population can code. And what voice coding is looking to solve for is how can you get the other 99% of the world's population to code. We think that within that world, like all of what they're building is currently muted. There's no music component to that. We think that needs to change."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For someone who's willing to start a business using AI, what would be your one piece of advice that they should stick to?"
+    },
+    {
+      "speaker": "Oscar Hoglund",
+      "text": "One of the best frameworks I ever learned was when I was a mediocre management consultant. I worked for BCG for a few years, and it was not my calling. I got the job, I did it, I learned a lot. But ultimately it wasn't for me. But they taught me a framework in terms of when you're allowed to call something an analysis. When you've analyzed something, you ask the question \"why\" three times."
+    },
+    {
+      "speaker": null,
+      "text": "The example is the following: There's this company that doesn't make money anymore. You need to find out why."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "6es0HhfpQlQ",
+      "thumbnail": "https://img.youtube.com/vi/6es0HhfpQlQ/hqdefault.jpg",
+      "title": "Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It"
+    },
+    {
+      "videoId": "CL1OfPj3ePo",
+      "thumbnail": "https://img.youtube.com/vi/CL1OfPj3ePo/hqdefault.jpg",
+      "title": "The Fastest Way To Build A One-Person Business (2026 Beginner Guide)"
+    },
+    {
+      "videoId": "s-Iz-lLAhdg",
+      "thumbnail": "https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg",
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan"
+    },
+    {
+      "videoId": "ZYT81iUfBK4",
+      "thumbnail": "https://img.youtube.com/vi/ZYT81iUfBK4/hqdefault.jpg",
+      "title": "How I Launched My Merch Store in 7 Minutes Using AI Tools"
+    }
+  ],
+  "topics": []
+}

@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>13 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=SQReIhBKFlw" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/SQReIhBKFlw/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/SQReIhBKFlw/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,7 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -448,7 +461,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Hands are being replaced with strategy. This is what we see happening on the market today. Entry-level jobs declining, strategists earning more and more. The market needs strategies. The market needs people with taste. The market needs strategically thinking generalists. And I actually realized that a lot of my Eastern European childhood was about becoming a generalist. Was about working hard. Was about doing things that made me who I am. So, today we're going to talk about habits that you need to start developing now. That helped me for the past 10 years and it is still helping me not give up in age where we talk about creators and online businesses being replaced with AI. Let's dive deeper. But first, let's talk about habits. You've probably heard it takes 21 days to build one, right? Well, science says otherwise. New research shows that it takes an average of 66 days to form a habit. Sometimes longer depending on what you're building. So, if something is not sticking, maybe you haven't tried long enough. But here's the truth. Consistency wins. The small daily actions, even when you don't see immediate results. So, stick with me and I promise this video will pay off.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Hands are being replaced with strategy. This is what we see happening on the market today. Entry-level jobs declining, strategists earning more and more. The market needs strategies. The market needs people with taste. The market needs strategically thinking generalists. And I actually realized that a lot of my Eastern European childhood was about becoming a generalist. Was about working hard. Was about doing things that made me who I am. So, today we're going to talk about habits that you need to start developing now. That helped me for the past 10 years and it is still helping me not give up in age where we talk about creators and online businesses being replaced with AI. Let's dive deeper. But first, let's talk about habits. You've probably heard it takes 21 days to build one, right? Well, science says otherwise. New research shows that it takes an average of 66 days to form a habit. Sometimes longer depending on what you're building. So, if something is not sticking, maybe you haven't tried long enough. But here's the truth. Consistency wins. The small daily actions, even when you don't see immediate results. So, stick with me and I promise this video will pay off.</p>
             <p>In a vlog this summer, I asked my mom, &quot;What is the main principle of raising kids?&quot; Children shouldn't have free time. But what if they grow up and can't relax? Well, sorry. I don't think I will be necessarily teaching my kids that and I'm not. But this exact trait shaped me into who I am. So, yes, that was my reality and it built habits that gave me an unfair advantage. Let me walk you through them.</p>
             <p>The first is what I call earned freedom. Watching cartoons only after homework, ballet classes, or cleaning my room. I learned early on that freedom comes after discipline, not before. That's why I can work consistently on YouTube for 10 years without burning out. While others wait for motivation, I'm already grinding. There's this famous experiment where researchers gave four-year-olds a marshmallow and said, &quot;Wait 15 minutes without eating it and you'll get two.&quot; Scientists tracked those kids for 40 years. The ones who waited earned significantly more money as adults. Plot twist, when they repeated this test in 2012, kids today are actually more disciplined than the 1960 generation.</p>
             <p>The second habit is multi-domain experience. And this is what a lot of people name as one of the most important traits for the age of AI. Because being good enough at one thing isn't just enough. For me, I had to excel at ballet, languages, sports, academics. As a kid, sometimes I had a lot in my plate, but today it helps me connect dots across business and life.</p>
@@ -468,25 +481,28 @@
             <p>I just rebranded this year, rebranded my Instagram, and I switched to more tech AI content, and I'm now a Silicon Valley Girl on Instagram. This channel has been around for 7 years, and rebranding my Instagram actually gave me this fresh air and more amazing brands that we work with. And also, my friends are like, &quot;This content really sticks.&quot; A lot of people told me they came back to consuming my content on Instagram because they were a little tired of my TikTok dances or whatever. Yes, I was doing that. That was also an experiment that didn't work. So, it's great if you give yourself this mental freedom of doing whatever you want and seeing how it performs.</p>
             <p>The easiest way to start developing your discipline is to set an unnegotiable daily minimum. I don't know, one job application, 15 minutes of trying new AI tools, or one video a day for your Instagram, or one post on your LinkedIn. Then you add experimentation. Each week, review what's working and what's not because I believe everything that you do has to have numbers because it's so much easier for our brain to act upon things it can quantify. So, if it's social media, then, you know, track the progress and how many people viewed your post, how many commented. And then, after a year, you can look back and see like, &quot;Whoa, this is where I started. This is where I am.&quot; And it's easier for you to calibrate. You feel like you're a pilot, and your craft is your airplane, and you're flying in the direction that you're aiming for.</p>
             <p>Don't forget to celebrate when discipline and experimentation produce breakthroughs. It's very important for us to get that dopamine to keep going.</p>
-          </div>
+      </div>
     </div>
 
-
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/EUrkIpq838c/" class="related-card">
                 <img src="https://img.youtube.com/vi/EUrkIpq838c/hqdefault.jpg" alt="ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski" loading="lazy">
                 <span class="related-title">ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski</span>
               </a>
+
               <a href="/episode/tSrN8eRMEAE/" class="related-card">
                 <img src="https://img.youtube.com/vi/tSrN8eRMEAE/hqdefault.jpg" alt="$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley" loading="lazy">
                 <span class="related-title">$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley</span>
               </a>
+
               <a href="/episode/zL2PIa72gJ4/" class="related-card">
-                <img src="https://img.youtube.com/vi/zL2PIa72gJ4/hqdefault.jpg" alt="Double Your Income With AI in 3 Months (Here&#x27;s the Stack)" loading="lazy">
-                <span class="related-title">Double Your Income With AI in 3 Months (Here&#x27;s the Stack)</span>
+                <img src="https://img.youtube.com/vi/zL2PIa72gJ4/hqdefault.jpg" alt="Double Your Income With AI in 3 Months (Here's the Stack)" loading="lazy">
+                <span class="related-title">Double Your Income With AI in 3 Months (Here's the Stack)</span>
               </a>
+
               <a href="/episode/FZm2vVlPX9w/" class="related-card">
                 <img src="https://img.youtube.com/vi/FZm2vVlPX9w/hqdefault.jpg" alt="TOP-8 profitable online business ideas you can start in 2025" loading="lazy">
                 <span class="related-title">TOP-8 profitable online business ideas you can start in 2025</span>

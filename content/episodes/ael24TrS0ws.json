@@ -1,0 +1,287 @@
+{
+  "videoId": "ael24TrS0ws",
+  "title": "TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)",
+  "format": "solo",
+  "guestName": "Marina Mogilko",
+  "guestTitle": "Host, Silicon Valley Girl Podcast",
+  "aboutGuest": "Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.",
+  "publishedAt": "2026-09-18T14:15:06.000Z",
+  "duration": "21 MIN",
+  "coverArt": "https://img.youtube.com/vi/ael24TrS0ws/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/ael24TrS0ws/maxresdefault.jpg",
+  "summary": "Marina Mogilko analyzes U.S. Bureau of Labor Statistics data projecting job growth through 2035, ranking 10 high-paying careers by median salary and examining their exposure to AI. The analysis reveals that 68% of the 206 occupations with highest AI exposure are still projected to grow, challenging the narrative that AI will eliminate jobs. Instead of disappearing, professions are transforming as AI automates specific tasks within roles rather than replacing entire positions. The top 10 growing jobs range from management analysts earning $101,860 to computer and information systems managers at $175,140, with healthcare professions dominating the list due to the industry's projected addition of roughly one-third of all new American jobs. The episode also identifies five fastest-declining occupations, with office and administrative support jobs projected to lose over 750,000 positions by 2035, and concludes with a practical Stanford-backed exercise to help workers identify which tasks to delegate to AI and which responsibilities to develop.",
+  "keyTakeaways": [
+    "High AI exposure does not predict job disappearance — 141 of 206 occupations with highest AI exposure are still growing through 2035, meaning AI augments specific tasks rather than replacing entire professions",
+    "Management analysts face the highest AI exposure but are adding 109,000 jobs because companies need human restructuring experts to reorganize around AI, with 94,000 annual openings",
+    "Healthcare educators represent the smartest long-term bet — they're growing 17.9% because clinical training legally requires supervised human hours and cannot be scaled with chatbots, while healthcare adds roughly one-third of all new American jobs",
+    "Construction managers are growth leaders adding 55,000 jobs because AI infrastructure requires physical buildout: data centers, power plants, and chip fabs need experienced project managers and skilled trades",
+    "Data scientists remain the fastest-growing high-paying job (34.6% growth) because AI automated the middle work but made the two ends more valuable — asking the right questions and validating answers companies can bet on"
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Which careers are growing through 2035"
+    },
+    {
+      "time": "00:54",
+      "seconds": 54,
+      "title": "How we built the list (AI exposure explained)"
+    },
+    {
+      "time": "01:59",
+      "seconds": 119,
+      "title": "Job #10 — Management analysts"
+    },
+    {
+      "time": "02:56",
+      "seconds": 176,
+      "title": "Job #9 — Healthcare educators"
+    },
+    {
+      "time": "03:45",
+      "seconds": 225,
+      "title": "Job #8 — Construction managers"
+    },
+    {
+      "time": "06:40",
+      "seconds": 400,
+      "title": "Job #7 — Data scientists"
+    },
+    {
+      "time": "08:19",
+      "seconds": 499,
+      "title": "Job #6 — Medical and health services managers"
+    },
+    {
+      "time": "09:17",
+      "seconds": 557,
+      "title": "Job #5 — Information security analysts"
+    },
+    {
+      "time": "09:56",
+      "seconds": 596,
+      "title": "Job #4 — Nurse practitioners"
+    },
+    {
+      "time": "11:06",
+      "seconds": 666,
+      "title": "Job #3 — Physician assistants"
+    },
+    {
+      "time": "11:51",
+      "seconds": 711,
+      "title": "Job #2 — Software developers"
+    },
+    {
+      "time": "13:13",
+      "seconds": 793,
+      "title": "Job #1 — Computer and information systems managers"
+    },
+    {
+      "time": "14:56",
+      "seconds": 896,
+      "title": "5 occupations shrinking fastest"
+    },
+    {
+      "time": "17:06",
+      "seconds": 1026,
+      "title": "Define, execute, evaluate: map your own job"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "More than 750,000 office and administrative support jobs are projected to disappear from the US economy by 2035. And at the same time, some professions are projected to grow by more than 40%."
+    },
+    {
+      "speaker": null,
+      "text": "So if you're choosing what to study, think about changing careers or wondering whether your skills will still be valuable in 5 years, this video will help you understand where demand is growing, what these jobs pay, and what it takes to get into them. Today we're looking at 10 growing careers ranked by median salary from lowest to highest. And at the end, I'll also show you the five fastest declining occupations in the country, plus a simple way to identify which parts of your own work you should start rethinking. Because here's the surprising part. Some of the jobs AI can help with are still growing. So choosing your next career based only on what AI can do could lead you in the wrong direction."
+    },
+    {
+      "speaker": null,
+      "text": "So here's how we built this list. I started with the 10 occupations the Bureau of Labor Statistics projects will grow fastest through 2035. They scored 831 occupations based on how much AI can potentially affect the work inside them. They call this AI exposure. In simple terms, it measures how much of the work inside a job AI could potentially do or help with."
+    },
+    {
+      "speaker": null,
+      "text": "And here's what surprised me. Of the 206 occupations with the highest AI exposure, 141 are still projected to grow over the next 10 years. So it's not that AI is wiping them out. That's 68%. So high AI exposure does not mean a profession is going to disappear. It mostly means changing because when we think about AI augmenting jobs, it augments certain tasks inside the job. They're not the same thing as replacement risk. And for the AI context, the Bureau of Labor Statistics combined five research sources, including real Claude and Microsoft Copilot usage mapped to workplace tasks. So we'll go from number 10 to number one, and then we'll wrap up with the disappearing professions."
+    },
+    {
+      "speaker": null,
+      "text": "We start this list with a profession that earns just over $100,000. Management analysts. In plain English, those are consultants. The people companies hire to figure out how to do work better. This is the job that should be shrinking, because you can ask AI anything. Very high exposure to AI augmentation because its deliverables are something that AI can generate. Research, analysis, slides, and recommendations—exactly what AI is best at. But here's what's happening instead. Plus 109,000 jobs. And here's why. Every company on Earth is trying to restructure itself around AI. And most have no idea how. The restructuring is the product. When Satya Nadella, CEO of Microsoft, pushed back on the white collar apocalypse framing in June, his line was, \"How about we think about reorganizing the jobs? Somebody gets paid to do that reorganizing\" and the openings are 94,000 every single year. One of the most hirable jobs on the list."
+    },
+    {
+      "speaker": null,
+      "text": "Number nine, this is the one nobody puts on these lists and it's the smartest bet in the data set. These are people who train nurses, pharmacists, physical therapists, physician assistants, and entire healthcare workforce this decade depends on. Plus 17.9%. The logic behind this is healthcare is adding roughly a third of all new American jobs. Those millions have to be taught by somebody. And in healthcare, you legally cannot scale teaching with a chatbot. Clinical training requires supervised human hours. Whenever you see a field exploding, ask who trains the workforce. That job is usually undervalued and underbooked. The barrier is real, though. You need a doctoral or a professional degree. This is a decade long play, not a six-month switch."
+    },
+    {
+      "speaker": null,
+      "text": "Now let's leave the laptop economy entirely for this job. Construction managers run job sites. They figure out budgets, schedules, subcontractors, inspectors. Plus 55,000 jobs, nearly 50,000 openings a year. And here's the connection to everything else in this video. AI has a physical footprint. Data centers, power plants, chip fabs. Every AI announcement you read this year eventually becomes a construction project with a manager and a hard hat. Jensen Huang on Fox Business in late August said:"
+    },
+    {
+      "speaker": "Jensen Huang",
+      "text": "Don't forget chip plants are being created, packaging, computer plants, all of the AI factories being created. Hundreds of thousands of jobs are being created as we speak."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is also where the money is moving. CNBC reported AT&T is spending roughly 38 billion over five years on hiring and training blue collar and skilled trade workers. If you've been told your whole life that the safe path is a screen job, this decade might argue the opposite."
+    },
+    {
+      "speaker": null,
+      "text": "Let me pause for a second. Hopefully you notice that we keep working on the quality of the content and that we're bringing on guests who are genuinely interesting and who actually have authority in what they do. And of course, a huge part of that work stays off camera. Right now, my producers are managing over 400 potential guests in our CRM and more than 1,500 email threads. Every one of those is a conversation with a real person with a promise. And there's probably a date somewhere on a calendar we said we'd come back to. No human can hold that in their head."
+    },
+    {
+      "speaker": null,
+      "text": "So my team figured out how to optimize this work, and they did it with Lovable. Lovable is a software creation platform. You describe what you want, an agent plans it, writes the code, and hands the whole thing over."
+    },
+    {
+      "speaker": null,
+      "text": "My producers made an internal tool that pulls live data from the three places we already live in: Notion, HubSpot, and Gmail. It runs on a schedule every morning and writes one task list for the producer's day. Send follow-ups to these five people. An inbound request came in 5 days ago and nobody answered it. This column is out of date. Go check it. And the part I actually care about: go back to this guest we put on hold two months ago because yesterday he launched a book and now we have a cool reason to invite them."
+    },
+    {
+      "speaker": null,
+      "text": "The data collecting and copying between tools used to eat about 30% of my producer's week. Now the time is going into research and guest strategy. We're still building it and it's still rough in places. But a producer with no engineering background made a custom tool shaped exactly around how we actually work. If something clicked for you while you were watching this, go try building something similar for your business in Lovable. Link is in the description."
+    },
+    {
+      "speaker": null,
+      "text": "Let's move on to number seven. Data scientists, plus 34.6%—the third fastest growing occupation in America. It is estimated to go from 275,000 to 371,000 by 2035. How is this the fastest growing high-paying job when AI can write code and run analysis? Because of what AI actually did to it. It automated the middle, the cleaning, the boilerplate, the first pass model. It did not automate the two ends. Deciding which question is worth asking and deciding whether the answer is trustworthy enough to bet the company on it. Andrew Ng put the economics of this better than anyone when he was on this podcast in August."
+    },
+    {
+      "speaker": "Andrew Ng",
+      "text": "Well, that 60% that the human does has become even more valuable because it's called an economic complement to the 30, 40% that is now cheaper. And so what will happen is people that use AI, maybe people that use AI will replace people that don't use AI, but AI is not in a position for the vast majority of jobs to replace people."
+    },
+    {
+      "speaker": null,
+      "text": "Of all the different professions, the one that's most affected by AI now is software engineering because AI is actually fantastic at writing code. And what we see is that the number of job openings in software engineering is up. Contrary to what the doom fearmongers would say, AI is not actually able to replace software engineers and all the good software engineers I know are busier than ever."
+    },
+    {
+      "speaker": null,
+      "text": "Now the flip side of it is if someone still writes code like it's 2022 before ChatGPT, they're in trouble. They need new skills. Don't do stuff that the 30, 40% AI can automate. You got to stop doing that. Let AI do that. But then gain your skills to do the other 60, 70% AI cannot do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the whole mechanism. Make part of a job cheap and the remaining human part gets even more valuable, not less."
+    },
+    {
+      "speaker": null,
+      "text": "Number six, medical and health services managers. They run clinics, hospital departments, nursing facilities, group practices. Plus 24.2%, 155,000 new jobs, 62,000 openings a year, and it needs a bachelor's degree, not a medical one. It sits where two unstoppable forces meet. Healthcare demand is exploding because of aging. And healthcare is also the most regulated, most fragmented, most administratively broken industry in the developed world and it's being digitized right now, badly and expensively. I've had a couple of doctors on this podcast and they confirmed whoever understands both the clinical side and the operational side is the bottleneck. Bottlenecks get paid well. This is the nonclinical route into healthcare. You don't need medical school. You need to be able to run a complicated operation full of stressed people."
+    },
+    {
+      "speaker": null,
+      "text": "Number five, information security analysts, plus 21%. The standard explanation is more hackers, more cybersecurity jobs. True, but it misses what changed. AI made attacking cheap, convincing phishing in perfect English at scale for free, voice cloning, automated vulnerability scanning. And companies are shoving AI into everything, creating brand new categories of risk. Nobody has a playbook for it. One note: 14,000 openings a year is modest. This is a smaller occupation than people assume, about 193,000 people, and is genuinely competitive, but it's also the most accessible high-paying job on this list without a degree-heavy path."
+    },
+    {
+      "speaker": null,
+      "text": "Number four, nurse practitioners. Pays $132,000 a year with 29,000 openings a year. Requires master's degree, AI exposure high, plus 41%—the single fastest growing occupation in the United States of America. Not a tech job or an AI job, a nurse with a master's degree. We're experiencing a physician shortage. So more primary care goes to nurse practitioners."
+    },
+    {
+      "speaker": null,
+      "text": "And again, it's so interesting. We hear this conversation, \"Oh, AI is going to replace doctors.\" We need more nurses for God's sake. State laws that keep expanding what they can do independently and an aging population needing more care management than the system has capacity for. Now, notice BLS, Bureau of Labor Statistics, credited high exposure to AI, and it's still the fastest growing job in the country. That's the clearest proof that exposure and risk are different things. AI can draft notes, flag interactions, summarize a chart. It cannot examine a patient, hold legal responsibility for a diagnosis, or sit with a frightened person for 20 minutes. Diagnosis is one task inside the job, not the job."
+    },
+    {
+      "speaker": null,
+      "text": "Number three, we're still staying in healthcare. Physician assistants with low AI exposure growing by 20% year-over-year with 35,000 new jobs added, $136,000 a year. And now look at that last number because this is the reason it's on the list at number three. Out of 831 occupations, physician assistants sit in the low bucket, the bottom quarter. The government's read built partly on what people actually ask Claude and Copilot to do is that these tasks are among the least touchable by current AI in the economy. $136,000 growing 21%, lowest exposure quartile. Almost no other combination like that exists in the data."
+    },
+    {
+      "speaker": null,
+      "text": "Number two, oh, how many times have we heard that software developers are going to be replaced by AI? And in reality, this job still pays $135,000 a year, grows by 10% with 95,000 openings a year with very high AI exposure. So this job that the internet has been writing obituaries for is projected to add 174,000 jobs. This is the largest projected gain of any occupation in America, paying over $100,000. So if you want to become a software engineer, this is your sign. Total headcount goes from about 1.7 million to roughly 1.9 million by 2035."
+    },
+    {
+      "speaker": null,
+      "text": "Now, honestly, the picture underneath that number is mixed. TechCrunch found in SignalFire's data that while big tech hiring overall is down about 25% from 2019, engineering hiring is only down 11% and engineers went from 46% of new hires to 55%. Engineering is the most resilient function in tech, not the most fragile. On the other hand, Indeed's hiring lab found US software postings up 15% since Claude Code launched while overall postings fell 7%, but 71% of that gain came from senior roles. So the job is growing, the entry point is narrowing."
+    },
+    {
+      "speaker": null,
+      "text": "Number one, computer and information systems managers. $175,000 a year plus 15.8%, 108,000 new jobs. This is the person who decides what a company builds, buys, and retires, and what happens when it breaks. IT directors, engineering managers, CTOs of midsize companies, and it's rated very high exposure. A huge chunk of work is documents, planning, review, and communications. Still growing almost 16% at the top of the pay scale. Why? Because the scarce thing about 2026 isn't the ability to produce technical output. AI made that cheap. The scarce thing is judgment under uncertainty and accountability for the outcome. Deciding what to build, getting blamed if something doesn't work. Deciding what not to build. Being the person whose name is on it when everything fails."
+    },
+    {
+      "speaker": null,
+      "text": "Look at the top of this list. Managers, senior clinicians, senior engineers. Pay is concentrating in the roles that decide rather than roles that execute. The obvious question is how do you move toward the deciding side? You hand off the part that repeats and the honest state of that right now in the US, 28% of people use AI at all. In Singapore, it's 61%. In the UAE, it's 64%. When researchers ranked what people actually do with it, running an agent didn't even make the top 10. Not because it's hard, but because almost nobody has sat down and done it once."
+    },
+    {
+      "speaker": null,
+      "text": "So I wrote out my own setup. Four steps, about 20 minutes. It is no code and it works in ChatGPT. It's in my newsletter. Future proof, free link is in the description."
+    },
+    {
+      "speaker": null,
+      "text": "Now let's talk about the other direction. The five occupations shrinking fastest and what they have in common. And by the way, all five are rated very high AI exposure. Number five, customer service representatives down 5%. Also a small number in terms of percentage, but it's also 141,000 in absolute numbers because 2.6 million Americans do this job. And this is where the AI story is most visible in real data. Goldman Sachs research covered by CNBC found US call center employment running 39% below trend. Klarna is the case study everyone quotes. Their CEO said their AI agent did the equivalent of about 850 people's jobs."
+    },
+    {
+      "speaker": null,
+      "text": "But here's the part that is worth quoting. They wanted to offer human support as a VIP experience with higher quality. And one number worth noting again, even while shrinking, this occupation still has 289,000 openings a year, the most of any job today. Declining doesn't mean disappearing. It means the ceiling is falling."
+    },
+    {
+      "speaker": null,
+      "text": "Bookkeeping, accounting, and auditing clerks down 5%. But on a base of 1.5 million people, that's 85,000 jobs gone. When you think about percentages, they actually hide scale. It's one of the largest absolute declines in the country, happening one small business at a time."
+    },
+    {
+      "speaker": null,
+      "text": "Payroll and timekeeping clerks down 15%. This one's harder because it pays $58,000 above the national median and it's losing 25,000 out of 159,000 jobs. Payroll is rules-based, high volume, repeatable. The shape of work software handles it really well. What doesn't compress is the judgment around it, the exceptions, the audits, the person who knows why this quarter looks strange."
+    },
+    {
+      "speaker": null,
+      "text": "Data entry keyers, they're down 25%, they're paying $41,000 a year and they're losing a quarter of the occupation. And number one, word processors and typists down 34%. The occupation with the fastest projected percentage decline in America is word processors and typists. People who type letters, reports, and other documents from rough drafts, corrected copy or recordings."
+    },
+    {
+      "speaker": null,
+      "text": "So what separates the growing careers from the declining ones? Look past the titles and start looking at the tasks. Erik Brynjolfsson gave me a useful way to do that."
+    },
+    {
+      "speaker": "Erik Brynjolfsson",
+      "text": "Almost every project can be divided into three parts. There's defining the question, there's executing it once you've got it defined and then there's evaluating it. Did it really give you what you wanted? How do you need to change things? And through most of history, people did all three parts. There wasn't anyone else. But now AI agents are getting really good at that middle one, executing once you've got it defined. So I hope all of your listeners are playing around with Claude Code or these other tools and they'll see that once you ask the right question, these tools will execute and generate software."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's try that with your own work. Take your last two weeks and write down what you actually did. Those emails, how many hours went into that, the spreadsheets, meetings, problems. I'm doing this for myself right now because I'm trying to figure out who to hire and how to delegate even more."
+    },
+    {
+      "speaker": null,
+      "text": "The best test you can do if you're an entrepreneur, I went on vacation in the middle of the work week with my kids with no nanny. That meant I had very limited access to my phone and whenever I had that access, I saw all the problems that are happening and I'm like, \"Okay, this needs fixing. This needs fixing.\" And then I came back and built a couple of agents."
+    },
+    {
+      "speaker": null,
+      "text": "And then you put each task into one of Erik's three columns. Define, execute, evaluate. Say you're preparing a weekly customer report. Define what does the team need to learn. Execute, collect the data, and build the report. Evaluate. Are the numbers right? What do they mean? What should we do next? What can I learn? AI can help across all three, but start with one repetitive task in the middle column. Try using AI to handle that. And then check the result. Did it save you time? Would you trust the output? If it works, here's the question that matters next. What could I take responsibility for with that time back?"
+    },
+    {
+      "speaker": null,
+      "text": "Maybe you could investigate why customers are leaving instead of only reporting how many left. And I think as someone who runs a business, I love seeing entrepreneurship within my company where people start automating some of their tasks, but then they're seeing other loopholes that we can be fixing. And I think this is our humankind in general. Whenever people say, \"Oh, AI is going to take over,\" I think we're going to figure out more problems to solve."
+    },
+    {
+      "speaker": null,
+      "text": "So here's the thing. Your profession doesn't have to disappear for your job to change completely. The title can stay the same while the work underneath changes. So this week, choose one task to improve and one responsibility you want to grow into. What would those be in your job?"
+    },
+    {
+      "speaker": null,
+      "text": "By the way, this define, execute, evaluate framework came from one of my favorite episodes on this podcast with Erik Brynjolfsson, the Stanford economist who studies what AI actually does to wages and hiring. I sat down with him and asked how you tell which parts of your job get more valuable when AI gets cheaper. The full conversation is right here and in the link in the description."
+    },
+    {
+      "speaker": null,
+      "text": "Thank you so much for watching this episode up to the very end. I'll see you very soon on this channel. Don't forget to subscribe. Bye."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "cVGHg4Vd9uM",
+      "thumbnail": "https://img.youtube.com/vi/cVGHg4Vd9uM/hqdefault.jpg",
+      "title": "The Biggest AI Opportunities Are Hiding in Boring Businesses"
+    },
+    {
+      "videoId": "JEZVl3BkSLk",
+      "thumbnail": "https://img.youtube.com/vi/JEZVl3BkSLk/hqdefault.jpg",
+      "title": "Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027)"
+    },
+    {
+      "videoId": "213rSCulKUQ",
+      "thumbnail": "https://img.youtube.com/vi/213rSCulKUQ/hqdefault.jpg",
+      "title": "Top 1% Career Strategy: How to Get Hired in the AI Era"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson"
+    }
+  ],
+  "topics": [],
+  "summaryHtml": "In this episode of the Silicon Valley Girl Podcast, Marina Mogilko analyzes U.S. Bureau of Labor Statistics data projecting job growth through 2035, ranking 10 high-paying careers by median salary and examining their exposure to AI. The analysis reveals that 68% of the 206 occupations with highest AI exposure are still projected to grow, challenging the narrative that AI will eliminate jobs. Instead of disappearing, professions are transforming as AI automates specific tasks within roles rather than replacing entire positions. The top 10 growing jobs range from management analysts earning $101,860 to computer and information systems managers at $175,140, with healthcare professions dominating the list due to the industry's projected addition of roughly one-third of all new American jobs. The episode also identifies five fastest-declining occupations, with office and administrative support jobs projected to lose over 750,000 positions by 2035, and concludes with a practical Stanford-backed exercise to help workers identify which tasks to delegate to AI and which responsibilities to develop.",
+  "metaDescription": "Marina Mogilko ranks the 10 highest-paying jobs projected to grow through 2035 — and the 5 shrinking fastest — from U.S. Bureau of Labor Statistics data on employment and AI exposure."
+}

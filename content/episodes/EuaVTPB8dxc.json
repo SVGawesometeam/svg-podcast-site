@@ -1,0 +1,495 @@
+{
+  "videoId": "EuaVTPB8dxc",
+  "title": "GM CEO on AI Cars and the Future of Driving | Mary Barra",
+  "format": "interview",
+  "guestName": "Mary Barra",
+  "guestTitle": "CEO, General Motors",
+  "aboutGuest": "Mary Barra has served as Chairman and CEO of General Motors since 2014, making her the first female CEO of a major global automaker. Under her leadership, GM has made significant investments in electric vehicles, autonomous driving technology, and AI-powered vehicle systems. She is widely regarded as one of the most influential executives in the automotive and technology industries.",
+  "publishedAt": "2025-11-21T17:00:33.000Z",
+  "duration": "34 MIN",
+  "coverArt": "https://img.youtube.com/vi/EuaVTPB8dxc/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/EuaVTPB8dxc/maxresdefault.jpg",
+  "summary": "Marina Mogilko sits down with General Motors CEO Mary Barra to discuss the future of autonomous driving, including GM's planned 'eyes-off' highway driving system targeted for 2028 and the integration of Google Gemini AI into vehicles. Barra explains the distinction between robo-taxi full autonomy and the more complex challenge of personal vehicle autonomy, and shares how AI will enable cars to self-diagnose issues and drive themselves to service centers. The conversation also covers how AI is reshaping car production, eliminating entry-level jobs, and changing daily habits at the executive level.",
+  "keyTakeaways": [
+    "GM is targeting 2028 for 'eyes-off' highway autonomy in vehicles like the Cadillac Escalade, allowing drivers to watch TV or check email without touching the wheel.",
+    "Google Gemini integration is planned for next year, enabling conversational AI inside GM vehicles that can anticipate needs and alert drivers before problems occur.",
+    "Personal vehicle autonomy is technically more complex than robo-taxi systems because it requires seamlessly transitioning control between the driver and the vehicle across varied environments.",
+    "By 2028, AI-powered GM vehicles are expected to self-diagnose mechanical issues, identify windows when the car is not needed, and autonomously drive themselves to a service center and back.",
+    "Barra acknowledged that AI is eliminating entry-level jobs and offered advice on adapting, while also discussing her own daily AI habits and GM's evolving approach to car production in the AI era."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "00:49",
+      "seconds": 49,
+      "title": "Future of driving 2030"
+    },
+    {
+      "time": "02:28",
+      "seconds": 148,
+      "title": "Exclusive future car reveal"
+    },
+    {
+      "time": "04:37",
+      "seconds": 277,
+      "title": "Why full autonomy is rare"
+    },
+    {
+      "time": "05:33",
+      "seconds": 333,
+      "title": "Two years to AI-driven cars"
+    },
+    {
+      "time": "06:51",
+      "seconds": 411,
+      "title": "Cars will think for themselves"
+    },
+    {
+      "time": "10:55",
+      "seconds": 655,
+      "title": "This function won’t arrive soon"
+    },
+    {
+      "time": "11:53",
+      "seconds": 713,
+      "title": "Future cars: friend or spy"
+    },
+    {
+      "time": "14:57",
+      "seconds": 897,
+      "title": "Eyes-free driving In 2028"
+    },
+    {
+      "time": "17:22",
+      "seconds": 1042,
+      "title": "What’s slowing down technology"
+    },
+    {
+      "time": "18:50",
+      "seconds": 1130,
+      "title": "Car production In the AI era"
+    },
+    {
+      "time": "20:30",
+      "seconds": 1230,
+      "title": "Daily AI habits of GM CEO"
+    },
+    {
+      "time": "22:24",
+      "seconds": 1344,
+      "title": "AI kills entry-level jobs: advice"
+    },
+    {
+      "time": "27:17",
+      "seconds": 1637,
+      "title": "Rituals to keep your focus"
+    },
+    {
+      "time": "30:48",
+      "seconds": 1848,
+      "title": "Sharing our car favorites"
+    },
+    {
+      "time": "31:57",
+      "seconds": 1917,
+      "title": "Flying cars expected in..."
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We're hoping for 28, right?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Yeah. I know. I mean, that's what the team is working for."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Imagine being able to take your eyes and hands off the wheel, go through your work emails, watch your favorite TV show, maybe grab lunch. Gemini coming out next year, right? So you will be able to talk to your vehicle. It's going to be able to even alert you before something happens so you can take care of it. This is Mary Barra, the CEO of General Motors, one of the most powerful people in the automotive world and the woman leading the transformation of how humanity moves."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "This is becoming a robot and eventually you can see a world where it's acting on your behalf fully autonomously."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "AI is changing everything. It's no longer just a car. It's an assistant that might know you better than anyone. So the real question is, are we ready for it? Mary, thank you so much for doing this. I'm so excited to host you on Silicon Valley Girl."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "I'm really excited to be on Silicon Valley Girl and have a chance to talk to you and tell you what's going on at General Motors."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh yeah. I'm a proud owner of Cadillac Escalade. It was one of the first with the Super Cruise. I was dying to get it, so we had to go to LA because Bay Area was sold out. Went to LA, got it, and we've been driving it since. It's such a good investment, especially when you have technology mixed with quality, right? Because you still want to feel good in your car. Today you presented a lot of new updates. Let's imagine it's 2030. I'm in my new Escalade. What is the experience like?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, I think one of the things is it's still going to be very personalized and we think we can continue to advance the vehicle. We talked about adding the Google Assistant. We'll follow up with our own assistant that's much more integrated into the vehicle leveraging vehicle data to get to know you so that it can even be a more customized experience. And then when you think about what we can do from an autonomy perspective, we shared that we'll start with highway autonomy where you can literally take your eyes off the road and then we'll continue to expand that into urban locations. By 2030, I'm kind of done making predictions as it relates to autonomy because I think it is one of the hardest challenges from a technological perspective. But I think we're going to make advancements like we do today with Super Cruise and we'll make those advancements once we have eyes off from a highway perspective. In 2030, I think people are going to see that their vehicle allows them to lead a much more integrated life. The vehicle makes their life easier, makes them more efficient, gives them back some time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "All right, welcome to the new Cadillac Escalade. That's the driving experience of 2028. When you don't have to look out and watch the cars, you don't have to put your hands on the wheel. You just go have your TV screen here, catch up on your emails. This is what I'm waiting for. And also like, because I always have my kids in the back, right? I can just pass things. I can talk to them and the car will be driving by itself. Oh my goodness, I love the screen situation. I love that now we have like a full scale TV section here. There's a screen for the passenger. The seats are almost identical to what I have now with the sound system here. They have the purse section right here so you can put your bag. It's big. The charger. Everything is electric. The steering wheel is again very similar to what I have. This is the technology. I think this is where they track your eyes and your hands. I cannot wait till 2028 to start driving this vehicle. I love how the Cadillac is this mix of technology and luxury because we have, you know, very smart vehicles on the market, but they don't feel like luxury. This feels beyond luxury. The blue stitches, like all the details, it feels like it's a car from the future because of the design, but also they maintain the classic design, adding all the details."
+    },
+    {
+      "speaker": null,
+      "text": "Another fascinating use case that I got from the presentation is that imagine something's wrong with a vehicle and you need to take it to service. Now, ideally in 2028, your vehicle detects the problem by itself because it's AI powered. Second, it knows when you need the car. So in the time when you don't need the car, it will just take itself to the service center, get serviced, come back to your house for you to be ready to move."
+    },
+    {
+      "speaker": null,
+      "text": "How do you look at competition? Because there are already companies that are doing full autonomy. What do you think about that? Like about this gap?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, I think if you look at who's doing full autonomy, you have it's in the robo taxi arena. And so that's a very specific operating area, even if it's in different cities, it's operating within a confined area."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, got it. So it's like a specific zone."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Right. And so when you look at what we're talking about, it's something much more broad—on highways at speed and then moving into urban. When we look at it from a personal autonomy perspective, I think we will be among the leaders in doing that and doing that safely. I understand what the robotaxis are doing, but it is different than when you get into personal autonomy where you have to integrate back and forth between \"I'm driving the vehicle\" and \"the vehicle is taking control.\" It's actually a much more complex system to solve."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Gemini coming out next year, right? So you will be able to talk to your vehicle. You'll be able to ask like where's the nearest whatever—we don't need gas stations but the nearest service, etc. What is the most compelling use case that you've seen with Gemini? Like what makes it stand out?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, I think when you look at AI and the fact that it's not just playing the latest Taylor Swift song—which I'm a Swifty, so I love that—but it can be much more. Like, \"Hey, I'm headed here. Can you route me on the way? I'd like to stop and get a coffee at my favorite coffee shop.\" Or \"Hey, I'm kind of hungry. I'm not familiar with this area. Where's the best place for me to get a turkey sandwich?\" You can just ask it, like my favorite food is X, and it can help integrate that and make sure you're going to the best restaurant. It's going to take all that information and be able to do that. As we get further along, it's going to be able to even integrate more and know how the systems in the vehicle are working and alert you before something happens so you can take care of it. I think it's going to be a journey from what we have today to what we'll have with Google and then the further integration with General Motors. We'll even be able to pull more information from the vehicle to make it even more personalized."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm excited about AI in vehicles. So you're going to integrate with Gemini. And I have a question from the user standpoint. Is it the same Gemini I have in my phone? Like does it have information about me or is it a specific Gemini for the vehicle that is not connected to me as a person?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Okay, good question. So today we talked about almost like two timelines actually. One is going to be what you might have already heard from Google as well, which we are closely partnering with. Google Assistant is going to evolve and become Google Gemini in the vehicles. So that's where the journey starts. That's going to be the first upgrade. The second thing is, in parallel, we're working on developing our own assistant that is by GM, for GM. We will use, of course, providers who are already providing large language models. We're not going to be in the business of developing a frontier model or a foundation model. We will build on top of technologies, but we're not ready yet to disclose what backend we're going to be using. Our goal with that GM assistant is to build something that is deeply contextually aware because contextual AI is where the magic is going to unlock."
+    },
+    {
+      "speaker": null,
+      "text": "Now we can get nerdy. We're talking about Silicon Valley here where we will design a system where our assistant—our agent—will be able to talk to other agents. Because the world you're describing is exactly that, right? You're going to have graceful handoffs. You're going to say, \"Hey, I'm in New York. Look at the next three flights available.\" The AI should learn you prefer to fly with United. It should talk to the United agent and say, \"Hey, here are the three flights that you might want.\" So that's the goal. What we want to create is an Uber agent—a GM assistant—that can broker those types of interactions."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. Let's imagine 2050."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Okay, wow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What driving looks like with AI. Let's be super futuristic because you're building this, right? You probably are thinking about those days. Okay, what is your wildest 2050? When is that? So it's 25 years from now. Like we talked about earlier today, the level of autonomy I think is going to continue to increase. I think we're going to reach a world where the car would be doing things even without you in the car—where it could run errands on your behalf, where it could take itself to be car washed and serviced and change the tires. I think 25 years is a long time and I reserve the right to be wrong, and thank god it's such a long time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Would we get this earlier? Something you described feels like it's already a possibility now."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Again, it's possible. I think we can get a little bit nerdy around the diffusion of innovation, right? It's not equally distributed. We are experiencing that today. However, maybe the economics aren't there yet for it to be mass scale. They're in pockets right now—the robo taxi experience, those are expensive cars to build with those sensor sets. But in 25 years, one could imagine the sensors get cheaper, the AI models we use get smarter. So therefore, the world where we're seeing the car truly fully autonomously behaving on your behalf, I think will be real in 25 years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The actual robot that we're going to have in our household?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Correct, exactly. I mean, one of the robots, right? This is a purpose-specific robot that provides you mobility. We are going to have purpose-specific robots, right? We are going to have probably humanoids in our house helping with home chores. We will have robots maybe helping with education. And yes, this vehicle is becoming a robot and eventually you can see a world where it's acting on your behalf fully autonomously."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. Okay. Flying cars—why not?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, when it comes to technology, and I asked one of my friends who's also working on self-driving, \"When will be the year when I can just put my kids in the car and the car will take them to school?\" He said from a technology perspective, we can do it now. It's just regulation."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, I think right now we do have a patchwork of regulation. We're hoping for one federal regulation because I think that will unlock autonomous technology. I think a lot of it, being a mother myself—although my children are adults now—is looking at when is the right time to do that. From a technology perspective, we'll get there and then it's going to have to be a judgment piece of how old is your child, where are they going, all of that. We're on our way to get there. I think we need to get to full Level 4 autonomy on highways first. Obviously, you're still in urban areas and you're going to need to take responsibility for driving. I think that'll happen over time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when we're driving right now, the vehicle is watching us and it's seeing like my eye movements and everything. Is it like surveillance? Like does it read my conversation? Like what happens if the government wants to take my data? Like the privacy?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, this is where we have a new—over a year now—a privacy officer that is working across the organization helping people understand. We want to make sure we're following all the privacy requirements. A lot of the information, we feel, belongs to the customer. The customer has to give the company permission, even if we're going to use it from an anonymized perspective. Everything we do will be with a focus on privacy and security and then also cybersecurity. We have dedicated people in the company that focus on making sure we understand the laws and that we're following all of them and, even more so, doing what we think consumers would want us to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The next step is taking your eyes off, right?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "And that is what we are going to be delivering in the 2028 timeframe, first from a highway perspective. So that's that will happen and then we'll keep advancing that and get to urban, etc. So that's coming in the not too distant future. It's really right around the corner."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We're hoping for 2028, right?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Yeah. I mean, that's what the team is working toward. When I look at what we've been able to build with all of the resources we have from a software perspective and then the team that's done Super Cruise, along with the Cruise resources, bringing them all together, they're doing it right now. So that's what makes me really excited."
+    },
+    {
+      "speaker": null,
+      "text": "What we announced today is an eyes-off autonomy capability. Nothing of that sort exists in the market today. When you think about that, you're basically asking the driver to take your eyes off and not pay attention at all on the road. That's a very, very high bar. For us to safely maneuver different conditions that we spoke about here in the demo, we need sensor redundancies built in so that the car can handle very complex scenarios in all weather conditions without requiring human intervention. Human intervention cannot be a backup. That cannot be a safety wall. We're not going to use it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So even if something's going on, there won't be a situation where the car just flashes around like \"take over, take over, take over.\" So you're excluding that?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "So we will have situations where when the car is exiting its operational domain. The product right now will launch with highways only. So you'll only be able to use this product when you're on the highway. When you're off the highway, this product will not be available. So when you're on the highway you can use it, but as you are going to come to an exit, we will ask you to take over control."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You have three different systems, right? You have lidar, you have cameras, and you have radar. Can you talk to me about the difference between the three systems?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Yeah, so what we wanted to share here is how the different sensors come together to provide 360-degree continuous information to a driving system so that it enables it to make split-second or even fraction-of-a-second decisions. It can see further, react faster than a human would ever can, and can work in all weather conditions."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When do you think full autonomy is coming?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "You know, I think we're going to keep approaching that, and Sterling Anderson, our chief product officer, we're going to keep working and making sure we do that safely. You'll see incrementally that we'll keep adding to the area in which you can do it and the complexity of the environment. I learned when I first started making predictions about autonomy back in 2016 that I should stop. As I look now, we're going to put it into the vehicle as soon as it's ready and it can be deployed safely, and that's what will be the main concern right now—safety. Safety is something General Motors has a rich history with, and we have that relationship of trust with our consumers. They know we put a lot of thought into our systems being safe. We want to put that same level of prioritizing safety that we have done in Super Cruise into as we get to Level 4 highway, and then we'll expand from there."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And Super Cruise, you mentioned 700 million miles with no accidents."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Correct. That is fascinating."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Well, we know vehicles and we've really looked to make sure that the technology is well validated. We're very proud of our safety record and we work to continue to get better every day and give more features like trailering and integration with Google Maps. New features and new roads are being added to Super Cruise all the time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So we talked about AI transforming the driving experience. How is it transforming production?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, I think we're leveraging AI in such an interesting way right now. When you look at the power of artificial intelligence, we're focusing on main areas in the business of how do we use it to improve manufacturing. Sterling Anderson talked about one of the things that General Motors has that is unique—all of this information and data of how things are manufactured. When you look at that and the power of data to really help advance AI, we're in a unique position to make our manufacturing processes more efficient and serve our operators better. When we think about designing the vehicle, looking at the areas that right now people are doing, how do we make it more efficient and allow our engineers to really focus on optimizing technology, safety? It allows us to do more validation. There's so much from that perspective. And then from how we go to market, imagine leveraging artificial intelligence to really understand the customer better and reach that customer in a more focused way so they get the information they want. There's been so much advancement in that space as well. And then lastly, what I would say is also putting the tools in the hands of our employees. I've encouraged everyone at the company to become familiar with AI because it's easy to be a little bit wary of it if you don't understand it. Once you use it, I think you really see the power of it. I make sure I'm constantly using it, even in my daily life unrelated to work, just to see the power of it. Because once you use it for this and you're like, \"Oh, I can use it for this,\" it's interesting."
+    },
+    {
+      "speaker": null,
+      "text": "One of the things my daughter does that I think is so interesting—she's going to college to get her master's degree and she'll be like, \"I'd like a shopping list with I'm gluten-free, I need it to be healthy, I want it to be this level of calories, and I don't want it to have too many different things that I have to buy. So give me the recipes for a week.\" And boom. And she's like, \"Mom, it's really good and it really works.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's your favorite use case?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Just the other day I've been having some shoulder pain, so I got the test results—and of course you get it now on the portal before you hear anything back from your doctor. I put it into ChatGPT and it came back and said, \"Yeah, you've got a tendon that's inflamed.\" And of course it's my mother who passed away many years ago but she always used to tell me to sit up straight, and some of my soreness is because of posture. I'm like, \"Okay, my mom, I've got to listen to you. I've got to sit up straight.\" But I mean, I never before would have waited to hear from the doctor. I was able to go in and understand what it is and understand what I need to do to alleviate it. Just a couple years ago, you would have had to wait for the doctor. And then, you know, there's the easy one of I look in the fridge. What do we have? Okay, give me something interesting to make."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Oh yeah, you know, that's a really good point. Take a picture—even more so than saying I have this and this."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "I'll do that. Yeah. I do that all the time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What about work processes? What have you optimized with AI for you personally?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "For me, I think it's how do I write much more quickly when I'm writing an email or how do I get information? If I want to learn something about a new technology, just asking the question and boom, I get the information. I can read it as opposed to having to send it to someone else and say, \"Hey, can you give me a summary of this?\" So much more information is digestible and given back to you in a very digestible format. I'm using it several times a day, and then also how I do my work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's get back to factories and workers. If somebody is inspired by your journey—when you started working for GM when you were 18 and now you're the CEO—if somebody wants the same journey and they're thinking, \"You know what, entry-level jobs are being replaced with AI, and how do I repeat this journey in the current environment?\" What would be your advice?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, first of all, if you want to be in the auto industry, I would make sure that you get into the core of the business, joining to work as a manufacturing person in our company. I started as an engineer working in a plant. From when I started over 40 years ago to now, there's so much that has advanced in the plants, but understanding what it takes to put a car on the road with high quality, to do it efficiently, with an engaged workforce, I think that's so important. I always encourage people, whatever industry you're excited about, make sure you're in the core of it. You're in how we design vehicles, all the software, how we make vehicles, how we go to market. In an industry you're excited about, go in and join a company and really immerse yourself in where they are today."
+    },
+    {
+      "speaker": null,
+      "text": "So many people who are graduating from college or coming in with certificates have so much knowledge already from the way they've leveraged technology to go through their schooling, at whatever level they are. You bring all that and you can immediately say, \"Hey, here's how we can make it better.\" I was talking a couple years ago to an employee who joined the company in our finance area, and he said, \"Yeah, I was able to use these tools I used from college and I could take what was usually going to take three days and I could do it in three hours.\" I think what somebody who's starting their career needs to realize is that they really have a lot of knowledge in the way they learn to do work that they can bring into the workplace. That's what we're trying to do right now across many functions—for instance in human resources. How do we take some of the things that an HR professional needs to do—getting the data in the right place and getting that information done more effectively with AI—so that person can have more high-touch interaction with the people that they're supporting? Those are things I think we can do. That human connection is going to become more important and the quality of it because the person isn't spending all the time doing some of the more routine things. They can really understand that person better, understand the process better, work for higher quality. I think it's really going to advance."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What are the personal traits that you're looking for when hiring?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "I think you have to have someone who is passionate about what they do. I also would say a high-quality person with integrity, who works hard. You know, somebody who is willing to come in and work hard and wants to learn. One of the things I talk about at GM is that we're going to do the right thing even when it's hard. Integrity is such an important piece of it. We talk at General Motors about winning with integrity because if you win without it, you really haven't won. People who are aligned with the company's values but are passionate about the work, willing to work hard, and curious—they want to learn. Because technology is advancing in any industry so quickly that if you don't have a learning mindset and curiosity, like \"Hm, how can I make this better?\" or \"I want to go learn about that,\" I think that's what's going to separate people and empower them to do things and have careers that we can't even imagine right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there anything that keeps you up at night?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Well, AI, yes. I mean, of course. I think it's so important to adopt artificial intelligence and all technology responsibly and do it well. But I think as we go forward, companies that say, \"Hey, I'm going to wait. I'll sit this lap out. I'll see how it goes\"—I think you're going to be so far behind. To me, it's making sure are we doing the right things and are we really engaging our workforce and empowering them as opposed to them being weary of it. I think that's a big piece that we're doing. I feel good about the strategy we have and we've been adaptable. The world is changing dramatically in the auto industry from a regulatory perspective, from a supply chain perspective, from a consumer perspective—what people are expecting from a vehicle now because everything is smart suddenly."
+    },
+    {
+      "speaker": null,
+      "text": "I think I have a healthy paranoia about that to make sure we're on the cutting edge. I send a lot of emails to my team or see them and say, \"What are we thinking? What are we thinking about this? Have you thought about this? Or are we aware of this?\" And nine times out of 10—or I should say 99 times out of 100—like, \"Yes, we're on it. We're already doing that.\" But I'm going to keep asking those questions because I think it's so important. General Motors is an iconic company and I want to make sure it's here 100 years from now, and the only way we're going to do that is by making sure we leverage and embrace technology responsibly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When everything's going on, when you're looking at everything happening, what helps you stay grounded and stay focused?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Oh gosh. I work hard, but my family—I'm blessed. I've been married for 40 years to my husband. We met in college. What grounds me and what re-energizes me is spending time with my family and friends."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there like a certain limit that you say, like I spend weekends with my family, evenings are family? Do you have something like that?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "I think you have to be more flexible. One of the things I try to do is make sure I have everything done as I close the laptop on Friday evening, and then I try not to be glued to my phone or my computer on Saturday just to get a chance to recharge. Usually, Sunday afternoon I'm starting to prepare for the next week. I find that time—just even if it's a half day or a day to take that breath—recharges me to think about things differently. When I get back to something, I'll see something different or look at it from a different perspective that I think allows me to be more effective. I encourage people to find what recharges them. But in today's age, you have to understand that things are happening so quickly. You can't just say, \"Oh, Friday afternoon to Monday morning, I'm never going to look.\" I don't think it's the world we're living in."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you still have to compromise. You have to work."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "But you do have to make sure you're finding that way that you recharge. One of the things as a working mom—somebody gave me really great advice and said sometimes the most urgent is often not the most important."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's 100% true. And so you have to step back and say, \"Am I constantly letting what appears to be the most urgent take me away so I'm never doing what's most important?\" I know you have two young little girls. Is it Lily and Emily?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Oh wow. Yes. Yes. And we just got a puppy for them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh my gosh. What kind of puppy did you get?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "A toy poodle."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh my gosh. We have a dog, Hunter, and he's such an important part of the family as well. But I mean, I think your children grow up quickly and you don't get a do-over. So I also, as a working mom, there are times in my career where I did what some people would say were crazy things to make sure I was at that soccer game or at that hockey game and then was still able to get my work done. I look back and I'm glad I made those investments and trade-offs."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "That's great. What about your relationship with your husband? 40 years. That's a lot. I need tips, especially when you know you have this job and you're traveling all the time. What's the best tip that you can give for women who are trying to build their career but also be a good wife?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, you know, I'm really fortunate that my husband and I build our careers together. He's an engineer with an MBA and worked in consulting much of his career, so he understands the business really well and can be a great sounding board. He's also a great supporter. I'm very fortunate to have a husband who I feel like it's a partnership. I'm really proud of everything he's accomplished. He's proud of me. But we also can give each other good quality feedback, and sometimes we need it."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Support system. That's awesome."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes. I know it's hard to choose your favorites, but what's your favorite GM car?"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Yeah, that is really hard for me because I had the opportunity to run global product development and felt like every vehicle in the portfolio played such a special role. I would say though that right now I love driving a Hummer EV."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh my god, that car."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "I love driving that. Well, it's got four-wheel steer so it's so maneuverable and I feel like when I'm driving a Hummer EV, I get some respect. People are like wow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I definitely saw those looks when you gave me the car for like a week to drive around. People still stop you or give you looks."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Yeah, definitely got those looks. That's awesome. But I'm also a big fan of Corvettes. I love the styling, the speed, and the heritage. One of the things that makes Corvette so special is it's true American. It's affordable. It's a Chevrolet. But people come to me now and they'll say, \"Oh my gosh, Mary, this vehicle is as good as a vehicle that is three times as expensive.\" Really, General Motors has cracked the code on this type of performance. So that's always rewarding."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And I have a weird question, but you're the person to ask it."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Okay."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Flying cars."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "You know, there's some physics involved in that. There are companies working on vertical takeoff type of vehicles. I would never say never because I think we're innovating and new technologies are coming every day. But I think right now I'm going to stay on the road."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Just, is it because of the technology or just—I'm thinking like, do I want to drive and then have a couple more layers of cars above me? From the safety standpoint, that's weird if somebody crashes, then it's—"
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Right. Well, I think about that today with all that's happening with drones and how the government and FAA are managing airspace and about what levels. Like I said, I never say never because I think we'll continue to advance. I grew up watching the Jetsons. So who knows what we'll see in the future? But I think there are challenges like you're talking about from how do we decide who gets what space, and I think there's some technology challenges. But I think in the future, probably people will solve those challenges."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much, Mary. It was such a great conversation."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Thank you. And thanks for the time you've invested in our vehicles. I'm glad that you love your Escalade."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The best time. I love my Escalade. I enjoyed the test drive, the Hummer, and the Buick because of the Super Cruise. I'm like, the Buick can now go by itself. I didn't expect that."
+    },
+    {
+      "speaker": "Mary Barra",
+      "text": "Yes."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    },
+    {
+      "videoId": "JFilKfL7_9A",
+      "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg",
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus"
+    },
+    {
+      "videoId": "subu-xHrp1w",
+      "thumbnail": "https://img.youtube.com/vi/subu-xHrp1w/hqdefault.jpg",
+      "title": "Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li & Masterclass CEO David Rogier"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    }
+  ],
+  "topics": []
+}

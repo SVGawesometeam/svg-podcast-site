@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>22 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=pqf9uL4j9GU" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/pqf9uL4j9GU/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/pqf9uL4j9GU/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,7 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -433,7 +446,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> So you're trying to start a business in 2025 and you're hoping for an extra $10,000 a month from this business, but you think it's impossible because it takes so much time to start. You need to quit your job and you don't have time. Well, I have great news for you. 2025 is an amazing year to start a business, and here is why we have AI tools that empower businesses to grow faster than ever before.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So you're trying to start a business in 2025 and you're hoping for an extra $10,000 a month from this business, but you think it's impossible because it takes so much time to start. You need to quit your job and you don't have time. Well, I have great news for you. 2025 is an amazing year to start a business, and here is why we have AI tools that empower businesses to grow faster than ever before.</p>
             <p>Just listen to this. When I was going through an accelerator in 2015, 500 Startups, they told us you have to grow by 10% week over week. And only one or two percent of startups at 500 Startups and Y Combinator, which is a top accelerator here in Silicon Valley, were able to do that. Now, at 10% growth week over week, that's the average of startups at Y Combinator. And they have these incredible cases where a startup was able to go from zero to twelve million in just a year because with AI tools, it doesn't matter if you're a beginner or you don't have capital. AI gives you steroids. AI makes you this person who can do multiple jobs at the same time.</p>
             <p>So today, I'm going to empower you with AI. I will share my best tools for entrepreneurs. So listen up, write down, and start using them to start your business in 2025 and grow faster than ever.</p>
             <p>Step number one in starting any business is identifying your niche. Finding the right niche is super important because sometimes you start a business in a niche that's dying. But if you start a business in the right niche, that means your business is just going to grow with the niche. You have external factors helping you grow. And today, AI tools make this process simpler and more effective than ever.</p>
@@ -462,7 +475,6 @@
             <p>A tool that I like using, and the tool that I'm going to use for my website, is called Hostinger. It allows you to build stunning, mobile-friendly websites. I don't know, like I can talk about this for hours, but basically we're in an economy where a lot of our purchases—for some people, like Gen Z, their whole purchasing behavior is based on whatever they saw online. Like, I saw this snack, I go and buy it. I saw that somebody has this nice house, I'm looking for something similar. Like, clean aesthetics, whatever, whoever I follow, they dictate my purchasing behavior.</p>
             <p>So basically, and if you want to tap into that, I saw this quote: 2025 is smart people paying beautiful people to promote their product. Something like that. So be one of the smart people paying beautiful people, and when beautiful people promote your product, they're going to promote it on mobile apps. So make sure your website is mobile friendly.</p>
             <p>Anyways, Hostinger is beginner-friendly, offers templates for various industries, so you can have your site up and running in hours, not days. And by the way, I'll have all the links below. Some companies gave me some promotions for you guys, so make sure you click the link and see what kind of promotion they have. Some companies just never replied anyways. It doesn't matter. I still use them, but yeah, make sure to check all the links below.</p>
-
             <p>Then another thing, email and text. Very important. We're going to use Omnisend for my new company. Basically, Omnisend personalizes messages and tracks performance, helping you optimize your marketing efforts, build funnels, automate everything that you're doing.</p>
             <p>And now social media automation. Oh my God. So first of all, train ChatGPT to be your great help in analyzing trends. I always do this when I have some video go viral. I copy the comments from that video to ChatGPT, and well, it already has the memory of who I am. But if you're just starting from scratch, you can say, like, hey, this entrepreneur launching this product in this niche, here's a reel. Maybe you take somebody else's reel. Here's a reel that went viral in my niche. Here are the comments to this reel. Analyze these comments because clearly people liked this video. Analyze what exactly they liked about this video and generate more ideas that can go viral. I chat with ChatGPT about this all the time.</p>
             <p>Another thing you do is dumb scrolling. You don't need an AI app for this. You just scroll and scroll and scroll, and you save videos. My threshold is over a million views. Like, if I see a video that got over a million views, that's a good video for me. I'm not going to copy, but everybody copies each other. But it's like, let's take the inspiration from here and just change it to my topic. And then this is how you go viral. And that's the only way to do social media in 2025.</p>
@@ -492,27 +504,31 @@
             <p>By using these AI strategies, you can start and grow a successful business in 2025 with no money or experience. You can become an entrepreneurial powerhouse, and it's going to be just you and your amazing AI apps. Many of them have free starter versions, which means you can start right now with no money and get to the point where you're growing 10% week over week.</p>
             <p>And please come back to this video and tell me, Marina, thank you for this. I started a company and it's growing, and you inspired me to do this. Because this makes me feel so good, and it makes me continue making these videos for you and sharing my knowledge as an entrepreneur living in Silicon Valley.</p>
             <p>Thank you guys so much for watching this video up to the very end. I'll see you very soon. Please subscribe. Bye.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/pUITF0uGa6U/" class="related-card">
                 <img src="https://img.youtube.com/vi/pUITF0uGa6U/hqdefault.jpg" alt="Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang" loading="lazy">
                 <span class="related-title">Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang</span>
               </a>
+
               <a href="/episode/FZm2vVlPX9w/" class="related-card">
                 <img src="https://img.youtube.com/vi/FZm2vVlPX9w/hqdefault.jpg" alt="TOP-8 profitable online business ideas you can start in 2025" loading="lazy">
                 <span class="related-title">TOP-8 profitable online business ideas you can start in 2025</span>
               </a>
+
               <a href="/episode/EUrkIpq838c/" class="related-card">
                 <img src="https://img.youtube.com/vi/EUrkIpq838c/hqdefault.jpg" alt="ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski" loading="lazy">
                 <span class="related-title">ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski</span>
               </a>
+
               <a href="/episode/00RHph_eok4/" class="related-card">
-                <img src="https://img.youtube.com/vi/00RHph_eok4/hqdefault.jpg" alt="AI Safety Expert: No One Is Ready for What&#x27;s Coming in 2 Years | Roman Yampolskiy" loading="lazy">
-                <span class="related-title">AI Safety Expert: No One Is Ready for What&#x27;s Coming in 2 Years | Roman Yampolskiy</span>
+                <img src="https://img.youtube.com/vi/00RHph_eok4/hqdefault.jpg" alt="AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy" loading="lazy">
+                <span class="related-title">AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy</span>
               </a>
       </div>
     </section>

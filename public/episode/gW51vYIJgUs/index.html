@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>19 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=gW51vYIJgUs" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/gW51vYIJgUs/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/gW51vYIJgUs/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,8 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -449,7 +461,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> I've spent 10 years in Silicon Valley talking to the most amazing people and studying what actually makes them successful. And there are some common things that they do all the time. And it's not about waking up at 5:00 a.m. It's not about hustling and grinding all the time. It's about some of the habits, some of their behaviors that they implement in order to become successful. And I think I've summarized most of them in this video. And honestly, for me, such a revelation and realizing these things made my life easier because they're kind of easy to follow.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> I've spent 10 years in Silicon Valley talking to the most amazing people and studying what actually makes them successful. And there are some common things that they do all the time. And it's not about waking up at 5:00 a.m. It's not about hustling and grinding all the time. It's about some of the habits, some of their behaviors that they implement in order to become successful. And I think I've summarized most of them in this video. And honestly, for me, such a revelation and realizing these things made my life easier because they're kind of easy to follow.</p>
             <p>But anyways, here's a quick story that I wanted to tell you before we jump onto the rules and everything. I just had a meeting with a lawyer in Los Angeles, and it's funny how celebrity lawyers—they're not really drafting documents, they are making deals happen. So he has one celebrity come to him and say like, &quot;Hey, I want to publish a book,&quot; and he just makes this happen and gets a percentage of it. He's been doing this for 30 years and worked with the most amazing celebrities. And I asked him, what do you think makes people successful? And he said, 100% luck. And I was like, but okay, that's not very encouraging because how can I make luck happen to me? He's like, your task in this life is to make sure you run towards luck, is to make sure you create special conditions for luck to come to you. And these conditions are created by repeating the things that we're going to talk about now in this video.</p>
             <p>This episode will also be very encouraging to people who don't feel like they're the most talented people in the world—me. Because sometimes we think that we need to be the most talented or the smartest person in the world to be successful. That's not true.</p>
             <p>Let's start with rule number one: help without expecting a return. And this is something I've noticed when I came to the US. This American mindset values helping others freely. So when we came to Silicon Valley, I started asking people for intros. And honestly, I thought a lot of them would say no or ask for a percent of the deal if it happens. And nobody ever asked for anything. They were just introducing us to their investors. They were introducing us to their peers. And when a deal happened, I asked one of the guys like, &quot;Do you want like 1% or something?&quot; He's like, &quot;No, Marina, like I just wanted to help.&quot; And this mentality—&quot;I'm going to help you now&quot; and &quot;I don't really expect anything. Maybe you help somebody else and that somebody else helped me someday&quot;—but this is the mentality. I want you to see that I'm open to helping. And I see people generously share contacts, resources, and knowledge. And from day one, I tried to embrace this culture because this is not really something that happens back in my country. There are a lot of kind people, but this is not like a business culture of just making things happen for others.</p>
@@ -474,27 +486,31 @@
             <p>Rule number nine: be ambitious. Americans are friendly and approachable, but they're so ambitious. They think big, even if they don't say it out loud. So I just had this call with Instagram and I have an amazing manager there. Hi. And what she told me—she's like, &quot;Marina, you are the Silicon Valley girl.&quot; And she drew the whole image of me. Like we were switching, we're rebranding, brainstorming this rebranding strategy together. And she's like, &quot;Marina, I see you as this leader who's a female who has kids, but who also loves business and innovation. And whenever you do something, you have to ask yourself like, would Marina, that Silicon Valley girl, that innovative entrepreneur do this trend? No.&quot; So everything you should do should be aligned with that new reality that you're building for yourself. So draw this big vision for yourself and act like you're already there.</p>
             <p>And rule number ten might be upsetting for some of you guys, but I'm sorry—networking is everything in the US. So many things happen through personal connections. I got one of my biggest contracts this year just because I met someone at a party 3 years ago and I got this contract alongside with top, top, top creators. I'm not a top creator. I'm not even like in the top 50 creators, but I got the deal first because I met that guy. Hopefully because he saw that I respect others' work and I respect my work. I try to do everything with 100% effort as much as I can. I take my work seriously and I see this happen a lot. Not just to me, but to me this year is really like—I see a lot of things coming together. But I see that people and companies prefer to work with people they know. Just because you avoid surprises, just because you know what to expect, what quality of work to expect, what type of commitment to expect.</p>
             <p>And this proves again—and all of these rules, they just prove again—you don't need to be the most talented. You just need to be good at what you're doing. Treat others and your work with respect. Put your heart into the task. Don't cut corners even on small things. That was it for me for today. Let me know if this was encouraging. Let me know how this resonates with you. And I'm looking forward to reading your comments.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/mtfB8GtJAWM/" class="related-card">
                 <img src="https://img.youtube.com/vi/mtfB8GtJAWM/hqdefault.jpg" alt="Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini" loading="lazy">
                 <span class="related-title">Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal &amp; Roman Saini</span>
               </a>
+
               <a href="/episode/qkGuzV50JWI/" class="related-card">
                 <img src="https://img.youtube.com/vi/qkGuzV50JWI/hqdefault.jpg" alt="Must Have AI Skills to Save your Career in 2026" loading="lazy">
                 <span class="related-title">Must Have AI Skills to Save your Career in 2026</span>
               </a>
+
               <a href="/episode/8W5A7fIuA-A/" class="related-card">
                 <img src="https://img.youtube.com/vi/8W5A7fIuA-A/hqdefault.jpg" alt="I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need" loading="lazy">
                 <span class="related-title">I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need</span>
               </a>
+
               <a href="/episode/Yu0z7-KMHpo/" class="related-card">
-                <img src="https://img.youtube.com/vi/Yu0z7-KMHpo/hqdefault.jpg" alt="AI-First Playbook: Do a Team&#x27;s Work With AI (2026) | Product Leader Peter Yang" loading="lazy">
-                <span class="related-title">AI-First Playbook: Do a Team&#x27;s Work With AI (2026) | Product Leader Peter Yang</span>
+                <img src="https://img.youtube.com/vi/Yu0z7-KMHpo/hqdefault.jpg" alt="AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang" loading="lazy">
+                <span class="related-title">AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang</span>
               </a>
       </div>
     </section>

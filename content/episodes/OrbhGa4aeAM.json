@@ -1,0 +1,355 @@
+{
+  "videoId": "OrbhGa4aeAM",
+  "title": "Getting Started with Email Marketing: Full Step-by-Step Guide",
+  "format": "solo",
+  "guestName": "Marina Mogilko",
+  "guestTitle": "Host, Silicon Valley Girl Podcast",
+  "aboutGuest": "Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.",
+  "publishedAt": "2024-12-11T18:31:18.000Z",
+  "duration": "27 MIN",
+  "coverArt": "https://img.youtube.com/vi/OrbhGa4aeAM/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/OrbhGa4aeAM/maxresdefault.jpg",
+  "summary": "Marina Mogilko walks through a complete beginner's guide to email marketing, drawing on her experience sending over 700 newsletters per month across two businesses—Linguatrip and her social media school—where email drives 25% of total sales. She covers every stage of the process, from choosing a platform and building a list with lead magnets to segmenting audiences, writing newsletters, automating flows, and cleaning lists. The episode emphasizes that email is a owned, algorithm-proof asset that delivers an average ROI of $36 for every $1 spent.",
+  "keyTakeaways": [
+    "Email marketing drives 25% of total sales across Marina's businesses, with 700+ newsletters sent per month — proof that consistent volume compounds into significant revenue.",
+    "Lead magnets are the most effective list-building tool: offer a free, high-value resource (checklist, guide, top-programs list) that sparks interest in your product without fully solving the problem.",
+    "Email lists are a true owned asset — unlike social media followers where only ~10% see posts due to algorithm changes, an email sent is guaranteed to reach the recipient's inbox.",
+    "If you stop sending emails for 6 months, platforms can revoke access to your list — the rule of thumb is to show up regularly or download and save your list before any planned break.",
+    "List hygiene matters: segmenting your audience and regularly cleaning inactive subscribers protects deliverability and keeps your open rates and ROI high."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "No Emails = No Sales"
+    },
+    {
+      "time": "03:14",
+      "seconds": 194,
+      "title": "Choosing the Right Platform"
+    },
+    {
+      "time": "04:43",
+      "seconds": 283,
+      "title": "Building Your Email List"
+    },
+    {
+      "time": "08:00",
+      "seconds": 480,
+      "title": "Creating Popup Forms"
+    },
+    {
+      "time": "11:33",
+      "seconds": 693,
+      "title": "Keeping Your List Clean and Healthy"
+    },
+    {
+      "time": "12:38",
+      "seconds": 758,
+      "title": "Segmenting Your Audience"
+    },
+    {
+      "time": "14:40",
+      "seconds": 880,
+      "title": "Creating a Content Plan"
+    },
+    {
+      "time": "16:25",
+      "seconds": 985,
+      "title": "Writing Your First Newsletter"
+    },
+    {
+      "time": "20:05",
+      "seconds": 1205,
+      "title": "Automating Your Emails"
+    },
+    {
+      "time": "22:32",
+      "seconds": 1352,
+      "title": "Analyzing and Optimizing"
+    },
+    {
+      "time": "25:24",
+      "seconds": 1524,
+      "title": "Cleaning Your Email List"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The golden rule of marketing is and has always been very simple: no emails, no sales. That's it. And in the upcoming 2025, this couldn't be more true. Even this year in my companies, we send over 700 email newsletters every month, and those emails delivered over 25% of our total sales."
+    },
+    {
+      "speaker": null,
+      "text": "If you haven't made email marketing a core part of your strategy yet, or you're not getting the results that you want, you're in the right place. I've been sending emails since 2011. I started sending them manually, now we have people to do that. But in this video, I've put together a step-by-step guide to help you guys get started with email marketing because I feel it's so important. It just lets you retire, and it's also an asset."
+    },
+    {
+      "speaker": null,
+      "text": "It's not like we used to think social media followers are an asset, and then they change the algorithm and your followers no longer see your posts or videos—maybe 10% of your followers see the post. But the algorithm might change again and you are forced to create viral videos to please the algorithm. With emails, it's different. I feel like emails are really your asset."
+    },
+    {
+      "speaker": null,
+      "text": "Yes, you can ruin everything by sending really bad emails, but we're going to talk about best practices so that you don't lose that asset. One thing to remember as per new rules: if you have an email list but you haven't sent anything to them in six months, you can lose access to it. That happened to me. So the rule of thumb here is show up regularly. Send emails, update your followers on what's going on."
+    },
+    {
+      "speaker": null,
+      "text": "If you plan to take a break for like a year, it's good to download your list and save it somewhere else. But then you might have problems uploading it to other platforms. But this is just something to remember because I recently experienced this. I just want you to make sure that if you stop sending emails, you need to decide whether you're going to use this list later or you're going to start a new one. What I did—I started a new one."
+    },
+    {
+      "speaker": null,
+      "text": "When you send an email, it's guaranteed to reach the recipient's inbox. The real question is whether they'll open it or unsubscribe, but we'll dive into that later in this video. The key takeaway is that email marketing results are far less influenced by external factors like market trends or social media algorithms that change like every single month. Instead, they're largely in your hands, making email marketing both more predictable and cost-effective."
+    },
+    {
+      "speaker": null,
+      "text": "Studies show that email marketing delivers an incredible ROI of $36 for every dollar spent. Now that we've covered why email marketing is so important, let me show you step by step how to use email newsletters to take your business from scratch to generating millions in sales. I'll share both the theory and real-life examples from two of my businesses where email newsletters have become a huge driver of revenue."
+    },
+    {
+      "speaker": null,
+      "text": "And as a creator, emails also let me retire a little bit because they just work without me. You can hire someone to send emails. The first company is LinguTrip, where we help people learn English, prepare for standardized tests, and get into universities abroad. The second company is my social media company, where we help people become creators and live better lives. We have an email list there as well."
+    },
+    {
+      "speaker": null,
+      "text": "The first step is choosing the right email marketing platform. The most important thing to do is, of course, build your email list. Now the question is: how do you do that? Where did you get those emails? Your database should include everyone who has interacted with your company in any way. The easiest place to start is, of course, with your existing customers—anyone who purchased from you before. Why? Because it's so much easier to sell to someone who has already bought from you than to convert a brand new customer."
+    },
+    {
+      "speaker": null,
+      "text": "If someone asks a question on your website or submits a request, they should also be added to your email list. These are warm leads who have already shown interest in your business. Beyond that, there are tools and strategies. One of my favorite strategies is using lead magnets. It's actually the most effective tool for building your email list, and this has been a primary driver of email list growth for both of my businesses."
+    },
+    {
+      "speaker": null,
+      "text": "What is a lead magnet? It's basically a free resource or incentive that you offer in exchange for someone's email address. For example, at LinguTrip, we have a lot of downloadable guides featuring top educational platforms in different countries for those who subscribe to our newsletter. In addition to that, we have a list of the most used ADAMs, we have lists of top grammar mistakes that people make—we have all kinds of lead magnets because we want them to be tailor-made for each video."
+    },
+    {
+      "speaker": null,
+      "text": "For example, I make a video about grammar. Then the best lead magnet for that video will be top grammar mistakes. Or, for example, at my social media school, we recently offered a checklist of 12 common mistakes that prevent channels from growing. The key to creating an effective lead magnet is ensuring that it's highly valuable to your audience, sparks interest in your product, but doesn't completely solve the problem."
+    },
+    {
+      "speaker": null,
+      "text": "The goal is to leave them motivated to take the next step and purchase your product. But also exceed expectations because if you're getting something for free and it gives you this feeling of awe—like, oh my God, this is such a cool list, this was free—what is the value they're going to deliver if I pay them $100?"
+    },
+    {
+      "speaker": null,
+      "text": "Another great example of this is from my recent affiliate marketing video where I shared a guide featuring the top 25 highest-paying affiliate programs, perfect for anyone looking to get started with affiliate marketing. Something I noticed about lead magnets is that offering something that helps people make more money or achieve a life of their dreams—like, I don't know, top universities that offer scholarships or top 10 ways to make money on social media if you don't have followers—something like that would really work better."
+    },
+    {
+      "speaker": null,
+      "text": "And my goal is always to test. So we always test how many people subscribed, how many people unsubscribed. But you have to be in this constant testing mode. Like, what works best for your audience? What works best if you're paying for targeted ads? What could you offer that will be both irresistible and relevant to your customers?"
+    },
+    {
+      "speaker": null,
+      "text": "Another thing you can try is discounts or freebies. Many businesses offer a small discount on the first purchase to encourage customers to leave their email or sign up for a loyalty program. I have seen this so many times on American websites. I was shopping for shoes for my kids, and they're like, oh, do you want 10% off? Sign up for our email list and for our SMS updates. And I do that all the time, by the way."
+    },
+    {
+      "speaker": null,
+      "text": "We tried that and also tried something else at LinguTrip, which really worked and converted people into emails. We created this kind of lottery: you leave your email, you spin the wheel, and we give you some random discount. I think it increased conversions by 10%. But it's just, you know, this really works. People really want to give you their email in exchange for a discount."
+    },
+    {
+      "speaker": null,
+      "text": "Let me show you how to create a similar Wheel of Fortune popup using Omniscent. First, select pop-up forms and choose the Wheel of Fortune template. This template is pre-made and ready to go. You can customize the discount percentages, promo codes, and every element of the form, including colors, buttons, and fields. Once you're happy with the design, double-check that all data is filled in correctly. And when everything looks good, click the embed form button to add it to your website and start collecting emails."
+    },
+    {
+      "speaker": null,
+      "text": "With Omniscent, you can quickly create a variety of forms, pop-ups, embedded forms, landing pages, and fly-outs. My tip is to create landing pages specifically for collecting emails. These are super convenient to share on social media, especially in Instagram Stories, and they work amazingly well."
+    },
+    {
+      "speaker": null,
+      "text": "Here's a recent example of how I attracted over 500 new subscribers to my email newsletter by sharing just one link on Instagram Stories. As you may know, I have an Airbnb in Hawaii, and this topic always sparks interest among my audience. I decided to create an honest update where I revealed all the numbers, and I titled it this way: \"How we made over $50,000 in six months—and most importantly, how much of that we actually got to keep.\""
+    },
+    {
+      "speaker": null,
+      "text": "I wrote a detailed email with all the insights and shared a subscription link in my stories for anyone curious about such a transparent review. The result? 4.4% of viewers subscribed, and nearly half of them read my email. This has proved that a well-targeted topic and a simple link can work wonders for building your list. And these rates are actually really good, by the way."
+    },
+    {
+      "speaker": null,
+      "text": "The next tip is to use paid advertising. Don't limit paid advertising to just driving direct sales. Use it as a powerful tool to grow your email list as well. By promoting lead magnets or exclusive offers through targeted ads, you can capture valuable leads and add them to your email newsletter. This strategy helps you build a long-term relationship with potential customers rather than just focusing on immediate sales."
+    },
+    {
+      "speaker": null,
+      "text": "But here you need to be able to track conversion rates. For example, if it costs you $100 to attract 10 new emails, but you know that one customer is going to convert and they're going to pay you $1,000, then it makes total sense. So just keep track of all the numbers. I have all the Excel spreadsheets where we track every single campaign: how much we spent, how many emails we got, how they converted, how much we made. And we also know that if they buy this product, there's this percent chance that they're going to buy another product in the next six months."
+    },
+    {
+      "speaker": null,
+      "text": "This way, we calculate the LTV—lifetime value—of an email, so that we know how much we can actually invest in paid ads. But something that comes from a creator who makes content online: ideally, you test your call-to-actions on your social media first. And if you see that, for example, when you mention this topic, 4% of people subscribe, mentioned another topic 2% of people subscribe, when you mention another topic 10% of people subscribe, you're like, oh, okay, so this topic is actually more interesting."
+    },
+    {
+      "speaker": null,
+      "text": "I'm going to use that for my targeted ads versus just going with any topic because if it already worked organically, adding some extra money to it makes total sense. It's also very crucial to keep your email list clean and healthy. Avoid buying email addresses at all costs. This often leads to low engagement, higher spam complaints, and potential legal issues. Always get users' explicit consent to receive your newsletter."
+    },
+    {
+      "speaker": null,
+      "text": "And I like to use this double opt-in process to confirm that subscribers are genuinely interested. Honestly, when I just started email marketing, I was like, no, let's just get emails at all costs. And you know, why would they need to click another button in their email to confirm the subscription? But then you really want quality leads because you end up paying for every subscriber, every email you send. You really want every email to deliver value, not just spam people."
+    },
+    {
+      "speaker": null,
+      "text": "We are developing this blindness toward emails, and I feel like it's really important to counter that. I think every three months we just clean the email list. If people haven't opened emails from us in the past three months, we just delete them. Like, if they don't care, why would we keep spamming them and keep paying for every email or for them being on our list, depending on our plan, right? And it ensures you have a more engaged and responsible audience."
+    },
+    {
+      "speaker": null,
+      "text": "Now, step number three—you don't have to do it right away, but ideally, you do it as early as possible—is called user segmentation. If you sell products across different categories, it's essential to segment your user base instead of just sending the same email to everyone. Segmented email campaigns generate twice as many clicks as non-segmented ones, so this is a strategy worth prioritizing."
+    },
+    {
+      "speaker": null,
+      "text": "Here are some key criteria for segmentation. First of all, by demographics. Target subscribers based on age, gender, location, and don't forget to gather this info via a pop-up form. For example, we know that if people are from 17 to 23, they will be more interested in getting admissions into a university versus, like, if it's a 14-year-old, they might just be working on their English. So we create targeted offers for them."
+    },
+    {
+      "speaker": null,
+      "text": "Another way you can segment them is by purchase behavior. New customers can receive a welcome series introducing your brand. Loyal customers might get exclusive offers or VIP perks. By engagement levels, send frequent updates and offers to your highly engaged subscribers. I don't know if you've ever noticed this, but if you open an email from some larger companies, they will keep sending you more because they have this trigger programmed in. If somebody opens an email, clicks something, we're going to make sure they buy."
+    },
+    {
+      "speaker": null,
+      "text": "And then you can create a re-engaging campaign to win back inactive subscribers. By life cycle stage, you can also sort your emails by life cycle stage. Nurture leads with educational content or free resources. Provide customers with product updates, upsells, or loyalty rewards. Use surveys to understand why former customers left and entice them to return."
+    },
+    {
+      "speaker": null,
+      "text": "For example, at LinguTrip, one of the segmentations that we have is actually by users' language level, because it makes so much sense for a business. If somebody purchases our intermediate-to-advanced course, we send them helpful materials tailored to their level and offer the next step—our advanced-to-proficiency course. Similarly, if somebody buys a TOEFL preparation course—and TOEFL is this exam that you take in order to get into an American university—we recommend other products designed for incoming overseas students."
+    },
+    {
+      "speaker": null,
+      "text": "Number four: so you created your email list, you created your offers, you segmented your audience. Now you have to create a content plan. Again, if you're just a beginner, don't really segment your audience too much because you need to keep them engaged, right? And that means creating content plans for every single segment. But here are some key types of emails to get started."
+    },
+    {
+      "speaker": null,
+      "text": "Welcome series: the first email in a welcome series has an impressive open rate of 50 to 60%, so take extra care to make a great first impression. Product announcements and promotions: share updates about new products, services, or exclusive offers. For us, exclusive offers always work the best in terms of sales. Like, if we say 65% off, we're seeing good sales. But you don't want to do this too much. You also want to entertain people and educate them, not just sell to them all the time."
+    },
+    {
+      "speaker": null,
+      "text": "Engaging newsletters—and this is something I've talked about—provide valuable content or entertainment to keep your audience engaged. At LinguTrip, alongside our promotional emails that announce sales and new course start dates, we've created sections that users love and anticipate. One popular section is called \"Experts Answer,\" where one of our course teachers breaks down a complex topic in English and answers common questions. Another is our infotainment newsletter—like one that we did analyzing phrases and new vocabulary from Taylor Swift's latest album."
+    },
+    {
+      "speaker": null,
+      "text": "Think about what unique, non-sales concept would resonate with people in your niche, and make sure to incorporate those ideas into your content plan."
+    },
+    {
+      "speaker": null,
+      "text": "Now let's work on your first newsletter. The most important element of a successful email is the subject line. It's what determines whether a user opens your email, sends it straight to trash, or—the worst—unsubscribes. Keep your subject line short. Aim for six to ten words to capture attention. Personalize it. Emails with personalized subject lines have a 26% higher open rate. Create curiosity or urgency."
+    },
+    {
+      "speaker": null,
+      "text": "What I see is that personal emails really work. Like, \"How I made $50,000\" or \"How we did this.\" And also, numbers—oh my God. When it comes to income, when it comes to someone getting a $100,000 scholarship, this works so much better. Numbers always work. And I also highly recommend using A/B testing to experiment with different subject lines and identify what resonates best with your audience."
+    },
+    {
+      "speaker": null,
+      "text": "For example, in one of our recent emails for LinguTrip, we conducted A/B tests on three subject lines: \"Is grammar your weakness?\" \"Do you have mistakes in grammar?\" or \"Are you struggling with grammar?\" The third option—\"Are you struggling with grammar?\"—outperformed the others in clicks because everybody struggles with grammar. And here's the best part: this email alone generated over $600 in sales. It's a great example of how a small tweak in your subject line can make a big impact on your results."
+    },
+    {
+      "speaker": null,
+      "text": "Next, focus on your preheader text. This appears right after the subject line in most email clients and gives your recipients a sneak peek of your email. Use it to complement your subject line and entice readers to open. For example: \"Ready to level up your skills? This is the first time I'm sharing this. We're hosting a free webinar to help you do the same.\""
+    },
+    {
+      "speaker": null,
+      "text": "The body of your email should be concise, compelling, and aligned with your goal. If it's a sales email, focus on product benefits and key selling points. If it's an educational or expert email, explain the topic clearly and emphasize value for the reader. Include visuals such as images, GIFs, or videos to break up text and enhance engagement. And of course, a clear call to action—a clear CTA. It should be only one. Don't do like, click this, click that, click this. One email call to action. That's it. Keep it simple, keep it concise. It works the best."
+    },
+    {
+      "speaker": null,
+      "text": "And of course, in 2024, I highly encourage you to leverage AI tools to write your emails. For example, if you use Telegram, I have a bot called Ghost Rider that can take a simple voice message and transform it into clear, engaging text in seconds. It's a game changer for streamlining your content creation, ensuring your emails sound professional and compelling, and that your ideas are brought to life. So cool when you just talk to your phone and it creates a wonderful email from your thoughts."
+    },
+    {
+      "speaker": null,
+      "text": "Before hitting send, make sure your email includes these two critical elements. Personalization: adding a personal touch significantly increases engagement. You can use the recipient's email in the greeting—example: \"Hi [name]\"—and Omniscent will automatically insert the name if you ask for it. \"We've got something special for you. Reference their behavior or preferences to make your email feel tailored: \"Since you loved our intermediate-to-advanced course, we thought you'd enjoy this new release.\""
+    },
+    {
+      "speaker": null,
+      "text": "And finally, call to action: a clear, actionable call to action encourages your audience to take the next step. Use buttons or links that stand out. For example: \"Shop now,\" \"Sign up today,\" \"Learn more.\" By perfecting these elements, you can create emails that capture attention, drive engagement, and achieve your campaign goals."
+    },
+    {
+      "speaker": null,
+      "text": "And now comes your retirement part: you automate your emails so you don't have to send them manually. Most newsletters can be easily automated, and I highly recommend taking advantage of this. With email automation, you can save time and resources. You set up your workflows like, \"Oh, if the user signs up for this, we start this campaign. If the user does that, we send them this email. If they purchase this or if they purchased this through 30 days ago, we ask them for a review.\" And these workflows run on their own, freeing you to focus on other aspects of your business."
+    },
+    {
+      "speaker": null,
+      "text": "Plus, automation can significantly boost engagement. Automated emails are 320% more effective at driving revenue compared to non-automated emails. These are some of the automated sequences we've used for our clients."
+    },
+    {
+      "speaker": null,
+      "text": "Welcome emails: like, you have to do them 100%. They always work. You send them immediately after a subscriber joins your list. These introduce your brand, set expectations, and often include a small incentive like a discount code. People who just subscribed are the hottest, the warmest, so you need to make sure they convert."
+    },
+    {
+      "speaker": null,
+      "text": "Abandoned cart emails: super important. They are triggered when a customer adds items to their cart but doesn't complete the purchase. Again, they're super hot. Sometimes you even call them, but that depends on how much your product costs. When we sell something expensive, we actually call them. But of course, we also send them an email that's like, \"Hey, you left these products in your cart.\""
+    },
+    {
+      "speaker": null,
+      "text": "Then another very important automated email is post-purchase follow-up. These include thank you messages, additional product details, requests for reviews or recommendations for complementary products. It depends on your business, but for a lot of businesses, these post-sales emails increase revenue by 10 to 20%."
+    },
+    {
+      "speaker": null,
+      "text": "Re-engagement campaigns: designed for subscribers who haven't opened or clicked your emails in a while. I'll dive deeper into re-engagement strategies in the next chapter. Once you set them up, you can let them run on autopilot while you relax."
+    },
+    {
+      "speaker": null,
+      "text": "Analyze and optimize: always have numbers. If you don't have any numbers, if you don't look at the numbers, you can't control anything. This is something I keep telling to all new entrepreneurs, all new creators. Email marketing is highly analytical. It's all about metrics and numbers, and they are just as important as creativity. And sometimes you think, oh my God, this is the best email I'm going to send. And then you send it and it's not converting. And this is how you learn how to test your ideas."
+    },
+    {
+      "speaker": null,
+      "text": "So crafting and automating emails is just the start. To truly succeed, you need to regularly analyze your campaigns and optimize them for better performance. Ideally, you should review your emails at least once a month to determine what worked well and what didn't."
+    },
+    {
+      "speaker": null,
+      "text": "And here are the key metrics we focus on. First of all, open rate: the percentage of recipients who open your email. We try to stay at 20 to 25%. Click-through rate: the percentage of recipients who clicked a link in your email. We try to do 2.5 to 3.5%. And again, you can just Google what is the best open rate or conversion rate for your industry. Talking about online education, unsubscribe rate: we try to stay under 0.5%. Conversion rate: the percentage of recipients who took a desired action. What's most important here is seeing consistent improvement month over month and meeting your sales and engagement goals. There is no like golden number, right? We figured out our numbers just based on what worked for us and also talking to other companies in education."
+    },
+    {
+      "speaker": null,
+      "text": "And to enhance performance, we frequently conduct A/B tests. A/B testing lets you compare two versions of an email to see which performs better. You can test almost any element of the email, but the golden rule is to change only one variable at a time. This way, you can clearly identify what's driving the results."
+    },
+    {
+      "speaker": null,
+      "text": "For example, you're changing the subject line. Or you're changing the call-to-action button. Or you're changing the text. Like, in this email, you were selling the product by describing its features. In the second email, you're just listing reviews. Send each version to a small segment of your list, analyze the results, and then roll out the winner to the rest of your audience."
+    },
+    {
+      "speaker": null,
+      "text": "At LinguTrip, we ran A/B tests on send times and discovered that sending emails before noon but not too early in the morning yields the best results for US-based subscribers."
+    },
+    {
+      "speaker": null,
+      "text": "Based on your analysis, optimize your newsletters. Subject lines: maybe you need an emoji, maybe you don't. Do you need a question mark or not? Do you need urgency or not? Visuals or layouts: test different layouts or images to see what drives engagement. For instance, adding videos to emails can boost CTR by up to 65%."
+    },
+    {
+      "speaker": null,
+      "text": "Remember that email marketing is an ongoing process. Regular testing and adjustments are key to staying aligned with your audience's changing needs. After analyzing your campaigns, apply what you've learned to future emails to continuously improve your results."
+    },
+    {
+      "speaker": null,
+      "text": "Number eight: clean and maintain your email list. As I mentioned, an outdated email list can hurt your deliverability and engagement, so it's essential to keep it clean and up to date. We regularly review and clean our email database. We review users who haven't engaged in three months or maybe six months, send them a re-engagement email letting them know we miss them."
+    },
+    {
+      "speaker": null,
+      "text": "In the email, we ask them to confirm their interest by opening the message or clicking a link. And if they don't respond to the first email, we follow up with a second email explaining that if they don't engage, we'll stop sending them emails. And for those who still don't respond, we remove them from the list."
+    },
+    {
+      "speaker": null,
+      "text": "And you know, as they tell us in marketing: you're not for everyone. You're just for the ones who value you. So no need to knock on every single door."
+    },
+    {
+      "speaker": null,
+      "text": "By following these steps, you'll be able to craft email campaigns that not only look professional but also help you achieve your marketing goals. And don't forget: experiment, analyze, and continuously refine your strategy. That's the key to long-term success in email marketing."
+    },
+    {
+      "speaker": null,
+      "text": "I hope this was not too overwhelming. And again, it's been 13 years since I sent my first email to a customer. And when I just started out, I was so confused. But then it became more transparent for me. I understood how much of an asset that is and how important it is to collect emails. So I keep doing this, and I keep collecting emails every single week, because they're so, so, so important—especially now when the algorithms change like crazy."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "V3PbrBA9teE",
+      "thumbnail": "https://img.youtube.com/vi/V3PbrBA9teE/hqdefault.jpg",
+      "title": "How To Make Your Life Exciting Again"
+    },
+    {
+      "videoId": "VN_0zJXBO6E",
+      "thumbnail": "https://img.youtube.com/vi/VN_0zJXBO6E/hqdefault.jpg",
+      "title": "How to make $1000/month on social media with 0 followers"
+    },
+    {
+      "videoId": "3FgPLbfs_oY",
+      "thumbnail": "https://img.youtube.com/vi/3FgPLbfs_oY/hqdefault.jpg",
+      "title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    }
+  ],
+  "topics": [],
+  "metaDescription": "Getting Started with Email Marketing: Full Step-by-Step Guide — Silicon Valley Girl Podcast with Marina Mogilko"
+}

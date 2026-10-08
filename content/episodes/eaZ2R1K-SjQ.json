@@ -1,0 +1,259 @@
+{
+  "videoId": "eaZ2R1K-SjQ",
+  "title": "Future of Education: How to Get Ahead before AI Changes Everything",
+  "format": "solo",
+  "guestName": "Marina Mogilko",
+  "guestTitle": "Host, Silicon Valley Girl Podcast",
+  "aboutGuest": "Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.",
+  "publishedAt": "2025-12-05T17:01:21.000Z",
+  "duration": "21 MIN",
+  "coverArt": "https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/eaZ2R1K-SjQ/maxresdefault.jpg",
+  "summary": "Marina Mogilko examines how AI is disrupting entry-level employment and reshaping the value of a college degree, drawing on insights from podcast guests including Aravind Srinivas (CEO of Perplexity AI), Samir Vasavada, Mustafa Suleyman, and Mike Krieger. The episode explores what education should look like in the AI era, when a university degree is worth the investment, and how young people ages 17–26 can build a practical learning roadmap. Key data points and founder perspectives are used to argue that mastery, adaptability, and AI fluency now matter more than traditional credentials.",
+  "keyTakeaways": [
+    "Entry-level job postings in the US are down roughly 35% since January 2023, and recent graduate unemployment has risen to 5.8% — one of the worst readings in years.",
+    "According to Harvard Business Review, AI can already handle 50–60% of typical junior tasks, and entry-level tech hiring in Europe has collapsed by over 70%.",
+    "Workers with real AI skills now earn a 56% wage premium — more than double what it was just one year ago, per PwC's 2025 Global AI Jobs Barometer.",
+    "Aravind Srinivas advises 18-year-olds to pick one direction and go deep for at least one to two years, arguing that sustained commitment to mastery is what builds the inner confidence to bet on yourself.",
+    "The real value of education in the AI era is not memorization or credentials, but the capacity to struggle with hard concepts over years and develop the resilience to tackle increasingly difficult challenges."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "The Collapse of Entry-Level Jobs: Do We Still Need College?"
+    },
+    {
+      "time": "03:30",
+      "seconds": 210,
+      "title": "What Education Is Really For in the Age of AI"
+    },
+    {
+      "time": "07:50",
+      "seconds": 470,
+      "title": "“I’m Not Going to College”: Samir’s Story"
+    },
+    {
+      "time": "12:25",
+      "seconds": 745,
+      "title": "How AI Is Transforming the Way We Learn"
+    },
+    {
+      "time": "13:47",
+      "seconds": 827,
+      "title": "What We Should Actually Teach Our Kids"
+    },
+    {
+      "time": "17:21",
+      "seconds": 1041,
+      "title": "How We Need to Learn in the AI Era"
+    },
+    {
+      "time": "18:26",
+      "seconds": 1106,
+      "title": "A Practical Roadmap for Ages 17–26"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "By the end of 2025, AI can do what used to require a 4-year degree, and the numbers prove it. Entry-level job postings in the US are down about 35% compared to January 2023. Unemployment for recent graduates is 5.8%, one of the worst numbers we've seen in years. At the same time, AI tools like ChatGPT, Claude, Copilot, and Perplexity are getting better and better every month. They write, they summarize, they analyze code faster, cheaper, and more reliably than a lot of juniors. And the data shows the impact. According to Harvard Business Review, AI can already do 50 to 60% of typical junior tasks. Entry-level hiring in European tech has collapsed by over 70%. Starter jobs don't slow down. They kind of vanishing. Which raises the uncomfortable question, if AI can do the job, what's the degree actually for?"
+    },
+    {
+      "speaker": null,
+      "text": "And here is why this hits home for me. I am someone who grew up in a world where education was everything. I spent 5 years studying mathematics and economics in my university. I spent a semester at Technische University at Dresden studying mathematics. I took endless trips to learn languages. I applied to top US universities to do my master's in MBA. Every major opportunity I've had in my life started with education. And it was the same with my whole family. But now I'm raising my kids in a completely different era and I want to understand whether the system that shaped my life still works for theirs."
+    },
+    {
+      "speaker": null,
+      "text": "So in this video I'm bringing together insights from the guests of my podcast—founders, CEOs, investors, and people who are actually building AI. And I'm going to ask them these three questions. What is really happening to education and entry-level jobs? When is a university degree actually worth it, and when is it a bad investment? And how do you build your own education roadmap in the age of AI?"
+    },
+    {
+      "speaker": null,
+      "text": "Let's talk about what's actually breaking. The US labor market looks okay on the surface, but the picture is getting worse for young and entry-level workers. In September 2025, the economy added 119,000 jobs, yet unemployment still climbed to 4.4%, the highest level in nearly four decades. Companies like Salesforce and Shopify are openly telling investors they're meeting growth targets with AI instead of junior staff. Why? Because entry-level roles are exactly what today's AI is best at. Repetitive, rule-based, heavy on routine, light on judgment. Naturally, companies are asking why pay a junior 60k a year when you can pay $10 a month for a model that never sleeps."
+    },
+    {
+      "speaker": null,
+      "text": "So, no surprise then that recent graduate employment has jumped to 5.8% and the average age of technical hires is going up because companies don't want to train juniors anymore. At the same time, the skills that are in demand are changing much faster than universities can keep up. PwC's 2025 global AI jobs barometer shows that workers with real AI skills now earn a 56% wage premium—more than double what it was just a year ago. And universities, most are still teaching 5-year-old material, maybe even worse. But if you feel like you did everything right and the system still isn't working for you, you're not crazy. The system is misaligned with reality."
+    },
+    {
+      "speaker": null,
+      "text": "But before we write off education completely, let's hear from someone who actually builds AI products used by millions and still believes education matters. I asked Aravind Srinivas, CEO of Perplexity AI, a very personal question. If you were 18 in the US today, starting from scratch in this job market, what would you do?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Look, I would definitely pursue my interests, but 18 is too early to know what you're interested in. A lot of people think they know what they're interested in, but my personal opinion is that 18 is still pretty early. So I would just pick something and try to do it well. I think people underestimate the importance of having that inner confidence in you to bet on yourself—that no matter what you do, you can do it well."
+    },
+    {
+      "speaker": null,
+      "text": "Unless you've done some things like that in your life already, like actually go and do something, commit yourself to one thing and do it for a sustained period of time. It's very hard to be good at something if you just do it for a couple of months. You need a year or two to actually get really good, topnotch at something. It could be programming, it could be math, it could be AI, it could be writing apps. Doesn't matter. It takes time to actually be really, really good."
+    },
+    {
+      "speaker": null,
+      "text": "So I would suggest to them to go deep into something. It could be undergrad education. It could be finding a software job at one of the existing companies. You could start off as an intern if they don't hire you full-time, and then convert. And when you're very young, just utilize the time. Surround yourself with peers who would push you to be better. Learn a lot. Be a learning machine. Work really, really hard. And then you acquire that ability to go and be good at anything. You can bet on yourself."
+    },
+    {
+      "speaker": null,
+      "text": "How do you take on hard tasks in life? You can only take it on if you have some confidence that you know you can keep persisting and things are not going your way, and like you will see the light at the end of the tunnel. You have to have done it at least once in your life to bet on yourself for the next set of challenges."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "His message was simple. At 18, you don't need a true calling. You need a direction and you go deep. Mastery takes years, not months. And that's where education, formal or informal, still has a huge role. The real value of education in the AI era is not the ability to memorize 300 slides and pass an exam. It's the ability to show up for years, struggle with hard concepts, and come out on the other side stronger. Education also gives you time to think about what you actually want and it gives you opportunity to dive deep into something that's really hard for you. The deep competence gives you something AI doesn't have—the confidence to take on harder and harder problems."
+    },
+    {
+      "speaker": null,
+      "text": "So no, education is not dead. But the idea that only a 4-year university can give you that is starting to fall apart. If you want to actually boost your professional value in the age of AI, then this free guide from HubSpot will show you how. It is called \"20 Ways to Boost Your Professional Value with AI.\" It breaks down 20 proven ways to get faster results, open new opportunities, and even build new income streams. And the best part is everything is organized into three levels of impact."
+    },
+    {
+      "speaker": null,
+      "text": "Level one is all about daily productivity—the quick wins. 10 simple ways to save hours every week, run better meetings, write stronger emails, and just make AI your unfair advantage at work from day one. My favorite part here is their section on building a personal brand on LinkedIn, something that I've been busy with this year. It gives you tools and a clear action plan to post consistently and grow without feeling overwhelmed."
+    },
+    {
+      "speaker": null,
+      "text": "Level two goes deeper. It shows you how to turn your expertise into actual income streams. It also features six AI-powered plays for creating content, building products, consulting, and speaking. And level three is for stepping into AI leadership—four tactics to become the AI person inside your company and unlock real career growth. From quick hacks to full transformation strategies, the guide gives you steps and prompts you can copy instantly. So if you're ready to move from learning AI to actually using it to grow your career, grab the guide. It's free. The link is in the description. And thank you so much HubSpot for sponsoring this video."
+    },
+    {
+      "speaker": null,
+      "text": "Let's look at someone who decided very early that college was not for him. Samir Vasavada decided back in middle school that he wasn't going to college. Not maybe later, not a gap year—he consciously stepped off the default track and it caused a huge conflict within his family. He became a billion-dollar founder at the age of 20. I asked him what that moment looked like and what his childhood was like. His parents are immigrants from India, and I feel like an immigrant upbringing really contributes to successful people. Were your parents pushing you towards traditional education? Was money an issue?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "Yeah, so my parents came from India to the US. They had a lot of kind of traditional Indian values. School, doing a doctorate, becoming a doctor or an engineer—as much as it is a stereotype, it is true. They really pushed me growing up to be a doctor. But I just didn't want to do that. I always loved building things. And for a while, I was just kind of confused until I figured out the entrepreneurial path. And I just thought from a first principles perspective, \"Okay, what would college help me with? What would the traditional path help me with if I want to start a big business and become really successful?\" And I couldn't really think of anything other than network."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When did you understand that you're not going to do college?"
+    },
+    {
+      "speaker": "Samir Vasavada",
+      "text": "I had started to say it at the end of seventh grade, seventh and eighth grade. I was already kind of thinking about it in sixth grade, but at the end of seventh, eighth grade I kind of knew I wasn't going to do it. I remember the story—there was this honors society, and at the end of school they give all the kids awards for who got first honors and second honors. I didn't get any of the awards because I decided I was no longer going to spend my time and effort on school, and my grades took a huge hit. My parents were so depressed. They're like, \"You didn't get first and second honors. How are you going to get into a good college?\" And my answer was, \"I don't really care. I'm not going to go to college.\" And it just started this huge fight. It was a really challenging thing to change the conventional means. But eventually I kind of recovered from it."
+    },
+    {
+      "speaker": null,
+      "text": "But I didn't just reject college. I built a different education system around myself. Can you give advice to someone who's 17, 18, deciding whether they should go to college or not? They do realize that college gives you network but also this credibility."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think that college has kind of started to lose its credibility. The university system now teaches you what to think and not how to think. So I would say that the best way to grow yourself is to find someone who you think is really impressive and who you want to be in five years and 10 years. Shadow that person, learn from that person. And the way that person will take you seriously is you do the work. You learn about their business or their job. Get an introduction, get a warm introduction to that person, or send a really thoughtful cold email and really show that person you're going to go above and beyond for them. You hustle, and they will take you seriously. Then you will get credibility as a result, and then those things will compound over and over again."
+    },
+    {
+      "speaker": null,
+      "text": "When you're ready to do your own thing, you'll start to build your network, you'll start to have a little bit of experience, and that'll help you carry forward. And I would really say that it's important to think long-term about who you want to be over a 10-year period, over a 15-year period. I had an idea when I was 15. I had written down a set of things about what I wanted my life to look like when I was 20, and I had accomplished every single thing on that list other than getting a dog—that was on my list and I do not have a dog."
+    },
+    {
+      "speaker": null,
+      "text": "And I have another version of that for when I'm 30. You know, sometimes you're going to miss it on the margins, but when you have this kind of vision, this thing you're working towards, this north star, that'll guide you to some extent. You will fall into that. But you really have to be introspective and understand what are the things that I care about, what are the things that I'm good at, and where's the intersection? And am I willing to make this my life's work?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if universities are losing their monopoly, what comes next? My conversation with Mustafa Suleyman, head of AI at Microsoft. I asked him something I've been thinking about a lot. If access to knowledge is now democratized, what happens to traditional education? Do bachelor's and master's degrees even make sense when you can learn almost anything through an AI conversation?"
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "I don't think so. I think that knowledge acquisition is going to be a conversation between you and Copilot. For example, another feature that we just launched is this \"Learn Live\" feature. You actually have a tutor that shows up on the screen and it will lay out a quiz for you on any topic that you like. It doesn't have to be a school curriculum topic. You might be learning about cacti or Persian rugs. It will give you an education on it, lay out the curriculum piece by piece, give you a nice quiz, present it in a nice graphical user interface."
+    },
+    {
+      "speaker": null,
+      "text": "Knowledge acquisition is about to get completely decentralized and available to everybody. You just have an expert teacher in your pocket on any subject."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What Mustafa describes is a quiet revolution. Knowledge used to live in books and classrooms. Now it lives in a conversation with an AI tutor that never gets tired and can explain the same idea 20 different ways. As a parent, I'm no longer worried about my career. I'm worried about what the world will look like for my daughters in 10 or 15 years. So of course, I had to ask another parent who's building the world of the future—Instagram co-founder Mike Krieger. He is the CPO at Anthropic. What are you teaching your kids? What do you think they'll need in this AI-driven job market?"
+    },
+    {
+      "speaker": "Mike Krieger",
+      "text": "Yeah, it's super hard to predict what that market looks like for a six and four-year-old. The what might change a lot and even some of the how will change, but I think there are a few things worth calling out. One is what we talked about a little bit before—being curious and observant about the world. That remains really powerful. There was this whole school event at my kids' school around having even the kindergarteners observe what could be better about the school and then create posters with ideas about how to improve them. That's a great mental exercise for kids."
+    },
+    {
+      "speaker": null,
+      "text": "And I even asked that question, and some of the ideas are creative and some of them are kind of silly, but even having that mentality is something I think will serve anybody well as they grow up because that's a change you could try to make within your school or your community or your company and so forth. So I think that piece matters."
+    },
+    {
+      "speaker": null,
+      "text": "And I think the other one that should remain constant—there was a lot of energy around \"learn to code\" and \"everybody should learn to code,\" and I think too many people interpreted that as \"you should learn Python.\" Yes, you can learn Python and that's going to be helpful for some things, but more than that, it's \"can you think in terms of systems? Can you think systematically?\" The folks that internalized that, even with the advent of AI generating code, can still apply those same techniques. Those are the ones that were like, \"Oh yeah, I learned to code and now I'm feeling adrift because of that.\""
+    },
+    {
+      "speaker": null,
+      "text": "So I think what I hope to encourage in my kids is that sense of curiosity and observation, and then also this ability to think in terms of systems—how do these things interrelate? Whenever they became interested in tariffs because of all the politics and news, my wife had a really wonderful interactive example of how interdependent economies might interact, and you could see their gears turning. So explain the system, don't just explain the facts."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "His answer is the same thing I keep hearing from researchers and founders. The skills that do not expire are curiosity, systems thinking, and the ability to teach yourself hard things. Mustafa made a similar point when I asked him about what parents should focus on in an AI world."
+    },
+    {
+      "speaker": "Mustafa Suleyman",
+      "text": "It's still important to be good at learning knowledge from first principles yourself and not depending on the AI tutor leading you through. I think one of the most important things from school is the discipline of being able to teach yourself. That's a meta skill and that comes with friction. So I think as a parent you still have to introduce discipline and friction into the process because if it comes all too smoothly and it's always on tap, then there's a risk that the child could just get used to having everything instantly available and doesn't learn from the hard work and the benefits of hard work, which I think are important."
+    },
+    {
+      "speaker": null,
+      "text": "So that's something to think through now that everything is going to be so seamless."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So even as AI makes learning easier, we still have to protect the things that actually build character. Struggle, frustration—making kids unhappy is also a good thing. They don't have to be happy all the time. Finishing what you start, because that's what builds the one skill every guest in this video cares about: learning to learn."
+    },
+    {
+      "speaker": null,
+      "text": "And that brings us to the decision many of you are making right now. Should you go to university or not? Universities still make sense if you need a legally required credential—medicine, law in some countries, certain engineering roles—or if you can afford it without taking on life-crushing debt. It also works if you treat it like an accelerator. You join research projects. You build things. You surround yourself with like-minded people. You find mentors. You actually use the network."
+    },
+    {
+      "speaker": null,
+      "text": "It's a bad deal if you're going just because that's what everyone does, or if you'll graduate with six-figure debt and no clear way to monetize the degree. In many fields, you can now get faster, cheaper, and more relevant experience through boot camps, online programs, apprenticeships, and real projects, or basically just teaching yourself with AI."
+    },
+    {
+      "speaker": null,
+      "text": "For most people in 2025 and beyond, the best path is a hybrid. A lighter, more affordable credential paired with aggressive use of AI tools, internships, open-source work, freelance projects, and continuous self-directed learning."
+    },
+    {
+      "speaker": null,
+      "text": "If you're between 17 and 26, here is what you can do next. Step one: pick a 10-year direction. Not a perfect plan—it's going to change all the time—but what problems do you actually enjoy thinking about? What job do you secretly want in the next 10 years? What does a good workday look like for you? Write it down. That's your draft direction."
+    },
+    {
+      "speaker": null,
+      "text": "Step number two: reverse engineer people already there. Find a few people who are already doing that work. Check what they actually do, not just their titles. Look at their projects, tools, responsibilities. You'll start to see patterns like, oh, they have data plus storytelling, or they have AI plus design, or coding plus product."
+    },
+    {
+      "speaker": null,
+      "text": "And then step number three: choose the fastest path to those skills. Now pick a lane. Degree—slower, broader, more in-depth, gives you time to think and try things. Boot camp—faster, focused, results-oriented. Online plus self-study—flexible, needs discipline. Apprenticeship or internship—you get paid to learn. Or hybrid. Don't ask what sounds more prestigious. Ask what gets me these skills and a portfolio the fastest for a price I can handle."
+    },
+    {
+      "speaker": null,
+      "text": "And of course, step number four: build proof of work, not just a CV. Whatever path you choose, the goal is the same. Make things other people can see. Projects, code, designs, case studies, content—anything that proves you can ship, not just know."
+    },
+    {
+      "speaker": null,
+      "text": "And step number five: use AI every day, but don't let it think for you. Let AI explain concepts, quiz you, review your work, help you practice, but keep some friction. Struggle with hard things yourself. AI should be your co-pilot, not your replacement."
+    },
+    {
+      "speaker": null,
+      "text": "And of course, network. Get close to people five to 10 years ahead. Try to mingle with them. Start a podcast—that's how I do it. I started a podcast to sit next to them right here in the studio and ask them how you can be helpful or ask them if they could mentor you. That's how you get real opportunities and references."
+    },
+    {
+      "speaker": null,
+      "text": "I hope this video helps you make the right decision for you. In my case, I graduated from university. I'm grateful for that. I will still save for my daughter's college just in case. You know, it's never a bad idea to have some savings. I want them to have this freedom to choose. Maybe they will tell me, \"Mom, university is outdated. I will just invest in my own business.\" Go do it, right? But I want to make sure I'm prepared for any outcome."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "l6d_0PB0Pbg",
+      "thumbnail": "https://img.youtube.com/vi/l6d_0PB0Pbg/hqdefault.jpg",
+      "title": "Future of Work 2026: The Only Jobs That Will Survive the AI Era"
+    },
+    {
+      "videoId": "RvYv90ftf2M",
+      "thumbnail": "https://img.youtube.com/vi/RvYv90ftf2M/hqdefault.jpg",
+      "title": "$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro"
+    },
+    {
+      "videoId": "qNt5TNn9D9Y",
+      "thumbnail": "https://img.youtube.com/vi/qNt5TNn9D9Y/hqdefault.jpg",
+      "title": "She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley"
+    },
+    {
+      "videoId": "PmpaFWBFy_c",
+      "thumbnail": "https://img.youtube.com/vi/PmpaFWBFy_c/hqdefault.jpg",
+      "title": "Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt"
+    }
+  ],
+  "topics": [],
+  "metaDescription": "Future of Education: How to Get Ahead before AI Changes Everything — Silicon Valley Girl Podcast with Marina Mogilko"
+}

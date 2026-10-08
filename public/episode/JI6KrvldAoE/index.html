@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Renuka Apte is the co-founder of Clockwork, a robotics startup developing fully automated manicure machines. Originally from India, she moved to Silicon Valley in 2009 and spent years building AI infrastructure before launching Clockwork to make beauty services more accessible through technology. She is a robotics engineer driven by a childhood passion for building robots and a personal frustration with the time demands of traditional salon visits.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -454,7 +466,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay girls, get ready to judge. I asked a robot to do my nails and it's going to paint my nails in red. So I'm asking you, is it doing a good job or is it a no? It will only color my nails. It's not going to work on my cuticle. We will discuss this separately. So 10 nails, 10 minutes, $10. By the way, for everyone who's watching from outside the US, manicure here costs from $40 to $60, and I'm not happy with the quality at all. I normally go and do Russian manicure. It's like the top quality—they work with a cuticle—but it costs around $100 and it takes an hour and a half. I definitely don't have much time for it. This is a fully automated experience. There won't be anyone helping me, and this is super exciting.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay girls, get ready to judge. I asked a robot to do my nails and it's going to paint my nails in red. So I'm asking you, is it doing a good job or is it a no? It will only color my nails. It's not going to work on my cuticle. We will discuss this separately. So 10 nails, 10 minutes, $10. By the way, for everyone who's watching from outside the US, manicure here costs from $40 to $60, and I'm not happy with the quality at all. I normally go and do Russian manicure. It's like the top quality—they work with a cuticle—but it costs around $100 and it takes an hour and a half. I definitely don't have much time for it. This is a fully automated experience. There won't be anyone helping me, and this is super exciting.</p>
             <p>Here's a video with instructions before I start. They tell me to relax and not shake my hands. Putting my hand into the robot and trying to relax as much as I can. While I'm fighting the excitement, let me introduce you to the lovely girl next to me. Her name is Renuka Apte, and she's one of the creators of Clockwork—this robot that does your manicure. Originally from India, she has dreamed of building robots since childhood, so much that she became a robot engineer and moved to Silicon Valley in 2009. Here she built AI infrastructures, but finally wanted to create her own robot. And here it is.</p>
             <p><strong class="speaker">Renuka Apte:</strong> I felt like I want a beauty service so often, but I don't have the time to go out—like, get a babysitter, find parking. It's just such a whole production if you have to go to a salon. So this felt like that in-between where you could use technology to make services a lot more accessible.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Okay, so when you went through this thought process—okay, we want to build something in beauty—why nails?</p>
@@ -517,27 +529,31 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Awesome, perfect. Thank you so much. Wow, you're making the lives of women so much more exciting, and this is, you know, it just adds this thing. Because normally I wouldn't do manicures that often. But if this was in my office, like, why not before going out? I just quickly remove my nails.</p>
             <p><strong class="speaker">Renuka Apte:</strong> It should be as easy as grabbing a cup of coffee, right? So you grab your coffee, you come.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> That was it from us for today, guys. If you're in San Francisco, you're in the Bay Area, or if you're in one of the locations where you have your machines, then come over and try it out. This is a super cool experience. This is very 2024, I feel like. We're in the future already. A driverless car just passed by. I did my nails with a robot. Awesome. And this is a super cool experience. This is very 2024.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/kvlMhVz-DeM/" class="related-card">
                 <img src="https://img.youtube.com/vi/kvlMhVz-DeM/hqdefault.jpg" alt="His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)" loading="lazy">
                 <span class="related-title">His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)</span>
               </a>
+
               <a href="/episode/chbinls_V-w/" class="related-card">
                 <img src="https://img.youtube.com/vi/chbinls_V-w/hqdefault.jpg" alt="31 Most Profitable Business Ideas for the Next 10 Years" loading="lazy">
                 <span class="related-title">31 Most Profitable Business Ideas for the Next 10 Years</span>
               </a>
+
               <a href="/episode/PR__eFQsnhg/" class="related-card">
                 <img src="https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy">
                 <span class="related-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</span>
               </a>
+
               <a href="/episode/JFilKfL7_9A/" class="related-card">
-                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
-                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can&#x27;t Replace in 2026 (And How to Get Them) | Daniela Rus</span>
+                <img src="https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg" alt="Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus" loading="lazy">
+                <span class="related-title">Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus</span>
               </a>
       </div>
     </section>

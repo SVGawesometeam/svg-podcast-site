@@ -1,0 +1,299 @@
+{
+  "videoId": "213rSCulKUQ",
+  "title": "Top 1% Career Strategy: How to Get Hired in the AI Era",
+  "format": "compilation",
+  "guestName": "Sal Khan, Ryan Roslansky, Yamini Rangan, Grant Lee, Aaron Levie, Luana Lopes Lara, Conor Grennan",
+  "guestTitle": "Khan Academy, LinkedIn, HubSpot, Gamma, Box, Kalshi & NYU Stern",
+  "aboutGuest": "This episode features seven executives leading companies with 30,000+ employees combined: Sal Khan founded Khan Academy, Yamini Rangan leads HubSpot (publicly traded), Aaron Levie runs Box, Grant Lee co-founded Gamma, and Ryan Roslansky previously served as CEO of LinkedIn for six years, scaling it from 700 million to 1.3 billion members. Together they represent the decision-makers responsible for hiring strategies across major tech and education companies.",
+  "publishedAt": "2026-09-04T13:00:04.000Z",
+  "duration": "23 MIN",
+  "coverArt": "https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews seven executives who collectively run companies employing over 30,000 people to decode modern hiring practices in 2026. The job market is at a 37-year difficulty peak, with 244 applicants per open role and resumes increasingly filtered by machines before human eyes. The guests reveal that traditional signals like GPA and degrees matter far less than demonstrated skills, social proof, and the ability to experiment and learn—particularly with AI tools. Ryan Roslansky, who ran LinkedIn for six years and grew it from 700 million to 1.3 billion members, shares critical data: there is no linear career path anymore, skills required for specific roles change 25% every couple of years (projected to change 70% by 2030), and career progression is increasingly non-traditional. Yamini Rangan crystallizes what HubSpot hires for in the AI era: explorers with a scientist's mindset who experiment and test hypotheses, people who stay close to ground-level work and customer problems, and those driven by curiosity and customer orientation rather than following prescribed playbooks.",
+  "keyTakeaways": [
+    "Resumes are dead—recruiters now scan LinkedIn profiles, YouTube videos, social media, and ask for references before deciding to interview, making traditional resume optimization futile",
+    "The three hiring criteria for 2026: experimentation mindset (forming and testing hypotheses), staying close to ground-level work and customer problems, and passionate curiosity about solving customer problems with available tools",
+    "LinkedIn data shows no linear career path exists anymore; skills change 25% every 2-3 years (expected to change 70% by 2030), making continuous learning and skill diversification essential",
+    "Generalists who spike in one area outperform specialists; technical skills matter less than the hunger to automate processes and learn tools—Marina's YouTube producer built features with automation tools that previously required engineers",
+    "Being findable on LinkedIn differs completely from being chosen; employers scan for demonstrated knowledge through posts and projects, not credentials, requiring you to publicly prove capabilities rather than claim them"
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Why breaking in got so hard"
+    },
+    {
+      "time": "01:16",
+      "seconds": 76,
+      "title": "Sal Khan: what your resume shows"
+    },
+    {
+      "time": "02:26",
+      "seconds": 146,
+      "title": "Roslansky: no linear career path anymore"
+    },
+    {
+      "time": "03:54",
+      "seconds": 234,
+      "title": "Being findable versus being chosen"
+    },
+    {
+      "time": "04:26",
+      "seconds": 266,
+      "title": "Yamini Rangan: three things HubSpot hires for"
+    },
+    {
+      "time": "06:59",
+      "seconds": 419,
+      "title": "How I test this when hiring"
+    },
+    {
+      "time": "07:47",
+      "seconds": 467,
+      "title": "Grant Lee: why Gamma hires generalists"
+    },
+    {
+      "time": "10:36",
+      "seconds": 636,
+      "title": "Do you really need technical skills?"
+    },
+    {
+      "time": "11:10",
+      "seconds": 670,
+      "title": "Aaron Levie: how technical to get"
+    },
+    {
+      "time": "12:38",
+      "seconds": 758,
+      "title": "The apps to open first"
+    },
+    {
+      "time": "13:35",
+      "seconds": 815,
+      "title": "Junior roles: what's actually shrinking"
+    },
+    {
+      "time": "14:22",
+      "seconds": 862,
+      "title": "Luana Lopes Lara: AI allowed in interviews"
+    },
+    {
+      "time": "16:36",
+      "seconds": 996,
+      "title": "The question I asked every candidate"
+    },
+    {
+      "time": "17:03",
+      "seconds": 1023,
+      "title": "Conor Grennan: what to say in interviews"
+    },
+    {
+      "time": "19:43",
+      "seconds": 1183,
+      "title": "Sal Khan: come with a hundred agents"
+    },
+    {
+      "time": "20:26",
+      "seconds": 1226,
+      "title": "Five things to start this month"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Breaking into the job market right now is harder than it has been in 37 years, harder than during the Great Recession. 244 people apply to the average open role. And a great resume isn't enough anymore because a machine reads it before a person does. If it doesn't have the right keywords, nobody ever sees it. And if you load it up with keywords, it starts looking like... AI wrote it and half of hiring managers throw these out. Some people tell you a degree still matters. Others say it stopped mattering completely as long as you have three specific skills. So what is actually going on? I asked people who run companies employing more than 30,000 people and every one of them decides who gets in on a daily basis. By the end of this video, you'll have a step-by-step plan for getting hired in 2026. Skills they're hiring for, What to bring instead of a resume and the exact thing to say in the interview."
+    },
+    {
+      "speaker": null,
+      "text": "And as a bonus, you get numbers from inside LinkedIn on how fast your job is changing. You send the resume and then you wait. Maybe something comes back three weeks later, usually nothing does, and you never actually find out what happened to it in between. So I put that exact question to Sal Khan, who runs Khan Academy and hires constantly. And he was honest with me about it."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "Imagine this, someone today graduates from Stanford, pick your major, good major, with a 3.9 GPA. When I look at that resume, I say, okay, probably smart, got into Stanford, good GPA. I don't know if those skills they learned are gonna be directly transferable, but there's probably someone I can work with. Leadership skills, I don't know looking at their GPA. Maybe, oh, yeah, okay. Maybe they're the class vice president or if they were the co-captain of the lacrosse team. Okay, maybe they have leadership skills. I don't know. But that's only, you're kind of reading."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "There's signals, not evaluation. Evaluation."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "And what I normally do now when I see a resume, even someone who's been working, no matter what they write, I look for YouTube videos of them. I look some evidence of like, how do they communicate? How do they? And then you try to do it in an interview, which is just, you only have a few hours to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When we're hiring, my team is on your social media profiles the same afternoon. We're asking around for references and we always end up on LinkedIn because that's where the real picture is. So I put the question to Ryan Roslansky, who ran LinkedIn for six years and took it from 700 million members to 1.3 billion. What does LinkedIn's own data say about where careers are going?"
+    },
+    {
+      "speaker": "Ryan Roslansky",
+      "text": "Since the beginning of LinkedIn, the feature that is requested most from members is show me what a typical career path is supposed to look like. LinkedIn, you have all this data. So if I want to become a CFO or a CEO or an accountant or whatever, what is the path that people take? And the reality is in the data, there is no such thing as a linear career path. Like it's all over the place. So the more that people first and foremost recognize that you have to take your career into your own hands, there's no natural path that exists that you just get on, I think is really, really important. Right now it's more important than ever though, because skills are changing. The types of skills that are necessary for a specific role on LinkedIn have changed."
+    },
+    {
+      "speaker": null,
+      "text": "North of 25% over the last couple of years alone, we expect they'll change by 70% by 2030, Largely influenced by AI and new tools and new ways of doing these professions. So, you know, my, you know, I often when I talk to people about what they should do with their career, it's it's less about where do you want to be in five years. And it's more about over the next few months, like what new skills do you want to learn because to your point, these rules are flattening. Generalists are more and more where people are going these days. So we always thought that the extension of your LinkedIn profile isn't just where you went to school, where you've worked, what skills you have. But the ability to demonstrate the actual knowledge that you have in your head, like by posting on LinkedIn."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Being findable and being chosen are two completely different things. And the gap between them is exactly where people get stuck for months without ever understanding why. Because what employers are scanning for isn't sitting on your profile at all. I heard a version of it from everybody I spoke to, but Yamini Rangan is the one who laid the whole thing out in a single answer. She runs HubSpot, a publicly traded company, thousands of employees, and she names three specific things she hires for in 2026, in the era of AI."
+    },
+    {
+      "speaker": "Yamini Rangan",
+      "text": "The way I would frame it, we are looking for explorers. And I'll tell you what that means. You know, I think there's a fundamental shift that's happening with AI, where not everybody knows exactly how to go from point A to point B. You know if you knew exactly, and think about them as map readers, right? You know exactly what point A is, point B is. You read the map because someone has figured out the path and you follow the directions and you get there. That is what we were doing because you had playbooks that worked than you were. You know, really clear about following the playbook. Today, with AI, there is no map. So you have to get comfortable with being an explorer. And there are a few skill sets that are important. The first one is that you have to have almost a scientist mindset."
+    },
+    {
+      "speaker": null,
+      "text": "And I look for people who are comfortable experimenting and having a hypothesis, proving if the hypothesis is right or wrong. Versus saying there's a set path, right? Like experimentation, moving quickly, having a hypothesis and proving whether you're right or wrong. That is like skill number one. And I look for examples of when they have done it or how they have comfort around it. That's like number one thing that I look. The second is just this passion and curiosity to go deep in the work. What is happening is that in order for AI to be effective, you got to be close to the ground. You have to know. What parts of the workflow are broken, what parts if the workflow can actually get value from AI. And you got to get like really close to the ground in it. And I talk to customers, but we also do a Gemba walks. We look at like how people are using different technology."
+    },
+    {
+      "speaker": null,
+      "text": "I'm looking for people like that, who are very close to ground, close to process, who can actually make changes. That's the second one, and then the third is really what I would say as just curiosity and customer orientation. Again, my focus has been, don't forget about AI. Use it to solve something for your customers. So can you be super curious and ask the right questions of your customers to get the right thing? And if you have the ability to experiment, the ability to stay close to work, the ability stay curious. Then you're actually going to thrive in the world of AI. If you are stuck with your playbook, if you are very comfortable with going from point A to point B in a path that someone else has prescribed, then you just not going to be successful in the word of AI"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's what I'm looking for. Here is how I test for that when I'm the one hiring. You don't have to write code. You just have to know which tool does the thing. It's on the list for every single role we hire for, either the skill itself or a real appetite to go and learn it. For example, my YouTube producer built something this year that a few years ago would have taken an actual engineer. And we keep building stuff like that because when I was hiring them, I was looking for this. Itch to build something, to automate something, and they absolutely love that because that gives them more time to actually think strategically and do more fun stuff. Another guest that I wanted to highlight in this video is Grant Lee. He co-founded Gamma that we use all the time, and I asked him, do you have anyone on this team who does this best?"
+    },
+    {
+      "speaker": null,
+      "text": "And by that I mean automating different processes, and he didn't name an engineer at all."
+    },
+    {
+      "speaker": "Grant Lee",
+      "text": "I feel like nearly all employees are what I would still define as generalists today, even though they spike in different areas. So, for instance, our head of design, exceptionally talented designer, very visual, but he also knows how to code. And he was coding even before vibe coding was more accessible to most designers. But the fact that he can now ship something like end-to-end, test it, like get early versions into the hands of users, that's a superpower, right? So he can cross domains where You know, traditionally it'd be a designer or UX researcher that does a little bit, some of this like early, you know, sort of investigation or like early research, he can do that himself, develop the early prototype, ship the early protocol, get something into the hands of users to actually give feedback on, and oftentimes then ship something into production, like almost like completely end to end."
+    },
+    {
+      "speaker": null,
+      "text": "That just wasn't really possible before, but for us, like we try to look for that, the spirit of like a generalist across every function, whether it's, you knows, sales, marketing, engineering, product design. And I think that allows you to have a relatively lean team that can, again, like play across multiple domains at any given point in time. And I thinking general, that just means a team that can be pretty collaborative too, because you have deeper empathy for what each function can bring to the table. And like when you're bringing something to an engineer, for instance, you've already done so much work to think through like, okay, how do I make this right so the handoff is as seamless as possible? These things I think are hard to quantify, but when you have a team of generalists, There is some magic in like working."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "AI changed a lot about how hiring works on both sides of the table. People who are job hunting right now tell me this interesting story where they record every conversation, then run it through an LLM and ask where they were vague and how they could have answered stronger. I really like that approach because I do that myself. I analyze every single podcast script and see how I did. Versus what can I do better? And we also do the same thing with our business calls because when a call is not recorded, a lot of context just disappears and that context is what the next decision depends on. The tool I want to tell you about is built exactly for this and it is called Transcriptor. It joins your call as a bot, records transcripts, and when the call ends, you have a structured summary with the action items pulled out, ready to share with your team."
+    },
+    {
+      "speaker": null,
+      "text": "Another useful part is the search across transcripts of all your past calls. Before a call, you look up what was promised to you and what you promised, and it pulls the exact line out of a conversation nobody remembers till you start from where you actually left off. And all of it sits behind enterprise-grade security, so it works whether you're a five-person startup or a larger org. Try Transcriptor with the link in the description, and if you sign up with your work email, you get 300 free minutes. And you're probably thinking, so I keep doing my current job perfectly, and at the same time, I teach myself technical skill for a job I don't even have yet. That's two jobs, and almost nobody has room for two jobs. So ask Aaron Levie how technical you actually have to be. He's been running Box, again, a publicly traded company for 20 years, and he hires across marketing, sales, finance, engineering, all of it."
+    },
+    {
+      "speaker": null,
+      "text": "He drew a very specific line, and then he told me exactly which tools to open first. When you're hiring now, how is it different from hiring five years ago? What are you looking for in a candidate?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "So I think right now is a great time to be going deeper technically. You don't have to like, doesn't mean like you have to be like vibe coding all the time and building entire products, but you should try and really understand what is the agent doing? How does it work? How does MCP work? How do CLIs work? How do skills work? And getting really well versed in that. The people that are doing that will have a huge leg up in the next kind of three to five years because all of these companies will be hiring for people that can do that within their workflows. So we're definitely looking for people whose technical acumen is growing, whose AI sort of savviness and fluency is growing. You want to be using these tools in your free time as much as possible so you again understand kind of how they're working and what's going on."
+    },
+    {
+      "speaker": null,
+      "text": "At the same time, I don't think a lot of the, I think it actually still matters that you have like some degree of domain expertise, like you're really good at marketing, you understand what customers want, you're good at selling. You're good at product management and interviewing customers and assessing markets. Those are these timeless skills that transcend any kind of technology revolution. And so AI is just a way of augmenting those domain skills. So in some respects, any role that we're hiring for, marketing, sales, finance, engineering, et cetera, we need all of those domain skill, but also we need you to now be increasingly AI-fluent or a little bit more technical."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you recommend top three apps that people should be using?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I mean, it probably won't be much of a surprise. I would download Codex, I would download Claude."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Even for non-technical people."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, 100%. Well, especially, partly is because Codex is becoming more inclined toward knowledge work use cases."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what should they be doing with it, like automate a process within their... Automate a process."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Automated process, give it just a crazy problem and see what happens, like go do this research in this market, wire up multiple MCP servers to data sources you have, so you understand how does it work, how is it querying that other system, how is accessing my email, like, oh, scary, oh. No, actually I understand it now, like get a sense of how that all kind of is working together. So I think just any one of the top AI tools for productivity, maybe for coding. Is a good way to get started and it'll already get you like 90% of the way there. So Codex. Probably Claude, Cowork, Perplexity — like these are some just easy ones to just get started with Yeah, and you'll have a good sense of kind of what the market looks like"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "There is one more side of this market I want to talk about, and that's junior roles. Job openings in the US fell to 6.5 million at the end of last year, the lowest level since 2020. And 43% of recent graduates are now working in jobs they don't require the degree they paid for. So the bottom rung has genuinely got harder to reach. But the more of those conversations I had, the more it looked like what's actually shrinking is the junior role as we used to define it. The version that was basically a list of tasks. Somebody hand it to you. Luana Lopes Lara co-founded Kalshi, a prediction market whose entire business is running the world on the numbers and pricing what happens next. So basically they're predicting all types of things. And nobody has better tools for seeing where all of this is going. How are you?"
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "Inspiring these days. How has it changed from the last year? We like being very lean. So we are 170 people at the moment and people that work very well at Kalshi, they are very low ego and willing to learn a lot. I mean, we're very direct culture. We really like being efficient with time. So that means like feedback is like, I don't like something you did, I'll tell you right now and I'll be honest about it and you have to be in that kind of like cultural side is very important for us. But realistically, the two things that matter the most is just working really hard and having like a commitment to work above everything else. When I say commitment to work, it's more about when we ask you to do something and we trust you with something, we can trust that it's going to be done great. It's not about number of hours. It's about these things. Is it about AI as well?"
+    },
+    {
+      "speaker": null,
+      "text": "It is about, so in the engineering side, in the Engineering interview, we put a lot of time into it and kind of like, now you can use AI in the interviews and it's completely fine and all of that. And actually in a lot of the systems review that we do interviews on, systems review like previous project review is kind of a big component. Of that because now a lot of the things that we used to look at like two years before like, oh, can someone actually do this or do that? But now like, whatever, like that's just not relevant. We are actually talking about in design now, I told you that we're trying to get more and more on the figure out how to use AI in a better way in design. In our design interviews, we're starting to be like, has this person used a lot of AI? So it's spreading to design. What about knowledge work? Less so."
+    },
+    {
+      "speaker": null,
+      "text": "We need to do one thing actually, funnily enough, in the legal team. We're starting to do that a lot too. To be like, cause we have so many cases of litigation, we're trying, we're started to be a lot more like, how have you used AI for this? How would you use AI for that? It's less about, and it kind of adds, goes back to the willingness to learn. I think it's less about them having the answers or having used it to do something amazing before, but more like are they willing to do it? Because we have, again, like our engineering team. What we're doing is that we're kind of putting them, the AI group in like design, and then they're going to go into legal and try to kind of like, how do we help them to do it? And we just want people to be open-minded."
+    },
+    {
+      "speaker": null,
+      "text": "And the answer is like, how they used to work is not the way that we were going to work at Kalshi and the world's going to do, and we just need them to be opened-minded and have like low ego to figure out like, oh, this thing that I thought I was very good at is actually I don't need to do anymore."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When we were hiring a social media manager this year, every single question asked was some version of the same thing. How would you automate this? Where does AI go into this process? And honestly, I don't need anyone to have the right answer. If somebody says, I'm not sure, but here is how I'd test it, here are the two things I'd try first, that's exactly what I want to hear. Because in the 10 seconds it takes them to say it, I can see the entire shape of how they think. Conor Grennan told me something very close to that."
+    },
+    {
+      "speaker": "Conor Grennan",
+      "text": "Just break your heart when people are struggling to find work, right? And with AI, I think that we're in a zone right now where the opportunity is absolutely colossal for this reason. It requires understanding AI and really using AI well is an incredible tool because you don't have to learn anything. You don't need to be a coder. You don t need to do anything. Literally, all you need to able to do is talk like a human and everybody can do that. That's number one. But number two, and this is the really important thing, it's not enough to just go into a job interview and say. I know how to use AI, because everybody can say that. And it's sort of like Excel thing. Everybody uses it, but people are using it to make a grocery list or something like that, not to transform how a hedge fund operates. The Holy Grail is, can you invent the work of everybody around you?"
+    },
+    {
+      "speaker": null,
+      "text": "So if you go into a job interview, and this is what I tell everybody to do, go into job interview prepared with what they do, what are the, like they'll have given you a sense of what you should do. So go in there and say like, hey, here's my domain expertise. But let me just show you what I would do with AI and how I would reinvent this process. Because folks, and you know this too, right? Anyone can do this with Claude, Gemini, ChatGPT. You don't have to come up with it. You just have to monitor and steer it. So say, here's how I will change this role to even potentially put me out of a job, right. I mean, senior leaders would love that. But here's the really holy grail. This is the kicker on all this. This is a kicker, such a ChatGPT thing to say, my gosh, I take it back."
+    },
+    {
+      "speaker": null,
+      "text": "But here's the really important thing say and here's how the team can use this in a very different way Here's the exact workflow. Here's what I would change Here's how I would think about it because we want to upskill a team You don't want just hire somebody to come in and do AI differently You want somebody to coming in and change the way it's done around that person that to me is the holy grail"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "One thing before we keep going, if you want to stay updated on all the things these founders say here, we take the use cases and prompts from every conversation and put them into my newsletter called Future Proof. And of course, we also put my own beautiful use cases there. For example, we'll put together the seven skills that came up again and again, the ones people will need in the next few years. These are the skills that my team and I are also using daily. Subscribe through the link in the description. You'll get that one, and you can also read our previous newsletters and see what you missed. Everything in this video comes back to being visible somewhere, and it works in both directions because the only reason you get to hear any of this is that founders now show up on podcasts and on socials. 10 years ago, I had a really hard time explaining what I was doing in Silicon Valley."
+    },
+    {
+      "speaker": null,
+      "text": "Today, founders come here. And tell you exactly who they hire. So if you're job hunting right now, leave a line about yourself in the comments. People really do read them. And I know that a lot of my guests read the comments after the podcast goes live."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "This is a moment in time where, even though in some ways it's hard to get a job, it's also a place, we're in a moment where it's actually still easy to differentiate yourself. Like today, if I put on a job application that I have a webpage, people are like, big deal. But in 1996, if you said I have web page, people are, like, ooh, let's hire this person. They know what's about to happen."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Now you can say I come with a hundred agents."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "I come with a hundred agents, or why don't you interview my agents first, or do you have an agent that would like to talk to mine, or here's my portfolio of AI-generated art, or here are my workflows that I've automated, or here is a loom video I created a day in my life where I have automated my life with agents. If you know anyone like that, I would be interested in hiring them for Khan Academy tomorrow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But all in all, here's what surprised me once I put all of this together. Not one of them told me that a resume was the thing that got somebody hired. None of them pointed out a degree either. Or... At years of experience. Every single person I ask describes somebody whose work they had already seen before the interview ever started. Which is why none of this can wait until the week you start applying. So here are five things, and you can begin all of them this month. First, take one process inside your job you already have and rebuild it with AI. Like properly, until it genuinely saves time. That's your demo, and that's the single most useful thing you can do right now. Second, write about it publicly. Like, come on, I've been telling everyone to start being active on socials many, many years ago. Now with LinkedIn, I think the awkwardness of it goes away because Instagram is more like style day to day."
+    },
+    {
+      "speaker": null,
+      "text": "YouTube is long-form, LinkedIn is where your professional content lives. Because every single one of those people goes looking for evidence of you before the interview, and your posts on X and LinkedIn are the ones that keep working while you sleep. Third, try to go one level deeper technically that your role strictly requires. The way Aaron described it, just understanding how the tools actually work underneath. Fourth, keep two or three real examples of experiments you've run, including the ones that failed because people like Yamini who runs HubSpot are going to ask you exactly for that. And fifth, when you finally get into the room, don't spend any time defending your resume. Spend it showing how you would rebuild process. Because the whole narrative inside companies now is, let's make our company suitable for agents, let us make sure things that can be automated are automated. So you have to be the one presenting this opportunity for them."
+    },
+    {
+      "speaker": null,
+      "text": "I really hope this was useful and I don't know if you're seeing this but what I'm seeing from my perspective is that AI is creating more jobs, more new jobs than it's taking away. So it is a social elevator for a lot of people who've been waiting for the next opportunity. And if you are the one who wants to jump on this social elevator, please subscribe to this channel because I'm sharing a lot of these conversations about getting hired and advancing your career or starting a business with AI. Don't forget to subscribe and I'll see you soon. And by the way, leave a comment. I'm going to read them too."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "o-wv_szZ0V0",
+      "thumbnail": "https://img.youtube.com/vi/o-wv_szZ0V0/hqdefault.jpg",
+      "title": "Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think"
+    },
+    {
+      "videoId": "Y854KRfONAU",
+      "thumbnail": "https://img.youtube.com/vi/Y854KRfONAU/hqdefault.jpg",
+      "title": "The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up"
+    },
+    {
+      "videoId": "xiJsfvaxzRY",
+      "thumbnail": "https://img.youtube.com/vi/xiJsfvaxzRY/hqdefault.jpg",
+      "title": "$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months"
+    }
+  ],
+  "topics": [],
+  "metaDescription": "Marina Mogilko breaks down how to get hired in 2026 with seven leaders — Sal Khan (Khan Academy), Ryan Roslansky (LinkedIn), Yamini Rangan (HubSpot), Grant Lee (Gamma), Aaron Levie (Box), Luana Lopes Lara (Kalshi) and Conor Grennan — on the Silicon Valley Girl Podcast"
+}

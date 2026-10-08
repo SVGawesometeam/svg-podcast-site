@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>16 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=t6UbvaOGIEI" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/t6UbvaOGIEI/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/t6UbvaOGIEI/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,8 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -424,7 +436,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Over the past 10 years, I've created 1,215 long form videos across three YouTube channels, built a strong presence on Instagram and TikTok, launched both online and offline products, and grown an amazing team of producers, editors, and managers all working together to turn my passion into a $34 million business.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Over the past 10 years, I've created 1,215 long form videos across three YouTube channels, built a strong presence on Instagram and TikTok, launched both online and offline products, and grown an amazing team of producers, editors, and managers all working together to turn my passion into a $34 million business.</p>
             <p>In this video, I'm going to walk you through my journey of building a successful Creator business. I'm going to tell you where the 34 million comes from and how it was calculated, and I'll share five key things I've learned along the way so you can build a media empire and build a business utilizing this amazing algorithm that provides you free traffic, free leads, everything free if you make the right content.</p>
             <p>My mindset is there is enough attention for everyone. One of the things that I learned along the way is that mindset is everything. When I was just starting my journey, I had this mindset like, &quot;I'm not going to share any tips or tricks about YouTube because they're going to take away my viewership. We're competing with everyone.&quot; A lot of my income growth actually happened from changing my mindset to, &quot;There's enough attention for everyone. There's so much money in the world.&quot; I want you to utilize the same mindset because only with this mindset can you go ahead and start sharing the knowledge, start sharing messages that you want to spread, because this is how you build your own career in the Creator economy.</p>
             <p>My first video was about GMAT. That video idea didn't come from analyzing the market. It didn't come from trying to calculate where the highest CPMs are. It came from my passion, and that's lesson number one: you need to build a business and create content around your passion because that's the only thing that's going to work.</p>
@@ -458,24 +470,28 @@
             <p>Change always comes with people disagreeing with you and mocking you for doing things. But as a person who's done that so many times—I remember when I first started talking about investing in 2020, sharing my journey, I got mean comments saying, &quot;Oh, if a person as dumb as Marina can start investing, then it means it's time to exit the market.&quot; There's the saying, &quot;If a housewife starts investing, that means the market is peaking and there's a bubble.&quot; People told me that. Guess what? Four years later, my portfolio is doing great, and I'm doing great. I started doing that and sharing my knowledge, and I did not give up because of those comments.</p>
             <p>These days, I'm more confident in embracing my interests, and my audience is responding positively. The truth is reinvention is one of the best ways to avoid burnout.</p>
             <p>So here are the lessons I learned on my journey from creating videos in my bedroom to building a $34 million business across social media. I hope this helps and I hope it's inspiring for you.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/Y4Jxbet2RK8/" class="related-card">
                 <img src="https://img.youtube.com/vi/Y4Jxbet2RK8/hqdefault.jpg" alt="6 habits that made me a multi-millionaire" loading="lazy">
                 <span class="related-title">6 habits that made me a multi-millionaire</span>
               </a>
+
               <a href="/episode/qrzRg0JUBj0/" class="related-card">
                 <img src="https://img.youtube.com/vi/qrzRg0JUBj0/hqdefault.jpg" alt="34-year-old millionaire explains: 13 habits keeping you poor" loading="lazy">
                 <span class="related-title">34-year-old millionaire explains: 13 habits keeping you poor</span>
               </a>
+
               <a href="/episode/Q66gsBJnKKQ/" class="related-card">
                 <img src="https://img.youtube.com/vi/Q66gsBJnKKQ/hqdefault.jpg" alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger" loading="lazy">
                 <span class="related-title">Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger</span>
               </a>
+
               <a href="/episode/YfRkj9kmQf0/" class="related-card">
                 <img src="https://img.youtube.com/vi/YfRkj9kmQf0/hqdefault.jpg" alt="Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller" loading="lazy">
                 <span class="related-title">Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller</span>

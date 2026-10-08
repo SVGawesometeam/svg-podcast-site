@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Coco Rocha is a Canadian supermodel with over two decades of experience working with iconic brands such as Chanel and Vogue. She is the founder of Coco Rocha Model Camp and co-owner of Nomad Management, where she mentors and develops emerging modeling talent. Beyond the runway, Coco is a prominent advocate for model labor rights and a entrepreneur who balances her career with raising three children alongside her husband and business partner.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -504,7 +516,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> At an age of 14, 15, I'd get on a plane, do a shoot, come home. If it was back then, go to school, do your homework. What's the craziest story that happened to you?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> At an age of 14, 15, I'd get on a plane, do a shoot, come home. If it was back then, go to school, do your homework. What's the craziest story that happened to you?</p>
             <p><strong class="speaker">Coco Rocha:</strong> There's too many. Being in a room that's just full of fire, being in water, working on an elephant. They have to pee every 15 minutes. If you see me on the airplane, I'm crying. I wanted to be mom more than anything. So I didn't even think about what that means for a model. There is not that important. What about AI? H&amp;M just replaced their models. Why keep everyone around that's mediocre? It's easier to use AI, but if there are still these core people with great values and who are so good at their job, yes, people will still want to be around them.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> How do you become that model? Thank you so much. I'm enjoying this camp a lot. It's giving me so much energy and this is your 147th time doing it. Where does the energy come from?</p>
             <p><strong class="speaker">Coco Rocha:</strong> I honestly sometimes at the end of it I'm like, &quot;Wow, we did that one more time.&quot; But it really has to do with the energy of the room. Sometimes at the beginning people could be shy or bashful and you're like, oh, I've got to get it out of them. Then there's a moment when something changes in the room and everyone's excited. So it's really not my energy you're feeling—it's their energy. And it helps me too.</p>
@@ -556,24 +568,28 @@
             <p><strong class="speaker">Coco Rocha:</strong> Oh, there's too many. You're going to hear later. I'm going to save those for tomorrow night. We have our like, I share all my silly crazy photo shoots and stories, but you name it, it's probably happened. Weird stuff like working with animals—they're not fun. Being in a room that's just full of fire, being in water, working with an elephant. Did you know they have to pee every 15 minutes? So you have to get the photo and then they've got to go. Working with other people's children is kind of hard because it's not even your child. We call it &quot;guerrilla style&quot; when you don't have the right to be maybe in a building or on the grounds, but you're shooting really fast and hoping no one gets you in trouble. Things where you can't control the sun, you can't control the environment, but you have to produce this moment. Those are usually the most challenging. And then of course the team. You never know if you're getting a good team or a bad team early in your career because you don't know everyone. So that, I think, was the challenging part—like, &quot;Oh, I have a bully on set or this person is just not fun to work with.&quot; But now I get to pick my teams a little more. So it's great. It's fun. I love having a shoot where it's just full of laughs and giggles and we create some fantastic things.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> We're almost done. I just actually wanted to show you some photos. Just a sec. What would you say to this, Coco? Any advice for her?</p>
             <p><strong class="speaker">Coco Rocha:</strong> That photo looks so much like Ioni right now. It's kind of crazy. I remember shooting that in lower Manhattan. I remember being so lost in movement, didn't know what I was doing, but playing with my hair, my long, long hair. The photographer was like, &quot;Yeah, keep going.&quot; And all the photos, it's just me tangling my hands in my hair. Around that time, I do remember hearing from a photographer. He showed me a photo of a famous model at the time, her name is Gemma Ward from Australia, and he wanted me to copy this pose. He said, &quot;Be like this model.&quot;</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/KnWKFp472GI/" class="related-card">
                 <img src="https://img.youtube.com/vi/KnWKFp472GI/hqdefault.jpg" alt="What No One Tells You About Building a Startup With Your Spouse (Our Story)" loading="lazy">
                 <span class="related-title">What No One Tells You About Building a Startup With Your Spouse (Our Story)</span>
               </a>
+
               <a href="/episode/PmpaFWBFy_c/" class="related-card">
                 <img src="https://img.youtube.com/vi/PmpaFWBFy_c/hqdefault.jpg" alt="Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt" loading="lazy">
                 <span class="related-title">Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt</span>
               </a>
+
               <a href="/episode/l6d_0PB0Pbg/" class="related-card">
                 <img src="https://img.youtube.com/vi/l6d_0PB0Pbg/hqdefault.jpg" alt="Future of Work 2026: The Only Jobs That Will Survive the AI Era" loading="lazy">
                 <span class="related-title">Future of Work 2026: The Only Jobs That Will Survive the AI Era</span>
               </a>
+
               <a href="/episode/bzfklNb1wjc/" class="related-card">
                 <img src="https://img.youtube.com/vi/bzfklNb1wjc/hqdefault.jpg" alt="Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu" loading="lazy">
                 <span class="related-title">Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu</span>

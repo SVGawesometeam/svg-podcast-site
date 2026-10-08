@@ -1,0 +1,579 @@
+{
+  "videoId": "U7PcyE0p54s",
+  "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity",
+  "format": "interview",
+  "guestName": "Aravind Srinivas",
+  "guestTitle": "Co-founder and CEO, Perplexity AI",
+  "aboutGuest": "Aravind Srinivas is the co-founder and CEO of Perplexity AI, an AI-powered answer engine he co-founded in 2022. Under his leadership, Perplexity grew from a $150M valuation to approximately $20B by 2025, positioning itself as a direct challenger to Google, OpenAI, and Meta in the AI search and browsing space. Before founding Perplexity, Aravind conducted research at OpenAI and DeepMind and holds a PhD in computer science from UC Berkeley.",
+  "publishedAt": "2025-09-26T15:01:04.000Z",
+  "duration": "41 MIN",
+  "coverArt": "https://img.youtube.com/vi/U7PcyE0p54s/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Aravind Srinivas, co-founder and CEO of Perplexity AI, about the company's growth from a $150M valuation in late 2023 to $20B by 2025. They discuss Perplexity's new AI-powered browser Comet, the company's growth philosophy of 1% daily improvement compounding to 3,700% annually, and how agentic AI is disrupting advertising, entry-level jobs, and traditional education. Aravind also shares his perspective on how AI is shifting power from big tech corporations to individual users.",
+  "keyTakeaways": [
+    "Perplexity grew from a ~$150M valuation to $20B in roughly two years by compounding 1% daily product improvements — mathematically equivalent to 3,700% growth in a year (1.01^365 ≈ 37.78).",
+    "The three qualities Aravind credits for Perplexity's rise are shipping fast while maintaining quality, relentlessness (inspired by Jeff Bezos, who owns relentless.com which redirects to Amazon), and constant curiosity about product improvement.",
+    "Perplexity's new browser Comet is the first AI-powered browser with memory that can autonomously book meetings, reply to emails, research products, and shop online — fundamentally disrupting the paid advertising model.",
+    "Aravind argues that for the first time, an AI tool (Comet) is designed to protect users rather than manipulate them, in contrast to Google's and Amazon's AI systems that rank results to influence purchasing behavior.",
+    "Aravind believes traditional bachelor's and PhD paths are becoming obsolete in the AI era, entry-level jobs are disappearing, and the key trait for surviving and thriving is the ability to continuously learn and push further."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "1:08",
+      "seconds": 68,
+      "title": "The 3 qualities that helped Perplexity grow from $0 to $20B in just 3 years"
+    },
+    {
+      "time": "2:20",
+      "seconds": 140,
+      "title": "How to grow 3700% in a single year"
+    },
+    {
+      "time": "3:44",
+      "seconds": 224,
+      "title": "The role of brand awareness: why Perplexity partnered with Formula 1"
+    },
+    {
+      "time": "5:58",
+      "seconds": 358,
+      "title": "The tool every founder should know"
+    },
+    {
+      "time": "7:37",
+      "seconds": 457,
+      "title": "The first AI-powered browser"
+    },
+    {
+      "time": "8:06",
+      "seconds": 486,
+      "title": "Aravind demonstrates a killer Comet feature"
+    },
+    {
+      "time": "10:42",
+      "seconds": 642,
+      "title": "How Comet is changing paid advertising forever"
+    },
+    {
+      "time": "11:20",
+      "seconds": 680,
+      "title": "What businesses MUST do to survive in the era of AI agentic browsers"
+    },
+    {
+      "time": "14:18",
+      "seconds": 858,
+      "title": "AI can do what I’d pay $1,000 for — instantly"
+    },
+    {
+      "time": "15:06",
+      "seconds": 906,
+      "title": "Monetization that will be disrupted forever"
+    },
+    {
+      "time": "19:09",
+      "seconds": 1149,
+      "title": "The first time AI actually protects you from Big Tech"
+    },
+    {
+      "time": "20:07",
+      "seconds": 1207,
+      "title": "Which jobs will disappear because of AI"
+    },
+    {
+      "time": "20:54",
+      "seconds": 1254,
+      "title": "How you can save your job in the AI era"
+    },
+    {
+      "time": "22:50",
+      "seconds": 1370,
+      "title": "Will entry-level jobs disappear entirely?"
+    },
+    {
+      "time": "23:33",
+      "seconds": 1413,
+      "title": "Does education still matter in the AI era — and what it can give you"
+    },
+    {
+      "time": "26:24",
+      "seconds": 1584,
+      "title": "Why he’d Still Do a PhD in the Age of AI"
+    },
+    {
+      "time": "28:43",
+      "seconds": 1723,
+      "title": "The ONE thing you should bet on to be successful"
+    },
+    {
+      "time": "30:29",
+      "seconds": 1829,
+      "title": "The main trait that defines who he is"
+    },
+    {
+      "time": "31:07",
+      "seconds": 1867,
+      "title": "Is he really working 24/7?"
+    },
+    {
+      "time": "33:13",
+      "seconds": 1993,
+      "title": "Top business niches for 2025"
+    },
+    {
+      "time": "35:23",
+      "seconds": 2123,
+      "title": "“Do what you’re truly obsessed about”"
+    },
+    {
+      "time": "37:00",
+      "seconds": 2220,
+      "title": "Aravind’s top 3 favorite apps"
+    },
+    {
+      "time": "40:25",
+      "seconds": 2425,
+      "title": "When they will release the COMET app"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So if you were 18 today in the US and had to start all over again, would you still do bachelor's PhD?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Realistically, it's gone."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Aravind Srinivas, CEO and founder of Perplexity, a 20 billion dollar company challenging giants like OpenAI, Google, and Meta. They just released Comet, the first AI browser that thinks and acts for you. It also understands you, your needs, your budget, everything. It has memory. I tried it myself and wow it can book meetings, reply to emails, research products, even shop online all without me."
+    },
+    {
+      "speaker": null,
+      "text": "Amazon has AI do the recommendation ranking. Google has AI to do the search ranking. So they can influence things and manipulate you to buying stuff. But for the first time you have an AI in your hands. It actually protects you. It actually gives you power against the big tech."
+    },
+    {
+      "speaker": null,
+      "text": "But while AI gives you unprecedented power, it's also reshaping the world of work faster than anyone expected. And it looks like those entry-level jobs are disappearing, right? What do you think is going to happen?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I certainly think so. People need to push further."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So is there still opportunity or is it time to rethink everything?"
+    },
+    {
+      "speaker": null,
+      "text": "We did a podcast with Aravind, the founder of Perplexity in November 2023. The company's valuation back then was 500 million and now it's around—"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Actually, we were just closing our series around then so it was more like 150 and we're just about to close around at 520."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. And now it's—"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "20 billion."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah roughly. Okay. Can you describe this period of time in one word?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Exponential."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exponential. Yeah. What do you think has played a tremendous role in this exponential growth?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I think our constant urge for shipping fast yet maintaining quality, our relentlessness—I love the word relentless. In fact, I wanted to buy the domain relentless.com except I figured it was owned by Jeff Bezos."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Really?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "So if you actually type relentless.com on your browser, it will redirect to Amazon.com. He's an investor in our company. That's like the spirit of the company. We don't ever give up. We are very curious. We constantly keep asking questions on how to improve the product. The first thing I do when I wake up is read everything people are saying on different social platforms. I make sure most of the bugs are immediately attended to. You may think, oh what really comes out of this process of waking up every day and just bug fixing and triaging and trying to identify places for improvement. But we really believe in the mantra of 1.01 to the power of 365 is 37.78."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Explain."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Okay, so if you do a 1% improvement every day, how much do you improve at the end of the year? You improve 3,700%. You don't improve 1% multiplied by 365. That's the concept of exponential—it compounds. So it may look like small steps every day but as the changes propagate to a larger scale of users they bring in more users through word of mouth. And then those users are experiencing all the improvements you're making. People feel great using a product that you used last week and then use it a couple of weeks later and it feels much more different, much faster, much cleaner, much more accurate. So then people start trusting. We earn the users' trust through our accuracy and speed of improvement."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And your marketing formula with Formula One—have you seen the spikes after Formula One and when the episode went live?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "It's hard to attribute to these kind of brand partnerships. It's very easy to attribute when you run some ads on Instagram or YouTube with a clear call to action button in terms of going to the app store play store and getting an install and then looking at how many queries that translated to or whether that user ended up subscribing to the app. It's very easy to track this and optimize the funnels. It's much harder to optimize when, for example, Lewis Hamilton has Perplexity on his helmet—how many people are actually going and installing the app after a Formula One race."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "It's pretty difficult to track that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It is."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "The best way to track that is like brand awareness—are people in the UK or people who typically are in the Formula One crowd more aware of Perplexity now? And I think that should be the case. We have run some basic studies. But the core idea there is honestly to associate our brand with some of the greatest people of all time."
+    },
+    {
+      "speaker": null,
+      "text": "Steve Jobs ran this famous \"Think Different\" campaign. He got the inspiration from Nike because Nike celebrated great athletes. So that's why in the ad you see Einstein, you see Gandhi, you see the Beatles—all these people who really inspired Steve. And that's one thing we've been pretty intentional about, like who we want to associate with in terms of brand, at least in sports."
+    },
+    {
+      "speaker": null,
+      "text": "Lewis Hamilton is one of the greatest of all time. He's considered the greatest of all time in Formula One. And that's why we did that brand partnership. And we're also going to be doing more, particularly in F1. It's a pretty cerebral sport. Everyone's attracted by all the hospitality and the race cars and the high adrenaline thing, but fundamentally the sport is largely engineering oriented. Who has the best engine? Who's licensing whose engines? It's all about constructors competing for who has the best cars. Skill matters, conditions matter, tires matter—everything matters. So we do see a lot of people asking these kind of questions on the app."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "There was this huge spike in queries in June compared to May. Can you attribute that to something? What happened?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I don't know if it happened in June or July, but definitely we grew a lot in the last couple of months. Actually, the main event that happened in July that I would say fundamentally led to growth is our release of our agentic browser, Comet. For the first time, you could have a browser that can actually think with you and take actions on your behalf and actually go and do stuff."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I have Comet right here. Can you show one killer feature that you think everyone should start using on Comet?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I love this thing because it's a very simple thing where it kind of always works. You know, if you want to find some video you remember watching before but you don't know exactly what it is, you can search for it with just simple natural language and ask it to just open and play from that exact moment. So for example, there's a video where Jensen Huang says, \"I would rather torture people to greatness than fire them.\" Can you find it and play it from that exact moment?"
+    },
+    {
+      "speaker": null,
+      "text": "The point here is not that it can do a video search. It's how it does multi-step reasoning—finds the video, pulls the transcript, opens tab, and actually starts playing from that exact phrase."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow, that was the phrase I was hoping."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "And then you can chat with this video. Something that I did yesterday when I was watching—for example, there's a lot of other videos here. This is like one hour long. I could literally say, \"What are some non-trivial things Jensen said in this interview?\" I don't want to watch everything. Maybe he's saying a lot of things, repetitively saying that AI is going to explode, but I only want to know new things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "And so it's reading all the transcripts. It's particularly talking about GPU uses time machines—I've never heard him say that. And of course, scale and flexibility, science to application, Omniverse costs. So I can actually say, \"Can you share this as an email?\" You can actually even edit it. You can add \"send from Comet\" or something like that and refine the email if you want. You can just send it from there. You don't have to open another tab. You don't have to copy paste. You don't have to open a compose email window. This is just one example."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You could also schedule meetings from here."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "You could say, \"Order the leather jacket Jensen's wearing for me from Amazon.\" It's going to find it. Of course, it's going to be pretty expensive, so it's not going to place the order directly. But it's going to do a lot of these multi-step things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's going to happen to businesses who survive on paid ads? Is it going to skip paid ads or how is it going to research information about what product to buy?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "So you can instruct your Comet assistant to say, \"I want you to just skip all the ads.\" When you're tasking Comet to go watch YouTube for you, you can ask Comet to ignore all the ads and just get you the core sense of what the content is about. You could ask Comet to say, \"Go look at my favorite Instagram influencers' reviews of all of them and then tell me what's best for me based on what you already know about me and go buy it for me.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So how can businesses optimize for that experience?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I would say that what businesses should really do is focus on building a great product and getting a lot of people reading reviews, right? Because Perplexity reads reviews and watches videos. So get as much content about your product as possible. The solution shouldn't be paying people to write great things about you. But honestly, building a great product and getting the word out so people talk about it and rave about it, and then Comet reads all that and is able to suggest that to you—that would be the way to go."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How fast do you think we're going to switch to asking our AI assistants to buy things for us? I think you can do that already. But I mean there's still friction in society. I remember you were talking about how we're overpaying real estate people, financial advisors, but still when I think about a person who's in their 60s who's done it for a while, they're not going to just switch to AI to do things for them."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I'll tell you an anecdote which kind of convinced me why it's worth building these things. I was once having a haircut somewhere in Noe Valley when I used to live there and another person was also having a haircut in the same place. He was somewhat older and he was ranting about how he spent his entire day, probably 3-4 hours, just looking for a new washing machine because it's a pretty expensive purchase. You're going to spend a lot of time deciding what to buy and you've wasted your entire day just reading reviews and watching videos and scrolling through reviews, and you end up getting even more confused than you were at the beginning, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And this is the kind of thing we want Comet to help you with—make really good decisions really quickly and delegate all the mundane cognitive labor to something like Comet. Why do you want to go read all the reviews? It's boring. Anyway, people are paid to write good things. So how do you get the signal from the noise? You have to consume reviews across different platforms, not just one. I could pay someone to write good reviews on Google Maps, but I couldn't necessarily pay someone to do it on every single platform. I wouldn't be that thoughtful. So definitely if your product is pretty bad or overhyped, someone's going to say something negative on YouTube or Reddit."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, and it gives you a pretty balanced perspective. Here are the five different things. Imagine reading 30-40 tabs in the matter of a few seconds or minutes and then it's telling you what to do. And it also understands you, your needs, your budget, everything, right? It has memory."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "The Comet can answer questions about yourself and give you tips on how to do better. So I think that's the kind of way in which we feel AI is less about whether someone's old or young or more used to traditional tools or quick to change and adopt new things. It's truly about the utility. But I'll give you another example. I was doing a stage talk for a partnership with Motorola. I asked Comet to go read all the talks given by Jensen and Steve Jobs and everything and also read the current draft that was written by my comms person. Then I said, \"I want you to edit it a little bit to feel a little more grandiose but I still want to preserve how I speak.\" So you watch my interviews too and watch these guys' interviews and try to blend it where I want to say some things that slightly feel more inspiring but I don't want to appear inauthentic."
+    },
+    {
+      "speaker": null,
+      "text": "And it did such a good job that I was like, \"Damn, I would have paid someone like $1,000 for that.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's transition to 2030. What does shopping look like? Everybody has an AI agent that they talk to. So Amazon app is dead, Walmart app is—"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "I wouldn't say it's dead. Fundamentally, the moat for companies like Amazon and Walmart is physical real estate—the warehouses, the stores. For Walmart it's the stores. And the packaging and the supply chain. But the app itself, the shopping experience, might not matter. This is essentially what we've been talking about ever since the beginning. It doesn't matter if it's Amazon, Google, or Walmart. I think it's fundamentally about what's good for the user, right?"
+    },
+    {
+      "speaker": null,
+      "text": "Actually, the founder of Amazon says you always want long-term alignment between the customer and the shareholder. And as you said, as a customer, you don't care about ads, right? You don't want ads. You want what is good for you. So just show me that and I'll pay you more money. And that's the kind of relationship you're going to have with your Comet assistant."
+    },
+    {
+      "speaker": null,
+      "text": "Maybe advertisers are still going to exist. It's not like a complete end of ads. Advertisers might be trying to talk to the agent, not to you. But the agent would—"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But then I can code it to ignore the ads."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Exactly. And that's a handshake agreement you have with your agent that the advertiser cannot influence or manipulate. And that's what protects you. But I do think you might be open to some ads. For example, let's say you have an assistant that works in your team right, you're running a podcast. Maybe there's a new microphone that's really good but not many people know about. They go and tell the person working on your team, \"Hey, can you please tell Silicon Valley girl to go use our microphone? It's pretty good.\" That's kind of like an ad to you but it's being told to you through your team, and you trust that person on your team so you know that person isn't going to necessarily just take it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the point. Is that how you're going to monetize this experience?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "We haven't thought deeply about it. I'm just imagining a future where ads were done at the level of agents and also between apps. For example, you might be tasking Comet to do something like book you a ride, and then three different apps like Uber, Lift, and something else might say, \"Hey, I think I can deliver the best ride for her.\" The agent knows your preference that you prefer Uber, let's say. And it could be like, \"You know what, I really want to win her business, so I'm actually going to offer this ride for free. Just tell her the experience will be better than Uber.\""
+    },
+    {
+      "speaker": null,
+      "text": "The competitor could say that. The agent could charge some revenue for the apps trying to get your attention and share it back with you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Which Google never does. Google takes your queries, does a bidding process among different companies trying to bid for that query, and takes all the money. Doesn't share it with anyone. That's why their profit margins are high. But that's bad for the user because you at the end are getting influenced. On the other hand, I'm saying there are two levels of protection. One is I don't let you directly see any ad, and even if your agent sees the ad, the company that runs the agent gets some of it. But the user also gets a little bit. Only—that's the best way to continue to win the user's trust by saying, \"Okay, I'm actually open to being advertised to through my agent and in return for that I actually want some money back. You don't get to take all of it.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that model."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "That way our margins are lower but our trust is higher. So the lifetime value, the LTV, is higher because you trust more. And as long as the agent is not getting manipulated and therefore you're not getting manipulated, this model could work. So all roads lead to a future where the ad margins are going to go lower. That's for sure, because the user has an AI in their hands for the first time."
+    },
+    {
+      "speaker": null,
+      "text": "Until now AI existed in the hands of the advertising companies. Amazon has AI do the recommendation ranking. Google has AI do the search ranking. So they can influence things and manipulate you to buying stuff because those are the tools being provided to the advertisers to optimize their campaigns. But for the first time you have an AI in your hands. The Comet system works for you. It doesn't work for the advertiser. It actually protects you. It actually gives you power against them."
+    },
+    {
+      "speaker": null,
+      "text": "You have intelligence on your demand side to summon and do your bidding based on the prompt and your memory and your preferences. And that's a contract between you and Comet, and that's giving you power against the big tech. And therefore some of that money can flow back to you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. I love the way you think about that. I hope everybody who's creating AI agents thinks the way you do. What about other jobs? So I asked Perplexity to analyze my portfolio, and I asked it whether I should fire my financial advisor and it was like, \"Yes, you should do this immediately.\" That's the first time I saw something that definitive from AI. It said, \"You know, this is a strategy he's utilizing. He's buying very expensive mutual funds.\" What's going to happen to these professions—financial advisors, real estate brokers?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Because Perplexity does it now and it created the whole strategy for you to rebalance everything. Yeah, I've thought about this. The way I think about it is real estate agents getting listings on Redfin or Zillow with a Comet browser. Or say you just have a recurring task that's running. It's not yet there. So people who watch this and try it won't work yet, but it's going to work pretty soon."
+    },
+    {
+      "speaker": null,
+      "text": "You could just have a task that says, \"Every morning just look at all the new listings on Redfin. These are the preferences I have.\" Redfin already has some of these features, but it's very hardcoded and there's a lot of selector drops and filters don't really work properly. But you could have something like, \"Every time there's a house below a certain budget and that's within this neighborhood, make sure to send me a push notification and submit an application on my behalf and schedule a meeting or a visit.\" You have access to my calendar, everything you can."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So just stick—"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "So if your agent only shows you listings on Redfin and Zillow, I think they're useless. But if your agent is doing off-market deals for you, they're still pretty useful because those things do not exist on the web."
+    },
+    {
+      "speaker": null,
+      "text": "I feel like having the power of intelligence and a computer at your hands always comes back to that. It means you can push the existing industry to work harder for you. Same thing with private wealth management or financial advisors. If the job of the financial advisor is to tell you what stocks to buy, then I don't think they're going to be smarter than Perplexity, which you can summon and ask it to go read all the analyst reports on every stock and all the morning day news and come back and tell you the impact on your portfolio. Or answer questions like, \"What would Warren Buffett do if he had exactly your portfolio?\"—something like that. No financial advisor can answer that."
+    },
+    {
+      "speaker": null,
+      "text": "But if your financial advisor does more stuff for you, like getting you access to certain funds, like private equity or hedge funds, or access to funds like Citadel, or some startups and venture capital which you cannot get through just the public markets—then maybe they're useful, right? It's all about having this new power in your hands. So go and ask the people who are taking your money to do more work for you. That's the contract between you and them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And it looks like those entry-level jobs are disappearing, right? Because an entry-level financial adviser can only do managing stocks. What do you think is going to happen?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Yeah, I certainly think so. People need to push further. If you're just literally managing a portfolio, you're not doing much. I have some private wealth managers too and I think the way I use them is helping me move money around—those kind of things—because I don't have time to manage all this myself. They help me through their time and they also give me some advice on what to do, how to save taxes a little bit, those kind of things. So your value add should expand further than just managing a portfolio."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If we apply this to any market, how can you do this as a recent graduate? And do you believe people still need to do their PhDs like you did? Or is that era over?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "The fundamental thing you learn in a PhD is learning to learn. I did a lot of research in my PhD which doesn't matter today. But I got the ability to go learn a new topic, dig deep, understand everything, gather information, and consult whoever is the best expert—which by the way is not needed anymore because you have tools like Perplexity. But let's say you have the ability to ask the right questions and then you acquire a certain level of subject expertise to go make decisions and branch out. That's what you've acquired—that skill. Is it worth four years? That's the thing."
+    },
+    {
+      "speaker": null,
+      "text": "I decided to do a PhD for many reasons. One of them obviously was my own interest in the topic. But the other was that it was my only way to get to America. A lot of Indians come here for masters, but you've got to realize that to come here for masters, you need to be able to fund your own tuition. I didn't have that ability. So PhD, the university pays for you. Masters, you pay the university. So that was one of my reasons, not the only reason."
+    },
+    {
+      "speaker": null,
+      "text": "Obviously, just because someone gives you a free entry ticket to the United States doesn't mean you should do a PhD because it's a pretty grueling journey. I had a deep passion for the topic. I loved AI. I love the ability to dig deep into things. I'm fundamentally curious about learning deeply about any topic. So if those are attributes that you think you align with, I think that journey is very, very, very useful in your life."
+    },
+    {
+      "speaker": null,
+      "text": "I don't believe that you need a PhD to be contributing positively to AI as a researcher, engineer, or entrepreneur. But I think if you zoom out and think beyond materialistic goals, fundamentally as a person you become a lot more grounded in the willingness to seek truth, the relentless questioning, the Socratic method of learning, and learning to learn. And I feel like these three qualities are reflective of this proverb or phrase, right? \"Give a man a fish, you feed him for a day. Teach a man to fish, you feed him for a lifetime.\" That's how I feel about a PhD."
+    },
+    {
+      "speaker": null,
+      "text": "And that's why I would still recommend people to do it if you truly want to be someone that enjoys learning about new things. Maybe I can stop doing this thing and I can still find a new field or topic to go learn that and be successful at it. So if you were 18 today—"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, in the US and had to start your career from scratch, what would you do?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Look, I would definitely pursue my interests, but 18 is too early to know what you're interested in. A lot of people think they know what they're interested in, but my personal opinion is that 18 is still pretty early. So I would just pick something and try to do it well. I think people underestimate the importance of having that inner confidence in you to bet on yourself—that no matter what you do, you can do it well."
+    },
+    {
+      "speaker": null,
+      "text": "So unless you've done some things like that in your life already, try to actually go and do something. Commit yourself to one thing and do it for a sustained period of time because it's very hard to be good at something if you just do it for a couple of months. You need a year or two to actually get really good, topnotch at something. It could be programming, math, AI, writing apps—doesn't matter. It takes time to actually be really, really good."
+    },
+    {
+      "speaker": null,
+      "text": "So I would suggest them to go deep into something. It could be undergrad education. It could be finding a software job at one of the existing companies. You could start off as an intern if they don't hire you full-time, then convert and pour in the hours. I regret watching YouTube videos—and I know you're a YouTuber so it's kind of weird—but people are saying we're doing a whole YouTube thing so yeah, you should watch YouTube and get knowledge out of it."
+    },
+    {
+      "speaker": null,
+      "text": "But I remember telling Sundar when I talked to him that hey, YouTube is a great app but I wish you focus more on knowledge and learning. He agreed with me because it's not just that, right? So I regret the amount of time I wasted on YouTube just watching useless stuff. When you're very young, just utilize the time. Surround yourself with peers who would push you to be better. Learn a lot. Be a learning machine. Or work really, really hard. And then you acquire that ability to go and be good at anything. You can bet on yourself."
+    },
+    {
+      "speaker": null,
+      "text": "How do you take on hard tasks in life? You can only take it on if you have some confidence that you know you can keep persisting and things are not going your way, and you'll see the light at the end of the tunnel. You have to have done it at least once in your life to bet on yourself for the next set of challenges."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that where your confidence comes from?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Yeah. I've done it. You're like, \"We're going to take over Google. We're going to take over this.\" Where does it come from? I mean, you don't need to take over. You can just be successful in your own way. But when you have a competitor like Google, it's very hard. That's what turns most people off. How do you compete in a space where, when we started, there were some other startups trying to do the same thing? They're all not around anymore. They either sold or pivoted."
+    },
+    {
+      "speaker": null,
+      "text": "From seed round to where we are today, your set of competitors keeps going away too. And you're like, surviving, surviving, surviving. It's like Squid Games. And then finally you're ending up with a scenario or the arena where it's just Google, OpenAI, and yourself. And funding-wise, we raised a billion dollars. OpenAI has raised close to 70-80 billion. Google has like 100 billion in just cash and they make 200-300 billion a year in revenue."
+    },
+    {
+      "speaker": null,
+      "text": "So you are obviously competing with giant monsters. So you have to bet on yourself to figure out ways despite the whole world screaming at you that you have to sell to Apple, you have to sell to Meta, the game is over, you're going to die in a couple of years. And I bet I can bet my entire savings that this company is going to go to nothing. And you have to be able to read all that and still motivate yourself and also motivate the people who have trusted you—the investors or the employees working here."
+    },
+    {
+      "speaker": null,
+      "text": "I always see those who take equity in our company. They're basically trusting the leadership and the company to deliver."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you tell yourself when you read those comments?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "Tell myself that I'll prove you wrong. And it keeps you going."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing. Do you think that's your main trait that made you who you are? Your confidence."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "One of my important traits. I wouldn't say that's the singular main trait. I would say the single main trait at the end is not primal or anything. I generally just like to learn a lot about any topic and I enjoy the intellectual aspects of it. That's my most important trait. People have multiple traits and so do I. And the survival instinct is definitely something that's served me very well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love it. I mean, immigrants are all survivors."
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "We are."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Do you still work 24/7?"
+    },
+    {
+      "speaker": "Aravind Srinivas",
+      "text": "No one can work 24/7. Well, all the time you're awake. Yeah, I technically no. I do spend time working out. I do spend time with my family. So I do work or think about work almost every waking hour. It's very hard for me to not look at my phone or not check notifications, not be thinking about some problem in my head, zoning out sometimes when someone's talking to me, trying to stay present in the moment. These are all hard things. And so these are the things I would sacrifice in order to do whatever I'm doing really well."
+    },
+    {
+      "speaker": null,
+      "text": "People like to think, \"Oh, work is work. After you go back home, you just shut down Slack and your laptop. You never open it and you're just staying present in the moment at home.\" I can't do that. And even on a walk I'm thinking about something there. There's some phone calls."
+    },
+    {
+      "speaker": null,
+      "text": "So yeah, if that counts as work, yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I mean, I've always—my mom, like whenever I was young, always said that anything that's not quality, undistracted time is not really work. And I've always believed that. Yes, I can be replying on Slack while I'm walking, taking a walk. That doesn't mean I'm really working. Some people like to count that as hours. And I know Elon says he works 12 hours a day. I'm sure he counts all that."
+    },
+    {
+      "speaker": null,
+      "text": "But it's truly like the time I spend where I'm just looking at the product and thinking how to improve it, or I'm talking to some of our people internally about what we can do to grow the app more or what new ideas we can put into the app to make it even better, how can we improve the orchestration of the models, how can we reduce the cost, how can we ship new features, what are all the new things we could be doing? Those are the times when I think I'm in an uninterrupted state and that's where I feel like I can do my best work. And that usually happens during the day. Other than that I'm mostly just multitasking."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Couple last questions for everyone who's trying to build something in AI. Do you think opportunity still exists? Aside from like everyone's building a ChatGPT wrapper, right? Do you still think there's still opportunity for that or people should switch?"
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "NPiKEwTSwn4",
+      "thumbnail": "https://img.youtube.com/vi/NPiKEwTSwn4/hqdefault.jpg",
+      "title": "Google Search VP on How AI Search Really Works | Robby Stein"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    },
+    {
+      "videoId": "ZW87Peh3tWM",
+      "thumbnail": "https://img.youtube.com/vi/ZW87Peh3tWM/hqdefault.jpg",
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    }
+  ],
+  "topics": []
+}

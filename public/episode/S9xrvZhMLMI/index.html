@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,9 +374,7 @@
       <p class="guest-bio">Alex is a former rocket scientist turned full-time investor who has lived off his investment returns for the past decade. He runs the YouTube channel Ticker Symbol: YOU, where he analyzes publicly traded companies from a product-first perspective to identify investment opportunities before they appear in mainstream financial news. He is known for his concentrated, high-conviction portfolio approach focused on AI and technology stocks.</p>
     </div>
 
-
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -465,7 +476,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Big investments that I've made recently have been like 40% in a single stock. This is Alex. He's a money nerd and he's been paying for his lifestyle with his investments for the past 10 years. When I met him at dinner and he told me about his investing strategy, I realized right away that I need to bring this to you guys because this is something I'm striving for and this is something I'd encourage everyone to look at.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Big investments that I've made recently have been like 40% in a single stock. This is Alex. He's a money nerd and he's been paying for his lifestyle with his investments for the past 10 years. When I met him at dinner and he told me about his investing strategy, I realized right away that I need to bring this to you guys because this is something I'm striving for and this is something I'd encourage everyone to look at.</p>
             <p><strong class="speaker">Alex:</strong> People are panicking. That's exactly when you want to be greedy.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> In this episode, we're going to dig deep into his investment strategy. We're going to break down the AI bubble. We're going to talk about what he invests in and how he sees the future, and of course, the psychology of smart investing, how not to buy high and not to sell low. Let's dive deeper into this conversation with Alex. For an average investor like me, what would be the ideal portfolio if I want to win in this AI era?</p>
             <p><strong class="speaker">Alex:</strong> The best thing to do almost always in the stock market is to do nothing. But let me back up. Are we in a bubble? I think certain kinds of stocks are definitely in a bubble and certain kinds are not. So for example, right now hardware, you know, the infrastructure for AI is definitely not in a bubble. We're already seeing some revenue returns on the infrastructure for AI and we're seeing like a big explosion in demand for the compute power associated with AI. So I think the underlying infrastructure, you know, the servers, the data centers, the chips, things like that are definitely not in a bubble.</p>
@@ -574,23 +585,28 @@
             <p><strong class="speaker">Alex:</strong> But could it get disrupted? Yes. And I think they will get disrupted in certain markets for sure. So Nvidia makes chips that are called GPUs, right? GPUs, what's special about them is they're very broad, right? So they can do a whole bunch of AI computing tasks very well, but they're not specialized. Broadcom is one of their biggest competitors because they make what are called ASICs, application specific integrated circuits. So those are really, really, really good, much like better than Nvidia's chips, but at a much narrower set of tasks. So if there are ASICs that can beat Nvidia in certain things and people have enough demand for those workloads, they're going to buy ASICs and not Nvidia's chips.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> But the easy answer is just hold both stocks, right?</p>
             <p><strong class="speaker">Alex:</strong> Like one of the things that I look at, and what like especially for family offices, one part of my job is helping them understand, hey, if you just buy these two or three stocks, you actually own most of the market. So a good example for GPUs, if you just hold Nvidia and AMD, you</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/8DuxOlkHdy4/" class="related-card">
                 <img src="https://img.youtube.com/vi/8DuxOlkHdy4/hqdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy">
                 <span class="related-title">Become an Entrepreneur Today – AI stack to build your company in 2025</span>
               </a>
+
               <a href="/episode/zCWfnfFDr90/" class="related-card">
                 <img src="https://img.youtube.com/vi/zCWfnfFDr90/hqdefault.jpg" alt="The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)" loading="lazy">
                 <span class="related-title">The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)</span>
               </a>
+
               <a href="/episode/KF_uNAxPFFA/" class="related-card">
-                <img src="https://img.youtube.com/vi/KF_uNAxPFFA/hqdefault.jpg" alt="Max Tegmark: The One Skill AI Can&#x27;t Replace — And Most People Are Losing It Right Now |MIT Professor" loading="lazy">
-                <span class="related-title">Max Tegmark: The One Skill AI Can&#x27;t Replace — And Most People Are Losing It Right Now |MIT Professor</span>
+                <img src="https://img.youtube.com/vi/KF_uNAxPFFA/hqdefault.jpg" alt="Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor" loading="lazy">
+                <span class="related-title">Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor</span>
               </a>
+
               <a href="/episode/2kWPqccrb-o/" class="related-card">
                 <img src="https://img.youtube.com/vi/2kWPqccrb-o/hqdefault.jpg" alt="9 Work From Home Business Ideas To Quit Your Job" loading="lazy">
                 <span class="related-title">9 Work From Home Business Ideas To Quit Your Job</span>

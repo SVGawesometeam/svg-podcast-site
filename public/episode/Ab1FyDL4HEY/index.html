@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>18 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=Ab1FyDL4HEY" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/Ab1FyDL4HEY/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,8 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -454,7 +466,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> One of my friends is building an AI startup and he just sent me this graph that shows they've grown by 260% in a day. We live in this weird time where the AI revolution is happening. There's a chance that large companies like Google, Microsoft, and Amazon are going to take all of the market because they're shipping so fast. They're able to create very powerful tools, but at the same time, they're not tailored to solve niche problems. And this is where you can make your millions.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> One of my friends is building an AI startup and he just sent me this graph that shows they've grown by 260% in a day. We live in this weird time where the AI revolution is happening. There's a chance that large companies like Google, Microsoft, and Amazon are going to take all of the market because they're shipping so fast. They're able to create very powerful tools, but at the same time, they're not tailored to solve niche problems. And this is where you can make your millions.</p>
             <p>The thing is, 2025 is the best time to be a solopreneur because you can code anything with Lovable, Replit, or Cursor. You can design everything with Canva or other AI tools. You can market everything with Poppy AI that's going to generate perfect scripts for you. So this is the time for someone who's been dreaming of building something to actually execute on that. I've seen a lot of people go from idea to an MVP in 24 hours. An MVP is a minimum viable product, something that you can show to a user and test it. Everything is speeding up and the next couple years are going to be perfect for launching your own business.</p>
             <p>In this video, I want to give you some ideas of what you can build. These ideas are based on what I see in the market as a creator and entrepreneur who lives in Silicon Valley, but also on what Y Combinator is looking for—this accelerator that helps create billion-dollar companies. They always see what's going on in the market and they're looking for very specific things that I'm going to name in this video. I will also name some tools that you can use to build an AI company just by yourself with no experience, but a crazy idea and a lot of enthusiasm. This is the time for people like us to build something and bring it to the world.</p>
             <p>You know, we used to talk a lot about content being commoditized and everyone being able to create content. I feel like we're entering, and we've already entered, this time where product is commoditized. Anyone can build a product now. So it's your time. Let's dive deeper into business ideas in the age of AI.</p>
@@ -467,7 +479,6 @@
             <p>The second cool idea is AI agents for small businesses that work 24/7. The emergence of autonomous AI agents is the biggest event in the industry in 2025. We're no longer talking about simple chatbots that just feed your replies. Now we have fully-fledged virtual employees who can think for themselves, make decisions, and even learn from their mistakes. The gap in the market is that everybody needs an AI agent, but it's kind of hard to create one. You need to be more technical. You need to understand what's going on. But there are already very cool examples of AI agents. There's a UK startup called Garfield AI that drafts legal letters for just two pounds without any lawyers. There are emerging AI agents in every niche—Logistify AI, which turns a voice message into a warehouse order in just three seconds.</p>
             <p>The best way to enter this field is by creating a highly specialized AI agent that solves a very specific problem that you're aware of. Maybe you're solving your own problem as a specialist. For example, handling online orders for restaurants, or finding gigs for freelancers, negotiating price, calling a hospital and asking for a discount because of an outrageous bill that doesn't really match your expectations. And the best part is you don't need to code. You can launch these projects on no-code platforms like Voiceflow, Cursor, Replit, Lovable. I'm currently playing with all of them, and it's amazing how you can just build with a voice prompt. Of course, it needs some time, and that's why there is this gap in the market where you can start building and deploying AI agents for other companies.</p>
             <p>Now, let's talk about how to make money selling prompts. This is an easier idea. If you're watching this video and you're like, &quot;Marina, again, super complicated Silicon Valley, give me easy money&quot;—easy money for you. You write those little instructions that make AI do magic. Platforms like Prompt Base are full of people trying to buy high-quality prompts for like $15 each. What's the secret here? You understand the niche and you make sure it's in high demand. For example, cyberpunk retro logos are super popular among startups, or celebrity portraits for NFT collections. I think there's an opportunity in creating bundles. For example, 50 fashion design prompts that you sell for $199. Top sellers on Prompt Base make $200 to $500 a month just by creating and selling prompts.</p>
-
             <p>But if you're like, &quot;Marina, okay, selling prompts, perfect, not Silicon Valley style,&quot; let's dig deeper into ideas that you can start small with, but also could lead you to actually building a billion-dollar company. These ideas are something that Y Combinator is looking for. If you're going to start building something that I mentioned, please go ahead and apply to their accelerator. I think they're amazing. We tried several times and never got accepted with our idea. Maybe it's coming in the future, but for now—and something else I wanted to tell you regarding AI agents—I recently joined a fund where I will be investing together with the co-founder of Honest, the company he did with Jessica Alba, the ex-CMO of Bumbo, who's also co-founder of LTK. We're investing in products that are co-created with creators because the game these days is not only to create a great product. You need to find distribution, and that's why we're talking about content factories. That's why we're talking about AI content.</p>
             <p>There is this AI agent that somebody built—it's an AI agent that generates brand deals for you. So a lot of people are working on these AI agents. Anyway, there is another opportunity, something I feel like my fund would invest in. It's called AI tutors. Reid Hoffman recently mentioned that they did an experiment with one of the schools where students used a personalized AI coach and they did so much better on tests. I feel like AI is overtaking the language learning industry. I feel like standardized tests may be a little bit harder because you still need the support of a real person. But when you're learning a language, you can just launch an app or a chatbot that's going to help people do that. This is what we're experimenting with at Lingua Trip. We released several apps in the past few months just because it's so much easier. A couple years ago, it would take us a year to build an app. Now, we're able to do that in weeks. One of the apps that we released is now number three in terms of how much revenue it generates.</p>
             <p>The AI market education AI market is going to reach 24 billion by 2034. Profitability here is strong. You can charge subscriptions, you can work with schools, and your operating costs stay really low. I think these educational chatbots are the future of the course market. When everyone was launching courses, now everyone will be launching their own app, teaching people their craft. If you've been doing courses, please try building an AI bot yourself using one of the apps I mentioned that allow you to code without knowing how to code.</p>
@@ -481,26 +492,31 @@
             <p>Now we get to full-stack AI startups. This means building entire companies like a law firm or a clinic where every employee is an AI agent or a robot. Of course, it's a bold move. It requires deep industry knowledge, but it's also not like a $100,000 company. It's potentially a billion-dollar company if you have the ability to build complex systems. Full-stack AI businesses could be worth over 200 billion by 2033 with some of the highest profit margins in tech.</p>
             <p>So as you see guys, we are in a market where building products is being commoditized. The way I am raising my kids is that I want them to be generalists and understand what's going on in the world—oh, this is happening in this industry, this is happening in that industry—but also be specialized in one subject so that they can grab ideas from different sectors and implement them in what they're doing.</p>
             <p>As an entrepreneur who started her first company at the age of 21 solving my own problem, I would give this advice to everyone who's starting their business these days: If that's your first business, solve your own problem first because you become your own customer. Meaning that you're going to apply higher standards to your product. You're going to know exactly what you need from it. It's going to be so much easier for you to start that way. Later on, when you sell or exit this company or something happens to it and you stop working on it, you will be doing another process where you analyze the market and find a gap. But I feel like as someone who's just starting out, it's just great to solve something for yourself and build something for yourself using all of the tools that I mentioned.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/jVD8pCZeLww/" class="related-card">
                 <img src="https://img.youtube.com/vi/jVD8pCZeLww/hqdefault.jpg" alt="How to Use AI to Go VIRAL on Social Media (full guide)" loading="lazy">
                 <span class="related-title">How to Use AI to Go VIRAL on Social Media (full guide)</span>
               </a>
+
               <a href="/episode/IdN-b2Y_foo/" class="related-card">
                 <img src="https://img.youtube.com/vi/IdN-b2Y_foo/hqdefault.jpg" alt="Marie Forleo: Progress Way Faster than 99% of people" loading="lazy">
                 <span class="related-title">Marie Forleo: Progress Way Faster than 99% of people</span>
               </a>
+
               <a href="/episode/_aUKWYHLKfE/" class="related-card">
                 <img src="https://img.youtube.com/vi/_aUKWYHLKfE/hqdefault.jpg" alt="Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan" loading="lazy">
                 <span class="related-title">Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan</span>
               </a>
+
               <a href="/episode/VF2FwZ_PXhw/" class="related-card">
-                <img src="https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg" alt="Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe&#x27;s Founder  Anne Wojcicki" loading="lazy">
-                <span class="related-title">Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe&#x27;s Founder  Anne Wojcicki</span>
+                <img src="https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg" alt="Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki" loading="lazy">
+                <span class="related-title">Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki</span>
               </a>
       </div>
     </section>

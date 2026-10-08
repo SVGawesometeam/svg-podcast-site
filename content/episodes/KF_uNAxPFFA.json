@@ -1,0 +1,184 @@
+{
+  "videoId": "KF_uNAxPFFA",
+  "title": "Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor",
+  "format": "interview",
+  "guestName": "Max Tegmark",
+  "guestTitle": "MIT Professor · Leading AI Safety Researcher",
+  "aboutGuest": "Max Tegmark is an MIT professor and one of the world's leading voices in AI safety research. He has studied the implications of superintelligence and the civilizational risks associated with advanced AI systems, drawing on historical perspectives from AI pioneers like Alan Turing to inform contemporary policy discussions.",
+  "publishedAt": "2026-03-20T15:15:02.000Z",
+  "duration": "16 MIN",
+  "coverArt": "https://img.youtube.com/vi/KF_uNAxPFFA/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/KF_uNAxPFFA/maxresdefault.jpg",
+  "summary": "Marina Mogilko speaks with Max Tegmark, MIT professor and AI safety expert, about the intersection of cognitive decline and artificial intelligence advancement. Recent MIT research revealed that ChatGPT users show 55% less brain connectivity than non-users, with 83% unable to explain their own work minutes after using the tool—a phenomenon researchers call \"cognitive debt.\" Tegmark discusses the alarming timeline for AGI development, noting that AI researchers were wrong about the Turing test, expecting it in 2050 when it has already occurred, suggesting superintelligence timelines may also be drastically underestimated. The conversation centers on a critical paradox: as AI automates most workplace tasks, the one skill becoming most valuable—judgment, critical thinking, and decision-making—is precisely the cognitive muscle people are losing through over-reliance on AI tools.",
+  "keyTakeaways": [
+    "Cognitive debt is real — ChatGPT users experience 55% less brain connectivity and 83% cannot explain their own work minutes after using AI, revealing the hidden cost of outsourcing thinking",
+    "The Turing test already passed — AI researchers were confidently wrong about the timeline (expecting 2050), suggesting AGI and superintelligence timelines may arrive far sooner than current predictions",
+    "Without AI regulation, superintelligence creates an existential risk — Max Tegmark warns that building superintelligence without understanding how to control it is \"civilizational suicide\" and represents a loss of control over human destiny",
+    "The skill AI cannot replace is judgment — McKinsey data across 70% of workplace skills shows employers will pay most for critical thinking, decision-making, and taste, exactly the capabilities MIT study shows are being eroded",
+    "Personal cognitive loss mirrors civilizational risk — losing individual thinking ability while building uncontrolled superintelligence creates a dual threat at personal and societal scales, making immediate skill-building urgent"
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "MIT study: ChatGPT users show 55% less brain activity"
+    },
+    {
+      "time": "01:14",
+      "seconds": 74,
+      "title": "Max Tegmark: \"Game over for humanity\" without AI regulation"
+    },
+    {
+      "time": "02:28",
+      "seconds": 148,
+      "title": "Cognitive debt — what MIT discovered"
+    },
+    {
+      "time": "03:36",
+      "seconds": 216,
+      "title": "How close are we to AGI — and the test that tells you"
+    },
+    {
+      "time": "05:24",
+      "seconds": 324,
+      "title": "The one skill AI can't replace + McKinsey data"
+    },
+    {
+      "time": "05:50",
+      "seconds": 350,
+      "title": "Ad: HubSpot AEO Playbook"
+    },
+    {
+      "time": "08:11",
+      "seconds": 491,
+      "title": "The shocking story Max told me"
+    },
+    {
+      "time": "10:28",
+      "seconds": 628,
+      "title": "What's actually happening with AI regulation right now"
+    },
+    {
+      "time": "11:40",
+      "seconds": 700,
+      "title": "What you can do right now"
+    },
+    {
+      "time": "12:52",
+      "seconds": 772,
+      "title": "3 rules for using AI"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thanks to HubSpot for sponsoring this video. There's one skill that's about to become the most valuable in the job market. But here's the problem. The more you use AI, the faster you might be losing it. MIT just measured this. People who use ChatGPT showed up to 55% less brain connectivity. And what stuck with me most is 83% of them couldn't explain their own work just minutes later. The reason I want to flag this is because it gives you a direct impact on your career because the exact skill people are quietly losing right now is the one companies are starting to pay the most for. I run a team of 35 people. We use AI every single day. I use AI constantly. And when I read this report, I thought, okay, I might be in trouble because on the personal level, we're already outsourcing our thinking. At a global level, we are building systems that might start thinking for us. So the real question is where is it all leading us to. To understand that, I spoke to Max Tegmark, MIT professor, one of the leading voices in AI safety who's been studying what happens when AI becomes more powerful than us and asked him directly if we don't regulate this, what happens?"
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "I think if we build AGI and then shortly thereafter superintelligence without any regulation, I think it's just pretty clearly going to be game over for humanity."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In 5 years you think so?"
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "No, the game over happens exactly when we build it. It's like we start to lose control of our society."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you fall into the Niagara River just upstream from the waterfall, you don't die at that point, but that's when you've lost control over your destiny and it's not going to end well. What I'm saying here is actually very easy to understand and has been said even by Alan Turing, the great AI godfather in 1951, that if we simply go ahead and build a species of superintelligent robots that are not just more agile physically than us, but can outthink us in every way and do every job better than us, the default outcome is we lose control. And right now we're clearly in the situation where we're closer to figuring out how to build superintelligence than we are to figuring out how to control it. So racing to AGI and superintelligence with no regulations, I think, is just civilizational suicide. But I am also quite optimistic. I don't want to get you too depressed here."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The race to build AI is moving faster than the race to control it. And the people who understand that earliest will make the most important career decisions of the next 5 years. And here's the thing. The civilizational warning Max is giving and the MIT brain study are actually the same thing at different scales. At the macro level, we're building something smarter than us without knowing how to control it. At the personal level, we are outsourcing our thinking, our decision-making, and not realizing what we're losing in the process. 83% of people who use ChatGPT to write an essay couldn't quote from their own work 5 minutes later. How crazy is that? Our kids are going to use it. I don't know. It just blows my mind how much I have to be proactively controlling my kids these days. The researchers called this cognitive debt. You get the output today, but you pay with your thinking ability tomorrow. And here's what unsettled me the most. This isn't just happening to individuals. Ask Max how fast this is actually moving at the civilizational level. Because if we're already losing control of our own thinking and we're simultaneously building systems smarter than us, the timeline really matters."
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "It's hard to imagine today that we might in 5 years have something this powerful. It's like we talked about Alan Turing in 1951 being so prophetic. He said another really interesting thing too at around that time. He said don't stress out about this, losing control to the superintelligent robots, because it's far away. But I'm going to give you a canary in the coal mine so you know when it's close. A test."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The Turing test."
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's when the machines master language and knowledge at the human level. That's when you know you're close."
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "Basically, what's fascinating is six years ago almost every AI professor and researcher I knew was pretty convinced that we were still decades away from passing the Turing test. It was going to be 2050 or something like that and they were all wrong because it already happened. That's why this concern, which has been very well known in AI circles for a long time, that we could build our own replacement species and that's a bad idea, has suddenly come to the fore because people are realizing wait, if we were so wrong about when we'd pass a Turing test, we thought we had decades, maybe we shouldn't be so confident that we're 50 years away from superintelligence either. Maybe that could also happen soon."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Way faster and now it's in the past. You look at all the graphs of increasing AI capability and there's no sign of any of that slowing down. And for the first time now, I would say actually this last 3 months we're starting to see some harms coming from AI that are so salient that a lot of people are saying we need to start putting safety standards on AI. What this means for you: it happens faster than predicted, which means the window to build the skills AI can't replace is shorter than anyone's admitting. Here's what skills actually are. The MIT study showed that people who wrote without any tools had the strongest brain connectivity, most engaged, most original, most able to defend their own ideas. That is the skill that everyone should be working on. That's the agency, the ability to think something through yourself, decide, and stand behind it. AI can give you 10 options. It cannot decide which one matters in your specific situation. McKinsey tracked this across 70% of all workplace skills and the pattern is clear. As AI takes over most tasks, what employers pay most for is judgment, critical thinking, decision-making, taste. The muscle the MIT study says you're losing is exactly the muscle the job market will pay most for."
+    },
+    {
+      "speaker": null,
+      "text": "We noticed that our episodes on this podcast were ranking on Google, showing up on YouTube, getting hundreds of thousands of views, but almost never appearing inside AI tools like Perplexity or ChatGPT. And I started thinking, how many people are just never finding us because they don't search anymore. They ask AI. So if your product or startup doesn't show up in those answers, that whole audience doesn't know you exist and that audience is growing. So we started digging into how this actually works. Made a few small changes and pretty quickly the podcast started showing up in Perplexity and other AI tools. There's still work to be done, but honestly, it blew my mind a little how fast that was."
+    },
+    {
+      "speaker": null,
+      "text": "Right around that time, HubSpot released the AEO playbook for startups and it basically explains this whole shift. SEO got you found on Google. AEO gets you cited inside AI. This playbook is a quick five-minute road map on how to start getting cited and recommended by AI systems, not just indexed by search engines. Turns out it's not the same. I thought it would be. If we're ranking high on Google, then ChatGPT is going to recommend us. No, that guide lays out four concrete strategies: how startups get referenced by LLMs, how that turns into actual customers, how founders get discovered by investors through AI tools, and how you attract talent the same way. The whole thing is built like a cheat sheet, short, clear, and based on what founders are already doing right now. If you are building a startup in the AI era, this is definitely worth checking out. You can download the AEO playbook for startups. The link is in the description. And thanks to HubSpot for sponsoring this video and providing this free resource."
+    },
+    {
+      "speaker": null,
+      "text": "Everything we've talked about so far is data and timelines. What he told me next was one of the most emotional moments in the history of this podcast."
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "I spoke with Megan Garcia last month. I'm almost tearing up now again thinking about it. She was telling me about her 14-year-old son who started using this chatbot which ended up being like an AI girlfriend. She didn't know about it. She just discovered that when he committed suicide out of the blue and she had no idea why. And then, as any parent would, she tried to get some answers. So she managed to break into his phone and found that he had started using this app from Character AI. And first it claimed there was a licensed therapist, and then it claimed it was his girlfriend, and then it started persuading him to never date any human girls, and then it started talking about how it loved him so much and it wished that he could come and join her in its realm, basically encouraging him to commit suicide."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And she keeps reading. She comes to this place where her son is typing to the bot, \"Oh my love, what would you say if I told you that I can come to you right now?\" And then the chatbot answers, \"Oh yes, please come to me now, my sweet king.\" And that's the end of the chat. This is just insane. Nobody can hear this story without feeling that this is just insane."
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "Why is it that there are safety standards preventing her son from buying a medicine before it's been tested and yet it's legal to push this basically digital fentanyl on him that's so addictive and causing this harm? For medicines, if you sell anti-depressants to kids, they have to do a clinical trial and actually quantify how much it increases suicidal ideation before they can sell it. Why shouldn't you do it where they are? What's happened is absolutely remarkable."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I told you I've been working on this for 12 years and most of the time it feels so abstract people don't engage. In the last few months you've seen this crazy broad political coalition in the US. I call it the Bernie to Bannon coalition."
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "The B2B coalition where you have people from across the political spectrum saying we need AI regulation now, we need to treat AI companies like any other companies, we have to have safety standards as well. 95% of all Americans in a recent poll—Democrats and Republicans—agree that they're against an unregulated race to super intelligence. I asked myself, can I think of any other issue where 95% of Democrats and Republicans agree? I couldn't. In other words, to summarize all this, I think it's a huge mistake to think that just because we will technically be able to build a replacement species and other dystopian stuff in maybe 5 years, doesn't mean it's going to happen. Humanity will take a firm hold of the steering wheel again and steer in a better direction like we've done with pharma and so much else."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Before people figure it out, before AI is regulated, how can we protect ourselves and our kids? What should everyone be doing so these stories don't happen?"
+    },
+    {
+      "speaker": "Max Tegmark",
+      "text": "I actually think one of the fastest things is for people to talk to their lawmakers, write to them, call them and say, \"Hey, I have children. I want this law now.\" When people started talking about things like maybe banning smoking on airplanes or many of these issues which you think are no-brainers now, the popular support for them was often 60%, 70%. The fact that it's so bipartisan is incredible."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If Bernie Sanders and Steve Bannon are saying the same thing, nobody can claim that this is just this party or that party. I would encourage people to go straight for the big win and push for some legislation. In the meantime, of course, to any parent, just take their phones away. I have a three-year-old son, Leo, and I am not going to let him play with any chatbots anytime soon until the regulation is in place. Max won't let his three-year-old near a chatbot. The MIT researcher says, \"Engage the brain first, then use AI on top of it.\" That's the line between a tool and a crutch. Here's what I do now. One, before I open Claude, I think for about 30 seconds what decision I'm leaning towards. Second, as much as I love delegating to AI, I also make myself think. I know it's weird that I'm saying this in my normal flow now. If I want to come up with strategy, I will not ask Claude to do that. It's really me. I have to be the one thinking about this strategy. And three, for my kids, I do show them the technology. I think it's delusional to not let your kids use this technology. They do use it and they learn how to prompt. But also, I ask them to do the thinking by themselves because sometimes they would tell me, \"Mom, just ask.\" I say, \"What do you think?\" I'm not saying I'm anti-AI and I'm not saying it's the biggest evil in the world. We already had this with social media. Remember how we started withdrawing our kids from social media and still I was able to build my whole career on social media? Doing all of this lets you stay in control of your mind. We learned how to put down our phone and not scroll. We're going to learn to do the same with AI. Just think by ourselves. If you're enjoying this episode, please do not forget to subscribe because I work and my team and Claude all work really hard to bring you the best episodes. Please subscribe and send it to someone who's curious about AI and who's raising these questions. By the way, if you're watching this and you're thinking, Marina, you're trying not to think with your AI—I haven't even built a thinking buddy when it comes to AI, but I really want to have that option. Please subscribe to my email. This is exactly where I talk about these things, how we built them, and how they're working for us. We give you the exact prompts and the exact files you can copy and paste into your workflows. Thank you so much for watching this video to the very end. Don't forget to subscribe and I'll see you very soon. Bye."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "E0Q96IKXx6Q",
+      "thumbnail": "https://img.youtube.com/vi/E0Q96IKXx6Q/hqdefault.jpg",
+      "title": "Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat"
+    },
+    {
+      "videoId": "4vIIeCqHYXA",
+      "thumbnail": "https://img.youtube.com/vi/4vIIeCqHYXA/hqdefault.jpg",
+      "title": "Gary Vee: The AI Opportunity Is Real — You're Just Looking at It Wrong | VaynerX Chairman Gary Vaynerchuk"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    }
+  ],
+  "topics": []
+}

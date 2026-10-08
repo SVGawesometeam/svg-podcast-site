@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -349,7 +362,7 @@
         <span>21 MIN</span>
       </div>
       <a href="https://www.youtube.com/watch?v=FZm2vVlPX9w" class="video-thumb" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/FZm2vVlPX9w/maxresdefault.jpg" alt="Marina Mogilko, Host, Silicon Valley Girl Podcast, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="https://img.youtube.com/vi/FZm2vVlPX9w/maxresdefault.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast">
         <span class="play-btn"></span>
       </a>
     </article>
@@ -361,9 +374,7 @@
       <p class="guest-bio">Entrepreneur, content creator, and founder based in Silicon Valley. Marina interviews the world's top tech leaders, investors, and innovators to uncover the trends, strategies, and mindsets shaping the future. With millions of followers across platforms, she brings a unique perspective on technology, business, and personal growth.</p>
     </div>
 
-
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -445,7 +456,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> When it comes to making money online, there's a lot of misinformation and scams out there. Everyone seems to have a get-quick scheme, but the truth is—and this is coming from a person who started building her business in 2011, and it's been 14 years, and I have four companies now—the truth is building a profitable business takes real strategy and knowledge. It takes analytics. It's a lot of work, but it's the most exciting work you can do because you learn something new every day.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> When it comes to making money online, there's a lot of misinformation and scams out there. Everyone seems to have a get-quick scheme, but the truth is—and this is coming from a person who started building her business in 2011, and it's been 14 years, and I have four companies now—the truth is building a profitable business takes real strategy and knowledge. It takes analytics. It's a lot of work, but it's the most exciting work you can do because you learn something new every day.</p>
             <p>This is crucial for today's world. For this video, I did a lot of research, and I'm going to share with you some real, credible information on the best online businesses to start in 2025, backed by data, industry trends, and insights from top startup accelerators. I live in Silicon Valley. I talk to a lot of founders and entrepreneurs every single week, and I decided to analyze the fastest-growing companies, studied the latest trends, and selected the most promising online business ideas for 2025.</p>
             <p>Insights from Y Combinator, the world's leading startup accelerator, show that AI is fundamentally reshaping the business landscape. You have to be utilizing AI no matter what. Many AI startups are experiencing 10% weekly growth. This is the new era. This is the new world. This is bigger than the internet. A lot of people say that in 2025, we're going to have a lot of new millionaires and billionaires, and I just talked to Reid Hoffman, who created LinkedIn, and he's so optimistic about the next couple of years because the world is going to change. Yes, we're going into a crisis where a lot of things are changing, but crisis is the biggest opportunity for you guys to shine and to start your new business. I'm starting a new business. I'm changing a lot of processes in my businesses.</p>
             <p>So today, we'll talk about the future of online business, which is being defined by artificial intelligence, automation, and new platforms that did not exist even a few years ago. If you're looking to start a profitable online business in 2025, these are the best opportunities to explore. Some ideas require partnering with an offline person and empowering them with AI, and I think that's a great opportunity. You help a person process 10x more clients or be a lot more effective and spend more time with their family. Other business ideas will change the lives of many people around you.</p>
@@ -484,23 +495,28 @@
             <p>**Third: Don't start anything when it comes to healthcare and pharmaceutical startups.** FDA approvals take five plus years, and yes, it's a space that everybody wants to disrupt, but not if you're a beginner.</p>
             <p>Also, be aware of oversaturated markets. If you don't have a special skill—like if you're starting a podcast, it's going to take at least a year. If you're starting on social media, you need to be consistent, and you should be ready to work for two or three years. Versus these ideas, the market needs them right now. We don't need another influencer, but if you're willing to put a lot of work, you're going to become successful. But what a lot of people need right now are these ideas that I mentioned.</p>
             <p>So do not forget: find a specialist around you, automate their work with AI, help them onboard more clients, be more efficient, and make money for yourself. 2025 is going to be a game changer for a lot of you guys watching.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/pqf9uL4j9GU/" class="related-card">
                 <img src="https://img.youtube.com/vi/pqf9uL4j9GU/hqdefault.jpg" alt="7 steps to start your business from ZERO in 2025" loading="lazy">
                 <span class="related-title">7 steps to start your business from ZERO in 2025</span>
               </a>
+
               <a href="/episode/GOqARrckaR8/" class="related-card">
                 <img src="https://img.youtube.com/vi/GOqARrckaR8/hqdefault.jpg" alt="TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)" loading="lazy">
                 <span class="related-title">TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)</span>
               </a>
+
               <a href="/episode/SQReIhBKFlw/" class="related-card">
                 <img src="https://img.youtube.com/vi/SQReIhBKFlw/hqdefault.jpg" alt="7 Habits That Turn You Into an AI-Native Professional" loading="lazy">
                 <span class="related-title">7 Habits That Turn You Into an AI-Native Professional</span>
               </a>
+
               <a href="/episode/ZK-TCkETAFw/" class="related-card">
                 <img src="https://img.youtube.com/vi/ZK-TCkETAFw/hqdefault.jpg" alt="Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team" loading="lazy">
                 <span class="related-title">Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team</span>

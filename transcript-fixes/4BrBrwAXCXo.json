@@ -1,0 +1,12 @@
+{
+  "videoId": "4BrBrwAXCXo",
+  "repairs": [
+    {
+      "date": "2026-10-08",
+      "what": "Restored 4 amounts in the transcript that read as a chunk of panel markup instead of \"$1xx\" / \"$2xx\".",
+      "cause": "An earlier patch script passed the transcript as a JavaScript replace() replacement string, so \"$1\" and \"$2\" were interpreted as capture groups (the opening and closing markup of the transcript panel).",
+      "evidence": "The inserted text is exactly the panel markup; the surrounding sentence reads as a dollar amount (\"pays over $100,000 a year\", \"$10,000 to $15,000\"). Reversed by lib/episode-data.js repairDollarAmounts during the data-layer migration; counted and logged by scripts/extract-episodes.js.",
+      "confirmedBy": "mechanical reversal of a known bug, no editorial judgement involved"
+    }
+  ]
+}

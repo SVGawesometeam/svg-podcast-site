@@ -1,0 +1,515 @@
+{
+  "videoId": "nBM3_AzNYU8",
+  "title": "$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley",
+  "format": "interview",
+  "guestName": "Bill Gurley",
+  "guestTitle": "Venture Capitalist, General Partner at Benchmark Capital",
+  "aboutGuest": "Bill Gurley is a legendary venture capitalist with over 25 years of experience backing transformative technology companies, including Uber, Zillow, and OpenTable, with portfolios valued at over $50 billion. He spent the bulk of his career as a General Partner at Benchmark Capital, one of Silicon Valley's most prestigious early-stage VC firms. He recently authored 'Runnin' Down a Dream,' a book about career fulfillment, curiosity, and taking bold professional risks.",
+  "publishedAt": "2026-03-12T13:00:03.000Z",
+  "duration": "35 MIN",
+  "coverArt": "https://img.youtube.com/vi/nBM3_AzNYU8/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/nBM3_AzNYU8/maxresdefault.jpg",
+  "summary": "Bill Gurley, a 25-year veteran venture capitalist who backed Uber and Zillow, joins Marina Mogilko to discuss how AI is reshaping white-collar careers and why playing it safe is now the highest-risk career move. Drawing from his new book 'Runnin' Down a Dream,' Gurley argues that hyper-curiosity and continuous learning are the only durable defenses against AI displacement. He covers which jobs are most vulnerable, how to identify your real career calling, and what to do this week if your role is already shrinking.",
+  "keyTakeaways": [
+    "Playing it safe is now the highest-risk move — a 2023 Gallup poll found only 23% of workers are actively engaged, making disengaged employees the most vulnerable to AI replacement.",
+    "The best AI defense is becoming the most AI-enabled version of yourself possible — the types of prompts you think to use increase the more you use the tools, so any delay puts you further behind.",
+    "6 out of 10 people surveyed said they would choose a different career if they could start over, underscoring how widespread career misalignment is before AI even enters the equation.",
+    "Hyper-curiosity is a compounding advantage — people who are obsessed with their field learn continuously and for free, gaining energy from new information rather than losing it.",
+    "Companies like Block (Jack Dorsey's parent company) are already laying off nearly half their staff in a 'deliberate embrace of AI,' signaling that white-collar job disruption is accelerating now, not in the future."
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Intro: Bill Gurley"
+    },
+    {
+      "time": "2:32",
+      "seconds": 152,
+      "title": "Why \"Safe\" Career Advice Is Dangerous"
+    },
+    {
+      "time": "3:54",
+      "seconds": 234,
+      "title": "3 Traits of People Who Don't Play Safe"
+    },
+    {
+      "time": "11:21",
+      "seconds": 681,
+      "title": "How to Handle AI Career Anxiety"
+    },
+    {
+      "time": "12:58",
+      "seconds": 778,
+      "title": "Unlearning What Made You Successful"
+    },
+    {
+      "time": "14:07",
+      "seconds": 847,
+      "title": "10 Exercises to Discover Your Real Curiosity"
+    },
+    {
+      "time": "17:45",
+      "seconds": 1065,
+      "title": "AI-Proof vs. AI-Vulnerable Jobs"
+    },
+    {
+      "time": "20:20",
+      "seconds": 1220,
+      "title": "Bill's AI Toolkit"
+    },
+    {
+      "time": "22:35",
+      "seconds": 1355,
+      "title": "Is Software Dead? What to Build Now"
+    },
+    {
+      "time": "25:58",
+      "seconds": 1558,
+      "title": "How to Find Mentors?"
+    },
+    {
+      "time": "30:25",
+      "seconds": 1825,
+      "title": "Future of The Education"
+    },
+    {
+      "time": "32:43",
+      "seconds": 1963,
+      "title": "Stuck in a Bad Job? Do This This Week"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Bill, welcome to Silicon Valley Girl."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Thanks for having me on. Greatly appreciate it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you. I had a question planned, but there's news that just came out. Block, the parent company that Jack Dorsey is laying off nearly half of its staff in deliberate and bold embrace of AI."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Should people be scared?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, I'm going to say yes, but I'm going to qualify it a little bit. The AI tools are out there. They've been out there for two or three years now. They're not going to be put back in the box. They're not going to go away. My advice, which is very straightforward for anyone in any field, to protect yourself against AI, is be the most AI-enabled version of yourself possible and know what it's capable of in your field. Know the edge of what it's possible to do in your field. Use it as much as you possibly can because one thing I've learned in my own endeavors is that the types of prompts you think of giving it increase the more you use it. You start to understand what it's capable of, and so any lack of leaning into it means you're getting further behind against people who are using it."
+    },
+    {
+      "speaker": null,
+      "text": "It's new in that it's hitting white collar workers, which I think people had viewed those jobs as safe, which may have been a mistake. And look, if you've been replaced, I would really ask yourself—and this gets into this new book I'm releasing—is that the role you really loved and wanted to be in? And if not, maybe this is an opportunity for you to go find that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay. So yeah, we're going to see a lot of this type of news. You said that playing it safe, and you mentioned safe jobs. We considered them safe. We thought intelligence is something that's going to get us through life. You say safe is now the highest risk move. Can you explain?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "I think the unfortunate reality is that many advisers and counselors and parents push people towards jobs that they thought of as safe. And the reason I say it's unfortunate isn't because of AI. If you're unfulfilled at work, there's a 2023 Gallup poll study that came out and said over 50% of people aren't actively engaged at work. The number that qualifies as engaged is like 23%. So if you're in these roles you don't really care that much about and you're not pushing yourself to improve, you're kind of a sitting duck anyway for these things."
+    },
+    {
+      "speaker": null,
+      "text": "I personally believe that all those parents were quite well-intentioned and very worried about the economic stability and viability of their children's lives. But the truth of the matter is you only get one shot at this life. If you can find something that you're just insanely curious about, you're going to differentiate yourself so much greater than everyone around you. I think in many aspects of life, the economic part comes along if you're really great at what you do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you give me three traits of a person who doesn't play it safe? What do they do daily?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, first of all, I think the number one reason I wrote this book was to give people permission—permission to chase a job they might not have thought was either possible or that they might have thought someone would try and talk them out of. There are examples in the book of that. Danny Meyer is a famous restaurant tour in New York and the man that started Shake Shack. His uncle told him, \"You should go be a restaurant tour,\" but he was on a path as a polyai major salesman taking the LSAT to go be a lawyer. His father had some problems with economic trouble in businesses related to restaurants, which pushed him away from it. His uncle is the one that kind of brought him back. His uncle told him that all you do all weekend long is search for the best restaurants, and he apparently even journaled about restaurants since he was a kid. But he had never given himself the permission to think of it as a career and go after it."
+    },
+    {
+      "speaker": null,
+      "text": "The reason you're more protected is if you adore something, you're just constantly learning for free. The second principle in the book is hone your craft. I talk about continuous learning. Many people unfortunately learn in school and think, \"Oh, I'm done now. I'll go work.\" But the best are just always learning about what they do. For the best who are hyper-curious about that subject area, they gain energy in absorbing that new information. Whereas if you're forced to go to a class on something you don't like, you lose energy. It feels tedious."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Which is a great test as to whether you're tilting against the right thing or not. So basically, don't listen to everyone around you."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, there are extreme forms of this. I got to meet Rick Rubin. He said every single career decision he's made in his life, people around him told him not to do it and they were all the best decisions he possibly could have made. I mean, you can take that to an extreme, right? Like don't just go on quixotic pursuits. But I think if you become 100% convinced that you want to go try something—and I have a test in here for whether you're really passionate at that level—then yeah, I think you should go try. And I think you'll find you're more successful and more fulfilled."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I like the continuous free learning. You're learning not because you're required to, but because it's your passion you're curious about. You've met people, I know, that are like that. I think everyone's met people that are like that. Silicon Valley's full of a lot of people like that, especially about new technologies. You read an article about ChatGPT and you just can't not boot one and try and figure out what it does. And if you're that type of person, you're in the right lane. You're so fascinated by the subject that you have to know what's on the edge."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah. And by the way, it's interesting to think about the edge as a place that's safe from AI. AI and large language models are recording all the best practices that have been written down, but the stuff that's on the edge that's being discovered today is not in the models. And so if you're competing by being a person who has that knowledge in any field that hasn't been written down yet, you're out in front of what these models are capable of."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And three: try new things. Yes. We talk about AI tools constantly, but honestly, most of us don't feel the real value until we see it applied to something very specific that changes everything—something we actually do every day."
+    },
+    {
+      "speaker": null,
+      "text": "Since you've been investing for a while, I know you recently stopped. What benchmark would VC consider not playing it safe when looking at a founder?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, actually, I think that the venture industry at large has learned that you would never have a mindset of safety around choosing a founder. I think the best and the brightest are very independently minded. They think outside of the box naturally. Some of them are so dogmatically determined that they might come across as a bit crazy, actually."
+    },
+    {
+      "speaker": null,
+      "text": "I'm not the only one that would say this. If you go study what venture capitalists have written, there's a search for that type of persona. It goes back to like the Steve Jobs ad about the crazy ones."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It feels like everyone right now should be adopting this crazy mindset to succeed in this world because you're becoming the entrepreneur in your life, right?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah, there's a lot of disruption coming from this new technology. If you don't take control of your own career path, then you're likely at risk. I've often said if you're a high-agency individual who has confidence about driving their own career path, these tools are actually a jetpack. If you want to proactively learn, there's been no time in the history of the world where you can learn faster. It's AI, but it's also podcasts like the stuff you do. There are interviews all over YouTube. You can learn faster than ever before."
+    },
+    {
+      "speaker": null,
+      "text": "But if you're frozen by anxiety, then you're not learning. The thing to do right now is to run as fast as you can."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. But I also wanted to dig deeper into anxiety because you said something that gives me a lot of anxiety. Sometimes I scroll and I hear people including you say we have this window opportunity that's closing, so we should be working really, really hard right now to grasp this opportunity. Can you elaborate on that? How much time do we have? How much should we be working?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, I don't think the window's necessarily closing. I just think that this tool came at us so fast and it's capable of so many different things that it really behooves any individual to figure out what it's capable of in their industry, in their role, and once again, to be the person in the organization who knows the most about that and what's possible."
+    },
+    {
+      "speaker": null,
+      "text": "But I don't believe in these dystopian narratives. There's some interesting research you could look up—the anxiety around this is like five times higher in the US than in China."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, really?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah. I think part of the problem—and I don't fully understand the motivation—but some people like Dario are the biggest doomers of all and they've got the microphone all the time. It's kind of weird and I don't think it's healthy for all the reasons we already discussed."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Maybe also sometimes when I see those headlines, I'm like, maybe I should double down, work more. Why? It also has a positive angle to it, right?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "It could spur people into action. But it also could freeze them, which is what we already discussed."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Totally. And something else that you said—unlearning what made you successful before is really important. How do you do that? For me, for example, I'm a very hardworking person. I would say yes to every brand deal because I'm used to it. I realized that probably the next stage of my growth will happen when I learn how to say no."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "There's a great quote: strong opinions loosely held. I really love that idea. If you don't have strong opinions, it's very difficult to actually get out there and accomplish things. But don't view any of them as sacred. Don't think of anything as hard and fast that might never change."
+    },
+    {
+      "speaker": null,
+      "text": "If you develop the habit of being a continuous learner and know that there's a risk of this thing, then you're probably best prepared to know when to let go of something. Awareness that it could be a problem is probably the most helpful thing possible."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So when you start noticing it's actually in your way."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In your book you talked about six principles. Chase your curiosity. This is where I've paused because I'm like, okay, I'm curious about so many things. There's this hype and that hype. I want to study this and do that. How do you pick out curiosity that you can push for years and it becomes your career?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "There's a whole chapter on that. I went out and studied all the best practices in the field and there are like ten different exercises you can run. Hobbies are a big one. There are a lot of stories in the book of people who turned hobbies into careers and became very successful."
+    },
+    {
+      "speaker": null,
+      "text": "When I was an engineer for two and a half years, I read this book, One Up on Wall Street by Peter Lynch, and I started studying stocks and trading stocks when I got home at night. I didn't say to myself, \"Oh, maybe that's a sign,\" but it was, right? I ended up going to work on Wall Street."
+    },
+    {
+      "speaker": null,
+      "text": "Look out for whatever fascinates you. Don't feel stuck or like you have to have an answer to the question. Some of these people didn't find their perfect fit until they're 30 or 40. Get as many shots on goal. It's fine to take a job where you don't know if that's it. But ask yourself every year or so: is this it? Is this what I want to do the rest of my life?"
+    },
+    {
+      "speaker": null,
+      "text": "I had a mental exercise that I did in my first two stops in my career. A couple years in, I said, \"Do I see myself doing this 30 years from now?\" and \"How do I feel about that?\" It's just a kind of reflection. In the first two cases, I got to a place where I immediately knew the answer was no."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that question. And then you start looking for something else. Bezos had a similar thing. He called it the regret minimization framework where he said, \"Imagine your 80-year-old self giving you advice on a career choice.\""
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah, and they're similar in some ways. You're just reflecting over time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And when you study those people who are not happy with their jobs, apparently it's six out of ten, right? What do you think was the number one mistake that they made? Were they chasing money?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "I think so. I mean, chasing money or just doing something that wasn't aligned with them. We actually did a survey where we asked people: if you could go back in time and start your career over again, would you do something different? Six out of ten said yes."
+    },
+    {
+      "speaker": null,
+      "text": "Then we would ask them what they used in the decision-making process. It might be that you're at college and a professor tells you, \"Oh, you should go into this because you made an A on an accounting exam,\" or your parents—there are certain cultures where parents say, \"You got to be a doctor, you got to be a lawyer\"—and you end up in that path. There are a bunch of different ways you could end up in a pathway where it wasn't an exercise of you saying, \"What is it that I would love to spend my life doing?\""
+    },
+    {
+      "speaker": null,
+      "text": "I think many of these parents and counselors are very well-intentioned. I don't think they're out to make a mistake. A lot of them are worried about the economic stability of the child. If you become a parent, like it's this thing you can't really get out of your head."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are there any jobs that you would name—like top three jobs that are AI-resistant and top three jobs that won't make it?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, the jobs that seem to me to be the earliest threats are ones where the large language model is really good at language. Translation, paralegals—these are things where we're just organizing text in a different way. Those are already happening."
+    },
+    {
+      "speaker": null,
+      "text": "I think some of the jobs I think about—I have this interesting theory where almost any job you could think of as being an artisan. We all think of Michelangelo as an artisan and we probably think of a great athlete as an artisan, but do you think of a lawyer that way? I would say the best in those fields probably are artisans."
+    },
+    {
+      "speaker": null,
+      "text": "What is it they do? They understand nuance in their field quite a bit, and I think AI is not particularly good at nuance. A lot of people have a theory that human relationships will matter way more. Do you have a strong peer network? Do you have a strong mentor network? Do you have strong relationships where people come to you or know what you're capable of? I think that's super helpful."
+    },
+    {
+      "speaker": null,
+      "text": "Coding is one where there are a lot of questions out there. The thing about code is it's actually a stricter, more constrained version of language than language itself. Do you think we'll need less coders? Certainly, if you were the person who was just grinding and writing out code, if you were the person who understood structurally how one algorithm is better than the other or how to reduce code to make something more efficient, like those things I think will still be valuable."
+    },
+    {
+      "speaker": null,
+      "text": "But I would say the best way to be a software engineer in an AI world is to be the one that knows how all the new AI tools work. Be the person that's leaning into them, not away from them. If you're a farmer with a tractor and a drone and all this stuff, you're going to run over a farmer with a hoe and a donkey, right? You're just going to blow them away."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's talk about the tools. You said at the beginning of our podcast, become the best AI-enabled version of yourself. Can you talk about the setup because we're all using ChatGPT for search? We use tools to generate images. We do basic stuff. What is the next step? What should people be doing to advance their setup?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Even like when I come on a podcast, I can say, \"I'm going to go see this person do this podcast and we're going to talk about the book. What questions should I anticipate?\" And the more you play with it, the more you think about what's possible to do."
+    },
+    {
+      "speaker": null,
+      "text": "I was at NYU yesterday and the students were asking questions. Half the questions they ask, I'd be like, \"Well, you could ask me that, but I'd probably put that in ChatGPT.\" People don't realize how much you can lean on it. The more you roll around in it, the more you start to use it."
+    },
+    {
+      "speaker": null,
+      "text": "I've been invited to give a TED talk. I have a new one on that. You can research and prototype and ideate simultaneously. I came up with a new theme last night and kicked off something this morning because I wanted to find like 20 examples of this idea I had and wanted to talk about to make it better. I haven't looked at the results yet, but I will later."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you're basically living in a Claude project?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah, I mean, those were ChatGPT, but yeah. You could try them all. You're probably better to try them all."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What is something that you do with AI now that you've done manually before and now you can never do it manually?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Almost any information query whatsoever. It just seems easier than looking it up. Even compared to a Wikipedia search or something, you can just get straight to the information versus scrolling through. I haven't set up a Claude yet or started getting it to do strategic work on my behalf. I probably should."
+    },
+    {
+      "speaker": null,
+      "text": "Part of raising my hand and stepping away from VC is because I grew tired of that constant FOMO that's required to be successful."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow. Yeah. Let's talk about just in general for people who are building. Since you were investing in them, do you think software is dead?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "I don't. There are certain types of software that may be under threat if all the software did was reorient text or create an image or whatever. The other thing is it's not really good at being a database and it's not great at math yet. There are new techniques where they're getting it to write code, but how many times have you done a query where there's an error? Depending on the type of software, you wouldn't want it writing errors into your CRM."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. Sometimes I think about the future where now I mostly talk to Claude or ChatGPT. What if I just ask it to create an app for me to solve some particular problem and I don't need to install any apps? Think about consumer apps, right? I don't know of a fitness tracker, language learning—those kinds of apps. SAT was just released on Gemini. So I'm thinking there's this whole market that's probably going to disappear."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "That could be true. That could be right. But that's happened in the past. There used to be software companies that had massive market share that don't exist anymore."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How should entrepreneurs be thinking about what they're building?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Every great entrepreneur recognizes that new technology waves create a ton of opportunity. One of the reasons Silicon Valley gets so excited when these waves happen is that new companies step around and take market share from incumbents on these transitions. Everyone knows it."
+    },
+    {
+      "speaker": null,
+      "text": "I'm going to sound so redundant, but you got to get out there and play with it. I would warn all of your listeners that it's very hard right now to raise venture capital for non-AI plays. Go back to the circle of influence thing. The reality is most venture capitalists won't take a meeting with a non-AI company right now."
+    },
+    {
+      "speaker": null,
+      "text": "Now, you could decide that. You could also decide, well, I'm going to bootstrap one of those companies because the VCs aren't paying attention. I think that's a reasonable response to that. But you need to be aware of that. Otherwise, you're going to get very disappointed when you go out and try to raise money."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you left the VC world right at the moment when it's all hyped up, right? Everything's happening. I feel like a lot of people are like you, especially when we're talking about people who chose safer careers. Now they don't know what to do and there's erratic behaviors and everything. I really like that you said in your book you need to surround yourself with the right people, with the right news that you're consuming to stay calm and focused and motivated. Any tips on surrounding yourself with mentors?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yes. Well, mentors, and I have another chapter on peers, but let's take mentors first. I think most people in the mentor game shoot too high. They try to get someone who's not going to say yes to spend five minutes with them. I would really caution against that type of activity."
+    },
+    {
+      "speaker": null,
+      "text": "Instead, do two different things. Take advantage of all this incredible free information that's out there and build a list of what I would call aspirational mentors. These are people you admire in your field. Study them. Create a Google doc, I don't care what. Find the podcast they're on, find books, find YouTube interviews, ask AI about them, and just build a digital profile of each one of them. Be a fanboy the way someone might be of LeBron James."
+    },
+    {
+      "speaker": null,
+      "text": "I think that exercise will give you more confidence. It'll test whether this is the thing you're curious about or not. If that sounds tedious, you're not even curious about this thing. Danny Meyer did this. When he decided he was going to go be a restaurant tour, he built profiles of these people. I think that exercise of ruminating is super helpful. It makes you confident that it's achievable. It helps. It's disinhibiting. It shows that this may be a tough way to go."
+    },
+    {
+      "speaker": null,
+      "text": "Then on real mentors, just come down the ladder a couple rungs. If you're the first person that calls someone and asks them to be a mentor and no one else has asked them that before, they're going to be flattered that you recognized who they were."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But how do you ask them? You're like reach out to them and say, \"Hey, could you be my mentor?\" Or you ask a specific question?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, there's some nuance to that as well. I wouldn't walk up to someone and say, \"Will you be my mentor?\" That's a lot of weight. I think you approach people with recognition of who they are and authenticity. I wouldn't be overly programmed as you go in. Start with a smaller ask. \"Hey, I'm working on this problem. You know, there are these two paths. I'm sure you've thought about this before. Any advice on what I should do?\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And when you mentioned that a lot of people ask you things they could ask ChatGPT, I'm thinking now before asking people to become your mentor, maybe create a project with all their knowledge base and ask that project."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "You can have a virtual mentor. You could dump a book, dump an interview, dump a transcript and create a project around an individual. Yeah, I do that a lot. AI is my strategic partner 100%. Really, really helpful."
+    },
+    {
+      "speaker": null,
+      "text": "But let me also mention the separate chapter on peers because this is my favorite chapter in the book. It's a human connection that I think most people don't do. I would heavily encourage anybody—whatever rung of the ladder you're on in your career journey—try and find four to six like-minded people on the same journey, hopefully outside your organization. They need to be trustworthy. They need to be comfortable sharing. Create a peer group."
+    },
+    {
+      "speaker": null,
+      "text": "These tools are so available. You can do a WhatsApp or create a Google space. If you're really inspired, you could do a Slack or whatever. But create one of these things where you all share ideas together and it increases the surface area for learning. It increases your mentor opportunities, your network. You'll see more job possibilities through everybody. They'll be there for you when you're having a crappy day, which is really important. Everyone has bad days. You might be in a job where you don't know if it's me or the company I'm in. You're not happy, but is it because you don't love this career path or because you don't love this company? If you have five other people you talk to, they may help you figure that out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I did that as a YouTuber—having other YouTubers just brainstorm ideas in your niche. There's a story in here about a YouTuber named MrBeast, Jimmy Donaldson, that did this at the end."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "He was the one who started all of this."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And we just copied. But he was doing the same thing. Yeah. I think you shared it at a conference and I thought, \"Oh my god, I should be doing this, too.\""
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yes, yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is a very interesting time, right? I have two kids—a six-year-old and a four-year-old. I was raised by my Soviet parents telling me you have to study, study, and study. That's the only way to grow. That's the only way to build a sustainable life. So I was studying from 8:30 a.m. to 8:30 p.m."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Will this still apply in today's world to our kids or should I be teaching them something completely different?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Well, I think the culture you came from is a little different than what's true here. But I still think what's happened in North America is it's become so hard to get into universities that starting in the sixth grade, parents are worried about the resume arms race. You're worried about them getting into college."
+    },
+    {
+      "speaker": null,
+      "text": "So instead of studying 12 hours, you add in chess lessons, lacrosse lessons, volunteering at the SPCA, and these kids are so scheduled. What I fear is that they get to the end of college and they're just burned out because they've been trained to persevere. Angela Duckworth talks about this."
+    },
+    {
+      "speaker": null,
+      "text": "The area where it might not be good is if they never take a breath to explore and figure out what they want to do. It used to be in the US college system that you couldn't pick a major until the end of your sophomore year. Now, at many schools, you have to apply to the major as part of the application process. So we're asking people to specialize earlier and earlier, and then maybe they never had a chance to really figure out what they enjoy. They might have fallen into one of those pathways for random reasons like we talked about before."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what would be your advice to modern parents?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Take a deep, deep breath and create as much opportunity for exploration as possible for the kids. Just expose them to a lot of different things and try to get a sense of genuine interest on their part."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Love it. Okay, someone's watching right now. They're in a job they don't love but they're afraid to make a move. What is one thing they should do this week?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "I think you can roleplay this new path you might go towards. Part of this I'm borrowing from a professor at Stanford, Dave Evans. He talks about battlecarding scenarios. So you could say, \"Okay, I'm going to be out of here within six months.\" And create a digital roleplay of, \"Okay, what am I going to go do?\""
+    },
+    {
+      "speaker": null,
+      "text": "You could do that for maybe three different directions, right? And roll around in it. Scenario plan. What is the first step? You know, an AI tool could help you do this. \"Okay, I would like to repot myself into this career within six months. What should the first week look like?\" It'll spit something out and you may disagree with that. You may reorganize it, but the thought process of going through what it might look like will help you versus just being frozen, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And the power is coming back to it every single week with new data. \"I tried this. Here's how it works.\" If you did the battle card of like three different ones, you know, I think as you fill in the details, you'll start to have a sense of which one you prefer, whereas it may just be too abstract at the high level."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much. I think it was very useful and very practical, and I encourage everyone to read your book. What's the name?"
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Running Down a Dream."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. I love the name."
+    },
+    {
+      "speaker": "Bill Gurley",
+      "text": "Thank you so much for having me on."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "Gk0n0FjeKj8",
+      "thumbnail": "https://img.youtube.com/vi/Gk0n0FjeKj8/hqdefault.jpg",
+      "title": "Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh"
+    },
+    {
+      "videoId": "Dp6u0pel-Rs",
+      "thumbnail": "https://img.youtube.com/vi/Dp6u0pel-Rs/hqdefault.jpg",
+      "title": "Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum"
+    },
+    {
+      "videoId": "r67fvYaB2y8",
+      "thumbnail": "https://img.youtube.com/vi/r67fvYaB2y8/hqdefault.jpg",
+      "title": "10 AI tools to use in 2025"
+    },
+    {
+      "videoId": "1gm__VUG2m8",
+      "thumbnail": "https://img.youtube.com/vi/1gm__VUG2m8/hqdefault.jpg",
+      "title": "AI Agents EXPLAINED in 14 minutes and TOOLS for building one"
+    }
+  ],
+  "topics": []
+}

@@ -1,0 +1,149 @@
+{
+  "videoId": "2NFQ4-6MzuU",
+  "title": "How to Rank #1 in AI: The Ultimate GEO (Generative Engine Optimization) Guide",
+  "format": "solo",
+  "guestName": "Marina Mogilko",
+  "guestTitle": "Host, Silicon Valley Girl Podcast",
+  "aboutGuest": "",
+  "publishedAt": "2026-08-04T13:00:16.000Z",
+  "duration": "18 MIN",
+  "coverArt": "https://img.youtube.com/vi/2NFQ4-6MzuU/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/2NFQ4-6MzuU/maxresdefault.jpg",
+  "summary": "This episode is not an interview with a guest. Instead, Marina Mogilko presents her own research and strategy on Generative Engine Optimization (GEO), explaining how Silicon Valley Girl podcast increased its AI visibility from non-existent to 5th most visible among 11 tracked podcast brands in just two months. Marina demonstrates that 35% of US consumers now start shopping inside AI assistants rather than search engines, with conversion rates from ChatGPT recommendations reaching 15.9% compared to 1.76% from organic Google traffic. She walks through five specific steps her team implemented to make the podcast discoverable to AI crawlers: diagnosing AI visibility issues, building a machine-readable podcast website with full transcripts, fixing structured data identity markers, optimizing for specific AI queries, and tracking measurable results across multiple AI platforms.",
+  "keyTakeaways": [
+    "AI invisibility is now a critical business threat—35% of US shoppers start with AI assistants, and if you're not in the AI's top 3-5 recommendations, the sale ends before customers reach you",
+    "Most websites appear fine to humans but are invisible to AI crawlers because their HTML lacks required parameters and transcripts are hidden behind JavaScript—audit your site immediately by asking Claude about your AI visibility",
+    "Building a machine-readable website requires static HTML pages that load fully before any interaction, with complete transcripts in plain text; this single change added 8,000-15,000 words per episode that AI can now read and attribute to your brand",
+    "Structured data and identity markers in databases like Schema.org and Wikipedia determine how AI models categorize and understand your business—getting these wrong means AI won't know what you do even if it reads your content",
+    "First-mover advantage exists now: 92% of marketers plan to optimize for AI search but only 40% are actually doing it, meaning the gap between intent and action is your window to capture visibility before competition intensifies"
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "5-Step Plan to Become Visible in AI"
+    },
+    {
+      "time": "3:34",
+      "seconds": 214,
+      "title": "Step 1"
+    },
+    {
+      "time": "5:29",
+      "seconds": 329,
+      "title": "Step 2"
+    },
+    {
+      "time": "8:56",
+      "seconds": 536,
+      "title": "Step 3"
+    },
+    {
+      "time": "11:33",
+      "seconds": 693,
+      "title": "Step 4"
+    },
+    {
+      "time": "12:47",
+      "seconds": 767,
+      "title": "Step 5"
+    },
+    {
+      "time": "13:14",
+      "seconds": 794,
+      "title": "Our before/after results"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The biggest threat to you and your business right now isn't AI replacing you. It's AI ignoring you. Let me share a story that just happened. A chatbot almost cost Ryan Serhant, a real estate agent in New York, a $50 million penthouse deal. What happened is that the buyer asked ChatGPT, \"Is 50 million too much?\" And ChatGPT said yes, so the broker called to pull out. At the same time, the seller asked the same ChatGPT, and it told them to hold out for more. Both sides almost walked over one chatbot answer. And this is happening with your customers every single day. Before they ever reach your website, your blog, whatever you're promoting, they're asking ChatGPT, Claude, or Perplexity, \"What should I buy? Who should I hire? Which company sells this? Who's the best creator in this niche?\" The AI doesn't hand them 10 links anymore. It hands them three names, maybe five, but if you're not one of them, the sale is over before it starts. And the data shows that 35% of people in the US now start shopping inside an AI assistant instead of a search word. This is crazy. The conversion is up 693% in a year, and just listen to this number, because we actually saw it in my newsletter. People coming from ChatGPT convert at 15.9% when people coming from organic Google convert at 1.76%. It wasn't like that 2 years ago. It wasn't like that a year ago. It is happening right now, and you have to pay attention."
+    },
+    {
+      "speaker": null,
+      "text": "So, as you know, I run this podcast, Silicon Valley Girl. I interview CEOs and leaders, and we had some pretty amazing guests. We had the CEO of LinkedIn, we had the founder of LinkedIn twice. We had the CEO of GitHub, founder of Perplexity, Mustafa Suleyman from Microsoft. Pretty good roster. And even though we had famous names, and all of them are related to AI, when we asked ChatGPT for the best AI podcast to listen to, or just give me a few AI podcasts, we were never ever on the list. Knowing how people convert when ChatGPT recommends them something, we decided to run a full GEO. GEO stands for generative engine optimization. Some people call it AEO. It's basically the same. Optimizing whatever you are producing online, your content, your website for those chatbots. We've run this experiment for a few months, and based on our queries, we became the fifth most visible of the 11 podcast brands the models track, and our AI visibility doubled. So, of course, I have to share everything with you in this video. I'll show you exactly what we changed, which tools we used, and what happened to our visibility. I'm going to describe everything step-by-step, so you can copy. I'm going to go in the exact order we did it, so that you take the system and make your own business or podcast or whatever you're working on show up in the AI age. And the real opportunity is that most businesses are not doing this yet, so you have this first-mover advantage. 92% of marketers say they plan to optimize for AI search. Only 40% are actually doing that. The gap is your head start. And if you want to build this system with me, subscribe, because I share everything I try myself, what worked, what didn't, and the actual numbers."
+    },
+    {
+      "speaker": null,
+      "text": "So, step number one, find out if AI can even read you. A few months ago, I was testing something simple. Ask a few chatbots to recommend Silicon Valley podcasts. And my show didn't come up, despite the name Silicon Valley Girl. Not on Perplexity, not on ChatGPT, not on Gemini. After 50-plus SEO interviews, and the models acted like the show did not exist. Isn't that wild? All that content was completely invisible. So, I did one thing that started this one-month-long rebuild, and it's the first thing I want you to do. My team sent our website URL to Claude with one question. How visible are we in AI search and why aren't we showing up? Claude came back with a very specific list. The HTML was missing the parameters AI crawlers need to read a page. The transcripts of our podcasts were hidden behind JavaScript, so the crawlers just saw an empty shell. By the way, by the site, I mean we just have a website where I host all the information about all my social media. Of course, we have YouTube, but we can't really do a lot around its infrastructure. But we're going to talk about YouTube as well. But basically, the website I have, marinamegilko.com, looked totally fine to humans. To an AI reading the source code, we're basically a blank page. So before you watch the rest of this video, put this on pause, take your URL, paste it into whatever chatbot you're using, and ask it how visible you are in AI search, and what's stopping you from showing up. You'll get back a list of fixes specific to your site. And any insights on this, I'm waiting to read your comments because we're still working on this problem."
+    },
+    {
+      "speaker": null,
+      "text": "If you run a newsletter, a community, or a client list, you're already paying for an email platform, probably more than you need to. Omnisend can cut that bill by up to 35%, and the migration takes about 5 days. They handle the move. You show up when it's done. Every flow, every list, every template comes with you. Same automations running, same sequences live on a platform that doesn't charge extra for features you already expect. Their average customer gets $79 back for every $1 spent. 150,000 businesses run on it. 24/7 support, no added cost. The process is simple. Fill out a form, Omnisend's team handles the setup in 3 to 5 days, store connection, contact import, SMS transfer, workflows. You test everything while keeping your old platform running, then switch when it's ready. Support guides you through it all. Check out the link in the description and use code SB Girl 30 to get 30% off your first 3 months."
+    },
+    {
+      "speaker": null,
+      "text": "So, this list is basically your road map. Your step number two, you build a home the crawlers can read. So, level one was giving the crawlers something they could actually read. We didn't even have a real podcast site. So, we live coded one from scratch. Again, super easy these days. We use Claude code. You describe what you want in plain English and it writes the actual code for you. Then, that site has to live somewhere on the internet, so we put it on Vercel. Vercel is the host. It's the place your website actually sits. Back end is basically the part nobody sees. Rails keeps all of raw episode data in one place. Every transcript, every guest name, every summary. Railway is where that engine runs. So, when we add a new episode, its page builds itself from that data instead of me copying and pasting the same layout into 85 different pages by hand. So, now we have this site, podcast.marinamogilko.com, where every single episode has its own crawlable URL with a full episode transcript, summary, and guest profile. Google indexed that homepage within 4 weeks. So, it's a long-term task. It's not going to happen overnight. Then, we of course made every page machine readable and this is the part most people skip. Every page is fully built and just sitting there. All the text already on it before anyone opens it. Nothing has to load or assemble first. So, when the AI crawlers come by, the little bots that ChatGPT, Perplexity, and Claude send out to read the web, the whole page is right there for them instantly. Nothing to wait for, nothing to click. We built 85 plus episode pages this week. The same setup is used by Huberman Lab and Lex Fridman. Again, it's very important that the full transcript sits right there in plain text without you having to click to open anything. That move adds 8,000 to 15,000 words per episode the AI can now read and quote back with our name on it. And honestly, if you do nothing else from this video, do that part. There is a real signal behind it."
+    },
+    {
+      "speaker": null,
+      "text": "And now step number three. You got to fix your identity in the machine. So the models don't really decide what your business is or what your social media persona is just by reading your home page. They read a few structured databases that label you and then they trust the label. Get the label wrong and you get filed in the wrong category. So number one, Wikidata. The machine-readable record that tells AI what kind of thing or person you are. So this is something that moved everything the most. Wikidata sits behind Google's knowledge panel and feeds Gemini. Every entity has a field called instance of, which is just what type of thing it is. Mine said vlogger and a YouTuber because that's what I was 10 years ago and 12 years ago when I started. Gemini read that field and called Silicon Valley Girl a vlog and a vlog never gets pulled into a podcast answer. So we changed the occupation to podcast host, entrepreneur and angel investor, added the podcast as its own entry and translated it into 11 languages so the same fact holds no matter which language the model replies in. It took us a few hours. You have to do it as well. This is where the models actually read your category, not just where people listen. This part is for creators who are present on podcast but also for founders. Podcasting is a big part of your marketing strategy. So when we pulled the sources of the models cited in a category, Apple was about half of them. Half. So we rewrote the show description and the category fields to say the exact phrase we want them to repeat it back. \"AI, tech, and career growth interviews with CEOs.\" Same words we would put into the Wikidata occupation. Spotify, same description, second source for cross-checking. By the way, the GEO mistake I was making is that I was writing a fresh bio on every platform because it just felt nicer. That was actually a mistake. So, now we rewrote my Spotify bio to match Apple and Wikidata word for word on the phrases that matter. When the sources disagree, the models play safe and name someone else. When all three say the same sentence, it repeats your sentence back. The principle under all of it is that consistency across your sources is what the models trust."
+    },
+    {
+      "speaker": null,
+      "text": "Whatever the AI thinks you are, go to every place that reads your site, Wikidata, Apple, Spotify, and make them say one identical accurate sentence. This is the cheapest step on the list and also one of the strongest."
+    },
+    {
+      "speaker": null,
+      "text": "Now, step number four is plumbing. The way search and AI tools find you is that they don't magically know your page exists. A crawler has to discover each page, read it, and add it to an index. If a page never makes it to that index, no search engine and no AI can ever recommend it. It's invisible by default. So, we really needed to get those pages into the indexes. So, here is how you can do it. First, Google Search Console. This is like a direct line to Google. You hand it a sitemap, which is one file that lists every page on your site, so Google doesn't have to stumble onto one of them at a time. Then it tells you exactly which pages Google found, which ones it couldn't read, and what's broken. We submitted our sitemap, and Google discovered 91 pages it hadn't indexed before. The result from this boring hour work, about 700 clicks a month on the main site that simply weren't there before. Plus 91 pages the engines can now find."
+    },
+    {
+      "speaker": null,
+      "text": "The lesson here is that before anyone can recommend you, a machine has to find your page and file it away. Then next step, of course you have to measure it. If you don't have the numbers, if you don't know how things are moving, you can't really steer your airplane. We track all of our work through an app called Peak AI, p e e c a i. It tracks the three engines we have turned on, Google, Google AI overview, ChatGPT and Perplexity, and it tells me for every question whether we show up and who's beating us. By the way, we did our research. We looked at different AI tools. Peak covered the most engines at the entry price, so we stayed. And also Peak has this tactic that's worth the whole subscription in my opinion. It shows you the exact keywords models searches for internally while it's answering questions. So we just started writing those exact phrases into our episode titles. That straightforward. The first time we confirmed it was our Reid Hoffman X LinkedIn CEO episode. We titled it to match what models search is for, the LinkedIn CEO podcast, and we started winning that answer. It's now a repeatable pattern across five different guest questions. Check every title against what people are actually typing into AI. And by the way, this is a long-term work that never stops, so this is not final, but let me show you before and after."
+    },
+    {
+      "speaker": null,
+      "text": "When we started, we showed up in about seven of 48 tracked questions. Masters of Scale, Reid Hoffman's podcast, was in 21, All-In, of course, 19, Diary of a CEO in 15. We were nowhere near them. As of last week, Silicon Valley Girl is the fifth most visible by AI visibility of 11 podcast brands we track, ahead of TVPN, Gary V, and Mel Robbins. Of course, full disclaimer, we're only tracking a few keywords that we think matter to us. We're going to add more very soon, and we're going to go low in rankings again, but we are now just seeing how we're rising in the ones that we're tracking, which means there are a few more that we're not tracking, and our overall AI search visibility doubled over the time we worked on all of this."
+    },
+    {
+      "speaker": null,
+      "text": "There are some specific questions that we actually own. If you ask AI for podcast with Yo Ass and Matthias, we come up 34% of the time, often as the only show it names as head of Google research. Also, try best podcast for women interested in AI and startups. 19% is us. Perplexity CEO podcast, 31%, although Aravind just did another podcast with 20VC. I wonder if that messes up the results."
+    },
+    {
+      "speaker": null,
+      "text": "But as I said, it's an evolving, ever-changing game, but I love playing it. I also want to be honest about where we still lose. The really broad ones, best AI podcast 2026, we don't win them. Those get answered from big listicles where competitors get mentioned way more often than we do, and we haven't been cited much. We did get named in a Forbes listicle in April, and that's a thing that moves the broad questions. So the work is still ongoing."
+    },
+    {
+      "speaker": null,
+      "text": "My next step, first of all, stepping up my game, asking better questions, getting more views, getting more relevant, but also, I think I will start working with a publicist. I don't know if you follow me on LinkedIn, but I shared my PR nightmare story that happened a year ago, where it didn't pay off at all, but now I have a person who I trust. So maybe we'll try that."
+    },
+    {
+      "speaker": null,
+      "text": "Anyways, the work is still going. I'll share if this video does well, I'll do another video on GEO, and I will definitely keep sharing about our GEO AEO journey in my newsletter called future proof. It's free. The link is in the description."
+    },
+    {
+      "speaker": null,
+      "text": "So here's your clear roadmap the same order we did it. One, you ask AI to read your site and tell you why you're invisible. Do it right now. Two, give the crawlers something they can actually read. Static HTML, real transcripts in the source. We were invisible for one boring technical reason and fixing it was the single highest leverage thing we did. Three, fix your identity everywhere so it says the same accurate thing from Wikidata to your platform bios to your social media anywhere you show up. Four, match your titles and headlines to the questions people actually ask the AI, because it's the biggest mistake the way we try to formulate thoughts and the way people actually think. And five, pick one tracker and watch it weekly and read the trend over weeks not days. Don't rush it because a single week doesn't really make a difference as I said to Google four weeks to identify us."
+    },
+    {
+      "speaker": null,
+      "text": "And here's the honest truth as well why I mentioned PR and a publicist. 82% of what AI cites is earned media. Earned media means other people talking about you not you talking about yourself. An article that mentions you, a podcast listicle you got named in or top entrepreneurs, a journalist who quoted you, a Reddit thread about you. You don't pay for it and you didn't post it. Someone else did and that's what the AI trusts the most because anyone can say they're the best on their own website."
+    },
+    {
+      "speaker": null,
+      "text": "If you're like, \"Okay Marina, that was great. Can I have this plan and do it later?\" Yes, you can. It's in my future proof newsletter. The link is in the description. Subscribe and you'll get the 30-day plan that we've created for ourselves and for you for free."
+    },
+    {
+      "speaker": null,
+      "text": "I hope this video was useful and if it was, please thumbs up because I haven't done these tutorials in a while. I want to see if you're liking them and if they're useful and if you're applying them. So please let me know down the comments if it's useful. Please give this a thumbs up and if you can talk about this podcast on your social media, I'll be so grateful. Thank you so much, and I hope this information and video was useful. Bye."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "VF2FwZ_PXhw",
+      "thumbnail": "https://img.youtube.com/vi/VF2FwZ_PXhw/hqdefault.jpg",
+      "title": "Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Stanford's Top AI Economist: The Next 10 Years Will Be the Best AND the Worst in History"
+    },
+    {
+      "videoId": "HMvTSaaO9sU",
+      "thumbnail": "https://img.youtube.com/vi/HMvTSaaO9sU/hqdefault.jpg",
+      "title": "The 3-Year AI Deadline: How to Stay Relevant (2026-2028)"
+    }
+  ],
+  "topics": []
+}

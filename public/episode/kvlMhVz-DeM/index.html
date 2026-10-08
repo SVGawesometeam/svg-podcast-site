@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Nikil Viswanathan is an Indian-American entrepreneur and co-founder and CEO of Alchemy, a blockchain developer platform backed by Stanford University and valued at $10 billion. Before founding Alchemy, he worked at Facebook after being personally recruited by Mark Zuckerberg, and previously co-founded Down to Lunch, which became the number-one social app in the US App Store. He was named to the Forbes 30 Under 30 list and holds both undergraduate and graduate degrees from Stanford University.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -484,7 +496,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> When you think about the world 20 years ago, what shaped our world? Government, religion, politics, countries. What is it today? Facebook, Apple, Google, Amazon, Microsoft, Bitcoin, Ethereum. My view was I want to build something that everyone in the planet uses. The most important thing as an early stage founder is getting product-market fit. That was the only thing that matters. Very often people solve a problem that people don't actually have. Most things you build in the beginning will not be good and people won't want them, and you have to be okay with throwing it away.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> When you think about the world 20 years ago, what shaped our world? Government, religion, politics, countries. What is it today? Facebook, Apple, Google, Amazon, Microsoft, Bitcoin, Ethereum. My view was I want to build something that everyone in the planet uses. The most important thing as an early stage founder is getting product-market fit. That was the only thing that matters. Very often people solve a problem that people don't actually have. Most things you build in the beginning will not be good and people won't want them, and you have to be okay with throwing it away.</p>
             <p>The way that all the great companies were actually built, or most of the great companies were built, was that they actually picked a market that was really small, they dominated that market, but then the market grew really fast. Alchemy was like our 16th pivot. It was really a bet of like, if crypto works, this is going to be massive. If it doesn't work, you know, we'll go back to McDonald's and we'll be fine.</p>
             <p>The two most important things in life are confidence and persistence, and if you have both of those two things, you can do anything you want. The way I measure impact is on two axes. Your x-axis is how many people's lives do you touch. Your y-axis is how deeply do you improve their life every day. Looking back, I probably would have spent a little more time sleeping and a little more time on relationships and things like that. You have one shot at life. You don't get multiple chances.</p>
             <p>People ask like, &quot;What are your hobbies?&quot; I don't have hobbies. Like, this is my hobby.</p>
@@ -570,24 +582,28 @@
             <p><strong class="speaker">Nikil Viswanathan:</strong> Yeah, I mean, it's kind of all across the board. So we power everything from NFTs to crypto trading to decentralized finance to real-world assets—people taking stocks and bonds and putting that on the blockchain to make it more accessible for everyone to trade—to things like Shell. You know, we work with some of the largest brands in the world. You open your phone and you look at these apps. We're working with a lot of those. I think there's like a wide spectrum of applications, which is one of the cool things. Because our success is not dependent on a specific industry vertical. If anything in crypto succeeds, we benefit from that. So our incentive is to help everything in the space grow as much as possible.</p>
             <p>Are you upset with the current state of the market?</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> No, I think one thing that's been really interesting is the crypto market went down like 84% from end of 2021 through late 2023. You saw an 84% decrease in crypto prices. The thing that was most exciting to us is the number of developers</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/JI6KrvldAoE/" class="related-card">
                 <img src="https://img.youtube.com/vi/JI6KrvldAoE/hqdefault.jpg" alt="Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork" loading="lazy">
                 <span class="related-title">Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork</span>
               </a>
+
               <a href="/episode/IdN-b2Y_foo/" class="related-card">
                 <img src="https://img.youtube.com/vi/IdN-b2Y_foo/hqdefault.jpg" alt="Marie Forleo: Progress Way Faster than 99% of people" loading="lazy">
                 <span class="related-title">Marie Forleo: Progress Way Faster than 99% of people</span>
               </a>
+
               <a href="/episode/_aUKWYHLKfE/" class="related-card">
                 <img src="https://img.youtube.com/vi/_aUKWYHLKfE/hqdefault.jpg" alt="Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan" loading="lazy">
                 <span class="related-title">Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan</span>
               </a>
+
               <a href="/episode/VN_0zJXBO6E/" class="related-card">
                 <img src="https://img.youtube.com/vi/VN_0zJXBO6E/hqdefault.jpg" alt="How to make $1000/month on social media with 0 followers" loading="lazy">
                 <span class="related-title">How to make $1000/month on social media with 0 followers</span>

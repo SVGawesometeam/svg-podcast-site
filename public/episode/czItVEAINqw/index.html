@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,9 +374,7 @@
       <p class="guest-bio">Alex Mashrabov is the founder and CEO of Higgsfield AI, an AI video and image generation platform that reached $200M in annual recurring revenue within 9 months of launch — a growth rate faster than Slack, Zoom, or Dropbox. Before Higgsfield, Alex accumulated deep experience in consumer technology and product development, which informed his customer-first, rapid-iteration approach to building AI products. He is a vocal advocate for lean founding teams, bootstrapped growth, and treating AI as the next industrial revolution.</p>
     </div>
 
-
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -460,7 +471,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> I have an amazing guest today. I am so excited to learn from you. Let's get very practical right away. You built Higgsfield and achieved $200 million in revenue in 9 months. Let's imagine every—I don't want this to happen, but let's imagine a scenario when you have to start from scratch tomorrow and you have 90 days to launch a business idea. From what you've learned with your experience at Higgsfield, what would you do?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> I have an amazing guest today. I am so excited to learn from you. Let's get very practical right away. You built Higgsfield and achieved $200 million in revenue in 9 months. Let's imagine every—I don't want this to happen, but let's imagine a scenario when you have to start from scratch tomorrow and you have 90 days to launch a business idea. From what you've learned with your experience at Higgsfield, what would you do?</p>
             <p><strong class="speaker">Alex Mashrabov:</strong> I think it all starts with maybe a team of two. Someone who is a builder who can go within 24 hours from idea to a product. And now it all becomes possible. There are so many databases, there are so many payment systems and so on which simplify creation of MVP. And then someone as I call it a go-to-market person who has this natural empathy, maybe, or understanding of the sort of target distribution, whom they're selling to, and who can come up with interesting kind of new content formats which can resonate with the target audience on social media. And I think this is a very different skill set from the marketing roles of the previous decades.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> And how many times should they be ready to iterate? How many ideas?</p>
             <p><strong class="speaker">Alex Mashrabov:</strong> For example, for us last year we were iterating every day. So it was six days a week and every day we were putting new product release as we were trying to find workflows and use cases which have high frequency and which matter for our target audience. And then once the technology gets there, it's important to develop sort of the workflow which is easy enough but gives enough configuration as well. This dilemma of the perfect interface is still not solved frankly. So this is another reason why we embrace daily iteration. And on top of all of that, every month the whole industry resets. They completely push the boundaries in terms of the capabilities. There are probably let's say five leading research labs and each lab is pushing massive updates every quarter. So at some months we have even two major updates and it typically requires substantially rebuilding the whole product around those models. So it's an exciting time today because product builders like ourselves at Higgsfield, we just try to evolve the product so that it highlights the best possibilities of these models to our customers. But it's a constant race.</p>
@@ -529,23 +540,28 @@
             <p><strong class="speaker">Alex Mashrabov:</strong> Yeah. And like number-driven goal setting, really, is where I put a lot of my personal time. For everything else, I'm trying to evolve Gemini as much as possible, but also use Claude for Excel, Claude for X—like, for example, Claude for cybersecurity—as it really increases the productivity.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Alex, thank you so much. It was amazing. I'm looking forward to reading your comments. What was your key takeaway and what you're going to do right after this video?</p>
             <p><strong class="speaker">Alex Mashrabov:</strong> Thank you so much. Thank you.</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/S0h5oUVv0BY/" class="related-card">
-                <img src="https://img.youtube.com/vi/S0h5oUVv0BY/hqdefault.jpg" alt="LinkedIn Founder: Double Your Income With AI Before It&#x27;s Too Late | Reid Hoffman" loading="lazy">
-                <span class="related-title">LinkedIn Founder: Double Your Income With AI Before It&#x27;s Too Late | Reid Hoffman</span>
+                <img src="https://img.youtube.com/vi/S0h5oUVv0BY/hqdefault.jpg" alt="LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman" loading="lazy">
+                <span class="related-title">LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman</span>
               </a>
+
               <a href="/episode/Gk0n0FjeKj8/" class="related-card">
-                <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/hqdefault.jpg" alt="Stanford AI Expert: 71% of People Won&#x27;t Survive the AI Shift — Here&#x27;s the 30-Minute Fix | Kian Katanforoosh" loading="lazy">
-                <span class="related-title">Stanford AI Expert: 71% of People Won&#x27;t Survive the AI Shift — Here&#x27;s the 30-Minute Fix | Kian Katanforoosh</span>
+                <img src="https://img.youtube.com/vi/Gk0n0FjeKj8/hqdefault.jpg" alt="Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh" loading="lazy">
+                <span class="related-title">Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh</span>
               </a>
+
               <a href="/episode/tzUAJZAuaZw/" class="related-card">
                 <img src="https://img.youtube.com/vi/tzUAJZAuaZw/hqdefault.jpg" alt="Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company" loading="lazy">
                 <span class="related-title">Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company</span>
               </a>
+
               <a href="/episode/9XM8yDN-AEA/" class="related-card">
                 <img src="https://img.youtube.com/vi/9XM8yDN-AEA/hqdefault.jpg" alt="Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf" loading="lazy">
                 <span class="related-title">Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf</span>

@@ -1,0 +1,359 @@
+{
+  "videoId": "JI6KrvldAoE",
+  "title": "Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork",
+  "format": "interview",
+  "guestName": "Renuka Apte",
+  "guestTitle": "Co-founder & CEO, Clockwork",
+  "aboutGuest": "Renuka Apte is the co-founder of Clockwork, a robotics startup developing fully automated manicure machines. Originally from India, she moved to Silicon Valley in 2009 and spent years building AI infrastructure before launching Clockwork to make beauty services more accessible through technology. She is a robotics engineer driven by a childhood passion for building robots and a personal frustration with the time demands of traditional salon visits.",
+  "publishedAt": "2024-10-04T15:40:00.000Z",
+  "duration": "24 MIN",
+  "coverArt": "https://img.youtube.com/vi/JI6KrvldAoE/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/JI6KrvldAoE/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Renuka Apte, co-founder of Clockwork, a startup that built a fully automated manicure robot that paints nails in 10 minutes for $10. Renuka explains the engineering challenges behind nail polish application, the company's MVP strategy, and plans to expand into cuticle care. They also discuss the impact of nail robots on the job market for nail technicians, work-life balance, and what it's like to manage a hardware startup as a mother.",
+  "keyTakeaways": [
+    "Clockwork's robot paints 10 nails in 10 minutes for $10, compared to $40–$100 for a traditional salon manicure in the U.S.",
+    "The global manicure market is estimated at $8 billion, and 80% of women want their nails done regularly but only 30% actually visit a salon consistently.",
+    "Nail polish is a non-Newtonian fluid whose viscosity changes with applied pressure, making it one of the hardest materials for a robot to work with precisely.",
+    "Clockwork launched a minimum viable product called 'Frankie' (short for Frankenstein) focused solely on polish changes before expanding to cuticle work, which is currently patent pending.",
+    "Renuka moved from India to Silicon Valley in 2009, built AI infrastructure before co-founding Clockwork, and was motivated by her own frustration with the time and logistics required to visit a nail salon."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "I asked a robot to do my manicure"
+    },
+    {
+      "time": "01:21",
+      "seconds": 81,
+      "title": "I want a beauty service so often, but I don't have the time to go out!"
+    },
+    {
+      "time": "03:07",
+      "seconds": 187,
+      "title": "30-Second Website: Is it Possible?"
+    },
+    {
+      "time": "04:51",
+      "seconds": 291,
+      "title": "What about the cuticles?"
+    },
+    {
+      "time": "07:49",
+      "seconds": 469,
+      "title": "Let’s check out my nails!"
+    },
+    {
+      "time": "09:03",
+      "seconds": 543,
+      "title": "How long did it take to make this robot?"
+    },
+    {
+      "time": "11:53",
+      "seconds": 713,
+      "title": "You can totally get a robot manicure during your break at work! It’s a thing"
+    },
+    {
+      "time": "14:41",
+      "seconds": 881,
+      "title": "I’m worried about nail technicians. Will robots take over their jobs?"
+    },
+    {
+      "time": "17:31",
+      "seconds": 1051,
+      "title": "How many robots does ClockWork produce each year?"
+    },
+    {
+      "time": "20:01",
+      "seconds": 1201,
+      "title": "What about work-life balance?"
+    },
+    {
+      "time": "21:32",
+      "seconds": 1292,
+      "title": "How’s it like managing a business while being a mom?"
+    },
+    {
+      "time": "22:43",
+      "seconds": 1363,
+      "title": "My manicure is all done! Let’s check it out!"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay girls, get ready to judge. I asked a robot to do my nails and it's going to paint my nails in red. So I'm asking you, is it doing a good job or is it a no? It will only color my nails. It's not going to work on my cuticle. We will discuss this separately. So 10 nails, 10 minutes, $10. By the way, for everyone who's watching from outside the US, manicure here costs from $40 to $60, and I'm not happy with the quality at all. I normally go and do Russian manicure. It's like the top quality—they work with a cuticle—but it costs around $100 and it takes an hour and a half. I definitely don't have much time for it. This is a fully automated experience. There won't be anyone helping me, and this is super exciting."
+    },
+    {
+      "speaker": null,
+      "text": "Here's a video with instructions before I start. They tell me to relax and not shake my hands. Putting my hand into the robot and trying to relax as much as I can. While I'm fighting the excitement, let me introduce you to the lovely girl next to me. Her name is Renuka Apte, and she's one of the creators of Clockwork—this robot that does your manicure. Originally from India, she has dreamed of building robots since childhood, so much that she became a robot engineer and moved to Silicon Valley in 2009. Here she built AI infrastructures, but finally wanted to create her own robot. And here it is."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "I felt like I want a beauty service so often, but I don't have the time to go out—like, get a babysitter, find parking. It's just such a whole production if you have to go to a salon. So this felt like that in-between where you could use technology to make services a lot more accessible."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, so when you went through this thought process—okay, we want to build something in beauty—why nails?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "That's a great question. So when we realized that we wanted to build real-world robots, we started looking at a bunch of spaces, and beauty stood out. Like I said, because of my pain point. Among the beauty services, nails—actually, painting nails—is the hardest, I would say, because nail polish is a non-Newtonian fluid. We take it for granted, but the fluid viscosity actually changes based on how hard you push. That's what creates streaks, right? Like, it has surface tension, so it doesn't always go where you want it to go. It has solvents that evaporate, so you have to work really fast. So if you think about it, actually nail polish is really, really hard compared to, say, if we were doing laser facials, right? And the tech that we've built can actually support a bunch of different services. But imagine telling somebody before they know about our brand: \"I'm going to point a laser at your face.\" They're going to be like, \"No, thank you.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The manicure market is estimated at 8 billion worldwide, and there is also a lot of latent demand. For example, 80% of women want to have their nails done, but only 30% actually go to a salon on a regular basis. I'm one of those women who really want to get their nails done but just never have time. Honestly, I'm fascinated by how quickly the robot and artificial intelligence industries are growing. I'm sure that just in a few years, robots won't just paint our nails—they'll be capable of performing complex hands-on tasks."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "There's this big gap in the market. From the point of view of a nail technician, it doesn't make sense for them to offer a quick and cheap service because they'll fragment their day and they can't make the economics work, right? And so this was like a perfect place where it's like the fast food for beauty—where by using technology, you can create that in-between that has a lot of demand."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Well, what about the cuticles? Because when I go to a salon, I just go for cuticles. Like, painting—okay, yeah, I could do it, maybe not as perfectly—but the way they work with it... Are you planning to expand there, or what do you think about this?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Yeah, so we actually have demonstrated doing light cuticle work, shaping—we've demonstrated all of these parts. We actually haven't released them yet. So taking a step back, right, for us, we have been as engineers, right, like validating every piece of the risk. So the first thing that we had to ensure was: Is the robot painting at high quality? Are people going to be scared of it, right? Like, we had all of these questions of like, what happens when you place it out in the real world? How do we attract people, right? How do they understand the messaging? And so for us, it was really important to launch a minimum viable product. And that for us was polish changes. We literally call this version of the robot Frankie—short for Frankenstein—because we didn't pay attention to the industrial design. It is really just the absolute minimum. And so once we get into the full manicure experience, we really want to actually also pay attention to the industrial design and sort of launch all of that together, step by step."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly, perfect startup approach. And you know, building credibility in the brand is so important because this, as far as I know, may be one of the first robots in the world that literally touches an untrained human being, right? People can come off the street and put their hands in this thing. And so to build that credibility..."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Suddenly, when people think cuticles, they're like, \"Are you going to use a sharp tool?\" Yeah, what do you use for cuticles? We're not going to talk about that piece because it is patent pending, and we do want to launch it. But it's actually doing the work, right? It doesn't cut. It does something else. I can't talk too much about it. Fingers crossed, because this would solve my problem."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because now I just can't—like, for me, going to manicures is at least 2 hours of my time because the one that I prefer, that works with cuticles, the Russian style, yeah, takes at least 60 minutes. Absolutely, driving there, driving back—like, two hours of my time. Without kids, that's how much I get during the day. Like, I can't."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Yeah, and that cognitive load—people just take for granted. Like, women just appear looking perfect, right? And like, nobody really thinks about what went into that. So if you're making it easier and more accessible to do these services, you're in some sense leveling the playing field. And that is really important."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, absolutely. By the way, let me quickly explain what Russian manicure is. I think it's the top quality manicure in the world. It is basically when your manicurist works on your cuticle and your nails, and the quality of it is top-notch. Okay, we're getting first results. What do we think? Please comment down below. How's it going so far?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "It's going well, yeah. I like that. You know, so the size here—I think I missed a little bit here on the edge. You could just take one of these and then dip them into your polish and then try again. Another option that you can try: sometimes that missing edge comes because you are tense in the beginning and then relax, and so your finger moves. And that's when you get that little bit of edge."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'll try to relax. So just like breathe out and meditation music. Yeah, ready?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "And then you can also just do a redo for that nail. Like, you can take the polish off and then try again. I think it's like a half a millimeter. Yeah, it's fine. I think also because yesterday I got my nails and they were too short, I feel like it's..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, yeah, ready. Yeah. Normally in our instructions, we have this thing like, show a little bit of the white part of the nail for best results. But I cut it just because I just don't have time. So I cut it as short as possible. So I do it like once in 2 weeks. Feel like this is perfect. Can we talk about the business side of things? So how long did it take you to develop the robot?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "It's taken a while. So the first sort of prototype version we got to very quickly, and that's largely because of the software platform we've built. So we started early 2019, and within about 8 months... it's been a while because I did my first robot manicure at TED 2021. Yeah, 2021 or 2022. I remember my youngest was really young."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, yeah."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Um, so that was part of the approach, right? We think that real-world robots have been approached a little incorrectly. People think of them as hardware, and you know, consumer hardware needs a lot of capex, and a lot of the iteration is very expensive. We instead took commodity hardware and pushed intelligence into software. And that's why we've been able to iterate really quickly. Last year in February was the first fully autonomous version of the robot."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, because at Target that was a person, wasn't it? They were just watching the robot, no?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "No, they were just watching. But they were also giving you the cartridge and helping you with instructions. So the robot was doing all of the painting part. The person was mainly there for the rest of the experience. And that Target data gave us a lot of insight into how do we need to arrange the tutorial, how do we need to arrange the signage. Um, and so that was actually very, very insightful."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. So would you say what was the hardest—the software, the robot, or like the whole experience?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "The software and AI is where the magic is for sure. But I would say that this is a tough, tough category to build. So you have to pay attention when you're doing robot in the real world as to how do people learn about it, right? What are you doing with inventory? How are you doing operations? So there's all of these pieces that are productionizing, right? Like, what happens? How do you do servicing? And then how do you do all of that economically so that you make really high margins, right? And so I think that a lot of people think of this as like, \"Oh, you know, maybe it's the hardware that's interesting,\" and it's really not. Some people are like, \"Oh, maybe it's the AI that's really interesting,\" and it is—that's where we spend a lot of our time. But that's not the end of the story."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How much does it cost to produce one robot and put it somewhere?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "We don't talk about pricing because that is a bit of a competitive advantage for us and you know, important when we do sales. But um, what I will say is that we are a B2B company. So we sell to brick-and-mortar players. That could be a corporate real estate owner. For example, this building is owned by Tishman Speyer—the same people who own Rockefeller Center. We started there, and we just did their sixth building in Boston."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "And for them, it's really a back-to-office amenity. This robot is super convenient for women who work in offices because it only takes 10 minutes to do the manicure, and they don't have to go anywhere. You go downstairs, you do your manicure, and you head to dinner with a colleague. It's something that gives you this instant makeover and makes you feel more beautiful. And I feel like in my case, my nail color really affects my mood. So one machine can basically be on 24 hours in some locations. Like airports, we're on for 14 hours at this point. It's really depending on the timings of the store. And per hour, it can do like 3 to 4 depending on how fast the people are."
+    },
+    {
+      "speaker": null,
+      "text": "We had a super successful pilot at Target back when you used it, back when we were still developing the robot. Really, and we showed how we increase dwell time, how we attract people in, and how they then go on to shop the store. So we thought about that. We thought, like, can we make it just a franchise, right? Where a lot of people were like, \"Oh, it's a robot café,\" right, and you basically franchise that model. And I think maybe that's the future. But right now, we found this like very interesting mutual need with brick-and-mortar owners where they want people back in their spaces. They already have the space. They already have people sort of coming in there, and now they want to elevate that space. And so it just mutually beneficial."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Clockwork believes that the robot will improve with each new version, just like the iPhone. Right now it only does plain nail polish, but eventually it could start doing nail art. By the way, I'm done with the nails on my other hand. I'm not fixing anything on this hand. So because my nails are too short, you see some like tiny bumps here, but this is like such an easy fix. And if I were painting the nails myself, I would do worse. So I'm going to fix these now. But you can see how perfect it is. The most difficult part for me is this part—the cuticle and nail part—but it just did it perfectly. Okay, so they have all the tools here. So I'm going to... I can totally relate to a situation where I really want to have my nails done, but I don't have time at all. Or my favorite person who's doing my nails is fully booked for the next 2 weeks, and I only have time now. So in this case, a robot could be a cool option."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "I think what I would say is I'm not sure that that's really true. Like, I think it's complimentary. And the reason is because nail techs are doing things like acrylics and pedicures, right? Like, there's always going to be a market for those services. But I think it's still shrinking. Like, there are some people who would just go and do their polish. For sure. But those people are not currently going and taking two hours out of their day to go to a nail salon, right? Like, that's just not who we're serving. And if you look at even a nail tech's day, right, like, even if they're working a full 8-hour day, that's maybe 6 to 8 services."
+    },
+    {
+      "speaker": null,
+      "text": "We are at like nine airports, I believe, at this point. Some are like Vegas, DC Airport, Miami..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Charlotte. How hard was it? Because I know it's the hardest. I have some friends who are doing airports, and this..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So we don't actually deal with the airports ourselves. We have partnerships with, again, brick-and-mortar retailers or so parodies. Laird is North America's leading airport retailer. They have 850 stores in the US, and then their parent company, Loeger, has 5,000 stores worldwide. And so for them, it really is the same retail—attract people, increase dwell time, people go and shop. And so we partner with them. They started with a five-robot contract with us before we could even give them five. They've tripled it. We're also with ExWell. They own Express Spas—the massages, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, perfect."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "So we're in a bunch of Express Spas worldwide. They're worldwide. You've seen them in Germany, I think? Yeah. I think Amsterdam and UAE and Turkey. So the goal is basically to expand using your current partners to just expand worldwide."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. And we want to launch the next things that are coming—the full manicure experience. When do you have an estimate?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "We're not talking about the estimate right now. Okay. But yeah, that is something that we've already demonstrated works with this hardware. And so really, it's a matter of finding the right time to launch them. And we are a small company, so we have to balance the expansions with the features."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, that's what I'm wondering. Like, how many machines can you produce in a year?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "So right now, we've gotten to the point of like 4 to 5 per month. And yeah, we use a contract manufacturer in the Bay Area."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, so you produce them in the Bay Area?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Yeah, so we are building them. Like, the final version happens in our office in SF. And then, obviously, we want to grow from there into producing more per month. And because, again, the magic is in the software, it's easy to just allow a contract manufacturer to build up the hardware parts. Most of them are commodity hardware parts. And so we can move pretty quickly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's awesome. So you're basically—everything that you're producing is already sold, pre-sold, to your partners, the parts. They're commodity, so obviously the skin of the robot is custom, and like some parts of it are custom, but the core components are actually off the shelf, no?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "I mean, like, the contracts that you have—yeah, you're producing for those contracts. So you don't—you're not looking for new partners basically right now?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, we get new partner requests all the time. But yeah, we have... That's great."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Yeah, we get like hundreds to thousands of requests depending on the month of people reaching out to us and saying, \"Hey, can I lease one of your robots?\" And there's such interesting dynamics. Some people want to franchise it. Some people want to earn passive income. So there's a lot of optionality for us with partnerships. Can you share how much you've raised?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We've raised $10.5 million to date. And who have been your most helpful investors?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Our lead investor is Initialized Capital, famously Gary Tan, who now runs YC. Coming in the past, they have been phenomenal. We also have Pipeline Venture Partners and MVP Modern Venture Partners, and they've been really, really great as well. Typically, these tend to be firms who understand how hard the robotics space is and then also will understand sort of the consumer aspect of it. Because even though we are a B2B company, ultimately, like, the experience does matter. And we can, by saying things like we attract people into your space, we can make our contracts more lucrative."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely, absolutely. You're also a mom. I am. Yeah, how many hours do you work in a day?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Um, I try to keep things sane. It is a lot. I won't try to make this sound easy. But especially recently with the number of new customers we've had, yeah, it is many, many hours. But I do—I also had a working mom, and she used to travel a lot internationally. And one of the things that really stuck with me is even if you are spending lesser time, make it quality time. And so during that time, I like don't also try to do chores. And so yeah, I've been very privileged that I have help and an extremely supportive husband, and that goes a long way."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you work on weekends?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Weekends, but I—again, like, we try very hard. So I have kids, and our first mechanical engineer also has two kids. And you know, people do have other responsibilities—either they're married or have pets or whatever, right? So as a company, we try very hard to, you know, keep sane hours and don't really work as much on weekends or, you know, after crazy late hours."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, yeah, no. Like, we absolutely encourage taking time off. You basically had a baby after you started your company, right? When everything was happening? That's why it's so inspiring to see. Because when I talk to entrepreneurs on this channel, there are so many 20-plus young guys with no family—like, they have all the time in the world to build a company. And you're like, \"Oh, yeah, maybe it's all for me.\" But then I see people like you, and that's super inspiring for me."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "I think that, you know, becoming a mom makes you very efficient and makes you like prioritize brutally. And that ultimately helps because, you know, how it is—like, work fills up however much time you can give. So if you just decide like, \"This is how much time I'm going to give,\" and \"I'm going to do the most important things,\" and \"I'm going to think and plan what that means, right, and where the highest-impact things are\"—I think you just create those structures."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How large is the team now?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "We're about 15 people full-time. So not very large. And about 3 or 4 contractors who are very soon probably going to just become full-time because they're doing quite long hours."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I would say this is just perfect, and it's only going to get better from this stage. It's going to work on cuticles. It's going to get even better with painting technique. But it's already top quality, right? I'm fascinated. Wow, how long did it take us, like 20 minutes?"
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "Yeah, and we were also talking, and I was exploring the robot. The next time I do it, it's going to take maybe 12 minutes or 13 minutes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Awesome, perfect. Thank you so much. Wow, you're making the lives of women so much more exciting, and this is, you know, it just adds this thing. Because normally I wouldn't do manicures that often. But if this was in my office, like, why not before going out? I just quickly remove my nails."
+    },
+    {
+      "speaker": "Renuka Apte",
+      "text": "It should be as easy as grabbing a cup of coffee, right? So you grab your coffee, you come."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That was it from us for today, guys. If you're in San Francisco, you're in the Bay Area, or if you're in one of the locations where you have your machines, then come over and try it out. This is a super cool experience. This is very 2024, I feel like. We're in the future already. A driverless car just passed by. I did my nails with a robot. Awesome. And this is a super cool experience. This is very 2024."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "kvlMhVz-DeM",
+      "thumbnail": "https://img.youtube.com/vi/kvlMhVz-DeM/hqdefault.jpg",
+      "title": "His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)"
+    },
+    {
+      "videoId": "chbinls_V-w",
+      "thumbnail": "https://img.youtube.com/vi/chbinls_V-w/hqdefault.jpg",
+      "title": "31 Most Profitable Business Ideas for the Next 10 Years"
+    },
+    {
+      "videoId": "PR__eFQsnhg",
+      "thumbnail": "https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg",
+      "title": "GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke"
+    },
+    {
+      "videoId": "JFilKfL7_9A",
+      "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg",
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus"
+    }
+  ],
+  "topics": []
+}

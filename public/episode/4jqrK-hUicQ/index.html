@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Cassey Ho is the fitness influencer, entrepreneur, and designer behind Blogilates, one of the most-followed fitness channels on YouTube. She is the founder of Pop Flex Active, a direct-to-consumer apparel brand known for innovative activewear, swimwear, and lifestyle clothing, and the creator of the Blogilates brand sold exclusively at Target across all 1,800 U.S. stores. Known for turning a loyal online community into a product-driven empire, Cassey also serves as head designer across both of her apparel brands.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -484,7 +496,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Every day there is a new fire, a new problem, problems on problems, and like you think you're going to explode, but it looks like you were dealing with a lot of online hate, people just shaming you, etc. People sent me the video of her wearing the Pure Wet score. I went numb. I couldn't even feel anything. Swifties just started coming over. They found it. And then we get like 16,000 pre-orders for that one score in that color. I absolutely hate AI. There have been instances where my videos are just stolen off of my page. They've used AI to actually change my face. I'm going to keep fighting because it's not right. I can't work for free for somebody else. As a principle, I will never stop fighting.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Every day there is a new fire, a new problem, problems on problems, and like you think you're going to explode, but it looks like you were dealing with a lot of online hate, people just shaming you, etc. People sent me the video of her wearing the Pure Wet score. I went numb. I couldn't even feel anything. Swifties just started coming over. They found it. And then we get like 16,000 pre-orders for that one score in that color. I absolutely hate AI. There have been instances where my videos are just stolen off of my page. They've used AI to actually change my face. I'm going to keep fighting because it's not right. I can't work for free for somebody else. As a principle, I will never stop fighting.</p>
             <p>Hello everyone. Welcome to Silicon Valley Girl. I have Cassey Ho today. I am so happy that you're here. We met in 2022, I think at the creator summit. I remember you were doing this Pilates thing in the morning, which is amazing, and I still have your mat. Oh good, which is a huge business for you. So I'm excited to chat about AI taking over everything, and I'd love your take on what it's like to run a business in 2025 as a creator and also a woman. So welcome, welcome to Silicon Valley Girl.</p>
             <p><strong class="speaker">Cassey Ho:</strong> Thank you. I'm so excited to be here. So there's two brands. There's Blogotties, which is the retail exclusive to Target brand. And just at the top of this year, we launched apparel at Target for the very first time. It was all at all 1,800 stores in the very front gateway, which was so cool because it really felt like winning the retail Super Bowl. Like you just don't get those opportunities. So that was fully manufactured by our team. We're the vendor. That was such a crazy thing to pull off because in under a year we had to figure out how to produce 1.1 million units. Yeah. And we had never done anything like that before.</p>
             <p>The Poplex brand is my DTOC brand that we mostly sell online. And that one is at a higher price point and really focused on innovation and performance and also just like testing all sorts of things. I would say the Target one is more activewear, whereas Poplex started out with activewear and then has now evolved into swimwear and underwear and casual dresses and stuff. So I'm having a lot of fun playing around with innovation over there.</p>
@@ -526,7 +538,6 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> And that's so cool. That's a really lean team.</p>
             <p><strong class="speaker">Cassey Ho:</strong> Very lean. Very lean for what we do. I think that's why we're all really tired.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Yeah. What do you think is going to happen with AI? What is your take? Are you automating things? What apps are you using?</p>
-
             <p><strong class="speaker">Cassey Ho:</strong> So my husband is a fan of ChatGPT. But me coming from more of a designer artist background, I absolutely hate AI when it comes to stealing from original artwork because AI would not be able to do what it's doing without pulling from previous work. So in that aspect, I absolutely hate it. I think there needs to be some type of royalty built in or something so that if you are taking inspiration from whoever artist and you have to type in that person's name to get that look then just based on that alone, okay, 5% needs to go back to original artist or 10% or whatever. I think that needs to be in place. Then I think people would be less mad. But right now it's like totally wild west with AI, that's how I feel on that front.</p>
             <p>But in terms of like, you know, travel plans, fans and like fun little searches here and there, it's helpful. I'm warming up to it. But like on the artist side, I absolutely hate it.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> But do you see it helping you stay lean with your team like because you're utilizing more AI tools or it's not there yet?</p>
@@ -570,23 +581,28 @@
             <p><strong class="speaker">Cassey Ho:</strong> I know it's very very different than normal DTC brands that rely on the ads. Yeah. Yeah. So it's good but also again if I stopped, I look, I think there would be an impact but I don't think the brand would die because our SMS as well as our newsletter does really really well. Like the clickthrough and the open rate are really high. People love it. Honestly, what's been really cool to see is that sometimes people might follow Poplex but not follow me or like they might know Poplex but not know me. And I really like that because that's showing that this is a brand beyond, you know, any influencer influence or just, you know, anything that has to do with Cassey Ho because my goal is for Poplex to become a legacy brand that lives on for hundreds of years after I die.</p>
             <p>And that foundation for this type of brand and this type of product needs to start now while I'm still alive, right? So yeah, but if I did stop, it would make an impact.</p>
             <p>**Marina</p>
-          </div>
+      </div>
     </div>
-      <section class="related-section">
+
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/PR__eFQsnhg/" class="related-card">
                 <img src="https://img.youtube.com/vi/PR__eFQsnhg/hqdefault.jpg" alt="GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke" loading="lazy">
                 <span class="related-title">GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke</span>
               </a>
+
               <a href="/episode/KfoenLbhOTI/" class="related-card">
                 <img src="https://img.youtube.com/vi/KfoenLbhOTI/hqdefault.jpg" alt="How to Build a Profitable Personal Brand with AI (In Just 30 Days)" loading="lazy">
                 <span class="related-title">How to Build a Profitable Personal Brand with AI (In Just 30 Days)</span>
               </a>
+
               <a href="/episode/ktpNFfpJ5rw/" class="related-card">
                 <img src="https://img.youtube.com/vi/ktpNFfpJ5rw/hqdefault.jpg" alt="LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky" loading="lazy">
                 <span class="related-title">LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky</span>
               </a>
+
               <a href="/episode/chbinls_V-w/" class="related-card">
                 <img src="https://img.youtube.com/vi/chbinls_V-w/hqdefault.jpg" alt="31 Most Profitable Business Ideas for the Next 10 Years" loading="lazy">
                 <span class="related-title">31 Most Profitable Business Ideas for the Next 10 Years</span>

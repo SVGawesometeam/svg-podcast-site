@@ -1,0 +1,297 @@
+{
+  "videoId": "Y854KRfONAU",
+  "title": "The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up",
+  "format": "compilation",
+  "guestName": "Luana Lopes Lara, Erik Brynjolfsson, Peter Yang, Aaron Levie, Sal Khan",
+  "guestTitle": "Kalshi, Stanford, Box & Khan Academy",
+  "aboutGuest": "Luana Lopes Lara is co-founder of Kalshi, a prediction market platform valued at over $1 billion that relies on rapid information collection and decision-making. Erik Brynjolfsson directs the Digital Economy Lab at Stanford and studies the impact of AI on work and wages, using AI daily in his research and personal life across multiple platforms including Claude and ChatGPT.",
+  "publishedAt": "2026-08-18T13:04:57.000Z",
+  "duration": "23 MIN",
+  "coverArt": "https://img.youtube.com/vi/Y854KRfONAU/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/Y854KRfONAU/maxresdefault.jpg",
+  "summary": "Marina Mogilko examines why only 15% of CEOs report getting real value from AI, revealing that successful users spend at least 8 hours per week building AI skills. The episode features insights from six business leaders who have integrated AI into their workflows. Luana Lopes Lara, co-founder of Kalshi (a prediction market valued at over $1 billion), describes her weekly AI system that automatically collects company updates from emails, docs, and all connected systems to flag changes and performance issues, freeing up her Sundays for strategic thinking rather than administrative work. Erik Brynjolfsson, director of Stanford's Digital Economy Lab, values AI at tens of thousands of dollars monthly for his research and personal life, emphasizing that the real payoff from AI appears in the next 2-3 years for those who actually implement it as a system rather than dabbling with individual tools.",
+  "keyTakeaways": [
+    "Only 15% of CEOs get real value from AI because successful users invest at least 8 hours weekly building AI skills — those using AI for seven or more tasks report 90% productivity gains versus 45% for one-to-two task users",
+    "Luana Lopes Lara built an AI weekly planning system at Kalshi that automatically tracks company updates across all connected platforms and flags underperformance, enabling faster decision-making and freeing up 8+ hours on Sundays",
+    "Effective AI implementation requires context and permissions — the system must be connected to all company processes and have proper access controls, particularly for sensitive areas like legal work and compliance",
+    "Erik Brynjolfsson recommends starting with a discovery conversation: ask Claude or ChatGPT to interview you about your job, problems, and goals, and it will generate 10 personalized use cases tailored to your work",
+    "The real value comes from treating AI as a collaborative partner rather than a replacement — co-working with AI where you review its suggestions, override some, and agree with others generates the most business impact"
+  ],
+  "timestamps": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "title": "Only 15% of CEOs Get Real Value From AI"
+    },
+    {
+      "time": "2:32",
+      "seconds": 152,
+      "title": "Kalshi Co-Founder's Weekly AI Planning System"
+    },
+    {
+      "time": "7:30",
+      "seconds": 450,
+      "title": "Stanford Top AI Economist: What AI Is Worth to Him in Dollars"
+    },
+    {
+      "time": "10:47",
+      "seconds": 647,
+      "title": "Peter Yang's AI Skill Stack, Built in One Day"
+    },
+    {
+      "time": "14:30",
+      "seconds": 870,
+      "title": "Box CEO's Top 3 AI Tools Right Now"
+    },
+    {
+      "time": "18:25",
+      "seconds": 1105,
+      "title": "Khan Academy's $1.2M-a-Year AI Bill"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Just this morning, I used AI to write an email, to make an investment off of Perplexity's research, and to pull all my numbers into one dashboard. But it's just a typical thing that I do every morning. It's interesting how a lot of people started using AI, but only 15% of reported CEOs, for example, are getting real value out of it. And the ones who do get value out of it spend at least eight hours a week. Building their own AI skills. You actually have to put some work into it. There was some new research that came out a few days ago from 22,500 American employees. 52% now use AI at work, 15% use it daily. And people using AI for one or two tasks, 45% report a real productivity gain. Seven or more tasks, 90%. And they're using the same tools. They just hand over more kinds of work, but that means putting more hours into understanding how that works."
+    },
+    {
+      "speaker": null,
+      "text": "58% of companies in the US now require employees to use AI. Some are folding it into performance reviews, trying to measure how much value AI actually added, but without real onboarding or real clear use cases, that turns just into a checkbox. And people open a tool, poke around, get overwhelmed, never figure out why they needed it in the first place and start, and they do not feel happy about it. If you have the same feelings, Please stick around. I'm going to show you which tools people actually keep using and how they've been using them for many, many weeks to optimize their work. And if you're just a beginner, I'm also going to to show exactly where to start to feel the magic of AI. One of my favorite questions to ask on my podcast is to ask, can you show me a workflow that does magic? Can you show a process that anyone can build to feel? How AI actually helps them with work."
+    },
+    {
+      "speaker": null,
+      "text": "And in this video, we have insights from six leaders with decades of experience. And by the end of this video you'll know the strategies that separate successful AI users from people who are still struggling to understand how to optimize their work. Let's go. I'm gonna start with the clearest productivity use case I've ever seen. I was talking to Luana Lopes Lara, who co-founded Kalshi. A prediction market valued at more than a billion dollars, and her entire business depends on collecting information quickly and turning it into decisions. So she's running a fast-growing team, which means every week she has to understand what changed across the company, what is falling behind, what needs her attention, who promised what, who didn't do something, and ask her, how does she do that? And she told me something I really want to build for myself, so she actually had engineers to build that, but just listen to it."
+    },
+    {
+      "speaker": "Luana Lopes Lara",
+      "text": "To me, it sounds like magic. Well, one thing that I think is useful for a lot more people maybe is on kind of like weekly planning and kind of state of things that I think it's like. How do we get updates from the entire company, track from what the updates was from the week before, flag, in terms of that, like it's connected to everything that we do. Emails, docs, Slack, all of that. We actually have an AI team now that is actually building. We obviously have a very, very good like engineering side of the AI equation is very good, but we're trying to build kind of like every new employee should get an agent that's kind of, like, the biggest problem we have there that we're tryna figure out is how to figure out like permissions in the right way."
+    },
+    {
+      "speaker": null,
+      "text": "We need to make sure that, for example, We have a lot of legal work or like surveillance and all of that, that it has to be very, you know, just some people have it and how do we think about it that way. But I would say that like planning, organizing, and collecting information, Sundays are very like heavy days for me because it's like when I stop and I look at the entire week, everyone, what they was done, what we need to do next week, look at all the metrics and all that. That's all I do on Sunday. And now I'm actually able to like have brunch on Sunday because I'm like, I have a lot more time. Uh, to think about things, but, um, because a lot of it is kind of done in the, in the way that I expect."
+    },
+    {
+      "speaker": null,
+      "text": "But I would say is like, like really looking at like for the past X number of weeks, this person has over-promised, under-delivered, these are the things, like these metrics are not- I'm trying to build something from-"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like that for myself, but what I realized, we need to hire someone. So we try to build internally and my team is like creative producers. And now we hired someone with an engineering background. And this is what we are aiming for in our company. Ideally, when it comes to your work, AI has to know everything that's happening in your processes because it has to be connected everywhere and has the context. On what's going on. So you don't have to feed it with anything. If I edit a script that I did with AI, I want AI to remember which edits I made. I want it to automatically see how it performed on YouTube. I want to see automatically how it performed on Instagram. Plus, I want recursive learning that pulls in live data from the industry, not just what happened inside your company. This is something we're still building, work in progress, but we are very close to it, one of the updates."
+    },
+    {
+      "speaker": null,
+      "text": "I think I'm gonna make a separate video on it. By the way, let me know in the comments if you want it. But we now have a bot in every company chat and I can ask this bot how many times I pulled back on decisions from this person or how many time I asked to re-explain something. And then it gives me a summary of conversations that I had. So it's easier for me to make decisions. And that's one of the steps towards my perfect AI system. Erik just made a bet that the real payoff from AI shows up in the next two, three years, and it goes to whoever actually puts it to work. And that is actually a perfect place to pause for a second. Lately, I care less about which model is best and more about turning AI into a system that actually helps me run the business. So I've been testing Genspark with exactly that in mind."
+    },
+    {
+      "speaker": null,
+      "text": "Every model is already included: GPT, Claude, Gemini. Plus the image and video ones like Nano Banana, Veo, and Kling. So I'm not picking favorites or paying for 5 different subscriptions. Genspark crossed $215 million in annual recurring revenue in 12 months, and honestly, the models are just the starting point. The real value is what you build on top of them. Take a simple example. My team lives in spreadsheets, so I opened AI Sheets and typed, I ranked my last 30 Silicon Valley Girl episodes by views. Tag each one by topic and tell me which three topics I'll perform. A few seconds later, I had every episode ranked, sorted by topic, and three clear winners to make more of. That's exactly what Erik's betting on. Put AI to work on real decisions and act on them. That's where it turned into a system. I run that breakdown every week, so instead of retyping the prompt, I saved it as a skill."
+    },
+    {
+      "speaker": null,
+      "text": "Now, it's a reusable tool my whole team runs with one click. And nobody rebuilt it from scratch. The piece that I really like as a founder is agent-based. Instead of a chatbot that you open and close, it's a workspace where AI agents run right alongside your projects, your meetings, and your connected apps doing the work in the background. It feels less like an AI tool and more like an operating system for your business. And there is also design. I took a current Future Proof newsletter logo and turned it into a banner in a few clicks. None of this replaces anyone on my team, but what it does, it takes the repetitive work off our plates so we get our hours back for the parts that matter. I'm still finding new workflows to turn into skills. So if you try just one thing, make it this, pick one task you repeat every week and turn it into skill. And if you're new..."
+    },
+    {
+      "speaker": null,
+      "text": "Can trial pro-tier deep research or creating a spreadsheet through the Get Started bonus. The link is in the description. Now, let's move on to the next use case. Erik runs the Digital Economy Lab at Stanford. He studies what AI does to work and wages. And I asked him what AI is worth to him personally and dollars. Normally, people from universities refuse to answer that question, but he gave me a number. What's the number for you? How much would you pay to not touch AI this month?"
+    },
+    {
+      "speaker": "Erik Brynjolfsson",
+      "text": "Oh my god, it almost, I mean, for me it's tens of thousands, you know, somebody, because it's my life, like it's, I use it every day, I used it every night until too late at night, you know. I'm working with Claude Cowork and testing out different research ideas. I use them for fun when I plan things. Anytime I land in a new city, I have it give me advice on which restaurants to go to. It's just so integrated into my life. It would be like tearing off my left arm."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there a use case that can be very inspiring for people who haven't tried using AI deeply enough if they only use it like search?"
+    },
+    {
+      "speaker": "Erik Brynjolfsson",
+      "text": "Here's a kind of meta way of doing it. Sit down with it and ask it how I can use it in my life."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But if they haven't used it enough, I don't think there's like enough data."
+    },
+    {
+      "speaker": "Erik Brynjolfsson",
+      "text": "No, no, no. You have the conversation. So what you do is you ask ChatGPT or Claude, say, hey, tell me how you can be useful to me and ask me questions. You can literally say, keep asking me questions, interview me. And it'll say, okay, you know, what's your job? You know, do you have kids? You know, whatever. What are some of the problems you worried about last week? And it will have a conversation with you. And then, I've done this, by the way, it'll come up with like 10 recommended things that you can use it for."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would you never delegate to AI?"
+    },
+    {
+      "speaker": "Erik Brynjolfsson",
+      "text": "What would I never delegate to AI?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "There's nothing like that anymore. I know, something pops in my head and I say... I know."
+    },
+    {
+      "speaker": "Erik Brynjolfsson",
+      "text": "Something pops in my head and I say, no, I can still do that, you know, delegate entirely. You know, there are some really like life or death decisions. I use it before I go to the doctor and it gives me some thin questions to ask, but at the end of the day, I still want to have a real human make the call and, you know, they're just not good enough that they have the issues. And I think it's usually a partnership. Like, should I almost never? 100% delegate something to AI. For me, it's always coworking and collaboration where I'll interact with the AI and it will give me some ideas and then I'll overrule some and I'll agree with some. And it's kind of a partner."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Erik's research cycle used to take weeks. Now it's a five minute back and forth. But he still won't hand AI the final call on anything that matters. And this is something I want you to remember. Never ever let AI make your strategic decisions. AI is your analyst, your researcher, whoever, but not a strategy person. One of my favorite things to ask AI, how can I improve this? So for example, we build a skill for a team that scans our recurring work patterns and asks the same question. What else can we improve in our workflow? What routine work keeps repeating that we can automate? Peter Yang broke this down in our interview on skills that you can set up yourself and set up this. Recursive learning thing. A year ago, Peter was drowning in meetings and paperwork. Then he rebuilt his entire workflow around AI. He left product roles at Meta, Reddit, and Roblox to go solo."
+    },
+    {
+      "speaker": null,
+      "text": "And now he runs a media empire and has built 16 apps without writing a line of code. So basically close the loop. When I was interviewing him, the famous tweet by Boris Cherny came out that he doesn't prompt his AI anymore. It just prompts itself and imprompts yourself. So I had to dig deeper because Peter built something like that for himself."
+    },
+    {
+      "speaker": "Peter Yang",
+      "text": "And yeah, I have skills for making my podcast, for editing my newsletter posts and so on. Most basic ways to do a self-improvement is after you use the skill and you have a back and forth conversation with the AI, because it never gets it right in one shot, then you just say like, Hey, based on our conversation, can you please update the scale to account for, you know, to try to get to it in one shot faster, right? And then it will make a bunch of changes and you should review it. So I can talk about my creator work since we're both creators. And being a creator is like a lot of repetitive work, right? Like a lot repetitive copy and pasting it back and forth and like changing things from like a newsletter post to like a YouTube description to like social posts. There's like a of kind of like different formats."
+    },
+    {
+      "speaker": null,
+      "text": "And I just decided to spend one day, like just like, you know, no meetings and just sat down with Codex and be like, hey, I basically just brain dumped all my workflows to Codex, and here's how I do it manually. And I use this thing called Wispr Flow, just like brain dump to my voice. So there's like couple of major ones, like, uh. You know, prepping the podcast, post-production, there's editing my newsletter posts, there's posting to the various social media platforms. And then another one is I just like setting up an advisor to kind of give me like business advice, like checking ideas. It's just like a scale that's linked to a Google Doc file that has like a bunch of personal information about my business and then it kind of gives me advice."
+    },
+    {
+      "speaker": null,
+      "text": "Every week it sends me a brief about how much money I made this week and also like how did my past 30 days content perform and also all the other channels that make similar content. Is there any kind of outliers, you know, so it does that for YouTube and also for Substack. And, and for sub stack, it doesn't have API. So it has to use browser use to look up everything. So that would take me an hour to do manly, but like it does it. I think one of the most useful skills that I built is just like a personal advisor skill, because, uh, I guess, um, my wife is tired of me asking for advice all the time. It literally is just a text file, right? So it's a text valve to give me an honest advice. And you know, you're my trusted life and business advice, and then keep your tone warm to stay ahead, get the $20 ChatGPT plan."
+    },
+    {
+      "speaker": null,
+      "text": "Download Codex and just start saving time and building workflows and building skills to save time and asking codex to do it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So Peter's system is a stack of skills plus a memory file he writes himself. He keeps repeating one rule. AI gets him to 90%. The last 10% is his. If you want more tools like this, check out the full episode, but getting to 90% is pretty impressive. We pass through the same nine steps. So we do guest scoring, we do packaging, we do guest dossier, briefing, teaser, distribution, tracking. And we wrote down every one of those repeating processes and built a skill library out of them. So every process is documented in a skill. Every skill started as a mess of existing materials, our SOPs, 40 plus full episode transcripts, and we had a performance tracker. And it's one of the best decisions I've made for this team."
+    },
+    {
+      "speaker": null,
+      "text": "By the way, If you want to stay updated, and on all the things these amazing people say in my podcast, we put a lot of prompts and use cases from these interviews into my newsletter Future Proof, plus how I'm actually using stuff. This week, we posted about how I use Perplexity, and you guys and your knowledge in the comments took them up with an action plan to work on my high cholesterol levels. So subscribe and enjoy. Once you subscribe to the newsletter, you will be able to click on our previous newsletters to see what's going on. The next person I want to highlight is Aaron Levie. He runs Box, a $4 billion company, and I asked him to show me his AI setup, and I expected something really, really complicated because, you know, he's been in Silicon Valley for years, he runs a publicly traded company, he writes his prompts by hand, and they are long."
+    },
+    {
+      "speaker": null,
+      "text": "Can you recommend top three apps that people should be using."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I mean, it probably won't be much of a surprise. I would download Codex, I would download Claude."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Even for non-technical people."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Yeah, 100%. Well, partly is because Codex is becoming more inclined toward knowledge work use cases."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what should they be doing with it, like automate a process within their? Automate a process."
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Automated process, give it just a crazy problem and see what happens, like go do this research in this market, wire up multiple MCP servers to data sources you have, so you understand how does it work, how is it querying that other system, how is accessing my email, like, oh, scary, oh. No, actually, I understand it now, like get a sense of how that all kind of is working together, so I think just any one of the top AI tools for productivity, maybe for coding. Is a good way to get started and it'll already get you like 90% of the way there. So Codex. Probably Claude, Cowork, Perplexity. Like these are some just easy ones to just get started with"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have any examples of workflows that you've automated for yourself and you'll never go back to manual?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "The kind of things that I'll never do again is like, I'll ever do market research in a traditional way. So I'm often asking an agent to go and analyze a hundred different companies' worth of trends or information, I'll just never do that again. I'll not go to Google and type each company in and do the research. I'm gonna have an agent go and fan out, do all that, and then maybe I'll click all the underlying sources and verify something or double check something. Lots of market analysis. I'll never open up code editor and type code again. And I wasn't for the past many years anyway, but the reverse is true, which is now I can actually get prototypes built when I couldn't have before. So anything coding related, even design is like, you just go to chat to between, you're like, hey, I need this idea done. Could you just make it like this?"
+    },
+    {
+      "speaker": null,
+      "text": "And then it gets you the new image rendering model gets you like. 75% of the way there, you hand that off to a real designer, and then they kind of do the full thing. So there's a lot in the ideation, the creative process, the market analysis, customer research, all of those domains that I am heavily using AI for."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is there a certain way you structured memory, like did you, because I hear some people like upload personal constitution, like their principles of work, is there anything like that that you've done?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "I'm less fancy on that front and partly because I don't even know what I would write down Because I'm all over the place. So so I am I don't have a lot of things yet that I would I would know how to really document It's more process specific in which case in which cases back to this sort of reprompting issue I'm more just on the fly just giving it pretty clear instructions of exactly what to go do so like I feel like I'm a pretty good prompter like like"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So every time it's a long, long prompt, right?"
+    },
+    {
+      "speaker": "Aaron Levie",
+      "text": "Every time it's a long, long prompt, and I'll store those off in various places. By virtue of Box, we store lots of data. So I have lots of documents that have information in them that I'm using constantly, but it's not as awesome as a sole file or a personal constitution."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I already talked about this. The base you always have to start with is a few files. Your tone of voice, your business strategy, your personal goals, your decision rules, and what I call your personal constitution. It's what keeps AI output sounding like you instead of sounding generic. Upload every document tied to your brand and then just let AI do its thing. Now let's talk about token maxing. That's a very controversial topic, let me explain. So Sal Khan runs Khan Academy. Which serves learners around the world and has around 200 engineers working on products at scale. The organization now spends about 1.2 million a year on AI. So I asked Sal if he's willing to cut that number down. He told me he's pushing his engineers to spend more."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "Well, I think engineering is where we're seeing it the most. And that is where, we also, and I think you've heard many people say, some of the engineers who are really leaning into this, they're running five, six, seven, eight, nine, 10 agents simultaneously, writing code, reviewing code. The anthropic folks told us that we were one of the biggest users of actually the agents for reviewing code and, you know, we, I'm getting a little sticker shock for how expensive this stuff is. Our run rate on our anthropic bill is about $1.2 million right now. Wow. And it's growing fast."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "A year or a month."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "A year, a year, but it's still a lot for 200 or so engineers, it's mostly engineers. And we're looking on a daily basis and our CTO was saying, yeah, we just saw one of our engineers spent $3,000 in a day. I think that was the number of compute costs. I'm like, oh my God, I think it was..."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Are you trying to push them to use even more? Because you see some companies try to do that. Some companies try to do this."
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "I was like, what are they doing? And then he's like, then we talked to them and they actually in a few hours were able to do something that would have normally taken them three or four months. It's like okay, that was a great use of $3,000. Go spend more. I think the rapid prototyping, we just launched a feature a few months ago that in the old days, it would have been like, maybe we can fit it by next school year. And this is one of the engineers at a hackathon, Vibe coded it in a day. And then on a weekend, he said, you know, he's an engineer. So he had the full development environment, but he was able to create working on our real data. And it's a very front-end kind of game thing. So it didn't have a lot of implications to what might happen to the backend. He's like, I think we could ship this thing."
+    },
+    {
+      "speaker": null,
+      "text": "And got some designers involved, made it a little bit nicer. And we were able to ship it in about a month. You know, we just approved all the connectors with the various. AIs, so now our AIs can access our Slack and our Gmail and our docs and all of that kind of stuff. And we are learning and encouraging people how to use it, how not to use, don't let it do things without you being in the loop, don't post it on social media, don't send the email, maybe let it draft the email and then you check on it. But I am, on a daily basis, I talk to one or more of these AIs and I say, What's falling through the cracks? And it's acting like a little bit of a chief of staff for me and it's going to my Slack, it's gonna my Gmail, it's doing that. It's like, oh, I've drafted something for you. Is this good?"
+    },
+    {
+      "speaker": null,
+      "text": "Something that I use the same prompt. I've, I mean, this is just, I've replaced what like reading the news and I just have a bunch of threads about the topics I'm interested in. And like at night, I'm like, what's the latest? But one thing I've found and I think this is important to build AI skills. I've been fascinated by what's going on in the Middle East and the Strait of Hormuz and the game of chicken and the gamesmanship that's going on there and how the market seems to be ignoring it ignoring the fact that we have a hundred dollar plus oil prices and, you know, $20 shipping rates. So it's essentially."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I just saw $9 per gallon yesterday in New York, Atherton. Yeah. What?"
+    },
+    {
+      "speaker": "Sal Khan",
+      "text": "Well, that's the foreboding of the future. But a lot of the times when I was asking, like, what about this? I think this is gonna happen. And we've all had the AI is like, Sal, you're a genius. You're spotting what other people aren't spotting. And it is very seductive because sometimes it'll do it very, and so I have learned to say, be critical of me. Like really push back. And even then sometimes it won't."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I don't know if you should blindly follow this advice. Just because AI Slop is real, and if you just push your team members or push yourself to token max, sometimes it's unnecessary cost, depending on how many processes you run. But asking yourself a question, can AI do this, and actually trying to do something with AI is a great question to do. So don't be blithely token maxing. Set up a rule for yourself. And for me, I really like a prompt when I ask my Perplexity Comet, for example Based on my queries for the past two weeks, why should I be automating? And it will come with a set of things I should try and automate. Sometimes they don't work. Sometimes they're just not automatable. Like researching what's going on in my niche and coming up with scripts? I don't know. It will come up with five scripts, use the tokens, and then I'm not in the mood to shoot that day. That's it."
+    },
+    {
+      "speaker": null,
+      "text": "For me, it's much easier to build a skill that will convert my thoughts into beautiful script. And that skill also has information about what's worked. Because I ran the whole analytics uploading my stats and my comments. It's a process and everybody figures it out for themselves. There is no one for all solution, but I don't think you should just be blindly token maxing just because you're not a billion dollar company. So I am really watching the cost of AI because it does get really expensive, especially Perplexity Comet tokens, they are expensive, but i love it. Anyways... These were the real use cases from top CEOs and truly advanced AI users. Please don't forget to subscribe to this channel. I interview AI entrepreneurs and they share their best cases and what they're seeing in this AI era. And the link to subscribe is down below."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "xiJsfvaxzRY",
+      "thumbnail": "https://img.youtube.com/vi/xiJsfvaxzRY/hqdefault.jpg",
+      "title": "Luana Lopes Lara (Kalshi): How Life Changes in the Next 12 Months"
+    },
+    {
+      "videoId": "72duHF7iZiU",
+      "thumbnail": "https://img.youtube.com/vi/72duHF7iZiU/hqdefault.jpg",
+      "title": "Erik Brynjolfsson (Stanford): The Best and Worst Decade in History"
+    },
+    {
+      "videoId": "Yu0z7-KMHpo",
+      "thumbnail": "https://img.youtube.com/vi/Yu0z7-KMHpo/hqdefault.jpg",
+      "title": "Peter Yang: The AI-First Playbook to Do a Team's Work"
+    },
+    {
+      "videoId": "ExgNR94SrfI",
+      "thumbnail": "https://img.youtube.com/vi/ExgNR94SrfI/hqdefault.jpg",
+      "title": "Aaron Levie (Box): The Next 3 Years That Will Make Founders Rich"
+    },
+    {
+      "videoId": "s-Iz-lLAhdg",
+      "thumbnail": "https://img.youtube.com/vi/s-Iz-lLAhdg/hqdefault.jpg",
+      "title": "Sal Khan (Khan Academy): The Real AI Opportunity"
+    }
+  ],
+  "topics": [],
+  "relatedHeading": "Watch the full interviews from this episode",
+  "summaryHtml": "In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews Luana Lopes Lara, Erik Brynjolfsson, Peter Yang, Aaron Levie, Sal Khan, Kalshi, Stanford, Box & Khan Academy. Marina Mogilko examines why only 15% of CEOs report getting real value from AI, revealing that successful users spend at least 8 hours per week building AI skills. The episode features insights from six business leaders who have integrated AI into their workflows. Luana Lopes Lara, co-founder of Kalshi (a prediction market valued at over $1 billion), describes her weekly AI system that automatically collects company updates from emails, docs, and all connected systems to flag changes and performance issues, freeing up her Sundays for strategic thinking rather than administrative work. Erik Brynjolfsson, director of Stanford's Digital Economy Lab, values AI at tens of thousands of dollars monthly for his research and personal life, emphasizing that the real payoff from AI appears in the next 2-3 years for those who actually implement it as a system rather than dabbling with individual tools.",
+  "metaDescription": "Marina Mogilko breaks down real AI workflows from five leaders — Luana Lopes Lara (Kalshi), Erik Brynjolfsson (Stanford), Peter Yang, Aaron Levie (Box) and Sal Khan (Khan Academy) — on the Silicon Valley Girl Podcast"
+}

@@ -1,0 +1,604 @@
+{
+  "videoId": "nlOmBneT-oM",
+  "title": "How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative",
+  "format": "interview",
+  "guestName": "Priscilla Chan",
+  "guestTitle": "Co-founder and Co-CEO, Chan Zuckerberg Initiative",
+  "aboutGuest": "Dr. Priscilla Chan is a Harvard graduate and physician who trained in pediatrics at UCSF School of Medicine. In 2015, she and her husband Mark Zuckerberg co-founded the Chan Zuckerberg Initiative, pledging 99% of their wealth to advance science, education, and human potential. She serves as co-CEO of CZI and leads its scientific mission, which includes the Biohub network and cutting-edge AI-driven cell biology research.",
+  "publishedAt": "2025-11-07T18:25:01.000Z",
+  "duration": "31 MIN",
+  "coverArt": "https://img.youtube.com/vi/nlOmBneT-oM/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/nlOmBneT-oM/maxresdefault.jpg",
+  "summary": "Marina Mogilko sits down with Dr. Priscilla Chan to discuss how the Chan Zuckerberg Initiative is using AI and frontier science to pursue the ambitious goal of curing or preventing all disease. Dr. Chan explains the concept of virtual cell models — AI systems that simulate life at the cellular level — and how they could transform drug discovery and personalized medicine. She also shares the personal clinical moment that redirected her from practicing pediatrics to investing in foundational biological science.",
+  "keyTakeaways": [
+    "CZI has invested over $7 billion and built four Biohubs since its founding in 2015, all aimed at curing or preventing all disease — a goal once dismissed as impossible but now viewed as achievable within decades thanks to AI.",
+    "CZI is developing virtual cell models: AI systems that can simulate human cells, potentially enabling researchers to test drug interactions and disease mechanisms without traditional lab experiments.",
+    "Rather than targeting a single disease, CZI's strategy is to build tools that make every scientist faster, more efficient, and willing to take bigger research risks — multiplying the impact across the entire scientific community.",
+    "CZI helped build one of the largest single-cell biology datasets in the world, which became foundational infrastructure when large language models and AI techniques emerged, unlocking new research possibilities.",
+    "Dr. Chan believes science will look fundamentally different within five years, with AI-driven biology potentially shifting healthcare from treatment to prevention and making personalized medicine a near-term reality."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Teaser"
+    },
+    {
+      "time": "1:10",
+      "seconds": 70,
+      "title": "Marina shares why Priscilla’s openness about miscarriage meant so much to her"
+    },
+    {
+      "time": "2:35",
+      "seconds": 155,
+      "title": "Why Priscilla and Mark decided to start the Chan Zuckerberg Initiative"
+    },
+    {
+      "time": "3:24",
+      "seconds": 204,
+      "title": "The mission of SZI"
+    },
+    {
+      "time": "4:40",
+      "seconds": 280,
+      "title": "10 years ago VS now. How do people react"
+    },
+    {
+      "time": "6:56",
+      "seconds": 416,
+      "title": "Priscilla’s personal story: why she turned from medicine to biology and investing in science"
+    },
+    {
+      "time": "9:18",
+      "seconds": 558,
+      "title": "Why CZI focuses on building tools for all scientists instead of tackling a single disease"
+    },
+    {
+      "time": "10:38",
+      "seconds": 638,
+      "title": "Why they’re building virtual cells"
+    },
+    {
+      "time": "11:17",
+      "seconds": 677,
+      "title": "What exactly is a virtual cell?"
+    },
+    {
+      "time": "11:52",
+      "seconds": 712,
+      "title": "How close are we to creating a full, natural virtual cell?"
+    },
+    {
+      "time": "12:23",
+      "seconds": 743,
+      "title": "What this means for patients — how healthcare could change in the next five years"
+    },
+    {
+      "time": "13:40",
+      "seconds": 820,
+      "title": "Which common diseases could be cured with the help of virtual cells"
+    },
+    {
+      "time": "14:38",
+      "seconds": 878,
+      "title": "The first diseases likely to be cured with AI-driven biology"
+    },
+    {
+      "time": "16:11",
+      "seconds": 971,
+      "title": "Looking ten years ahead: what breakthroughs to expect"
+    },
+    {
+      "time": "17:12",
+      "seconds": 1032,
+      "title": "How mapping cells accelerated from 100 million to 1 billion — and why speed matters"
+    },
+    {
+      "time": "19:50",
+      "seconds": 1190,
+      "title": "What is the virtual immune system?"
+    },
+    {
+      "time": "20:38",
+      "seconds": 1238,
+      "title": "The sensor that reads immune-cell communication — how the body “talks” to itself"
+    },
+    {
+      "time": "21:37",
+      "seconds": 1297,
+      "title": "2040 - what medicine could look like"
+    },
+    {
+      "time": "23:34",
+      "seconds": 1414,
+      "title": "What keeps Priscilla up at night"
+    },
+    {
+      "time": "23:58",
+      "seconds": 1438,
+      "title": "Her advice for future scientists and doctors"
+    },
+    {
+      "time": "24:29",
+      "seconds": 1469,
+      "title": "The new role of physicians working alongside AI"
+    },
+    {
+      "time": "26:00",
+      "seconds": 1560,
+      "title": "When Priscilla’s mission becomes deeply personal"
+    },
+    {
+      "time": "27:56",
+      "seconds": 1676,
+      "title": "Which diseases she believes will be cured in our lifetime"
+    },
+    {
+      "time": "29:31",
+      "seconds": 1771,
+      "title": "When Priscilla will feel her mission is fulfilled"
+    },
+    {
+      "time": "29:46",
+      "seconds": 1786,
+      "title": "Balancing work and raising kids"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Science is going to be fundamentally different in like 5 years. What would it mean for me as a patient? This is the part I'm so excited about. This is Priscilla Chan, a Harvard graduate who went to UCSF School of Medicine to study pediatrics. She treated children at UCSF until one moment in the clinic changed everything."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "It was honestly scary and really shook my understanding of medicine."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In 2015, alongside her husband Mark Zuckerberg, they launched the Chan Zuckerberg Initiative with the most ambitious goal."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Our mission is to cure, cure or prevent all disease. And we used to say by the end of the century, but I think it's much sooner. I would say like in the 10 years later, they've invested over $7 billion, built three biohubs, and are committed to creating AI models that map human cells, unlocking how disease begins and how it could end. And once we do that, we will be the first diseases that you think are going to be cured."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "She's betting on a future where science, data, and AI converge to end sickness as we know it. The only question is how soon can we make that future real? Okay, Priscilla, thank you so much. I have a personal story that I wanted to share."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Okay."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In 2015, you and Mark shared that you were pregnant with your first baby, but also that you've experienced miscarriages."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And I was going through the same process, but for me, it started in 2015, and we only were able to have a baby in 2019."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Oh, God bless."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And I think you were the first public couple to share something like this on social media, and that kept me through the process."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Oh, you're going to make me start off by crying. I just really wanted to share this and I am so grateful that you started talking about this problem because when you're going through it, it feels like you're just alone in it. Now with social media, people are sharing more and more, but when you're in it and when the doctors tell you, \"Oh, it was your fault or whatever.\" Some doctors told me that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The worst."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "But thank you so much."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, I'm so glad you were brave and shared. And now you have two kids."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "And now I have two kids."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's just like, yeah, I'm so glad that all worked out and I felt the same way. I was like I'm completely alone. I don't know anyone who has gone through this. Actually Beyoncé also had this problem. So you, me and Beyoncé are in the same group."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Okay. I feel like 20% of all women experience some kind of variation of this problem. It's very common. It's just not talked about that much."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But I think the exciting part is like one way or another people will have their families."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. So thank you for that. And so when you had Maxine, you decided to commit 99% of your wealth into CZI, this initiative."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Yeah. So when we had Max, you've probably experienced this too. Everything sort of becomes very real. Like the future is not some abstract time in the distant future. You're like, I have this baby. She's coming now. Like what are we going to do to actually prepare for her? And you know, we did the normal nesting stuff, too. But what we really wanted was to do our part in building a future where she could be healthy and thrive. And that's why we started the Chan Zuckerberg Initiative to figure out like what could we bring to the table? What could we do to build a future where kids are part of a world that's even better than what we have today?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what's your mission with CZI?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Our mission with CZI and now Biohub is to cure, cure or prevent all disease. And we used to say by the end of the century, but through a bunch of work that we've done and these AI coming online with large language models, we've been able to see a pathway to this becoming a reality much sooner than the end of the century. I would say like in the coming decades, it really comes down to whether or not we can make every scientist faster and more efficient and to take more risks. Like that's so important. And no one organization, not our organization, not any other organization is going to do it alone. Our strategy is how do we build tools to make every single scientist better and to be able to test their riskiest, bravest ideas. And that's how we're going to be able to move this forward at a pace that hopefully will blow all of our minds."
+    },
+    {
+      "speaker": null,
+      "text": "What we're doing at the biohub is we want to combine frontier science with frontier AI work to really bring together a world where we are able to push forward science to have direct impact on people's lives much, much sooner."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This mission sounds amazing but also so brave, right? We're going to cure all diseases. So when you stated this 10 years ago versus now, how has people's reaction changed when LLMs came around?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "It's such a great question because 10 years ago people looked at us like you're nuts. How do you even do that? And it was exactly that reaction that we said, okay, tell us why we are wrong. Tell us why that won't happen. And that really forced people to pause and instead of just a knee-jerk reaction, think through like why is that not possible? And that really prompted people to say, well, we need better tools. We need better data sets. We need new techniques in the lab. We need to have different types of people come in to solve this problem together."
+    },
+    {
+      "speaker": null,
+      "text": "And then we said, okay, if that's the problem, then let's go do it. We started building tools for scientists. We built the biohubs where we bring together scientists, engineers, biologists, physicists, all different backgrounds to solve a common problem together. And we went from one biohub to four in the past 10 years. All that we were making steady progress. We also built one of the largest data sets around single cell biology. But again, we built that not knowing where it was going to go."
+    },
+    {
+      "speaker": null,
+      "text": "And then two years ago, we had this data set of cell-by-gene coming together. And then people were like, you know, what about large language models? And I was like, I don't know what that is. Let me look that up. I am a physician by training, not an engineer or a machine learning expert. And so I looked it up and I was like, wait a minute, this is actually perfect. I see the pathway to taking the incredible amount of data that can come out of biology labs and actually extract meaningful knowledge. And that was, you know, maybe two years ago. Now today, you say it and some people are still skeptical, but a lot of people look at it and say, \"Okay, I can see how you can get there.\" And that has been a complete step change for us and incredibly exciting. I get so much energy doing this work."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you remember the moment when you were like, okay, this is when I need to start doing this? This is when I need to start investing in biology? Was there some personal story behind that?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Well, I trained as a pediatrician at UCSF. UCSF is a very fancy academic hospital. I trained there, and hopefully you had a very uncomplicated experience there."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I delivered both babies there because they're pro-natural birth. I was researching so I drove from Los Altos Hills to UCSF. It was incredible during contractions, but it was the best."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "You probably delivered at the fancy, beautiful new hospital, too. I'm so glad it's the best. So that's where I trained. And you know, for a lot of people who bring their kids there, it is because no one else has been able to give them an answer or they need a specialty that doesn't really exist anywhere else. And as a pediatrician, those were the kids I was taking care of most of the time."
+    },
+    {
+      "speaker": null,
+      "text": "It was honestly scary and really shook my understanding of medicine. Going into medical school and residency, I was like, if I do a good job and I sort of learn what's being taught, I'm going to be able to help people. But what I learned in the clinic and on the wards is a lot of these kids have things that we don't know the names of and we don't know how to treat. We barely can describe it. The hope that their parents held on to was the little research that existed on their kid's issue. And I looked at it and they would hand me these PDFs and I would look at the PDF and it would be like how do I translate that to medicine or treatment or what I need to do for this kid? It was so limited."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "And that's when I realized that being able to move basic science forward, that's where hope comes from for these kids."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "And so, you know, just pulling on that thread led me to really think about how can we make an impact in biology."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And with this, you're not focusing on any particular diseases, right? You're just trying to map our cells and all of that. Or is there some focus?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "There really isn't. The way to think about it is we want to make all scientists better at doing their job and more effective. We have built annotation tools. We have built technical wet lab tools to help scientists do their work. And the cell by gene work is what we did when we mapped out individual cells and how they were each different across a human body. You know, you have the same DNA that creates your skin cell that creates your heart cell, your liver. It's the same DNA. How does it actually lead to such different outcomes? And what happens when the DNA has a mutation or something goes wrong? How do we understand what happens inside your cell?"
+    },
+    {
+      "speaker": null,
+      "text": "The really cool thing there is if we can understand how it works when it's healthy and what happens when there's an error or something happens from the outside, what is actually the impact? How does the cell look differently? Because if you understand it at that level then you can design very specific treatments to actually correct the issue. We don't work disease by disease but we want to work in a world where we can experiment quickly and efficiently on human knowledge. Right now a lot of the models are like you can study in flies or mice or rats but that doesn't always translate to humans."
+    },
+    {
+      "speaker": null,
+      "text": "We think if we can build a virtual cell model that allows us to do a lot of this experimentation on a human model but on a computer then it's cheaper, it's faster for scientists to do the research and it applies more directly to the clinic and has more direct impact on people's lives."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Before our interview with Priscilla, I got to meet some incredible scientists who are mapping what's happening inside our cell. They're working on something called virtual cells, computer simulations that replicate how real biological cells behave and function. Once we have fully working virtual cells, it will completely change medicine, biology, and even how we understand life because we'll be able to understand disease before it happens. Drug discovery will be hundreds of times faster. We'll get personalized health because we'll be able to have our digital twins and biology will basically become programmable. Virtual cells will change everything. So, how far do you think we are from an actual virtual cell?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Oh, it really depends on who you ask. If you ask the AI folks, they're like, you know, 3 years, 2 years, and they're impatient. If you sort of ask folks with the biology background, there's so many different dimensions. We're looking a little further out, but I would say the way we think about science is going to be fundamentally different in terms of our ability to model the human cell in like 5 years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What would it mean for me as a patient? What will change in 5 years?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "In 5 years, I think scientists will have an incredible tool. Obviously, that's great, but the thing we actually all care about is the impact on people's lives. This is the part I'm so excited about. We need to understand individuals' biology. Right now, we get to have this like on average, this is what a skin cell does. On average, this is how your brain cell behaves. But none of us are average. Each of us has unique biology. The research won't tell me how my brain would react to a certain medication compared to your brain. But we have very distinct biology."
+    },
+    {
+      "speaker": null,
+      "text": "What I want is for us to be able to do medicine where it's also on the frontier. We can understand based on your genetics, this is how your brain reacts to certain conditions, how it responds to different medications. Because we all have variance within our DNA, that is the part I'm so excited about because right now we either don't understand or we give you a treatment that's our best guess."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And it causes a lot of suffering. What kind of diseases are this? People often think, okay, we're talking about rare diseases that we don't have treatments for. And it's true, rare diseases are a really good match for this type of work. But in reality, common diseases are rare diseases. I think things like hypertension and depression, there's these big categories, but actually they should break down into different subdiseases."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Because one person reacts very differently to a blood pressure medication than another. One person's depression reacts very differently to one type or class of antidepressants than others. If we understood each one of our biology, we would either be able to choose the most effective medication right away or design it. And that's the world I know we're going to be able to live in once we can understand the biology at a more granular level as well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And once we do that, what will be the first diseases that you think are going to be cured?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Oh, this is such an interesting question. Honestly, I don't really have a specific answer. Like I said, we allow scientists from the outside to take it and solve problems. But I will say I think the immune system is fascinating. Because the immune system is built in. It's like in your DNA. It's in your biology. It keeps you healthy. It's critical. And when it's overactive, it also makes you sick. So there's like a very fine balance in the immune system that if we understood how that balance gets out of whack in either direction, we could help a lot of people with autoimmune disease. That would be incredible."
+    },
+    {
+      "speaker": null,
+      "text": "Another application is right now immune cells are already special cells. They get to go all over your body and solve problems. What if we just enhance that to allow us to engineer immune cells to say like go to your heart and say are there plaques in the arteries? Tell us yes or no and then go do something about it, clean it up. Those cells already exist in your body and we can—it sounds like science fiction but it's not."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It does. It's not. Our New York biohub is working on this very question and so I think there's so much promise in enhancing the way the immune system works and understanding the different levers that optimize it in each one of us."
+    },
+    {
+      "speaker": null,
+      "text": "So basically in 10 years if everything goes well, the way we treat a cold would be let's extract my immune cell, reprogram it, put it back and it treats the cold. Is that right?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Oh, cold is interesting. I would say you probably don't want to wait for your immune cell to be re-engineered for that. But let's talk about multiple sclerosis or neurodegeneration. You want to understand exactly in which pathway you have upregulated interleukin-10 or whatever it is and you want to be able to dial it back down so that your immune system doesn't attack itself. That would be incredible. And I think there's a lot more you can do actually in helping address infectious diseases too."
+    },
+    {
+      "speaker": null,
+      "text": "But I think the thing I want to really expand everyone's imagination on is that the immune system is not just good for infectious disease. It's actually critical in keeping all of our organs healthy."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I was just talking to some of your scientists and they told me you were able to map 0.1% of the cell to build this virtual model. Does this number get us somewhere or do we still need to map at least like 50% to understand what's going on?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "There's so much more work to do. Luckily it just gets faster and faster. It took us 10 years to map around 100 million cells but it's taken us months to map a billion cells. So the rate of the ability to map and understand different dimensions of the cell has accelerated."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is that because of AI or because you already have the data set?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "It's because the hardware tools have gotten a lot faster but also because of clarity of purpose. But the other thing that needs to happen is that's just when we talk about the human cell atlas data set—that's at the single cell transcriptomics. We are looking at how your DNA is being transcribed to RNA in different cell types. But that's just one dimension. We need to be looking at where the proteins are. So here at the imaging institute we're looking at it in a cell map and we can look at the layout and where the proteins are being expressed. But still those cells are frozen and sliced. So then we need to look at it in a living cell and we need to look at how the cell behaves in different contexts. There's just so many more angles that we haven't been able to probe and understand. So a lot more needs to happen."
+    },
+    {
+      "speaker": null,
+      "text": "But the really exciting thing for us is we pair our AI labs with our wet labs. The conversation between those two teams isn't siloed. The AI lab can say, \"Okay, we've built this model. We have this blind spot or we need to look at this next.\" The wet lab can say, \"Oh, well actually we either can do it or we know someone who can do it.\" And then they can also feed information around the metadata of what they're seeing in the lab and share that with the AI researchers so they can build that more efficiently. They can also say I have this bottleneck, I can't efficiently look at the tomograms that are coming out of the cryo-ET. And then they can say oh, I can build you something to help with that. So it's that combination of frontier science and frontier biology that we are hoping comes together in a flywheel to make this work so much faster."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's fascinating. So even with cardiovascular diseases, right, when you said clearing plaques, that's something the immune system could do."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Totally."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you're building a virtual immune system right?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you talk about it? What does it mean?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "So I've been talking a little bit about the virtual cell where we're going to model a single cell and how it responds both healthy or sick or how it responds to changes. The virtual immune system is sort of a next level up where the immune system has lots of cell types and the cells communicate with each other and they work together as a team. There's no one organ. The cells are just communicating with each other and sending signals from far away locations across your body. Understanding that communication and when the immune system turns on and off is actually really important."
+    },
+    {
+      "speaker": null,
+      "text": "The very cool thing is at our biohub in Chicago, Shaina Kelly has actually designed a sensor—a really tiny sensor, kind of like a continuous glucose monitor. If you've ever seen anyone wear one of those,"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I wore one tracking my glucose to see how I react to certain foods."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Okay, very cool, right. And so she built a little sensor like that that reads out the signals of your immune cells talking to each other in a living organism which is incredible because you want to know the dynamic system of how it works together. She is building the technology that allows us to measure the communication between immune cells and then we can take that data and model it in a virtual way where then we can manipulate different parameters and actually understand all different diseases based on this virtual immune system. And that's an example of how the wet lab empowers the AI modeling and the AI modeling improves the wet lab. It's incredible."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it's something I'm trying to imagine. In 2040, I'm wearing instead of a glucose monitor, I'm wearing this immune monitor, right? Or what do you think?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Yeah. So let me make something up. Yeah, okay. We're in make-believe now, but I think it's possible. Okay, so say we understand that based on your genetics, you are at risk for lupus, okay? And it's an autoimmune disease, but we know that lupus gets triggered when a certain molecule increases and it gets out of balance. So we want to know exactly when that happens, not when you have a flare and your kidneys aren't working right or your joints are hurting. We want to know like the first signal."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "So you could wear a patch that looks at that molecule and measures the concentration of it and tells us the moment that molecule starts increasing in a way that represents a disease flare."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's amazing. I would want to wear it for every disease, right? Even for a cold, like, oh, you're getting something, there's a bug, go home."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "So imagine that's how you keep someone healthy. You prevent them from going into a flare in the first place."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that's the best."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "And then in the virtual cell model then you can say okay, when this person has a flare in lupus, we know that this protein is what is working in an inappropriate way. Then you could design a custom drug to help modify that so that we don't have those disease effects. Anyway, this is my make-believe land. This is what I daydream about. But I think it's very feasible based on where science is."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you said the things that you're fascinated about, what keeps you up at night with all this?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "I think it is so important to work quickly. I'm not a scientist myself, right? I'm a pediatrician. So my job is to understand the barriers to the work and help eliminate the barriers so that we can work efficiently and effectively. That's my whole job."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And for everyone who's watching who's a futurist, scientist, or wants to be a doctor, what would be your advice?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "This is probably the most exciting time to go into this work. So do it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you see, because we go to all the LLMs to ask for health advice, right? How do you see this change the way people study now? Maybe because you would say they need to go deeper into science because this is where all the progress happens versus just general practice?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "We're going to need people on the biology side to continue deepening our knowledge of the biology. And the interesting thing is biologists aren't physicians and they're also not always patients. A physician who has experience taking care of patients and is deep in the science, that's actually magic because they understand what the patient faces and they help the biologist ask the right questions. That's actually very powerful and very cool. That's the job of the future, right? Something that's going to be in great demand."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Totally. But then on the other end—not opposite, I don't want to paint it like these things are in tension—there's also a different need because right now for instance looking at skin moles or retinal issues, AI is really good at it. If you look at it head-to-head, it's an improvement compared to just the physician reviewing these things on their own. So what is the role of the physician?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "I think the role of the physician is making sure that we are asking the right questions of AI. Looking at the situation, this person's at risk—we should look at the skin. I also think it goes back to the original calling and purpose of a physician which is a healer. You walk alongside patients going through all different chapters of their life and that's always going to be needed."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Was there a moment when discovery felt deeply personal for you in the past 10 years?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Oh, well, you know, the pregnancy stuff is always interesting. We actually did a study on the single cell expression of the female reproductive organs. That's because we actually don't understand how labor is triggered."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Oh, we don't?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "We don't. It's magic."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "And so we actually did a whole project around that. But we also have a portfolio called Rare as One where we bring rare disease groups together and give them the training and resources to engage in the research process. Those groups are incredible. They are patients or families of patients that are full of hope but also realistic that they can be part of making the science better but it might not impact their trajectory. Those groups are what fuel their belief in science and belief in the future. They fuel me."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Sometimes I don't know who's a part of these groups. And one day I got a text message from a friend of my sister who said, \"Say thanks to your sister.\" And my mom, my sister was like, \"Why?\" And it was because research that her rare disease group did allowed her to get a diagnosis for something that she had been experiencing."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Wow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Not even a cure, not preventing her disease, just naming it. So she didn't feel so alone and so powerless. That is something that motivates me."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "This is fascinating."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think there are any diseases that we'll be able to cure with this technology in our lifetime or what is the most probable disease to be cured?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "I actually think many diseases will be cured within our lifetime. You know, I trained at UCSF from 2012 to 2015 and diseases that were incurable death sentences have very reasonable and effective treatments now. 2015 was 10 years ago—that is a huge difference. Baby KJ at CHOP was born with a mutation that would make it very difficult to grow up to have a normal healthy life, but because we understood the mutation and we were able to correct it, he's probably going to live a healthy life. Like that sounds like science fiction."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And it's not just him, right? It's also future babies who might be born."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Exactly. I think the things that are sort of super ripe right now are the ones where we have a very clear understanding of the molecular and genetic basis of why it happens. So I can see the pathway for all those diseases. We got to get more diseases to that level of understanding. What is the genetic underpinning? What is the molecular underpinning? We need better models and we need scientists to be able to do more risky, bold projects to solve those questions."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That is fascinating that you are doing this work with the resources. Are you waiting for something to happen where you'd say my mission is fulfilled? I don't have an idea of what that might be like."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "I think there's always more interesting work to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you're always always pushing. My last question is for every mom who's watching who also wants to build something but you know kids take a lot of time. What would be your advice? How do you balance this?"
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "I am extremely disciplined about my schedule and so I have time that is dedicated to the children and I have time that's dedicated to work. I don't mix those things and that's it. That's okay with me. You know, the more fun social stuff will come later when the kids have left the house."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. Yeah. Thank you so much and thank you for the work that you're doing. You're definitely changing the world and hopefully AI is just going to speed it up."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Totally. We'll get some great results in five years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thanks for shining a light on science."
+    },
+    {
+      "speaker": "Priscilla Chan",
+      "text": "Thank you."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "JFilKfL7_9A",
+      "thumbnail": "https://img.youtube.com/vi/JFilKfL7_9A/hqdefault.jpg",
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus"
+    },
+    {
+      "videoId": "subu-xHrp1w",
+      "thumbnail": "https://img.youtube.com/vi/subu-xHrp1w/hqdefault.jpg",
+      "title": "Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li & Masterclass CEO David Rogier"
+    },
+    {
+      "videoId": "PTZ5iN9nDkY",
+      "thumbnail": "https://img.youtube.com/vi/PTZ5iN9nDkY/hqdefault.jpg",
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    }
+  ],
+  "topics": []
+}

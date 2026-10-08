@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,8 +374,7 @@
       <p class="guest-bio">Dmitri Mogilko is the co-founder of Linguatrip, an edtech platform focused on language learning and study-abroad programs. He and Marina built the company from the ground up in Russia before relocating to Silicon Valley and securing a spot in the prestigious 500 Startups accelerator program. Though he and Marina stopped working together professionally in 2019, Dmitri remains her husband of eight years.</p>
     </div>
 
-
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -479,7 +491,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> Silicon Valley is like for people from Stanford, Harvard, Google, whatever. Like we don't belong there. And I'm like, come on. My husband Dmitri when we came here as immigrants, no friends, no network, nothing. And um we started growing so fast. We went from like five or six people to 60 people like less than half a year. Dmitri has been my longtime business partner. Some investors, they said to us it was a red flag. Oh, I was so mad after this meeting. You remember? I'm like, come on. Like, but we stopped working together around 2019. And uh let's talk about why.</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> Silicon Valley is like for people from Stanford, Harvard, Google, whatever. Like we don't belong there. And I'm like, come on. My husband Dmitri when we came here as immigrants, no friends, no network, nothing. And um we started growing so fast. We went from like five or six people to 60 people like less than half a year. Dmitri has been my longtime business partner. Some investors, they said to us it was a red flag. Oh, I was so mad after this meeting. You remember? I'm like, come on. Like, but we stopped working together around 2019. And uh let's talk about why.</p>
             <p>Yeah, we did some videos together back. I made it. We did some videos together back in the day, but this is the first time. My husband, Dmitri, uh we've been married since 2017. We've been together. Right answer. Yeah, we've been together since 2010, which means 15 years. And uh Oh my god, is it today? Is it was it yesterday? Yesterday was 15 years since we we moved in together. Um and uh Dmitri has been my longtime business partner. Had been my longtime business partner. We stopped working together in 2019. And this is what I want to talk to you about today. Like in general uh can you talk about the time we worked together what you liked about it and what you didn't like?</p>
             <p><strong class="speaker">Dmitri Mogilko:</strong> First of all, I think uh yeah, thanks for inviting me to the podcast. That's how you understand you made it in Silicon Valley. I think that's the definition of co-founders because if uh not you and me the company would not exist because we're very different in our skill set and um I was like dreaming big and like say like okay we have to go to Silicon Valley we have to raise capital there we have to change the market and like build online tools blah blah blah and you were the like the person who actually delivered all the operational thing and you were an expert in the product. Um, I think if not you and me, like the company would not exist simply.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> So, uh, for people who are wondering what's going on with your English, cuz I know a lot of people ask all the time.</p>
@@ -524,24 +536,28 @@
             <p><strong class="speaker">Dmitri Mogilko:</strong> Thank you guys. Sorry for the bad English. I'll practice. Maybe I. It's getting better every single day. Yeah. So um thanks a lot. It's a pleasure to watch your growth and uh uh do an amazing job. Keep doing that.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Thank you so much. I love you.</p>
             <p><strong class="speaker">Dmitri Mogilko:</strong> I love you too. Bye guys.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/xuN4jZpaPho/" class="related-card">
                 <img src="https://img.youtube.com/vi/xuN4jZpaPho/hqdefault.jpg" alt="Steal These Money Habits — They Built My 7-Figure Wealth" loading="lazy">
                 <span class="related-title">Steal These Money Habits — They Built My 7-Figure Wealth</span>
               </a>
+
               <a href="/episode/B8v4wWeWqJ8/" class="related-card">
                 <img src="https://img.youtube.com/vi/B8v4wWeWqJ8/hqdefault.jpg" alt="TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha" loading="lazy">
                 <span class="related-title">TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha</span>
               </a>
+
               <a href="/episode/EuaVTPB8dxc/" class="related-card">
                 <img src="https://img.youtube.com/vi/EuaVTPB8dxc/hqdefault.jpg" alt="GM CEO on AI Cars and the Future of Driving | Mary Barra" loading="lazy">
                 <span class="related-title">GM CEO on AI Cars and the Future of Driving | Mary Barra</span>
               </a>
+
               <a href="/episode/DPe_srf0GlI/" class="related-card">
                 <img src="https://img.youtube.com/vi/DPe_srf0GlI/hqdefault.jpg" alt="Head of ChatGPT &amp; Codex: Agents for Normal People Are HERE | Thibault Sottiaux" loading="lazy">
                 <span class="related-title">Head of ChatGPT &amp; Codex: Agents for Normal People Are HERE | Thibault Sottiaux</span>

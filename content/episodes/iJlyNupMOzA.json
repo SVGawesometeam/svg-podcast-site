@@ -1,0 +1,464 @@
+{
+  "videoId": "iJlyNupMOzA",
+  "title": "$95B Airbnb CEO: The Gap Is Growing — What It Takes to Be a Top Performer Now | Brian Chesky",
+  "format": "interview",
+  "guestName": "Brian Chesky",
+  "guestTitle": "Co-founder and CEO of Airbnb",
+  "aboutGuest": "Brian Chesky is the co-founder and CEO of Airbnb, which he built into a Fortune 500 company valued at $95 billion and listed on the S&P 500. He came to Silicon Valley 19 years ago and has navigated the company through major challenges including the COVID-19 pandemic, and is now leading Airbnb's transformation into an AI-native platform.",
+  "publishedAt": "2026-10-01T16:30:08.000Z",
+  "duration": "35 MIN",
+  "coverArt": "https://img.youtube.com/vi/iJlyNupMOzA/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/iJlyNupMOzA/maxresdefault.jpg",
+  "summary": "Brian Chesky discusses how Airbnb is transforming into an AI-native company by modernizing every user touchpoint with intelligent features rather than relying on chatbots. On the guest side, Airbnb now offers AI-powered natural language search with intelligent prefiltering, AI-generated personalized listing highlights, an AI comparison tool for browsing multiple properties, and enhanced neighborhood maps rolling out to 1,000 cities worldwide. On the host side, the app is becoming more agent-like, functioning as a coach that understands host goals and helps with pricing strategies.\n\nChesky emphasizes a critical distinction: agents are evolved applications that leverage AI intelligence, while chatbots are merely user interfaces—and chatbots are the wrong interface for shopping and travel experiences that require comparison, filtering, and inspiration-based browsing. He argues that AI amplifies existing capabilities, making good performers better while providing less multiplier effect for others, thus widening the gap between top and average performers. Chesky also discusses Airbnb's new social graph feature, connecting friends to see where they've traveled and stayed, filling the void left by the decline of traditional social networks as recommendation sources shift from celebrities to trusted personal networks.",
+  "keyTakeaways": [
+    "AI-native transformation means modernizing every app touchpoint with intelligent features like natural language search and AI-generated personalized content, not replacing interfaces with chatbots—agents are evolved applications while chatbots are just UI layers.",
+    "Comparison shopping requires the right interface; Airbnb's AI comparison tool and side-by-side filtering for properties shows chatbots fundamentally don't work for travel and shopping experiences that depend on browsing and deliberation.",
+    "AI is an amplifier: it makes good people better and is less of a multiplier for everyone else, so the performance gap grows. Every company has the same tools, Codex and Claude Code included, and what separates people is great thinking, taste, curiosity and knowing what is worth building.",
+    "Airbnb's new social graph solves an internet problem: there's no longer a place to see what friends are doing and traveling, so connecting friend networks on Airbnb shifts recommendations from celebrities to trusted personal relationships.",
+    "Building a company today is easier than 20 years ago because entrepreneurs now have access to the same AI tools as large enterprises, democratizing capability—the differentiator is no longer tool access but focus, idea selection, and execution discipline.",
+    "Good ideas come from volume. Chesky writes about a thousand words a day in a notebook, bolds the lines that jump out at the end of each day, and now has AI read the bolded ideas each month to find patterns. Most ideas are bad; the good ones keep coming back."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "We finally did this podcast 7 years later"
+    },
+    {
+      "time": "01:23",
+      "seconds": 83,
+      "title": "What AI-native Airbnb actually means for you"
+    },
+    {
+      "time": "02:49",
+      "seconds": 169,
+      "title": "Agents and chatbots are not the same thing"
+    },
+    {
+      "time": "05:59",
+      "seconds": 359,
+      "title": "What Airbnb is building instead of social networks"
+    },
+    {
+      "time": "08:36",
+      "seconds": 516,
+      "title": "How Airbnb ships 80% more features with AI"
+    },
+    {
+      "time": "10:17",
+      "seconds": 617,
+      "title": "The biggest small-business opportunity on Airbnb right now"
+    },
+    {
+      "time": "12:51",
+      "seconds": 771,
+      "title": "How Airbnb decides what to launch"
+    },
+    {
+      "time": "15:09",
+      "seconds": 909,
+      "title": "How to know your idea is worth building"
+    },
+    {
+      "time": "16:55",
+      "seconds": 1015,
+      "title": "The one metric CEOs got wrong about AI"
+    },
+    {
+      "time": "17:53",
+      "seconds": 1073,
+      "title": "Everyone has the same AI tools, here is the catch"
+    },
+    {
+      "time": "19:17",
+      "seconds": 1157,
+      "title": "Why the gap between top and average is growing with AI"
+    },
+    {
+      "time": "20:04",
+      "seconds": 1204,
+      "title": "The Nobel laureate rule for having good ideas"
+    },
+    {
+      "time": "21:50",
+      "seconds": 1310,
+      "title": "How Brian picks which ideas are worth working on"
+    },
+    {
+      "time": "25:47",
+      "seconds": 1547,
+      "title": "Put on blinders and stop doomscrolling"
+    },
+    {
+      "time": "28:02",
+      "seconds": 1682,
+      "title": "Why the phone kills focus and the computer saves it"
+    },
+    {
+      "time": "29:14",
+      "seconds": 1754,
+      "title": "What Brian would build today if he was 26 again"
+    },
+    {
+      "time": "30:45",
+      "seconds": 1845,
+      "title": "Why chat is the wrong interface for AI"
+    },
+    {
+      "time": "31:40",
+      "seconds": 1900,
+      "title": "Why 100 more Anthropics are coming"
+    },
+    {
+      "time": "32:33",
+      "seconds": 1953,
+      "title": "It's easier to build a company now than 20 years ago"
+    },
+    {
+      "time": "33:15",
+      "seconds": 1995,
+      "title": "If AI still feels intimidating, do this"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Brian Chesky",
+      "text": "So I think there's a lot of fear about AI outside of Silicon Valley. I understand why, because it's changing their job, it's displacing them, and some of that may be true, but I am saying that everyone has the power now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is Brian Chesky, co-founder and CEO of Airbnb, a Fortune 500 company valued at $95 billion. He believes AI is widening the gap between people who have access to the same tools. So I wanted to understand what actually gives people an edge in an AI-powered world."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "AI is like an amplifier. It makes the good people better. And the people that weren't as good, it's less of a multiplier for them."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I'm just trying to translate this for people who are thinking about different business ideas. How do they know that idea is viable to launch?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "This is what I would do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Hi, Brian."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Hey, how you doing? Good to see you."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Welcome to Silicon Valley Girl. It's been seven years since we first met and I wanted to show you this. I don't know if you remember, but that crazy girl at the airport who saw Brian Chesky and then ran to you."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Oh, yes."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And you were boarding a commercial flight. Of course."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Of course. What airport was that?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's LAX. Thank you for being so nice and friendly."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Of course. And look at how well you're doing. And I'm so honored to be on your program."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you. And I invited you to a podcast back then. So seven years later, we're doing it. We're doing, so I came to San Francisco building a travel company. And then we were going through really hard times during COVID and seeing you navigate those times really gave me inspiration and strength. And now we're in this new era of transformation which is AI. So today I wanted to focus on how you're transforming the company for the AI era. And I wanted to make it as applicable as possible for people who are maybe thinking of starting a business in the AI area, or maybe having hard times as a professional because so much is changing. So talk to me about Airbnb becoming AI native. What does it mean for guests? And also I'm a host, I have a place in Hawaii that we're renting out through Airbnb. So what does it means for both sides of the table?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "I think it really just means modernizing every touch point of the app to be more intelligent, easier to use, and so I'll give you some examples. Let's say we're a guest. Before AI, you do a normal search, you type in a location, and you get a bunch of results. Now with AI, starting today, you can hit a toggle, and you can do AI search. It's very much natural language, like typing into a chatbot, and then it is a very intelligent search, so you can say, I wanna go to Paris this weekend with this number of people, I want this kind of view and I want this kind architecture and it will not only serve up all the results but it will also pre-filter everything for you because Airbnb is very much about filters and controls. You see the chatbots aren't really great for shopping."
+    },
+    {
+      "speaker": null,
+      "text": "Chatbots are really good for travel and the reason why is they're text-based, they're very hard to compare. You want things to be very inspiration-based and browse-based. You want it to be fun and entertainment oriented. It's multiplayer. So the average Airbnb people, it's three people traveling. So they all have to be able to like share. You have to build a message a host. You have be able have filters and you gotta be able see like if I turn this filter off, I get this home. If I add this filter back, I get that home. So we had to find this interface that wasn't a chatbot, but that felt chat-like, that you can start to have a conversation with, but you didn't take away the functionality people loved. Then when you get to an Airbnb, we have these AI-generated highlights."
+    },
+    {
+      "speaker": null,
+      "text": "So AI basically will summarize the listing for you. And these are really nice, personalized snippets. They're personalized to you. So we can make the listing literally written for you, saying this is why you will like this listing. Then, when you get to the bottom of the page, if you have a question, you don't even have to ask the host now, you can literally ask the page. And the listing could answer things for you. You can still message the host, but now you can message. Then, if you a bunch of listings, you wanna compare them, we've got an AI comparison feature tool, which makes it really smart and easy. And one of the challenges people don't realize and one of problems that chat bot is, Airbnb is very much a comparison shopping problem. Okay, I like these 10 homes."
+    },
+    {
+      "speaker": null,
+      "text": "This one's got a pool. This one's got a barbecue. This one has got really high ratings. This one is new. This one a little more expensive. This one in a really good location. How do I make decisions? And how do I compare side by side? And how to I call down? Then we have brand new maps, where I can, starting in Paris, I can tap and see information about each neighborhood. Eventually this is going to roll out to a thousand different cities around the world. And these are just some of the features we have in the guest side. On the host side, we're gonna make the app feel more and more like an agent that can be your coach, understand your goals, it can help you price your listing. So I think the basic idea is that Airbnb's getting smarter."
+    },
+    {
+      "speaker": null,
+      "text": "Airbnb's whole app is gonna feel more like a agent. But when I say agent, I don't mean a chatbot. People, when they hear agents and chatbots, they think they're the same thing, they're not. Agent is an evolution of an application. It's an application that is more intelligent and understands you and knows you. And it leverages the power of AI. A chatbot is a user interface. And I think because most agents are chatbots, we conflate the two. But they're not the same thing. And I'd think that a chatbot is not the right interface for travel. It's not the interface for shopping. But agents are great. And I thing the great thing about agents is they're interoperable. So one agent can talk to another agent. And so I think agents are definitely the future Silicon Valley and chatbots or not."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, and chatbot feels like more like a reactive thing, where agent is more proactive, knowing your interests. And I really like the comparison feature because you don't know how many hours I spend. It's like two very similar bookings, but this one is quieter, but this has a bigger bedroom. And you're like having them side by side, I think makes a huge difference. And you also adding a social graph, something that I absolutely love."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "You know, it's so funny. I came to Silicon Valley 19 years ago. And when I came into Silicon Valley, there was this thing called a social network and it was Facebook and everyone was on Facebook and it mostly just your friends and you could keep in touch with your friends and they would share what they did. And now none of my friends are on Facebook and Instagram is not social networking, it's social media. So it's basically Instagram, X, YouTube, TikTok. They're really not social networks, they're performance platforms, they're broadcast platforms. And I'm not saying this is a bad thing, but I'm saying now there's no place in the internet for me to know not only what my friends are doing, but one of the things I used to like was knowing where people were traveling. People in my life, where have they traveled to? Where are they going? And so here's a use case. Let's say I'm going to Chicago."
+    },
+    {
+      "speaker": null,
+      "text": "I'm sure I have a bunch of friends have been to Chicago, but I don't know which ones. And now if I connect to people on Airbnb, I can see all of my friends have been to Chicago, and I can where they stayed. I might wanna stay where they've stayed, but more importantly, I can ask them like, hey, what's good to do in Chicago? Because what we found is increasingly people want recommendations for their friends and their family rather than from celebrities or writers. They increasingly want people who feel like they know them. Like, you know me, you'll know what I like, but this is an unsolved problem because you don't know where everyone in your life has traveled. Another thing about Airbnb is one of the best parts of it is meeting somebody new. It was hard to meet people today. I asked my parents, how did you meet people? They would go to a mall, they'd go to theater, they'd to physical spaces."
+    },
+    {
+      "speaker": null,
+      "text": "Increasingly, people today are not in physical spaces, they're on their phones. And phones are really a way for you to talk to strangers online, but it's a really hard way to meet strangers offline. And so we wanna help solve this problem by making it easier to meet people in the real world and stay in touch with them. And so if you travel, you stay in a home with somebody, you might meet them. If you go and experience with somebody you can stay in touch with them. So I think a lot of what we're trying to do is turn Airbnb from a kind of just a marketplace of homes to a little more of a travel community. And I think the travel graph is really cool. And if you go on Airbnb, you can basically add your friends or family and you can see where they're traveling. And this is a really cool use case. Wouldn't you be curious to know where all your friends are traveling this summer?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think it's pretty cool."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Now you can know, and you can decide, well, if they're going, we can go at the same time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, and one of the reasons I started this podcast, because I wanted to meet people offline, and whenever guests suggest doing an online thing, I'm like, no, no. That's not the reason I wanted to do that in the first place. So I can totally relate. And I think you're also opening up opportunities for new businesses, right? Because you're now doing groceries, baby gear, restaurant deliveries. Is it 700 plus features that you're launching?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "I think so, yeah, we're launching. I think the stat is that we're shipping 80% more features than a year ago. Most of it's because of AI. Obviously, AI is like this incredible superpower. 10 years ago, even a few years ago everything had to be coded by hand. Everything was so much harder to do. Now that you can ship things so much more quickly, we can ship features more quickly. It used to take us a year to ship a new service. Now we can do it in weeks. And so now, for example, with services, One of the things we hear from guests a lot is, I love to stay in homes, but they don't have all the services of a hotel."
+    },
+    {
+      "speaker": null,
+      "text": "And we thought, well, what if we could have not only all the service hotel, but even more services? So we can have baby gear if you have kids. Sometimes hotels have cribs, but maybe they have two cribs or three cribs. And if they're out, you've got, this is what we, I don't know kids, but I hear from my friends who have kids, maybe you want laundry done. A hotel has laundry. Well, now Airbnb, you can get laundry. So we just wanted to go down the list. Ski rental equipment. I'm going to go skiing. I don't have my own ski equipment. So going to rent ski gear can be very, very, you know, it can be onerous, right?"
+    },
+    {
+      "speaker": null,
+      "text": "And you just get to a city, you're tired, you don't want to figure out how to get ski gear. We can have all the sizes waiting for you, all the equipment for you. So we're really trying to make Airbnb as easy and plug and play as possible. So you're not just getting a home. You're kind of getting a full service experience. So eventually I see us adding dozens, even hundreds of services that can be plugged into the home so that when you book a home, you can get everything you need for your trip."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you see the biggest opportunity for small businesses who are trying to build to plug into your system?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Let's pretend I'm a masseuse. I'm masseuse in Tulum, Mexico. I'm just making a random place up. Right now, how do I get business? I only get business from locals who know about me, but how would I, if a traveler were, how would get business. I probably wouldn't be able to get business, maybe I have to go work at a resort and they have to give me business. Now I can have my own business. I can broadcast in Airbnb and all the travelers coming to Tulum. If anyone wants a massage, they can go on Airbnb and they can book the massage with me. So kind of like the original Airbnb where I had a home, but no one knew about my home and we gave them a distribution platform and they could basically get an audience, kind of the way social media gives everyone an audience. We can give all these small business audiences and we give them a global audience of travelers."
+    },
+    {
+      "speaker": null,
+      "text": "And so this is really, really difficult for somebody. I'm a photographer in Paris and I take photos of families in front of the Eiffel Tower. A lot of people wanna get their photos. How do you get your photo in front of the Eiffel Tower? If you're a parent, one of you is not in the photo, or you give the camera to someone else and they're like being bothered, and it's just like an iPhone photo. Now you can have like amazing professional photos in 30 minutes, it's not too expensive, and you'll remember those photos forever. This photographer. Would never have known how to broadcast to all these guests from around the world. We really feel like there's a whole economy of service providers, whether there's masseuses, chefs, photographers, companies that deal with equipment or baby gear or laundry or cleaning service, car rental, welcome pickups, picking up the airport, anything you imagine. In other words, now you can Airbnb more than just a home. You can Airbnb anything."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you're thinking about starting a business, start with something you already know how to do well. Maybe it's photography, catering, or a service people keep asking you for. Then you think about your first five customers. How will you remember what each person needs and what you promised? Our sponsor HubSpot helps just with that. Its new smart CRM is a CRM that updates itself. Keeping customer details and conversations in one place. For example, you finish a call about a catering job, AI note-taker captures the details, helps draft your follow-up, and suggests next steps and updates to the customer's record for you to approve. So you can spend more time delivering an experience people want to recommend. If you're ready to build something of your own, explore HubSpot Smart CRM through the link in the description. And thanks to HubSpot for sponsoring this episode. Now back to Brian."
+    },
+    {
+      "speaker": null,
+      "text": "And you were testing all of these, I imagine, before launching. Can you talk to me about all the tests and what's the decision-making criteria?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "For everything we launch, we're probably testing like many, many more things. And we have dozens of services underway. So like ski, ski equipment. I'm not a giant skier, but, um, I ski a little bit. I don't ski enough to have my own skis. I don't ski enough time, my own boots, my helmet. So everywhere I go, I have to rent equipment and it's always like, I don't even know where to go. Do I go to the mountain to rent? Equipment? Um, do I have wait in line? I have, to wait for someone to size me. It's so much more convenient if I were to get to the Airbnb. They know my boot size, they know my ski size, and they just have everything for me. So that is something that we're testing. I think the test is in Italy, but we're gonna hopefully bring this to ski mounds all over the world."
+    },
+    {
+      "speaker": null,
+      "text": "And there's these ski rental companies, and they would love to be able to bring the equipment to you, rather than you have to wait in line at the store, which is potentially really inconvenient. Surfing equipment, you know, a professional surfer probably will travel with their own surfboard, but it's pretty hard to bring a surfboard on an airplane, and a lot of people aren't gonna travel the surfboard. And so they're gonna have to rent this equipment. What if in the house waiting for you was this equipment, or you knew exactly where to go to get the equipment. So these are kind of the ideas. So we're trying to test, you know, we usually do a test in one market, one city. If it works, then we bring it to other markets. And everything we announced today, we've been testing. So we have a lot of other services coming. There's literally hundreds, by the way."
+    },
+    {
+      "speaker": null,
+      "text": "The thing that's exciting is the long tail. It's like there's so many different services. And no one service maybe is big enough to be a giant business that you've heard of that has an app. So that's the challenge. Like ride sharing, there's an app, Uber. Food delivery, there is an app Uber Eats, DoorDash. But most other services aren't big enough to have a global brand where you know where to go. And even if they do have an app they're not integrated with Airbnb and so it's pretty difficult. Like Instacart, they got an app but now you can get groceries at your Airbnb. And you have an option where you can order the Instacart groceries through the Airbnb app. It already knows your address, it already knows how many guests, and the food can be sent to the house and the host can open the door and have the food put in the fridge so it's stocked for you. It's just much more convenient."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what is the criteria for launching? I wonder if you have internal metrics. Is it like 10% of guests are using the service? I'm just trying to translate this for people who are thinking about different business ideas when they don't have access to data like yours. How do they know that idea is viable to launch?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "It's a great question. I mean, we started with the most popular services, the most common ones. Chef, masseuse, photography, car rental, airport pickup, luggage storage. But increasingly, the power of Airbnb is the idea that we want you to be able to provide anything you can imagine. So my hope is anything you offer, if it could be useful just to a couple people visiting your city. Then we would love to hear from you. And I think just contact Airbnb. I think there's a contact button on the bottom of our page and we try to intake as many ideas as possible. So we have like a services platform. If you go to list, you can go to become a host. There's a button you can basically apply to become services host. We might tell you that this is coming soon, but we take every single lead."
+    },
+    {
+      "speaker": null,
+      "text": "So let's say you do like floral arrangements. This is a use case, people are on vacation, they may be on a romantic trip, they wanna get flowers in the listing, maybe they want flowers in a listing, they wanna flowers for the romantic significant other, that's the service we're launching, and people can apply, we don't have it in every city, but if you have this idea, if you an idea like that, just apply. And if we aren't ready to launch it now, we will eventually, and so it's just a matter of getting to them. But we want every idea, I wouldn't wanna tell people. What ideas to apply with because some of the best ideas are ones I don't even think of. But if you have something you think is valuable to somebody else, you just need an audience and hopefully we can give you that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. And I imagine shipping all of these features became possible because of AI. Do you have an internal metric where you say, okay, AI is adding that much to our productivity and output versus just generating more stuff that we're not using?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "So at the beginning of the year, there was this whole tokenmaxxing thing where CEOs were telling everyone, you've got to use AI. And they were measuring it by how many tokens you were using. And there was a little bit of an initial management philosophy to shame people that didn't have a lot of tokens. There were token leaderboards. That might have been a good thing to do for a couple months, just to make sure people were using AI. But that was clearly a long-term strategy that was not going to work."
+    },
+    {
+      "speaker": null,
+      "text": "And now, all of a sudden, everyone's like, wait a second. Why are we spending so much money on AI? And so I think the most important thing is Like, the customer doesn't care if we're using AI to build our tools or not. They just want the product to be better, faster. And so we look at product velocity. How fast are you shipping? How many features are you're shipping? How quick are you of shipping them? Are they high quality and are they successful? And we have metrics for that. So we're shipping 80% more features. The features- That is crazy."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That is crazy though, just think about 80% more for a huge company like yours."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Yeah, and it's just two things. It's the power of AI that suddenly you don't have to primarily code by hand, but it's also cultural. People have to use the tools and they have to us them correctly. And it's amazing because AI is the ultimate democracy. The tools that Airbnb has is the tools every company in the world has. We all have access to the exact same tools. There's really, there's Codex, there is Claude Code. It's kind of like back in the day, I used Photoshop and I was a designer, illustrator, we all had the same tools. We all have these amazing tools, but they're not equally distributed. The very best people know how to like immerse themselves and get the most out of the tools."
+    },
+    {
+      "speaker": null,
+      "text": "And so one of the things we tried to do is we tried make sure people learned how to use the tools correctly. And there's no replacement for like good thinking. You know, you need to have like really good data. You need to like still have good collaboration. AI allows an idea to get out of your head into the world faster. But it doesn't necessarily give you better ideas. You still have to be, have great ideas. You still to have great thinking. It's now about great thinking, it's about. Great understanding. It's about great curiosity. And I think AI rewards deeply curious people because you can do endless iteration. AI is like an amplifier. It makes the good people better."
+    },
+    {
+      "speaker": null,
+      "text": "And the people that weren't as good, it's less of a multiplier for them. So I find that the dynamic range, the performance gap is greater with AI. That the really high performers even better with AI, I'm a designer by training. I went to RISD. 19 years ago, I started to be, I couldn't code. And today, I could code because I could prompt. And so suddenly, in that way, it is so democratic. All of us can do so many more jobs. At the same time, great thinking, great taste, great understanding, understanding user problems, these are things that matter even more now because it's no longer, can you build it? It's what do you build and should you build it and does it matter?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Quick tip to people who want to upgrade. You were describing people who are at the edge of productivity and generating ideas and being curious. Is there something you learned?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "I think there was a saying by this Nobel Prize winning, maybe chemist, Linus Pauling, he said, the best way to have a good idea is to have lot of ideas. Like Airbnb seemed like a good, right? It was one of many ideas and we had a lot of bad ideas. I think it's about sheer output. The best way is to create a good drawing is to make a lot a drawings. The best way to do anything is to create a lot of it, just throughout sheer output. You're really good now at what you've done, you probably did it through a lot of repetition, right? There wasn't one moment where you got good. Similar to exercise, you don't get in shape in one workout. It's through repetition. So what I found is that the very best people are the ones that just practice more than anyone else and they put in the repetitions."
+    },
+    {
+      "speaker": null,
+      "text": "Working out is actually a good metaphor, it's repetition. And so idea repetition matters. I know at IDEO, they're a very famous design firm. They used to do this exercise where the way you generate ideas, they give every people probably some people might notice to give you everyone a post-it notes and you have to write an idea down, put a post note on the wall, another idea on a wall. And they had a rule. You can never critique ideas. Initially, no devil's advocates, no critiquing ideas because when you critique your ideas, you edit your thinking and you're afraid and bad ideas sometimes are one step away from a good idea. And so I think it's all about volume of ideas. I probably, not exaggerating, have 100,000 ideas a year, and I think 99,000 are really bad."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Out of all the ideas, how do you know which ones not to work on?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "It's more the good ideas jump off the page. So for example, I basically have a notebook and every thought is like a sentence or a couple sentences and I probably write maybe a thousand words a day. So that's probably 300,000 words a year and maybe each line is a sentence, those like 10 words. So maybe that's a hundred ideas a day So that's maybe 30,000 ideas a year. And so then what I do is say I have 30,000 thoughts a year, 99% of them are not useful, right? Just something, you write something down, anything that comes to your mind, you just keep writing it down. At the end of every day, I bold the things that jump out at me. And so if I wrote down like a hundred things, a hundred lines, I bolded five to 10. And then each day I bold them."
+    },
+    {
+      "speaker": null,
+      "text": "At the of every month I look, and my AI now can just read the bold ideas. I used to have to manually like pull out the ideas and read them. Now the AI can pull out bolded ideas. The AI can also read and find ideas I thought were stupid and it can tell me really good ideas. It can see patterns and then those become my short list and then I iterate them, iterate them, and iterate them. You know I think like Catcher in the Rye 70,000 words and I probably have like four times that output in words and my writing is a thousand times worse. It's really bad writing. It's not high quality. I'm not writing, like if you were to read it, you'd be like, this is borderline nonsensical. It's understandable to me, not to someone else. And I think that's the point, is that most of my words are bad."
+    },
+    {
+      "speaker": null,
+      "text": "Most of my ideas are bad, and it doesn't matter because no one knows about the bad ideas. They only need to know about the good ideas. And here's the lesson, good ideas don't die. If you write something down, you write a good idea down. A month later, you're gonna write the same idea down again, and you won't realize, it comes back. So I find that good ideas, they don't wanna die, they kinda stay alive, and everything else just kinda falls by the wayside. And these good ideas that kinda haunt you like ghosts, and you're like, okay, this thing's not going away. I don't know if that's useful, I never said this before, but I think it's about like just total output, just constantly, I remember hearing about Eminem, He would just write all day. He had a notebook and he'd write lyrics and rhymes all day."
+    },
+    {
+      "speaker": null,
+      "text": "Bob Dylan was just writing songs all the time, just writing and writing and writing and writing. Now, not everyone's like that. Like Jay-Z apparently like doesn't do that. He just like thinks in his own head and like that's very unique, prodigious skill that he has. Leonardo da Vinci, he left behind so many notebooks and he was just drawing and writing and drawing and writing. By the way, most of da Vinci did was write, not draw. If you look at his notebooks, It's 80% writing, 20% drawing. And he is the most famous painter of all time. He had like 12 paintings ever. Mona Lisa is one of 12 or 15 paintings he ever painted. So think about the sheer volume of stuff he created. Vincent van Gogh, most of his productivity was in the last three years of his life. And he painted more than one painting a day, every single day."
+    },
+    {
+      "speaker": null,
+      "text": "And this is in addition to sketches, he just every day, he wrote, he write, he wrote. Hemingway wake up at 6 a.m. From 6 a.m. to noon He would just write and he would write till he had nothing left to write at noon And it was just it's just this discipline of repetition whether you're a tech founder. You're an artist your writer It's about pure volume. It doesn't mean you put out a lot of crap Like you don't publish at all. Yeah, you have to you you then you edit and you edit you only publish The very best of your stuff But I think that what people don't understand is they only see a few things go out and they don't see the sheer volume of what goes in."
+    },
+    {
+      "speaker": null,
+      "text": "And I think the problem, and maybe I'm gonna admit to a problem I have, and I think almost every single person watching has is we spend too much time on social media paying attention to what other people are doing. My vice is X and I like, and most of us are on X or Twitter way too much. And we're way too focused on what other people are are doing, oh my God, now it's instinct, now it is muse. And now it's this, and now, it's that. And there's just, we're all like kids chasing soccer balls. And we're like trying to play fast fashion, trying to copy what everyone else is doing. And just, it just so distracting. And I wonder if we'd all be better off just like, not being a little bit ignorant to whatever else is going on in the world."
+    },
+    {
+      "speaker": null,
+      "text": "Part of me is like, you know, Van Gogh couldn't doom scroll. And if he could doom scroll, he might not have painted so much. If Da Vinci could doom-scroll, he might have not had so much output. And if all of us could just block out a bit more of what everyone else is doing and say, it doesn't really matter what people think. Or even if you do care what people think, let people value you years from now. See, I'm gonna put blinders on and I'm just gonna just dig in and I gonna work for years. And I'm not gonna worry about getting attention now. I will earn attention later if it matters to me, but I'm going to practice quietly and I don't need the world to watch me practice. I'm in a quietly practice. I want to become great at my craft. And when I'm ready, I'm gonna put something out there. I think that would be so valuable. We're just put blinders on and just lock in and just go."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think this is such valuable advice, such great practice. We need to be doing more of, because..."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "And I will admit, I'm giving advice to others, and I have to keep reminding it myself. Stop worrying about whatever else is going on in Silicon Valley. Focus on, it's so hard. And you don't wanna be naive. Like you wanna know generally, if you're a company you wanna what's going on in competition. You wanna know what's the latest with AI developments. But you can do that like 10 minutes a day. You don't need to do that two, three hours. You don't need to open X or YouTube or Instagram or whatever your platform du jour is. 17 times or 25 times. This is what I would do, and I don't do it as much, but I wish I did it."
+    },
+    {
+      "speaker": null,
+      "text": "Once a day for like 20, 30 minutes, I'm gonna go on whatever platform I go on, I'm going to learn. Okay, now I'm done. And then this time is uninterrupted. And I'm got to like not have my phone on. By the way, the phone, spend more time on a computer, less time on the phone. The computer is the ultimate tool. We designed phones on computers, we don't design computers on phones. The phone. Was never designed to be something you stare at all day. When Steve Jobs designed it, his vision wasn't you're on it all day, long attention span stuff should be reserved for big screens. So you should not be staring at a phone very long because what it does is it trains your dopamine to multitask and to like change things."
+    },
+    {
+      "speaker": null,
+      "text": "And what it is it like, the phone is an enemy to focus and it's not designed to something you're staring at for hours a day. The computer is great for focus. A large screen, the bigger the screen, the longer your attention span. That's why if you go to like an IMAX theater, you're not gonna go to the bathroom. You're in a living room and you watch a television show and you might get up. On your computer, you'll watch a YouTube film, but on a phone, you only be able to pay attention for 15 seconds before you scroll to the next video. Attention span is commensurate with screen size."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And never thought about that."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "If you wanna focus, you need to have a long attention span. If you want to have long attention to span, you need have a big screen. Do not look at a phone if you wanna to focus."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You mentioned having so many ideas. If you were not building Airbnb today, in the AI era, what would you be building?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "I used to think I was lucky because I was 26 when I came to Silicon Valley and when I came to the Silicon Valley the iPhone had just launched, Facebook was blowing up, YouTube was out, the internet was going global, cloud computing meant you could have an app and not have to buy your own servers. What it meant was it was kind of easy to start a company and there was this iPhone that was distribution so suddenly you could just put it in an app store and everyone could discover it. I felt like I was the luckiest person alive. Because I happened to be born at the right place, at the the right time, and it was just as much luck as talent that I got to where I am today because I just happened to here at this magical time in history."
+    },
+    {
+      "speaker": null,
+      "text": "And I remember saying for years, until the launch of generative AI, ChatGPT, I said, thank God I was born the time I did because now is a tougher time. And then post-ChatGPT, part of me said, I wish I was 26 again. Because, actually, as amazing as Airbnb is... If I was 26, I could probably do something just as cool because the tools now are so much more powerful. I don't know what I would do. I'm very interested in education. I think AI can transform education. I think content, like you could build an AI Disney. You could create incredible storytelling with AI. I think health is like an incredible area. I think that like instinct and muse are. The beginning of consumer AI, agentic AI, but I do not think that the messaging interface is the right interface to do most work. And so I would encourage entrepreneurs to imagine other interface modalities."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like audio or even further."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Way further. We're visual creatures. Most people are not text-based. Why is TikTok more popular than Twitter? Because it's video and visual. I think that's the main reason. I don't think it's any other reason. Increasingly, people are visual. And I think a lot of entrepreneurs are trying to fit this technology that's the most powerful technology in human history into a messaging platform. It's like putting a jet engine on the back of a bicycle."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We're just starting out, I guess."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "We're just starting. This is not to say these apps aren't amazing. Here's another way of saying it. Anthropic, OpenAI, out of these giant companies, there's gonna be 50 more Anthropics, maybe 100."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You think so."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "I know so. This is a cognitive revolution. If people are watching, they're gonna be so many companies that are gonna be bigger than Airbnb, bigger than Anthropic. There's not this like AI window, there's not, we're not in a cycle, we're in a window. And if we are, it's a thousand year window. You see, if technology doubles every year for 10 years, that's a 1000X. So let's say we're at the beginning of a thousand-year cycle. If we're being in a thousand years cycle, why do you think there's just gonna be two big companies? There's going to be so many huge companies emerge, but also there's going be tens of millions or millions of small companies emerge because suddenly one, two or three people can start a whole business. It was inconceivable before."
+    },
+    {
+      "speaker": null,
+      "text": "I think AI is, you know, I think there's a lot of fear about AI outside of Silicon Valley. I understand why, because I think people outside of the Silicon Valley feel like AI is happening to them. And that someone else has it and it's happening to them and it is changing their job, it's displacing them and some of that may be true and I'm not defending it but I am saying that everyone has the power now and that if you have an idea, you can now make something and it so much easier to build a company now than it was 20 years ago. I'm really proud of what I built but the next generation of people watching are gonna build things way better than I ever dreamed of because they have tools I never had."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "This is so inspiring, Brian. Can you tell me in 10 seconds the process that they all have to try in order to realize the power of AI, something that transformed the way you work?"
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "I think it's like jumping in a pool. I was, for example, and this is more than 10 seconds, but I was like intimidated to try Claude Code. And I just like didn't know how to start. I mean, I had an employee who was really good at it. And I said, like, you're gonna tutor me. Now, not everyone watching has an employee they can tutor them, but everyone either, you know more than all your friends about AI or someone knows more about it than you. If somebody knows more than you, Like, have them help you. I mean, YouTube's an incredible resource. And I just think, like, just start. Just jump in the pool. Just jump into the pool, and the water is not cold, it just looks cold. For those that are already in the pool, just don't get out."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much, Brian. Thank you very much. Thank you for being as amazing as you are."
+    },
+    {
+      "speaker": "Brian Chesky",
+      "text": "Well, thank you for being amazing."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "If you want to stay updated on all the things these founders say here, we take the use cases and prompts from every conversation and put them into my newsletter called Future Proof. And of course, we also put my own beautiful use cases there. For example, we'll put together the seven skills that came up again and again, the ones people will need in the next few years. These are the skills that my team and I are also using daily. Subscribe through the link in the description. You'll get that one and you can also read our previous newsletters and see what you missed."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "qy8Gr27yLMk",
+      "thumbnail": "https://img.youtube.com/vi/qy8Gr27yLMk/hqdefault.jpg",
+      "title": "OpenAI Co-Founder: Start Building With AI Before You Feel Ready | Greg Brockman"
+    },
+    {
+      "videoId": "bzfklNb1wjc",
+      "thumbnail": "https://img.youtube.com/vi/bzfklNb1wjc/hqdefault.jpg",
+      "title": "Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu"
+    },
+    {
+      "videoId": "U7apPfqHgvg",
+      "thumbnail": "https://img.youtube.com/vi/U7apPfqHgvg/hqdefault.jpg",
+      "title": "$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal"
+    },
+    {
+      "videoId": "KEAYPqQG2-M",
+      "thumbnail": "https://img.youtube.com/vi/KEAYPqQG2-M/hqdefault.jpg",
+      "title": "$13B Lovable Co-Founder: Turn Your AI Side Project Into a Real Business"
+    }
+  ],
+  "topics": []
+}

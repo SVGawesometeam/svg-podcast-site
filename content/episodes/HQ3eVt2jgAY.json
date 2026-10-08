@@ -1,0 +1,374 @@
+{
+  "videoId": "HQ3eVt2jgAY",
+  "title": "$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip",
+  "format": "interview",
+  "guestName": "Young Zhao",
+  "guestTitle": "Co-founder and CEO, OpusClip",
+  "aboutGuest": "Young Zhao is the co-founder and CEO of OpusClip, an AI-powered platform that transforms long-form content such as videos, articles, and papers into short-form clips optimized for social media. He built OpusClip into one of the fastest-growing AI companies in the world, reaching 50 million users and a $215 million valuation in just two and a half years. Before finding product-market fit with OpusClip, Young navigated multiple failed product attempts, including a live-streaming tool, before pivoting around a single breakout clipping feature.",
+  "publishedAt": "2025-12-29T13:00:28.000Z",
+  "duration": "39 MIN",
+  "coverArt": "https://img.youtube.com/vi/HQ3eVt2jgAY/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/HQ3eVt2jgAY/maxresdefault.jpg",
+  "summary": "Young Zhao, co-founder and CEO of OpusClip, joins Marina Mogilko to share how he built a $215M AI startup with 50 million users after multiple failed products. He walks through a practical 2026 playbook for AI founders, covering how to validate ideas before building, when to pivot, and how to find real product-market fit. The conversation also explores the future of content creation, the rise of AI agents, and what it takes for creators to stand out in an increasingly competitive landscape.",
+  "keyTakeaways": [
+    "Engineer the result before building the product — OpusClip's team manually created and emailed AI-edited clips to potential users and received over 60% positive feedback before writing a single line of product code.",
+    "Use a Discord bot as an MVP — Young's team skipped UI/UX entirely and launched inside Discord first, saving significant development time while still validating core value and measuring retention.",
+    "Qualitative signals matter as much as metrics — when users started complaining about queue times and daily usage quotas, that frustration was the clearest sign of product-market fit.",
+    "Build a real business, not a cool demo — many founders polish demos that showcase impressive capabilities but never solve a genuine pain point, which is the primary reason early-stage AI startups fail to scale.",
+    "Every AI founder needs to be 'aged' — meaning they must stay close enough to the frontier to anticipate what large model releases will make obsolete in the next few weeks or months, and build accordingly."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "What This Video Is About: The 2026 AI Startup Playbook"
+    },
+    {
+      "time": "01:40",
+      "seconds": 100,
+      "title": "The Pivot Story: From a Failing Product to Product–Market Fit"
+    },
+    {
+      "time": "02:51",
+      "seconds": 171,
+      "title": "Early Validation: Engineering Results Before Building the Full Product"
+    },
+    {
+      "time": "04:47",
+      "seconds": 287,
+      "title": "Strategy & Retention: How to Measure What Actually Matters"
+    },
+    {
+      "time": "05:29",
+      "seconds": 329,
+      "title": "Advice for Founders: Build a Real Business, Not a Cool Demo"
+    },
+    {
+      "time": "07:35",
+      "seconds": 455,
+      "title": "Passion vs. Problems: What Actually Matters When Starting a Startup"
+    },
+    {
+      "time": "09:10",
+      "seconds": 550,
+      "title": "Building Creator Tools for Companies Like HubSpot"
+    },
+    {
+      "time": "10:40",
+      "seconds": 640,
+      "title": "Agent Opus: From AI Tool to an AI Creative Director"
+    },
+    {
+      "time": "13:35",
+      "seconds": 815,
+      "title": "Inside Agent Opus: How AI Agents Will Change Content Creation"
+    },
+    {
+      "time": "15:07",
+      "seconds": 907,
+      "title": "The Future of Content Creators: Why Competition Is Getting Harder"
+    },
+    {
+      "time": "15:47",
+      "seconds": 947,
+      "title": "What to Focus on Instead of Technical Skills: Creativity & Differentiation"
+    },
+    {
+      "time": "16:12",
+      "seconds": 972,
+      "title": "Will Personal Branding Become Saturated?"
+    },
+    {
+      "time": "17:32",
+      "seconds": 1052,
+      "title": "The Creators Who Will Stand Out in 2026 — and Why"
+    },
+    {
+      "time": "18:50",
+      "seconds": 1130,
+      "title": "Starting an AI Company in 2026: What to Do in Your First 30 Days"
+    },
+    {
+      "time": "21:40",
+      "seconds": 1300,
+      "title": "How to Stand Out in a Crowded AI Market"
+    },
+    {
+      "time": "22:38",
+      "seconds": 1358,
+      "title": "Two Types of Problems AI Founders Should Avoid"
+    },
+    {
+      "time": "23:10",
+      "seconds": 1390,
+      "title": "Being “AGI-Pilled”: Predicting the Future of Foundation Models"
+    },
+    {
+      "time": "24:50",
+      "seconds": 1490,
+      "title": "Pricing AI Products: Value Creation, Costs, and Unit Economics"
+    },
+    {
+      "time": "28:20",
+      "seconds": 1700,
+      "title": "Customer Interviews: Why Quality Matters More Than Quantity"
+    },
+    {
+      "time": "29:17",
+      "seconds": 1757,
+      "title": "The #1 AI Skill: Using AI as a Thinking Partner"
+    },
+    {
+      "time": "30:48",
+      "seconds": 1848,
+      "title": "Daily Practice: How to Ask Better Questions and Get Better Answers"
+    },
+    {
+      "time": "33:00",
+      "seconds": 1980,
+      "title": "Top 3 Principles for Starting an AI Business in 2026"
+    },
+    {
+      "time": "35:50",
+      "seconds": 2150,
+      "title": "Final Advice: One Principle Every Founder Should Learn in Their 20s"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So let's imagine you have to start a company again. Walk me through the first 30 days. What will you do?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "If I have to start a company again, I think the first thing is always to figure out what is a real painful job to be done. I'm the prototype of a founder who doesn't start everything from technology but from users, from the market. I have to segment my market to a very clear, very vertical niche that I can clearly understand their existing workflow, their existing pain point, and their existing alternative solutions. I think probably I would have to spend the first couple of weeks, two or three weeks, understanding the real use case and the very specific ICP."
+    },
+    {
+      "speaker": null,
+      "text": "And the second thing is to just engineer a prototype or proof of concept. I can do that very easily with all the web coding tools right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's your favorite?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "I'm a heavy Cursor user. I've tried many other different tools but Cursor is my go-to tool. Yeah, because I came from an engineering background, so it's more familiar with the IDE. The step two is actually just a couple of days. That should be good enough to have a proof of concept. And then I go back to share that with the early users, the ICPs, to get their feedback. The feedback should not only be about whether you like the product but also what kind of problems am I solving for you and what is the value you perceive, which means how much money you are willing to pay for it."
+    },
+    {
+      "speaker": null,
+      "text": "That process probably takes up the majority of the early 30 days. But I also need to think through what kind of proprietary data I can possess along the way and whether that data set will grow as the product grows and as the user base grows. We don't have to build toward a moat or a very clear plan of differentiation, but I think we need to have that idea, at least well thought out in the first early days. Because you can't avoid it when you really launch the product. So it's better to have something in mind."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Like what makes you stand out in the market and what makes people come back."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Yeah. And if you ask this question, especially nowadays, especially as we're entering 2026, we're switching between apps like crazy. There's a new shiny app, you install it, you love it, but the next day something else comes out and it's so easy to switch unless you have history within a certain app."
+    },
+    {
+      "speaker": null,
+      "text": "The last thing I think we should consider is the distribution channel. I think the competition is totally different now compared to two years ago. Two years ago you could easily say you are the ChatGPT of ABC—it was so easy to go viral. Nowadays everyone knows AI, everyone has used AI. So figuring out a distribution channel will help you better refine your user experience, your onboarding, and also your target ICP."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So basically you start with expertise. It looks like you need to understand at least one niche to be able to build something—not like \"oh this market looks good, I'm going to try and build something for it.\" No, you need to be deep in that market and understand the problem."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Exactly. Because if you ask me this question three years ago, the answer would be much simpler. But nowadays, LLMs are advancing so fast and large companies are releasing better and better products. There are two major types of problems that a founder should avoid."
+    },
+    {
+      "speaker": null,
+      "text": "The first one is that you're just building a feature for an existing type of ICP within an existing workflow built by the incumbent. Basically, what that means is the incumbents can easily build a feature that bundles everything, and probably you won't have your own distribution channel. For example, if you want to build a note-taker, think it through. Probably find another direction because it's super easy for Zoom or Google Meet to have that feature in their existing workflow. You're targeting basically the same ICP, same market, same adjacent use cases attached to a big workflow, a big platform."
+    },
+    {
+      "speaker": null,
+      "text": "I think every AI founder should be somehow AGIP, which means that you can predict or you should be confident to make some predictions about what the financial models will release in the next few weeks or months. If they're already doing some job 80% or 90% very well, I think in their next release they can probably do that job 99% well or even 100% right. Run that test in your internal strategic discussions. If you're just becoming a wrapper with some prompts, then probably you don't have to write any prompts in the second release of Gemini or ChatGPT. You need to focus on solving a vertical business problem by integrating the workflow end to end. You need to own the workflow end to end so that AI is part of the workflow, but it's not all of it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Can you also walk me through the process of coming up with pricing for an AI tool? How do you decide on pricing? I know you have lower tiers but then you also have like a $20k check for bigger companies. How do you come up with the price?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Pricing is a real science. There are a couple of factors we considered in the first place. First, what is your value creation? How do you measure your value creation? Before using your product, what would your users do to achieve the goal, to get the job done? They probably spend their own time, which has a price for their time. They probably outsource it to some vendors or pay humans to get the job done, or they may use some other tools used by professional guys. In our case, editing a viral-ready, high-quality clip of one minute often takes about one hour, or at least 30 minutes, and the market price is about $25 to $50. So that's the value creation we're benchmarking against."
+    },
+    {
+      "speaker": null,
+      "text": "The second thing is about your unit economy. You have inference costs, and that can go down in the future, but it's still very pricey in the early days. And for videos, another elephant in the room for the cost is storage. The storage can be just 5% in the early days but it can become like 50% of your total COGS after three or five years. So you want to make sure your unit economy is healthy and sustainable."
+    },
+    {
+      "speaker": null,
+      "text": "The third thing I would say is just do as many experiments as possible. We actually sent out thousands of surveys in the first few months and we tweaked our pricing logic again and again. In the early days, you don't want to change drastically, but in the early stage we did a lot of surveys and customer interviews to understand how much they are willing to pay. Even if you have a clear value creation and a well-calculated unit economy, can users still perceive that? Is your metric clear enough for users to understand the value creation and buy into your value proposition? That's still relying on your market messaging and your metric setup."
+    },
+    {
+      "speaker": null,
+      "text": "Most products are using a metric of usage instead of seat. I think that makes sense, especially for solo creators. But the experiments really tell you what price to go. You don't have to set up a price that everyone is happy with. You probably have an assumption or hypothesis of what kind of customers you want to target, right? All you need to do is make sure those ICPs are okay and happy with the price. You probably have to say no to like 70% of the early stage users, but you should focus only on your ICP in the early days, and then maybe you can develop other pricing or even product capabilities for the rest of the users."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, the importance of saying no right all the time. When you said you do customer interviews, how many interviews do you need to do in order to land on some kind of a decision?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "I think the number of customer interviews is not the key. How you do it is more important. We did about 20 to 30 interviews on average for one single critical product decision. But we set the distribution of those 20 to 30 customers in a very thoughtful way. For example, four are marketers, five are creators, and they're in different industries. They come with different purchasing power, from different geographic locations and backgrounds. You want to make sure they are representative enough to help you make a decision. You don't need a lot, but you need to have a clear, concise set of testers."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, you want to make sure you get like a full picture of the market."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "That's really helpful for the research and validation phase. Now once you're in building mode, what about the AI skills? What is the number one AI skill everyone should be working on right now?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The number one AI skill should actually go for first principles. It doesn't matter if you're using AI to design a poster or to code your prototype. I think everyone should treat AI as your thinking partner or even thought partner. When you're having a problem understanding your users, when you're having problems managing your teams, when you're having problems figuring out your pricing or all the critical decisions in your lifetime as a founder—traditionally you would reach out to your coach or some more senior people or people with relevant experience to ask for their advice. But I think in this era of AI, you should run through it with Gemini or ChatGPT. They are actually a very senior, very important thinking partner."
+    },
+    {
+      "speaker": null,
+      "text": "Instead of asking one line of questions, throw as much context as possible and do more than 20 rounds of back-and-forth communications. You will be mindblowingly enlightened through these conversations. That's how I practice myself nowadays."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Is there a certain daily practice that you have? I talked to Mustafa Suleyman on this podcast—he's the CEO of Microsoft AI—and he shared that every single day he would talk to Copilot and just tell Copilot about what the day has been like and the decisions that he's made and how those decisions made him feel. So that when in three months he has something like a similar problem, he still talks to the same thread and Copilot reminds him: \"Oh, when you made that decision three months ago, you actually regretted it. So this time let's do this.\" Is there something similar that you have?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, exactly. Because I think the current chatbot memory is so powerful. What I do, one of my monthly rituals is that I ask ChatGPT about my major decisions in the past month, give me some comments and feedback on them."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "But that means you shared everything?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I shared everything, yeah."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "How does that work? Like every night you just sit and share the decisions you made?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. Sometimes I talk to the AI in that way and sometimes I would just forward my decision, like screenshots of our group discussion. I drop a link of my document, a PRD, a spec, that kind of thing too. Yeah, I kind of forced myself to document it."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "To document it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you said Gemini is the best for it or?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "I'm heavily using both Gemini and ChatGPT. Yeah, recently I realized they really memorized almost everything I talked to them. So now I can start a new question like \"What is the biggest mistake I made in the past six months?\" or \"What is one thing you want to suggest to me if you could three months ago?\" I think this becomes super powerful right now."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love these questions. Let everyone go to your favorite app and ask those questions. I'm going to do this right after the interview."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "It's a good end-of-year practice to see what's going on."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. Do you have any top three AI business ideas you would start if you hadn't had Opus Clip?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "It's hard to name three ideas because I'm not an investor. I don't meet as many founders as possible. But I think the general first principle for starting a business in 2026 is that the market is becoming super competitive and there are more than 20 or 50 AI tools out there already for most markets or industries. So the first principle I would say is to find a really niche business. Often times many people don't really understand what is a niche. For example, is restaurant business a niche? No. Is Chinese restaurant a niche? No. Is Cantonese Chinese restaurant business a niche? Still no. You have to drill down. There are so many different types of Cantonese food. And even for one specific vertical, are you going to target to be like the Chanel of Cantonese restaurants or the Zara or Uniqlo of Cantonese restaurants? Right? So different pricing will match to different markets and different ICPs as well. Pick a really, really, really small niche that you cannot further segment it to start with."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow, that's a good one."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Yeah, you have to ruthlessly segment your niche. The second thing is ideally pick something that's boring because the non-boring, the cool ones are definitely 10x or even 100x more competitive. You probably don't want to work in those areas. That's why I mentioned earlier that passion for building and passion for problem solving is more important, because your passion for a specific business is most likely not a viable business. Right? So you need to have passion to build something for a boring industry, but you solve a really big problem. Furthermore, ideally there are a lot of existing services."
+    },
+    {
+      "speaker": null,
+      "text": "I think we are actually changing and redefining the term SaaS. Previously it was \"software as a service,\" but nowadays it's becoming \"service as software.\" So in that specific market niche, that boring market niche, are there existing services done by agencies, by freelancers, or some internal tools or some hacky solutions, imperfect hacky solutions? That is your opportunity to tackle. Go through some boring tests, go through some niche tests, and go through some service tests. These are my first principles to find a new business in 2026."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's great. That's amazing. Okay, and for young viewers who are watching, what is one principle that you wish you understood when you were 20 that would have saved you years?"
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Damn. [laughter] It's like me talking to your internal Gemini tragedy. I really wish I could travel back to my 20s. But I think the first principle is to be as disciplined as possible. I've been following Cristiano Ronaldo and LeBron James for two decades. They are in their 40s and they're still one of the best players in their fields. The reasons are they were super disciplined in their early 20s. You can't change your behavior when you are over 30 or 40. It's just impossible. But if you're in your early 20s or even younger, make sure that you use time effectively. Make sure you can plan things accordingly. Make sure you push yourself to your boundary. Make sure you are okay with suffering. Make sure you can recover fast. Make sure you have a clear mission and you are well aligned with your mission, and you work toward automation every day."
+    },
+    {
+      "speaker": null,
+      "text": "I can list a few different behaviors, but the key principle is to be super disciplined if you want to be a successful founder later on. And also be disciplined about your own health, right? Like how many hours you should sleep, what you should eat or not eat, what kind of exercise you should do every day. I saw many people start to develop these patterns and behaviors in their 30s, but not in their early 20s."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's hard in your 30s. I love that. And also that brings you to saying no to different things, and it's also a great skill."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Yeah, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, this is something I've been hearing a lot when I'm talking to people who are building something amazing—discipline. I think Priscilla Chan just shared that she only has work and family. Parties don't exist in her life."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Not anymore."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And this is what you hear a lot from successful people here in the US. They work like crazy."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "I'm trying to learn. I think I'm disciplined, but that level of discipline? Oh my god."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, exactly. Because with a super high level of discipline, you can just master everything, right? You can segment your time into buckets of five minutes. You can easily get super focused and also switch context to focus on something else. That is the ultimate result of discipline. I saw many people find it really hard to switch context and focus for a longer time. That is because you are lacking the discipline from day one."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "This is something I'll be teaching my kids."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you so much. It was amazing."
+    },
+    {
+      "speaker": "Young Zhao",
+      "text": "Thank you. Thank you for having me."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "8W5A7fIuA-A",
+      "thumbnail": "https://img.youtube.com/vi/8W5A7fIuA-A/hqdefault.jpg",
+      "title": "I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need"
+    },
+    {
+      "videoId": "6es0HhfpQlQ",
+      "thumbnail": "https://img.youtube.com/vi/6es0HhfpQlQ/hqdefault.jpg",
+      "title": "Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It"
+    },
+    {
+      "videoId": "2j9yjRSpMSo",
+      "thumbnail": "https://img.youtube.com/vi/2j9yjRSpMSo/hqdefault.jpg",
+      "title": "AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher"
+    },
+    {
+      "videoId": "qkGuzV50JWI",
+      "thumbnail": "https://img.youtube.com/vi/qkGuzV50JWI/hqdefault.jpg",
+      "title": "Must Have AI Skills to Save your Career in 2026"
+    }
+  ],
+  "topics": []
+}

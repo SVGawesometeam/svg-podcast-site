@@ -1,0 +1,358 @@
+{
+  "videoId": "9XM8yDN-AEA",
+  "title": "Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf",
+  "format": "interview",
+  "guestName": "Thomas Wolf",
+  "guestTitle": "Co-Founder & Chief Science Officer, Hugging Face",
+  "aboutGuest": "Thomas Wolf is the co-founder and Chief Science Officer of Hugging Face, the leading open-source platform for machine learning models, datasets, and AI applications. He has been a central figure in democratizing AI development, making powerful models accessible to developers and non-coders alike. Wolf is also a prominent voice on the societal implications of AI, including the future of work, open-source ethics, and the role of robotics in everyday life.",
+  "publishedAt": "2025-07-18T16:38:44.000Z",
+  "duration": "25 MIN",
+  "coverArt": "https://img.youtube.com/vi/9XM8yDN-AEA/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/9XM8yDN-AEA/maxresdefault.jpg",
+  "summary": "Thomas Wolf, co-founder of Hugging Face, joins Marina Mogilko to discuss the future of open-source AI, the rise of no-code and vibe coding tools, and what job disruption will look like in the next 5 years. They explore who owns AI-generated content, the role of open-source licensing, and how close we are to having robots in our homes. Wolf also shares his perspective on whether AI will lead to mass unemployment and how students and professionals can stay ahead.",
+  "keyTakeaways": [
+    "Hugging Face's 'Spaces' feature functions like an app store for AI — users can search, find, and run community-built AI tools (image generation, background removal, text-to-speech) directly in the browser with no coding required.",
+    "Open-source AI models like DeepSeek can be run locally on your own PC, meaning your prompts never pass through external servers — a key privacy advantage over closed-source alternatives.",
+    "Ownership of AI-generated content is largely governed by the license of the underlying model — most popular licenses (MIT, Apache) require crediting the original creator but allow commercial use, similar to open-source software conventions.",
+    "Wolf warns that significant job disruption is 'definitely going to happen' within the next 5 years, and advises people studying for long-term careers to factor AI's impact into their planning now.",
+    "Many foundational open-source tools (like NumPy or Linux) have generated enormous business value for others while their creators earned very little — Wolf sees this as a deliberate mission-driven trade-off, with 'open core' as one viable alternative business model."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Who is Thomas Wolf"
+    },
+    {
+      "time": "00:45",
+      "seconds": 45,
+      "title": "App store for AI. What is Hugging Face"
+    },
+    {
+      "time": "03:20",
+      "seconds": 200,
+      "title": "Who owns what you generate with open-source AI?"
+    },
+    {
+      "time": "06:00",
+      "seconds": 360,
+      "title": "How to use AI agents"
+    },
+    {
+      "time": "07:55",
+      "seconds": 475,
+      "title": "Future of coding"
+    },
+    {
+      "time": "09:49",
+      "seconds": 589,
+      "title": "Kids learning to code through AI"
+    },
+    {
+      "time": "12:48",
+      "seconds": 768,
+      "title": "Robots in everyday life"
+    },
+    {
+      "time": "15:00",
+      "seconds": 900,
+      "title": "When will we have household robots?"
+    },
+    {
+      "time": "16:45",
+      "seconds": 1005,
+      "title": "Privacy & safety in home robotics"
+    },
+    {
+      "time": "18:47",
+      "seconds": 1127,
+      "title": "What AI will look like in 5 years"
+    },
+    {
+      "time": "21:18",
+      "seconds": 1278,
+      "title": "Will AI lead to mass unemployment?"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Something that's definitely going to happen in the coming 5 years is big job disruption."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "This is Thomas Wolf, co-founder and the chief science officer of Hugging Face, the open-source platform shaping the future of AI. We met at Vivitech to talk about the future of work and how to stay ahead. What skills will actually matter in the age of AI? How do you stay relevant when entire industries are being disrupted? And how close are we to having robots inside our homes?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So what's your advice to people who are studying for five years to do something that might be disrupted?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, I would say two pieces of advice. One is definitely—to be clear, our platform is still mostly done for technical people. Most parts of the website are made for software developers who want to develop something with AI. So we have three main parts on the website: we have models, datasets. You want to use them if you're developing a new app with an AI component and you don't want to use a closed source solution like OpenAI or Anthropic, but you want to be able to control the full stack and use an open source solution with your own code."
+    },
+    {
+      "speaker": null,
+      "text": "So in this case you'll go on our platform, you'll find and select the right model for your task, for the application or website you're building, and you'll download it. But there's one big part of the website that we created recently and that's actually growing exponentially, which is much more accessible and it's called AI apps. It's kind of an app store of AI. We call them spaces—these are very small websites. You can go on Hugging Face Spaces, you have a search bar and basically just type something you would like to do with AI. You can type \"I don't know, I want to remove the background of an image\" or \"I want to get speech from text\" like something from ElevenLabs, or \"I want to generate a 3D character out of an image.\" And here you will have spaces that are created by the community. You can select one and here you have a very low-code, easy button interface that lets you do these kinds of magical things basically. You can use them on our platform or you can migrate to your own app that you're working on."
+    },
+    {
+      "speaker": null,
+      "text": "So the nice thing is you can use them directly from the platform—we provide the compute. It's like a website, right? If you want to generate an image from a prompt like Midjourney, you type this and you'll have like a dozen of them. Some are more popular than others. You can select the most popular one, you go there, you type your prompt, you get the image. Now let's say you want to do that offline, for instance. You can also clone the space, download it, and then run it on your PC if it's powerful enough. It depends a bit on the AI model—some of them are quite big, so you might need a quite large model."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do I need a VIP coding app to make it an actual app?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "There is actually even one of the most popular spaces right now, which is a vibe coding space. It's free. It's called DeepSeek. It uses the Chinese model DeepSeek, which is a free model, but it doesn't run through the Chinese server—it runs locally. So no worries about your prompts getting sent through the People's Republic of China. This is web coding, one that you can also download and use to create websites."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you think about ownership when you use somebody else's like open source code? For example, as a creator, I decide to create an app where I generate an image or character that I'm going to use later and I use that app to create it. Who ends up owning it? If I decide to migrate it later for my app, sell rights to Disney, etc., how do you think about it?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "The way I think about it is mostly informed by what we have in code. In code we have the open-source movement and the idea of open source is that when you write some code instead of just keeping it secret, you can also decide to share it with everyone. You can put a license on it, and it's actually better to put a license—usually the most popular licenses right now are the MIT or Apache license. What they will say is something a little bit like Wikipedia: you can use it, you can edit the content, but you're supposed to credit the original creator of the code. Basically, just don't take credit for yourself for something that someone else has built. You can also have more complex licenses where you will ask people to pay if they have a commercial application or something like that."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's just interesting for me because I've seen, for example, in media sometimes you sell your image, like a photo to an agency for like $15, and they put it on all the billboards cross country and make millions on it and you're like \"damn, I sold it for $15.\""
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "You have to accept that. Yeah, in software we have the same problem. Sometimes people have created amazing software that powers everything around us—including Linux or in scientific computing, something very famous called NumPy which everyone uses somewhere. And these people have definitely not earned even a very tiny fraction of the business value that was generated out of it."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think they're happy?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "I think a lot of people do that for the mission. They think that it's better to maybe earn less but have something that's freely accessible that everyone can use without having to pay. I think it's a bit of a choice because you can also decide to create a nice business and company around an open source model. That's called open core. One idea is that you open source the core base and then the features that are more especially interesting for business—maybe around security, maybe some features around how you integrate with additional business tools—you keep private and make people pay for that. The reasoning is if you need this feature, you're actually making money, so you can share the core."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That makes sense. Let's talk about AI agents. If you're trying to figure out how to actually use AI agents in your business, not just talk about them, there is a new guide from HubSpot that cuts through all the AI noise. And honestly, it's one of the most useful things I've seen on this topic. The playbook for success in 2025 about AI agents is built by people leading HubSpot's marketing, the CMO and SVP. So if you're running a team or just trying to keep up, this is the playbook."
+    },
+    {
+      "speaker": null,
+      "text": "So what's inside the guide? First of all, they talk about marketing. You'll see how AI agents can help with content creation, social posts, campaign analytics—all the stuff that usually takes hours. This way your team can finally focus on ideas, not grunt work. Then sales: AI agents can do the prep, research, meeting notes, follow-ups, so your sales team can just focus on closing. And third, in ops, AI agents are of course super practical. Agents can organize your tasks, automate boring admin, and give you real-time insights without hiring extra people. And the best part is that there is a clear, simple plan inside on how to pick the right tools, set them up, and actually get results fast."
+    },
+    {
+      "speaker": null,
+      "text": "Thanks again to HubSpot for sponsoring this video. Let's talk about what Hugging Face would look like in two or three years. So what I see happening with the developer industry—I started coding apps. I have no technical background. Do you feel like people who code become less technical or do you think people will get more and more education in coding because they want to touch upon that and integrate their apps and businesses?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "That's a good question. I think we'll see both, I would say. So what I definitely already see is a lot of my non-technical friends—for instance entrepreneurs with a business background—they definitely now play a lot with all the vibe coding tools and they definitely now create apps. I have a good friend living next door to me. He's an entrepreneur but zero technical background. Now he does things like Lovable demos to basically get the first prototype of what he wants to build. So I definitely see people that are non-technical who become users of this and actually create very technical products."
+    },
+    {
+      "speaker": null,
+      "text": "What I also see is my son, who likes to learn and he's learning coding but very differently than me. The way he learns coding right now is he will use AI tools to generate stuff and at some point when it doesn't work, that's where he starts diving into the code. It's like \"Oh, okay, now you start to understand.\" The way I learned code was much more—I would learn the basics and learn the second level and so on, very organized. I think in a way they're learning it very differently. But I don't think it's going to be less technical in the end, just a different way of learning where you directly get some results. But because these tools have some limitations, you still need to learn coding."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So we'll need more developers. Is that what you're saying?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "I think we also have a developer pool that will grow."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Interesting. Let's talk about your kids since you mentioned your son. He recently presented an app that he coded. What are you teaching your kids and how were you raising them so that at 12 years old they're already doing something really cool?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, it's a big question, huh? Yeah, I think I don't pretend to have any answer that I would say I'm really certain of. What I know, I think, is there is some value that I would still think will be timeless. One of them is creativity and basically not being afraid of creating new things. Because I think in the future there will always be LLMs. What we see when we use them is that they're still not very good at creating really novel things. They're very good at doing what you can expect them to do. They're trained to predict the most probable, the most likely next token, right? So when you ask them something, they will create the most likely thing. Often when you want to really create something new—and you know that very well, I guess, when you create like a video and you want something—you have to be creative. You have to invent something that's a bit out of the ordinary. If you just do the same thing as everyone, nobody notices."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "And so these skills, this kind of not being self-censored and being creative—we've been trying to teach creativity for quite some time. I think in the US it's very great. There are some countries in Europe where it's actually very great. One example is Stockholm and the Swedish ecosystem. They have a lot of focus on creativity at school and I think it helps, maybe also bringing out great entrepreneurs like Daniel from Spotify, Sebastian from Klarna. The French system is not the best for creativity. You're supposed to learn what's on the list and not go too much out of the ordinary. So I think probably you don't want to take too much inspiration from just the French. You want to—"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you teach your kids to code? Did you tell them like, \"Hey, this is where you have to be. This is the future. Like, sit down and code.\""
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, I tried, but it's always the thing with kids. If you're too obviously trying to push something, they're going to say \"That's your thing, that's not my thing.\" So I tried just very smoothly. One example, next last Monday, I just brought my son to a conference with me and just seeing entrepreneurs. He was like \"Oh, that's very interesting.\" So I try to open their horizon, show them a lot of things and not say \"You have to do that\" but just \"This is possible, right?\" It's the same with AI tools. You can just show them the tools and then they use them if they find it interesting or fun and then they will do it themselves hopefully and discover these tools themselves."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I know. I know. I'm like, so my daughters are four and five and I'm like, what do I teach them? Like, what is the world going to look like? What do you think the world's going to look like in five to ten years?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "It's going to be very different, huh? Pretty sure. I mean, there will be common things. I'm pretty sure there will still be people talking, podcast things, because we really like human interaction. I think this won't disappear. But we will have all this AI automation. A lot of the work I do, just this past few months, has been around robotics. And we just acquired a robotics company."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is it going to be commercial or...?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, it's going to be very accessible robots that can be used mostly by developers, but I want to make it also something that you could even use with your kids to teach robotics if you want. One thing I do like about robots, for instance, is they give kind of physical presence to AI. With AI, we just call it like \"Hey Alexa\" but you don't have any idea where it is. And I like the idea of having like a physical presence of AI, like it's here. You see some movement, it's looking at this. I kind of like this."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Is it also going to be that you have a robot but then you go to Hugging Face and you can upload all the open source stuff?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Exactly. And the cool thing is you can teach things to your robots and you upload them on Hugging Face and you can share them with everyone in an open source way. One thing with the robots is they can do like 20 things when you buy them, and then when you actually explore them all, you just put the robot aside and it's done. But here, if it's connected to an open source repository that's growing with people inventing new things, the robot that helps you cook or the robots that I don't know play with kids or the robots that can clean something—they share them with everyone. You could have something that actually grows with time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So I'm very excited about that. It looks like it's kind of the future Apple store, right? When you have this device, but it's actually a robot and you have all these apps that you can also tailor for yourself like \"Hey, set up cameras for me\" or whatever. Where's the sound?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "So I'm pretty bullish that in a couple of years we'll have quite a lot of robots going around, probably at conferences like this. You start to have a lot of them already. I saw a Boston Dynamics robot at a restaurant. I'm not sure exactly which restaurant. When I was having a baby, we had a robot in our hospital in San Francisco. It had to move things around. Yeah, yeah, yeah, for vetting, whatever."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "When is the year when every family—I'm speaking for moms here who hate laundry—when are we going to have a robot in our household to help us with daily things? How far are we from that?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "I think the technology itself is very close. I would say on the tech side, maybe prototyping demos, I would guess next year could have some stuff. And then the main question is the price of this thing and regulation."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Price and regulation?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Price and regulation for sure. Yeah, there's two aspects. The security aspect will be very important for robots. I mean, there are questions about safety in AI but saying bad words to a chatbot is not the same as a robot, you know, making a punching motion at something. So there will be questions like that. But the second one is if this robot costs like $80,000 or something like that—"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think? What do you think it's going to cost next year?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "The early ones will still be like the price of a car right now. I think you need two hands that can grab things. So usually it's around 15 to 20k. I would love to see them much cheaper."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think there's going to be subscription as well?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "That's also possible. Yeah, probably. Probably it's going to be like that for the expensive ones. But also I don't think every robot has to be a humanoid. At Hugging Face we only do open source robotics. And the fun part about this is we can make a platform that a lot of people can use to develop different types of robots. So it can be just one arm, can be just a funny head that moves and talks, can be just something that works but has no arms. We made a robot duck that's just a duck that walks around. It's very cute. So we can explore a lot of form factors and see which one will actually be the best in terms of price, possibility, and capabilities."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "How do you make sure that if someone creates an open-source app for a robot that it doesn't have this spy element that monitors inside the house?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, that's a big question. I mean, for both models and robots already today—models, I think one of the big advantages of open source is you can download and run them locally. So you download them and then even ignore the internet server. You can stop the Wi-Fi and the thing is just cannot send anything. It can run locally. That's something you can only do with open source right now. So if you use ChatGPT, you always have to send a thing. And for robots, I think it will be very important: if the Wi-Fi stops, what does your robot do? Okay, I don't know, it's like loading the dishwasher—just let the fall, I'm done. You want this thing to work even when there is like a problem. And also you don't want them to communicate too much. I think you want privacy, very strong privacy with something that's in your house."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So just to sum it up: you think next year we're going to have robots who are capable of doing things in a house and then in five years I would have a robot."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, I think next year we'll see two things. On the web, on the LLM side, we'll see agents that can do a lot of tasks. We start to see that today. So a lot of complex tasks we do on computers will be automated. We see a beginning of the same thing in the physical world with robots starting to be able to do some tasks really, and this will just keep growing with time. And maybe the third trend that's a bit more complex, I think, will be we start to have really photorealistic content at scale. So video that are indistinguishable from reality with sound that's also indistinguishable. And this will also be a big question. I think in my opinion the optimistic way is we'll pay more attention to being face to face with someone because we'll know it's a real moment. And we know that every video call, I think, can actually be a fake thing as well. So maybe giving more weight to the fact of being together in the same room, which is being more human in a way."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. So our present is iPhones. I have mine here. And a MacBook. In five years, AI. Do you see AI being in some piece of tech? And if yes, what is it? Is it a robot? Is it a wearable? Is it glasses?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, it's a good question. My view of AI is we have a big trend that started last year, which is we can do much smaller AI models that are actually very high performance. And so this means you can start to embed them pretty much everywhere. There's a lot of people working on AI chips that will be much more optimized and consume less energy. And this, according to me, points to a future where you have AI a bit diffused everywhere, just like electronics. You know, we have electronics in our camera, in our smartphone. And so we'll get used to having basically all our electronics systems that just understand much better what we want to do."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Let's wrap up with this question. Imagine we're here in five years and you can talk about the wildest thing that's going on in the world in five years."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, one of my most exciting directions right now in AI is using all the techniques we've learned to train good AI models. So can we train intelligence models by applying that to other fields of research? Applying that to discovering new materials for batteries, applying that to weather prediction, applying that to fusion energy, you know. So my hope is in five years we'll have some of these things that are maybe not just a chatbot. A chatbot is nice but it's not like changing the world in a way. It's not inventing things that make us actually solve big challenges. Right? And so all of these things that I group them generally under the idea of \"AI plus science\"—so you take very smart AI models or the knowledge we have around these models and try to apply that to a scientific field where you can do a fundamental breakthrough. I think this is something that excites me a lot."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You think cancer will be cured?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, these kinds of things, right? Cancer, I'm not sure because it seems like the more they look deeper, the more complex it is. But definitely some diseases and also definitely material science. There are some super exciting developments. Material science is kind of this unsexy scientific field that actually can change a lot of things because it unlocks smart batteries, carbon dioxide capture, all these types of things that can be fundamental in just solving huge problems like climate change."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "In five years, what do you think about unemployment? A lot of people are worried about that when it comes to AI."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "I think there are two main trends. One that they used to discuss for a long time in this—yeah, we unlock so much creativity. Start from kids: when I do vibe coding with my kids they have a lot of ideas for websites, a website to connect—we did like a website to share your cats with other people, a lot of things. Or like a website to connect amateur football players with scouts. So they have all of these ideas and I'm like \"This is great\" and all of this could even be like potential companies or something like that. So you have this website where, because it makes a lot of things very accessible, a lot of people can become entrepreneurs basically."
+    },
+    {
+      "speaker": null,
+      "text": "But it's also true that not everyone wants to be an entrepreneur. Some people don't. And then I'm wondering—because I was a former lawyer before starting Hugging Face, I was for 6 years in intellectual property and it's true that these fields are going to be very strongly disrupted by AI. There's a lot of support functions that are currently handled by many people that can definitely fall in the scope that AI can do. And it's also fields where you study—you do quite long studies. So you've studied five, six, eight years for your job. So it's not like you're going to jump directly to a new field, right? So this type of profession is the big question for me: how can you handle that? It's also a topic that I think very few governments or think tanks are really currently tackling. A lot of people I feel like are more like \"Let's not look too much at this. Let's talk about I don't know the danger of AGI ruling the world\" instead of just something that's definitely going to happen in the coming five years, which is big job disruption in some fields."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, I would say two pieces of advice. One is definitely use these tools and try to see what they are capable of because you want to become the master of this tool, right? You want to be able to use them in your profession. So you have to stay in touch with this revolution. You cannot just ignore it. And the second one would be yeah, start to see—if you don't want to be very creative, and you know, like what is it? Once you start using this tool, what do you feel is the remaining exciting part of your job? And is it something you're actually really happy to do? And if not, I think it's time to see if you don't want to create something new, if you don't want to start something new."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah. And that was the first—you said you had two opinions on that. So the first one?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "Yeah, I mean the first one is everyone becomes an entrepreneur basically. But I think the second one is kind of dependent, which is I'm not sure everyone wants to become an entrepreneur. So here I don't have a great answer. I think this is something that should probably be tackled as a society. It should already be being discussed in government."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's obviously tied to, I don't know, universal basic income but also—yeah, do you want to do that? Or like maybe we're moving to a society? Some friends also think we're moving to a society where entertainment is going to be the main thing we create and consume as humans. So this is a possible future society. And there's also a big question there, which is: are we not going to lose a little bit of something of being human if we automate so much of our life?"
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "I don't really have a big answer. You had that with GPS, right? So now we can't really read maps often. We don't really know where we are in the city because it's so easy to be guided by the machine."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Absolutely. So we definitely lost a little bit of something."
+    },
+    {
+      "speaker": "Thomas Wolf",
+      "text": "This is all very interesting. Thank you so much. It's an amazing conversation. I don't know. I try to stay excited about the future, especially now you mentioned content creators being the driving force. Thank you so much for being here. It was really inspiring."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thanks."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "U7PcyE0p54s",
+      "thumbnail": "https://img.youtube.com/vi/U7PcyE0p54s/hqdefault.jpg",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity"
+    },
+    {
+      "videoId": "SP76PvgMzVU",
+      "thumbnail": "https://img.youtube.com/vi/SP76PvgMzVU/hqdefault.jpg",
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
+    },
+    {
+      "videoId": "ZW87Peh3tWM",
+      "thumbnail": "https://img.youtube.com/vi/ZW87Peh3tWM/hqdefault.jpg",
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward"
+    },
+    {
+      "videoId": "Q66gsBJnKKQ",
+      "thumbnail": "https://img.youtube.com/vi/Q66gsBJnKKQ/hqdefault.jpg",
+      "title": "Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger"
+    }
+  ],
+  "topics": []
+}

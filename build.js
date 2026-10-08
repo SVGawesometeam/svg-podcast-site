@@ -3,6 +3,14 @@ const path = require("path");
 const crypto = require("crypto");
 const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
 const { TOPICS, FIELDS } = require("./lib/contact-fields");
+const { esc } = require("./lib/html");
+const {
+  fromApi,
+  validate,
+  deriveMetaDescription,
+  renderSummaryBlock,
+  unknownSpeakers,
+} = require("./lib/episode-data");
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
@@ -10,111 +18,29 @@ const SITE_URL = "https://marinamogilko.co";
 const PUBLIC_DIR = path.join(__dirname, "public");
 const IDS_FILE = path.join(__dirname, "podcast-video-ids.txt");
 const FIXES_DIR = path.join(__dirname, "transcript-fixes");
+const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 
-// The API re-runs speaker diarization per request, so names drift between
-// fetches and phantom speakers turn up. Anything verified against the video
-// lives in transcript-fixes/<videoId>.json and is re-applied on every build.
+// content/episodes/<id>.json is the reviewed source of truth for a page.
+// The build renders every page from it on every run, so a template change
+// reaches all pages and a page is never edited by hand. Hand corrections go
+// into the JSON (and their reasons into transcript-fixes/<id>.json).
+function dataFile(videoId) {
+  return path.join(CONTENT_DIR, `${videoId}.json`);
+}
+
+function readEpisodeData(videoId) {
+  return JSON.parse(fs.readFileSync(dataFile(videoId), "utf8"));
+}
+
+function writeEpisodeData(d) {
+  fs.mkdirSync(CONTENT_DIR, { recursive: true });
+  fs.writeFileSync(dataFile(d.videoId), JSON.stringify(d, null, 2) + "\n");
+}
+
 function loadFix(videoId) {
   const f = path.join(FIXES_DIR, `${videoId}.json`);
   if (!fs.existsSync(f)) return null;
   return JSON.parse(fs.readFileSync(f, "utf8"));
-}
-
-// Split the transcript markdown into speaker-labelled turns.
-function parseTurns(md) {
-  return md
-    .split(/\n\n+/)
-    .map((block) => {
-      const m = block.match(/^\*\*(.+?):\*\*\s*([\s\S]*)$/);
-      return m
-        ? { speaker: m[1].trim(), text: m[2].trim() }
-        : { speaker: null, text: block.trim() };
-    })
-    .filter((t) => t.text || t.speaker);
-}
-
-function serializeTurns(turns) {
-  return turns
-    .map((t) => (t.speaker ? `**${t.speaker}:** ${t.text}` : t.text))
-    .join("\n\n");
-}
-
-// Apply a transcript-fixes/<id>.json override to the raw transcript markdown.
-function applyTranscriptFix(transcript, fix) {
-  if (!fix) return transcript;
-  let turns = parseTurns(transcript);
-
-  // 1. splits — one block that actually holds two speakers' lines.
-  //    Applied first: assignment indices are numbered against the pre-split state.
-  const splits = [...(fix.splits || [])].sort((a, b) => b.index - a.index);
-  for (const sp of splits) {
-    const turn = turns[sp.index];
-    if (!turn) throw new Error(`split index ${sp.index} out of range`);
-    const pieces = [];
-    let rest = turn.text;
-    sp.parts.forEach((part, i) => {
-      if (i === 0) return;
-      const at = rest.indexOf(part.startsWith);
-      if (at === -1) {
-        throw new Error(
-          `split anchor not found at index ${sp.index}: "${part.startsWith.slice(0, 40)}..."`
-        );
-      }
-      pieces.push(rest.slice(0, at).trim());
-      rest = rest.slice(at);
-    });
-    pieces.push(rest.trim());
-    const rebuilt = pieces.map((text, i) => ({
-      speaker: fix.speakers?.[sp.parts[i].speaker] || sp.parts[i].speaker,
-      text,
-    }));
-    turns.splice(sp.index, 1, ...rebuilt);
-  }
-
-  // 2. assignments — indices verified against the video win over whatever
-  //    the backend guessed. Numbered against the post-split state.
-  for (const [idx, role] of Object.entries(fix.assignments || {})) {
-    const turn = turns[Number(idx)];
-    if (!turn) throw new Error(`assignment index ${idx} out of range`);
-    turn.speaker = fix.speakers?.[role] || role;
-  }
-
-  // 3. speakerRenames — straight label substitution (typos, phantom speakers).
-  for (const t of turns) {
-    if (t.speaker && fix.speakerRenames?.[t.speaker]) {
-      t.speaker = fix.speakerRenames[t.speaker];
-    }
-  }
-
-  return serializeTurns(turns);
-}
-
-// Every speaker label on a page must be a real person in that recording.
-// Unknown labels fail the build instead of reaching production.
-function assertKnownSpeakers(videoId, transcript, d, fix) {
-  const allowed = new Set();
-  const add = (n) => n && String(n).split(/\s*,\s*|\s+and\s+/).forEach((p) => p.trim() && allowed.add(p.trim()));
-  add("Marina");
-  add("Marina Mogilko");
-  add(d.guestName);
-  Object.values(fix?.speakers || {}).forEach(add);
-  Object.values(fix?.speakerRenames || {}).forEach(add);
-  (fix?.knownSpeakers || []).forEach(add);
-
-  const seen = new Set(parseTurns(transcript).map((t) => t.speaker).filter(Boolean));
-  const unknown = [...seen].filter((s) => {
-    const parts = s.split(/\s*,\s*|\s+and\s+/).map((p) => p.trim()).filter(Boolean);
-    return !parts.every((p) => allowed.has(p));
-  });
-
-  if (unknown.length) {
-    throw new Error(
-      `unknown speaker label(s) in ${videoId}: ${unknown.map((u) => `"${u}"`).join(", ")}\n` +
-        `   known: ${[...allowed].join(", ") || "(none)"}\n` +
-        `   Add the real name to transcript-fixes/${videoId}.json ` +
-        `(speakerRenames or knownSpeakers) after checking the video.`
-    );
-  }
 }
 
 async function fetchEpisode(videoId) {
@@ -123,25 +49,20 @@ async function fetchEpisode(videoId) {
   return res.json();
 }
 
-// Pull the minimal fields needed for the home page + sitemap out of an
-// already-rendered episode page so we don't have to re-hit the API.
-function readExistingEpisodeMeta(videoId, html) {
-  const titleMatch = html.match(/<title>(.*?) — Silicon Valley Girl Podcast<\/title>/);
-  const imgMatch = html.match(/og:image" content="([^"]+)"/);
-  const dateMatch = html.match(/datePublished":"([^"]+)"/);
-  const guestMatch = html.match(/<div class="guest-name">([^<]+)<\/div>/);
-  const guestTitleMatch = html.match(/<div class="guest-title">([^<]*)<\/div>/);
-  const durationMatch = html.match(/<span>(\d+ MIN)<\/span>/);
-  const descMatch = html.match(/<meta name="description" content="([^"]*)"/);
+// What the homepage, the directory, the sitemap and llms.txt need to know
+// about an episode.
+function summaryFor(d) {
   return {
-    videoId,
-    description: descMatch ? unesc(descMatch[1]) : "",
-    title: titleMatch ? unesc(titleMatch[1]) : videoId,
-    thumbnail: imgMatch ? imgMatch[1] : `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
-    publishedAt: dateMatch ? dateMatch[1] : new Date().toISOString(),
-    guestName: guestMatch ? unesc(guestMatch[1]) : "",
-    guestTitle: guestTitleMatch ? unesc(guestTitleMatch[1]) : "",
-    duration: durationMatch ? durationMatch[1] : "",
+    videoId: d.videoId,
+    title: d.title,
+    format: d.format,
+    thumbnail: d.coverArt,
+    publishedAt: d.publishedAt,
+    guestName: d.guestName,
+    guestTitle: d.guestTitle,
+    duration: d.duration,
+    description: d.metaDescription || deriveMetaDescription(d),
+    topics: d.topics || [],
   };
 }
 
@@ -151,37 +72,59 @@ async function build() {
   const idSet = new Set(videoIds);
 
   console.log(`Found ${videoIds.length} video IDs`);
-
   fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+  fs.mkdirSync(CONTENT_DIR, { recursive: true });
 
   const allEpisodes = [];
-  let built = 0, skipped = 0, failed = 0;
+  let imported = 0, rendered = 0, failed = 0;
 
   for (let i = 0; i < videoIds.length; i++) {
     const videoId = videoIds[i];
-    const epDir = path.join(PUBLIC_DIR, "episode", videoId);
-    const epFile = path.join(epDir, "index.html");
+    let d;
 
-    if (fs.existsSync(epFile)) {
-      allEpisodes.push(readExistingEpisodeMeta(videoId, fs.readFileSync(epFile, "utf8")));
-      skipped++;
-      continue;
+    if (fs.existsSync(dataFile(videoId))) {
+      d = readEpisodeData(videoId);
+    } else {
+      // No reviewed data yet: import a draft from the backend and write it.
+      // The draft is what the producer reviews before it is committed.
+      console.log(`[${i + 1}/${videoIds.length}] Importing ${videoId} from the backend...`);
+      try {
+        const ep = await fetchEpisode(videoId);
+        ep.videoId = ep.videoId || videoId;
+        // Only link related episodes that are actually on the site.
+        ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
+        d = fromApi(ep, loadFix(videoId));
+        writeEpisodeData(d);
+        imported++;
+        console.log(`   DRAFT -> content/episodes/${videoId}.json (review before committing)`);
+      } catch (e) {
+        console.error(`   FAILED ${videoId}: ${e.message}`);
+        failed++;
+        continue;
+      }
     }
 
-    console.log(`[${i + 1}/${videoIds.length}] Fetching ${videoId}...`);
-    try {
-      const ep = await fetchEpisode(videoId);
-      // Only link related episodes that are actually on the site — the backend
-      // sometimes returns neighbours that haven't been added yet (broken links).
-      ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
-      fs.mkdirSync(epDir, { recursive: true });
-      fs.writeFileSync(epFile, renderEpisodePage(ep));
-      allEpisodes.push(ep);
-      built++;
-      console.log(`   DONE -> public/episode/${videoId}/index.html`);
-    } catch (e) {
-      console.error(`   FAILED ${videoId}: ${e.message}`);
-      failed++;
+    const problems = validate(d);
+    if (problems.length) {
+      throw new Error(`content/episodes/${videoId}.json: ${problems.join("; ")}`);
+    }
+    const unknown = unknownSpeakers(d, loadFix(videoId));
+    if (unknown.length) {
+      console.warn(`   WARN ${videoId}: speaker label(s) not in the known list: ${unknown.map(u => `"${u}"`).join(", ")}`);
+    }
+
+    const epDir = path.join(PUBLIC_DIR, "episode", videoId);
+    fs.mkdirSync(epDir, { recursive: true });
+    fs.writeFileSync(path.join(epDir, "index.html"), renderEpisodePage(d));
+    rendered++;
+    allEpisodes.push(summaryFor(d));
+  }
+
+  // Data files for episodes not in the registry are not rendered; say so.
+  for (const f of fs.readdirSync(CONTENT_DIR)) {
+    const id = f.replace(/\.json$/, "");
+    if (f.endsWith(".json") && !idSet.has(id)) {
+      console.warn(`   WARN content/episodes/${f} is not listed in podcast-video-ids.txt and was not rendered`);
     }
   }
 
@@ -200,7 +143,7 @@ async function build() {
 
   writeLlmsTxt(allEpisodes);
 
-  console.log(`\nBuilt: ${built}  Skipped: ${skipped}  Failed: ${failed}  Total: ${allEpisodes.length}`);
+  console.log(`\nImported: ${imported}  Rendered: ${rendered}  Failed: ${failed}  Total: ${allEpisodes.length}`);
 }
 
 // lastmod has to mean "the page changed", not "the episode came out", or every
@@ -216,19 +159,23 @@ function lastmodFor(episodes) {
   const out = {};
 
   for (const ep of episodes) {
-    const epFile = path.join(PUBLIC_DIR, "episode", ep.videoId, "index.html");
-    const hash = fs.existsSync(epFile)
-      ? crypto.createHash("sha1").update(fs.readFileSync(epFile)).digest("hex")
+    // The hash is over the reviewed data, not the rendered HTML, so a
+    // template-only change does not announce every page as updated.
+    const hash = fs.existsSync(dataFile(ep.videoId))
+      ? crypto.createHash("sha1").update(fs.readFileSync(dataFile(ep.videoId))).digest("hex")
       : "";
     const prev = cache[ep.videoId];
-    // A page we have never seen is dated by publication, not by today, so the
-    // first run after this lands doesn't announce all 110 pages as changed.
-    const date = !prev
-      ? new Date(ep.publishedAt).toISOString().split("T")[0]
-      : prev.hash && prev.hash !== hash
-        ? today
-        : prev.date;
-    out[ep.videoId] = { hash, date };
+    let date;
+    if (!prev) {
+      // A page we have never seen is dated by publication, not by today.
+      date = new Date(ep.publishedAt).toISOString().split("T")[0];
+    } else if (prev.basis !== "data") {
+      // First run on the data basis: keep the published date, adopt the hash.
+      date = prev.date;
+    } else {
+      date = prev.hash !== hash ? today : prev.date;
+    }
+    out[ep.videoId] = { hash, date, basis: "data" };
   }
 
   fs.writeFileSync(cacheFile, JSON.stringify(out, null, 2) + "\n");
@@ -1124,80 +1071,48 @@ function newsletterCta() {
 function renderEpisodePage(d) {
   const published = formatDate(d.publishedAt);
   const isoDate = new Date(d.publishedAt).toISOString();
+  const isSolo = d.format === "solo";
 
   const takeawaysHtml = d.keyTakeaways
     .map((t) => `<li>${esc(t)}</li>`)
     .join("\n              ");
 
-  // Chapter titles arrive from the YouTube description with a separator dash
-  // glued to the front ("00:00 – Intro"), in whichever glyph that description
-  // happened to use — or with no dash at all. Every page renders the same one,
-  // in its own span between the time and the title, so the flex gap centres it.
-  // Whatever the description supplied is dropped, but only when every chapter
-  // has one: on a list where a single title starts with a dash, that dash is
-  // part of the title ("-40% of jobs"), not a separator.
+  // Every page renders the same chapter separator, in its own span between
+  // the time and the title, so the flex gap centres it.
   const TS_DASH = "–";
-  const tsLeading = d.timestamps.map((t) => (String(t.title).match(/^\s*([–—-])/) || [])[1]);
-  const tsGlyphs = new Set(tsLeading.filter(Boolean));
-  const tsStrip =
-    tsLeading.every(Boolean) && tsGlyphs.size === 1
-      ? new RegExp(`^\\s*[${[...tsGlyphs].join("")}]\\s*`)
-      : null;
-  const tsTitle = (title) => (tsStrip ? String(title).replace(tsStrip, "") : String(title).trim());
   // Width of the widest time on this page, in characters. `ch` is the advance
   // width of "0", so in a monospace face the column fits the time exactly
   // whatever font the visitor actually has — a rem guess would leave slack.
   const tsWidth = Math.max(4, ...d.timestamps.map((t) => String(t.time).length));
 
-  const timestampsHtml = d.timestamps
-    .map(
-      (t) =>
-        `<a href="https://youtube.com/watch?v=${d.videoId}&t=${t.seconds}s" class="timestamp-link" target="_blank" rel="noopener">
+  const timestampsHtml = d.timestamps.length
+    ? d.timestamps
+        .map(
+          (t) =>
+            `<a href="https://youtube.com/watch?v=${d.videoId}&t=${t.seconds}s" class="timestamp-link" target="_blank" rel="noopener">
                 <span class="ts-time">${esc(t.time)}</span>
                 <span class="ts-dash">${TS_DASH}</span>
-                <span class="ts-title">${esc(tsTitle(t.title))}</span>
+                <span class="ts-title">${esc(t.title)}</span>
               </a>`
-    )
-    .join("\n              ");
+        )
+        .join("\n              ")
+    : `<p style="color:#999">No timestamps available for this episode.</p>`;
 
-  // Replace generic speaker labels with the actual guest name
-  const genericSpeakerRe = /^\*\*(?:Guest|Host|Interviewer|Speaker\s*\d*|.{0,30}?\b(?:VP|CEO|CTO|CFO|COO|Director|Head|President|Manager|Exec|Executive|Founder|Co-founder)\b[^*]*):\*\*/gm;
-  // Remove sponsored/ad segments from transcript
-  const adPatterns = [
-    /This part of the video is brought to you by[\s\S]*?(?=\*\*[A-Z]|\n\n\*\*[A-Z]|Okay,? now let'?s|Now,? let'?s get back|Back to)/gi,
-    /This episode is sponsored by[\s\S]*?(?=\*\*[A-Z]|\n\n\*\*[A-Z]|Okay,? now let'?s|Now,? let'?s get back|Back to)/gi,
-    /This video is sponsored by[\s\S]*?(?=\*\*[A-Z]|\n\n\*\*[A-Z]|Okay,? now let'?s|Now,? let'?s get back|Back to)/gi,
-  ];
-  let filteredTranscript = d.transcript;
-  for (const pat of adPatterns) {
-    filteredTranscript = filteredTranscript.replace(pat, "");
-  }
-
-  let cleanedTranscript = filteredTranscript.replace(genericSpeakerRe, `**${d.guestName}:**`);
-
-  // Solo episode: the monologue has no speaker markers — label the opening
-  // paragraph as Marina so the transcript isn't left unattributed.
-  if ((!d.guestName || !d.guestName.trim()) && !/^\s*\*\*/.test(cleanedTranscript)) {
-    cleanedTranscript = `**Marina Mogilko:** ${cleanedTranscript.trimStart()}`;
-  }
-
-  const transcriptParas = cleanedTranscript
-    .split(/\n\n+/)
-    .map((para) => {
-      const speakerMatch = para.match(/^\*\*(.+?):\*\*\s*([\s\S]*)/);
-      if (speakerMatch) {
-        const name = speakerMatch[1];
-        const isMarina = name.toLowerCase().includes("marina");
-        const cls = isMarina ? ' class="speaker-marina"' : ' class="speaker"';
-        return `<p><strong${cls}>${esc(name)}:</strong> ${esc(speakerMatch[2])}</p>`;
+  // Transcript blocks are reviewed data: a labelled or unlabelled paragraph,
+  // or a hand-made block kept verbatim. No heuristics run here.
+  const transcriptHtml = d.transcript
+    .map((b) => {
+      if (b.html !== undefined) return b.html;
+      if (b.speaker) {
+        const cls = b.speaker.toLowerCase().includes("marina") ? ' class="speaker-marina"' : ' class="speaker"';
+        return `<p><strong${cls}>${esc(b.speaker)}:</strong> ${esc(b.text)}</p>`;
       }
-      return `<p>${esc(para)}</p>`;
-    });
+      return `<p>${esc(b.text)}</p>`;
+    })
+    .join("\n            ");
 
   // Newsletter CTA — right after the About the Guest card.
   const ctaTop = newsletterCta() + "\n\n    ";
-
-  const transcriptHtml = transcriptParas.join("\n            ");
 
   const relatedHtml = d.relatedVideos
     .map(
@@ -1209,20 +1124,13 @@ function renderEpisodePage(d) {
     )
     .join("\n");
 
-  // Solo episode (no guest): Marina presents her own material. Normalize so the
-  // page renders as her, not a "Special Guest" placeholder.
-  const isSolo = !d.guestName || !d.guestName.trim();
-  if (isSolo) {
-    d.guestName = "Marina Mogilko";
-    d.guestTitle = "Host, Silicon Valley Girl Podcast";
-  }
-  const guestLabel = d.guestName || "a special guest";
-  const metaDescription = isSolo
-    ? `${d.title} — Silicon Valley Girl Podcast`
-    : `Marina Mogilko interviews ${guestLabel}, ${d.guestTitle}, on the Silicon Valley Girl Podcast`;
-
-  const episodeSlug = slugify(d.title);
+  const thumbAlt = isSolo
+    ? "Marina Mogilko, host of the Silicon Valley Girl Podcast"
+    : `${esc(d.guestName)}, ${esc(d.guestTitle)}, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast`;
+  const metaDescription = d.metaDescription || deriveMetaDescription(d);
+  const summaryBlock = d.summaryHtml !== undefined ? d.summaryHtml : renderSummaryBlock(d);
   const canonicalUrl = `https://marinamogilko.co/episode/${d.videoId}/`;
+
 
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
@@ -1230,12 +1138,12 @@ function renderEpisodePage(d) {
     name: d.title,
     url: canonicalUrl,
     datePublished: isoDate,
-    description: d.episodeSummary,
+    description: d.summary,
     duration: d.duration,
     associatedMedia: {
       "@type": "VideoObject",
       name: d.title,
-      description: (d.episodeSummary || "").slice(0, 200),
+      description: (d.summary || "").slice(0, 200),
       uploadDate: new Date(d.publishedAt).toISOString().split("T")[0],
       embedUrl: `https://www.youtube.com/embed/${d.videoId}`,
       thumbnailUrl: d.thumbnail,
@@ -1248,6 +1156,7 @@ function renderEpisodePage(d) {
     performer: {
       "@type": "Person",
       name: d.guestName,
+      ...(d.performer || {}),
       jobTitle: d.guestTitle,
     },
     host: {
@@ -1419,13 +1328,13 @@ function renderEpisodePage(d) {
         <span>${esc(d.duration)}</span>
       </div>
       <a href="https://www.youtube.com/watch?v=${d.videoId}" class="video-thumb" target="_blank" rel="noopener">
-        <img src="${esc(d.coverArt)}" alt="${esc(guestLabel)}, ${esc(d.guestTitle)}, interviewed by Marina Mogilko on the Silicon Valley Girl Podcast">
+        <img src="${esc(d.coverArt)}" alt="${thumbAlt}">
         <span class="play-btn"></span>
       </a>
     </article>
 
     <div class="guest-card">
-      <h3>About the Guest</h3>
+      <h3>${isSolo ? "About the Host" : "About the Guest"}</h3>
       <div class="guest-name">${esc(d.guestName || "Special Guest")}</div>
       <div class="guest-title">${esc(d.guestTitle)}</div>
       <p class="guest-bio">${esc(d.aboutGuest)}</p>
@@ -1438,7 +1347,7 @@ function renderEpisodePage(d) {
     </div>
 
     <div id="panel-notes" class="tab-panel active" role="tabpanel">
-      <div class="summary">${isSolo ? `In this episode of the Silicon Valley Girl Podcast, Marina Mogilko shares ${esc(d.episodeSummary)}` : `In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews ${esc(d.guestName || "a special guest")}, ${esc(d.guestTitle)}. ${esc(d.episodeSummary)}`}</div>
+      <div class="summary">${summaryBlock}</div>
       <div class="takeaways">
         <h3>Key Takeaways</h3>
         <ul>
@@ -1460,7 +1369,7 @@ function renderEpisodePage(d) {
     </div>
 
     <section class="related-section">
-      <h2>More from Silicon Valley Girl Podcast</h2>
+      <h2>${esc(d.relatedHeading || "More from Silicon Valley Girl Podcast")}</h2>
       <div class="related-grid">
         ${relatedHtml}
       </div>
@@ -1485,29 +1394,8 @@ function renderEpisodePage(d) {
 </html>`;
 }
 
-// ---------------------------------------------------------------------------
 
-function esc(str) {
-  return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-// Anything scraped back out of a rendered page is already escaped, and the
-// templates escape again on the way out. Without this the ampersand in a title
-// like "ChatGPT & Codex" gains an &amp; on every build.
-function unesc(str) {
-  return String(str)
-    .replace(/&quot;/g, '"')
-    .replace(/&gt;/g, ">")
-    .replace(/&lt;/g, "<")
-    .replace(/&#39;/g, "'")
-    .replace(/&amp;/g, "&");
-}
-
-module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate };
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, CONTENT_DIR };
 
 // Guarded so the tests can require the renderers without kicking off a build.
 if (require.main === module) {

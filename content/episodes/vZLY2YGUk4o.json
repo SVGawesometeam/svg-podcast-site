@@ -1,0 +1,284 @@
+{
+  "videoId": "vZLY2YGUk4o",
+  "title": "Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis",
+  "format": "interview",
+  "guestName": "John Martinis",
+  "guestTitle": "Nobel Prize Winner · Quantum Computing Scientist · Member of Trump's Science Advisory Council",
+  "aboutGuest": "John Martinis is a Nobel Prize-winning physicist whose 1985 discovery of quantum tunneling in macroscopic electrical circuits made quantum computing possible. He is the only scientist on President Donald Trump's 2025 science advisory council alongside Mark Zuckerberg, Sergey Brin, and Jensen Huang, and is currently building general-purpose quantum computers through his own company.",
+  "publishedAt": "2026-04-08T15:27:44.000Z",
+  "duration": "23 MIN",
+  "coverArt": "https://img.youtube.com/vi/vZLY2YGUk4o/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/vZLY2YGUk4o/maxresdefault.jpg",
+  "summary": "John Martinis, who won the Nobel Prize for his 1985 discovery of quantum tunneling in macroscopic electrical circuits, discusses the implications of quantum computing for the future. His breakthrough proved that quantum mechanics could work in machines, not just at the atomic level, which became the foundation for building qubits and quantum computers. Google recently demonstrated a quantum processor that completed a calculation in minutes that would take today's supercomputers longer than the age of the universe, and published research indicating quantum computers could crack Bitcoin encryption in 9 minutes using 20 times fewer resources than previously thought. Martinis explains that the real value will come from building general-purpose, error-corrected quantum computers with millions of physical qubits, which is what his company is focused on—a hardware bet similar to Jensen Huang's early GPU investments.",
+  "keyTakeaways": [
+    "Quantum tunneling in macroscopic circuits proved quantum mechanics could work in machines, not just atoms — this discovery unlocked the entire field of quantum computing and is why Martinis won the Nobel Prize",
+    "Google's quantum processor completed calculations in minutes that would take classical supercomputers longer than the age of the universe, representing a fundamentally different category of machine",
+    "Quantum computers could crack Bitcoin encryption in 9 minutes, and the entire internet needs to switch encryption protocols within 5-10 years to address the quantum threat",
+    "The real value in quantum computing will come from building general-purpose, error-corrected quantum computers with a million physical qubits, not the hundreds of qubits current systems operate with",
+    "Quantum computing will transform drug discovery and molecular design by enabling companies to simulate molecules and improve insights by even 1-2%, which can be worth significant money"
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "01:46",
+      "seconds": 106,
+      "title": "John Martinis explains quantum tunneling"
+    },
+    {
+      "time": "02:37",
+      "seconds": 157,
+      "title": "Why this discovery won the Nobel Prize"
+    },
+    {
+      "time": "04:55",
+      "seconds": 295,
+      "title": "What does life look like in 10 years with quantum everywhere?"
+    },
+    {
+      "time": "06:04",
+      "seconds": 364,
+      "title": "What it actually takes to build a real quantum computer"
+    },
+    {
+      "time": "08:54",
+      "seconds": 534,
+      "title": "Advice for entrepreneurs"
+    },
+    {
+      "time": "10:21",
+      "seconds": 621,
+      "title": "Which industries will be transformed most?"
+    },
+    {
+      "time": "11:50",
+      "seconds": 710,
+      "title": "Will quantum computing break crypto?"
+    },
+    {
+      "time": "17:08",
+      "seconds": 1028,
+      "title": "How he got pushed out of Google"
+    },
+    {
+      "time": "19:41",
+      "seconds": 1181,
+      "title": "What to do about quantum and AI right now"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "The skills you're building right now are for the AI era, but they have an expiration date. Every few years, something comes along that changes what's actually possible. The internet didn't make libraries faster, it made them irrelevant. AI didn't make search engines better. It made a completely different way of finding answers. And now we have something that's coming that most people haven't even heard of yet. And it does the same thing to computing itself. In December 2024, Google unveiled a quantum processor that completed a calculation in minutes. That exact calculation that would take today's supercomputers longer than the age of the universe. And that is a different category of a machine. And here's where it gets a little scary. A few days ago, Google published another paper. They say quantum computers could crack Bitcoin encryption in 9 minutes using 20 times fewer resources than anyone thought. As someone who holds crypto and is curious about implications of quantum on my day-to-day life, I wanted to ask questions. So I was in Davos this January and I met the man whose 1985 discovery made all of this possible. He just won the Nobel Prize for it and President Donald Trump just put him on his science advisory council alongside Mark Zuckerberg, Sergey Brin and Jensen Huang. He's the only scientist in that room and he gave me a timeline of 5 to 10 years. And to understand why this matters for your career, you need to understand what he actually discovered. Let's talk to John Martinis. I wanted to talk to you about something that you discovered. So I don't have any experience in quantum physics, but the way I understood it, if you throw a ball against the wall, it bumps. But you discovered that an electron can pass the wall without passing it and be on both sides."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "It's possible that the ball, the wall can tunnel through the wall and not just bounce off, but every once in a while actually tunnel through it. The way I like to say it is that people are accustomed to quantum mechanics being the physics of atoms and molecules and microscopic particles. In here, we made an electrical circuit about that big. And the currents and voltages in that big macroscopic electrical circuit is actually obeying quantum mechanics and showing this tunneling phenomenon."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That's the moment quantum stopped being just theory. He proved it works in machines and that's what started everything. So before this discovery, scientists thought quantum mechanics only lived inside atoms. He proved it works in machines. So what does that unlock? What really happened with this idea, and frankly it's the reason for the Nobel Prize, is that we took this discovery and then people built on it, built on it, and then the idea of building qubits and building a quantum computer came along, which naturally our physics fit into. So it's the creation of a field of discovery and innovation and technology that these experiments got developed into and why it's important today."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "When you say quantum computer, a lot of people think science fiction. For people who don't know how it affects their daily lives or might affect their daily lives, can you give two or three examples where quantum computers really make a difference? The idea I like to talk about is doing design of materials or molecules or chemistry. And people are very familiar right now how you use computers to design your kitchen, make a mechanical part, design an electronic circuit, other things. So you can build it virtually. And then when you go and you build it in the real world, building it virtually in the digital is a lot cheaper and better and you can think about the tradeoffs. Well, a quantum computer would enable you to do that with molecules and certain atomic molecules and moving parts. What about drug discovery?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yes. And the same kind of thing with drug discovery. So if you can simulate molecules really well, then you can maybe even gain some insight. What I've been told is that, for example, drug discovery is very expensive to do this, and if you can improve your insight on how the drug works by 1% or a few percent, that's really valuable and could be worth a lot of money."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "It's not like we have to totally change things, but improvements and better insights can be quite valuable for companies."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "But if we go 10 years forward, what do you think our life is going to look like if quantum computing is everywhere and accessible to everyone? How's it going to change?"
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "There are two things involved in this. First of all, we have to build better hardware. And then we have to think about algorithms and be smarter with the algorithms. There's a gap now. Maybe some people think there's not much of a gap and other people think there's a big gap, but we need to close it. That's building better hardware, which is what I'm doing in my company. We're trying to do that, as well as many other people. And then people have to be more clever. What's interesting is when you build better hardware, you can test out the algorithms better and then you can discover exactly what you need to get it to work right. So it's a very interesting time where everyone's really trying to push these things together and get it to work properly."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it feels like it's a really fast growing market. According to Quantum Insider report, it's going to generate $1 trillion in economic value in the next 10 years."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "That's an optimistic scenario that we find useful things to do. It's quite possible that will happen and certainly I like those forecasts because when we try to, our idea is that what we're really trying to do in our company is make a general purpose error corrected quantum computer, not at hundreds of physical qubits what people are doing now, but you may need a million physical qubits operating in the way with the errors going down and it works properly. That's where I think the real value will be unlocked. You know the long-term value, certainly if people do this in the next few years, you'll get good value. But those numbers you're talking about, our thesis is you want to build this big computer and make it very well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "As you might have realized, I had this conversation with John at Davos. And honestly, every conversation during World Economic Forum was with someone like John, a Nobel Prize winner, a professor, a founder of an AI company. And then you walk out knowing something important was said, but by the time you sit down to act on it, you've lost the nuance, the exact words, what was the tool that he mentioned, what was the hack that was going to work for my case. And that's the problem this device solves. It's called Plot. Guest calls, partner calls, internal team syncs, the conversations that actually move things forward. This little device records and analyzes everything. It's a small wearable, one press to record. No phone on the table between you and the person you're talking to. You stay fully present in the conversation and afterwards you get a structured summary, decisions, next steps, key insights, 10,000 plus templates by conversation type, industry, and language. So what you get back actually reflects what the meeting was. This is our conversation with John. Here's the transcript. Every speaker labeled and here's the summary. Key insights, action items pulled automatically. 1.5 million people use it. 98 transcription accuracy works in person, on Zoom, over the phone and it fits in my phone's case. Find the link in the description. If you're having conversations that matter, and clearly you are because you're here, this device is worth checking out. And of course, you always disclose when you record conversations. That's natural. So he's betting on hardware the way Jensen Huang bet on GPUs before anyone knew what they were for. Now that's the question that has been on my mind since I heard about quantum computing. What do you think for all the entrepreneurs who are watching who want to start building something in this field? What are the most exciting markets when it comes to quantum computing? Is it building hardware or is it like applying the algorithms?"
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "There's a lot of effort into algorithms because building software and algorithms is relatively low cost. You don't have to buy those. So our company is doing the exact wrong thing, which is investing in building hardware really well. Now the nice thing is that once you do that and you're successful, you can be an extremely successful company. And I like to think about Nvidia. Although they're partnering with TSMC, their knowledge of designing the computers and putting together the systems have made them extremely valuable company. And our view on hardware is that it's possible for us to do that through that too. So we're taking the hard approach and focusing on the hardware. And then our particular thesis is that if you look at superconducting qubits right now and where they are, I mean I helped invent all the things to get there. And I think it's great, but it's still kind of a little bit academic or maybe even artisanal fabrication. And we're trying to use much more established semiconductor tools and fabrication processes in order to scale up and make the qubits better."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think are the markets that are going to be transformed the most? We talked about healthcare, finance, any other way?"
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "It's all of the above. You hear people working on that. But I like that we have very definite ideas on how to build it. So let me explain this for maybe some of the Silicon Valley types. I really love Peter Thiel's book Zero to One."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that in some sense explained my career. So I am very much a definite optimist. I want to know what to build. I want to know what to build to make it useful. And that's what that paper was all about. Now there's a lot of people in this field who are indefinite optimists. In fact, most people in the United States are and they have all the ideas. And I think that's great. I'm glad people are pushing that. My particular way my mind works and what's always been successful is to really focus in on something definite you have to do. However, I'm very well aware you're in a startup company, you'll probably have to pivot. And think about different things and we'd be happy to do that once those ideas come through. But the one thing I know for sure is we have to make better qubits and we have to make it scale."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "We need the hardware."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "We need the hardware. So that's what we're doing no matter what happens."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "I think this question has been bothering me for a while. I think you're the right person to ask. Is quantum computing going to break cryptocurrencies?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So my understanding is if you have some of the older cryptocurrency that was encoded in a way that could be broken, some of the newer versions have stiffer encryption."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "Is that Bitcoin the oldest?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think this is Bitcoin as I recall."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "And then you can take your old Bitcoin and pull it out and then reencrypt it to make it better. So you can make it safe."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "But there's a lot of Bitcoin that's unclaimed, and it's a lot of money."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So quantum computing breaks into that."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "So that is a market for a quantum computer business idea. Well, so we're aware of that. Now what my CEO is doing, which I think is very responsible, is talking to the US Treasury about this. Because the US Treasury is going to be concerned that if other companies or criminal organizations get a hold of that money."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's a lot of money. That's a real issue and you probably want to set up laws and some system in order to do that."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "Because it's still very unregulated. There's so much crypto ledgers."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And that's the problem is you have something very unregulated which people really like but in some sense that's the Achilles heel because it's unregulated if some technology can overcome it. There may need to be some plan on how to address that now. I'm not an expert here."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "But no I think I'm getting this directionally correct. I talk to the people building what's next before it makes headlines. If that's useful to you, do not forget to subscribe to this channel. What is the timeline that you think?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "It's possible in 5 to 10 years to build a big enough quantum computer to do that. And partly I just say that's an optimistic scenario and partly I say that is to warn people that this may be coming and you want to protect not just Bitcoin but the whole internet needs to switch over in this time period."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "Now what's interesting is I was at a meeting where IBM quoted similar numbers. This is all very reasonable. It's funny that at Google the CEO is saying three to five years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "To try and push things."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "Well, I think he's pushing because if you're a CEO and you're making a prediction, you want to have a lower number because you don't want to be caught without that. But for example, Google already has quantum resistant protocols on at least some of their traffic. I don't know the details, but these big companies already know about it and are protecting their data or will be protecting their data. But there's things like crypto and other private systems that you might have to worry about."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "That was very interesting. So basically we're working on quantum computing but then we also need to work on the algorithms that protect existing systems."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "The idea that you can break it was invented in the 1990s. People understood that well with Peter Shor in the early 1990s, and the government has understood this for a long time. About 10 or 12 years ago the government got very serious about this and saw that the technology could make this happen. For example, at NIST they have a big program that they're looking at what they called quantum safe cryptography, other ways to encode it. That's been 10 years. They have nice algorithms. People can download essentially the algorithm and code and people are building systems to do this. People have been responding to this. You can buy solutions. I think we're in pretty good shape. Part of the thing about crypto security is people have to try to break it for a long time to make sure that it's really safe. People don't know that RSA is unbreakable."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "For sure, but they know from practice and the way everything's operating that they don't think anyone has broken it."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "So it needs time to do this. You're observing extremely rare events and you're building something that is completely new. Has that changed how you think about luck, black swan moments because you're observing them basically in your work?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What's strange in my career is I've been developing a series of experiments and how I've gone from one project to the other. What's funny in my career is I do a project and then somehow it doesn't work out in some way and then I'm stuck wondering what else to do, and then I figure out what else to do that's really interesting. Changing all the different topics and projects has always come through some strange event, often a negative event. Just to give you an example, I went to Google, they paid me well, we did this quantum supremacy experiment. But then at some point after the quantum supremacy, they wanted to change the way they managed the group and essentially I was not Googly enough to stay at Google and I had to leave."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "Which was difficult to essentially leave a project you started way back in graduate school. However, by leaving Google, I was then free to think very creatively and think well, we're building in a certain way and how do I really want to build this to make it scalable and better. By starting my own company and through thinking freely and starting it with co-founders we were able to come up with ideas how to make it better."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And so that's one thing and this has happened to me over and over again. I kind of have to accept that sometimes these setbacks in life are actually very good for you. The good thing is this year I just knew it was coming up but I totally forgot about it. So when the phone call came it was the middle of the night."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "And it was my wife was awake and she heard the phone ringing, but she thought she'd catch it in the morning. Then she was just going to sleep and she looked at her email and there was all these congratulations, but that was like 2:30 in the morning. And she knows I need my sleep."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Until about 6:00 because I needed my sleep. And also there were reporters who were coming to that house and they wanted to wake me up in bed."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "And she pushed them away like, \"Let him get his sleep, no way we're going to do that.\""
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Wow."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "I do remember her sitting in the bed and waking me up gently and saying, \"Hey, there's some reporters.\" It's October. So I just opened my computer and I saw my picture there with John and Michelle. That was a very surreal moment. You can't believe that it's happening."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Sounds like a fairy tale."
+    },
+    {
+      "speaker": "John Martinis",
+      "text": "It's a fairy tale."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And what I would say is I think the most interesting part is you get to go to things like this and see these very amazing experiences. Here's what I actually walked away with. JP Morgan and Google aren't waiting for quantum to be ready. They are already deploying it. The race is happening whether your industry knows it or not. The encryption protecting everything you do online, your bank, your company data, your messages was built before quantum computers existed. John's timeline is 5 to 10 years. That's not a distant problem. If you work in tech, finance or cyber security, this is the conversation I think we should be having right now. In my newsletter this week, I mapped out which industries are most exposed right now and what people in those fields are actually doing about it and how you can start adjusting your career for what's to come. My newsletter is called Future Proof. The link is in the description. Quantum is 5 to 10 years out. AI is right now. I talked to a Stanford professor about exactly what to do in the next 30 days. That video is right here on the screen. It is very practical. It's going to make you excited about AI and excited about introducing it into your workflows. See you in that episode and thank you for watching this up to the very end."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "00RHph_eok4",
+      "thumbnail": "https://img.youtube.com/vi/00RHph_eok4/hqdefault.jpg",
+      "title": "AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy"
+    },
+    {
+      "videoId": "GDeEATJcbJo",
+      "thumbnail": "https://img.youtube.com/vi/GDeEATJcbJo/hqdefault.jpg",
+      "title": "Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn"
+    },
+    {
+      "videoId": "YfRkj9kmQf0",
+      "thumbnail": "https://img.youtube.com/vi/YfRkj9kmQf0/hqdefault.jpg",
+      "title": "Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller"
+    }
+  ],
+  "topics": []
+}

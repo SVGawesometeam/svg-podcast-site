@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,7 +374,7 @@
       <p class="guest-bio">Samir Vasavada is the co-founder and CEO of Vise, an AI-powered wealth management platform he founded at age 16 in Cleveland, Ohio. Vise reached a billion-dollar valuation when Samir was 20, making him one of the youngest founders in history to reach that milestone. He built the company without a college degree, growing up as the child of Indian immigrants who had envisioned a more traditional career path for him.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -473,7 +486,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> You were the youngest person to become a billionaire at 20, right?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> You were the youngest person to become a billionaire at 20, right?</p>
             <p><strong class="speaker">Samir Vasavada:</strong> I wasn't a billionaire, but the billion dollar valuation, yeah. You know, media gets that confused sometimes.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Got it. Can you walk me through your childhood? Because your parents are immigrants from India, and I feel like immigrant upbringing really contributes to successful people. How were you growing up? Were your parents pushing you towards traditional education? Was money an issue?</p>
             <p><strong class="speaker">Samir Vasavada:</strong> Yeah. So my parents came from India to the US. They were relatively young when they came over, unlike my co-founder's parents who came much later. But they had a lot of traditional Indian values—going to school, doing a doctorate, becoming a doctor or an engineer. As much as it is a stereotype, it's true. They really pushed me growing up to be a doctor, and I just didn't want to do that. I always loved building things. The first thing that ever got me was a Lego set. I started playing around with Legos and I'm like, I like to build things. So how can I express my need to build things? I eventually discovered entrepreneurship, but that was such an uncharted path and territory for anyone in the Indian community that they kind of rejected it. There was such aversion to risk. The idea of spending money frivolously, taking risks, skipping college—it was completely foreign to them. For such a long time they tried to push me in the direction of the traditional path, but I rebelled on it from an extremely early age.</p>
@@ -550,25 +563,28 @@
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Can you give advice to someone who's 17, 18, deciding whether they should go to college or not? They do realize college gives you network, but also credibility.</p>
             <p><strong class="speaker">Samir Vasavada:</strong> I think college has kind of started to lose its credibility. The university system now teaches you what to think and not how to think. A lot of students coming out of college now are realizing they wasted so much time there and didn't really learn as much as they could.</p>
             <p>I would say the best way to grow yourself is to find someone who you think is really impressive and who you want to be in five and ten years. Shadow that person. Learn from that person. The way that person will take you seriously is you do the work. You learn about their business. You learn about their job. Get an introduction—get a warm introduction to that person or send a really thoughtful cold email. Really show that person, I'm going to go above and beyond for you, and you hustle.</p>
-          </div>
+      </div>
     </div>
 
-
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/qkGuzV50JWI/" class="related-card">
                 <img src="https://img.youtube.com/vi/qkGuzV50JWI/hqdefault.jpg" alt="Must Have AI Skills to Save your Career in 2026" loading="lazy">
                 <span class="related-title">Must Have AI Skills to Save your Career in 2026</span>
               </a>
+
               <a href="/episode/ZYT81iUfBK4/" class="related-card">
                 <img src="https://img.youtube.com/vi/ZYT81iUfBK4/hqdefault.jpg" alt="How I Launched My Merch Store in 7 Minutes Using AI Tools" loading="lazy">
                 <span class="related-title">How I Launched My Merch Store in 7 Minutes Using AI Tools</span>
               </a>
+
               <a href="/episode/6es0HhfpQlQ/" class="related-card">
-                <img src="https://img.youtube.com/vi/6es0HhfpQlQ/hqdefault.jpg" alt="Mel Robbins: The Best Window for a Career Change Is Now — Don&#x27;t Miss It" loading="lazy">
-                <span class="related-title">Mel Robbins: The Best Window for a Career Change Is Now — Don&#x27;t Miss It</span>
+                <img src="https://img.youtube.com/vi/6es0HhfpQlQ/hqdefault.jpg" alt="Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It" loading="lazy">
+                <span class="related-title">Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It</span>
               </a>
+
               <a href="/episode/2j9yjRSpMSo/" class="related-card">
                 <img src="https://img.youtube.com/vi/2j9yjRSpMSo/hqdefault.jpg" alt="AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher" loading="lazy">
                 <span class="related-title">AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher</span>

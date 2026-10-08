@@ -22,17 +22,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#181B36">
+  <meta name="theme-color" content="#171511">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7; color: #1a1a1a; background: #fff;
     }
     a { color: inherit; }
+
     /* CHROME-START */
   :root {
     --accent: #DF1615;
@@ -207,6 +209,7 @@
     .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
   }
     /* CHROME-END */
+
     .breadcrumb {
       max-width: 800px; margin: 1.5rem auto 0; padding: 0 2rem;
       font-size: 0.8rem; color: #999;
@@ -214,7 +217,9 @@
     .breadcrumb a { color: #999; text-decoration: none; }
     .breadcrumb a:hover { color: #1a1a1a; }
     .breadcrumb .sep { margin: 0 0.4rem; }
+
     .container { max-width: 800px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
     .episode-header { margin-bottom: 2.5rem; }
     .episode-header h1 {
       font-size: 2rem; font-weight: 700; line-height: 1.3;
@@ -225,6 +230,7 @@
       margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .episode-meta span + span::before { content: "\00b7"; margin-right: 1rem; }
+
     .video-thumb {
       position: relative; display: block; width: 100%;
       border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
@@ -243,6 +249,7 @@
       border-color: transparent transparent transparent #fff;
     }
     .video-thumb:hover .play-btn { background: #e00; }
+
     .guest-card {
       background: #fafafa; border: 1px solid #eee; border-radius: 8px;
       padding: 1.5rem; margin-bottom: 2.5rem;
@@ -254,6 +261,7 @@
     .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
+
     .tabs { border-bottom: 2px solid #eee; display: flex; gap: 0; margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none; border-bottom: 2px solid transparent;
@@ -266,10 +274,12 @@
     .tab-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .summary { font-size: 1rem; color: #333; margin-bottom: 2rem; line-height: 1.8; }
     .takeaways h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
     .takeaways ul { padding-left: 1.25rem; color: #333; }
     .takeaways li { margin-bottom: 0.6rem; font-size: 0.95rem; line-height: 1.6; }
+
     .timestamps-list { display: flex; flex-direction: column; gap: 0; }
     .timestamp-link {
       display: flex; align-items: baseline; gap: 0.85rem;
@@ -284,9 +294,11 @@
     }
     .ts-dash { color: #999; flex: none; }
     .ts-title { font-size: 0.95rem; color: #333; }
+
     .transcript p { margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.8; color: #333; }
     .speaker { font-weight: 600; color: #1a1a1a; }
     .speaker-marina { font-weight: 600; color: #2563eb; }
+
     .related-section { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #eee; }
     .related-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
     .related-grid {
@@ -300,6 +312,7 @@
       display: -webkit-box; -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; overflow: hidden;
     }
+
     @media (max-width: 640px) {
       .breadcrumb { padding: 0 1rem; }
       .container { padding: 1.5rem 1rem 3rem; }
@@ -361,7 +374,7 @@
       <p class="guest-bio">Saadia Zahidi is Managing Director at the World Economic Forum, where she leads work on economic growth, education, and employment. She oversees the WEF's Future of Jobs Report, a biennial study widely used by governments, corporations, and researchers to track global labor market shifts. Zahidi is also the author of 'Fifty Million Rising,' a book examining the transformation of work for women in the Muslim world.</p>
     </div>
 
-      <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
+          <aside class="newsletter-cta" aria-label="Subscribe to Marina's newsletter" style="margin:2.5rem 0;padding:1.75rem;background:#fafafa;border:1px solid #ededed;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;">
         <p style="margin:0;font-size:1.05rem;font-weight:600;line-height:1.35;color:#1a1a1a;max-width:34rem;">Get the AI tools, workflows and career moves in Marina&#39;s weekly newsletter</p>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" style="background:#e00;color:#fff;font-weight:700;font-size:0.95rem;line-height:1;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Subscribe free</a>
       </aside>
@@ -463,7 +476,7 @@
 
     <div id="panel-transcript" class="tab-panel" role="tabpanel">
       <div class="transcript">
-            <p><strong class="speaker-marina">Marina Mogilko:</strong> So this morning I opened my phone and it's the same story again and again. First, we heard a few days ago that Jack Dorsey's blog just laid off almost half of his stuff and says AI is the reason. Just recently, Atlassian cuts 1,600 people to self-fund investments in AI. Your feed, my feed is full of &quot;AI took my job&quot; posts. Is this the beginning of a jobless future or are companies just slapping AI on old school layoffs to make them sound innovative?</p>
+        <p><strong class="speaker-marina">Marina Mogilko:</strong> So this morning I opened my phone and it's the same story again and again. First, we heard a few days ago that Jack Dorsey's blog just laid off almost half of his stuff and says AI is the reason. Just recently, Atlassian cuts 1,600 people to self-fund investments in AI. Your feed, my feed is full of &quot;AI took my job&quot; posts. Is this the beginning of a jobless future or are companies just slapping AI on old school layoffs to make them sound innovative?</p>
             <p>Today we're going to look at the data, the companies, and the people behind the headlines. And I will be joined by someone who actually knows the numbers. I actually use a report she creates every two years. It's called the Jobs Report by the World Economic Forum. She knows all the numbers and she knows exactly what's happening on the job market. Are these layoffs AI? Should we be afraid? Should we be scared? Or are companies just using the word AI to justify layoffs? By the end, you'll know which jobs are actually at risk, what AI native really means, and what you can practically do in the next 90 days to future proof your career, even if you're not a tech person. I'm not a tech person, but I'm using so much AI. I'm going to talk about this.</p>
             <p>So, what's going on on the market? Let's start with the headline that broke the internet. Jack Dorsey and Block laid off 4,000 people. Block is the company behind Square, Cash App, and Afterpay. They announced that they're cutting 40% of its workforce, more than 4,000 people, bringing headcount down to under 6,000. Jack Dorsey didn't say, &quot;We had a terrible quarter.&quot; He didn't blame a recession. He explicitly pointed at intelligent tools and AI agents. In his letter and interviews, he says smaller, flatter teams can now do the same work, that AI fundamentally changes what it means to build and run a company, and that most firms will inevitably follow this path. Media from CNN to Forbes jumped on this story as one of the clearest examples of a CEO saying, &quot;Will we lay people off because of AI?&quot;</p>
             <p>Okay, I had to talk to someone who's a professional in this. I spoke with Saadia Zahidi, managing director of World Economic Forum. I'm going to share what they told me, which is that a top person on jobs at the organization feels that a lot of firms are sort of maybe using this moment of concern around artificial intelligence to essentially take care of the issue of overhiring that happened three years ago. And now is the time to change that. It's sort of a somewhat convenient moment to use this as an excuse.</p>
@@ -483,7 +496,6 @@
             <p><strong class="speaker">Saadia Zahidi:</strong> So the real danger isn't AI takes everyone's jobs. It's those 11 people out of every 100 who don't have a clear place to go. So even if today's layoffs are sometimes AI-washed for shareholders—it looks great to shareholders, we're optimizing, we're investing in the future—sometimes that's true, sometimes it's just a glossy label on old school cost cuts. But under the PR, the deeper trend is still real and unavoidable. Routine rules-based office work is being eaten by software and AI. New jobs are appearing in tech, green industries, healthcare, education, and they demand a different mix of skills. The premium is rising on people who can combine human skills, AI tools, and domain expertise.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> Let's talk about safer zones. Safer doesn't mean perfectly safe forever. But today, jobs with low AI exposure tend to be reality-native jobs where you physically fix, cook, build, or care for things. Mechanics, electricians, plumbers. You've probably seen those viral reels where the plumber is the new millionaire. Chefs, cleaners, delivery, construction, high-touch human roles where your main value is emotional intelligence, complex human judgment. A strategist inside a company or early childhood education, many healthcare roles, social and community work. These are much harder to fully automate because they combine physical presence, messy real-world environments, and human involvement.</p>
             <p>Let me give you a useful framework, a way to figure out exactly where you personally stand. Every job has two layers. Layer one is the task layer, the repeatable rule-based work. Write this email, fill this report, answer this ticket, schedule this meeting, process the claim. That's layer one. You're below AI here. Layer two is above AI and this is the judgment layer. The stuff that requires context, relationships, feel, intuition, experience. AI is eating layer one fast everywhere across every industry, not just in tech. In law, in marketing, accounting, and medicine and customer support.</p>
-
             <p>The Anthropic report found that for white collar roles, AI can technically touch over 90% of tasks. In practice, workers are using it maybe 30 to 40% right now, but that number is growing every six months. So the question is not, is my job at risk. The question is, what percentage of my day is layer one versus layer two? If your answer is 80% layer one, meaning most of what you do is routine, templated, rule-based, you have a real problem. Not because you're going to be fired tomorrow, but because every year that passes, your layer one work gets cheaper and the company doing your annual review knows that. If your answer is 80% layer two—judgment, relationship, strategy, creative decisions—you're actually in a stronger position than you were two years ago. Because again, AI is handling the layer one work for you, which means you can do more layer two work in the same hours.</p>
             <p>Which brings us to the real question. If you want to stay ahead of this curve, what should you actually learn? I asked Saadia what other skills every worker needs to develop today.</p>
             <p><strong class="speaker">Saadia Zahidi:</strong> I would say the human skills have just become even more important. So, oddly enough, in a highly technologically driven world, it is the human skills that have become more important than ever before. And that's very clear from every two years we put out this list of the top 10 skills, and that's basically what comes through very loud and clear through that feature of jobs survey. That's one piece.</p>
@@ -504,24 +516,28 @@
             <p><strong class="speaker">Saadia Zahidi:</strong> All of these are potential trends. Some of these are trends that are highly likely to come true. Yes. But throughout the last 20 years that I've been in the workplace, we have had these moments before. There has been geopolitical tension before. There have been wars before. There have been technological changes before. A lot has happened. There's been the great financial crisis. So there have been many disruptions. There's been COVID. So I think we should bear in mind that that hasn't dented employment yet. That has required us to be resilient and to adapt, and those are certainly skills that young people should develop. But I'm very—I remain always very optimistic and hopeful about the future. And that would maybe be my one piece of advice. Invest in yourself and stay optimistic.</p>
             <p><strong class="speaker-marina">Marina Mogilko:</strong> AI will absolutely change what jobs exist and how we do them. But it doesn't get to write the whole story. Governments, companies, universities, and you still have choices. You can control whether a CEO decides to announce AI layoffs. You can control whether you become the kind of person whose job is easy to narrate away or the kind of person who knows how to use AI, lead people, and create value in the new system.</p>
             <p>If you treat AI as a thing that's going to take away your job, you'll spend the next few years really scared. If you treat it as new electricity for your career, your real job becomes to design how you're going to use it. And that job is only just beginning.</p>
-          </div>
+      </div>
     </div>
 
-      <section class="related-section">
+    <section class="related-section">
       <h2>More from Silicon Valley Girl Podcast</h2>
       <div class="related-grid">
+        
               <a href="/episode/nBM3_AzNYU8/" class="related-card">
-                <img src="https://img.youtube.com/vi/nBM3_AzNYU8/hqdefault.jpg" alt="$8B Investor: The Only Career Move AI Can&#x27;t Replace | Bill Gurley" loading="lazy">
-                <span class="related-title">$8B Investor: The Only Career Move AI Can&#x27;t Replace | Bill Gurley</span>
+                <img src="https://img.youtube.com/vi/nBM3_AzNYU8/hqdefault.jpg" alt="$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley" loading="lazy">
+                <span class="related-title">$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley</span>
               </a>
+
               <a href="/episode/KF_uNAxPFFA/" class="related-card">
-                <img src="https://img.youtube.com/vi/KF_uNAxPFFA/hqdefault.jpg" alt="Max Tegmark: The One Skill AI Can&#x27;t Replace — And Most People Are Losing It Right Now |MIT Professor" loading="lazy">
-                <span class="related-title">Max Tegmark: The One Skill AI Can&#x27;t Replace — And Most People Are Losing It Right Now |MIT Professor</span>
+                <img src="https://img.youtube.com/vi/KF_uNAxPFFA/hqdefault.jpg" alt="Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor" loading="lazy">
+                <span class="related-title">Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor</span>
               </a>
+
               <a href="/episode/2kWPqccrb-o/" class="related-card">
                 <img src="https://img.youtube.com/vi/2kWPqccrb-o/hqdefault.jpg" alt="9 Work From Home Business Ideas To Quit Your Job" loading="lazy">
                 <span class="related-title">9 Work From Home Business Ideas To Quit Your Job</span>
               </a>
+
               <a href="/episode/8DuxOlkHdy4/" class="related-card">
                 <img src="https://img.youtube.com/vi/8DuxOlkHdy4/hqdefault.jpg" alt="Become an Entrepreneur Today – AI stack to build your company in 2025" loading="lazy">
                 <span class="related-title">Become an Entrepreneur Today – AI stack to build your company in 2025</span>

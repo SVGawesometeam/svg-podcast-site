@@ -1,0 +1,413 @@
+{
+  "videoId": "UJo_MiMA7qE",
+  "title": "$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon",
+  "format": "interview",
+  "guestName": "Jesse Zhang",
+  "guestTitle": "Co-founder, Decagon",
+  "aboutGuest": "Jesse Zhang is the co-founder of Decagon, an AI customer experience platform valued at $1.5 billion. At just 27 years old, he has grown Decagon to nearly 200 employees in under two years, serving enterprise clients including Hertz, Duolingo, and Notion. His company specializes in deploying conversational AI agents that automate customer support interactions across chat and phone channels.",
+  "publishedAt": "2025-09-12T12:59:41.000Z",
+  "duration": "26 MIN",
+  "coverArt": "https://img.youtube.com/vi/UJo_MiMA7qE/maxresdefault.jpg",
+  "thumbnail": "https://img.youtube.com/vi/UJo_MiMA7qE/maxresdefault.jpg",
+  "summary": "Marina Mogilko interviews Jesse Zhang, co-founder of the $1.5 billion AI startup Decagon, about how AI agents are reshaping the future of work. They discuss which jobs are most at risk of extinction, what new roles are emerging, and the skills needed to stay competitive in the AI era. Jesse also shares advice for founders looking to build AI companies, weighing B2B vs. B2C, and why right now is a golden time for non-technical entrepreneurs to enter the space.",
+  "keyTakeaways": [
+    "Decagon's AI agents handle full customer service conversations — booking, lookups, and actions — for brands like Hertz, Duolingo, and Notion, effectively doing the work of dozens of human agents.",
+    "Companies adopting AI agents fall into roughly three equal categories: growth-mode amplification, customer experience improvement, and cost-cutting — meaning roughly 1 in 3 are actively reducing headcount or outsourced agencies.",
+    "Entry-level and tier-one customer support roles face the highest extinction risk, while roles involving complex interactions, client relationships, and AI oversight (data collection, AI review) are growing.",
+    "Jesse identified the top skills hiring managers are looking for in the AI era: adaptability, the ability to work alongside AI tools, and a strong understanding of how to apply AI to real business problems.",
+    "Jesse argues that right now is a 'golden age' for non-technical founders to build AI companies, as accessible tools lower the barrier to entry and the market for AI-powered products is still wide open."
+  ],
+  "timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Intro"
+    },
+    {
+      "time": "00:57",
+      "seconds": 57,
+      "title": "Is AI taking our jobs?"
+    },
+    {
+      "time": "05:11",
+      "seconds": 311,
+      "title": "One tool that can transform your business"
+    },
+    {
+      "time": "06:49",
+      "seconds": 409,
+      "title": "The future of entry-level work"
+    },
+    {
+      "time": "08:05",
+      "seconds": 485,
+      "title": "Top 3 apps for building AI agents"
+    },
+    {
+      "time": "10:35",
+      "seconds": 635,
+      "title": "How companies automate with AI"
+    },
+    {
+      "time": "11:51",
+      "seconds": 711,
+      "title": "Can non-tech founders build billion-dollar startups?"
+    },
+    {
+      "time": "13:19",
+      "seconds": 799,
+      "title": "College grads: work or launch your own thing?"
+    },
+    {
+      "time": "15:15",
+      "seconds": 915,
+      "title": "Jobs most at risk of extinction"
+    },
+    {
+      "time": "18:18",
+      "seconds": 1098,
+      "title": "Skills you need to land a great job"
+    },
+    {
+      "time": "20:20",
+      "seconds": 1220,
+      "title": "How to spot the right startup idea"
+    },
+    {
+      "time": "21:36",
+      "seconds": 1296,
+      "title": "Should you start in B2B or B2C?"
+    },
+    {
+      "time": "22:12",
+      "seconds": 1332,
+      "title": "Advice for future AI founders"
+    },
+    {
+      "time": "25:28",
+      "seconds": 1528,
+      "title": "Final takeaways"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "Marina Mogilko",
+      "text": "What do you think are the jobs that have the highest risk of extinction?"
+    },
+    {
+      "speaker": null,
+      "text": "Jobs where there is just kind of like straight up output. Let me introduce Jesse Zhang, 27 years old and already a co-founder of a $1.5 billion AI company. His startup Decagon powers conversations for brands like Hertz, Duolingo, and Notion. In just two years, his team has grown to nearly 200. So he is hiring. But the question is how and who?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You're seeing some of the companies actually laying off agencies that they're using, right? What do you feel like the percentage of these companies is within those categories that I listed?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Maybe one third, one third, one third."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So it is happening and you see it. In this episode, we explore the future of work from the jobs most at risk in the AI era and we're going to talk about new career paths that are opening up and the skills that will define the next generation of leaders."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "For people with nontechnical backgrounds that want to get into it, I think right now is a golden time."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And when you interview people for a company, can you name some skills that you're looking for?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Jesse, you founded a company that helps corporations build AI agents to automate processes inside those corporations and one of your customers said working with you is like having 65 people working on a particular problem. Do you see it as creating more opportunities or like taking jobs from people who were doing these tasks?"
+    },
+    {
+      "speaker": null,
+      "text": "Yeah, so let me give you some context. You mentioned using AI agents to automate things. We focus specifically on conversations with end users, right? So as an example, let's say you know, we work with a hotel chain. A lot of the customers that stay in the hotels will have inquiries like I want to book a room or I want to upgrade my room or I have questions about my loyalty points. These are classic customer service or customer support inquiries that come in. The AI agent's job is to have a conversation with them. This can be over the phone or over live chat, and the AI agent can have the full conversation. It might need to go look up information about you, figure out what your past stays are or what loyalty tier you are. It can go in and look up information and it can take actions as well, so it can go and book a room for you and so on. So in a nutshell, that's what we do."
+    },
+    {
+      "speaker": null,
+      "text": "Back to your question about how we view the innovation and impact on these organizations, it really depends on what the organization is looking to get out of AI agents. Different organizations are in different stages. Some people are in heavy growth mode, so the AI agent is more of an amplification of what they currently do. There's no one that's replacing per se, but it's making their operation much faster and much less operationally intensive for them to grow. If they grew 5x in the last year, maybe they don't need to 5x their support team. That's one thing that we see."
+    },
+    {
+      "speaker": null,
+      "text": "Other organizations that we talk to are more focused on the quality of experience. Maybe they just don't care about cost. They're not replacing anyone. They're more just like, okay, we think that having an AI agent here will make the customers a lot happier with us because they can get answers instantly. They can get what they wanted within a few seconds rather than waiting on hold. That's what we're seeing."
+    },
+    {
+      "speaker": null,
+      "text": "And there is also a third category of company where maybe they're just in cost-saving mode. So what they're using AI for is making their operations more efficient and either reassigning those folks to other jobs or more realistically sometimes they're using outsourced agencies and they can downsize those. So those are the three categories of companies and we're seeing a pretty good diversity between those."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, because I feel like when we're talking about jobs that might get eliminated by AI, we talk about customer support roles first. It's interesting to hear that when we talk about mental health, like if there is a therapist on your phone, it doesn't mean it's replacing therapists. It's just making therapy more accessible for everyone. But in your industry you said you're seeing some of the companies actually laying off agencies that they're using, right? What do you feel like the percentage of those companies is?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "I mean, within those categories that I listed, maybe one third, one third, one third."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, so it is happening and you see it."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, and I think the agencies themselves are also just shifting to new things, right? So let's say you operate a big call center with a lot of folks. I don't think it's a matter of like, oh crap, there's not stuff for us to do anymore. There's just other things. Instead of handling tier one types of conversations like book a room for me, you're more involved in kind of building relationships with the client and handling more like tier two, tier three complex interactions. And then there are other things that emerge, right? So a big thing nowadays is collecting data for the AI or having people review the AI. I think it's just kind of the nature of the job changes, and that's pretty much what happens every single time there's a big technology shift."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I think a lot of you guys are listening to this and thinking, yeah, clearly he has a computer science background. He's built this company and AI is definitely helping him improve his life because he is building something that's changing the world. But how do I actually use AI in my own business since I can't code? And what do you think is going to happen to entry-level jobs? I just saw these stats where there were 30% more applications for entry-level jobs this year and 15% less spots in the companies. What do you think is going to happen?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, I think the types of things that people end up doing now are going to be different, just enabled by AI, right? So if you even think about software engineering, which is one of the most popular jobs in the last decade or so, we have a lot of software engineers and there's no way we will slow down our hiring of software engineers anytime soon because the amount of software that you need to build is kind of uncapped. It's more likely growing, I feel like."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Exactly, right. Like the more people you have, the faster you can get there almost. So it's not necessarily like there are fewer jobs, but the nature changes, right? So now pretty much every single one of our engineers is heavily using AI in their job and it's one of those things where it's hard to quantify exactly what the impact is. One, because we started the company after that technology was there, so we've always had that technology. But even if you compared someone just coding by themselves versus with an AI agent, obviously you can feel that the AI makes them faster and more productive, but it's hard to measure the impact."
+    },
+    {
+      "speaker": null,
+      "text": "What are your top three tools to build an AI agent for someone who's nontechnical?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "I don't really have strong thoughts on those. I can tell you what we use as a company. On the coding side, we have classic Cursor, Claude Code, companies like that. Lovable is quite impressive in terms of prototyping and building things out. On the non-engineering side, folks use things like notetakers and ChatGPT in and of itself is quite useful just for researching and making people more well equipped on the go-to-market side, for example. So those are the tools."
+    },
+    {
+      "speaker": null,
+      "text": "In terms of building AI agents, I don't think like the typical person will build their own agent per se. I mean, you can build a simple one with ChatGPT for example, but most of our employee base I would say are kind of using tools to amplify themselves instead of like creating their own agents."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So do you feel like smaller businesses in two or three years, if they want an AI agent, they would go to a company like yours or you still will be working with larger corporations because this is something that's a heavier lift for small businesses?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, interesting. I would say that currently our focus is on large organizations. There's a bunch of reasons for that. One is that they have the scale. If you think about the number of customer inquiries that they get or the number of customer service requests or customer service agents that they have, it's just way larger than anything else. So it makes sense for us to work with these companies."
+    },
+    {
+      "speaker": null,
+      "text": "Another reason is that AI agents are still generally in their infancy. There's still a lot of figuring out to be done, and because of that the product's going through a ton of iteration. It makes a lot of sense to iterate side by side with these larger corporations because you can build around them. Then the ideal path is once the product is mature enough, maybe then you can start productizing it for smaller clients. But because the clients are smaller, you don't actually have the time or capacity to really spend time building around them, so you have to have something that's more productized."
+    },
+    {
+      "speaker": null,
+      "text": "I think that's the ideal progression for AI agents. If you can work with the largest corporations, work with them closely and refine the product and really figure out what needs to be in there and craft the agent, then you can productize it more for the smaller folks."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you're automating customer support for others, but inside your company what are the processes that used to exist that do not exist now because they're fully automated?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "The thing that comes mostly to mind is doing research. So let's say you are looking into a new space and trying to figure out what the best fits are for Decagon or you're trying to understand a specific company's history so you can have a good understanding with them. When you talk to them, you can have empathy and the right context. Normally people would have to spend a good amount of time googling stuff and putting together notes or watching videos. But if you use deep research or one of the AI agents to do the research for you, you can get it done within a few minutes. Then there are sources as well, so you can validate stuff. It makes things much easier."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, absolutely. How many people do you have now on the team?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "We are a little less than 200. We're still less than 200."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Less than 200. Have you ever gone from more people to less people in the past few years?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "No, but we've only been around for two years."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "So you're only growing. Do you see hiring more people in the future?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Oh, of course. Yeah, we're hiring super fast right now and it's one of the bottlenecks I would say for the business is we need more people."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you think it's possible to build a company these days without being technical if you want to build in an AI space? Because you know, we're talking about Lovable that lets you deploy faster and come up with MVPs. We're talking about tools that let you build AI agents with just a block scheme. Do you think you still have to be technical to build a billion dollar company or you can be one person with a good idea and a bunch of tools, building something that's going to help the market?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "I don't think you have to be technical, but I think being technical helps a lot because you just have better intuition and you understand the inner workings a little bit more, so you can make better decisions faster. But yeah, even now, even without AI, you don't have to be technical. It's just very helpful. If you have the time and the interest, like why not learn it?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, it's just maybe for people who are like they don't see themselves as coders necessarily, but they feel like they're missing out on this huge era of change because they don't understand what's going on."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, I mean, for people with nontechnical backgrounds that want to get into it, I think right now is a golden time. You can do a lot more than you did before. I mean, that's part of the reason why a lot of these coding tools are getting so much exposure is that there's just like a much larger audience now. Instead of being someone super technical, you can be semi-technical or not technical at all and now you have a great opportunity to build your own things."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I love that. Can you give advice to people who are watching who are graduating from college? Because you went straight to starting a company. It was another company, but have you ever had the thought of like, no, I should go work for a company first, get some experience? Why did you decide to go straight into business?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, I mean, I thought about this a lot because we've also recruited a lot of people out of college that were also considering building their own thing. And I think my general sense is if you feel ready and you feel a lot of energy and conviction in doing your own thing, then go for it. You know, it's going to be quite tough. I would say for me it was very tough right out of college just because you don't have enough intuition around things. But if you feel ready for that and you're okay with it being tough and kind of just trudging through it, then yeah, just do it. I think we love seeing people that are just like having the confidence and can just go for it."
+    },
+    {
+      "speaker": null,
+      "text": "On the flip side, the reason to work somewhere would be to gain experience and gain that intuition. So if you do choose to work at a startup, my thesis is like if you work at a startup, you ideally choose one that's post product-market fit because otherwise you don't learn that much. If you're pre-product-market fit, you're kind of building stuff but maybe you'll learn some technical skills. You don't really learn that much around like what you should look for in a company and like what good looks like."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Okay, so you join a post-PMF company, maybe it just hit PMF and things are inflecting and things are really working. Yeah, that could be really helpful because you gain a lot of intuition around how to work with people, what types of profiles you need. You gain a lot of intuition around how to approach customers, how to work with customers, what's the right dynamic to have with your customers, how to build products and how to build product at scale that doesn't break all the time. So that's the benefit of actually doing the second route. But yeah, if you have energy, then there's definitely nothing wrong with just learning as you go."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Okay. If you were brutally honest, what do you think are the jobs that have the highest risk of extinction in the next five years?"
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "I mean, it's hard to say at a very high level, but I would say jobs where there is just kind of like straight up output. Let's say right now, what AI is really good at is writing, you know, marketing materials. And if the job is just writing marketing materials, then I think those jobs are kind of hard to justify. What will happen, I think, is that those jobs will evolve."
+    },
+    {
+      "speaker": null,
+      "text": "People often talk about what jobs AI is eliminating because it's kind of easy to see like, oh well AI can do this, that means we don't need humans anymore. But that's true of any technology. Any technology that's good at something, you don't really need humans to do that thing. So what the job becomes is like humans kind of guiding that technology. Yeah, I mean classic example is writing marketing materials or just like writing stuff in general."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Do you have that person on your team or is it like a marketer?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, we have a marketing team and they use AI, right? But there's no sort of need anymore for someone that just writes. You have someone who controls the AI that writes the copy, right? Same with what we're doing. When we think about customer service or customer experience, you don't necessarily need people to handle the \"how do I reset my password\" type questions. You can have people that either can work on the higher level, harder questions or kind of manage the AI that solves those questions."
+    },
+    {
+      "speaker": null,
+      "text": "For us, what we're seeing with a lot of our customers is that people kind of grow into new roles that are much more exciting. So there's now this concept of like a conversation architect or AI architect, and their whole job is to use Decagon to design the way that their AI should behave. That requires a little bit of a different skill set. You have to be fairly good at reasoning. You have to be fairly good at communicating because that's how you communicate to the AI about how to answer something."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And they were customer support before? Those people?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, so before they were kind of managers, CX managers, or they were in charge of their original knowledge base or they were in charge of the old school chatbots and so their roles have evolved as well, right? A big part of Decagon is enabling those people. We have a big focus on customer enablement. We have a program that we call Decagon University that uplevels them into the new AI age."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And the benefit is that now you kind of get these folks that were very interested in this, but we've kind of given them a much smoother path to figure out like, okay, here's how you build intuition around AI. Here's how you use them. And now they're much more effective at their jobs because they're now in charge of AI and designing it and leveraging it and reviewing the answers and figuring out how to make it better. So Jesse's an employer, right? He's hiring people in today's AI world."
+    },
+    {
+      "speaker": null,
+      "text": "And again, we've seen the stats. AI is replacing people, no more jobs, blah blah blah. But he's still hiring. His company's growing. He needs more high-skilled workers. The question I want to ask him is what do employers like him look for in candidates in today's market? What skills are critical? How do you stand out?"
+    },
+    {
+      "speaker": null,
+      "text": "Let's dive into what it really takes to be a part of a high-growth startup. And when you interview people for a company, can you name some skills that you're looking for? Not necessarily technical, but maybe like their personal traits that will help them transition from just being customer support to, you know, manager of AI?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, so I mean one, you have to be fairly analytical because you have to be able to break something down into steps. So a big part of the folks that are using Decagon is like, oh, I saw this conversation that could have been better. How do I figure out how to update the AI so that it can answer these conversations better in the future? That involves breaking down the conversation. We have a lot of tooling that helps them like, okay, this message here, here's how the AI got this message, here's the reasoning, here's the step that it took, here's the knowledge that it used. And so someone who can actually clearly think through that is going to be very effective at this."
+    },
+    {
+      "speaker": null,
+      "text": "The other trait I would say is around communication. In the same way that we communicate with coworkers now, in the future, you have these AI agents. One of the areas that we've pioneered is like how do you communicate with AI agents to teach it new things? And the way we do it at Decagon is through natural language like plain English. So someone who is really good at communicating can write down instructions essentially for the AI to follow in a very nice way, whereas someone who's potentially less good at communicating, they might write it down but then the AI could get confused because two of the steps contradict with each other or something. So I would put that into the communication skills. It's kind of like analytical and communication skills."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, love it. You've been doing this for two years. How did you initially find the problem and what made you stick to it? Because there are so many problems that could be solved with AI."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "We found the problem mostly through talking to customers. Our whole approach to building product and figuring out what to do is to be super tight with our customers. So you had your co-founders, you were like, let's start something. The first thing you were going to do is just talk to customers, right?"
+    },
+    {
+      "speaker": null,
+      "text": "So Ashwin, my co-founder, and I, we had both started companies before and we had reasonable outcomes, but they were all kind of like up and down rides. A lot of the reasons to have downs in a startup's journey, especially in the early days, is that you are building something and working really hard, but then you realize that there's no market for it or customers don't really care that much about it or they won't pay for it. So I think we just became a lot better at that process and talking to customers and really figuring out like what is the ground truth behind what they actually care about. In this case, it was conversational AI customer service. People have tons of people on their team or they outsource to an agency doing this, and they see a lot of opportunity. The nice part about what we're building is that it's very quantifiable, right? You can measure how well you're doing. You can see what the impact is on your business."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "You're talking to specifically B2B, right? Straight away, because like it's not like you were talking to a lot of different people to figure it out."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "We were mostly talking to large businesses, yeah."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Because you wanted to go to B2B, right?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, I mean, that was a conscious decision. My first company was a B2C company and wanted to try something different. Also, I think it is much easier to reason through B2B. B2C there's a lot more intuition based. You know, you run experiments."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "And I feel like fundraising and everything is just the predictability of a business with B2B is way better."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, for sure. Way easier."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Thank you. Can you give one piece of advice to everyone who's watching and wants to start a company in AI?"
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Well, one is that you kind of have to find your own way because one of the things that I believe in is that it's actually super easy to overindex on what other people have done, and that might not work for you because other people have different strengths and different circumstances as well, and those might not be obvious by the way when you first hear about it. So when you're young, you have a tendency to read these articles or podcasts or whatever about other founders and think, \"Okay, I'm just going to do that because that's what worked.\" But different people have different strengths, right? Like Ashwin and I have different strengths compared to other founders, but also with each other. So you have to figure out what works for you. That's probably the big thing is like don't overindex on what you hear and just try to introspect and figure out what you're good at."
+    },
+    {
+      "speaker": null,
+      "text": "I mean, you can learn from other people's stories as well. Our story, I think the probably the biggest takeaway is that you have to spend the first stage of your company-building journey gathering as much signal as possible. Everything is about really getting signal on what to build and what's useful. In B2B stuff, the purest signal is like, are you getting revenue? Are people paying you? Because if they're not, then is what you're doing actually useful? I mean, that's not necessarily the case, but you just want to get as much signal as possible. I think that was our learning basically."
+    },
+    {
+      "speaker": null,
+      "text": "For other people that are building B2B, I would probably suggest again, you know, figure out your own path, but I would suggest that you should not really try to build stuff first at all. You should just spend time talking to customers. And not just talking to them. You should really figure out like a game plan for how you take a conversation with a customer and really go deep into what they're willing to pay for, how they think about ROI, how they make decisions. And once you have enough data points there, then you can actually figure out what is the right thing to build."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Did you actually ask them to pay when you were having those conversations with customers? So like, if we're going to build this, or did you ask them to submit their card without having a product? Oh, no. I don't think people would pay."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Well, sometimes they would. Like you put them on the wait list."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Yeah, maybe. I mean, so that is like one type of signal, but you want to..."
+    },
+    {
+      "speaker": "Jesse Zhang",
+      "text": "Yeah, if somebody's like, \"Holy crap, I need this so badly. I'll just pay you right now.\" Yeah, that would be nice. I think there's no way that'll happen for a sizable deal. That's just not how companies make decisions. But yeah, if you can at least get them to commit to like, hey, if you deliver this, this would be worth this much to us and actually assign a number to it, that's like kind of step one, right? And step two, you kind of get into, all right, well, how are you justifying that? Like who needs to make the call? Like whose budget is it coming out of? It's kind of classic discovery."
+    },
+    {
+      "speaker": null,
+      "text": "So I think that's why early-stage founding is like so much like sales. There's so many parallels. Sales is mostly just about like, can you relate to the customer? Can you truly put yourself in their shoes and understand how they make decisions? What's important? What are the trade-offs? How am I viewing these vendors I'm talking to? And if you can do that well, then I mean, yeah, in my opinion, that's what generally makes a good salesperson. That's what makes a good founder as well."
+    },
+    {
+      "speaker": "Marina Mogilko",
+      "text": "Love it. So my key takeaways: learn how to sell, learn how to code, learn how to communicate with people and with AI. Love that. Thank you so much, Jesse. I think it was very informational for everyone who's starting a business."
+    }
+  ],
+  "relatedVideos": [
+    {
+      "videoId": "ELuBhd-PgDg",
+      "thumbnail": "https://img.youtube.com/vi/ELuBhd-PgDg/hqdefault.jpg",
+      "title": "9 AI Skills That Will Make You Rich in 2026"
+    },
+    {
+      "videoId": "Q66gsBJnKKQ",
+      "thumbnail": "https://img.youtube.com/vi/Q66gsBJnKKQ/hqdefault.jpg",
+      "title": "Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger"
+    },
+    {
+      "videoId": "YfRkj9kmQf0",
+      "thumbnail": "https://img.youtube.com/vi/YfRkj9kmQf0/hqdefault.jpg",
+      "title": "Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller"
+    },
+    {
+      "videoId": "Y4Jxbet2RK8",
+      "thumbnail": "https://img.youtube.com/vi/Y4Jxbet2RK8/hqdefault.jpg",
+      "title": "6 habits that made me a multi-millionaire"
+    }
+  ],
+  "topics": []
+}
