@@ -5,7 +5,8 @@ const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_C
 const { TOPICS, FIELDS } = require("./lib/contact-fields");
 const { esc, jsonForScript } = require("./lib/html");
 const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
-const { renderAboutPage, renderNewsletterPage, renderLegalPage } = require("./lib/pages");
+const { renderAboutPage, renderNewsletterPage, renderLegalPage, episodeFor } = require("./lib/pages");
+const { FORMAT_LABEL } = require("./lib/cards");
 const { SITE_URL, IDS } = require("./lib/site");
 const { countsFor, formatCount } = require("./lib/audience");
 const { renderTopicPage, renderTopicsIndex, episodesFor } = require("./lib/render-topics");
@@ -766,6 +767,36 @@ function renderHomePage(episodes, site = null) {
     .join("\n");
   const moreCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
 
+  // Six guests, each linking to their interview (the thumbnail stands in for
+  // a portrait until there are portraits), and four of Marina's own videos
+  // with the format on the card. Both come from the data; both are left out
+  // when the site facts are not supplied (unit renders).
+  const guestRow = site && site.featuredGuests
+    ? site.featuredGuests
+        .map((name) => ({ name, ep: episodeFor(name, episodes) }))
+        .filter((g) => g.ep)
+        .slice(0, 6)
+    : [];
+  const guestsHtml = guestRow.map(({ name, ep }) => `
+          <a href="/episode/${ep.videoId}/" class="guest-tile">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(name)} on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">${esc(name)}</span>
+            <span class="guest-role">${esc(ep.guestTitle || "")}</span>
+          </a>`).join("");
+  const practical = site
+    ? episodes.filter((e) => (e.format === "solo" || e.format === "compilation") && !shown.has(e.videoId)).slice(0, 4)
+    : [];
+  const practicalHtml = practical.map((ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">${esc(ep.duration)} <span class="ep-format">${FORMAT_LABEL[ep.format]}</span></p>
+              <h3 class="ep-card-title">${esc(ep.title)}</h3>
+            </div>
+          </a>`).join("");
+  const counts = site && site.counts && site.counts.items.length ? site.counts : null;
+  const positioning = site && site.person ? site.person.positioning : "";
+
   // A portrait of Marina if one has been dropped into public/ under any of
   // these names; otherwise two recent stills, so a missing file degrades to
   // something reasonable instead of a broken image.
@@ -981,6 +1012,25 @@ function renderHomePage(episodes, site = null) {
       text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
     }
 
+    .host-positioning { font-size: 1.15rem; line-height: 1.5; max-width: 44rem; margin-bottom: 1rem; }
+    .host-more { margin-top: 2rem; }
+    .btn-ghost { border: 2px solid var(--ground); color: var(--ground); background: transparent; }
+    .btn-ghost:hover { background: var(--ground); color: var(--ink); }
+
+    /* ---- Guests and practical rows ---- */
+    .guests, .practical { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .section-dek { max-width: 40rem; margin: -1rem 0 1.8rem; color: rgba(23, 21, 17, 0.7); }
+    .guest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.4rem 1.2rem; }
+    .guest-tile { text-decoration: none; display: block; }
+    .guest-tile img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 0.6rem; }
+    .guest-name { display: block; font-family: var(--display); font-size: 1.25rem; line-height: 1; text-transform: uppercase; }
+    .guest-tile:hover .guest-name { color: var(--accent); }
+    .guest-role { display: block; font-size: 0.78rem; color: rgba(23, 21, 17, 0.65); margin-top: 0.3rem; line-height: 1.35; }
+    .ep-format {
+      display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+      border: 1px solid var(--rule); color: rgba(23, 21, 17, 0.6); letter-spacing: 0.08em;
+    }
+
     /* ---- Partnerships ---- */
     .partnerships { padding: clamp(2.5rem, 5vw, 3.5rem) 0; border-bottom: 1px solid var(--rule); }
     .partnerships-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem; }
@@ -1146,6 +1196,30 @@ ${archiveHtml}
     </div>
   </section>
 
+${guestRow.length ? `
+  <section id="guests" class="guests">
+    <div class="wrap">
+      <div class="archive-head">
+        <h2 class="section-title">Guests on the show</h2>
+        <a class="btn-text archive-more" href="/about/#guests">Who else has been on &rarr;</a>
+      </div>
+      <div class="guest-grid">${guestsHtml}
+      </div>
+    </div>
+  </section>
+` : ""}${practical.length ? `
+  <section id="practical" class="practical">
+    <div class="wrap">
+      <div class="archive-head">
+        <h2 class="section-title">Practical AI with Marina</h2>
+        <a class="btn-text archive-more" href="/topics/ai-tools-and-workflows/">More how-to episodes &rarr;</a>
+      </div>
+      <p class="section-dek">Solo episodes and compilations: one tool, one idea or one career move, in about twenty minutes.</p>
+      <div class="archive-grid">${practicalHtml}
+      </div>
+    </div>
+  </section>
+` : ""}
   <section id="host" class="host">
     <div class="wrap">
       <h2 class="section-title">Meet the host</h2>
@@ -1155,12 +1229,14 @@ ${archiveHtml}
         </div>
         <div>
           <h3 class="host-name">Marina Mogilko</h3>
-          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          ${positioning ? `<p class="host-positioning">${esc(positioning)}</p>` : ""}
+          <p class="host-bio">For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
           <div class="host-stats">
             <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
-            <div><span class="stat-value">${audienceTotal || "Millions"}</span><span class="stat-label">Following along</span></div>
-            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+            <div><span class="stat-value">${audienceTotal || "Millions"}</span><span class="stat-label">Following along${counts ? ` &middot; ${esc(counts.updatedAt)}` : ""}</span></div>
+            <div><span class="stat-value">${episodes.length}</span><span class="stat-label">Episodes with transcripts</span></div>
           </div>
+          <a class="btn btn-ghost host-more" href="/about/">About Marina, speaking and press &rarr;</a>
         </div>
       </div>
     </div>

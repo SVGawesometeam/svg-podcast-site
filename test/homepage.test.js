@@ -212,3 +212,49 @@ test('the host photo reference resolves to a real file, case included', () => {
       `identical on macOS, a 404 on Linux`
   );
 });
+
+// Release 6 homepage additions. They need the site facts (guests, counts,
+// positioning), so they render only when the facts are passed in.
+const SITE = {
+  person: { positioning: 'Silicon Valley Girl is a woman-hosted AI, tech and career podcast.' },
+  featuredGuests: ['Shishir Mehrotra', 'Andrew Ng', 'Nobody Here', 'Sal Khan'],
+  counts: { updatedAt: '2026-10-08', items: [{ label: 'followers across all channels', value: '18.3M+' }] },
+  audience: { total: 18358261 },
+  topics: [{ slug: 'future-of-work', name: 'Future of work' }],
+};
+const MORE = [
+  ...EPISODES,
+  { videoId: 'ddd', title: 'Solo: 9 AI Skills', thumbnail: 'https://i.ytimg.com/vi/ddd/hq.jpg', publishedAt: '2026-07-01T17:00:00.000Z', guestName: 'Marina Mogilko', guestTitle: 'Host', duration: '20 MIN', format: 'solo' },
+  { videoId: 'eee', title: 'Interview E', thumbnail: 'https://i.ytimg.com/vi/eee/hq.jpg', publishedAt: '2026-06-01T17:00:00.000Z', guestName: 'E Guest', guestTitle: 'CEO, E', duration: '30 MIN', format: 'interview' },
+].map((e) => ({ format: e.videoId === 'ccc' ? 'compilation' : 'interview', ...e }));
+
+test('the guests row shows featured guests with their role, linking to their interview', () => {
+  const html = renderHomePage(MORE, SITE);
+  assert.match(html, /<h2 class="section-title">Guests on the show<\/h2>/);
+  assert.ok(html.includes('<a href="/episode/aaa/" class="guest-tile">'));
+  assert.ok(html.includes('<span class="guest-name">Shishir Mehrotra</span>'));
+  assert.ok(html.includes('<span class="guest-role">CEO, Superhuman</span>'));
+  assert.ok(html.includes('<a href="/episode/bbb/" class="guest-tile">'), 'Andrew Ng links his interview, not the compilation');
+  assert.ok(!html.includes('Nobody Here'), 'a guest without an episode is left out');
+  assert.ok(html.includes('href="/about/#guests"'));
+  assert.ok(!renderHomePage(MORE).includes('Guests on the show'), 'no row without the site facts');
+});
+
+test('the practical row shows only solo and compilation episodes, labelled, and not the ones already on the page', () => {
+  const html = renderHomePage(MORE, SITE);
+  const section = html.slice(html.indexOf('id="practical"'), html.indexOf('id="host"'));
+  assert.ok(section.includes('/episode/ddd/') && section.includes('/episode/ccc/'));
+  assert.ok(!section.includes('/episode/eee/') && !section.includes('/episode/bbb/'), 'interviews do not belong here');
+  assert.match(section, /<span class="ep-format">Solo<\/span>/);
+  assert.match(section, /<span class="ep-format">Compilation<\/span>/);
+  assert.ok(section.includes('href="/topics/ai-tools-and-workflows/"'));
+});
+
+test('the host block carries the positioning line, the dated count, the episode count and the About link', () => {
+  const html = renderHomePage(MORE, SITE);
+  assert.ok(html.includes('<p class="host-positioning">Silicon Valley Girl is a woman-hosted AI, tech and career podcast.</p>'));
+  assert.match(html, /<span class="stat-value">18.3M\+<\/span><span class="stat-label">Following along &middot; 2026-10-08<\/span>/);
+  assert.match(html, /<span class="stat-value">5<\/span><span class="stat-label">Episodes with transcripts<\/span>/);
+  assert.ok(html.includes('href="/about/"'));
+  assert.ok(!html.includes('<span class="stat-value">SF</span>'));
+});

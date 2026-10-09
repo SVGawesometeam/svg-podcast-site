@@ -364,6 +364,25 @@
       text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
     }
 
+    .host-positioning { font-size: 1.15rem; line-height: 1.5; max-width: 44rem; margin-bottom: 1rem; }
+    .host-more { margin-top: 2rem; }
+    .btn-ghost { border: 2px solid var(--ground); color: var(--ground); background: transparent; }
+    .btn-ghost:hover { background: var(--ground); color: var(--ink); }
+
+    /* ---- Guests and practical rows ---- */
+    .guests, .practical { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .section-dek { max-width: 40rem; margin: -1rem 0 1.8rem; color: rgba(23, 21, 17, 0.7); }
+    .guest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.4rem 1.2rem; }
+    .guest-tile { text-decoration: none; display: block; }
+    .guest-tile img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 0.6rem; }
+    .guest-name { display: block; font-family: var(--display); font-size: 1.25rem; line-height: 1; text-transform: uppercase; }
+    .guest-tile:hover .guest-name { color: var(--accent); }
+    .guest-role { display: block; font-size: 0.78rem; color: rgba(23, 21, 17, 0.65); margin-top: 0.3rem; line-height: 1.35; }
+    .ep-format {
+      display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+      border: 1px solid var(--rule); color: rgba(23, 21, 17, 0.6); letter-spacing: 0.08em;
+    }
+
     /* ---- Partnerships ---- */
     .partnerships { padding: clamp(2.5rem, 5vw, 3.5rem) 0; border-bottom: 1px solid var(--rule); }
     .partnerships-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem; }
@@ -607,6 +626,88 @@
     </div>
   </section>
 
+
+  <section id="guests" class="guests">
+    <div class="wrap">
+      <div class="archive-head">
+        <h2 class="section-title">Guests on the show</h2>
+        <a class="btn-text archive-more" href="/about/#guests">Who else has been on &rarr;</a>
+      </div>
+      <div class="guest-grid">
+          <a href="/episode/S0h5oUVv0BY/" class="guest-tile">
+            <img src="https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg" alt="Reid Hoffman on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">Reid Hoffman</span>
+            <span class="guest-role">Co-founder of LinkedIn, Partner at Greylock Partners</span>
+          </a>
+          <a href="/episode/iJlyNupMOzA/" class="guest-tile">
+            <img src="https://img.youtube.com/vi/iJlyNupMOzA/maxresdefault.jpg" alt="Brian Chesky on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">Brian Chesky</span>
+            <span class="guest-role">Co-founder and CEO of Airbnb</span>
+          </a>
+          <a href="/episode/qy8Gr27yLMk/" class="guest-tile">
+            <img src="https://img.youtube.com/vi/qy8Gr27yLMk/maxresdefault.jpg" alt="Greg Brockman on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">Greg Brockman</span>
+            <span class="guest-role">Co-Founder of OpenAI · Former CTO at Stripe</span>
+          </a>
+          <a href="/episode/SP76PvgMzVU/" class="guest-tile">
+            <img src="https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg" alt="Mustafa Suleyman on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">Mustafa Suleyman</span>
+            <span class="guest-role">CEO of Microsoft AI, Co-founder of DeepMind</span>
+          </a>
+          <a href="/episode/EuaVTPB8dxc/" class="guest-tile">
+            <img src="https://img.youtube.com/vi/EuaVTPB8dxc/maxresdefault.jpg" alt="Mary Barra on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">Mary Barra</span>
+            <span class="guest-role">CEO, General Motors</span>
+          </a>
+          <a href="/episode/o-wv_szZ0V0/" class="guest-tile">
+            <img src="https://img.youtube.com/vi/o-wv_szZ0V0/maxresdefault.jpg" alt="Andrew Ng on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
+            <span class="guest-name">Andrew Ng</span>
+            <span class="guest-role">Co-founder of Coursera · Founder of Google Brain · AI educator</span>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="practical" class="practical">
+    <div class="wrap">
+      <div class="archive-head">
+        <h2 class="section-title">Practical AI with Marina</h2>
+        <a class="btn-text archive-more" href="/topics/ai-tools-and-workflows/">More how-to episodes &rarr;</a>
+      </div>
+      <p class="section-dek">Solo episodes and compilations: one tool, one idea or one career move, in about twenty minutes.</p>
+      <div class="archive-grid">
+          <a href="/episode/ael24TrS0ws/" class="ep-card">
+            <img src="https://img.youtube.com/vi/ael24TrS0ws/maxresdefault.jpg" alt="TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">21 MIN <span class="ep-format">Solo</span></p>
+              <h3 class="ep-card-title">TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)</h3>
+            </div>
+          </a>
+          <a href="/episode/cVGHg4Vd9uM/" class="ep-card">
+            <img src="https://img.youtube.com/vi/cVGHg4Vd9uM/maxresdefault.jpg" alt="The Biggest AI Opportunities Are Hiding in Boring Businesses" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">24 MIN <span class="ep-format">Compilation</span></p>
+              <h3 class="ep-card-title">The Biggest AI Opportunities Are Hiding in Boring Businesses</h3>
+            </div>
+          </a>
+          <a href="/episode/213rSCulKUQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg" alt="Top 1% Career Strategy: How to Get Hired in the AI Era" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">23 MIN <span class="ep-format">Compilation</span></p>
+              <h3 class="ep-card-title">Top 1% Career Strategy: How to Get Hired in the AI Era</h3>
+            </div>
+          </a>
+          <a href="/episode/Y854KRfONAU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Y854KRfONAU/maxresdefault.jpg" alt="The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">23 MIN <span class="ep-format">Compilation</span></p>
+              <h3 class="ep-card-title">The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up</h3>
+            </div>
+          </a>
+      </div>
+    </div>
+  </section>
+
   <section id="host" class="host">
     <div class="wrap">
       <h2 class="section-title">Meet the host</h2>
@@ -616,12 +717,14 @@
         </div>
         <div>
           <h3 class="host-name">Marina Mogilko</h3>
-          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          <p class="host-positioning">Silicon Valley Girl is a woman-hosted AI, tech and career podcast. Marina Mogilko interviews the founders, researchers and executives building AI, and brings back the part you can use this week.</p>
+          <p class="host-bio">For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
           <div class="host-stats">
             <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
-            <div><span class="stat-value">18.3M+</span><span class="stat-label">Following along</span></div>
-            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+            <div><span class="stat-value">18.3M+</span><span class="stat-label">Following along &middot; 2026-10-08</span></div>
+            <div><span class="stat-value">123</span><span class="stat-label">Episodes with transcripts</span></div>
           </div>
+          <a class="btn btn-ghost host-more" href="/about/">About Marina, speaking and press &rarr;</a>
         </div>
       </div>
     </div>
