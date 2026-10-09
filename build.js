@@ -7,6 +7,7 @@ const { esc, jsonForScript } = require("./lib/html");
 const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
 const { renderAboutPage, renderNewsletterPage, renderLegalPage } = require("./lib/pages");
 const { SITE_URL, IDS } = require("./lib/site");
+const { countsFor, formatCount } = require("./lib/audience");
 const {
   fromApi,
   validate,
@@ -27,12 +28,18 @@ const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 // reaches all pages and a page is never edited by hand. Hand corrections go
 // into the JSON (and their reasons into transcript-fixes/<id>.json).
 const SITE_FILE = path.join(__dirname, "content", "site.json");
+const AUDIENCE_FILE = path.join(__dirname, "content", "audience.json");
 const LEGAL_DIR = path.join(__dirname, "content", "legal");
 
 // Facts about Marina and the show; see content/site.json for what is in it
 // and where it comes from. /about/, llms.txt and the JSON-LD all read this.
+// The audience counts come from content/audience.json, written weekly by
+// the dashboard job, and are never typed into site.json.
 function readSite() {
-  return JSON.parse(fs.readFileSync(SITE_FILE, "utf8"));
+  const site = JSON.parse(fs.readFileSync(SITE_FILE, "utf8"));
+  site.audience = fs.existsSync(AUDIENCE_FILE) ? JSON.parse(fs.readFileSync(AUDIENCE_FILE, "utf8")) : null;
+  site.counts = countsFor(site.audience);
+  return site;
 }
 
 function dataFile(videoId) {
@@ -106,7 +113,12 @@ async function build() {
       d = readEpisodeData(videoId);
     } else {
       // No reviewed data yet: import a draft from the backend and write it.
-      // The draft is what the producer reviews before it is committed.
+      // The draft is what the producer reviews before it is committed. That
+      // review happens on a person's machine; a build on CI (the weekly
+      // audience job commits public/ to main) must never publish a draft.
+      if (process.env.CI) {
+        throw new Error(`${videoId} has no content/episodes/${videoId}.json; a CI build does not import drafts`);
+      }
       console.log(`[${i + 1}/${videoIds.length}] Importing ${videoId} from the backend...`);
       try {
         const ep = await fetchEpisode(videoId);
@@ -159,7 +171,8 @@ async function build() {
 
   allEpisodes.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes));
+  const site = readSite();
+  fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes, site));
   console.log("Written public/index.html");
 
   const episodesDir = path.join(PUBLIC_DIR, "episodes");
@@ -167,7 +180,6 @@ async function build() {
   fs.writeFileSync(path.join(episodesDir, "index.html"), renderEpisodesPage(allEpisodes));
   console.log("Written public/episodes/index.html");
 
-  const site = readSite();
   const staticPages = {
     "about": renderAboutPage(site, allEpisodes),
     "newsletter": renderNewsletterPage(site),
@@ -189,6 +201,9 @@ async function build() {
   writeLlmsTxt(allEpisodes, site);
 
   console.log(`\nImported: ${imported}  Rendered: ${rendered}  Failed: ${failed}  Total: ${allEpisodes.length}`);
+  if (failed && process.env.CI) {
+    throw new Error(`${failed} episode(s) failed to build; a CI build does not publish a site with pages missing`);
+  }
 }
 
 // lastmod has to mean "the page changed", not "the episode came out", or every
@@ -319,7 +334,9 @@ const LLMS_ABOUT_HEADING = "## About Marina Mogilko";
 function renderLlmsAboutSection(site) {
   const lines = (site.facts || []).map((f) => `- ${f.text}${f.source ? ` (source: ${f.source})` : ""}`);
   const counts = site.counts && site.counts.items ? site.counts.items : [];
-  for (const c of counts) lines.push(`- ${c.label}: ${c.value} (as of ${site.counts.updatedAt})`);
+  if (counts.length) {
+    lines.push(`- Audience (as of ${site.counts.updatedAt}, rounded down, audiences overlap): ${counts.map((c) => `${c.value} ${c.label}`).join("; ")}`);
+  }
   lines.push(`- Based in ${site.person.location}`);
   lines.push(`- Full profile, speaking and press: ${SITE_URL}/about/`);
   return [LLMS_ABOUT_HEADING, ...lines, "", ""].join("\n");
@@ -603,7 +620,8 @@ function homeJsonLd() {
   };
 }
 
-function renderHomePage(episodes) {
+function renderHomePage(episodes, site = null) {
+  const audienceTotal = site && site.audience ? formatCount(site.audience.total) : "";
   const newest = episodes[0];
   const pinned = FEATURED_VIDEO_ID
     ? episodes.find((e) => e.videoId === FEATURED_VIDEO_ID)
@@ -1018,7 +1036,7 @@ ${archiveHtml}
           <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
           <div class="host-stats">
             <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
-            <div><span class="stat-value">Millions</span><span class="stat-label">Following along</span></div>
+            <div><span class="stat-value">${audienceTotal || "Millions"}</span><span class="stat-label">Following along</span></div>
             <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
           </div>
         </div>

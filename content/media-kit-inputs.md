@@ -39,7 +39,7 @@ conference, San Francisco (date?).
 - Audience demographics (age bands, gender, top countries, US share) with period and platform.
 - The formats actually sold (podcast integration, YouTube integration, short-form video, newsletter
   placement, speaking, packages) and whether to show price ranges.
-- Follower counts with month (see `about-inputs.md`, section 2, same numbers).
+- Follower counts: come from `content/audience.json`, written weekly by the dashboard job (see `about-inputs.md`, section 2); the media kit will read the same file.
 - The Tilda page export: text and images, so nothing is lost when the subdomain is redirected.
 - The list of Tilda URLs (its sitemap), for the redirect map.
 - Who changes the DNS for partnerships.marinamogilko.co when the new page is approved.

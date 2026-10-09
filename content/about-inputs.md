@@ -21,17 +21,19 @@ Confirmed by the team on 2026-10-08 (everything on the media kit page). Publishe
 - Co-founded LinguaTrip (year?). Source:
 - Based in Los Altos, California (or "Silicon Valley" only?): **published as "Silicon Valley, California" until told otherwise.**
 
-## 2. Numbers
+## 2. Numbers (done 2026-10-09)
 
-Decision 2026-10-08: the counts are collected on the team's dashboard
-(`svg-dashboard-production.up.railway.app/audience.html`) and the site will read them from there
-on a schedule instead of being typed in. What is needed to build that job: the page's structure or
-a JSON endpoint on the dashboard (the build environment cannot reach the host, so paste the page
-source or add the host to the environment's allowed domains). Until then the About page shows
-no counts rather than stale ones.
+The counts come from the team's dashboard, never from this file. A GitHub Action
+(`.github/workflows/audience.yml`) runs every Monday at 08:00 UTC, reads the dashboard's audience
+API, writes `content/audience.json`, rebuilds and commits; Vercel deploys the commit. A stale or
+incomplete read fails the job and keeps last week's numbers. The About page shows the total and the
+three largest platforms, rounded down (18,358,261 is shown as "18.3M+"), with the date; the homepage
+"Following along" stat and llms.txt use the same file. The total spans every account the dashboard
+tracks, including the dubbed and Russian channels, and the page says audiences overlap.
 
-- Total audience across platforms (if you want to state it, we add "includes overlap"):
-- Number of podcast episodes published (the site counts 123 pages; the Apple feed shows 83 audio episodes):
+- Decision still open: show the all-accounts total (current) or English-only accounts? English-only
+  means filtering the dashboard's per-account rows by key in `scripts/update-audience.js`.
+- Number of podcast episodes published: the About page counts the pages on this site (123).
 
 ## 3. Marina's story, in her words (three to six sentences each)
 

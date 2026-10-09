@@ -130,5 +130,8 @@ test('the sitemap and llms.txt list the new pages', () => {
   const llms = fs.readFileSync(path.join(ROOT, 'public', 'llms.txt'), 'utf8');
   assert.ok(llms.includes('https://marinamogilko.co/about/'));
   for (const f of site.facts) assert.ok(llms.includes(f.text), `llms.txt lacks fact: ${f.text}`);
-  assert.ok(!/\d+(\.\d+)?M\+/.test(llms), 'llms.txt still carries a typed count');
+  // A count may appear only with its date, the way the audience job writes it.
+  for (const line of llms.split('\n')) {
+    if (/\d+(\.\d+)?[MK]\+/.test(line)) assert.match(line, /as of \d{4}-\d{2}-\d{2}/, `undated count in llms.txt: ${line}`);
+  }
 });
