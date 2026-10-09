@@ -796,18 +796,17 @@ function renderHomePage(episodes, site = null) {
   // The curated block under it: episodes the team chose (content/site.json,
   // featuredEpisodes), in the team's order; ids not on the site are skipped.
   const byId = new Map(episodes.map((e) => [e.videoId, e]));
+  // The hero is never repeated in the block, even if the team's list names
+  // this week's episode.
   const featured = site && site.featuredEpisodes
-    ? site.featuredEpisodes.videoIds.map((id) => byId.get(id)).filter(Boolean)
+    ? site.featuredEpisodes.videoIds.map((id) => byId.get(id)).filter((e) => e && e.videoId !== hero.videoId)
     : [];
   const featuredHeading = site && site.featuredEpisodes ? site.featuredEpisodes.heading : "Conversations that matter";
   const shown = new Set([hero.videoId, ...featured.map((e) => e.videoId)]);
   const rest = episodes.filter((e) => !shown.has(e.videoId));
 
-  // Six cards show; the rest stay in the markup but hidden, and "All episodes"
-  // reveals them. Keeping every episode in the DOM preserves the internal
-  // linking the archive is worth to search — moving 110 of them behind a
-  // separate page would cost that for a purely visual gain.
-  const ARCHIVE_VISIBLE = 6;
+  // The full list lives on /episodes/, one hop away, linked from the
+  // curated block's button and the search block.
   const card = (ep) => `
           <a href="/episode/${ep.videoId}/" class="ep-card">
             <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
@@ -817,7 +816,6 @@ function renderHomePage(episodes, site = null) {
             </div>
           </a>`;
   const featuredHtml = featured.map(card).join("\n");
-  const archiveHtml = rest.slice(0, ARCHIVE_VISIBLE).map(card).join("\n");
 
   // Six guests, each linking to their interview (the thumbnail stands in for
   // a portrait until there are portraits), and four of Marina's own videos
@@ -939,12 +937,6 @@ function renderHomePage(episodes, site = null) {
     .btn-text:hover { color: var(--accent); }
 
     /* The mock sets section eyebrows as red pills, not plain red text. */
-    .pill-label {
-      display: inline-block; background: var(--accent); color: var(--ground);
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
-      text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 999px;
-      margin-right: 0.8rem; vertical-align: middle;
-    }
 
     /* ---- Hero ---- */
     .hero { padding: clamp(1.75rem, 3.5vw, 3rem) 0 clamp(1.75rem, 3.5vw, 3rem); }
@@ -972,66 +964,11 @@ function renderHomePage(episodes, site = null) {
       text-transform: uppercase; padding: 0.6rem 0.9rem;
     }
 
-    /* ---- Cover story ---- */
-    .cover { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
-    .cover-card {
-      display: grid; grid-template-columns: 0.9fr 1.1fr;
-      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
-      background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
-    }
-    .cover-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .cover-meta {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
-    }
-    .cover-title {
-      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.6rem);
-      line-height: 1.02; margin-bottom: 0.9rem;
-    }
-    .cover-title a { text-decoration: none; }
-    .cover-title a:hover { color: var(--accent); }
-    .cover-dek { color: rgba(23, 21, 17, 0.78); margin-bottom: 1.4rem; }
-    .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-
     /* ---- About ---- */
     .about { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
     .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
     .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
     .about-body p:last-child { margin-bottom: 0; }
-
-    /* ---- Archive ---- */
-    .archive { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
-    .archive-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.6rem 1.4rem;
-    }
-    .ep-card { text-decoration: none; display: block; }
-    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .ep-card-body { padding-top: 0.75rem; }
-    .ep-card-meta {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
-    }
-    .ep-card-title {
-      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
-      letter-spacing: 0.01em; text-transform: uppercase;
-    }
-    .ep-card:hover .ep-card-title { color: var(--accent); }
-    .archive-head {
-      display: flex; align-items: baseline; justify-content: space-between;
-      gap: 1rem; flex-wrap: wrap;
-    }
-    .archive-head .section-title { margin-bottom: 1.8rem; }
-    .topics { padding: clamp(2rem, 4vw, 3rem) 0; }
-    .topic-chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
-    .topic-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.4rem 1rem; border: 1.5px solid var(--ink); border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
-    .topic-chips a:hover, .topic-chips a.all { background: var(--ink); color: var(--ground); }
-    .topic-chips a.all:hover { background: var(--accent); }
-    .archive-more {
-      background: none; border: none; border-bottom: 2px solid var(--accent);
-      font-family: var(--body); cursor: pointer; padding: 0 0 2px;
-      color: rgba(23, 21, 17, 0.62);
-    }
 
     /* ---- Host ---- */
     .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
@@ -1057,9 +994,36 @@ function renderHomePage(episodes, site = null) {
     .btn-ghost { border: 2px solid var(--ground); color: var(--ground); background: transparent; }
     .btn-ghost:hover { background: var(--ground); color: var(--ink); }
 
+    /* ---- Card grids (curated block, practical row) and topic chips ---- */
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .archive-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap; margin-bottom: 1.8rem;
+    }
+    .archive-head .section-title { margin-bottom: 0; }
+    .topic-chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .topic-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.4rem 1rem; border: 1.5px solid var(--ink); border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
+    .topic-chips a:hover, .topic-chips a.all { background: var(--ink); color: var(--ground); }
+    .topic-chips a.all:hover { background: var(--accent); }
+
     /* ---- Featured block and library search ---- */
-    .featured { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
-    .library { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .featured, .library, .practical, .about { padding: clamp(3rem, 6vw, 4.5rem) 0; border-top: 1px solid var(--rule); }
+    @media (min-width: 1100px) { .practical .archive-grid { grid-template-columns: repeat(4, 1fr); } }
     .library .section-title { margin-bottom: 0.75rem; }
     .library-search { display: flex; gap: 0.6rem; max-width: 40rem; margin: 1.5rem 0 1.25rem; }
     .library-search input {
@@ -1086,14 +1050,7 @@ function renderHomePage(episodes, site = null) {
     @media (max-width: 640px) { .nl-pop { right: 0.75rem; bottom: 0.75rem; left: 0.75rem; width: auto; } .library-search { flex-direction: column; } }
 
     /* ---- Guests and practical rows ---- */
-    .guests, .practical { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
     .section-dek { max-width: 40rem; margin: -1rem 0 1.8rem; color: rgba(23, 21, 17, 0.7); }
-    .guest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.4rem 1.2rem; }
-    .guest-tile { text-decoration: none; display: block; }
-    .guest-tile img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 0.6rem; }
-    .guest-name { display: block; font-family: var(--display); font-size: 1.25rem; line-height: 1; text-transform: uppercase; }
-    .guest-tile:hover .guest-name { color: var(--accent); }
-    .guest-role { display: block; font-size: 0.78rem; color: rgba(23, 21, 17, 0.65); margin-top: 0.3rem; line-height: 1.35; }
     .ep-format {
       display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.45rem; border-radius: 999px;
       border: 1px solid var(--rule); color: rgba(23, 21, 17, 0.6); letter-spacing: 0.08em;
@@ -1156,7 +1113,7 @@ function renderHomePage(episodes, site = null) {
     .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
     @media (max-width: 900px) {
-      .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
+      .hero-inner, .about-inner, .host-inner, .newsletter-inner {
         grid-template-columns: 1fr;
       }
       .hero-media { order: -1; }
@@ -1216,7 +1173,10 @@ function renderHomePage(episodes, site = null) {
 ${featured.length ? `
   <section id="featured" class="featured">
     <div class="wrap">
-      <h2 class="section-title">${esc(featuredHeading)}</h2>
+      <div class="archive-head">
+        <h2 class="section-title">${esc(featuredHeading)}</h2>
+        <a class="btn btn-ink archive-more" href="/episodes/">All episodes &rarr;</a>
+      </div>
       <div class="archive-grid">
 ${featuredHtml}
       </div>
@@ -1234,22 +1194,10 @@ ${featuredHtml}
     </div>
   </section>
 
-  <section id="episodes" class="archive">
-    <div class="wrap">
-      <div class="archive-head">
-        <h2 class="section-title">The archive</h2>
-        <a class="btn btn-ink archive-more" href="/episodes/">All episodes &rarr;</a>
-      </div>
-      <div class="archive-grid">
-${archiveHtml}
-      </div>
-    </div>
-  </section>
-
   <section id="search" class="library">
     <div class="wrap">
-      <h2 class="section-title">Search the entire library.<br>Find the episode you want.</h2>
-      <p class="section-dek">Unlock the full power of the Silicon Valley Girl podcast library. Find any moment, quote or advice you are looking for.</p>
+      <h2 class="section-title">Find the episode you need.</h2>
+      <p class="section-dek">I&rsquo;ve asked founders and scientists hundreds of questions. Search any guest, quote or piece of advice across all episodes.</p>
       <form class="library-search" action="/episodes/" method="get" role="search">
         <label for="home-q" class="visually-hidden">Search episodes and transcripts</label>
         <input type="search" id="home-q" name="q" placeholder="A guest, a company, a topic, a phrase" autocomplete="off">
@@ -1268,7 +1216,7 @@ ${practical.length ? `
     <div class="wrap">
       <div class="archive-head">
         <h2 class="section-title">Practical AI with Marina</h2>
-        <a class="btn-text archive-more" href="/topics/ai-tools-and-workflows/">More how-to episodes &rarr;</a>
+        <a class="btn btn-ink archive-more" href="/topics/ai-tools-and-workflows/">More how-to episodes &rarr;</a>
       </div>
       <p class="section-dek">Solo episodes and compilations: one tool, one idea or one career move, in about twenty minutes.</p>
       <div class="archive-grid">${practicalHtml}
@@ -1642,7 +1590,6 @@ function renderEpisodePage(d) {
       font-size: 0.75rem; text-transform: uppercase;
       letter-spacing: 0.08em; color: #999; margin-bottom: 0.75rem;
     }
-    .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
 
