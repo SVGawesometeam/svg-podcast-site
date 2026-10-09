@@ -29,6 +29,7 @@ test('the markdown subset renders headings, lists, bold, line breaks and mailto 
   assert.ok(html.includes('A <strong>bold</strong> word &amp; an email: <a href="mailto:a@b.co">a@b.co</a>'));
   assert.ok(html.includes('<p>Line one<br>\nLine two</p>'));
   assert.ok(html.includes('<li>two &lt;b&gt;</li>'), 'markup in the text must be escaped');
+  assert.equal(mdToHtml('<!-- draft note -->\n\nText'), '<p>Text</p>', 'editor comments are dropped, not shown');
 });
 
 test('the legal pages carry the whole text, the date and no Tilda link', () => {
