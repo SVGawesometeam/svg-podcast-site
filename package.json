@@ -1,6 +1,8 @@
 {
   "scripts": {
     "test": "node --test test/*.test.js",
-    "verify:transcripts": "node scripts/verify-transcripts.js"
+    "verify:transcripts": "node scripts/verify-transcripts.js",
+    "check:links": "node scripts/check-links.js",
+    "check:render": "node scripts/check-render.js"
   }
 }

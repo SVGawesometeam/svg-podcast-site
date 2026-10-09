@@ -101,10 +101,35 @@ function loadFix(videoId) {
   return JSON.parse(fs.readFileSync(f, "utf8"));
 }
 
-async function fetchEpisode(videoId) {
-  const res = await fetch(`${API_BASE}/${videoId}`);
+async function fetchEpisode(videoId, fetchImpl = fetch) {
+  const res = await fetchImpl(`${API_BASE}/${videoId}`, { redirect: "error", signal: AbortSignal.timeout(60000) });
   if (!res.ok) throw new Error(`API returned ${res.status} for ${videoId}`);
   return res.json();
+}
+
+// A draft for one episode from the backend: the registry id is enforced,
+// related episodes are limited to ones on the site, ads and generic speaker
+// labels are handled by fromApi(), transcript-fixes are applied, and the
+// draft is validated before it is written. Used by build.js for ids that
+// have no data yet and by scripts/new-episode.js for the review workflow.
+async function importDraft(videoId, idSet, { fetchImpl = fetch } = {}) {
+  if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) throw new Error(`bad videoId ${JSON.stringify(videoId)}`);
+  const ep = await fetchEpisode(videoId, fetchImpl);
+  // The registry ID is the one we asked for; the backend does not get
+  // to rename the episode (or the file it is written to).
+  if (ep.videoId && ep.videoId !== videoId) {
+    throw new Error(`backend returned videoId ${JSON.stringify(ep.videoId)} for ${videoId}`);
+  }
+  ep.videoId = videoId;
+  // Only link related episodes that are actually on the site.
+  ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
+  const d = fromApi(ep, loadFix(videoId));
+  const draftProblems = validate(d);
+  if (draftProblems.length) {
+    throw new Error(`draft rejected: ${draftProblems.join("; ")}`);
+  }
+  writeEpisodeData(d);
+  return d;
 }
 
 // What the homepage, the directory, the sitemap and llms.txt need to know
@@ -152,21 +177,7 @@ async function build() {
       }
       console.log(`[${i + 1}/${videoIds.length}] Importing ${videoId} from the backend...`);
       try {
-        const ep = await fetchEpisode(videoId);
-        // The registry ID is the one we asked for; the backend does not get
-        // to rename the episode (or the file it is written to).
-        if (ep.videoId && ep.videoId !== videoId) {
-          throw new Error(`backend returned videoId ${JSON.stringify(ep.videoId)} for ${videoId}`);
-        }
-        ep.videoId = videoId;
-        // Only link related episodes that are actually on the site.
-        ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
-        d = fromApi(ep, loadFix(videoId));
-        const draftProblems = validate(d);
-        if (draftProblems.length) {
-          throw new Error(`draft rejected: ${draftProblems.join("; ")}`);
-        }
-        writeEpisodeData(d);
+        d = await importDraft(videoId, idSet);
         imported++;
         console.log(`   DRAFT -> content/episodes/${videoId}.json (review before committing)`);
       } catch (e) {
@@ -1616,7 +1627,7 @@ function renderEpisodePage(d) {
 }
 
 
-module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, CONTENT_DIR, TOPIC_HUBS, topicsOf };
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, importDraft, dataFile, readEpisodeData, loadFix, API_BASE, CONTENT_DIR, TOPIC_HUBS, topicsOf };
 
 // Guarded so the tests can require the renderers without kicking off a build.
 if (require.main === module) {

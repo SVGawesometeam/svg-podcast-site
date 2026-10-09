@@ -1,0 +1,100 @@
+# New episode: when a video appears in the channel's feed (or an id is given
+# by hand), import its draft from the backend, rebuild, and open a pull
+# request with a preview for the producer to review. Nothing is published
+# until that pull request is merged.
+#
+# Needs the repository variable YOUTUBE_CHANNEL_ID (Settings -> Secrets and
+# variables -> Actions -> Variables) for the scheduled poll; a manual run with
+# a video id works without it. No secrets: the backend is read without a key.
+name: New episode
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "YouTube video id (11 characters)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: new-episode
+  cancel-in-progress: false
+
+jobs:
+  find:
+    # Scheduled runs are skipped for free until the channel id is set.
+    if: ${{ github.event_name == 'workflow_dispatch' || vars.YOUTUBE_CHANNEL_ID != '' }}
+    runs-on: ubuntu-latest
+    outputs:
+      video_id: ${{ steps.pick.outputs.video_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pick the episode to import
+        id: pick
+        env:
+          YOUTUBE_CHANNEL_ID: ${{ vars.YOUTUBE_CHANNEL_ID }}
+          GIVEN: ${{ inputs.video_id }}
+        run: |
+          set -euo pipefail
+          if [ -n "${GIVEN:-}" ]; then
+            # Whole-string match: a multi-line value is not an id.
+            [[ "$GIVEN" =~ ^[A-Za-z0-9_-]{11}$ ]] || { echo "not a video id" >&2; exit 1; }
+            echo "video_id=$GIVEN" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # One episode per run, oldest first; the next run takes the next one.
+          # Skip ids that already have a review branch. A failed poll fails
+          # the job (the assignment carries the exit status; a bare for-list
+          # would not).
+          git fetch --quiet origin 'refs/heads/episode/*:refs/remotes/origin/episode/*' || true
+          ids=$(node scripts/poll-youtube.js)
+          for id in $ids; do
+            if git show-ref --verify --quiet "refs/remotes/origin/episode/$id"; then
+              echo "episode/$id already has a branch; skipping"; continue
+            fi
+            echo "video_id=$id" >> "$GITHUB_OUTPUT"; exit 0
+          done
+          echo "nothing new"
+
+  import:
+    needs: find
+    if: needs.find.outputs.video_id != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      VIDEO_ID: ${{ needs.find.outputs.video_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Import the draft and rebuild
+        run: node scripts/new-episode.js --report /tmp/report.json -- "$VIDEO_ID"
+      - name: Check
+        run: npm test
+      - name: Open the review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ "$(node -p 'require("/tmp/report.json").status')" != "draft" ]; then echo "nothing to review"; exit 0; fi
+          git config user.name "episode-bot"
+          git config user.email "actions@users.noreply.github.com"
+          branch="episode/$VIDEO_ID"
+          git checkout -b "$branch"
+          git add podcast-video-ids.txt content public sitemap-lastmod.json
+          git commit -m "Draft: new episode $VIDEO_ID (review before merging)"
+          git push -u origin "$branch"
+          node scripts/pr-body.js /tmp/report.json > /tmp/body.md
+          title="$(node -p 'const r=require("/tmp/report.json"); "New episode: " + r.title')"
+          gh pr create --draft --base main --head "$branch" --title "$title" --body-file /tmp/body.md

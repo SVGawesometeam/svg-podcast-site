@@ -100,7 +100,9 @@ Scope: the GitHub Actions workflow in section 5.9 of the plan: YouTube feed poll
 
 Gate: a dry run on an already-published episode reproduces its page within the agreed tolerance; a run with an unknown speaker fails loudly; secrets exist only in GitHub Actions secrets.
 
-Security: the workflow has read-only repository permissions except for opening the pull request; the Trint and YouTube keys are repository secrets; the workflow never runs on pull requests from forks.
+Status 2026-10-09, stage one built: the trigger (feed poll every 30 minutes, or a video id by hand), the draft import through the existing backend path, the rebuild, the link check and the review pull request with the checklist (`.github/workflows/new-episode.yml`, `scripts/new-episode.js`, `scripts/poll-youtube.js`, `scripts/pr-body.js`). Unknown speakers and empty fields are listed at the top of the pull request rather than failing the run, so the producer always has something to review. Not yet built: the Trint transcript with speakers (needs API access), the speaker map with evidence, and the LLM pass for summary and topics; today those come from the backend as before. Needs from the team: the channel id as the repository variable `YOUTUBE_CHANNEL_ID`, and one manual run of the workflow on an already-published id to see the pull request appear.
+
+Security: the workflow reads the repository, and only the import job may push its own `episode/<id>` branch and open the pull request; nothing pushes to `main`; no secrets today (the feed and the backend are read without keys; a Trint key, when it comes, is a repository secret); the workflow never runs on pull requests from forks.
 
 Team: Trint API access (or the decision to diarise in the backend); a YouTube Data API key; a decision on who merges.
 
