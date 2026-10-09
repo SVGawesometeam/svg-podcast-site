@@ -10,6 +10,7 @@ const { FORMAT_LABEL } = require("./lib/cards");
 const { SITE_URL, IDS } = require("./lib/site");
 const { countsFor, formatCount } = require("./lib/audience");
 const { renderTopicPage, renderTopicsIndex, episodesFor } = require("./lib/render-topics");
+const { renderPartnershipsPage, parseCaseStudy } = require("./lib/render-partnerships");
 const { renderEpisodeCard, CARD_CSS } = require("./lib/cards");
 const {
   fromApi,
@@ -32,6 +33,11 @@ const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 // into the JSON (and their reasons into transcript-fixes/<id>.json).
 const SITE_FILE = path.join(__dirname, "content", "site.json");
 const ABOUT_FILE = path.join(__dirname, "content", "about.md");
+const PHOTOS_FILE = path.join(__dirname, "content", "photos.json");
+const PARTNERS_FILE = path.join(__dirname, "content", "partners.json");
+const TESTIMONIALS_FILE = path.join(__dirname, "content", "testimonials.json");
+const CASE_STUDIES_DIR = path.join(__dirname, "content", "case-studies");
+const readJson = (f, fallback) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : fallback);
 // Where the newsletter prompt sends people; the email is appended by the
 // page so the subscribe page opens with it filled in.
 const NEWSLETTER_SUBSCRIBE = "https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&utm_medium=popup&utm_campaign=futureproof-sub";
@@ -75,6 +81,8 @@ function readSite() {
   site.audience = fs.existsSync(AUDIENCE_FILE) ? JSON.parse(fs.readFileSync(AUDIENCE_FILE, "utf8")) : null;
   site.counts = countsFor(site.audience);
   site.topics = TOPIC_HUBS;
+  // Photo strips for /about/, written by scripts/prepare-photos.js.
+  site.photos = readJson(PHOTOS_FILE, null);
   return site;
 }
 
@@ -245,7 +253,16 @@ async function build() {
   fs.writeFileSync(path.join(episodesDir, "index.html"), renderEpisodesPage(allEpisodes));
   console.log("Written public/episodes/index.html");
 
+  const caseStudies = fs.existsSync(CASE_STUDIES_DIR)
+    ? fs.readdirSync(CASE_STUDIES_DIR).filter((f) => f.endsWith(".md")).sort()
+        .map((f) => parseCaseStudy(fs.readFileSync(path.join(CASE_STUDIES_DIR, f), "utf8")))
+    : [];
   const staticPages = {
+    "partnerships": renderPartnershipsPage(site, allEpisodes, {
+      partners: readJson(PARTNERS_FILE, { featuredCount: 9, items: [] }),
+      testimonials: readJson(TESTIMONIALS_FILE, { items: [] }),
+      caseStudies,
+    }),
     "about": renderAboutPage(site, allEpisodes, fs.existsSync(ABOUT_FILE) ? fs.readFileSync(ABOUT_FILE, "utf8") : ""),
     "newsletter": renderNewsletterPage(site),
     "privacy": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "privacy.md"), "utf8"),
@@ -369,6 +386,7 @@ function renderSitemap(episodes) {
     `  <url><loc>${SITE_URL}/topics/</loc><priority>0.8</priority></url>`,
     ...TOPIC_HUBS.map((t) => `  <url><loc>${SITE_URL}/topics/${t.slug}/</loc><priority>0.7</priority></url>`),
     `  <url><loc>${SITE_URL}/about/</loc><priority>0.8</priority></url>`,
+    `  <url><loc>${SITE_URL}/partnerships/</loc><priority>0.7</priority></url>`,
     `  <url><loc>${SITE_URL}/newsletter/</loc><priority>0.6</priority></url>`,
     `  <url><loc>${SITE_URL}/privacy/</loc><priority>0.2</priority></url>`,
     `  <url><loc>${SITE_URL}/terms/</loc><priority>0.2</priority></url>`,

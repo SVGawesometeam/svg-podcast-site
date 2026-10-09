@@ -69,7 +69,8 @@ test('the about page renders every fact, press link and speaking date from site.
   for (const a of site.press) assert.ok(html.includes(`href="${a.url}"`), `press link missing: ${a.outlet}`);
   for (const s of site.speaking) assert.ok(html.includes(`${s.event}</strong>, ${s.place}, ${s.year}`), `speaking missing: ${s.event}`);
   assert.match(html, /woman-hosted/);
-  assert.ok(html.includes('mailto:partnerships@marinamogilko.co') && html.includes('mailto:pr@marinamogilko.co'));
+  assert.ok(html.includes('mailto:pr@marinamogilko.co'));
+  assert.ok(!html.includes('Talks Marina gives') && !html.includes('Guests on the show'), 'removed per the team');
   assert.ok(!/marina@|ks@/.test(html), 'private addresses must not be shown');
   const { CONTACT_FORM_SCRIPT } = require('../lib/contact-form');
   assert.ok(html.includes(CONTACT_FORM_SCRIPT), 'the contact form script is on the page');
@@ -89,10 +90,6 @@ test('featured guests link to their interview rather than a compilation, and mis
   assert.equal(episodeFor('Reid Hoffman', EPISODES).videoId, 'aaaaaaaaaaa');
   assert.equal(episodeFor('Sal Khan', EPISODES).videoId, 'bbbbbbbbbbb');
   assert.equal(episodeFor('Nobody', EPISODES), null);
-  const html = renderAboutPage({ ...site, featuredGuests: ['Reid Hoffman', 'Nobody'] }, EPISODES);
-  assert.ok(html.includes('<a href="/episode/aaaaaaaaaaa/">Reid Hoffman</a>'));
-  assert.ok(!html.includes('Nobody'));
-  assert.match(html, /All 3 episodes/);
 });
 
 test('the markdown subset renders safe links and leaves unsafe ones as text', () => {
@@ -138,14 +135,16 @@ test('the about page renders the team\'s text, toggled questions, and every anch
 });
 
 test('the about page JSON-LD describes the same person the homepage declares', () => {
-  const data = ld(renderAboutPage(site, EPISODES));
+  const html = renderAboutPage(site, EPISODES);
+  const data = ld(html);
   const byType = Object.fromEntries(data['@graph'].map((n) => [n['@type'], n]));
   assert.equal(byType.ProfilePage.mainEntity['@id'], 'https://marinamogilko.co/#marina');
   assert.equal(byType.Person['@id'], 'https://marinamogilko.co/#marina');
   assert.equal(byType.Person.url, 'https://marinamogilko.co/about/');
   assert.equal(byType.Person.image, 'https://marinamogilko.co/marina-mogilko.jpg');
   assert.equal(byType.Person.subjectOf.length, site.press.length);
-  assert.deepEqual(byType.Person.award, site.awards);
+  assert.deepEqual(byType.Person.award, site.awards.map((a) => `${a.name} (${a.where})`));
+  assert.ok(html.includes('href="https://shortyawards.com/10th-impact/marina-mogilko"'), 'the Shorty award links to its page');
   assert.ok(byType.Person.sameAs.length >= 5);
   assert.equal(byType.PodcastSeries['@id'], 'https://marinamogilko.co/#podcast');
 });

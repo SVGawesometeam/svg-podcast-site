@@ -1,5 +1,14 @@
 # Media kit (`/partnerships/`): inputs from the team
 
+**Status 2026-10-09:** `/partnerships/` ("For brands" in the nav) is built from `content/partners.json`
+(76 partners in the team's order, logos in `public/partners/`), `content/testimonials.json` (seven
+quotes transcribed from the team's screenshots; two screenshots were unreadable, Insta360 and
+GetResponse, and wait for their text), `content/case-studies/apple-event-2026.md` (from the team's
+letter), the audience numbers from the weekly job, and the shared contact form. Still open: podcast
+analytics beyond follower counts (downloads, demographics), proper logo files for the brands whose
+Drive files are favicons (see the note in `partners.json`), and the third speaker photo (9.5 MB,
+too large for the channel; a version under 5 MB works).
+
 Release 5 builds the media kit from this file. Items marked "received" came from the team;
 the rest are open.
 

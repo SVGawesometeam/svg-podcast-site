@@ -50,7 +50,7 @@ test('header is the black bar with wordmark and nav', () => {
   // Nav since Release 4: the archive, the About page, the newsletter page and
   // the pitch form, in that order. Homepage sections keep their ids for links
   // from elsewhere; the nav no longer points at them.
-  for (const [href, label] of [['/topics/', 'Topics'], ['/about/', 'About Marina'], ['/newsletter/', 'Newsletter'], ['/#work', 'Contact us']]) {
+  for (const [href, label] of [['/topics/', 'Topics'], ['/about/', 'About Marina'], ['/partnerships/', 'For brands'], ['/newsletter/', 'Newsletter'], ['/#work', 'Contact us']]) {
     assert.ok(chrome.SHARED_HEADER.includes(`href="${href}"`), `missing nav link: ${href}`);
     assert.ok(chrome.SHARED_HEADER.includes(`>${label}<`), `missing nav label: ${label}`);
   }

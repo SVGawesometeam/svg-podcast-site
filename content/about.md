@@ -7,7 +7,7 @@ Marina Mogilko is an entrepreneur, creator and the host of Silicon Valley Girl, 
 
 I grew up in Saint Petersburg, Russia. At 14 I started traveling to the UK for language courses. English was how I got into a much bigger world.
 
-In 2015 my husband Dmitrii and I moved to Silicon Valley with an early-stage startup and a couple of thousand dollars in savings. The startup was [LinguaTrip](https://linguatrip.com/en), and that year it went through the 500 Startups accelerator.
+In 2015 my husband Dmitry and I moved to Silicon Valley with an early-stage startup and a couple of thousand dollars in savings. The startup was [LinguaTrip](https://linguatrip.com/en), and that year it went through the 500 Startups accelerator.
 
 In 2021 Slow Ventures invested in me as a person. Instead of buying shares in a company, they bought a share of my future earnings. No creator had raised venture money this way before. I used part of it for my first angel investments. Today I've backed more than 20 startups.
 
