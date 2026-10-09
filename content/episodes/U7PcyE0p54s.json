@@ -575,9 +575,14 @@
       "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-business-and-startups",
+    "ai-tools-and-workflows",
+    "education-and-learning"
+  ],
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000728606111",
     "spotify": "https://open.spotify.com/episode/1mU95mt1sQVe8Gp6RMY7j3"
-  }
+  },
+  "template": "v2"
 }

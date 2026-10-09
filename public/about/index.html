@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Marina Mogilko — Silicon Valley Girl Podcast</title>
+  <meta name="description" content="Marina Mogilko is the host of Silicon Valley Girl, a woman-hosted AI, tech and career podcast from Silicon Valley. Her story, who has been on the show, press, awards, speaking and how to get in touch.">
+  <link rel="canonical" href="https://marinamogilko.co/about/">
+  <meta property="og:title" content="About Marina Mogilko — Silicon Valley Girl Podcast">
+  <meta property="og:description" content="Marina Mogilko is the host of Silicon Valley Girl, a woman-hosted AI, tech and career podcast from Silicon Valley. Her story, who has been on the show, press, awards, speaking and how to get in touch.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://marinamogilko.co/about/">
+  <meta property="og:image" content="https://marinamogilko.co/marina-mogilko.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#171511">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });</script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WZ57XVB"></script>
+  <style>
+    /* CHROME-START */
+  :root {
+    --accent: #DF1615;
+    --ground: #FFFDF6;
+    --ink: #171511;
+    --card: #FFFFFF;
+    --muted: #C5C1B9;
+    --rule: rgba(23, 21, 17, 0.12);
+    --display: 'Bebas Neue', 'Arial Narrow', Impact, sans-serif;
+    --body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  img { max-width: 100%; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---- Header ----
+     Cream, not a black bar: the mock's header is the page ground with a 2px
+     ink rule under it. The red pill is the "with Marina Mogilko" tag; the ink
+     pill is Subscribe. */
+  .site-header {
+    background: var(--ground);
+    color: var(--ink);
+    border-bottom: 2px solid var(--ink);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .site-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .site-header .wordmark {
+    font-family: var(--display);
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    color: var(--ink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .site-header .wordmark span {
+    font-family: var(--body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: var(--ground);
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  /* Icons sit between the wordmark and the nav and stay in the sticky header,
+     so the accounts are reachable from any scroll position on any page. The
+     SVGs carry brand colours at 20-22px; shrinking them to 18px keeps seven of
+     them from reading as clutter beside the wordmark. */
+  .site-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 auto;
+  }
+  .site-socials a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .site-socials a:hover { opacity: 1; transform: translateY(-1px); }
+  .site-socials svg { width: 18px; height: 18px; display: block; }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .site-nav a {
+    font-family: var(--body);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .nav-cta {
+    background: var(--ink);
+    color: var(--ground);
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+  }
+  .site-nav .nav-cta:hover { background: var(--accent); color: var(--ground); }
+
+  /* Drop-down under About Marina: opens on hover and on keyboard focus,
+     closes when the pointer or focus leaves. No JavaScript. On a phone the
+     header stacks and the About page's own section nav does this job. */
+  .nav-menu { position: relative; }
+  .nav-menu > a::after { content: " ▾"; font-size: 0.7em; }
+  .nav-sub {
+    position: absolute; top: 100%; left: -0.75rem; margin: 0; padding: 0.5rem 0;
+    list-style: none; min-width: 12rem; background: var(--ground);
+    border: 1px solid var(--rule); border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(23, 21, 17, 0.12);
+    opacity: 0; visibility: hidden; transform: translateY(4px);
+    transition: opacity 0.12s, transform 0.12s, visibility 0s linear 0.12s;
+  }
+  .nav-menu:hover .nav-sub, .nav-menu:focus-within .nav-sub {
+    opacity: 1; visibility: visible; transform: none; transition-delay: 0s;
+  }
+  .nav-sub a { display: block; padding: 0.45rem 1rem; font-size: 0.9rem; white-space: nowrap; }
+  .nav-sub a:hover { background: rgba(23, 21, 17, 0.05); }
+
+  /* The header is sticky, so anything the nav jumps to needs a matching
+     scroll offset or its heading lands underneath the bar. */
+  [id] { scroll-margin-top: 6rem; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    background: var(--ink);
+    color: #fff;
+    margin-top: 0;
+  }
+  .site-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-mark {
+    font-family: var(--display);
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+  .site-footer .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-links a {
+    font-family: var(--body);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-footer .footer-links a:hover { color: var(--ground); }
+
+  .site-footer .footer-legal {
+    font-family: var(--body);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .site-header-inner {
+      padding: 0.6rem 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .site-header .wordmark { font-size: 1.2rem; flex-wrap: wrap; gap: 0.5rem; }
+    .site-socials { margin: 0; gap: 1rem; flex-wrap: wrap; }
+    .site-socials a { min-height: 36px; }
+    .site-socials svg { width: 20px; height: 20px; }
+    /* Five items do not fit on one line at phone width: let them wrap, and
+       keep each label on one line so nothing pokes past the edge. */
+    .site-nav { gap: 0.6rem 1.1rem; flex-wrap: wrap; }
+    .site-nav a { white-space: nowrap; }
+    .nav-menu > a::after { content: ""; }
+    .nav-sub { display: none; }
+    /* Comfortable tap targets on a phone. */
+    .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
+    .site-header .wordmark { min-height: 44px; }
+    .site-footer-inner { padding: 2rem 1rem; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+    .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
+  }
+    /* CHROME-END */
+
+    body {
+      font-family: var(--body); background: var(--ground); color: var(--ink);
+      line-height: 1.55; margin: 0; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    h1, h2, h3 { margin: 0; font-weight: 400; }
+    p, ul, ol { margin: 0; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .narrow { max-width: 760px; }
+    .page { padding: clamp(2rem, 3.5vw, 3rem) 0 clamp(3rem, 5vw, 4rem); }
+    .page h1 {
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .eyebrow {
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .dek { font-size: 1.15rem; line-height: 1.5; max-width: 40rem; }
+    .muted { color: rgba(23, 21, 17, 0.6); }
+    .section { padding-top: clamp(2.25rem, 4vw, 3.5rem); }
+    .section h2 {
+      font-family: var(--display); text-transform: uppercase; letter-spacing: 0.01em;
+      font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1; margin-bottom: 1rem;
+    }
+    .section h3 { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.35rem; }
+    .prose p + p, .prose ul + p, .prose p + ul { margin-top: 1rem; }
+    .prose ul, .prose ol { padding-left: 1.3rem; }
+    .prose li + li { margin-top: 0.4rem; }
+    .prose h2 { margin-top: 2.25rem; }
+    .prose h3 { margin-top: 1.5rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-weight: 600; text-decoration: none; padding: 0.75rem 1.3rem;
+      border-radius: 8px; border: 2px solid var(--ink); background: transparent;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .btn:hover { background: var(--ink); color: var(--ground); }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: var(--ground); }
+    .btn-accent:hover { background: var(--ink); border-color: var(--ink); }
+    .btn-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .back-home {
+      display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
+      font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 1rem; }
+    }
+    .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
+    .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
+    .field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .field-budget, .field-details { grid-column: 1 / -1; }
+    .field label {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: rgba(23, 21, 17, 0.62);
+    }
+    .field input, .field select, .field textarea {
+      font-family: var(--body); font-size: 0.95rem; color: var(--ink);
+      background: var(--card); border: 1px solid var(--rule);
+      padding: 0.7rem 0.8rem; width: 100%; border-radius: 0;
+    }
+    .field textarea { resize: vertical; min-height: 8rem; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--ink); }
+    .form-submit { grid-column: 1 / -1; justify-self: start; border: none; cursor: pointer; }
+    .form-submit[disabled] { opacity: 0.6; cursor: default; }
+    .form-error {
+      grid-column: 1 / -1; background: #FDECEC; border-left: 3px solid var(--accent);
+      padding: 0.75rem 0.9rem; font-size: 0.9rem;
+    }
+    .form-done {
+      background: var(--card); border-left: 3px solid var(--accent);
+      padding: 1rem 1.1rem; font-size: 1rem;
+    }
+    /* Off-screen rather than display:none — some bots skip hidden fields. */
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    @media (max-width: 900px) {
+      .pitch-form { grid-template-columns: 1fr; }
+      .field label { font-size: 0.75rem; }
+      .field input, .field select, .field textarea { font-size: 16px; }
+    }
+    .about-hero { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, 1fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+    .about-hero .portrait { width: 100%; height: auto; border-radius: 12px; display: block; }
+    .section-nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin-top: 2rem; padding: 0.9rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 0.9rem; font-weight: 600; }
+    .section-nav a { text-decoration: none; }
+    .section-nav a:hover { color: var(--accent); }
+    .intro { font-size: 1.1rem; }
+    .counts { display: flex; gap: 2.5rem; flex-wrap: wrap; margin-top: 2rem; }
+    .counts div { display: flex; flex-direction: column; }
+    .count-value { font-family: var(--display); font-size: 2.25rem; line-height: 1; }
+    .count-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(23, 21, 17, 0.6); }
+    .small { font-size: 0.9rem; margin-top: 0.75rem; }
+    .facts { padding-left: 1.3rem; max-width: 46rem; }
+    .facts li + li { margin-top: 0.6rem; }
+    .facts .source { font-size: 0.8rem; margin-left: 0.3rem; color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .plain { list-style: none; padding: 0; }
+    .plain li + li { margin-top: 0.5rem; }
+    .press { list-style: none; padding: 0; columns: 2; column-gap: 2.5rem; max-width: 60rem; }
+    .press li { break-inside: avoid; margin-bottom: 0.6rem; }
+    .press a { text-decoration: none; border-bottom: 1px solid var(--rule); }
+    .press a:hover { border-bottom-color: var(--accent); }
+    .press .outlet { font-weight: 700; }
+    .carousel-block + .carousel-block { padding-top: 1.5rem; }
+    .carousel { display: flex; gap: 0.9rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0.25rem 0 1rem; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .carousel figure { margin: 0; flex: 0 0 auto; scroll-snap-align: start; }
+    .carousel img { height: 320px; width: auto; max-width: 80vw; border-radius: 10px; display: block; object-fit: cover; }
+    .carousel:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 720px) { .carousel img { height: 220px; } }
+    .faq { max-width: 46rem; }
+    .faq-item { border-top: 1px solid var(--rule); }
+    .faq-item:last-child { border-bottom: 1px solid var(--rule); }
+    .faq-item summary { list-style: none; cursor: pointer; padding: 1rem 2rem 1rem 0; position: relative; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; position: absolute; right: 0.25rem; top: 0.85rem; font-size: 1.4rem; line-height: 1; color: var(--accent); }
+    .faq-item[open] summary::after { content: "\2013"; }
+    .faq-item summary h3 { display: inline; font-size: 1.05rem; font-weight: 600; margin: 0; }
+    .faq-answer { padding: 0 2rem 1.25rem 0; }
+    .faq-answer p + p { margin-top: 0.75rem; }
+    @media (max-width: 720px) {
+      .about-hero { grid-template-columns: 1fr; }
+      .about-hero .portrait { max-width: 360px; }
+      .press { columns: 1; }
+    }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfilePage","@id":"https://marinamogilko.co/about/#page","url":"https://marinamogilko.co/about/","name":"About Marina Mogilko","isPartOf":{"@id":"https://marinamogilko.co/#website"},"mainEntity":{"@id":"https://marinamogilko.co/#marina"}},{"@type":"Person","@id":"https://marinamogilko.co/#marina","name":"Marina Mogilko","url":"https://marinamogilko.co/about/","image":"https://marinamogilko.co/marina-mogilko.jpg","jobTitle":"Host, Silicon Valley Girl Podcast","description":"Silicon Valley Girl is a woman-hosted AI, tech and career podcast. Marina Mogilko interviews the founders, researchers and executives building AI, and brings back the part you can use this week.","homeLocation":{"@type":"Place","name":"Silicon Valley, California"},"worksFor":{"@id":"https://marinamogilko.co/#org"},"knowsAbout":["Artificial intelligence","Careers","Entrepreneurship","Creator economy"],"award":["WIBA Award, Best Influencer in Education (Cannes, 2023)","Shorty Impact Awards, 10th edition: Marina Mogilko (2025)"],"sameAs":["https://www.youtube.com/@SiliconValleyGirl","https://www.youtube.com/@linguamarina","https://www.instagram.com/siliconvalleygirl/","https://www.instagram.com/siliconvalleygirlpodcast/","https://www.linkedin.com/in/marinamogilko/","https://x.com/siliconvalleymm","https://www.tiktok.com/@linguamarina"],"subjectOf":[{"@type":"CreativeWork","name":"Top social media influencers of 2020","url":"https://www.forbes.com/sites/johnbbrandon/2020/12/21/my-picks-for-the-top-social-media-influencers-of-2020/","publisher":{"@type":"Organization","name":"Forbes"},"datePublished":"2020-12"},{"@type":"CreativeWork","name":"VC firms are buying equity directly in influencers and YouTube creators","url":"https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11","publisher":{"@type":"Organization","name":"Business Insider"},"datePublished":"2021-11"},{"@type":"CreativeWork","name":"Creators on the Rise: Silicon Valley Girl Marina Mogilko","url":"https://www.tubefilter.com/2022/06/01/creators-on-the-rise-silicon-valley-girl-marina-mogilko/","publisher":{"@type":"Organization","name":"Tubefilter"},"datePublished":"2022-06"},{"@type":"CreativeWork","name":"10 creators shaping the YouTube Shorts community","url":"https://blog.youtube/creator-and-artist-stories/10-creators-shaping-the-youtube-shorts-community/","publisher":{"@type":"Organization","name":"YouTube Official Blog"}},{"@type":"CreativeWork","name":"The impact of the creator economy","url":"https://www.washingtonpost.com/creativegroup/youtube/the-impact-of-the-creator-economy/","publisher":{"@type":"Organization","name":"The Washington Post, WP Creative Group"}},{"@type":"CreativeWork","name":"Why Marina Mogilko's Silicon Valley Girl podcast is exactly what the innovation economy needs right now","url":"https://www.ibtimes.com/why-marina-mogilkos-silicon-valley-girl-podcast-exactly-what-innovation-economy-needs-right-now-3775116","publisher":{"@type":"Organization","name":"International Business Times"}},{"@type":"CreativeWork","name":"Marina Mogilko","url":"https://papermag.com/marina-mogilko","publisher":{"@type":"Organization","name":"Paper"}},{"@type":"CreativeWork","name":"Marina Mogilko: redefining entrepreneurship and influence","url":"https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence","publisher":{"@type":"Organization","name":"L'Officiel Cyprus"}},{"@type":"CreativeWork","name":"WIBA Awards winner Marina Mogilko, shining social media star from Silicon Valley","url":"https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/","publisher":{"@type":"Organization","name":"Times Monaco"}},{"@type":"CreativeWork","name":"WIBA Awards USA launch event","url":"https://vogueadria.com/wiba-awards-usa-launch-event/","publisher":{"@type":"Organization","name":"Vogue Adria"}},{"@type":"CreativeWork","name":"Marina Mogilko, YouTube content creator","url":"https://www.thetilt.com/content-entrepreneur/marina-mogilko-youtube-content-creator","publisher":{"@type":"Organization","name":"The Tilt"}},{"@type":"CreativeWork","name":"Marina Mogilko: YouTube phenomenon and Silicon Valley entrepreneur","url":"https://www.thetribune.com/marina-mogilko-youtube-phenomenon-and-silicon-valley-entrepreneur/","publisher":{"@type":"Organization","name":"The Tribune"}},{"@type":"CreativeWork","name":"The cost of having a baby, on TikTok","url":"https://www.buzzfeed.com/kristatorres/cost-to-have-a-baby-tiktok","publisher":{"@type":"Organization","name":"BuzzFeed"}}]},{"@type":"PodcastSeries","@id":"https://marinamogilko.co/#podcast","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co/","author":{"@id":"https://marinamogilko.co/#marina"}},{"@type":"FAQPage","@id":"https://marinamogilko.co/about/#faq","mainEntity":[{"@type":"Question","name":"Who is Marina Mogilko?","acceptedAnswer":{"@type":"Answer","text":"Marina Mogilko is an entrepreneur, creator and the host of Silicon Valley Girl. Based in Silicon Valley, she interviews founders, researchers and business leaders about AI, the future of work and entrepreneurship, and makes practical videos for people who want to understand and use new technology."}},{"@type":"Question","name":"Where is Marina Mogilko from?","acceptedAnswer":{"@type":"Answer","text":"Saint Petersburg, Russia. She moved to Silicon Valley in 2015."}},{"@type":"Question","name":"What does it mean that Marina got funding as a person?","acceptedAnswer":{"@type":"Answer","text":"In 2021 Slow Ventures invested in Marina directly. Instead of buying shares in a company, the fund bought a share of her future earnings. She was the first creator to receive venture capital this way."}},{"@type":"Question","name":"What is the Silicon Valley Girl podcast?","acceptedAnswer":{"@type":"Answer","text":"Silicon Valley Girl is a woman-hosted AI, tech and career podcast, launched in June 2025. Marina Mogilko interviews the founders, researchers and executives building AI, and brings back the part you can use this week. There are 123 episodes on this site: 73 interviews, 44 solo episodes and 6 compilations, each with a full transcript. A new episode comes out every week."}},{"@type":"Question","name":"Who has been a guest?","acceptedAnswer":{"@type":"Answer","text":"Guests have included Reid Hoffman, Brian Chesky, Greg Brockman, Mustafa Suleyman, Mary Barra, Andrew Ng, Mo Gawdat, Sal Khan, Aravind Srinivas, Thomas Dohmke, Anne Wojcicki, Daron Acemoglu, Fei-Fei Li, Yoshua Bengio, Erik Brynjolfsson, Mike Krieger, Luis von Ahn, Mel Robbins, Gary Vaynerchuk. The episode directory lists all 123."}},{"@type":"Question","name":"Are there episodes without a guest?","acceptedAnswer":{"@type":"Answer","text":"Yes. In the 44 solo episodes Marina explains one tool, one career move or one idea from the valley on her own, in about twenty minutes."}},{"@type":"Question","name":"Where can I listen?","acceptedAnswer":{"@type":"Answer","text":"On YouTube, Spotify and Apple Podcasts. Every episode page on this site carries the transcript, the chapters and the key takeaways."}},{"@type":"Question","name":"What is Future Proof?","acceptedAnswer":{"@type":"Answer","text":"Future Proof is Marina's newsletter: one email a week with the AI idea worth your attention and exactly what to try with it. Read about it and subscribe."}},{"@type":"Question","name":"What are LinguaTrip and Linguamarina?","acceptedAnswer":{"@type":"Answer","text":"LinguaTrip is a platform for booking language courses abroad that Marina co-founded. Linguamarina is her YouTube channel for English learners, with almost 9 million subscribers."}},{"@type":"Question","name":"How do I work with Marina?","acceptedAnswer":{"@type":"Answer","text":"Brand partnerships go to partnerships@marinamogilko.co, press to pr@marinamogilko.co. Guest pitches and speaking invitations go through the contact form on this page."}}]}]}</script>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="wordmark">SILICON VALLEY GIRL<span>WITH MARINA MOGILKO</span></a>
+      <nav class="site-socials" aria-label="Social media">
+        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg></a>
+        <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg></a>
+        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener" aria-label="Apple Podcasts" title="Apple Podcasts"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg></a>
+        <a href="https://www.instagram.com/siliconvalleygirlpodcast/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg></a>
+        <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" aria-label="X" title="X"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg></a>
+        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg></a>
+        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg></a>
+        <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" aria-label="Newsletter" title="Newsletter"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg></a>
+      </nav>
+      <nav class="site-nav">
+        <div class="nav-menu">
+          <a href="/topics/" aria-haspopup="true">Topics</a>
+          <ul class="nav-sub" aria-label="Topics">
+            <li><a href="/episodes/">All episodes</a></li>
+            <li><a href="/topics/ai-skills-and-careers/">AI skills and careers</a></li>
+            <li><a href="/topics/future-of-work/">Future of work</a></li>
+            <li><a href="/topics/ai-business-and-startups/">AI business and startups</a></li>
+            <li><a href="/topics/leadership-and-mindset/">Leadership and mindset</a></li>
+            <li><a href="/topics/ai-tools-and-workflows/">AI tools and workflows</a></li>
+            <li><a href="/topics/ai-safety-and-the-future/">AI safety and the future</a></li>
+            <li><a href="/topics/education-and-learning/">Education and learning</a></li>
+            <li><a href="/topics/creator-economy-and-personal-brand/">Creator economy and personal brand</a></li>
+            <li><a href="/topics/money-and-investing/">Money and investing</a></li>
+            <li><a href="/topics/health-and-science/">Health and science</a></li>
+          </ul>
+        </div>
+        <div class="nav-menu">
+          <a href="/about/" aria-haspopup="true">About Marina</a>
+          <ul class="nav-sub" aria-label="About Marina">
+            <li><a href="/about/">About Marina</a></li>
+            <li><a href="/about/#story">Story</a></li>
+            <li><a href="/about/#press">Press</a></li>
+            <li><a href="/about/#awards">Awards</a></li>
+            <li><a href="/about/#speaking">Speaking</a></li>
+            <li><a href="/about/#faq">Questions</a></li>
+            <li><a href="/about/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a href="/partnerships/">For brands</a>
+        <a href="/newsletter/">Newsletter</a>
+        <a href="/#work" class="nav-cta">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page about">
+    <div class="wrap">
+      <section class="about-hero">
+        <div>
+          <p class="eyebrow">About the host</p>
+          <h1>Marina Mogilko</h1>
+          <p class="dek">Silicon Valley Girl is a woman-hosted AI, tech and career podcast. Marina Mogilko interviews the founders, researchers and executives building AI, and brings back the part you can use this week.</p>
+          <div class="btn-row">
+            <a class="btn btn-accent" href="/episodes/">Listen to the podcast</a>
+            <a class="btn" href="/newsletter/">Future Proof newsletter</a>
+            <a class="btn" href="#contact">Contact us</a>
+          </div>
+        </div>
+        <img class="portrait" src="/marina-mogilko.jpg" alt="Marina Mogilko, host of the Silicon Valley Girl Podcast" width="1333" height="2000">
+      </section>
+      <nav class="section-nav" aria-label="On this page">
+        <a href="#story">Story</a>
+        <a href="#press">Press</a>
+        <a href="#awards">Awards</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#faq">Questions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <section class="section prose narrow intro">
+<p>Marina Mogilko is an entrepreneur, creator and the host of Silicon Valley Girl, a weekly podcast about what AI means for everyday life. She moved from Saint Petersburg, Russia, to Silicon Valley in 2015. In 2021 she became the first creator to receive venture capital funding as an individual, from Slow Ventures.</p>
+      </section>
+
+        <div class="counts">
+          <div><span class="count-value">18.3M+</span><span class="count-label">followers across all channels</span></div>
+          <div><span class="count-value">12.6M+</span><span class="count-label">on YouTube</span></div>
+          <div><span class="count-value">3.5M+</span><span class="count-label">on TikTok</span></div>
+          <div><span class="count-value">1.6M+</span><span class="count-label">on Instagram</span></div>
+        </div>
+        <p class="muted small">Across every Silicon Valley Girl and linguamarina account, audiences overlapping; rounded down, as of 2026-10-08.</p>
+      <section class="section" id="facts">
+        <h2>In short</h2>
+        <ul class="facts">
+          <li>Host of Silicon Valley Girl, a podcast that was part of the official program of the World Economic Forum in Davos in 2026.</li>
+          <li>The first creator to receive venture capital funding as an individual, from Slow Ventures in 2021. <a class="source" href="https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11" target="_blank" rel="noopener">Business Insider, November 2021</a></li>
+          <li>Built two eight-figure businesses: LinguaTrip, an education company, and a global media company.</li>
+          <li>Angel investor in more than 20 startups, including Boom Supersonic, Higgsfield AI, Navier and Beacons.ai.</li>
+          <li>WIBA Award for Best Influencer in Education, presented at Cannes in 2023. <a class="source" href="https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/" target="_blank" rel="noopener">Times Monaco</a></li>
+          <li>Cover story of Times Monaco and L'Officiel Cyprus. <a class="source" href="https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence" target="_blank" rel="noopener">L'Officiel Cyprus</a></li>
+        </ul>
+      </section>
+
+      <section class="section prose narrow" id="story">
+        <h2>My story</h2>
+<p>I grew up in Saint Petersburg, Russia. At 14 I started traveling to the UK for language courses. English was how I got into a much bigger world.</p>
+<p>In 2015 my husband Dmitry and I moved to Silicon Valley with an early-stage startup and a couple of thousand dollars in savings. The startup was <a href="https://linguatrip.com/en" target="_blank" rel="noopener">LinguaTrip</a>, and that year it went through the 500 Startups accelerator.</p>
+<p>In 2021 Slow Ventures invested in me as a person. Instead of buying shares in a company, they bought a share of my future earnings. No creator had raised venture money this way before. I used part of it for my first angel investments. Today I've backed more than 20 startups.</p>
+<p>In June 2025 I launched the Silicon Valley Girl podcast.</p>
+      </section>
+      <section class="section prose narrow" id="why">
+        <h2>Why I started Silicon Valley Girl</h2>
+<p>For many people, Silicon Valley feels far away. It is where AI gets built, and it can seem to have little to do with their daily lives. Silicon Valley Girl helps you see the bridge between your life and Silicon Valley. My goal is to translate what AI means for your daily life.</p>
+<p>For an entrepreneur, it means building things faster. For a mom, it means running the household with a few AI agents, and maybe in 10 years having a robot that does the laundry. For an artist, it means managing the whole production flow with AI.</p>
+<p>So I interview the founders and scientists who build these tools, and I ask them to show me what I can do today to feel the magic of AI.</p>
+<p>Guests have included Reid Hoffman, co-founder of LinkedIn; Mustafa Suleyman, co-founder of DeepMind; Aravind Srinivas, co-founder of Perplexity; Andrew Ng, co-founder of Coursera; Mo Gawdat, former chief business officer of Google X; Mary Barra, CEO of General Motors; and Anne Wojcicki, co-founder of 23andMe.</p>
+      </section>
+      <section class="section prose narrow" id="first-visit">
+        <h2>If this is your first visit</h2>
+<p>Pick a guest or a topic you're curious about. Every episode page has the full transcript, so you can read instead of listen. In every conversation I ask the guest what you can try today, so you leave with something to use. If you want one email a week with the AI idea worth trying, subscribe to Future Proof, my newsletter.</p>
+      </section>
+      <section class="section prose narrow" id="linguatrip">
+        <h2>LinguaTrip and Linguamarina</h2>
+<p>Before the podcast, I co-founded <a href="https://linguatrip.com/en" target="_blank" rel="noopener">LinguaTrip</a>, a platform for booking language courses abroad, and built Linguamarina, my YouTube channel for English learners, which now has almost 9 million subscribers.</p>
+      </section>
+
+      <section class="section" id="press">
+        <h2>Press</h2>
+        <ul class="press">
+          <li><a href="https://www.forbes.com/sites/johnbbrandon/2020/12/21/my-picks-for-the-top-social-media-influencers-of-2020/" target="_blank" rel="noopener"><span class="outlet">Forbes</span> Top social media influencers of 2020</a> <span class="muted">2020</span></li>
+          <li><a href="https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11" target="_blank" rel="noopener"><span class="outlet">Business Insider</span> VC firms are buying equity directly in influencers and YouTube creators</a> <span class="muted">2021</span></li>
+          <li><a href="https://www.tubefilter.com/2022/06/01/creators-on-the-rise-silicon-valley-girl-marina-mogilko/" target="_blank" rel="noopener"><span class="outlet">Tubefilter</span> Creators on the Rise: Silicon Valley Girl Marina Mogilko</a> <span class="muted">2022</span></li>
+          <li><a href="https://blog.youtube/creator-and-artist-stories/10-creators-shaping-the-youtube-shorts-community/" target="_blank" rel="noopener"><span class="outlet">YouTube Official Blog</span> 10 creators shaping the YouTube Shorts community</a></li>
+          <li><a href="https://www.washingtonpost.com/creativegroup/youtube/the-impact-of-the-creator-economy/" target="_blank" rel="noopener"><span class="outlet">The Washington Post, WP Creative Group</span> The impact of the creator economy</a></li>
+          <li><a href="https://www.ibtimes.com/why-marina-mogilkos-silicon-valley-girl-podcast-exactly-what-innovation-economy-needs-right-now-3775116" target="_blank" rel="noopener"><span class="outlet">International Business Times</span> Why Marina Mogilko's Silicon Valley Girl podcast is exactly what the innovation economy needs right now</a></li>
+          <li><a href="https://papermag.com/marina-mogilko" target="_blank" rel="noopener"><span class="outlet">Paper</span> Marina Mogilko</a></li>
+          <li><a href="https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence" target="_blank" rel="noopener"><span class="outlet">L'Officiel Cyprus</span> Marina Mogilko: redefining entrepreneurship and influence</a></li>
+          <li><a href="https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/" target="_blank" rel="noopener"><span class="outlet">Times Monaco</span> WIBA Awards winner Marina Mogilko, shining social media star from Silicon Valley</a></li>
+          <li><a href="https://vogueadria.com/wiba-awards-usa-launch-event/" target="_blank" rel="noopener"><span class="outlet">Vogue Adria</span> WIBA Awards USA launch event</a></li>
+          <li><a href="https://www.thetilt.com/content-entrepreneur/marina-mogilko-youtube-content-creator" target="_blank" rel="noopener"><span class="outlet">The Tilt</span> Marina Mogilko, YouTube content creator</a></li>
+          <li><a href="https://www.thetribune.com/marina-mogilko-youtube-phenomenon-and-silicon-valley-entrepreneur/" target="_blank" rel="noopener"><span class="outlet">The Tribune</span> Marina Mogilko: YouTube phenomenon and Silicon Valley entrepreneur</a></li>
+          <li><a href="https://www.buzzfeed.com/kristatorres/cost-to-have-a-baby-tiktok" target="_blank" rel="noopener"><span class="outlet">BuzzFeed</span> The cost of having a baby, on TikTok</a></li>
+        </ul>
+        <p class="muted small">Press enquiries: <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a>.</p>
+      </section>
+
+      <section class="section" id="awards">
+        <h2>Awards</h2>
+        <ul class="plain awards">
+          <li><strong>WIBA Award, Best Influencer in Education</strong>, Cannes, 2023 <a class="source" href="https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/" target="_blank" rel="noopener">See it</a></li>
+          <li><strong>Shorty Impact Awards, 10th edition: Marina Mogilko</strong>, 2025 <a class="source" href="https://shortyawards.com/10th-impact/marina-mogilko" target="_blank" rel="noopener">See it</a></li>
+        </ul>
+      </section>
+
+      <section class="section" id="speaking">
+        <h2>Speaking</h2>
+        <ul class="plain stages">
+          <li><strong>World Economic Forum</strong>, Davos, 2026 <span class="muted">(official program)</span></li>
+          <li><strong>Viva Technology</strong>, Paris, 2025</li>
+          <li><strong>1 Billion Followers Summit</strong>, Dubai, 2025</li>
+          <li><strong>Stanford University</strong>, San Francisco, 2025</li>
+          <li><strong>Nas Summit</strong>, San Francisco, 2024</li>
+          <li><strong>ManyChat Instagram Online Summit</strong>, online, 2024</li>
+          <li><strong>VidCon</strong>, Anaheim, 2023</li>
+          <li><strong>Alibaba Co-Create</strong>, Las Vegas, 2023</li>
+          <li><strong>EduCon by YouTube</strong>, New York, 2022</li>
+        </ul>
+      </section>
+
+      <section class="section carousel-block" id="photos-covers">
+        <h2>Covers</h2>
+        <p class="muted small">Magazine covers and features. Scroll sideways to see more.</p>
+        <div class="carousel" tabindex="0" aria-label="Covers">
+          <figure><img src="/photos/covers/l-officiel.jpg" alt="Magazine cover featuring Marina Mogilko" width="1200" height="1484" loading="lazy"></figure>
+          <figure><img src="/photos/covers/los-altos-cover.jpg" alt="Magazine cover featuring Marina Mogilko" width="960" height="1280" loading="lazy"></figure>
+          <figure><img src="/photos/covers/times-monaco.jpg" alt="Magazine cover featuring Marina Mogilko" width="1225" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/covers/wiba-cover.jpg" alt="Magazine cover featuring Marina Mogilko" width="461" height="544" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="section carousel-block" id="photos-speaker">
+        <h2>On stage</h2>
+        <p class="muted small">Speaking at events. Scroll sideways to see more.</p>
+        <div class="carousel" tabindex="0" aria-label="On stage">
+          <figure><img src="/photos/speaker/562633483-18016310498788666-8754002282961041082-n.jpg" alt="Marina Mogilko speaking on stage" width="1200" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/speaker/on-stage-panel.jpg" alt="Marina Mogilko speaking on stage" width="1067" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/speaker/rb1-7139.jpg" alt="Marina Mogilko speaking on stage" width="1067" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/speaker/youtube-educon-creator-story.jpg" alt="Marina Mogilko speaking on stage" width="959" height="1010" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="section carousel-block" id="photos-influencer">
+        <h2>Influencer</h2>
+        <p class="muted small">Behind the content. Scroll sideways to see more.</p>
+        <div class="carousel" tabindex="0" aria-label="Influencer">
+          <figure><img src="/photos/influencer/468007116-18376939972104200-7046538932491679646-n.jpg" alt="Marina Mogilko" width="1281" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/influencer/655175617-18116744266660784-9052844488784508726-n.jpg" alt="Marina Mogilko" width="1280" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/influencer/655467159-18123075505607981-6035145141321811127-n.jpg" alt="Marina Mogilko" width="1280" height="1600" loading="lazy"></figure>
+          <figure><img src="/photos/influencer/657702523-18119415577553337-4206501532255687448-n.jpg" alt="Marina Mogilko" width="1281" height="1600" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <h2>Questions people ask</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary><h3>Who is Marina Mogilko?</h3></summary>
+            <div class="faq-answer">
+<p>Marina Mogilko is an entrepreneur, creator and the host of Silicon Valley Girl. Based in Silicon Valley, she interviews founders, researchers and business leaders about AI, the future of work and entrepreneurship, and makes practical videos for people who want to understand and use new technology.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Where is Marina Mogilko from?</h3></summary>
+            <div class="faq-answer">
+<p>Saint Petersburg, Russia. She moved to Silicon Valley in 2015.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>What does it mean that Marina got funding as a person?</h3></summary>
+            <div class="faq-answer">
+<p>In 2021 Slow Ventures invested in Marina directly. Instead of buying shares in a company, the fund bought a share of her future earnings. She was the first creator to receive venture capital this way.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>What is the Silicon Valley Girl podcast?</h3></summary>
+            <div class="faq-answer">
+<p>Silicon Valley Girl is a woman-hosted AI, tech and career podcast, launched in June 2025. Marina Mogilko interviews the founders, researchers and executives building AI, and brings back the part you can use this week. There are 123 episodes on this site: 73 interviews, 44 solo episodes and 6 compilations, each with a full transcript. A new episode comes out every week.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Who has been a guest?</h3></summary>
+            <div class="faq-answer">
+<p>Guests have included <a href="/episode/S0h5oUVv0BY/">Reid Hoffman</a>, <a href="/episode/iJlyNupMOzA/">Brian Chesky</a>, <a href="/episode/qy8Gr27yLMk/">Greg Brockman</a>, <a href="/episode/SP76PvgMzVU/">Mustafa Suleyman</a>, <a href="/episode/EuaVTPB8dxc/">Mary Barra</a>, <a href="/episode/o-wv_szZ0V0/">Andrew Ng</a>, <a href="/episode/E0Q96IKXx6Q/">Mo Gawdat</a>, <a href="/episode/s-Iz-lLAhdg/">Sal Khan</a>, <a href="/episode/U7PcyE0p54s/">Aravind Srinivas</a>, <a href="/episode/PR__eFQsnhg/">Thomas Dohmke</a>, <a href="/episode/VF2FwZ_PXhw/">Anne Wojcicki</a>, <a href="/episode/0lsasYuzhL4/">Daron Acemoglu</a>, <a href="/episode/subu-xHrp1w/">Fei-Fei Li</a>, <a href="/episode/0fXGtQoJgNo/">Yoshua Bengio</a>, <a href="/episode/72duHF7iZiU/">Erik Brynjolfsson</a>, <a href="/episode/Q66gsBJnKKQ/">Mike Krieger</a>, <a href="/episode/GDeEATJcbJo/">Luis von Ahn</a>, <a href="/episode/6es0HhfpQlQ/">Mel Robbins</a>, <a href="/episode/4vIIeCqHYXA/">Gary Vaynerchuk</a>. The <a href="/episodes/">episode directory</a> lists all 123.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Are there episodes without a guest?</h3></summary>
+            <div class="faq-answer">
+<p>Yes. In the 44 solo episodes Marina explains one tool, one career move or one idea from the valley on her own, in about twenty minutes.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Where can I listen?</h3></summary>
+            <div class="faq-answer">
+<p>On <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">YouTube</a>, <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a> and <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener">Apple Podcasts</a>. Every episode page on this site carries the transcript, the chapters and the key takeaways.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>What is Future Proof?</h3></summary>
+            <div class="faq-answer">
+<p>Future Proof is Marina's newsletter: one email a week with the AI idea worth your attention and exactly what to try with it. <a href="/newsletter/">Read about it and subscribe</a>.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>What are LinguaTrip and Linguamarina?</h3></summary>
+            <div class="faq-answer">
+<p><a href="https://linguatrip.com/en" target="_blank" rel="noopener">LinguaTrip</a> is a platform for booking language courses abroad that Marina co-founded. Linguamarina is her YouTube channel for English learners, with almost 9 million subscribers.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><h3>How do I work with Marina?</h3></summary>
+            <div class="faq-answer">
+<p>Brand partnerships go to <a href="mailto:partnerships@marinamogilko.co">partnerships@marinamogilko.co</a>, press to <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a>. Guest pitches and speaking invitations go through the <a href="/about/#contact">contact form</a> on this page.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section narrow" id="contact">
+        <h2>Contact</h2>
+        <p class="work-dek">Brand deals, podcast guests, speaking, press, partnerships &mdash; anything at all. Tell us what you have in mind and the team will get back to you.</p>
+      <form id="pitch-form" class="pitch-form" novalidate>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+        <div class="field field-name">
+          <label for="f-name">Your name</label>
+          <input type="text" id="f-name" name="name" required maxlength="200" autocomplete="name">
+        </div>
+        <div class="field field-email">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" required maxlength="320" autocomplete="email">
+        </div>
+        <div class="field field-company">
+          <label for="f-company">Company (optional)</label>
+          <input type="text" id="f-company" name="company" maxlength="200" autocomplete="organization">
+        </div>
+        <div class="field field-topic">
+          <label for="f-topic">What's this about?</label>
+          <select id="f-topic" name="topic" required>
+            <option value="Brand deal / sponsorship">Brand deal / sponsorship</option>
+            <option value="Podcast guest">Podcast guest</option>
+            <option value="Speaking / event">Speaking / event</option>
+            <option value="Press / interview">Press / interview</option>
+            <option value="Investment">Investment</option>
+            <option value="Job / hiring">Job / hiring</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </div>
+        <div class="field field-budget">
+          <label for="f-budget">Budget or timeline (optional)</label>
+          <input type="text" id="f-budget" name="budget" maxlength="200">
+        </div>
+        <div class="field field-details">
+          <label for="f-details">Details</label>
+          <textarea id="f-details" name="details" rows="6" required maxlength="5000" placeholder="What are you proposing, and why is it a fit?"></textarea>
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Leave this blank</label>
+          <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="rendered" value="">
+        <button type="submit" class="btn btn-accent form-submit">Send opportunity</button>
+      </form>
+
+      <p id="form-done" class="form-done" role="status" hidden>Thank you &mdash; that&rsquo;s with the team. You&rsquo;ll hear back at the address you gave.</p>
+
+      <noscript>
+        <p class="work-dek">This form needs JavaScript. Email <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a> instead and we&rsquo;ll pick it up just the same.</p>
+      </noscript>
+      </section>
+    </div>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="footer-mark">SILICON VALLEY GIRL</span>
+      <nav class="footer-links">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+      </nav>
+      <span class="footer-legal">&copy; 2026 Marina Mogilko &middot; Made in Silicon Valley</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('pitch-form');
+      if (!form) return;
+      var errorBox = document.getElementById('form-error');
+      var done = document.getElementById('form-done');
+      var button = form.querySelector('button[type="submit"]');
+      var label = button.textContent;
+
+      // Stamped on load, not at build time. Baking it into the HTML would make
+      // every build produce a different page, and would measure the age of
+      // the deploy rather than how long this visitor spent on the page.
+      var stamp = form.querySelector('input[name="rendered"]');
+      if (stamp) stamp.value = String(Date.now());
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        errorBox.hidden = true;
+        button.disabled = true;
+        button.textContent = 'Sending…';
+
+        var payload = {};
+        new FormData(form).forEach(function (value, key) { payload[key] = value; });
+
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+          .then(function (res) {
+            return res.json().catch(function () { return {}; }).then(function (body) {
+              return { ok: res.ok, body: body };
+            });
+          })
+          .then(function (result) {
+            if (result.ok) {
+              form.hidden = true;
+              done.hidden = false;
+              done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+              return;
+            }
+            fail(result.body.error || 'Something went wrong. Please try again.');
+          })
+          .catch(function () {
+            fail('Could not reach the server. Please try again, or email pr@marinamogilko.co.');
+          });
+      });
+
+      // Never clears the form: whatever they typed stays exactly where it is.
+      function fail(message) {
+        errorBox.textContent = message;
+        errorBox.hidden = false;
+        button.disabled = false;
+        button.textContent = label;
+        errorBox.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    })();
+  </script>
+</body>
+</html>

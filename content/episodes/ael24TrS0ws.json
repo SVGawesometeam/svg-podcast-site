@@ -281,7 +281,10 @@
       "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson"
     }
   ],
-  "topics": [],
+  "topics": [
+    "future-of-work",
+    "ai-skills-and-careers"
+  ],
   "summaryHtml": "In this episode of the Silicon Valley Girl Podcast, Marina Mogilko analyzes U.S. Bureau of Labor Statistics data projecting job growth through 2035, ranking 10 high-paying careers by median salary and examining their exposure to AI. The analysis reveals that 68% of the 206 occupations with highest AI exposure are still projected to grow, challenging the narrative that AI will eliminate jobs. Instead of disappearing, professions are transforming as AI automates specific tasks within roles rather than replacing entire positions. The top 10 growing jobs range from management analysts earning $101,860 to computer and information systems managers at $175,140, with healthcare professions dominating the list due to the industry's projected addition of roughly one-third of all new American jobs. The episode also identifies five fastest-declining occupations, with office and administrative support jobs projected to lose over 750,000 positions by 2035, and concludes with a practical Stanford-backed exercise to help workers identify which tasks to delegate to AI and which responsibilities to develop.",
   "metaDescription": "Marina Mogilko ranks the 10 highest-paying jobs projected to grow through 2035 — and the 5 shrinking fastest — from U.S. Bureau of Labor Statistics data on employment and AI exposure.",
   "platformLinks": {

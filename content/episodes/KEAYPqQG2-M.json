@@ -786,7 +786,10 @@
       "title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-business-and-startups",
+    "ai-tools-and-workflows"
+  ],
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000791626205"
   }

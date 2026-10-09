@@ -17,7 +17,7 @@
   <meta name="twitter:description" content="Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.">
   <meta name="twitter:image" content="https://marinamogilko.co/og-image.png">
   <link rel="canonical" href="https://marinamogilko.co/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://marinamogilko.co/#marina","name":"Marina Mogilko","url":"https://marinamogilko.co/","image":"https://marinamogilko.co/host.jpg","jobTitle":"Host, Silicon Valley Girl Podcast","description":"Entrepreneur and creator based in Silicon Valley. Host of Silicon Valley Girl, an AI, tech and career podcast, and author of the Future Proof newsletter.","worksFor":{"@id":"https://marinamogilko.co/#org"},"knowsAbout":["Artificial intelligence","Careers","Entrepreneurship","Creator economy"],"sameAs":["https://www.youtube.com/@SiliconValleyGirl","https://www.youtube.com/@linguamarina","https://www.instagram.com/siliconvalleygirl/","https://www.instagram.com/siliconvalleygirlpodcast/","https://www.linkedin.com/in/marinamogilko/","https://x.com/siliconvalleymm","https://www.tiktok.com/@linguamarina"]},{"@type":"PodcastSeries","@id":"https://marinamogilko.co/#podcast","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co/","description":"Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.","inLanguage":"en","author":{"@id":"https://marinamogilko.co/#marina"},"publisher":{"@id":"https://marinamogilko.co/#org"},"sameAs":["https://www.youtube.com/@SiliconValleyGirl","https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY","https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545"]},{"@type":"Organization","@id":"https://marinamogilko.co/#org","name":"Linguamarina, Inc.","url":"https://marinamogilko.co/","founder":{"@id":"https://marinamogilko.co/#marina"}},{"@type":"WebSite","@id":"https://marinamogilko.co/#website","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co/","publisher":{"@id":"https://marinamogilko.co/#org"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://marinamogilko.co/#marina","name":"Marina Mogilko","url":"https://marinamogilko.co/about/","image":"https://marinamogilko.co/marina-mogilko.jpg","jobTitle":"Host, Silicon Valley Girl Podcast","description":"Entrepreneur and creator based in Silicon Valley. Host of Silicon Valley Girl, an AI, tech and career podcast, and author of the Future Proof newsletter.","worksFor":{"@id":"https://marinamogilko.co/#org"},"knowsAbout":["Artificial intelligence","Careers","Entrepreneurship","Creator economy"],"sameAs":["https://www.youtube.com/@SiliconValleyGirl","https://www.youtube.com/@linguamarina","https://www.instagram.com/siliconvalleygirl/","https://www.instagram.com/siliconvalleygirlpodcast/","https://www.linkedin.com/in/marinamogilko/","https://x.com/siliconvalleymm","https://www.tiktok.com/@linguamarina"]},{"@type":"PodcastSeries","@id":"https://marinamogilko.co/#podcast","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co/","description":"Conversations with tech leaders, entrepreneurs, and innovators about AI, careers, and the future.","inLanguage":"en","author":{"@id":"https://marinamogilko.co/#marina"},"publisher":{"@id":"https://marinamogilko.co/#org"},"sameAs":["https://www.youtube.com/@SiliconValleyGirl","https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY","https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545"]},{"@type":"Organization","@id":"https://marinamogilko.co/#org","name":"Linguamarina, Inc.","url":"https://marinamogilko.co/","founder":{"@id":"https://marinamogilko.co/#marina"}},{"@type":"WebSite","@id":"https://marinamogilko.co/#website","name":"Silicon Valley Girl Podcast","url":"https://marinamogilko.co/","publisher":{"@id":"https://marinamogilko.co/#org"}}]}</script>
   
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -28,6 +28,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });</script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WZ57XVB"></script>
   <style>
     /* CHROME-START */
   :root {
@@ -136,6 +138,25 @@
   }
   .site-nav .nav-cta:hover { background: var(--accent); color: var(--ground); }
 
+  /* Drop-down under About Marina: opens on hover and on keyboard focus,
+     closes when the pointer or focus leaves. No JavaScript. On a phone the
+     header stacks and the About page's own section nav does this job. */
+  .nav-menu { position: relative; }
+  .nav-menu > a::after { content: " ▾"; font-size: 0.7em; }
+  .nav-sub {
+    position: absolute; top: 100%; left: -0.75rem; margin: 0; padding: 0.5rem 0;
+    list-style: none; min-width: 12rem; background: var(--ground);
+    border: 1px solid var(--rule); border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(23, 21, 17, 0.12);
+    opacity: 0; visibility: hidden; transform: translateY(4px);
+    transition: opacity 0.12s, transform 0.12s, visibility 0s linear 0.12s;
+  }
+  .nav-menu:hover .nav-sub, .nav-menu:focus-within .nav-sub {
+    opacity: 1; visibility: visible; transform: none; transition-delay: 0s;
+  }
+  .nav-sub a { display: block; padding: 0.45rem 1rem; font-size: 0.9rem; white-space: nowrap; }
+  .nav-sub a:hover { background: rgba(23, 21, 17, 0.05); }
+
   /* The header is sticky, so anything the nav jumps to needs a matching
      scroll offset or its heading lands underneath the bar. */
   [id] { scroll-margin-top: 6rem; }
@@ -195,7 +216,12 @@
     .site-socials { margin: 0; gap: 1rem; flex-wrap: wrap; }
     .site-socials a { min-height: 36px; }
     .site-socials svg { width: 20px; height: 20px; }
-    .site-nav { gap: 1.1rem; }
+    /* Five items do not fit on one line at phone width: let them wrap, and
+       keep each label on one line so nothing pokes past the edge. */
+    .site-nav { gap: 0.6rem 1.1rem; flex-wrap: wrap; }
+    .site-nav a { white-space: nowrap; }
+    .nav-menu > a::after { content: ""; }
+    .nav-sub { display: none; }
     /* Comfortable tap targets on a phone. */
     .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
     .site-header .wordmark { min-height: 44px; }
@@ -249,12 +275,6 @@
     .btn-text:hover { color: var(--accent); }
 
     /* The mock sets section eyebrows as red pills, not plain red text. */
-    .pill-label {
-      display: inline-block; background: var(--accent); color: var(--ground);
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
-      text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 999px;
-      margin-right: 0.8rem; vertical-align: middle;
-    }
 
     /* ---- Hero ---- */
     .hero { padding: clamp(1.75rem, 3.5vw, 3rem) 0 clamp(1.75rem, 3.5vw, 3rem); }
@@ -282,61 +302,11 @@
       text-transform: uppercase; padding: 0.6rem 0.9rem;
     }
 
-    /* ---- Cover story ---- */
-    .cover { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
-    .cover-card {
-      display: grid; grid-template-columns: 0.9fr 1.1fr;
-      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
-      background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
-    }
-    .cover-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .cover-meta {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
-    }
-    .cover-title {
-      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.6rem);
-      line-height: 1.02; margin-bottom: 0.9rem;
-    }
-    .cover-title a { text-decoration: none; }
-    .cover-title a:hover { color: var(--accent); }
-    .cover-dek { color: rgba(23, 21, 17, 0.78); margin-bottom: 1.4rem; }
-    .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-
     /* ---- About ---- */
     .about { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
     .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
     .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
     .about-body p:last-child { margin-bottom: 0; }
-
-    /* ---- Archive ---- */
-    .archive { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
-    .archive-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.6rem 1.4rem;
-    }
-    .ep-card { text-decoration: none; display: block; }
-    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .ep-card-body { padding-top: 0.75rem; }
-    .ep-card-meta {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
-    }
-    .ep-card-title {
-      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
-      letter-spacing: 0.01em; text-transform: uppercase;
-    }
-    .ep-card:hover .ep-card-title { color: var(--accent); }
-    .archive-head {
-      display: flex; align-items: baseline; justify-content: space-between;
-      gap: 1rem; flex-wrap: wrap;
-    }
-    .archive-head .section-title { margin-bottom: 1.8rem; }
-    .archive-more {
-      background: none; border: none; border-bottom: 2px solid var(--accent);
-      font-family: var(--body); cursor: pointer; padding: 0 0 2px;
-      color: rgba(23, 21, 17, 0.62);
-    }
 
     /* ---- Host ---- */
     .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
@@ -355,6 +325,76 @@
     .stat-label {
       font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
       text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
+    }
+
+    .host-positioning { font-size: 1.15rem; line-height: 1.5; max-width: 44rem; margin-bottom: 1rem; }
+    .host-more { margin-top: 2rem; }
+    .btn-ghost { border: 2px solid var(--ground); color: var(--ground); background: transparent; }
+    .btn-ghost:hover { background: var(--ground); color: var(--ink); }
+
+    /* ---- Card grids (curated block, practical row) and topic chips ---- */
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .archive-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap; margin-bottom: 1.8rem;
+    }
+    .archive-head .section-title { margin-bottom: 0; }
+    .topic-chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .topic-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.4rem 1rem; border: 1.5px solid var(--ink); border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
+    .topic-chips a:hover, .topic-chips a.all { background: var(--ink); color: var(--ground); }
+    .topic-chips a.all:hover { background: var(--accent); }
+
+    /* ---- Featured block and library search ---- */
+    .featured, .library, .practical, .about { padding: clamp(3rem, 6vw, 4.5rem) 0; border-top: 1px solid var(--rule); }
+    @media (min-width: 1100px) { .practical .archive-grid { grid-template-columns: repeat(4, 1fr); } }
+    .library .section-title { margin-bottom: 0.75rem; }
+    .library-search { display: flex; gap: 0.6rem; max-width: 40rem; margin: 1.5rem 0 1.25rem; }
+    .library-search input {
+      flex: 1; min-width: 0; font: inherit; font-size: 1.05rem; color: var(--ink); background: var(--card);
+      border: 2px solid var(--ink); border-radius: 8px; padding: 0.75rem 1rem; min-height: 48px;
+    }
+    .library-search input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .library-or { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin: 1.5rem 0 0.75rem; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+    /* ---- Newsletter prompt ---- */
+    .nl-pop {
+      position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 60; width: min(24rem, calc(100vw - 2.5rem));
+      background: var(--card); color: var(--ink); border: 2px solid var(--ink); border-radius: 12px;
+      padding: 1.5rem 1.5rem 1.25rem; box-shadow: 0 16px 40px rgba(23, 21, 17, 0.18);
+    }
+    .nl-pop[hidden] { display: none; }
+    .nl-pop h2 { font-family: var(--display); text-transform: uppercase; font-size: 1.5rem; line-height: 1; margin: 0 0 1rem; }
+    .nl-pop-close { position: absolute; top: 0.5rem; right: 0.6rem; font: inherit; font-size: 1.5rem; line-height: 1; background: none; border: 0; cursor: pointer; padding: 0.25rem 0.5rem; min-width: 44px; min-height: 44px; }
+    .nl-pop-form { display: grid; gap: 0.6rem; }
+    .nl-pop-form input { font: inherit; font-size: 1rem; padding: 0.7rem 0.9rem; border: 1.5px solid var(--rule); border-radius: 8px; min-height: 44px; }
+    .nl-pop-form input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .nl-pop-consent { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.82rem; line-height: 1.4; color: rgba(23, 21, 17, 0.8); }
+    .nl-pop-consent input { margin: 0.2rem 0 0; width: 1rem; height: 1rem; flex: none; accent-color: var(--accent); }
+    .nl-pop-consent a { color: inherit; }
+    .nl-pop-note { font-size: 0.78rem; color: rgba(23, 21, 17, 0.6); margin-top: 0.6rem; }
+    @media (max-width: 640px) { .nl-pop { right: 0.75rem; bottom: 0.75rem; left: 0.75rem; width: auto; } .library-search { flex-direction: column; } }
+
+    /* ---- Guests and practical rows ---- */
+    .section-dek { max-width: 40rem; margin: -1rem 0 1.8rem; color: rgba(23, 21, 17, 0.7); }
+    .ep-format {
+      display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+      border: 1px solid var(--rule); color: rgba(23, 21, 17, 0.6); letter-spacing: 0.08em;
     }
 
     /* ---- Partnerships ---- */
@@ -385,6 +425,7 @@
     /* ---- Work with Marina ---- */
     .work { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
     .work-inner { max-width: 760px; }
+
     .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
     .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
     .field { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -412,9 +453,14 @@
     }
     /* Off-screen rather than display:none — some bots skip hidden fields. */
     .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    @media (max-width: 900px) {
+      .pitch-form { grid-template-columns: 1fr; }
+      .field label { font-size: 0.75rem; }
+      .field input, .field select, .field textarea { font-size: 16px; }
+    }
 
     @media (max-width: 900px) {
-      .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
+      .hero-inner, .about-inner, .host-inner, .newsletter-inner {
         grid-template-columns: 1fr;
       }
       .hero-media { order: -1; }
@@ -425,11 +471,10 @@
 
       /* Labels and meta sit near 10px at desktop sizes, which is too small to
          read comfortably on a phone. */
-      .eyebrow, .ep-card-meta, .cover-meta, .stat-label, .field label { font-size: 0.75rem; }
+      .eyebrow, .ep-card-meta, .cover-meta, .stat-label { font-size: 0.75rem; }
 
       /* 16px is the threshold below which iOS Safari zooms the page when a
          field is focused, throwing the layout around mid-typing. */
-      .field input, .field select, .field textarea { font-size: 16px; }
 
       /* The badge sits over the still at desktop widths. On a phone the image
          is far smaller and the badge covers the thumbnail's own caption, so it
@@ -444,7 +489,6 @@
       .follow-btn { padding: 0.7rem 0.95rem; }
       .archive-grid { grid-template-columns: 1fr; }
       .host-stills { grid-template-columns: 1fr 1fr; }
-      .pitch-form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -459,16 +503,43 @@
         <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg></a>
         <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener" aria-label="Apple Podcasts" title="Apple Podcasts"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg></a>
         <a href="https://www.instagram.com/siliconvalleygirlpodcast/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg></a>
-        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg></a>
-        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg></a>
         <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" aria-label="X" title="X"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg></a>
+        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg></a>
+        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg></a>
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" aria-label="Newsletter" title="Newsletter"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg></a>
       </nav>
       <nav class="site-nav">
-        <a href="/#episodes">Episodes</a>
-        <a href="/#host">Host</a>
-        <a href="/#contact">Contact us</a>
-        <a href="/#subscribe" class="nav-cta">Subscribe</a>
+        <div class="nav-menu">
+          <a href="/topics/" aria-haspopup="true">Topics</a>
+          <ul class="nav-sub" aria-label="Topics">
+            <li><a href="/episodes/">All episodes</a></li>
+            <li><a href="/topics/ai-skills-and-careers/">AI skills and careers</a></li>
+            <li><a href="/topics/future-of-work/">Future of work</a></li>
+            <li><a href="/topics/ai-business-and-startups/">AI business and startups</a></li>
+            <li><a href="/topics/leadership-and-mindset/">Leadership and mindset</a></li>
+            <li><a href="/topics/ai-tools-and-workflows/">AI tools and workflows</a></li>
+            <li><a href="/topics/ai-safety-and-the-future/">AI safety and the future</a></li>
+            <li><a href="/topics/education-and-learning/">Education and learning</a></li>
+            <li><a href="/topics/creator-economy-and-personal-brand/">Creator economy and personal brand</a></li>
+            <li><a href="/topics/money-and-investing/">Money and investing</a></li>
+            <li><a href="/topics/health-and-science/">Health and science</a></li>
+          </ul>
+        </div>
+        <div class="nav-menu">
+          <a href="/about/" aria-haspopup="true">About Marina</a>
+          <ul class="nav-sub" aria-label="About Marina">
+            <li><a href="/about/">About Marina</a></li>
+            <li><a href="/about/#story">Story</a></li>
+            <li><a href="/about/#press">Press</a></li>
+            <li><a href="/about/#awards">Awards</a></li>
+            <li><a href="/about/#speaking">Speaking</a></li>
+            <li><a href="/about/#faq">Questions</a></li>
+            <li><a href="/about/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a href="/partnerships/">For brands</a>
+        <a href="/newsletter/">Newsletter</a>
+        <a href="/#work" class="nav-cta">Contact us</a>
       </nav>
     </div>
   </header>
@@ -486,26 +557,68 @@
         </div>
       </div>
       <div class="hero-media">
-        <a href="/episode/qy8Gr27yLMk/"><img src="https://img.youtube.com/vi/qy8Gr27yLMk/maxresdefault.jpg" alt="OpenAI Co-Founder: Start Building With AI Before You Feel Ready | Greg Brockman" width="640" height="360"></a>
+        <a href="/episode/0lsasYuzhL4/"><img src="https://img.youtube.com/vi/0lsasYuzhL4/maxresdefault.jpg" alt="Nobel Economist: How to Stay Valuable as AI Changes Work | Daron Acemoglu" width="640" height="360"></a>
         <span class="hero-badge">New episode weekly</span>
       </div>
     </div>
   </section>
 
-  <section class="cover">
+
+  <section id="featured" class="featured">
     <div class="wrap">
-      <h2 class="section-title"><span class="pill-label">Latest</span>This week&rsquo;s cover story</h2>
-      <div class="cover-card">
-        <a href="/episode/0lsasYuzhL4/"><img src="https://img.youtube.com/vi/0lsasYuzhL4/maxresdefault.jpg" alt="Nobel Economist: How to Stay Valuable as AI Changes Work | Daron Acemoglu" loading="lazy" width="480" height="270"></a>
-        <div>
-          <p class="cover-meta">OCT 6 2026 &middot; 44 MIN &middot; With Daron Acemoglu</p>
-          <h3 class="cover-title"><a href="/episode/0lsasYuzhL4/">Nobel Economist: How to Stay Valuable as AI Changes Work | Daron Acemoglu</a></h3>
-          <p class="cover-dek">Marina Mogilko interviews Daron Acemoglu, MIT Economist and 2024 Nobel Laureate in Economic Sciences, on the Silicon Valley Girl Podcast</p>
-          <div class="cover-cta">
-            <a class="btn btn-ink" href="https://youtube.com/watch?v=0lsasYuzhL4" target="_blank" rel="noopener">Play on YouTube</a>
-            <a class="btn" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
-          </div>
-        </div>
+      <div class="archive-head">
+        <h2 class="section-title">Conversations that matter</h2>
+        <a class="btn btn-ink archive-more" href="/episodes/">All episodes &rarr;</a>
+      </div>
+      <div class="archive-grid">
+
+          <a href="/episode/S0h5oUVv0BY/" class="ep-card">
+            <img src="https://img.youtube.com/vi/S0h5oUVv0BY/maxresdefault.jpg" alt="LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Reid Hoffman &middot; 28 MIN</p>
+              <h3 class="ep-card-title">LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman</h3>
+            </div>
+          </a>
+
+          <a href="/episode/SP76PvgMzVU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/SP76PvgMzVU/maxresdefault.jpg" alt="CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mustafa Suleyman &middot; 42 MIN</p>
+              <h3 class="ep-card-title">CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman</h3>
+            </div>
+          </a>
+
+          <a href="/episode/vZLY2YGUk4o/" class="ep-card">
+            <img src="https://img.youtube.com/vi/vZLY2YGUk4o/maxresdefault.jpg" alt="Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">John Martinis &middot; 23 MIN</p>
+              <h3 class="ep-card-title">Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis</h3>
+            </div>
+          </a>
+
+          <a href="/episode/o-wv_szZ0V0/" class="ep-card">
+            <img src="https://img.youtube.com/vi/o-wv_szZ0V0/maxresdefault.jpg" alt="Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Andrew Ng &middot; 38 MIN</p>
+              <h3 class="ep-card-title">Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think</h3>
+            </div>
+          </a>
+
+          <a href="/episode/E0Q96IKXx6Q/" class="ep-card">
+            <img src="https://img.youtube.com/vi/E0Q96IKXx6Q/maxresdefault.jpg" alt="Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Mo Gawdat &middot; 40 MIN</p>
+              <h3 class="ep-card-title">Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat</h3>
+            </div>
+          </a>
+
+          <a href="/episode/subu-xHrp1w/" class="ep-card">
+            <img src="https://img.youtube.com/vi/subu-xHrp1w/maxresdefault.jpg" alt="Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">Fei-Fei Li and David Rogier &middot; 50 MIN</p>
+              <h3 class="ep-card-title">Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li &amp; Masterclass CEO David Rogier</h3>
+            </div>
+          </a>
       </div>
     </div>
   </section>
@@ -515,65 +628,73 @@
       <h2 class="section-title">About the show</h2>
       <div class="about-body">
         <p>Silicon Valley Girl is a weekly interview podcast hosted by Marina Mogilko, an entrepreneur and creator based in Silicon Valley. Each episode she sits down with the founders and scientists building AI and asks them one question: what can a normal person actually do with this today?</p>
-        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work. Past guests include Andrew Ng, Fei-Fei Li, Sal Khan, Anne Wojcicki and Shishir Mehrotra.</p>
-        <p>You can watch on YouTube or listen on Spotify and Apple Podcasts. New episodes come out every week.</p>
+        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work.</p>
+        <p>You can watch on <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">YouTube</a> or listen on <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a> and <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener">Apple Podcasts</a>. New episodes come out every week.</p>
       </div>
     </div>
   </section>
 
-  <section id="episodes" class="archive">
+  <section id="search" class="library">
+    <div class="wrap">
+      <h2 class="section-title">Find the episode you need.</h2>
+      <p class="section-dek">I&rsquo;ve asked founders and scientists hundreds of questions. Search any guest, quote or piece of advice across all episodes.</p>
+      <form class="library-search" action="/episodes/" method="get" role="search">
+        <label for="home-q" class="visually-hidden">Search episodes and transcripts</label>
+        <input type="search" id="home-q" name="q" placeholder="A guest, a company, a topic, a phrase" autocomplete="off">
+        <button type="submit" class="btn btn-accent">Search</button>
+      </form>
+      <p class="library-or">Or browse by topic</p>
+      <ul class="topic-chips">
+        <li><a href="/topics/ai-skills-and-careers/">AI skills and careers</a></li>
+        <li><a href="/topics/future-of-work/">Future of work</a></li>
+        <li><a href="/topics/ai-business-and-startups/">AI business and startups</a></li>
+        <li><a href="/topics/leadership-and-mindset/">Leadership and mindset</a></li>
+        <li><a href="/topics/ai-tools-and-workflows/">AI tools and workflows</a></li>
+        <li><a href="/topics/ai-safety-and-the-future/">AI safety and the future</a></li>
+        <li><a href="/topics/education-and-learning/">Education and learning</a></li>
+        <li><a href="/topics/creator-economy-and-personal-brand/">Creator economy and personal brand</a></li>
+        <li><a href="/topics/money-and-investing/">Money and investing</a></li>
+        <li><a href="/topics/health-and-science/">Health and science</a></li>
+        <li><a href="/topics/" class="all">All topics &rarr;</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="practical" class="practical">
     <div class="wrap">
       <div class="archive-head">
-        <h2 class="section-title">The archive</h2>
-        <a class="btn-text archive-more" href="/episodes/">All episodes &rarr;</a>
+        <h2 class="section-title">Practical AI with Marina</h2>
+        <a class="btn btn-ink archive-more" href="/topics/ai-tools-and-workflows/">More how-to episodes &rarr;</a>
       </div>
+      <p class="section-dek">Solo episodes and compilations: one tool, one idea or one career move, in about twenty minutes.</p>
       <div class="archive-grid">
-
-          <a href="/episode/iJlyNupMOzA/" class="ep-card">
-            <img src="https://img.youtube.com/vi/iJlyNupMOzA/maxresdefault.jpg" alt="$95B Airbnb CEO: The Gap Is Growing — What It Takes to Be a Top Performer Now | Brian Chesky" loading="lazy" width="480" height="270">
-            <div class="ep-card-body">
-              <p class="ep-card-meta">Brian Chesky &middot; 35 MIN</p>
-              <h3 class="ep-card-title">$95B Airbnb CEO: The Gap Is Growing — What It Takes to Be a Top Performer Now | Brian Chesky</h3>
-            </div>
-          </a>
-
-          <a href="/episode/oOpF0ZXSXuk/" class="ep-card">
-            <img src="https://img.youtube.com/vi/oOpF0ZXSXuk/maxresdefault.jpg" alt="Stanford Doctor: The Right Way To Ask AI About Your Health" loading="lazy" width="480" height="270">
-            <div class="ep-card-body">
-              <p class="ep-card-meta">Dr. Jonathan Chen &middot; 49 MIN</p>
-              <h3 class="ep-card-title">Stanford Doctor: The Right Way To Ask AI About Your Health</h3>
-            </div>
-          </a>
-
-          <a href="/episode/KEAYPqQG2-M/" class="ep-card">
-            <img src="https://img.youtube.com/vi/KEAYPqQG2-M/maxresdefault.jpg" alt="$13B Lovable Co-Founder: Turn Your AI Side Project Into a Real Business" loading="lazy" width="480" height="270">
-            <div class="ep-card-body">
-              <p class="ep-card-meta">Anton Osika &middot; 34 MIN</p>
-              <h3 class="ep-card-title">$13B Lovable Co-Founder: Turn Your AI Side Project Into a Real Business</h3>
-            </div>
-          </a>
-
           <a href="/episode/ael24TrS0ws/" class="ep-card">
             <img src="https://img.youtube.com/vi/ael24TrS0ws/maxresdefault.jpg" alt="TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
-              <p class="ep-card-meta">Marina Mogilko &middot; 21 MIN</p>
+              <p class="ep-card-meta">21 MIN <span class="ep-format">Solo</span></p>
               <h3 class="ep-card-title">TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)</h3>
             </div>
           </a>
-
           <a href="/episode/cVGHg4Vd9uM/" class="ep-card">
             <img src="https://img.youtube.com/vi/cVGHg4Vd9uM/maxresdefault.jpg" alt="The Biggest AI Opportunities Are Hiding in Boring Businesses" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
-              <p class="ep-card-meta">Marina Mogilko &middot; 24 MIN</p>
+              <p class="ep-card-meta">24 MIN <span class="ep-format">Compilation</span></p>
               <h3 class="ep-card-title">The Biggest AI Opportunities Are Hiding in Boring Businesses</h3>
             </div>
           </a>
-
-          <a href="/episode/JEZVl3BkSLk/" class="ep-card">
-            <img src="https://img.youtube.com/vi/JEZVl3BkSLk/maxresdefault.jpg" alt="Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra" loading="lazy" width="480" height="270">
+          <a href="/episode/213rSCulKUQ/" class="ep-card">
+            <img src="https://img.youtube.com/vi/213rSCulKUQ/maxresdefault.jpg" alt="Top 1% Career Strategy: How to Get Hired in the AI Era" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
-              <p class="ep-card-meta">Shishir Mehrotra &middot; 39 MIN</p>
-              <h3 class="ep-card-title">Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra</h3>
+              <p class="ep-card-meta">23 MIN <span class="ep-format">Compilation</span></p>
+              <h3 class="ep-card-title">Top 1% Career Strategy: How to Get Hired in the AI Era</h3>
+            </div>
+          </a>
+          <a href="/episode/Y854KRfONAU/" class="ep-card">
+            <img src="https://img.youtube.com/vi/Y854KRfONAU/maxresdefault.jpg" alt="The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">23 MIN <span class="ep-format">Compilation</span></p>
+              <h3 class="ep-card-title">The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up</h3>
             </div>
           </a>
       </div>
@@ -589,24 +710,16 @@
         </div>
         <div>
           <h3 class="host-name">Marina Mogilko</h3>
-          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          <p class="host-positioning">Silicon Valley Girl is a woman-hosted AI, tech and career podcast. Marina Mogilko interviews the founders, researchers and executives building AI, and brings back the part you can use this week.</p>
+          <p class="host-bio">For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
           <div class="host-stats">
             <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
-            <div><span class="stat-value">Millions</span><span class="stat-label">Following along</span></div>
-            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+            <div><span class="stat-value">18.3M+</span><span class="stat-label">Following along &middot; 2026-10-08</span></div>
+            <div><span class="stat-value">123</span><span class="stat-label">Episodes with transcripts</span></div>
           </div>
+          <a class="btn btn-ghost host-more" href="/about/">About Marina, speaking and press &rarr;</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contact" class="partnerships">
-    <div class="wrap partnerships-inner">
-      <div>
-        <p class="eyebrow">Partnerships</p>
-        <h2>Want your brand on the podcast?</h2>
-      </div>
-      <a class="pill" href="mailto:partnerships@marinamogilko.co"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#5b6470"/><path fill="#fff" d="M5 7.5h14a.5.5 0 0 1 .5.5v.4l-7.5 4.3L4.5 8.4V8a.5.5 0 0 1 .5-.5zM4.5 9.9l6.9 3.95a1 1 0 0 0 1 0L19.5 9.9V16a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5z"/></svg> partnerships@marinamogilko.co</a>
     </div>
   </section>
 
@@ -679,9 +792,9 @@
             <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener" class="follow-btn"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg><span>Spotify</span></a>
             <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener" class="follow-btn"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg><span>Apple Podcasts</span></a>
             <a href="https://www.instagram.com/siliconvalleygirlpodcast/" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg><span>Instagram</span></a>
-            <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg><span>TikTok</span></a>
-            <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg><span>LinkedIn</span></a>
             <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg><span>X</span></a>
+            <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg><span>LinkedIn</span></a>
+            <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg><span>TikTok</span></a>
             <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" class="follow-btn"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg><span>Newsletter</span></a>
         </div>
       </div>
@@ -693,12 +806,60 @@
     <div class="site-footer-inner">
       <span class="footer-mark">SILICON VALLEY GIRL</span>
       <nav class="footer-links">
-        <a href="https://partnerships.marinamogilko.co/plc">Privacy Policy</a>
-        <a href="https://partnerships.marinamogilko.co/ts">Terms of Service</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
       </nav>
       <span class="footer-legal">&copy; 2026 Marina Mogilko &middot; Made in Silicon Valley</span>
     </div>
   </footer>
+
+  <div class="nl-pop" id="nl-pop" hidden role="dialog" aria-modal="false" aria-labelledby="nl-pop-title">
+    <button type="button" class="nl-pop-close" id="nl-pop-close" aria-label="Close">&times;</button>
+    <p class="eyebrow">Future Proof, the newsletter</p>
+    <h2 id="nl-pop-title">One email a week. The AI idea worth your attention.</h2>
+    <form id="nl-pop-form" class="nl-pop-form" action="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=popup&amp;utm_campaign=futureproof-sub">
+      <label for="nl-pop-email" class="visually-hidden">Your email address</label>
+      <input type="email" id="nl-pop-email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <label class="nl-pop-consent">
+        <input type="checkbox" id="nl-pop-consent" required>
+        <span>Yes! Sign me up for Future Proof Newsletter. In doing so, I agree to the <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Use</a>.</span>
+      </label>
+      <button type="submit" class="btn btn-accent">Subscribe to the newsletter</button>
+    </form>
+    <p class="nl-pop-note">Free. Unsubscribe any time.</p>
+  </div>
+
+  <script>
+    (function () {
+      // The newsletter prompt: appears after 40 seconds, once per visitor
+      // per 30 days (remembered on this device the moment it is shown),
+      // never on top of someone typing in the contact form. Submitting
+      // opens the newsletter's own subscribe page with the address filled
+      // in; the page itself never posts anywhere.
+      var pop = document.getElementById("nl-pop"), close = document.getElementById("nl-pop-close"),
+          form = document.getElementById("nl-pop-form"), KEY = "svg-nl-pop", MONTH = 30 * 864e5;
+      function seen() { try { return Date.now() - Number(localStorage.getItem(KEY) || 0) < MONTH; } catch (e) { return false; } }
+      function remember() { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} }
+      function hide() { pop.hidden = true; remember(); }
+      if (!seen()) {
+        setTimeout(function () {
+          var active = document.activeElement;
+          if (active && active.closest && active.closest("#pitch-form")) return;
+          pop.hidden = false; remember();
+        }, 40000);
+      }
+      close.addEventListener("click", hide);
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !pop.hidden) hide(); });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("nl-pop-email").value.trim();
+        if (!email || !document.getElementById("nl-pop-consent").checked) return;
+        window.open(form.getAttribute("action") + "&email=" + encodeURIComponent(email), "_blank", "noopener");
+        hide();
+      });
+    })();
+  </script>
+
 
   <script>
     (function () {
@@ -710,8 +871,8 @@
       var label = button.textContent;
 
       // Stamped on load, not at build time. Baking it into the HTML would make
-      // every build produce a different index.html, and would measure the age
-      // of the deploy rather than how long this visitor spent on the page.
+      // every build produce a different page, and would measure the age of
+      // the deploy rather than how long this visitor spent on the page.
       var stamp = form.querySelector('input[name="rendered"]');
       if (stamp) stamp.value = String(Date.now());
 

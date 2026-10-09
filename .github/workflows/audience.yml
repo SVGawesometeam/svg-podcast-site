@@ -1,0 +1,45 @@
+# Weekly audience count: copy the dashboard's subtotals into
+# content/audience.json, rebuild the pages that show them (/about/, the
+# homepage, llms.txt) and commit. Vercel deploys the commit like any other.
+# Runs after the dashboard's daily 06:40 UTC read. Run it by hand from
+# Actions -> "Weekly audience count" -> Run workflow.
+name: Weekly audience count
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# A manual run overlapping the Monday run would push twice; queue them.
+concurrency:
+  group: audience
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Read the dashboard
+        run: node scripts/update-audience.js
+      - name: Rebuild the site
+        run: node build.js
+      - name: Check
+        run: npm test
+      - name: Commit if the numbers moved
+        run: |
+          git config user.name "audience-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/audience.json public sitemap-lastmod.json
+          if git diff --cached --quiet; then
+            echo "No change"
+          else
+            git commit -m "Weekly audience count"
+            git push
+          fi

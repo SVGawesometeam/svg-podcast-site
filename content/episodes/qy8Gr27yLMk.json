@@ -465,7 +465,10 @@
       "title": "TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-tools-and-workflows",
+    "ai-business-and-startups"
+  ],
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000792835630"
   }

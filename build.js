@@ -2,8 +2,16 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
-const { TOPICS, FIELDS } = require("./lib/contact-fields");
+const { renderContactForm, CONTACT_FORM_CSS, CONTACT_FORM_SCRIPT } = require("./lib/contact-form");
 const { esc, jsonForScript } = require("./lib/html");
+const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
+const { renderAboutPage, renderNewsletterPage, renderLegalPage, episodeFor } = require("./lib/pages");
+const { FORMAT_LABEL } = require("./lib/cards");
+const { SITE_URL, IDS } = require("./lib/site");
+const { countsFor, formatCount } = require("./lib/audience");
+const { renderTopicPage, renderTopicsIndex, episodesFor } = require("./lib/render-topics");
+const { renderPartnershipsPage, parseCaseStudy } = require("./lib/render-partnerships");
+const { renderEpisodeCard, CARD_CSS } = require("./lib/cards");
 const {
   fromApi,
   validate,
@@ -14,7 +22,6 @@ const {
 
 const API_BASE =
   "https://svg-dashboard-production.up.railway.app/api/podcast-page";
-const SITE_URL = "https://marinamogilko.co";
 const PUBLIC_DIR = path.join(__dirname, "public");
 const IDS_FILE = path.join(__dirname, "podcast-video-ids.txt");
 const FIXES_DIR = path.join(__dirname, "transcript-fixes");
@@ -24,6 +31,61 @@ const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 // The build renders every page from it on every run, so a template change
 // reaches all pages and a page is never edited by hand. Hand corrections go
 // into the JSON (and their reasons into transcript-fixes/<id>.json).
+const SITE_FILE = path.join(__dirname, "content", "site.json");
+const ABOUT_FILE = path.join(__dirname, "content", "about.md");
+const PHOTOS_FILE = path.join(__dirname, "content", "photos.json");
+const PARTNERS_FILE = path.join(__dirname, "content", "partners.json");
+const TESTIMONIALS_FILE = path.join(__dirname, "content", "testimonials.json");
+const CASE_STUDIES_DIR = path.join(__dirname, "content", "case-studies");
+const readJson = (f, fallback) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : fallback);
+// Where the newsletter prompt sends people; the email is appended by the
+// page so the subscribe page opens with it filled in.
+const NEWSLETTER_SUBSCRIBE = "https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&utm_medium=popup&utm_campaign=futureproof-sub";
+const AUDIENCE_FILE = path.join(__dirname, "content", "audience.json");
+const LEGAL_DIR = path.join(__dirname, "content", "legal");
+const TOPICS_FILE = path.join(__dirname, "content", "topics.json");
+const TOPICS_DIR = path.join(__dirname, "content", "topics");
+
+// The topic hubs; see content/topics.json. Every slug an episode names must
+// be one of these, or the build stops rather than linking to a page that
+// does not exist.
+function readTopics() {
+  const topics = JSON.parse(fs.readFileSync(TOPICS_FILE, "utf8")).topics;
+  const seen = new Set();
+  for (const t of topics) {
+    // The slug becomes a directory under public/topics/ and a file name
+    // under content/topics/, so it is checked before any path is built.
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(String(t.slug))) throw new Error(`content/topics.json: bad slug ${JSON.stringify(t.slug)}`);
+    if (seen.has(t.slug)) throw new Error(`content/topics.json: duplicate slug "${t.slug}"`);
+    seen.add(t.slug);
+    for (const k of ["name", "description", "question"]) if (!t[k]) throw new Error(`content/topics.json: ${t.slug} has no ${k}`);
+  }
+  return topics;
+}
+const TOPIC_HUBS = readTopics();
+const TOPIC_BY_SLUG = Object.fromEntries(TOPIC_HUBS.map((t) => [t.slug, t]));
+function topicsOf(d) {
+  return (d.topics || []).map((slug) => {
+    const t = TOPIC_BY_SLUG[slug];
+    if (!t) throw new Error(`${d.videoId}: topic "${slug}" is not in content/topics.json`);
+    return { slug: t.slug, name: t.name };
+  });
+}
+
+// Facts about Marina and the show; see content/site.json for what is in it
+// and where it comes from. /about/, llms.txt and the JSON-LD all read this.
+// The audience counts come from content/audience.json, written weekly by
+// the dashboard job, and are never typed into site.json.
+function readSite() {
+  const site = JSON.parse(fs.readFileSync(SITE_FILE, "utf8"));
+  site.audience = fs.existsSync(AUDIENCE_FILE) ? JSON.parse(fs.readFileSync(AUDIENCE_FILE, "utf8")) : null;
+  site.counts = countsFor(site.audience);
+  site.topics = TOPIC_HUBS;
+  // Photo strips for /about/, written by scripts/prepare-photos.js.
+  site.photos = readJson(PHOTOS_FILE, null);
+  return site;
+}
+
 function dataFile(videoId) {
   return path.join(CONTENT_DIR, `${videoId}.json`);
 }
@@ -52,10 +114,47 @@ function loadFix(videoId) {
   return JSON.parse(fs.readFileSync(f, "utf8"));
 }
 
-async function fetchEpisode(videoId) {
-  const res = await fetch(`${API_BASE}/${videoId}`);
+async function fetchEpisode(videoId, fetchImpl = fetch) {
+  const res = await fetchImpl(`${API_BASE}/${videoId}`, { redirect: "error", signal: AbortSignal.timeout(60000) });
   if (!res.ok) throw new Error(`API returned ${res.status} for ${videoId}`);
   return res.json();
+}
+
+// A draft for one episode from the backend: the registry id is enforced,
+// related episodes are limited to ones on the site, ads and generic speaker
+// labels are handled by fromApi(), transcript-fixes are applied, and the
+// draft is validated before it is written. Used by build.js for ids that
+// have no data yet and by scripts/new-episode.js for the review workflow.
+async function importDraft(videoId, idSet, { fetchImpl = fetch } = {}) {
+  if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) throw new Error(`bad videoId ${JSON.stringify(videoId)}`);
+  const ep = await fetchEpisode(videoId, fetchImpl);
+  // The registry ID is the one we asked for; the backend does not get
+  // to rename the episode (or the file it is written to).
+  if (ep.videoId && ep.videoId !== videoId) {
+    throw new Error(`backend returned videoId ${JSON.stringify(ep.videoId)} for ${videoId}`);
+  }
+  ep.videoId = videoId;
+  // Only link related episodes that are actually on the site.
+  ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
+  const d = fromApi(ep, loadFix(videoId));
+  const draftProblems = validate(d);
+  if (draftProblems.length) {
+    throw new Error(`draft rejected: ${draftProblems.join("; ")}`);
+  }
+  writeEpisodeData(d);
+  return d;
+}
+
+// Everything a visitor might search for in an episode, lowercased, with
+// whitespace collapsed: summary, takeaways, chapter titles, then the
+// transcript. Guest and title are on the card already.
+function searchText(d) {
+  return [
+    d.summary || "",
+    ...(d.keyTakeaways || []),
+    ...(d.timestamps || []).map((c) => c.title),
+    ...(d.transcript || []).map((b) => b.text),
+  ].join(" ").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
 // What the homepage, the directory, the sitemap and llms.txt need to know
@@ -85,6 +184,10 @@ async function build() {
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
 
   const allEpisodes = [];
+  // The directory's transcript search: one lowercased string per episode,
+  // fetched by the page only when someone types a query of three or more
+  // characters. Summaries, takeaways and chapter titles are in it too.
+  const searchIndex = [];
   let imported = 0, rendered = 0, failed = 0;
 
   for (let i = 0; i < videoIds.length; i++) {
@@ -95,24 +198,15 @@ async function build() {
       d = readEpisodeData(videoId);
     } else {
       // No reviewed data yet: import a draft from the backend and write it.
-      // The draft is what the producer reviews before it is committed.
+      // The draft is what the producer reviews before it is committed. That
+      // review happens on a person's machine; a build on CI (the weekly
+      // audience job commits public/ to main) must never publish a draft.
+      if (process.env.CI) {
+        throw new Error(`${videoId} has no content/episodes/${videoId}.json; a CI build does not import drafts`);
+      }
       console.log(`[${i + 1}/${videoIds.length}] Importing ${videoId} from the backend...`);
       try {
-        const ep = await fetchEpisode(videoId);
-        // The registry ID is the one we asked for; the backend does not get
-        // to rename the episode (or the file it is written to).
-        if (ep.videoId && ep.videoId !== videoId) {
-          throw new Error(`backend returned videoId ${JSON.stringify(ep.videoId)} for ${videoId}`);
-        }
-        ep.videoId = videoId;
-        // Only link related episodes that are actually on the site.
-        ep.relatedVideos = (ep.relatedVideos || []).filter(v => idSet.has(v.videoId));
-        d = fromApi(ep, loadFix(videoId));
-        const draftProblems = validate(d);
-        if (draftProblems.length) {
-          throw new Error(`draft rejected: ${draftProblems.join("; ")}`);
-        }
-        writeEpisodeData(d);
+        d = await importDraft(videoId, idSet);
         imported++;
         console.log(`   DRAFT -> content/episodes/${videoId}.json (review before committing)`);
       } catch (e) {
@@ -126,6 +220,7 @@ async function build() {
     if (problems.length) {
       throw new Error(`content/episodes/${videoId}.json: ${problems.join("; ")}`);
     }
+    topicsOf(d); // throws on a slug with no hub
     const unknown = unknownSpeakers(d, loadFix(videoId));
     if (unknown.length) {
       console.warn(`   WARN ${videoId}: speaker label(s) not in the known list: ${unknown.map(u => `"${u}"`).join(", ")}`);
@@ -136,6 +231,7 @@ async function build() {
     fs.writeFileSync(path.join(epDir, "index.html"), renderEpisodePage(d));
     rendered++;
     allEpisodes.push(summaryFor(d));
+    searchIndex.push({ id: d.videoId, text: searchText(d) });
   }
 
   // Data files for episodes not in the registry are not rendered; say so.
@@ -148,7 +244,8 @@ async function build() {
 
   allEpisodes.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes));
+  const site = readSite();
+  fs.writeFileSync(path.join(PUBLIC_DIR, "index.html"), renderHomePage(allEpisodes, site));
   console.log("Written public/index.html");
 
   const episodesDir = path.join(PUBLIC_DIR, "episodes");
@@ -156,12 +253,54 @@ async function build() {
   fs.writeFileSync(path.join(episodesDir, "index.html"), renderEpisodesPage(allEpisodes));
   console.log("Written public/episodes/index.html");
 
+  const caseStudies = fs.existsSync(CASE_STUDIES_DIR)
+    ? fs.readdirSync(CASE_STUDIES_DIR).filter((f) => f.endsWith(".md")).sort()
+        .map((f) => parseCaseStudy(fs.readFileSync(path.join(CASE_STUDIES_DIR, f), "utf8")))
+    : [];
+  const staticPages = {
+    "partnerships": renderPartnershipsPage(site, allEpisodes, {
+      partners: readJson(PARTNERS_FILE, { featuredCount: 9, items: [] }),
+      testimonials: readJson(TESTIMONIALS_FILE, { items: [] }),
+      caseStudies,
+    }),
+    "about": renderAboutPage(site, allEpisodes, fs.existsSync(ABOUT_FILE) ? fs.readFileSync(ABOUT_FILE, "utf8") : ""),
+    "newsletter": renderNewsletterPage(site),
+    "privacy": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "privacy.md"), "utf8"),
+      { path: "/privacy/", description: "How marinamogilko.co and Linguamarina, Inc. handle the information visitors share, what is collected, and how to ask for it to be reviewed or deleted." }),
+    "terms": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "terms.md"), "utf8"),
+      { path: "/terms/", description: "The terms under which marinamogilko.co and its content are offered by Linguamarina, Inc., including the refund policy and how to raise a copyright notice." }),
+  };
+  const topicsDir = path.join(PUBLIC_DIR, "topics");
+  fs.mkdirSync(topicsDir, { recursive: true });
+  fs.writeFileSync(path.join(topicsDir, "index.html"), renderTopicsIndex(TOPIC_HUBS, allEpisodes));
+  for (const topic of TOPIC_HUBS) {
+    const editorialFile = path.join(TOPICS_DIR, `${topic.slug}.md`);
+    const editorial = fs.existsSync(editorialFile) ? fs.readFileSync(editorialFile, "utf8") : null;
+    const dir = path.join(topicsDir, topic.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), renderTopicPage(topic, allEpisodes, TOPIC_HUBS, { editorial, newsletterCta }));
+  }
+  console.log(`Written public/topics/ (${TOPIC_HUBS.length} hubs)`);
+
+  for (const [slug, html] of Object.entries(staticPages)) {
+    const dir = path.join(PUBLIC_DIR, slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), html);
+    console.log(`Written public/${slug}/index.html`);
+  }
+
+  fs.writeFileSync(path.join(PUBLIC_DIR, "search-index.json"), JSON.stringify(searchIndex));
+  console.log(`Written public/search-index.json (${(JSON.stringify(searchIndex).length / 1e6).toFixed(1)} MB)`);
+
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
   console.log("Written public/sitemap.xml");
 
-  writeLlmsTxt(allEpisodes);
+  writeLlmsTxt(allEpisodes, site);
 
   console.log(`\nImported: ${imported}  Rendered: ${rendered}  Failed: ${failed}  Total: ${allEpisodes.length}`);
+  if (failed && process.env.CI) {
+    throw new Error(`${failed} episode(s) failed to build; a CI build does not publish a site with pages missing`);
+  }
 }
 
 // lastmod has to mean "the page changed", not "the episode came out", or every
@@ -170,14 +309,24 @@ async function build() {
 // which mtime would not.
 // What a reader or a machine gets from a page: its text, its links and its
 // structured data. Markup, CSS and scripts are not part of it.
+// The shared header and footer are not part of it either: a nav label or a
+// footer link changes on all 123 pages at once, and telling Google that every
+// episode changed that day would bury the dates of the pages that did.
 function contentFingerprint(html) {
   const ld = (html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) || [, ""])[1];
-  const links = [...html.matchAll(/(?:href|src)="([^"]*)"/g)].map((m) => m[1]).join("\n");
-  const text = html
-    .replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ")
-    .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const page = html
+    .replace(/<header class="site-header">[\s\S]*?<\/header>/, " ")
+    .replace(/<footer class="site-footer">[\s\S]*?<\/footer>/, " ")
+    .replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ");
+  const links = [...page.matchAll(/(?:href|src)="([^"]*)"/g)].map((m) => m[1]).join("\n");
+  const text = page.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   return `${text}\n${links}\n${ld}`;
 }
+
+// Bumped whenever contentFingerprint() changes what it hashes. On the first
+// build after a bump every page adopts its new hash and keeps its date, so
+// changing the formula never re-dates the whole site.
+const FINGERPRINT_BASIS = "content-v2";
 
 function lastmodFor(episodes) {
   const cacheFile = path.join(__dirname, "sitemap-lastmod.json");
@@ -199,13 +348,13 @@ function lastmodFor(episodes) {
     if (!prev) {
       // A page we have never seen is dated by publication, not by today.
       date = new Date(ep.publishedAt).toISOString().split("T")[0];
-    } else if (prev.basis !== "content") {
-      // First run on this basis: keep the published date, adopt the hash.
+    } else if (prev.basis !== FINGERPRINT_BASIS) {
+      // First run on this basis: keep the date, adopt the hash.
       date = prev.date;
     } else {
       date = prev.hash !== hash ? today : prev.date;
     }
-    out[ep.videoId] = { hash, date, basis: "content" };
+    out[ep.videoId] = { hash, date, basis: FINGERPRINT_BASIS };
   }
 
   fs.writeFileSync(cacheFile, JSON.stringify(out, null, 2) + "\n");
@@ -234,6 +383,13 @@ function renderSitemap(episodes) {
   const urls = [
     `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
     `  <url><loc>${SITE_URL}/episodes/</loc><priority>0.8</priority></url>`,
+    `  <url><loc>${SITE_URL}/topics/</loc><priority>0.8</priority></url>`,
+    ...TOPIC_HUBS.map((t) => `  <url><loc>${SITE_URL}/topics/${t.slug}/</loc><priority>0.7</priority></url>`),
+    `  <url><loc>${SITE_URL}/about/</loc><priority>0.8</priority></url>`,
+    `  <url><loc>${SITE_URL}/partnerships/</loc><priority>0.7</priority></url>`,
+    `  <url><loc>${SITE_URL}/newsletter/</loc><priority>0.6</priority></url>`,
+    `  <url><loc>${SITE_URL}/privacy/</loc><priority>0.2</priority></url>`,
+    `  <url><loc>${SITE_URL}/terms/</loc><priority>0.2</priority></url>`,
     ...episodes.map(ep =>
       `  <url><loc>${SITE_URL}/episode/${ep.videoId}/</loc><lastmod>${lastmod[ep.videoId].date}</lastmod></url>`
     ),
@@ -270,24 +426,66 @@ function renderLlmsGuestSection(episodes) {
   ].join("\n");
 }
 
-function writeLlmsTxt(episodes) {
+// The About section of llms.txt is the fact list from content/site.json, the
+// same one the About page shows, so an AI crawler and a reader get the same
+// claims. Counts appear only once the dashboard job has written them.
+const LLMS_ABOUT_HEADING = "## About Marina Mogilko";
+
+function renderLlmsAboutSection(site) {
+  const lines = (site.facts || []).map((f) => `- ${f.text}${f.source ? ` (source: ${f.source})` : ""}`);
+  const counts = site.counts && site.counts.items ? site.counts.items : [];
+  if (counts.length) {
+    lines.push(`- Audience (as of ${site.counts.updatedAt}, rounded down, audiences overlap): ${counts.map((c) => `${c.value} ${c.label}`).join("; ")}`);
+  }
+  lines.push(`- Based in ${site.person.location}`);
+  lines.push(`- Full profile, speaking and press: ${SITE_URL}/about/`);
+  return [LLMS_ABOUT_HEADING, ...lines, "", ""].join("\n");
+}
+
+const LLMS_TOPICS_HEADING = "## Topics Covered on Silicon Valley Girl";
+
+// One line per hub: the question it answers, the count and the page.
+function renderLlmsTopicsSection(topics, episodes) {
+  const lines = topics.map((t) => {
+    const { primary, secondary } = episodesFor(t.slug, episodes);
+    return `- ${t.name}: ${t.question} ${primary.length + secondary.length} episodes: ${SITE_URL}/topics/${t.slug}/`;
+  });
+  return [LLMS_TOPICS_HEADING, ...lines, "", ""].join("\n");
+}
+
+// Replace the section that starts at `heading` and runs to the next "## ".
+function replaceSection(txt, heading, section) {
+  const start = txt.indexOf(heading);
+  if (start === -1) return null;
+  const after = txt.indexOf("\n## ", start + heading.length);
+  const end = after === -1 ? txt.length : after + 1;
+  return txt.slice(0, start) + section + txt.slice(end);
+}
+
+function writeLlmsTxt(episodes, site) {
   const file = path.join(PUBLIC_DIR, "llms.txt");
   if (!fs.existsSync(file)) {
     console.log("Skipped public/llms.txt (file missing)");
     return;
   }
-  const txt = fs.readFileSync(file, "utf8");
-  const start = txt.indexOf(LLMS_HEADING);
-  if (start === -1) {
+  let txt = fs.readFileSync(file, "utf8");
+  const guests = renderLlmsGuestSection(episodes);
+  const withGuests = replaceSection(txt, LLMS_HEADING, guests);
+  if (withGuests === null) {
     console.log(`Skipped public/llms.txt (no "${LLMS_HEADING}" section)`);
     return;
   }
-  const after = txt.indexOf("\n## ", start + LLMS_HEADING.length);
-  const end = after === -1 ? txt.length : after + 1;
-
-  const section = renderLlmsGuestSection(episodes);
-  fs.writeFileSync(file, txt.slice(0, start) + section + txt.slice(end));
-  console.log(`Written public/llms.txt (${section.split("\n").length - 4} guests)`);
+  txt = withGuests;
+  if (site) {
+    const withAbout = replaceSection(txt, LLMS_ABOUT_HEADING, renderLlmsAboutSection(site));
+    if (withAbout === null) console.log(`Note: public/llms.txt has no "${LLMS_ABOUT_HEADING}" section`);
+    else txt = withAbout;
+  }
+  const withTopics = replaceSection(txt, LLMS_TOPICS_HEADING, renderLlmsTopicsSection(TOPIC_HUBS, episodes));
+  if (withTopics === null) console.log(`Note: public/llms.txt has no "${LLMS_TOPICS_HEADING}" section`);
+  else txt = withTopics;
+  fs.writeFileSync(file, txt);
+  console.log(`Written public/llms.txt (${guests.split("\n").length - 4} guests)`);
 }
 
 // ---------------------------------------------------------------------------
@@ -339,53 +537,21 @@ function displayGuest(ep) {
 // can never disagree about names, options or limits. Every control gets a real
 // <label for> — the mock's uppercase field names are styling, not placeholders,
 // and a placeholder disappears the moment someone starts typing.
-function renderFormFields() {
-  return FIELDS.map((f) => {
-    const id = `f-${f.name}`;
-    const req = f.required ? " required" : "";
-    const cap = f.max ? ` maxlength="${f.max}"` : "";
-    const auto = f.autocomplete ? ` autocomplete="${f.autocomplete}"` : "";
-    const ph = f.placeholder ? ` placeholder="${esc(f.placeholder)}"` : "";
 
-    let control;
-    if (f.type === "select") {
-      const options = TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join("\n            ");
-      control = `<select id="${id}" name="${f.name}"${req}>\n            ${options}\n          </select>`;
-    } else if (f.type === "textarea") {
-      control = `<textarea id="${id}" name="${f.name}" rows="6"${req}${cap}${ph}></textarea>`;
-    } else {
-      control = `<input type="${f.type}" id="${id}" name="${f.name}"${req}${cap}${auto}${ph}>`;
-    }
-
-    return `        <div class="field field-${f.name}">
-          <label for="${id}">${esc(f.label)}</label>
-          ${control}
-        </div>`;
-  }).join("\n");
-}
-
-// Pin a specific episode to the top of the homepage. Set to null (or a
-// videoId no longer on the site) and the newest episode takes the slot again,
-// which is what the page does by default.
-const FEATURED_VIDEO_ID = "qy8Gr27yLMk";
 
 
 // Every episode on one page, linked from the homepage archive. Separate from
 // the homepage because revealing 110 cards in place buried everything below
 // them — the form included — behind an endless scroll.
-function renderEpisodesPage(episodes) {
-  const cards = episodes
-    .map(
-      (ep) => `
-          <a href="/episode/${ep.videoId}/" class="ep-card">
-            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
-            <div class="ep-card-body">
-              <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${formatDateShort(ep.publishedAt)} &middot; ${esc(ep.duration)}</p>
-              <h3 class="ep-card-title">${esc(ep.title)}</h3>
-            </div>
-          </a>`
-    )
-    .join("\n");
+// The directory: every episode in the HTML, newest first, with a search box
+// and format and topic filters that work on the page itself. Without
+// JavaScript the toolbar stays hidden and the full list is simply there; the
+// filters never change the URL, so there is one page to index, not hundreds.
+function renderEpisodesPage(episodes, topics = TOPIC_HUBS) {
+  const cards = episodes.map((ep) => renderEpisodeCard(ep)).join("\n");
+  const topicOptions = topics
+    .map((t) => `<option value="${esc(t.slug)}">${esc(t.name)}</option>`)
+    .join("\n            ");
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -393,7 +559,7 @@ function renderEpisodesPage(episodes) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All episodes — Silicon Valley Girl Podcast</title>
-  <meta name="description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko — conversations with the founders and scientists building AI.">
+  <meta name="description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko: ${episodes.length} conversations with the founders and scientists building AI, each with a full transcript. Search by guest or title, filter by format and topic.">
   <link rel="canonical" href="${SITE_URL}/episodes/">
   <meta property="og:title" content="All episodes — Silicon Valley Girl Podcast">
   <meta property="og:description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko.">
@@ -423,22 +589,29 @@ function renderEpisodesPage(episodes) {
       font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
       text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 2rem;
     }
-    .archive-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.8rem 1.4rem;
+    .toolbar { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.25rem 0 2rem; }
+    .toolbar[hidden] { display: none; }
+    .toolbar label { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(23, 21, 17, 0.6); }
+    .toolbar input, .toolbar select {
+      font: inherit; font-size: 1rem; color: var(--ink); background: var(--card);
+      border: 1.5px solid var(--rule); border-radius: 8px; padding: 0.6rem 0.8rem; min-height: 44px;
     }
-    .ep-card { text-decoration: none; display: block; }
-    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .ep-card-body { padding-top: 0.75rem; }
-    .ep-card-meta {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    /* The arrow is drawn by us, so it sits a clear 1rem from the edge. */
+    .toolbar select {
+      appearance: none; -webkit-appearance: none; padding-right: 2.6rem; min-width: 11rem;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23171511' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 1rem center;
     }
-    .ep-card-title {
-      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
-      letter-spacing: 0.01em; text-transform: uppercase;
-    }
-    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .toolbar input { min-width: 16rem; }
+    .toolbar input:focus, .toolbar select:focus { outline: 2px solid var(--accent); outline-offset: 2px; border-color: var(--ink); }
+    .toolbar .reset { align-self: flex-end; font: inherit; font-weight: 600; background: none; border: 1.5px solid var(--ink); border-radius: 8px; padding: 0.6rem 1rem; min-height: 44px; cursor: pointer; }
+    .toolbar .reset:hover { background: var(--ink); color: var(--ground); }
+    .no-results { display: none; padding: 2rem 0; font-size: 1.05rem; }
+    .no-results.show { display: block; }
+    .search-note { font-size: 0.85rem; color: rgba(23, 21, 17, 0.6); margin: -1.25rem 0 1.5rem; }
+    .search-note[hidden] { display: none; }
+    .ep-card-snippet { font-size: 0.85rem; color: rgba(23, 21, 17, 0.7); margin-top: 0.45rem; line-height: 1.45; }
+    ${CARD_CSS}
     .back-home {
       display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
       font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent);
@@ -446,8 +619,8 @@ function renderEpisodesPage(episodes) {
     }
     @media (max-width: 640px) {
       .wrap { padding: 0 1rem; }
-      .archive-grid { grid-template-columns: 1fr; }
-      .ep-card-meta { font-size: 0.75rem; }
+      .toolbar input { min-width: 0; width: 100%; }
+      .toolbar label { width: 100%; }
     }
   </style>
 </head>
@@ -458,31 +631,103 @@ function renderEpisodesPage(episodes) {
   <main class="archive-page">
     <div class="wrap">
       <h1>All episodes</h1>
-      <p class="archive-count">${episodes.length} episodes</p>
-      <div class="archive-grid">
+      <p class="archive-count" id="count" aria-live="polite">${episodes.length} episodes</p>
+      <form class="toolbar" id="filters" hidden autocomplete="off">
+        <label>Search
+          <input type="search" id="q" placeholder="Guest, company or title">
+        </label>
+        <label>Format
+          <select id="format">
+            <option value="">All formats</option>
+            <option value="interview">Interviews</option>
+            <option value="solo">Solo episodes</option>
+            <option value="compilation">Compilations</option>
+          </select>
+        </label>
+        <label>Topic
+          <select id="topic">
+            <option value="">All topics</option>
+            ${topicOptions}
+          </select>
+        </label>
+        <button type="reset" class="reset">Clear</button>
+      </form>
+      <div class="ep-grid" id="grid">
 ${cards}
       </div>
+      <p class="no-results" id="none">No episodes match. <a href="/episodes/">Clear the filters</a> or try another word.</p>
+      <p class="search-note" id="search-note" hidden></p>
       <a class="back-home" href="/">&larr; Back to the homepage</a>
     </div>
   </main>
 
   ${SHARED_FOOTER}
 
+  <script>
+  (function () {
+    var form = document.getElementById("filters"), q = document.getElementById("q"),
+        fmt = document.getElementById("format"), topic = document.getElementById("topic"),
+        cards = Array.prototype.slice.call(document.querySelectorAll("#grid .ep-card")),
+        count = document.getElementById("count"), none = document.getElementById("none"),
+        note = document.getElementById("search-note"), total = cards.length,
+        byId = {}, index = null, loading = null;
+    cards.forEach(function (c) { byId[c.getAttribute("href").split("/")[2]] = c; });
+
+    // The transcript index is fetched once, the first time a query is three
+    // characters or longer; until it arrives, cards match on title and guest.
+    function loadIndex() {
+      if (index || loading) return loading;
+      note.hidden = false; note.textContent = "Searching transcripts…";
+      loading = fetch("/search-index.json").then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (data) { index = {}; data.forEach(function (e) { index[e.id] = e.text; }); apply(); })
+        .catch(function () { index = {}; note.hidden = true; });
+      return loading;
+    }
+    function snippet(text, phrase) {
+      var i = text.indexOf(phrase); if (i === -1) return "";
+      var start = Math.max(0, i - 70), end = Math.min(text.length, i + phrase.length + 90);
+      return (start ? "…" : "") + text.slice(start, end).trim() + (end < text.length ? "…" : "");
+    }
+    function apply() {
+      var raw = q.value.toLowerCase().trim(), words = raw.split(/\\s+/).filter(Boolean),
+          f = fmt.value, tp = topic.value, shown = 0, inTranscripts = 0;
+      if (raw.length >= 3 && !index) loadIndex();
+      cards.forEach(function (c) {
+        var s = c.getAttribute("data-search") || "", id = c.getAttribute("href").split("/")[2],
+            ok = true, viaText = false, i, snip = c.querySelector(".ep-card-snippet");
+        for (i = 0; i < words.length; i++) if (s.indexOf(words[i]) === -1) { ok = false; break; }
+        if (!ok && index && raw.length >= 3 && index[id] && index[id].indexOf(raw) !== -1) { ok = true; viaText = true; }
+        if (ok && f && c.getAttribute("data-format") !== f) ok = false;
+        if (ok && tp && (" " + (c.getAttribute("data-topics") || "") + " ").indexOf(" " + tp + " ") === -1) ok = false;
+        if (viaText && ok) {
+          if (!snip) { snip = document.createElement("p"); snip.className = "ep-card-snippet"; c.querySelector(".ep-card-body").appendChild(snip); }
+          snip.textContent = snippet(index[id], raw); inTranscripts++;
+        } else if (snip) { snip.remove(); }
+        c.hidden = !ok; if (ok) shown++;
+      });
+      count.textContent = shown === total && !raw ? total + " episodes" : shown + " of " + total + " episodes";
+      none.className = shown ? "no-results" : "no-results show";
+      if (index && raw.length >= 3) { note.hidden = false; note.textContent = inTranscripts ? inTranscripts + " matched inside a transcript; the phrase is shown under the episode." : "Transcripts searched too; no extra matches."; }
+      else if (index || !raw) note.hidden = true;
+    }
+    form.hidden = false;
+    // A query from the homepage search box (or a shared link) fills the form in.
+    try {
+      var params = new URLSearchParams(location.search);
+      if (params.get("q")) q.value = params.get("q");
+      if (params.get("format")) fmt.value = params.get("format");
+      if (params.get("topic")) topic.value = params.get("topic");
+    } catch (e) {}
+    q.addEventListener("input", apply); fmt.addEventListener("change", apply); topic.addEventListener("change", apply);
+    form.addEventListener("reset", function () { setTimeout(apply, 0); });
+    form.addEventListener("submit", function (e) { e.preventDefault(); });
+    apply();
+  })();
+  </script>
+
 </body>
 </html>`;
 }
-
-// One identifier per entity, reused by every page on the site (and by the
-// media kit once it lives here), so a machine reading any page can tell that
-// the same person, show and publisher are meant. Only facts that need no
-// date are asserted here; counts and awards belong on the About page with
-// their sources.
-const IDS = {
-  person: `${SITE_URL}/#marina`,
-  podcast: `${SITE_URL}/#podcast`,
-  org: `${SITE_URL}/#org`,
-  website: `${SITE_URL}/#website`,
-};
 
 function homeJsonLd() {
   return {
@@ -492,8 +737,8 @@ function homeJsonLd() {
         "@type": "Person",
         "@id": IDS.person,
         name: "Marina Mogilko",
-        url: `${SITE_URL}/`,
-        image: `${SITE_URL}/host.jpg`,
+        url: `${SITE_URL}/about/`,
+        image: `${SITE_URL}/marina-mogilko.jpg`,
         jobTitle: "Host, Silicon Valley Girl Podcast",
         description:
           "Entrepreneur and creator based in Silicon Valley. Host of Silicon Valley Girl, an AI, tech and career podcast, and author of the Future Proof newsletter.",
@@ -543,43 +788,52 @@ function homeJsonLd() {
   };
 }
 
-function renderHomePage(episodes) {
-  const newest = episodes[0];
-  const pinned = FEATURED_VIDEO_ID
-    ? episodes.find((e) => e.videoId === FEATURED_VIDEO_ID)
-    : null;
-  if (FEATURED_VIDEO_ID && !pinned) {
-    console.log(`Note: featured episode ${FEATURED_VIDEO_ID} is not on the site — falling back to the newest.`);
-  }
-  // Two distinct slots. The hero carries whatever is pinned — an editorial
-  // pick, with no "latest" wording anywhere near it. The cover story below is
-  // always the genuinely newest episode, so "This week's cover story" stays
-  // true no matter what is pinned above it.
-  const hero = pinned || newest;
-  const cover = newest;
-  const shown = new Set([hero.videoId, cover.videoId]);
+function renderHomePage(episodes, site = null) {
+  const audienceTotal = site && site.audience ? formatCount(site.audience.total) : "";
+  // The hero is always this week's episode: the newest one. When a new
+  // episode is published the hero changes with it, nothing to pin.
+  const hero = episodes[0];
+  // The curated block under it: episodes the team chose (content/site.json,
+  // featuredEpisodes), in the team's order; ids not on the site are skipped.
+  const byId = new Map(episodes.map((e) => [e.videoId, e]));
+  // The hero is never repeated in the block, even if the team's list names
+  // this week's episode.
+  const featured = site && site.featuredEpisodes
+    ? site.featuredEpisodes.videoIds.map((id) => byId.get(id)).filter((e) => e && e.videoId !== hero.videoId)
+    : [];
+  const featuredHeading = site && site.featuredEpisodes ? site.featuredEpisodes.heading : "Conversations that matter";
+  const shown = new Set([hero.videoId, ...featured.map((e) => e.videoId)]);
   const rest = episodes.filter((e) => !shown.has(e.videoId));
 
-  // Six cards show; the rest stay in the markup but hidden, and "All episodes"
-  // reveals them. Keeping every episode in the DOM preserves the internal
-  // linking the archive is worth to search — moving 110 of them behind a
-  // separate page would cost that for a purely visual gain.
-  const ARCHIVE_VISIBLE = 6;
-  const archive = episodes.filter((e) => !new Set([hero.videoId, cover.videoId]).has(e.videoId));
-  const archiveHtml = rest
-    .slice(0, ARCHIVE_VISIBLE)
-    .map(
-      (ep) => `
+  // The full list lives on /episodes/, one hop away, linked from the
+  // curated block's button and the search block.
+  const card = (ep) => `
           <a href="/episode/${ep.videoId}/" class="ep-card">
             <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
               <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${esc(ep.duration)}</p>
               <h3 class="ep-card-title">${esc(ep.title)}</h3>
             </div>
-          </a>`
-    )
-    .join("\n");
-  const moreCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
+          </a>`;
+  const featuredHtml = featured.map(card).join("\n");
+
+  // Six guests, each linking to their interview (the thumbnail stands in for
+  // a portrait until there are portraits), and four of Marina's own videos
+  // with the format on the card. Both come from the data; both are left out
+  // when the site facts are not supplied (unit renders).
+  const practical = site
+    ? episodes.filter((e) => (e.format === "solo" || e.format === "compilation") && !shown.has(e.videoId)).slice(0, 4)
+    : [];
+  const practicalHtml = practical.map((ep) => `
+          <a href="/episode/${ep.videoId}/" class="ep-card">
+            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
+            <div class="ep-card-body">
+              <p class="ep-card-meta">${esc(ep.duration)} <span class="ep-format">${FORMAT_LABEL[ep.format]}</span></p>
+              <h3 class="ep-card-title">${esc(ep.title)}</h3>
+            </div>
+          </a>`).join("");
+  const counts = site && site.counts && site.counts.items.length ? site.counts : null;
+  const positioning = site && site.person ? site.person.positioning : "";
 
   // A portrait of Marina if one has been dropped into public/ under any of
   // these names; otherwise two recent stills, so a missing file degrades to
@@ -683,12 +937,6 @@ function renderHomePage(episodes) {
     .btn-text:hover { color: var(--accent); }
 
     /* The mock sets section eyebrows as red pills, not plain red text. */
-    .pill-label {
-      display: inline-block; background: var(--accent); color: var(--ground);
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
-      text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 999px;
-      margin-right: 0.8rem; vertical-align: middle;
-    }
 
     /* ---- Hero ---- */
     .hero { padding: clamp(1.75rem, 3.5vw, 3rem) 0 clamp(1.75rem, 3.5vw, 3rem); }
@@ -716,61 +964,11 @@ function renderHomePage(episodes) {
       text-transform: uppercase; padding: 0.6rem 0.9rem;
     }
 
-    /* ---- Cover story ---- */
-    .cover { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
-    .cover-card {
-      display: grid; grid-template-columns: 0.9fr 1.1fr;
-      gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center;
-      background: var(--card); padding: clamp(1.25rem, 2.5vw, 2rem);
-    }
-    .cover-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .cover-meta {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 0.8rem;
-    }
-    .cover-title {
-      font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.6rem);
-      line-height: 1.02; margin-bottom: 0.9rem;
-    }
-    .cover-title a { text-decoration: none; }
-    .cover-title a:hover { color: var(--accent); }
-    .cover-dek { color: rgba(23, 21, 17, 0.78); margin-bottom: 1.4rem; }
-    .cover-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-
     /* ---- About ---- */
     .about { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
     .about-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 4vw, 3rem); }
     .about-body p { margin-bottom: 1.1rem; max-width: 46rem; color: rgba(23, 21, 17, 0.85); }
     .about-body p:last-child { margin-bottom: 0; }
-
-    /* ---- Archive ---- */
-    .archive { padding: clamp(2rem, 3.5vw, 3rem) 0; border-top: 1px solid var(--rule); }
-    .archive-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.6rem 1.4rem;
-    }
-    .ep-card { text-decoration: none; display: block; }
-    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .ep-card-body { padding-top: 0.75rem; }
-    .ep-card-meta {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
-    }
-    .ep-card-title {
-      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
-      letter-spacing: 0.01em; text-transform: uppercase;
-    }
-    .ep-card:hover .ep-card-title { color: var(--accent); }
-    .archive-head {
-      display: flex; align-items: baseline; justify-content: space-between;
-      gap: 1rem; flex-wrap: wrap;
-    }
-    .archive-head .section-title { margin-bottom: 1.8rem; }
-    .archive-more {
-      background: none; border: none; border-bottom: 2px solid var(--accent);
-      font-family: var(--body); cursor: pointer; padding: 0 0 2px;
-      color: rgba(23, 21, 17, 0.62);
-    }
 
     /* ---- Host ---- */
     .host { background: var(--ink); color: var(--ground); padding: clamp(3rem, 6vw, 4.5rem) 0; }
@@ -789,6 +987,76 @@ function renderHomePage(episodes) {
     .stat-label {
       font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
       text-transform: uppercase; color: var(--muted); display: block; margin-top: 0.35rem;
+    }
+
+    .host-positioning { font-size: 1.15rem; line-height: 1.5; max-width: 44rem; margin-bottom: 1rem; }
+    .host-more { margin-top: 2rem; }
+    .btn-ghost { border: 2px solid var(--ground); color: var(--ground); background: transparent; }
+    .btn-ghost:hover { background: var(--ground); color: var(--ink); }
+
+    /* ---- Card grids (curated block, practical row) and topic chips ---- */
+    .archive-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem 1.4rem;
+    }
+    .ep-card { text-decoration: none; display: block; }
+    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; }
+    .ep-card-body { padding-top: 0.75rem; }
+    .ep-card-meta {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .ep-card-title {
+      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
+      letter-spacing: 0.01em; text-transform: uppercase;
+    }
+    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .archive-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap; margin-bottom: 1.8rem;
+    }
+    .archive-head .section-title { margin-bottom: 0; }
+    .topic-chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .topic-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.4rem 1rem; border: 1.5px solid var(--ink); border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
+    .topic-chips a:hover, .topic-chips a.all { background: var(--ink); color: var(--ground); }
+    .topic-chips a.all:hover { background: var(--accent); }
+
+    /* ---- Featured block and library search ---- */
+    .featured, .library, .practical, .about { padding: clamp(3rem, 6vw, 4.5rem) 0; border-top: 1px solid var(--rule); }
+    @media (min-width: 1100px) { .practical .archive-grid { grid-template-columns: repeat(4, 1fr); } }
+    .library .section-title { margin-bottom: 0.75rem; }
+    .library-search { display: flex; gap: 0.6rem; max-width: 40rem; margin: 1.5rem 0 1.25rem; }
+    .library-search input {
+      flex: 1; min-width: 0; font: inherit; font-size: 1.05rem; color: var(--ink); background: var(--card);
+      border: 2px solid var(--ink); border-radius: 8px; padding: 0.75rem 1rem; min-height: 48px;
+    }
+    .library-search input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .library-or { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin: 1.5rem 0 0.75rem; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+    /* ---- Newsletter prompt ---- */
+    .nl-pop {
+      position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 60; width: min(24rem, calc(100vw - 2.5rem));
+      background: var(--card); color: var(--ink); border: 2px solid var(--ink); border-radius: 12px;
+      padding: 1.5rem 1.5rem 1.25rem; box-shadow: 0 16px 40px rgba(23, 21, 17, 0.18);
+    }
+    .nl-pop[hidden] { display: none; }
+    .nl-pop h2 { font-family: var(--display); text-transform: uppercase; font-size: 1.5rem; line-height: 1; margin: 0 0 1rem; }
+    .nl-pop-close { position: absolute; top: 0.5rem; right: 0.6rem; font: inherit; font-size: 1.5rem; line-height: 1; background: none; border: 0; cursor: pointer; padding: 0.25rem 0.5rem; min-width: 44px; min-height: 44px; }
+    .nl-pop-form { display: grid; gap: 0.6rem; }
+    .nl-pop-form input { font: inherit; font-size: 1rem; padding: 0.7rem 0.9rem; border: 1.5px solid var(--rule); border-radius: 8px; min-height: 44px; }
+    .nl-pop-form input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .nl-pop-consent { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.82rem; line-height: 1.4; color: rgba(23, 21, 17, 0.8); }
+    .nl-pop-consent input { margin: 0.2rem 0 0; width: 1rem; height: 1rem; flex: none; accent-color: var(--accent); }
+    .nl-pop-consent a { color: inherit; }
+    .nl-pop-note { font-size: 0.78rem; color: rgba(23, 21, 17, 0.6); margin-top: 0.6rem; }
+    @media (max-width: 640px) { .nl-pop { right: 0.75rem; bottom: 0.75rem; left: 0.75rem; width: auto; } .library-search { flex-direction: column; } }
+
+    /* ---- Guests and practical rows ---- */
+    .section-dek { max-width: 40rem; margin: -1rem 0 1.8rem; color: rgba(23, 21, 17, 0.7); }
+    .ep-format {
+      display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+      border: 1px solid var(--rule); color: rgba(23, 21, 17, 0.6); letter-spacing: 0.08em;
     }
 
     /* ---- Partnerships ---- */
@@ -819,36 +1087,10 @@ function renderHomePage(episodes) {
     /* ---- Work with Marina ---- */
     .work { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
     .work-inner { max-width: 760px; }
-    .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
-    .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
-    .field { display: flex; flex-direction: column; gap: 0.4rem; }
-    .field-budget, .field-details { grid-column: 1 / -1; }
-    .field label {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: rgba(23, 21, 17, 0.62);
-    }
-    .field input, .field select, .field textarea {
-      font-family: var(--body); font-size: 0.95rem; color: var(--ink);
-      background: var(--card); border: 1px solid var(--rule);
-      padding: 0.7rem 0.8rem; width: 100%; border-radius: 0;
-    }
-    .field textarea { resize: vertical; min-height: 8rem; }
-    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--ink); }
-    .form-submit { grid-column: 1 / -1; justify-self: start; border: none; cursor: pointer; }
-    .form-submit[disabled] { opacity: 0.6; cursor: default; }
-    .form-error {
-      grid-column: 1 / -1; background: #FDECEC; border-left: 3px solid var(--accent);
-      padding: 0.75rem 0.9rem; font-size: 0.9rem;
-    }
-    .form-done {
-      background: var(--card); border-left: 3px solid var(--accent);
-      padding: 1rem 1.1rem; font-size: 1rem;
-    }
-    /* Off-screen rather than display:none — some bots skip hidden fields. */
-    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+${CONTACT_FORM_CSS}
 
     @media (max-width: 900px) {
-      .hero-inner, .cover-card, .about-inner, .host-inner, .newsletter-inner {
+      .hero-inner, .about-inner, .host-inner, .newsletter-inner {
         grid-template-columns: 1fr;
       }
       .hero-media { order: -1; }
@@ -859,11 +1101,10 @@ function renderHomePage(episodes) {
 
       /* Labels and meta sit near 10px at desktop sizes, which is too small to
          read comfortably on a phone. */
-      .eyebrow, .ep-card-meta, .cover-meta, .stat-label, .field label { font-size: 0.75rem; }
+      .eyebrow, .ep-card-meta, .cover-meta, .stat-label { font-size: 0.75rem; }
 
       /* 16px is the threshold below which iOS Safari zooms the page when a
          field is focused, throwing the layout around mid-typing. */
-      .field input, .field select, .field textarea { font-size: 16px; }
 
       /* The badge sits over the still at desktop widths. On a phone the image
          is far smaller and the badge covers the thumbnail's own caption, so it
@@ -878,7 +1119,6 @@ function renderHomePage(episodes) {
       .follow-btn { padding: 0.7rem 0.95rem; }
       .archive-grid { grid-template-columns: 1fr; }
       .host-stills { grid-template-columns: 1fr 1fr; }
-      .pitch-form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -905,47 +1145,60 @@ function renderHomePage(episodes) {
     </div>
   </section>
 
-  <section class="cover">
+${featured.length ? `
+  <section id="featured" class="featured">
     <div class="wrap">
-      <h2 class="section-title"><span class="pill-label">Latest</span>This week&rsquo;s cover story</h2>
-      <div class="cover-card">
-        <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" loading="lazy" width="480" height="270"></a>
-        <div>
-          <p class="cover-meta">${formatDateShort(cover.publishedAt)} &middot; ${esc(cover.duration)} &middot; With ${esc(displayGuest(cover))}</p>
-          <h3 class="cover-title"><a href="/episode/${cover.videoId}/">${esc(cover.title)}</a></h3>
-          ${cover.description ? `<p class="cover-dek">${esc(cover.description)}</p>` : ""}
-          <div class="cover-cta">
-            <a class="btn btn-ink" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
-            <a class="btn" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
-          </div>
-        </div>
+      <div class="archive-head">
+        <h2 class="section-title">${esc(featuredHeading)}</h2>
+        <a class="btn btn-ink archive-more" href="/episodes/">All episodes &rarr;</a>
+      </div>
+      <div class="archive-grid">
+${featuredHtml}
       </div>
     </div>
   </section>
-
+` : ""}
   <section class="about">
     <div class="wrap about-inner">
       <h2 class="section-title">About the show</h2>
       <div class="about-body">
         <p>Silicon Valley Girl is a weekly interview podcast hosted by Marina Mogilko, an entrepreneur and creator based in Silicon Valley. Each episode she sits down with the founders and scientists building AI and asks them one question: what can a normal person actually do with this today?</p>
-        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work. Past guests include Andrew Ng, Fei-Fei Li, Sal Khan, Anne Wojcicki and Shishir Mehrotra.</p>
-        <p>You can watch on YouTube or listen on Spotify and Apple Podcasts. New episodes come out every week.</p>
+        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work.</p>
+        <p>You can watch on <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">YouTube</a> or listen on <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a> and <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener">Apple Podcasts</a>. New episodes come out every week.</p>
       </div>
     </div>
   </section>
 
-  <section id="episodes" class="archive">
+  <section id="search" class="library">
+    <div class="wrap">
+      <h2 class="section-title">Find the episode you need.</h2>
+      <p class="section-dek">I&rsquo;ve asked founders and scientists hundreds of questions. Search any guest, quote or piece of advice across all episodes.</p>
+      <form class="library-search" action="/episodes/" method="get" role="search">
+        <label for="home-q" class="visually-hidden">Search episodes and transcripts</label>
+        <input type="search" id="home-q" name="q" placeholder="A guest, a company, a topic, a phrase" autocomplete="off">
+        <button type="submit" class="btn btn-accent">Search</button>
+      </form>
+      <p class="library-or">Or browse by topic</p>
+      <ul class="topic-chips">
+        ${(site && site.topics ? site.topics : TOPIC_HUBS).map((t) => `<li><a href="/topics/${esc(t.slug)}/">${esc(t.name)}</a></li>`).join("\n        ")}
+        <li><a href="/topics/" class="all">All topics &rarr;</a></li>
+      </ul>
+    </div>
+  </section>
+
+${practical.length ? `
+  <section id="practical" class="practical">
     <div class="wrap">
       <div class="archive-head">
-        <h2 class="section-title">The archive</h2>
-        ${moreCount ? `<a class="btn-text archive-more" href="/episodes/">All episodes &rarr;</a>` : ""}
+        <h2 class="section-title">Practical AI with Marina</h2>
+        <a class="btn btn-ink archive-more" href="/topics/ai-tools-and-workflows/">More how-to episodes &rarr;</a>
       </div>
-      <div class="archive-grid">
-${archiveHtml}
+      <p class="section-dek">Solo episodes and compilations: one tool, one idea or one career move, in about twenty minutes.</p>
+      <div class="archive-grid">${practicalHtml}
       </div>
     </div>
   </section>
-
+` : ""}
   <section id="host" class="host">
     <div class="wrap">
       <h2 class="section-title">Meet the host</h2>
@@ -955,24 +1208,16 @@ ${archiveHtml}
         </div>
         <div>
           <h3 class="host-name">Marina Mogilko</h3>
-          <p class="host-bio">Entrepreneur and creator based in Silicon Valley. For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
+          ${positioning ? `<p class="host-positioning">${esc(positioning)}</p>` : ""}
+          <p class="host-bio">For a lot of people the valley is where weird stuff happens &mdash; AI, robots, whatever comes next. Marina sits down with the people building it and brings back the part that changes your Tuesday: faster work if you&rsquo;re a founder, a lighter household if you&rsquo;re a parent, a whole production line if you make things.</p>
           <div class="host-stats">
             <div><span class="stat-value">Weekly</span><span class="stat-label">New episodes</span></div>
-            <div><span class="stat-value">Millions</span><span class="stat-label">Following along</span></div>
-            <div><span class="stat-value">SF</span><span class="stat-label">Based in the valley</span></div>
+            <div><span class="stat-value">${audienceTotal || "Millions"}</span><span class="stat-label">Following along${counts ? ` &middot; ${esc(counts.updatedAt)}` : ""}</span></div>
+            <div><span class="stat-value">${episodes.length}</span><span class="stat-label">Episodes with transcripts</span></div>
           </div>
+          <a class="btn btn-ghost host-more" href="/about/">About Marina, speaking and press &rarr;</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contact" class="partnerships">
-    <div class="wrap partnerships-inner">
-      <div>
-        <p class="eyebrow">Partnerships</p>
-        <h2>Want your brand on the podcast?</h2>
-      </div>
-      <a class="pill" href="mailto:partnerships@marinamogilko.co">${ICONS.mail} partnerships@marinamogilko.co</a>
     </div>
   </section>
 
@@ -981,22 +1226,7 @@ ${archiveHtml}
       <h2 class="section-title">Pitch Marina anything</h2>
       <p class="work-dek">Brand deals, podcast guests, speaking, press, partnerships &mdash; anything at all. Tell us what you have in mind and the team will get back to you.</p>
 
-      <form id="pitch-form" class="pitch-form" novalidate>
-        <p id="form-error" class="form-error" role="alert" hidden></p>
-${renderFormFields()}
-        <div class="hp" aria-hidden="true">
-          <label for="f-website">Leave this blank</label>
-          <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
-        </div>
-        <input type="hidden" name="rendered" value="">
-        <button type="submit" class="btn btn-accent form-submit">Send opportunity</button>
-      </form>
-
-      <p id="form-done" class="form-done" role="status" hidden>Thank you &mdash; that&rsquo;s with the team. You&rsquo;ll hear back at the address you gave.</p>
-
-      <noscript>
-        <p class="work-dek">This form needs JavaScript. Email <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a> instead and we&rsquo;ll pick it up just the same.</p>
-      </noscript>
+${renderContactForm()}
     </div>
   </section>
 
@@ -1018,64 +1248,54 @@ ${renderFormFields()}
 
   ${SHARED_FOOTER}
 
+  <div class="nl-pop" id="nl-pop" hidden role="dialog" aria-modal="false" aria-labelledby="nl-pop-title">
+    <button type="button" class="nl-pop-close" id="nl-pop-close" aria-label="Close">&times;</button>
+    <p class="eyebrow">Future Proof, the newsletter</p>
+    <h2 id="nl-pop-title">One email a week. The AI idea worth your attention.</h2>
+    <form id="nl-pop-form" class="nl-pop-form" action="${esc(NEWSLETTER_SUBSCRIBE)}">
+      <label for="nl-pop-email" class="visually-hidden">Your email address</label>
+      <input type="email" id="nl-pop-email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <label class="nl-pop-consent">
+        <input type="checkbox" id="nl-pop-consent" required>
+        <span>Yes! Sign me up for Future Proof Newsletter. In doing so, I agree to the <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Use</a>.</span>
+      </label>
+      <button type="submit" class="btn btn-accent">Subscribe to the newsletter</button>
+    </form>
+    <p class="nl-pop-note">Free. Unsubscribe any time.</p>
+  </div>
+
   <script>
     (function () {
-      var form = document.getElementById('pitch-form');
-      if (!form) return;
-      var errorBox = document.getElementById('form-error');
-      var done = document.getElementById('form-done');
-      var button = form.querySelector('button[type="submit"]');
-      var label = button.textContent;
-
-      // Stamped on load, not at build time. Baking it into the HTML would make
-      // every build produce a different index.html, and would measure the age
-      // of the deploy rather than how long this visitor spent on the page.
-      var stamp = form.querySelector('input[name="rendered"]');
-      if (stamp) stamp.value = String(Date.now());
-
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        errorBox.hidden = true;
-        button.disabled = true;
-        button.textContent = 'Sending…';
-
-        var payload = {};
-        new FormData(form).forEach(function (value, key) { payload[key] = value; });
-
-        fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        })
-          .then(function (res) {
-            return res.json().catch(function () { return {}; }).then(function (body) {
-              return { ok: res.ok, body: body };
-            });
-          })
-          .then(function (result) {
-            if (result.ok) {
-              form.hidden = true;
-              done.hidden = false;
-              done.scrollIntoView({ block: 'center', behavior: 'smooth' });
-              return;
-            }
-            fail(result.body.error || 'Something went wrong. Please try again.');
-          })
-          .catch(function () {
-            fail('Could not reach the server. Please try again, or email pr@marinamogilko.co.');
-          });
-      });
-
-      // Never clears the form: whatever they typed stays exactly where it is.
-      function fail(message) {
-        errorBox.textContent = message;
-        errorBox.hidden = false;
-        button.disabled = false;
-        button.textContent = label;
-        errorBox.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      // The newsletter prompt: appears after 40 seconds, once per visitor
+      // per 30 days (remembered on this device the moment it is shown),
+      // never on top of someone typing in the contact form. Submitting
+      // opens the newsletter's own subscribe page with the address filled
+      // in; the page itself never posts anywhere.
+      var pop = document.getElementById("nl-pop"), close = document.getElementById("nl-pop-close"),
+          form = document.getElementById("nl-pop-form"), KEY = "svg-nl-pop", MONTH = 30 * 864e5;
+      function seen() { try { return Date.now() - Number(localStorage.getItem(KEY) || 0) < MONTH; } catch (e) { return false; } }
+      function remember() { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} }
+      function hide() { pop.hidden = true; remember(); }
+      if (!seen()) {
+        setTimeout(function () {
+          var active = document.activeElement;
+          if (active && active.closest && active.closest("#pitch-form")) return;
+          pop.hidden = false; remember();
+        }, 40000);
       }
+      close.addEventListener("click", hide);
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !pop.hidden) hide(); });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("nl-pop-email").value.trim();
+        if (!email || !document.getElementById("nl-pop-consent").checked) return;
+        window.open(form.getAttribute("action") + "&email=" + encodeURIComponent(email), "_blank", "noopener");
+        hide();
+      });
     })();
   </script>
+
+${CONTACT_FORM_SCRIPT}
 
 </body>
 </html>`;
@@ -1099,6 +1319,8 @@ function newsletterCta() {
 }
 
 function renderEpisodePage(d) {
+  // Template v2 (Release 3) is opt-in per page; see lib/render-episode-v2.js.
+  if (d.template === "v2") return renderEpisodePageV2(d, { newsletterCta, formatDate, topics: topicsOf(d) });
   const published = formatDate(d.publishedAt);
   const isoDate = new Date(d.publishedAt).toISOString();
   const isSolo = d.format === "solo";
@@ -1275,7 +1497,6 @@ function renderEpisodePage(d) {
       font-size: 0.75rem; text-transform: uppercase;
       letter-spacing: 0.08em; color: #999; margin-bottom: 0.75rem;
     }
-    .guest-name { font-size: 1.1rem; font-weight: 600; }
     .guest-title { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
     .guest-bio { font-size: 0.9rem; color: #444; line-height: 1.6; }
 
@@ -1425,7 +1646,7 @@ function renderEpisodePage(d) {
 }
 
 
-module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, CONTENT_DIR };
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, importDraft, dataFile, readEpisodeData, loadFix, API_BASE, CONTENT_DIR, TOPIC_HUBS, topicsOf };
 
 // Guarded so the tests can require the renderers without kicking off a build.
 if (require.main === module) {

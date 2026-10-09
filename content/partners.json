@@ -1,0 +1,386 @@
+{
+  "_comment": "Partners for /partnerships/, in display order: the team's first row of nine, then the rest from most to least widely known. `file` is in public/partners/: si-*.svg are monochrome brand marks from the Simple Icons set (CC0), recoloured on the page; the others are the files the team shared on Drive (favicons, shown as they are; their sources are listed in content/partners-sources.csv). `mono` says which can be recoloured.",
+  "featuredCount": 9,
+  "items": [
+    {
+      "name": "Microsoft",
+      "file": "microsoft.png",
+      "mono": false
+    },
+    {
+      "name": "Perplexity",
+      "file": "si-perplexity.svg",
+      "mono": true
+    },
+    {
+      "name": "Apple",
+      "file": "si-apple.svg",
+      "mono": true
+    },
+    {
+      "name": "Adobe",
+      "file": "adobe.png",
+      "mono": false
+    },
+    {
+      "name": "IBM",
+      "file": "ibm.png",
+      "mono": false
+    },
+    {
+      "name": "HubSpot",
+      "file": "si-hubspot.svg",
+      "mono": true
+    },
+    {
+      "name": "Notion",
+      "file": "si-notion.svg",
+      "mono": true
+    },
+    {
+      "name": "HP",
+      "file": "si-hp.svg",
+      "mono": true
+    },
+    {
+      "name": "Dell",
+      "file": "si-dell.svg",
+      "mono": true
+    },
+    {
+      "name": "Google",
+      "file": "si-google.svg",
+      "mono": true
+    },
+    {
+      "name": "Meta",
+      "file": "si-meta.svg",
+      "mono": true
+    },
+    {
+      "name": "YouTube",
+      "file": "si-youtube.svg",
+      "mono": true
+    },
+    {
+      "name": "Cadillac",
+      "file": "si-cadillac.svg",
+      "mono": true
+    },
+    {
+      "name": "Lenovo",
+      "file": "si-lenovo.svg",
+      "mono": true
+    },
+    {
+      "name": "LG",
+      "file": "si-lg.svg",
+      "mono": true
+    },
+    {
+      "name": "Acer",
+      "file": "si-acer.svg",
+      "mono": true
+    },
+    {
+      "name": "Logitech",
+      "file": "logitech.png",
+      "mono": false
+    },
+    {
+      "name": "Alibaba.com",
+      "file": "si-alibabadotcom.svg",
+      "mono": true
+    },
+    {
+      "name": "Binance",
+      "file": "si-binance.svg",
+      "mono": true
+    },
+    {
+      "name": "Robinhood",
+      "file": "si-robinhood.svg",
+      "mono": true
+    },
+    {
+      "name": "Fidelity Investments",
+      "file": "fidelity-investments.png",
+      "mono": false
+    },
+    {
+      "name": "Atlassian Confluence",
+      "file": "si-confluence.svg",
+      "mono": true
+    },
+    {
+      "name": "monday.com",
+      "file": "monday-com.png",
+      "mono": false
+    },
+    {
+      "name": "Wix.com",
+      "file": "si-wix.svg",
+      "mono": true
+    },
+    {
+      "name": "Zoho",
+      "file": "si-zoho.svg",
+      "mono": true
+    },
+    {
+      "name": "Hostinger",
+      "file": "si-hostinger.svg",
+      "mono": true
+    },
+    {
+      "name": "Replit",
+      "file": "si-replit.svg",
+      "mono": true
+    },
+    {
+      "name": "Gusto",
+      "file": "si-gusto.svg",
+      "mono": true
+    },
+    {
+      "name": "Pandora",
+      "file": "si-pandora.svg",
+      "mono": true
+    },
+    {
+      "name": "Four Seasons",
+      "file": "four-seasons.png",
+      "mono": false
+    },
+    {
+      "name": "InterContinental Hotels & Resorts",
+      "file": "intercontinental-hotels-and-resorts.png",
+      "mono": false
+    },
+    {
+      "name": "CapCut",
+      "file": "capcut.png",
+      "mono": false
+    },
+    {
+      "name": "Suno",
+      "file": "si-suno.svg",
+      "mono": true
+    },
+    {
+      "name": "Luma AI",
+      "file": "luma-ai.png",
+      "mono": false
+    },
+    {
+      "name": "Gamma",
+      "file": "gamma.png",
+      "mono": false
+    },
+    {
+      "name": "Genspark",
+      "file": "genspark.png",
+      "mono": false
+    },
+    {
+      "name": "OpusClip",
+      "file": "opusclip.png",
+      "mono": false
+    },
+    {
+      "name": "InVideo",
+      "file": "invideo.png",
+      "mono": false
+    },
+    {
+      "name": "ManyChat",
+      "file": "manychat.png",
+      "mono": false
+    },
+    {
+      "name": "HighLevel",
+      "file": "highlevel.png",
+      "mono": false
+    },
+    {
+      "name": "GetResponse",
+      "file": "getresponse.png",
+      "mono": false
+    },
+    {
+      "name": "Omnisend",
+      "file": "omnisend.png",
+      "mono": false
+    },
+    {
+      "name": "Navan",
+      "file": "navan.svg",
+      "mono": false
+    },
+    {
+      "name": "Ledger",
+      "file": "ledger.png",
+      "mono": false
+    },
+    {
+      "name": "RingCentral",
+      "file": "ringcentral.png",
+      "mono": false
+    },
+    {
+      "name": "Webull",
+      "file": "webull.png",
+      "mono": false
+    },
+    {
+      "name": "Printify",
+      "file": "printify.png",
+      "mono": false
+    },
+    {
+      "name": "Podia",
+      "file": "podia.png",
+      "mono": false
+    },
+    {
+      "name": "Odoo",
+      "file": "si-odoo.svg",
+      "mono": true
+    },
+    {
+      "name": "Bitrix24",
+      "file": "bitrix24.png",
+      "mono": false
+    },
+    {
+      "name": "Magical",
+      "file": "magical.png",
+      "mono": false
+    },
+    {
+      "name": "Durable",
+      "file": "durable.png",
+      "mono": false
+    },
+    {
+      "name": "10Web",
+      "file": "10web.png",
+      "mono": false
+    },
+    {
+      "name": "Radix UI",
+      "file": "si-radixui.svg",
+      "mono": true
+    },
+    {
+      "name": "Bright Data",
+      "file": "bright-data.png",
+      "mono": false
+    },
+    {
+      "name": "Usercentrics",
+      "file": "usercentrics.png",
+      "mono": false
+    },
+    {
+      "name": "Doola",
+      "file": "doola.png",
+      "mono": false
+    },
+    {
+      "name": "Novo",
+      "file": "novo.png",
+      "mono": false
+    },
+    {
+      "name": "Mindgrasp AI",
+      "file": "mindgrasp-ai.png",
+      "mono": false
+    },
+    {
+      "name": "Jarvisen",
+      "file": "jarvisen.png",
+      "mono": false
+    },
+    {
+      "name": "Poppy AI",
+      "file": "poppy-ai.png",
+      "mono": false
+    },
+    {
+      "name": "LiveXP",
+      "file": "livexp.png",
+      "mono": false
+    },
+    {
+      "name": "TOEFL (ETS)",
+      "file": "toefl-ets.png",
+      "mono": false
+    },
+    {
+      "name": "AWS Educate",
+      "file": "aws-educate.png",
+      "mono": false
+    },
+    {
+      "name": "Pangaia",
+      "file": "pangaia.png",
+      "mono": false
+    },
+    {
+      "name": "Luisa Beccaria",
+      "file": "luisa-beccaria.png",
+      "mono": false
+    },
+    {
+      "name": "DeMellier London",
+      "file": "demellier-london.png",
+      "mono": false
+    },
+    {
+      "name": "Maison Francis Kurkdjian Paris",
+      "file": "maison-francis-kurkdjian-paris.png",
+      "mono": false
+    },
+    {
+      "name": "Valmont",
+      "file": "valmont.png",
+      "mono": false
+    },
+    {
+      "name": "Gatti Nolli by Marwan",
+      "file": "gatti-nolli-by-marwan.png",
+      "mono": false
+    },
+    {
+      "name": "12 STOREEZ",
+      "file": "12-storeez.png",
+      "mono": false
+    },
+    {
+      "name": "OneTwoTrip!",
+      "file": "onetwotrip.png",
+      "mono": false
+    },
+    {
+      "name": "Pop Store",
+      "file": "pop-store.png",
+      "mono": false
+    },
+    {
+      "name": "The Lodge at Sonoma",
+      "file": "the-lodge-at-sonoma.png",
+      "mono": false
+    },
+    {
+      "name": "L'Hotel du Collectionneur Paris",
+      "file": "l-hotel-du-collectionneur-paris.png",
+      "mono": false
+    },
+    {
+      "name": "Gondola Vista Luxury Homes Lake Tahoe",
+      "file": "gondola-vista-luxury-homes-lake-tahoe.png",
+      "mono": false
+    }
+  ]
+}

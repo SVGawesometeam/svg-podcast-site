@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Silicon Valley Girl Podcast</title>
+  <meta name="description" content="The terms under which marinamogilko.co and its content are offered by Linguamarina, Inc., including the refund policy and how to raise a copyright notice.">
+  <link rel="canonical" href="https://marinamogilko.co/terms/">
+  <meta property="og:title" content="Terms of Service — Silicon Valley Girl Podcast">
+  <meta property="og:description" content="The terms under which marinamogilko.co and its content are offered by Linguamarina, Inc., including the refund policy and how to raise a copyright notice.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marinamogilko.co/terms/">
+  <meta property="og:image" content="https://marinamogilko.co/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#171511">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });</script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WZ57XVB"></script>
+  <style>
+    /* CHROME-START */
+  :root {
+    --accent: #DF1615;
+    --ground: #FFFDF6;
+    --ink: #171511;
+    --card: #FFFFFF;
+    --muted: #C5C1B9;
+    --rule: rgba(23, 21, 17, 0.12);
+    --display: 'Bebas Neue', 'Arial Narrow', Impact, sans-serif;
+    --body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  img { max-width: 100%; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---- Header ----
+     Cream, not a black bar: the mock's header is the page ground with a 2px
+     ink rule under it. The red pill is the "with Marina Mogilko" tag; the ink
+     pill is Subscribe. */
+  .site-header {
+    background: var(--ground);
+    color: var(--ink);
+    border-bottom: 2px solid var(--ink);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .site-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .site-header .wordmark {
+    font-family: var(--display);
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    color: var(--ink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .site-header .wordmark span {
+    font-family: var(--body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: var(--ground);
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  /* Icons sit between the wordmark and the nav and stay in the sticky header,
+     so the accounts are reachable from any scroll position on any page. The
+     SVGs carry brand colours at 20-22px; shrinking them to 18px keeps seven of
+     them from reading as clutter beside the wordmark. */
+  .site-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 auto;
+  }
+  .site-socials a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .site-socials a:hover { opacity: 1; transform: translateY(-1px); }
+  .site-socials svg { width: 18px; height: 18px; display: block; }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .site-nav a {
+    font-family: var(--body);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .nav-cta {
+    background: var(--ink);
+    color: var(--ground);
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+  }
+  .site-nav .nav-cta:hover { background: var(--accent); color: var(--ground); }
+
+  /* Drop-down under About Marina: opens on hover and on keyboard focus,
+     closes when the pointer or focus leaves. No JavaScript. On a phone the
+     header stacks and the About page's own section nav does this job. */
+  .nav-menu { position: relative; }
+  .nav-menu > a::after { content: " ▾"; font-size: 0.7em; }
+  .nav-sub {
+    position: absolute; top: 100%; left: -0.75rem; margin: 0; padding: 0.5rem 0;
+    list-style: none; min-width: 12rem; background: var(--ground);
+    border: 1px solid var(--rule); border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(23, 21, 17, 0.12);
+    opacity: 0; visibility: hidden; transform: translateY(4px);
+    transition: opacity 0.12s, transform 0.12s, visibility 0s linear 0.12s;
+  }
+  .nav-menu:hover .nav-sub, .nav-menu:focus-within .nav-sub {
+    opacity: 1; visibility: visible; transform: none; transition-delay: 0s;
+  }
+  .nav-sub a { display: block; padding: 0.45rem 1rem; font-size: 0.9rem; white-space: nowrap; }
+  .nav-sub a:hover { background: rgba(23, 21, 17, 0.05); }
+
+  /* The header is sticky, so anything the nav jumps to needs a matching
+     scroll offset or its heading lands underneath the bar. */
+  [id] { scroll-margin-top: 6rem; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    background: var(--ink);
+    color: #fff;
+    margin-top: 0;
+  }
+  .site-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-mark {
+    font-family: var(--display);
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+  .site-footer .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-links a {
+    font-family: var(--body);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .site-footer .footer-links a:hover { color: var(--ground); }
+
+  .site-footer .footer-legal {
+    font-family: var(--body);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .site-header-inner {
+      padding: 0.6rem 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .site-header .wordmark { font-size: 1.2rem; flex-wrap: wrap; gap: 0.5rem; }
+    .site-socials { margin: 0; gap: 1rem; flex-wrap: wrap; }
+    .site-socials a { min-height: 36px; }
+    .site-socials svg { width: 20px; height: 20px; }
+    /* Five items do not fit on one line at phone width: let them wrap, and
+       keep each label on one line so nothing pokes past the edge. */
+    .site-nav { gap: 0.6rem 1.1rem; flex-wrap: wrap; }
+    .site-nav a { white-space: nowrap; }
+    .nav-menu > a::after { content: ""; }
+    .nav-sub { display: none; }
+    /* Comfortable tap targets on a phone. */
+    .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
+    .site-header .wordmark { min-height: 44px; }
+    .site-footer-inner { padding: 2rem 1rem; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+    .site-footer .footer-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
+  }
+    /* CHROME-END */
+
+    body {
+      font-family: var(--body); background: var(--ground); color: var(--ink);
+      line-height: 1.55; margin: 0; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    h1, h2, h3 { margin: 0; font-weight: 400; }
+    p, ul, ol { margin: 0; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .narrow { max-width: 760px; }
+    .page { padding: clamp(2rem, 3.5vw, 3rem) 0 clamp(3rem, 5vw, 4rem); }
+    .page h1 {
+      font-family: var(--display); text-transform: uppercase;
+      font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .eyebrow {
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .dek { font-size: 1.15rem; line-height: 1.5; max-width: 40rem; }
+    .muted { color: rgba(23, 21, 17, 0.6); }
+    .section { padding-top: clamp(2.25rem, 4vw, 3.5rem); }
+    .section h2 {
+      font-family: var(--display); text-transform: uppercase; letter-spacing: 0.01em;
+      font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1; margin-bottom: 1rem;
+    }
+    .section h3 { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.35rem; }
+    .prose p + p, .prose ul + p, .prose p + ul { margin-top: 1rem; }
+    .prose ul, .prose ol { padding-left: 1.3rem; }
+    .prose li + li { margin-top: 0.4rem; }
+    .prose h2 { margin-top: 2.25rem; }
+    .prose h3 { margin-top: 1.5rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-weight: 600; text-decoration: none; padding: 0.75rem 1.3rem;
+      border-radius: 8px; border: 2px solid var(--ink); background: transparent;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .btn:hover { background: var(--ink); color: var(--ground); }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: var(--ground); }
+    .btn-accent:hover { background: var(--ink); border-color: var(--ink); }
+    .btn-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .back-home {
+      display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
+      font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 1rem; }
+    }
+    .legal-body { margin-top: 2rem; }
+    .legal-body h2 { font-family: var(--display); text-transform: uppercase; font-size: 1.6rem; line-height: 1; margin: 2.25rem 0 0.75rem; }
+    .legal-body h3 { font-weight: 600; font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+    .legal-body p + p { margin-top: 1rem; }
+    .legal-body ul { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="wordmark">SILICON VALLEY GIRL<span>WITH MARINA MOGILKO</span></a>
+      <nav class="site-socials" aria-label="Social media">
+        <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12z"/></svg></a>
+        <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.28-.96 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg></a>
+        <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener" aria-label="Apple Podcasts" title="Apple Podcasts"><svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ap" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#F452FF"/><stop offset="100%" stop-color="#832BC1"/></linearGradient></defs><rect width="24" height="24" rx="5.4" fill="url(#ap)"/><circle cx="12" cy="13.5" r="2" fill="#fff"/><path fill="#fff" d="M12 8.2a5.3 5.3 0 0 0-3.75 1.55.75.75 0 1 0 1.06 1.06A3.8 3.8 0 0 1 12 9.7a3.8 3.8 0 0 1 2.69 1.11.75.75 0 1 0 1.06-1.06A5.3 5.3 0 0 0 12 8.2z"/><path fill="#fff" d="M12 5a8.5 8.5 0 0 0-6.01 2.49.75.75 0 1 0 1.06 1.06A7 7 0 0 1 12 6.5a7 7 0 0 1 4.95 2.05.75.75 0 1 0 1.06-1.06A8.5 8.5 0 0 0 12 5z"/><path fill="#fff" d="M11.25 15.5v3.25a.75.75 0 0 0 1.5 0V15.5a.75.75 0 0 0-1.5 0z"/></svg></a>
+        <a href="https://www.instagram.com/siliconvalleygirlpodcast/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zm5-8.12a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM19.94 8.13c-.05-1.14-.3-2.15-.6-2.46a4.44 4.44 0 0 0-1.57-1.57c-.76-.39-1.52-.55-2.46-.6C14.26 3.44 13.7 3.42 12 3.42s-2.26.02-3.31.08c-.94.05-1.7.21-2.46.6a4.44 4.44 0 0 0-1.57 1.57c-.39.76-.55 1.52-.6 2.46-.06 1.05-.08 1.61-.08 3.31s.02 2.26.08 3.31c.05.94.21 1.7.6 2.46.34.66.8 1.2 1.57 1.57.76.39 1.52.55 2.46.6 1.05.06 1.61.08 3.31.08s2.26-.02 3.31-.08c.94-.05 1.7-.21 2.46-.6a4.44 4.44 0 0 0 1.57-1.57c.39-.76.55-1.52.6-2.46.06-1.05.08-1.61.08-3.31s-.02-2.26-.08-3.31zm-1.54 6.52c-.04.82-.2 1.26-.34 1.56-.18.44-.4.76-.74 1.1-.34.34-.66.56-1.1.74-.3.14-.74.3-1.56.34-.88.04-1.15.05-3.38.05s-2.5-.01-3.38-.05c-.82-.04-1.26-.2-1.56-.34a2.98 2.98 0 0 1-1.1-.74 2.98 2.98 0 0 1-.74-1.1c-.14-.3-.3-.74-.34-1.56C5.12 13.77 5.1 13.5 5.1 12s.02-1.77.06-2.65c.04-.82.2-1.26.34-1.56.18-.44.4-.76.74-1.1.34-.34.66-.56 1.1-.74.3-.14.74-.3 1.56-.34C9.78 5.57 10.05 5.55 12 5.55s2.22.02 3.1.06c.82.04 1.26.2 1.56.34.44.18.76.4 1.1.74.34.34.56.66.74 1.1.14.3.3.74.34 1.56.04.88.06 1.15.06 2.65s-.02 1.77-.06 2.65z"/></svg></a>
+        <a href="https://x.com/siliconvalleymm" target="_blank" rel="noopener" aria-label="X" title="X"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#000"/><path fill="#fff" d="M13.9 10.47 19.15 4.5h-1.24l-4.56 5.18L9.71 4.5H5.5l5.5 7.9L5.5 19.5h1.24l4.82-5.47 3.85 5.47h4.21l-5.72-8.03zm-1.71 1.94-.56-.8-4.43-6.32h1.9l3.59 5.13.56.8 4.66 6.66h-1.9l-3.82-5.47z"/></svg></a>
+        <a href="https://www.linkedin.com/in/marinamogilko/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.17 10.06H9.7v8.38H7.17v-8.38zM8.44 6.56a1.47 1.47 0 1 1 0 2.94 1.47 1.47 0 0 1 0-2.94zM10.95 10.06h2.42v1.14h.04c.34-.64 1.16-1.3 2.38-1.3 2.54 0 3.01 1.68 3.01 3.86v4.68h-2.52v-4.14c0-.98-.02-2.26-1.38-2.26-1.38 0-1.58 1.08-1.58 2.18v4.22h-2.52v-8.38z"/></svg></a>
+        <a href="https://www.tiktok.com/@linguamarina" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#000"/><path fill="#fff" d="M16.6 5.82a3.6 3.6 0 0 1-1.9-1.32h-1.9v9.1a1.9 1.9 0 1 1-1.9-1.9c.13 0 .26.02.38.05v-1.98a4 4 0 0 0-.38-.02 3.86 3.86 0 1 0 3.86 3.86V8.7a5.4 5.4 0 0 0 3.14 1v-1.9a3.6 3.6 0 0 1-1.4-.98z"/></svg></a>
+        <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" aria-label="Newsletter" title="Newsletter"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg></a>
+      </nav>
+      <nav class="site-nav">
+        <div class="nav-menu">
+          <a href="/topics/" aria-haspopup="true">Topics</a>
+          <ul class="nav-sub" aria-label="Topics">
+            <li><a href="/episodes/">All episodes</a></li>
+            <li><a href="/topics/ai-skills-and-careers/">AI skills and careers</a></li>
+            <li><a href="/topics/future-of-work/">Future of work</a></li>
+            <li><a href="/topics/ai-business-and-startups/">AI business and startups</a></li>
+            <li><a href="/topics/leadership-and-mindset/">Leadership and mindset</a></li>
+            <li><a href="/topics/ai-tools-and-workflows/">AI tools and workflows</a></li>
+            <li><a href="/topics/ai-safety-and-the-future/">AI safety and the future</a></li>
+            <li><a href="/topics/education-and-learning/">Education and learning</a></li>
+            <li><a href="/topics/creator-economy-and-personal-brand/">Creator economy and personal brand</a></li>
+            <li><a href="/topics/money-and-investing/">Money and investing</a></li>
+            <li><a href="/topics/health-and-science/">Health and science</a></li>
+          </ul>
+        </div>
+        <div class="nav-menu">
+          <a href="/about/" aria-haspopup="true">About Marina</a>
+          <ul class="nav-sub" aria-label="About Marina">
+            <li><a href="/about/">About Marina</a></li>
+            <li><a href="/about/#story">Story</a></li>
+            <li><a href="/about/#press">Press</a></li>
+            <li><a href="/about/#awards">Awards</a></li>
+            <li><a href="/about/#speaking">Speaking</a></li>
+            <li><a href="/about/#faq">Questions</a></li>
+            <li><a href="/about/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a href="/partnerships/">For brands</a>
+        <a href="/newsletter/">Newsletter</a>
+        <a href="/#work" class="nav-cta">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap narrow prose legal">
+      <p class="eyebrow">Legal</p>
+      <h1>Terms of Service</h1>
+      <p class="muted">Last updated: August 20, 2025</p>
+      <div class="legal-body">
+<h2>General</h2>
+<p>This website (the &quot;Site&quot;) is owned and operated by Linguamarina, Inc. (&quot;MARINA MOGILKO&quot;, &quot;we&quot;, or &quot;us&quot;). By using the Site, you agree to be bound by these Terms of Service and to use the Site in accordance with these Terms of Service, our Privacy Policy, our Refund Policy and any additional terms and conditions that may apply to specific sections of the Site or to products and services available through the Site or from MARINA MOGILKO. Accessing the Site, in any manner, whether automated or otherwise, constitutes use of the Site and your agreement to be bound by these Terms of Service.</p>
+<p>We reserve the right to change these Terms of Service or to impose new conditions on use of the Site, from time to time, in which case we will post the revised Terms of Service on this website. By continuing to use the Site after we post any such changes, you accept the Terms of Service, as modified.</p>
+<h2>Intellectual Property Rights</h2>
+<p><strong>Our Limited License to You</strong>. This Site and all the materials available on the Site are the property of us and/or our affiliates or licensors, and are protected by copyright, trademark, and other intellectual property laws. The Site is provided solely for your personal noncommercial use. You may not use the Site or the materials available on the Site in a manner that constitutes an infringement of our rights or that has not been authorized by us. More specifically, unless explicitly authorized in these Terms of Service or by the owner of the materials, you may not modify, copy, reproduce, republish, upload, post, transmit, translate, sell, create derivative works, exploit, or distribute in any manner or medium (including by email or other electronic means) any material from the Site. You may, however, from time to time, download and/or print one copy of individual pages of the Site for your personal, non-commercial use, provided that you keep intact all copyright and other proprietary notices.</p>
+<p><strong>Your License to Us</strong>. By posting or submitting any material (including, without limitation, comments, blog entries, Facebook postings, photos and videos) to us via the Site, internet groups, social media venues, or to any of our staff via email, text or otherwise, you are representing: (i) that you are the owner of the material, or are making your posting or submission with the express consent of the owner of the material; and (ii) that you are thirteen years of age or older. In addition, when you submit, email, text or deliver or post any material, you are granting us, and anyone authorized by us, a royalty-free, perpetual, irrevocable, non-exclusive, unrestricted, worldwide license to use, copy, modify, transmit, sell, exploit, create derivative works from, distribute, and/or publicly perform or display such material, in whole or in part, in any manner or medium, now known or hereafter developed, for any purpose. The foregoing grant shall include the right to exploit any proprietary rights in such posting or submission, including, but not limited to, rights under copyright, trademark, service mark or patent laws under any relevant jurisdiction. Also, in connection with the exercise of such rights, you grant us, and anyone authorized by us, the right to identify you as the author of any of your postings or submissions by name, email address or screen name, as we deem appropriate.</p>
+<p>In the event that any of the results and proceeds of your submissions hereunder are not deemed a &quot;work made for hire&quot; under Section 101 of the Copyright Act, as amended, you hereby, without additional compensation, irrevocably assign, convey and transfer to MARINA MOGILKO all proprietary rights, including without limitation, all copyrights and trademarks throughout the universe, in perpetuity in every medium, whether now known or hereafter devised, to such material and any and all right, title and interest in and to all such proprietary rights in every medium, whether now known or hereafter devised, throughout the universe, in perpetuity. Any posted material which are reproductions of prior works by you shall be co-owned by us.</p>
+<p>You acknowledge that MARINA MOGILKO has the right but not the obligation to use and display any postings or contributions of any kind and that MARINA MOGILKO may elect to cease the use and display of any such materials (or any portion thereof), at any time for any reason whatsoever.</p>
+<p><strong>Limitations on Linking and Framing</strong>. You may establish a hypertext link to the Site so long as the link does not state or imply any sponsorship of your site by us or by the Site. However, you may not, without our prior written permission, frame or inline link any of the content of the Site, or incorporate into another website or other service any of our material, content or intellectual property.</p>
+<h2>Disclaimers</h2>
+<p>Throughout the Site, we may provide links and pointers to Internet sites maintained by third parties. Our linking to such third-party sites does not imply an endorsement or sponsorship of such sites, or the information, products or services offered on or through the sites. In addition, neither we nor affiliates operate or control in any respect any information, products or services that third parties may provide on or through the Site or on websites linked to by us on the Site.</p>
+<p>If applicable, any opinions, advice, statements, services, offers, or other information or content expressed or made available by third parties, including information providers, are those of the respective authors or distributors, and not MARINA MOGILKO. Neither MARINA MOGILKO nor any third-party provider of information guarantees the accuracy, completeness, or usefulness of any content. Furthermore, MARINA MOGILKO neither endorses nor is responsible for the accuracy and reliability of any opinion, advice, or statement made on any of the Sites by anyone other than an authorized MARINA MOGILKO representative while acting in his/her official capacity.</p>
+<p>THE INFORMATION, PRODUCTS AND SERVICES OFFERED ON OR THROUGH THE SITE AND BY MARINA MOGILKO AND ANY THIRD-PARTY SITES ARE PROVIDED &quot;AS IS&quot; AND WITHOUT WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. WE DO NOT WARRANT THAT THE SITE OR ANY OF ITS FUNCTIONS WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT ANY PART OF THIS SITE, INCLUDING BULLETIN BOARDS, OR THE SERVERS THAT MAKE IT AVAILABLE, ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+<p>WE DO NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE SITE OR MATERIALS ON THIS SITE OR ON THIRD-PARTY SITES IN TERMS OF THEIR CORRECTNESS, ACCURACY, TIMELINESS, RELIABILITY OR OTHERWISE.</p>
+<p>You agree at all times to defend, indemnify and hold harmless MARINA MOGILKO its affiliates, their successors, transferees, assignees and licensees and their respective parent and subsidiary companies, agents, associates, officers, directors, shareholders and employees of each from and against any and all claims, causes of action, damages, liabilities, costs and expenses, including legal fees and expenses, arising out of or related to your breach of any obligation, warranty, representation or covenant set forth herein.</p>
+<h2>Online Commerce</h2>
+<p>Certain sections of the Site may allow you to purchase many different types of products and services online that are provided by us or by third parties. The following provisions apply to purchases of products and services, including digital products and physical merchandise (&quot;Products&quot;), directly from us through the Site.</p>
+<p>Product Descriptions. We endeavor to be as accurate as possible in our Product descriptions. However, we do not warrant that Product descriptions or other content of the Site is accurate, complete, reliable, current, or error-free.</p>
+<p>Shipping and Risk of Loss. For physical merchandise, all purchases are made pursuant to a shipment contract. This means that the risk of loss and title for such items pass to you upon our delivery to the carrier. Shipping and handling fees will be specified during the order process.</p>
+<p>We are not responsible for the quality, accuracy, timeliness, reliability or any other aspect of these products and services provided by third parties. If you make a purchase from a merchant on the Site or on a site linked to by the Site, the information obtained during your visit to that merchant’s online store or site, and the information that you give as part of the transaction, such as your credit card number and contact information, may be collected by both the merchant and us. A merchant may have privacy and data collection practices that are different from ours. We have no responsibility or liability for these independent policies. In addition, when you purchase products or services on or through the Site, you may be subject to additional terms and conditions that specifically apply to your purchase or use of such products or services. For more information regarding a merchant, its online store, its privacy policies, and/or any additional terms and conditions that may apply, visit that merchant’s website and click on its information links or contact the merchant directly. You release us and our affiliates from any damages that you incur, and agree not to assert any claims against us or them, arising from your purchase or use of any products or services made available by third parties through the Site.</p>
+<p>Your participation, correspondence or business dealings with any third party found on or through our Site, regarding payment and delivery of specific goods and services, and any other terms, conditions, representations or warranties associated with such dealings, are solely between you and such third party. You agree that MARINA MOGILKO shall not be responsible or liable for any loss, damage, or other matters of any sort incurred as the result of such dealings.</p>
+<p>You agree to be financially responsible for all purchases made by you or someone acting on your behalf through the Site. You agree to use the Site and to purchase services or products through the Site for legitimate, non-commercial purposes only. You also agree not to make any purchases for speculative, false or fraudulent purposes or for the purpose of anticipating demand for a particular product or service. You agree to only purchase goods or services for yourself or for another person for whom you are legally permitted to do so. When making a purchase for a third party that requires you to submit the third party’s personal information to us or a merchant, you represent that you have obtained the express consent of such third party to provide such third party’s personal information.</p>
+<h2>Interactive Features</h2>
+<p>This Site may include a variety of features, such as bulletin boards, web logs, chat rooms, and email services, which allow feedback to us and real-time interaction between users, and other features which allow users to communicate with others. Responsibility for what is posted on bulletin boards, web logs, chat rooms, and other public posting areas on the Site, or sent via any email services on the Site, lies with each user — you alone are responsible for the material you post or send. We do not control the messages, information or files that you or others may provide through the Site. It is a condition of your use of the Site that you do not:</p>
+<ul>
+  <li>Restrict or inhibit any other user from using and enjoying the Site.</li>
+  <li>Use the Site to impersonate any person or entity, or falsely state or otherwise misrepresent your affiliation with a person or entity.</li>
+  <li>Interfere with or disrupt any servers or networks used to provide the Site or its features, or disobey any requirements, procedures, policies or regulations of the networks we use to provide the Site.</li>
+  <li>Use the Site to instigate or encourage others to commit illegal activities or cause injury or property damage to any person.</li>
+  <li>Gain unauthorized access to the Site, or any account, computer system, or network connected to this Site, by means such as hacking, password mining or other illicit means.</li>
+  <li>Obtain or attempt to obtain any materials or information through any means not intentionally made available through this Site.</li>
+  <li>Use the Site to post or transmit any unlawful, threatening, abusive, libelous, defamatory, obscene, vulgar, pornographic, profane or indecent information of any kind, including without limitation any transmissions constituting or encouraging conduct that would constitute a criminal offense, give rise to civil liability or otherwise violate any local, state, national or international law.</li>
+  <li>Use the Site to post or transmit any information, software or other material that violates or infringes upon the rights of others, including material that is an invasion of privacy or publicity rights or that is protected by copyright, trademark or other proprietary right, or derivative works with respect thereto, without first obtaining permission from the owner or rights holder.</li>
+  <li>Use the Site to post or transmit any information, software or other material that contains a virus or other harmful component.</li>
+  <li>Use the Site to post, transmit or in any way exploit any information, software or other material for commercial purposes, or that contains advertising.</li>
+  <li>Use the Site to advertise or solicit to anyone to buy or sell products or services, or to make donations of any kind, without our express written approval.</li>
+  <li>Gather for marketing purposes any email addresses or other personal information that has been posted by other users of the Site.</li>
+</ul>
+<p>MARINA MOGILKO may host message boards, chats and other private/public forums on its Sites and on other platforms. Any user failing to comply with the terms and conditions of this Agreement may be expelled from and refused continued access to the message boards, groups, chats or other such forums in the future. MARINA MOGILKO or its designated agents may remove or alter any user-created content at any time for any reason. Message boards, chats and other public forums are intended to serve as discussion centers for users and subscribers. Information and content posted within these public forums may be provided by MARINA MOGILKO staff, MARINA MOGILKO’s outside contributors, or by users not connected with MARINA MOGILKO, some of whom may employ anonymous user names. MARINA MOGILKO expressly disclaims all responsibility and endorsement and makes no representation as to the validity of any opinion, advice, information or statement made or displayed in these forums by third parties, nor are we responsible for any errors or omissions in such postings, or for hyperlinks embedded in any messages. Under no circumstances will we, our affiliates, suppliers or agents be liable for any loss or damage caused by your reliance on information obtained through these forums. The opinions expressed in these forums are solely the opinions of the participants, and do not reflect the opinions of MARINA MOGILKO or any of its subsidiaries or affiliates.</p>
+<p>MARINA MOGILKO has no obligation whatsoever to monitor any of the content or postings on the message boards, chat rooms or other public forums on the Sites. However, you acknowledge and agree that we have the absolute right to monitor the same at our sole discretion. In addition, we reserve the right to alter, edit, refuse to post or remove any postings or content, in whole or in part, for any reason and to disclose such materials and the circumstances surrounding their transmission to any third party in order to satisfy any applicable law, regulation, legal process or governmental request and to protect ourselves, our clients, sponsors, users and visitors.</p>
+<h2>Registration</h2>
+<p>To access certain features of the Site, we may ask you to provide certain demographic information including your gender, year of birth, zip code and country. In addition, if you elect to sign-up for a particular feature of the Site, such as chat rooms, web logs, or bulletin boards, you may also be asked to register with us on the form provided and such registration may require you to provide personally identifiable information such as your name and email address. You agree to provide true, accurate, current and complete information about yourself as prompted by the Site’s registration form. If we have reasonable grounds to suspect that such information is untrue, inaccurate, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Site (or any portion thereof). Our use of any personally identifiable information you provide to us as part of the registration process is governed by the terms of our Privacy Policy.</p>
+<h2>Passwords</h2>
+<p>To use certain features of the Site, you will need a username and password, which you will receive through the Site’s registration process. You are responsible for maintaining the confidentiality of the password and account, and are responsible for all activities (whether by you or by others) that occur under your password or account. You agree to notify us immediately of any unauthorized use of your password or account or any other breach of security, and to ensure that you exit from your account at the end of each session. We cannot and will not be liable for any loss or damage arising from your failure to protect your password or account information.</p>
+<h2>Limitation of Liability</h2>
+<p>UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, SHALL WE, OUR SUBSIDIARY AND PARENT COMPANIES OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THE SITE, INCLUDING OUR MESSAGING, BLOGS, COMMENTS OF OTHERS, BOOKS, EMAILS, PRODUCTS, OR SERVICES, OR THIRD-PARTY MATERIALS, PRODUCTS, OR SERVICES MADE AVAILABLE THROUGH THE SITE OR BY US IN ANY WAY, EVEN IF WE ARE ADVISED BEFOREHAND OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATION OF LIABILITY SHALL NOT APPLY TO THE EXTENT PROHIBITED BY LAW, OR TO DAMAGES ARISING FROM OUR OWN FRAUD, WILLFUL MISCONDUCT, OR GROSS NEGLIGENCE. (BECAUSE SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN CATEGORIES OF DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU. IN SUCH STATES, OUR LIABILITY AND THE LIABILITY OF OUR SUBSIDIARY AND PARENT COMPANIES OR AFFILIATES IS LIMITED TO THE FULLEST EXTENT PERMITTED BY SUCH STATE LAW.) YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT WE ARE NOT LIABLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY USER. IF YOU ARE DISSATISFIED WITH THE SITE, ANY MATERIALS, PRODUCTS, OR SERVICES ON THE SITE, OR WITH ANY OF THE SITE’S TERMS AND CONDITIONS, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE AND THE PRODUCTS, SERVICES AND/OR MATERIALS.</p>
+<p>THIS SITE IS CONTINUALLY UNDER DEVELOPMENT AND MARINA MOGILKO MAKES NO WARRANTY OF ANY KIND, IMPLIED OR EXPRESS, AS TO ITS ACCURACY, COMPLETENESS OR APPROPRIATENESS FOR ANY PURPOSE.</p>
+<p>WITH REGARDS TO FINANCIAL CONTENT ON THE SITE:</p>
+<p>NEITHER MARINA MOGILKO NOR ITS OWNERS, OFFICERS, DIRECTORS, EMPLOYEES, SUBSIDIARIES, AFFILIATES, LICENSORS, SERVICE PROVIDERS, CONTENT PROVIDERS AND AGENTS ARE FINANCIAL ADVISERS AND NOTHING CONTAINED ON THE SITE IS INTENDED TO BE OR TO BE CONSTRUED AS FINANCIAL ADVICE.</p>
+<p>MARINA MOGILKO IS NOT AN INVESTMENT ADVISORY SERVICE, IS NOT AN INVESTMENT ADVISER, AND DOES NOT PROVIDE PERSONALIZED FINANCIAL ADVICE OR ACT AS A FINANCIAL ADVISOR. MARINAMOGILKO.CO AND EDU.MARINAMOGILKO.CO EXIST FOR EDUCATIONAL PURPOSES ONLY, AND THE MATERIALS AND INFORMATION CONTAINED HEREIN ARE FOR GENERAL INFORMATIONAL PURPOSES ONLY.</p>
+<p>THE EDUCATION AND INFORMATION PRESENTED HEREIN IS INTENDED FOR A GENERAL AUDIENCE AND DOES NOT PURPORT TO BE, NOR SHOULD IT BE CONSTRUED AS, SPECIFIC ADVICE TAILORED TO ANY INDIVIDUAL. YOU ARE ENCOURAGED TO DISCUSS ANY OPPORTUNITIES WITH YOUR ATTORNEY, ACCOUNTANT, FINANCIAL PROFESSIONAL OR OTHER ADVISOR.</p>
+<p>The information contained in this program (including but not limited to content in any format) is based on sources and information reasonably believed to be accurate as of the time it was recorded or created. However, this material deals with topics that are constantly changing and are subject to ongoing changes related to technology and the market place as well as legal and related compliance issues. Therefore, the completeness and current accuracy of the materials cannot be guaranteed. These materials do not constitute legal, compliance, financial, tax, accounting, or related advice.</p>
+<p>The end user of this information should therefore use the contents of this program and the materials as a general guideline and not as the ultimate source of current information and when appropriate the user should consult their own legal, accounting or other advisors.</p>
+<p>Any case studies, examples, illustrations cannot guarantee that the user will achieve similar results. In fact, your results may vary significantly and factors such as your market, personal effort and many other circumstances may and will cause results to vary.</p>
+<p>THE INFORMATION PROVIDED IN THIS PRODUCT IS SOLD AND PROVIDED ON AN &quot;AS IS&quot; BASIS. LINGUAMARINA, INC. DOES NOT PROMISE OR GUARANTEE ANY INCOME OR PARTICULAR RESULT FROM YOUR USE OF THE INFORMATION CONTAINED HEREIN. THOSE RESULTS ARE YOUR RESPONSIBILITY AS THE END USER OF THE PRODUCT. (SOME STATES DO NOT ALLOW LIMITED WARRANTIES, SO THIS MAY NOT APPLY TO YOU.) IN PARTICULAR, MARINA MOGILKO SHALL NOT BE LIABLE TO USER OR ANY OTHER PARTY FOR ANY DAMAGES, OR COSTS, OF ANY CHARACTER INCLUDING BUT NOT LIMITED TO DIRECT OR INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR OTHER COSTS OR DAMAGES, IN EXCESS OF THE PURCHASE PRICE OF THE PRODUCT OR SERVICES. THESE LIMITATIONS MAY BE AFFECTED BY THE LAWS OF PARTICULAR STATES AND JURISDICTIONS AND AS SUCH MAY BE APPLIED IN A DIFFERENT MANNER TO A PARTICULAR USER.</p>
+<h2>Termination</h2>
+<p>We may cancel or terminate your right to use the Site or any part of the Site at any time without notice. In the event of cancellation or termination, you are no longer authorized to access the part of the Site affected by such cancellation or termination. The restrictions imposed on you with respect to material downloaded from the Site, and the disclaimers and limitations of liabilities set forth in these Terms of Service, shall survive.</p>
+<h2>Refund Policy</h2>
+<h3>A. Digital Products and Services</h3>
+<p>The request for refund should be sent in writing to the e-mail address <a href="mailto:marina@marinamogilko.co">marina@marinamogilko.co</a> with supporting documents attached. The refund request must contain your full name and email specified when placing the order; date of the order; reason for refund, confirmation of payment made. If confirmed, we shall make a refund within ten (10) business days from the date of receipt of the relevant request. The refund amount shall be equal to the amount paid for the services minus the cost of provided services (or the service period cost) and our actual expenses, including but not limited to commissions of banks and payment systems for carrying out refunds and payments, expenses related to bank installments. Failure of the services to meet your subjective expectations shall not be a ground for refund.</p>
+<h3>B. Physical Merchandise</h3>
+<p>For physical merchandise (such as hoodies), you may request a return or exchange within 30 days of the delivery date. To be eligible for a return, your item must be unused, unworn, unwashed, and in the same condition that you received it, with all original tags attached. To initiate a return, please contact us at <a href="mailto:marina@marinamogilko.co">marina@marinamogilko.co</a> with your order number and reason for return. You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. We are not responsible for lost or stolen return packages, so we recommend using a trackable shipping service.</p>
+<h2>Other</h2>
+<p>The Digital Millennium Copyright Act of 1998 (the &quot;DMCA&quot;) provides recourse for copyright owners who believe that material appearing on the Internet infringes their rights under the U.S. copyright law. If you believe in good faith that materials hosted by MARINA MOGILKO infringe your copyright, you, or your agent may send to MARINA MOGILKO a notice requesting that the material be removed or access to it be blocked. Any notification by a copyright owner or a person authorized to act on its behalf that fails to comply with requirements of the DMCA shall not be considered sufficient notice and shall not be deemed to confer upon MARINA MOGILKO actual knowledge of facts or circumstances from which infringing material or acts are evident. If you believe in good faith that a notice of copyright infringement has been wrongly filed against you, the DMCA permits you to send to MARINA MOGILKO a counter-notice. All notices and counter notices must meet the then current statutory requirements imposed by the DMCA; see www.loc.gov/copyright for details. MARINA MOGILKO’s Copyright Agent for notice of claims of copyright infringement or counter notices can be reached as follows: <a href="mailto:marina@marinamogilko.co">marina@marinamogilko.co</a></p>
+<p>This Agreement shall be binding upon and inure to the benefit of MARINA MOGILKO and our respective assigns, successors, heirs, and legal representatives. Neither this Agreement nor any rights hereunder may be assigned without the prior written consent of MARINA MOGILKO Notwithstanding the foregoing, all rights and obligations under this Agreement may be freely assigned by MARINA MOGILKO to any affiliated entity or any of its wholly owned subsidiaries.</p>
+<h2>Dispute Resolution</h2>
+<p>These Terms of Use shall be governed by and construed in accordance with the laws of the State of California, USA and any dispute shall be subject to binding arbitration in the State of California, USA. If any provision of this agreement shall be unlawful, void or for any reason unenforceable, then that provision shall be deemed severable from this agreement and shall not affect the validity and enforceability of any remaining provisions.</p>
+<h2>Class Action Waiver</h2>
+<p>You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations aren’t allowed.<br>
+The arbitrator may not consolidate more than one person’s claims, and may not otherwise preside over any form of a class or representative proceeding or claims (such as a class action, consolidated action or private attorney general action) unless all relevant parties specifically agree to do so following initiation of the arbitration.</p>
+<h2>Severability</h2>
+<p>If any clause within this Provision (other than the Class Action Waiver clause above) is found to be illegal or unenforceable, that clause will be severed from this Provision, and the remainder of this Provision will be given full force and effect. If the Class Action Waiver clause is found to be illegal or unenforceable, this entire Provision will be unenforceable and the dispute will be decided by a court.</p>
+      </div>
+      <a class="back-home" href="/">&larr; Back to the homepage</a>
+    </div>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="footer-mark">SILICON VALLEY GIRL</span>
+      <nav class="footer-links">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+      </nav>
+      <span class="footer-legal">&copy; 2026 Marina Mogilko &middot; Made in Silicon Valley</span>
+    </div>
+  </footer>
+
+</body>
+</html>

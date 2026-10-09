@@ -47,9 +47,33 @@ test('display and body faces are loaded', () => {
 test('header is the black bar with wordmark and nav', () => {
   assert.match(chrome.SHARED_HEADER, /SILICON VALLEY GIRL/);
   assert.match(chrome.SHARED_HEADER, /WITH MARINA MOGILKO/);
-  for (const link of ['/#episodes', '/#host', '/#contact', '/#subscribe']) {
-    assert.ok(chrome.SHARED_HEADER.includes(link), `missing nav anchor: ${link}`);
+  // Nav since Release 4: the archive, the About page, the newsletter page and
+  // the pitch form, in that order. Homepage sections keep their ids for links
+  // from elsewhere; the nav no longer points at them.
+  for (const [href, label] of [['/topics/', 'Topics'], ['/about/', 'About Marina'], ['/partnerships/', 'For brands'], ['/newsletter/', 'Newsletter'], ['/#work', 'Contact us']]) {
+    assert.ok(chrome.SHARED_HEADER.includes(`href="${href}"`), `missing nav link: ${href}`);
+    assert.ok(chrome.SHARED_HEADER.includes(`>${label}<`), `missing nav label: ${label}`);
   }
+  assert.match(chrome.SHARED_HEADER, /href="\/#work" class="nav-cta"/, 'the contact form is the call to action');
+  assert.ok(!chrome.SHARED_HEADER.includes('Work with Marina'), 'reads like a job ad; the label is Contact us');
+  assert.ok(!/>Episodes</.test(chrome.SHARED_HEADER), 'Episodes left the top menu; it is the first item under Topics');
+});
+
+test('the Topics item opens a sub-menu: all episodes first, then every hub', () => {
+  const { TOPIC_MENU, SHARED_HEADER } = chrome;
+  const topics = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', 'content', 'topics.json'), 'utf8')).topics;
+  assert.deepEqual(TOPIC_MENU[0], { href: '/episodes/', label: 'All episodes' });
+  assert.equal(TOPIC_MENU.length, topics.length + 1);
+  const sub = SHARED_HEADER.slice(SHARED_HEADER.indexOf('aria-label="Topics"'), SHARED_HEADER.indexOf('aria-label="About Marina"'));
+  for (const m of TOPIC_MENU) assert.ok(sub.includes(`href="${m.href}">${m.label}<`), `Topics sub-menu lacks ${m.label}`);
+});
+
+test('the About Marina item opens a sub-menu of the About page sections, without JavaScript', () => {
+  const sub = chrome.SHARED_HEADER.slice(chrome.SHARED_HEADER.indexOf('aria-label="About Marina"'), chrome.SHARED_HEADER.indexOf('</ul>', chrome.SHARED_HEADER.indexOf('aria-label="About Marina"')));
+  for (const m of chrome.ABOUT_MENU) assert.ok(sub.includes(`href="${m.href}">${m.label}<`), `sub-menu lacks ${m.label}`);
+  assert.ok(chrome.ABOUT_MENU.every((m) => m.href.startsWith('/about/')), 'every item is a section of the About page');
+  assert.match(chrome.CHROME_CSS, /\.nav-menu:hover \.nav-sub, \.nav-menu:focus-within \.nav-sub/, 'opens on hover and on keyboard focus');
+  assert.ok(!/<script/.test(chrome.SHARED_HEADER));
 });
 
 test('nav anchors are root-relative so they work from an episode page', () => {
@@ -67,9 +91,24 @@ test('focus styling is present, so keyboard users can see where they are', () =>
 // Legal links live in the shared footer so they reach every page — the
 // homepage, /episodes/ and all 118 episode pages — rather than the homepage
 // alone, which is the usual way these end up missing where they matter.
+// Since Release 4 the texts live on this site, not on the Tilda subdomain
+// that is being retired.
 test('the footer carries the legal links', () => {
-  assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/plc"[^>]*>Privacy Policy</);
-  assert.match(chrome.SHARED_FOOTER, /href="https:\/\/partnerships\.marinamogilko\.co\/ts"[^>]*>Terms of Service</);
+  assert.match(chrome.SHARED_FOOTER, /href="\/privacy\/"[^>]*>Privacy Policy</);
+  assert.match(chrome.SHARED_FOOTER, /href="\/terms\/"[^>]*>Terms of Service</);
+  assert.ok(!chrome.SHARED_FOOTER.includes('partnerships.marinamogilko.co'), 'footer still points at Tilda');
+});
+
+// The tag manager loader is the one script every page carries. It is a plain
+// async script (not the injected snippet) so the CSP can name its host, and
+// the dataLayer push comes before it.
+test('the shared head loads the tag manager after priming the dataLayer', () => {
+  assert.equal(chrome.GTM_ID, 'GTM-WZ57XVB');
+  assert.ok(chrome.SHARED_HEAD.includes(chrome.ANALYTICS_HEAD), 'analytics not in the shared head');
+  const push = chrome.ANALYTICS_HEAD.indexOf('window.dataLayer.push');
+  const load = chrome.ANALYTICS_HEAD.indexOf('<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WZ57XVB">');
+  assert.ok(push !== -1 && load !== -1 && push < load, 'dataLayer must be primed before gtm.js loads');
+  assert.ok(!/noscript|<iframe/.test(chrome.ANALYTICS_HEAD), 'frames are blocked site-wide; no noscript iframe');
 });
 
 // The icons live in the sticky header so the accounts are reachable from any

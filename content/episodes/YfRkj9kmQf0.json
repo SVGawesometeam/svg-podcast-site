@@ -412,7 +412,9 @@
       "title": "$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-tools-and-workflows"
+  ],
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000760014527"
   }

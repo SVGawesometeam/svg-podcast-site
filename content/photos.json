@@ -1,0 +1,80 @@
+{
+  "covers": [
+    {
+      "src": "/photos/covers/l-officiel.jpg",
+      "width": 1200,
+      "height": 1484,
+      "alt": "Magazine cover featuring Marina Mogilko"
+    },
+    {
+      "src": "/photos/covers/los-altos-cover.jpg",
+      "width": 960,
+      "height": 1280,
+      "alt": "Magazine cover featuring Marina Mogilko"
+    },
+    {
+      "src": "/photos/covers/times-monaco.jpg",
+      "width": 1225,
+      "height": 1600,
+      "alt": "Magazine cover featuring Marina Mogilko"
+    },
+    {
+      "src": "/photos/covers/wiba-cover.jpg",
+      "width": 461,
+      "height": 544,
+      "alt": "Magazine cover featuring Marina Mogilko"
+    }
+  ],
+  "speaker": [
+    {
+      "src": "/photos/speaker/562633483-18016310498788666-8754002282961041082-n.jpg",
+      "width": 1200,
+      "height": 1600,
+      "alt": "Marina Mogilko speaking on stage"
+    },
+    {
+      "src": "/photos/speaker/on-stage-panel.jpg",
+      "width": 1067,
+      "height": 1600,
+      "alt": "Marina Mogilko speaking on stage"
+    },
+    {
+      "src": "/photos/speaker/rb1-7139.jpg",
+      "width": 1067,
+      "height": 1600,
+      "alt": "Marina Mogilko speaking on stage"
+    },
+    {
+      "src": "/photos/speaker/youtube-educon-creator-story.jpg",
+      "width": 959,
+      "height": 1010,
+      "alt": "Marina Mogilko speaking on stage"
+    }
+  ],
+  "influencer": [
+    {
+      "src": "/photos/influencer/468007116-18376939972104200-7046538932491679646-n.jpg",
+      "width": 1281,
+      "height": 1600,
+      "alt": "Marina Mogilko"
+    },
+    {
+      "src": "/photos/influencer/655175617-18116744266660784-9052844488784508726-n.jpg",
+      "width": 1280,
+      "height": 1600,
+      "alt": "Marina Mogilko"
+    },
+    {
+      "src": "/photos/influencer/655467159-18123075505607981-6035145141321811127-n.jpg",
+      "width": 1280,
+      "height": 1600,
+      "alt": "Marina Mogilko"
+    },
+    {
+      "src": "/photos/influencer/657702523-18119415577553337-4206501532255687448-n.jpg",
+      "width": 1281,
+      "height": 1600,
+      "alt": "Marina Mogilko"
+    }
+  ]
+}

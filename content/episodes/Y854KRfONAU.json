@@ -290,7 +290,10 @@
       "title": "Sal Khan (Khan Academy): The Real AI Opportunity"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-tools-and-workflows",
+    "ai-skills-and-careers"
+  ],
   "relatedHeading": "Watch the full interviews from this episode",
   "summaryHtml": "In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews Luana Lopes Lara, Erik Brynjolfsson, Peter Yang, Aaron Levie, Sal Khan, Kalshi, Stanford, Box & Khan Academy. Marina Mogilko examines why only 15% of CEOs report getting real value from AI, revealing that successful users spend at least 8 hours per week building AI skills. The episode features insights from six business leaders who have integrated AI into their workflows. Luana Lopes Lara, co-founder of Kalshi (a prediction market valued at over $1 billion), describes her weekly AI system that automatically collects company updates from emails, docs, and all connected systems to flag changes and performance issues, freeing up her Sundays for strategic thinking rather than administrative work. Erik Brynjolfsson, director of Stanford's Digital Economy Lab, values AI at tens of thousands of dollars monthly for his research and personal life, emphasizing that the real payoff from AI appears in the next 2-3 years for those who actually implement it as a system rather than dabbling with individual tools.",
   "metaDescription": "Marina Mogilko breaks down real AI workflows from five leaders — Luana Lopes Lara (Kalshi), Erik Brynjolfsson (Stanford), Peter Yang, Aaron Levie (Box) and Sal Khan (Khan Academy) — on the Silicon Valley Girl Podcast"

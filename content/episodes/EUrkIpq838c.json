@@ -354,8 +354,13 @@
       "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-business-and-startups",
+    "ai-tools-and-workflows",
+    "creator-economy-and-personal-brand"
+  ],
   "platformLinks": {
     "spotify": "https://open.spotify.com/episode/3PNXUm9mFPXumaX0rlZcCp"
-  }
+  },
+  "template": "v2"
 }
