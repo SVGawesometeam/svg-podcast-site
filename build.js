@@ -8,6 +8,8 @@ const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
 const { renderAboutPage, renderNewsletterPage, renderLegalPage } = require("./lib/pages");
 const { SITE_URL, IDS } = require("./lib/site");
 const { countsFor, formatCount } = require("./lib/audience");
+const { renderTopicPage, renderTopicsIndex, episodesFor } = require("./lib/render-topics");
+const { renderEpisodeCard, CARD_CSS } = require("./lib/cards");
 const {
   fromApi,
   validate,
@@ -30,6 +32,34 @@ const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 const SITE_FILE = path.join(__dirname, "content", "site.json");
 const AUDIENCE_FILE = path.join(__dirname, "content", "audience.json");
 const LEGAL_DIR = path.join(__dirname, "content", "legal");
+const TOPICS_FILE = path.join(__dirname, "content", "topics.json");
+const TOPICS_DIR = path.join(__dirname, "content", "topics");
+
+// The topic hubs; see content/topics.json. Every slug an episode names must
+// be one of these, or the build stops rather than linking to a page that
+// does not exist.
+function readTopics() {
+  const topics = JSON.parse(fs.readFileSync(TOPICS_FILE, "utf8")).topics;
+  const seen = new Set();
+  for (const t of topics) {
+    // The slug becomes a directory under public/topics/ and a file name
+    // under content/topics/, so it is checked before any path is built.
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(String(t.slug))) throw new Error(`content/topics.json: bad slug ${JSON.stringify(t.slug)}`);
+    if (seen.has(t.slug)) throw new Error(`content/topics.json: duplicate slug "${t.slug}"`);
+    seen.add(t.slug);
+    for (const k of ["name", "description", "question"]) if (!t[k]) throw new Error(`content/topics.json: ${t.slug} has no ${k}`);
+  }
+  return topics;
+}
+const TOPIC_HUBS = readTopics();
+const TOPIC_BY_SLUG = Object.fromEntries(TOPIC_HUBS.map((t) => [t.slug, t]));
+function topicsOf(d) {
+  return (d.topics || []).map((slug) => {
+    const t = TOPIC_BY_SLUG[slug];
+    if (!t) throw new Error(`${d.videoId}: topic "${slug}" is not in content/topics.json`);
+    return { slug: t.slug, name: t.name };
+  });
+}
 
 // Facts about Marina and the show; see content/site.json for what is in it
 // and where it comes from. /about/, llms.txt and the JSON-LD all read this.
@@ -39,6 +69,7 @@ function readSite() {
   const site = JSON.parse(fs.readFileSync(SITE_FILE, "utf8"));
   site.audience = fs.existsSync(AUDIENCE_FILE) ? JSON.parse(fs.readFileSync(AUDIENCE_FILE, "utf8")) : null;
   site.counts = countsFor(site.audience);
+  site.topics = TOPIC_HUBS;
   return site;
 }
 
@@ -149,6 +180,7 @@ async function build() {
     if (problems.length) {
       throw new Error(`content/episodes/${videoId}.json: ${problems.join("; ")}`);
     }
+    topicsOf(d); // throws on a slug with no hub
     const unknown = unknownSpeakers(d, loadFix(videoId));
     if (unknown.length) {
       console.warn(`   WARN ${videoId}: speaker label(s) not in the known list: ${unknown.map(u => `"${u}"`).join(", ")}`);
@@ -188,6 +220,18 @@ async function build() {
     "terms": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "terms.md"), "utf8"),
       { path: "/terms/", description: "The terms under which marinamogilko.co and its content are offered by Linguamarina, Inc., including the refund policy and how to raise a copyright notice." }),
   };
+  const topicsDir = path.join(PUBLIC_DIR, "topics");
+  fs.mkdirSync(topicsDir, { recursive: true });
+  fs.writeFileSync(path.join(topicsDir, "index.html"), renderTopicsIndex(TOPIC_HUBS, allEpisodes));
+  for (const topic of TOPIC_HUBS) {
+    const editorialFile = path.join(TOPICS_DIR, `${topic.slug}.md`);
+    const editorial = fs.existsSync(editorialFile) ? fs.readFileSync(editorialFile, "utf8") : null;
+    const dir = path.join(topicsDir, topic.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), renderTopicPage(topic, allEpisodes, TOPIC_HUBS, { editorial, newsletterCta }));
+  }
+  console.log(`Written public/topics/ (${TOPIC_HUBS.length} hubs)`);
+
   for (const [slug, html] of Object.entries(staticPages)) {
     const dir = path.join(PUBLIC_DIR, slug);
     fs.mkdirSync(dir, { recursive: true });
@@ -286,6 +330,8 @@ function renderSitemap(episodes) {
   const urls = [
     `  <url><loc>${SITE_URL}/</loc><priority>1.0</priority></url>`,
     `  <url><loc>${SITE_URL}/episodes/</loc><priority>0.8</priority></url>`,
+    `  <url><loc>${SITE_URL}/topics/</loc><priority>0.8</priority></url>`,
+    ...TOPIC_HUBS.map((t) => `  <url><loc>${SITE_URL}/topics/${t.slug}/</loc><priority>0.7</priority></url>`),
     `  <url><loc>${SITE_URL}/about/</loc><priority>0.8</priority></url>`,
     `  <url><loc>${SITE_URL}/newsletter/</loc><priority>0.6</priority></url>`,
     `  <url><loc>${SITE_URL}/privacy/</loc><priority>0.2</priority></url>`,
@@ -342,6 +388,17 @@ function renderLlmsAboutSection(site) {
   return [LLMS_ABOUT_HEADING, ...lines, "", ""].join("\n");
 }
 
+const LLMS_TOPICS_HEADING = "## Topics Covered on Silicon Valley Girl";
+
+// One line per hub: the question it answers, the count and the page.
+function renderLlmsTopicsSection(topics, episodes) {
+  const lines = topics.map((t) => {
+    const { primary, secondary } = episodesFor(t.slug, episodes);
+    return `- ${t.name}: ${t.question} ${primary.length + secondary.length} episodes: ${SITE_URL}/topics/${t.slug}/`;
+  });
+  return [LLMS_TOPICS_HEADING, ...lines, "", ""].join("\n");
+}
+
 // Replace the section that starts at `heading` and runs to the next "## ".
 function replaceSection(txt, heading, section) {
   const start = txt.indexOf(heading);
@@ -370,6 +427,9 @@ function writeLlmsTxt(episodes, site) {
     if (withAbout === null) console.log(`Note: public/llms.txt has no "${LLMS_ABOUT_HEADING}" section`);
     else txt = withAbout;
   }
+  const withTopics = replaceSection(txt, LLMS_TOPICS_HEADING, renderLlmsTopicsSection(TOPIC_HUBS, episodes));
+  if (withTopics === null) console.log(`Note: public/llms.txt has no "${LLMS_TOPICS_HEADING}" section`);
+  else txt = withTopics;
   fs.writeFileSync(file, txt);
   console.log(`Written public/llms.txt (${guests.split("\n").length - 4} guests)`);
 }
@@ -457,19 +517,15 @@ const FEATURED_VIDEO_ID = "qy8Gr27yLMk";
 // Every episode on one page, linked from the homepage archive. Separate from
 // the homepage because revealing 110 cards in place buried everything below
 // them — the form included — behind an endless scroll.
-function renderEpisodesPage(episodes) {
-  const cards = episodes
-    .map(
-      (ep) => `
-          <a href="/episode/${ep.videoId}/" class="ep-card">
-            <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
-            <div class="ep-card-body">
-              <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${formatDateShort(ep.publishedAt)} &middot; ${esc(ep.duration)}</p>
-              <h3 class="ep-card-title">${esc(ep.title)}</h3>
-            </div>
-          </a>`
-    )
-    .join("\n");
+// The directory: every episode in the HTML, newest first, with a search box
+// and format and topic filters that work on the page itself. Without
+// JavaScript the toolbar stays hidden and the full list is simply there; the
+// filters never change the URL, so there is one page to index, not hundreds.
+function renderEpisodesPage(episodes, topics = TOPIC_HUBS) {
+  const cards = episodes.map((ep) => renderEpisodeCard(ep)).join("\n");
+  const topicOptions = topics
+    .map((t) => `<option value="${esc(t.slug)}">${esc(t.name)}</option>`)
+    .join("\n            ");
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -477,7 +533,7 @@ function renderEpisodesPage(episodes) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All episodes — Silicon Valley Girl Podcast</title>
-  <meta name="description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko — conversations with the founders and scientists building AI.">
+  <meta name="description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko: ${episodes.length} conversations with the founders and scientists building AI, each with a full transcript. Search by guest or title, filter by format and topic.">
   <link rel="canonical" href="${SITE_URL}/episodes/">
   <meta property="og:title" content="All episodes — Silicon Valley Girl Podcast">
   <meta property="og:description" content="Every episode of the Silicon Valley Girl Podcast with Marina Mogilko.">
@@ -507,22 +563,20 @@ function renderEpisodesPage(episodes) {
       font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
       text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin-bottom: 2rem;
     }
-    .archive-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.8rem 1.4rem;
+    .toolbar { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.25rem 0 2rem; }
+    .toolbar[hidden] { display: none; }
+    .toolbar label { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(23, 21, 17, 0.6); }
+    .toolbar input, .toolbar select {
+      font: inherit; font-size: 1rem; color: var(--ink); background: var(--card);
+      border: 1.5px solid var(--rule); border-radius: 8px; padding: 0.6rem 0.8rem; min-height: 44px;
     }
-    .ep-card { text-decoration: none; display: block; }
-    .ep-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
-    .ep-card-body { padding-top: 0.75rem; }
-    .ep-card-meta {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
-    }
-    .ep-card-title {
-      font-family: var(--display); font-size: 1.22rem; line-height: 1.08;
-      letter-spacing: 0.01em; text-transform: uppercase;
-    }
-    .ep-card:hover .ep-card-title { color: var(--accent); }
+    .toolbar input { min-width: 16rem; }
+    .toolbar input:focus, .toolbar select:focus { outline: 2px solid var(--accent); outline-offset: 2px; border-color: var(--ink); }
+    .toolbar .reset { align-self: flex-end; font: inherit; font-weight: 600; background: none; border: 1.5px solid var(--ink); border-radius: 8px; padding: 0.6rem 1rem; min-height: 44px; cursor: pointer; }
+    .toolbar .reset:hover { background: var(--ink); color: var(--ground); }
+    .no-results { display: none; padding: 2rem 0; font-size: 1.05rem; }
+    .no-results.show { display: block; }
+    ${CARD_CSS}
     .back-home {
       display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
       font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent);
@@ -530,8 +584,8 @@ function renderEpisodesPage(episodes) {
     }
     @media (max-width: 640px) {
       .wrap { padding: 0 1rem; }
-      .archive-grid { grid-template-columns: 1fr; }
-      .ep-card-meta { font-size: 0.75rem; }
+      .toolbar input { min-width: 0; width: 100%; }
+      .toolbar label { width: 100%; }
     }
   </style>
 </head>
@@ -542,25 +596,67 @@ function renderEpisodesPage(episodes) {
   <main class="archive-page">
     <div class="wrap">
       <h1>All episodes</h1>
-      <p class="archive-count">${episodes.length} episodes</p>
-      <div class="archive-grid">
+      <p class="archive-count" id="count" aria-live="polite">${episodes.length} episodes</p>
+      <form class="toolbar" id="filters" hidden autocomplete="off">
+        <label>Search
+          <input type="search" id="q" placeholder="Guest, company or title">
+        </label>
+        <label>Format
+          <select id="format">
+            <option value="">All formats</option>
+            <option value="interview">Interviews</option>
+            <option value="solo">Solo episodes</option>
+            <option value="compilation">Compilations</option>
+          </select>
+        </label>
+        <label>Topic
+          <select id="topic">
+            <option value="">All topics</option>
+            ${topicOptions}
+          </select>
+        </label>
+        <button type="reset" class="reset">Clear</button>
+      </form>
+      <div class="ep-grid" id="grid">
 ${cards}
       </div>
+      <p class="no-results" id="none">No episodes match. <a href="/episodes/">Clear the filters</a> or try another word.</p>
       <a class="back-home" href="/">&larr; Back to the homepage</a>
     </div>
   </main>
 
   ${SHARED_FOOTER}
 
+  <script>
+  (function () {
+    var form = document.getElementById("filters"), q = document.getElementById("q"),
+        fmt = document.getElementById("format"), topic = document.getElementById("topic"),
+        cards = Array.prototype.slice.call(document.querySelectorAll("#grid .ep-card")),
+        count = document.getElementById("count"), none = document.getElementById("none"),
+        total = cards.length;
+    function apply() {
+      var words = q.value.toLowerCase().trim().split(/\\s+/).filter(Boolean), f = fmt.value, tp = topic.value, shown = 0;
+      cards.forEach(function (c) {
+        var s = c.getAttribute("data-search") || "", ok = true, i;
+        for (i = 0; i < words.length; i++) if (s.indexOf(words[i]) === -1) { ok = false; break; }
+        if (ok && f && c.getAttribute("data-format") !== f) ok = false;
+        if (ok && tp && (" " + (c.getAttribute("data-topics") || "") + " ").indexOf(" " + tp + " ") === -1) ok = false;
+        c.hidden = !ok; if (ok) shown++;
+      });
+      count.textContent = shown === total ? total + " episodes" : shown + " of " + total + " episodes";
+      none.className = shown ? "no-results" : "no-results show";
+    }
+    form.hidden = false;
+    q.addEventListener("input", apply); fmt.addEventListener("change", apply); topic.addEventListener("change", apply);
+    form.addEventListener("reset", function () { setTimeout(apply, 0); });
+    form.addEventListener("submit", function (e) { e.preventDefault(); });
+  })();
+  </script>
+
 </body>
 </html>`;
 }
 
-// One identifier per entity, reused by every page on the site (and by the
-// media kit once it lives here), so a machine reading any page can tell that
-// the same person, show and publisher are meant. Only facts that need no
-// date are asserted here; counts and awards belong on the About page with
-// their sources.
 function homeJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -844,6 +940,11 @@ function renderHomePage(episodes, site = null) {
       gap: 1rem; flex-wrap: wrap;
     }
     .archive-head .section-title { margin-bottom: 1.8rem; }
+    .topics { padding: clamp(2rem, 4vw, 3rem) 0; }
+    .topic-chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .topic-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.4rem 1rem; border: 1.5px solid var(--ink); border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
+    .topic-chips a:hover, .topic-chips a.all { background: var(--ink); color: var(--ground); }
+    .topic-chips a.all:hover { background: var(--accent); }
     .archive-more {
       background: none; border: none; border-bottom: 2px solid var(--accent);
       font-family: var(--body); cursor: pointer; padding: 0 0 2px;
@@ -1024,6 +1125,16 @@ ${archiveHtml}
     </div>
   </section>
 
+  <section id="topics" class="topics">
+    <div class="wrap">
+      <h2 class="section-title">Explore by topic</h2>
+      <ul class="topic-chips">
+        ${(site && site.topics ? site.topics : TOPIC_HUBS).map((t) => `<li><a href="/topics/${esc(t.slug)}/">${esc(t.name)}</a></li>`).join("\n        ")}
+        <li><a href="/topics/" class="all">All topics &rarr;</a></li>
+      </ul>
+    </div>
+  </section>
+
   <section id="host" class="host">
     <div class="wrap">
       <h2 class="section-title">Meet the host</h2>
@@ -1178,7 +1289,7 @@ function newsletterCta() {
 
 function renderEpisodePage(d) {
   // Template v2 (Release 3) is opt-in per page; see lib/render-episode-v2.js.
-  if (d.template === "v2") return renderEpisodePageV2(d, { newsletterCta, formatDate });
+  if (d.template === "v2") return renderEpisodePageV2(d, { newsletterCta, formatDate, topics: topicsOf(d) });
   const published = formatDate(d.publishedAt);
   const isoDate = new Date(d.publishedAt).toISOString();
   const isSolo = d.format === "solo";
@@ -1505,7 +1616,7 @@ function renderEpisodePage(d) {
 }
 
 
-module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, CONTENT_DIR };
+module.exports = { renderHomePage, renderEpisodePage, renderEpisodesPage, formatDate, summaryFor, writeEpisodeData, CONTENT_DIR, TOPIC_HUBS, topicsOf };
 
 // Guarded so the tests can require the renderers without kicking off a build.
 if (require.main === module) {

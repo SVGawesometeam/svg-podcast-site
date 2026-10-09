@@ -334,6 +334,11 @@
       gap: 1rem; flex-wrap: wrap;
     }
     .archive-head .section-title { margin-bottom: 1.8rem; }
+    .topics { padding: clamp(2rem, 4vw, 3rem) 0; }
+    .topic-chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .topic-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.4rem 1rem; border: 1.5px solid var(--ink); border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
+    .topic-chips a:hover, .topic-chips a.all { background: var(--ink); color: var(--ground); }
+    .topic-chips a.all:hover { background: var(--accent); }
     .archive-more {
       background: none; border: none; border-bottom: 2px solid var(--accent);
       font-family: var(--body); cursor: pointer; padding: 0 0 2px;
@@ -468,6 +473,7 @@
       </nav>
       <nav class="site-nav">
         <a href="/episodes/">Episodes</a>
+        <a href="/topics/">Topics</a>
         <a href="/about/">About Marina</a>
         <a href="/newsletter/">Newsletter</a>
         <a href="/#work" class="nav-cta">Work with Marina</a>
@@ -579,6 +585,25 @@
             </div>
           </a>
       </div>
+    </div>
+  </section>
+
+  <section id="topics" class="topics">
+    <div class="wrap">
+      <h2 class="section-title">Explore by topic</h2>
+      <ul class="topic-chips">
+        <li><a href="/topics/ai-skills-and-careers/">AI skills and careers</a></li>
+        <li><a href="/topics/future-of-work/">Future of work</a></li>
+        <li><a href="/topics/ai-business-and-startups/">AI business and startups</a></li>
+        <li><a href="/topics/leadership-and-mindset/">Leadership and mindset</a></li>
+        <li><a href="/topics/ai-tools-and-workflows/">AI tools and workflows</a></li>
+        <li><a href="/topics/ai-safety-and-the-future/">AI safety and the future</a></li>
+        <li><a href="/topics/education-and-learning/">Education and learning</a></li>
+        <li><a href="/topics/creator-economy-and-personal-brand/">Creator economy and personal brand</a></li>
+        <li><a href="/topics/money-and-investing/">Money and investing</a></li>
+        <li><a href="/topics/health-and-science/">Health and science</a></li>
+        <li><a href="/topics/" class="all">All topics &rarr;</a></li>
+      </ul>
     </div>
   </section>
 

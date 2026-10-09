@@ -1,0 +1,65 @@
+{
+  "_comment": "The topic hubs at /topics/<slug>/. Proposed 2026-10-09 from the episodes' summaries and takeaways (content/topics-proposal.json has the per-episode reasoning); the team confirms or edits names, descriptions and questions here. Each episode's `topics` list in content/episodes/<id>.json names these slugs, primary first.",
+  "topics": [
+    {
+      "slug": "ai-skills-and-careers",
+      "name": "AI skills and careers",
+      "description": "Which skills to learn, how hiring is changing, and how to position yourself as AI takes over routine work.",
+      "question": "What should I learn to stay employable as AI changes work?"
+    },
+    {
+      "slug": "future-of-work",
+      "name": "Future of work",
+      "description": "What economists, CEOs and labour data say about which jobs AI will change or remove, how fast, and what comes next.",
+      "question": "Which jobs will AI change or replace, and how soon?"
+    },
+    {
+      "slug": "ai-business-and-startups",
+      "name": "AI business and startups",
+      "description": "Business ideas, founder playbooks and step-by-step guides for starting and growing a company in the AI era, often without code, funding or a team.",
+      "question": "How do I start a business with AI, without funding or a technical team?"
+    },
+    {
+      "slug": "leadership-and-mindset",
+      "name": "Leadership and mindset",
+      "description": "How founders and CEOs built and run their companies: co-founders, scaling, hard decisions, burnout, and the habits and life lessons behind their careers.",
+      "question": "What does it actually take to build and lead a company, and keep going?"
+    },
+    {
+      "slug": "ai-tools-and-workflows",
+      "name": "AI tools and workflows",
+      "description": "The specific tools, agents and automation setups Marina and her guests use day to day, and how to set them up yourself.",
+      "question": "Which AI tools and agent workflows are worth setting up, and how?"
+    },
+    {
+      "slug": "ai-safety-and-the-future",
+      "name": "AI safety and the future",
+      "description": "How powerful AI may become, how fast, what could go wrong, and who ends up controlling it.",
+      "question": "How far will AI go, and what are the risks?"
+    },
+    {
+      "slug": "education-and-learning",
+      "name": "Education and learning",
+      "description": "Whether degrees still pay off, how schools are changing, and how adults and children should learn alongside AI.",
+      "question": "Is a degree still worth it, and how should I or my kids learn in the AI era?"
+    },
+    {
+      "slug": "creator-economy-and-personal-brand",
+      "name": "Creator economy and personal brand",
+      "description": "Building an audience, getting found by people and AI assistants, and turning content into income through brands, email, products and affiliates.",
+      "question": "How do I build an audience and make money from it?"
+    },
+    {
+      "slug": "money-and-investing",
+      "name": "Money and investing",
+      "description": "Personal finance, investing, income streams and the money habits behind building wealth.",
+      "question": "How do I manage, grow and diversify my money?"
+    },
+    {
+      "slug": "health-and-science",
+      "name": "Health and science",
+      "description": "How AI and new science are changing medicine, biology and physics, and how to use AI for your own health.",
+      "question": "How is AI changing medicine and science, and how should I use it for my health?"
+    }
+  ]
+}

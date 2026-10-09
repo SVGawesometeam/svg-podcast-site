@@ -1,0 +1,1057 @@
+{
+  "generatedAt": "2026-10-09",
+  "method": "Started from the hubs already named in docs/2026-10-08-websites-geo-seo-plan.md (5.5) and public/llms.txt, then checked them against the title, guest title, summary and key takeaways of all 123 episodes, merging or renaming until each hub answers one visitor question and holds at least six episodes. Each episode is assigned by what its summary and takeaways actually cover, primary topic first; two episodes without summaries (Gary Vaynerchuk, Luis von Ahn) were assigned from their chapter titles and should be rechecked once summaries exist.",
+  "topics": [
+    {
+      "slug": "ai-skills-and-careers",
+      "name": "AI skills and careers",
+      "description": "Which skills to learn, how hiring is changing, and how to position yourself as AI takes over routine work.",
+      "question": "What should I learn to stay employable as AI changes work?",
+      "count": 39
+    },
+    {
+      "slug": "future-of-work",
+      "name": "Future of work",
+      "description": "What economists, CEOs and labour data say about which jobs AI will change or remove, how fast, and what comes next.",
+      "question": "Which jobs will AI change or replace, and how soon?",
+      "count": 34
+    },
+    {
+      "slug": "ai-business-and-startups",
+      "name": "AI business and startups",
+      "description": "Business ideas, founder playbooks and step-by-step guides for starting and growing a company in the AI era, often without code, funding or a team.",
+      "question": "How do I start a business with AI, without funding or a technical team?",
+      "count": 39
+    },
+    {
+      "slug": "leadership-and-mindset",
+      "name": "Leadership and mindset",
+      "description": "How founders and CEOs built and run their companies: co-founders, scaling, hard decisions, burnout, and the habits and life lessons behind their careers.",
+      "question": "What does it actually take to build and lead a company, and keep going?",
+      "count": 32
+    },
+    {
+      "slug": "ai-tools-and-workflows",
+      "name": "AI tools and workflows",
+      "description": "The specific tools, agents and automation setups Marina and her guests use day to day, and how to set them up yourself.",
+      "question": "Which AI tools and agent workflows are worth setting up, and how?",
+      "count": 37
+    },
+    {
+      "slug": "ai-safety-and-the-future",
+      "name": "AI safety and the future",
+      "description": "How powerful AI may become, how fast, what could go wrong, and who ends up controlling it.",
+      "question": "How far will AI go, and what are the risks?",
+      "count": 11
+    },
+    {
+      "slug": "education-and-learning",
+      "name": "Education and learning",
+      "description": "Whether degrees still pay off, how schools are changing, and how adults and children should learn alongside AI.",
+      "question": "Is a degree still worth it, and how should I or my kids learn in the AI era?",
+      "count": 13
+    },
+    {
+      "slug": "creator-economy-and-personal-brand",
+      "name": "Creator economy and personal brand",
+      "description": "Building an audience, getting found by people and AI assistants, and turning content into income through brands, email, products and affiliates.",
+      "question": "How do I build an audience and make money from it?",
+      "count": 20
+    },
+    {
+      "slug": "money-and-investing",
+      "name": "Money and investing",
+      "description": "Personal finance, investing, income streams and the money habits behind building wealth.",
+      "question": "How do I manage, grow and diversify my money?",
+      "count": 10
+    },
+    {
+      "slug": "health-and-science",
+      "name": "Health and science",
+      "description": "How AI and new science are changing medicine, biology and physics, and how to use AI for your own health.",
+      "question": "How is AI changing medicine and science, and how should I use it for my health?",
+      "count": 6
+    }
+  ],
+  "episodes": {
+    "0lsasYuzhL4": {
+      "title": "Nobel Economist: How to Stay Valuable as AI Changes Work | Daron Acemoglu",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers",
+        "education-and-learning"
+      ],
+      "why": "Automation pace forecasts, what to study, students delegating thinking"
+    },
+    "iJlyNupMOzA": {
+      "title": "$95B Airbnb CEO: The Gap Is Growing — What It Takes to Be a Top Performer Now | Brian Chesky",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-skills-and-careers",
+        "ai-business-and-startups"
+      ],
+      "why": "AI-native Airbnb, AI widens performance gap, idea volume"
+    },
+    "qy8Gr27yLMk": {
+      "title": "OpenAI Co-Founder: Start Building With AI Before You Feel Ready | Greg Brockman",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-business-and-startups"
+      ],
+      "why": "Adoption gap, directing AI to code, entrepreneurship renaissance"
+    },
+    "oOpF0ZXSXuk": {
+      "title": "Stanford Doctor: The Right Way To Ask AI About Your Health",
+      "topics": [
+        "health-and-science",
+        "ai-tools-and-workflows"
+      ],
+      "why": "GPT-4 versus doctors, how to ask AI about health"
+    },
+    "KEAYPqQG2-M": {
+      "title": "$13B Lovable Co-Founder: Turn Your AI Side Project Into a Real Business",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Turning side projects into paid businesses with no-code Lovable"
+    },
+    "ael24TrS0ws": {
+      "title": "TOP 10 Highest-Paying Jobs for the next 10 years (and 5 jobs that have NO future)",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "BLS projections, AI exposure versus growth, declining jobs"
+    },
+    "cVGHg4Vd9uM": {
+      "title": "The Biggest AI Opportunities Are Hiding in Boring Businesses",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Seven leaders on AI opportunities in boring industries"
+    },
+    "JEZVl3BkSLk": {
+      "title": "Superhuman CEO: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Shishir Mehrotra",
+      "topics": [
+        "ai-skills-and-careers",
+        "leadership-and-mindset"
+      ],
+      "why": "How promotions work, managing as AI automates execution, eigenquestions"
+    },
+    "213rSCulKUQ": {
+      "title": "Top 1% Career Strategy: How to Get Hired in the AI Era",
+      "topics": [
+        "ai-skills-and-careers",
+        "future-of-work"
+      ],
+      "why": "Seven executives on hiring criteria and how fast skills change"
+    },
+    "o-wv_szZ0V0": {
+      "title": "Andrew Ng: The Biggest Opportunities in AI Aren't Where You Think",
+      "topics": [
+        "future-of-work",
+        "education-and-learning",
+        "ai-safety-and-the-future"
+      ],
+      "why": "Doom narrative critique, jobs shift not vanish, universities lag"
+    },
+    "Y854KRfONAU": {
+      "title": "The AI Workflow That Puts You in the Top 1% | Practical Steps to Level Up",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-skills-and-careers"
+      ],
+      "why": "Leaders' AI systems, eight hours weekly building skills"
+    },
+    "xiJsfvaxzRY": {
+      "title": "$22B Kalshi Co-Founder: How Life Changes in the Next 12 Months | Luana Lopes Lara",
+      "topics": [
+        "future-of-work",
+        "money-and-investing"
+      ],
+      "why": "Prediction-market data on AI layoffs, hedging with markets"
+    },
+    "2NFQ4-6MzuU": {
+      "title": "How to Rank #1 in AI: The Ultimate GEO (Generative Engine Optimization) Guide",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Making a brand visible to AI assistants; five GEO steps"
+    },
+    "VF2FwZ_PXhw": {
+      "title": "Stop Disease 5 Years Early: AI + DNA Playbook With 23andMe's Founder  Anne Wojcicki",
+      "topics": [
+        "health-and-science"
+      ],
+      "why": "Genetics plus AI for prevention, polygenic risk, CGM example"
+    },
+    "72duHF7iZiU": {
+      "title": "Stanford Economist on the Best and Worst Decade in History | Erik Brynjolfsson",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "Entry-level job data, demand elasticity, managing fleets of agents"
+    },
+    "HMvTSaaO9sU": {
+      "title": "Gonka Founders on Who Controls AI Wealth in 3 Years | The Liberman Brothers",
+      "topics": [
+        "ai-safety-and-the-future",
+        "health-and-science",
+        "future-of-work"
+      ],
+      "why": "Who controls AI access and wealth, biotech tipping points, plumber"
+    },
+    "s-Iz-lLAhdg": {
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan",
+      "topics": [
+        "future-of-work",
+        "education-and-learning",
+        "ai-business-and-startups"
+      ],
+      "why": "Job Shock, call-centre automation, Khanmigo, $10K degree"
+    },
+    "fxIVCIoLOys": {
+      "title": "Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson",
+      "topics": [
+        "ai-safety-and-the-future",
+        "ai-business-and-startups"
+      ],
+      "why": "Exponential compute, least-digitized industries, finding a co-founder"
+    },
+    "2j9yjRSpMSo": {
+      "title": "AI Search Scientist on Why You Need to Rethink Your Career Now | Richard Socher",
+      "topics": [
+        "ai-safety-and-the-future",
+        "future-of-work",
+        "health-and-science"
+      ],
+      "why": "Recursive self-improvement, reward hacking, superintelligence for science"
+    },
+    "subu-xHrp1w": {
+      "title": "Godmother of AI: In 10 Years There Will Be Only 2 Kinds of Workers | Fei-Fei Li & Masterclass CEO David Rogier",
+      "topics": [
+        "future-of-work",
+        "ai-tools-and-workflows",
+        "ai-safety-and-the-future"
+      ],
+      "why": "Two kinds of workers, custom AI apps, spatial intelligence frontier"
+    },
+    "Yu0z7-KMHpo": {
+      "title": "AI-First Playbook: Do a Team's Work With AI (2026) | Product Leader Peter Yang",
+      "topics": [
+        "ai-tools-and-workflows",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "AI-first workflow for newsletter, apps and social posting"
+    },
+    "LAEaSbZ2IR8": {
+      "title": "$2.1B AI CEO: The Beginner's Playbook to a Profitable AI Startup in 2026 | Grant Lee, CEO Gamma",
+      "topics": [
+        "ai-business-and-startups",
+        "leadership-and-mindset"
+      ],
+      "why": "Product-market fit signals, two-week fundraise, distribution-first"
+    },
+    "qNt5TNn9D9Y": {
+      "title": "She Raised a YouTube CEO and a Billion-Dollar Founder | Esther Wojcicki, Godmother of Silicon Valley",
+      "topics": [
+        "education-and-learning",
+        "ai-skills-and-careers"
+      ],
+      "why": "TRICK parenting, AI as collaborative teacher, no tech bans"
+    },
+    "U7apPfqHgvg": {
+      "title": "$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026 | Chris Pedregal",
+      "topics": [
+        "ai-business-and-startups",
+        "leadership-and-mindset"
+      ],
+      "why": "Closed beta, quality as differentiator, daily user observation"
+    },
+    "bzfklNb1wjc": {
+      "title": "Airtable CEO: This Is What the Top 1% Do With AI | Howie Liu",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-skills-and-careers"
+      ],
+      "why": "Agent era, managing fleets of agents, virtual twin"
+    },
+    "DPe_srf0GlI": {
+      "title": "Head of ChatGPT & Codex: Agents for Normal People Are HERE | Thibault Sottiaux",
+      "topics": [
+        "ai-tools-and-workflows",
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "Agents for non-technical users, context files, auto review"
+    },
+    "ZW87Peh3tWM": {
+      "title": "Head of Gemini: You're Using 5% of What Gemini Can Actually Do | Josh Woodward",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-skills-and-careers"
+      ],
+      "why": "Gemini agents, voice-first, judgment in the agentic era"
+    },
+    "ExgNR94SrfI": {
+      "title": "Box CEO on the Next 3 Years That Will Make 100 New Founders Rich | Aaron Levie",
+      "topics": [
+        "ai-business-and-startups",
+        "future-of-work"
+      ],
+      "why": "Three-year window for AI-native startups, agents augmenting roles"
+    },
+    "Baa71rPgxvA": {
+      "title": "Build a Self-Running AI Company in 16 Minutes (Move 75% Faster)",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-business-and-startups"
+      ],
+      "why": "Five levels of a self-running company, Claude desktop, MCP automation"
+    },
+    "WOmRB6jNiSU": {
+      "title": "AI Schools Are Here: How kids learn 2h/day and become top 1% nationally | MacKenzie Price",
+      "topics": [
+        "education-and-learning",
+        "future-of-work"
+      ],
+      "why": "AI-tutor school, two-hour learning, preparing kids for AI"
+    },
+    "gwsaC3WiCqs": {
+      "title": "6 Profitable AI business ideas for 2026",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Six AI business ideas from leaders, AI consulting, generative search"
+    },
+    "zL2PIa72gJ4": {
+      "title": "Double Your Income With AI in 3 Months (Here's the Stack)",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-skills-and-careers"
+      ],
+      "why": "Six tools founders use, AI as thinking partner, skills files"
+    },
+    "ZK-TCkETAFw": {
+      "title": "Start a $10K/Month AI Business in 90 Days — No Code, No Funding, No Team",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Six founders on a $10K/month no-code AI business"
+    },
+    "00RHph_eok4": {
+      "title": "AI Safety Expert: No One Is Ready for What's Coming in 2 Years | Roman Yampolskiy",
+      "topics": [
+        "ai-safety-and-the-future",
+        "future-of-work",
+        "money-and-investing"
+      ],
+      "why": "AI control, AGI timelines, junior jobs vanishing, last wealth window"
+    },
+    "GDeEATJcbJo": {
+      "title": "Duolingo CEO: What I Tell Every Employee About Surviving AI | Luis von Ahn",
+      "topics": [
+        "ai-skills-and-careers",
+        "ai-business-and-startups",
+        "education-and-learning"
+      ],
+      "why": "No summary yet; chapters cover hiring, vibe coding, language learning"
+    },
+    "vZLY2YGUk4o": {
+      "title": "Nobel Prize Winner: Nobody Sees What's Coming After AI | John Martinis",
+      "topics": [
+        "health-and-science",
+        "ai-safety-and-the-future"
+      ],
+      "why": "Quantum computing, Bitcoin encryption risk, drug discovery"
+    },
+    "YfRkj9kmQf0": {
+      "title": "Ex-Amazon AI Chief: 59-minute step-by-step tutorial on how to build your second brain with AI | Allie Miller",
+      "topics": [
+        "ai-tools-and-workflows"
+      ],
+      "why": "Second brain: 36 workflows, agents, three context documents"
+    },
+    "E0Q96IKXx6Q": {
+      "title": "Ex-Google Exec: How to Position Yourself Now Before the Next AI Phase (2026–2027) | Mo Gawdat",
+      "topics": [
+        "ai-safety-and-the-future",
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "FACE RIPS disruption, graduate hiring collapse, four skills"
+    },
+    "4vIIeCqHYXA": {
+      "title": "Gary Vee: The AI Opportunity Is Real — You're Just Looking at It Wrong | VaynerX Chairman Gary Vaynerchuk",
+      "topics": [
+        "ai-business-and-startups",
+        "creator-economy-and-personal-brand",
+        "future-of-work"
+      ],
+      "why": "No summary yet; chapters cover starting from zero, social strategy, middle class"
+    },
+    "PTZ5iN9nDkY": {
+      "title": "Google VP: The AI Shift Is Done and the Gap Between People Is Growing. Here's How to Stay Ahead | Yossi Matias",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Six 2026 trends: agents, vibe coding, judgment over technical skill"
+    },
+    "KF_uNAxPFFA": {
+      "title": "Max Tegmark: The One Skill AI Can't Replace — And Most People Are Losing It Right Now |MIT Professor",
+      "topics": [
+        "ai-safety-and-the-future",
+        "ai-skills-and-careers",
+        "education-and-learning"
+      ],
+      "why": "Cognitive debt, judgment as the irreplaceable skill, superintelligence risk"
+    },
+    "Dp6u0pel-Rs": {
+      "title": "Job Market 2026: Why Everyone Is Getting Laid Off—And How to Be the Exception | Saadia Zahidi, World Economic Forum",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "WEF data on layoffs and reskilling, 30/60/90-day career plan"
+    },
+    "nBM3_AzNYU8": {
+      "title": "$8B Investor: The Only Career Move AI Can't Replace | Bill Gurley",
+      "topics": [
+        "ai-skills-and-careers",
+        "future-of-work"
+      ],
+      "why": "Curiosity as defence, playing safe is risky, white-collar layoffs"
+    },
+    "Gk0n0FjeKj8": {
+      "title": "Stanford AI Expert: 71% of People Won't Survive the AI Shift — Here's the 30-Minute Fix | Kian Katanforoosh",
+      "topics": [
+        "ai-skills-and-careers",
+        "education-and-learning"
+      ],
+      "why": "AI proficiency versus adoption, 90-day learning plan"
+    },
+    "czItVEAINqw": {
+      "title": "$1.3B AI CEO: \"You ONLY Need 2 People and 90 Days to Build a $1M Business\" | Higgsfield Founder Alex Mashrabov",
+      "topics": [
+        "ai-business-and-startups",
+        "leadership-and-mindset"
+      ],
+      "why": "Two-person $1M ARR playbook, customer interviews, bootstrapping"
+    },
+    "S0h5oUVv0BY": {
+      "title": "LinkedIn Founder: Double Your Income With AI Before It's Too Late | Reid Hoffman",
+      "topics": [
+        "ai-skills-and-careers",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Three-level AI usage framework, double income via AI fluency"
+    },
+    "ktpNFfpJ5rw": {
+      "title": "LinkedIn CEO: These 3 Jobs Will Explode in the Next 5 Years | Ryan Roslansky",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "LinkedIn data: entry-level hiring, human skills, growing job categories"
+    },
+    "0fXGtQoJgNo": {
+      "title": "Godfather of AI: The next 5 years Will Change Humanity Forever | Yoshua Bengio",
+      "topics": [
+        "ai-safety-and-the-future",
+        "future-of-work"
+      ],
+      "why": "Misalignment, capability doubling, most jobs automated within a decade"
+    },
+    "JFilKfL7_9A": {
+      "title": "Top AI Scientist: High-Paying Jobs AI Can't Replace in 2026 (And How to Get Them) | Daniela Rus",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "Jobs lost to AI users, durable skills, robots and edge AI"
+    },
+    "_aUKWYHLKfE": {
+      "title": "Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan",
+      "topics": [
+        "ai-tools-and-workflows",
+        "ai-skills-and-careers"
+      ],
+      "why": "AI as thinking companion, usage habits, entry-level jobs"
+    },
+    "lVV0HInr0ZY": {
+      "title": "$11B CEO: The Great Career Reset in the Age of AI | Yamini Rangan, HubSpot CEO",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-skills-and-careers",
+        "education-and-learning"
+      ],
+      "why": "Career pivots to CEO, 5 Whys, skills for AI-era hires"
+    },
+    "rxR83MF6LF0": {
+      "title": "7 Founders Told Me What Separates Winners From Everyone Else",
+      "topics": [
+        "leadership-and-mindset",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Founders on persistence, optimism, 2-3 year personal brand window"
+    },
+    "CL1OfPj3ePo": {
+      "title": "The Fastest Way To Build A One-Person Business (2026 Beginner Guide)",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Five founders' advice on a one-person business from zero"
+    },
+    "-Epp6VmpezI": {
+      "title": "The 2026 Business Playbook: Leverage AI Before Your Competitors Do | Oscar Hoglund, Epidemic Sound",
+      "topics": [
+        "leadership-and-mindset",
+        "creator-economy-and-personal-brand",
+        "ai-business-and-startups"
+      ],
+      "why": "Scaling frameworks, content virality data, CEO breaking point and rebuild"
+    },
+    "6es0HhfpQlQ": {
+      "title": "Mel Robbins: The Best Window for a Career Change Is Now — Don't Miss It",
+      "topics": [
+        "ai-skills-and-careers",
+        "leadership-and-mindset"
+      ],
+      "why": "Career change timing, anxiety framework, media company built in her 50s"
+    },
+    "HQ3eVt2jgAY": {
+      "title": "$215M AI CEO: How I’d Build a Profitable AI Startup in 30 Days (2026 Playbook) | Young Zhao, OpusClip",
+      "topics": [
+        "ai-business-and-startups",
+        "leadership-and-mindset",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Validate before building, Discord MVP, product-market fit, creators"
+    },
+    "8W5A7fIuA-A": {
+      "title": "I Spent $10K Testing 100+ AI Tools — These 11 Are the Only Ones You Need",
+      "topics": [
+        "ai-tools-and-workflows"
+      ],
+      "why": "Tested 100+ tools, the 11 worth paying for"
+    },
+    "9pfbGnuMNhk": {
+      "title": "If I need to start over in 2026, I’d learn these 7 skills first",
+      "topics": [
+        "ai-skills-and-careers"
+      ],
+      "why": "Seven future-proof skills: problem framing, AI literacy, orchestration"
+    },
+    "RvYv90ftf2M": {
+      "title": "$18B AI CEO: How to Build a Million-Dollar Business in the Age of AI | Andrey Khusid, Miro",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-business-and-startups"
+      ],
+      "why": "Miro scaling story, 12-month planning, vertical AI opportunities"
+    },
+    "eaZ2R1K-SjQ": {
+      "title": "Future of Education: How to Get Ahead before AI Changes Everything",
+      "topics": [
+        "education-and-learning",
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "Degree value, entry-level collapse, learning roadmap ages 17-26"
+    },
+    "l6d_0PB0Pbg": {
+      "title": "Future of Work 2026: The Only Jobs That Will Survive the AI Era",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "Tech layoffs, at-risk jobs, three-step irreplaceable plan"
+    },
+    "EuaVTPB8dxc": {
+      "title": "GM CEO on AI Cars and the Future of Driving | Mary Barra",
+      "topics": [
+        "leadership-and-mindset",
+        "future-of-work"
+      ],
+      "why": "GM CEO on autonomy roadmap, production, entry-level jobs"
+    },
+    "dM5T0Oj9-90": {
+      "title": "Launch a $1M AI Business Solo — No Employees, No Investment, No Code",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Solo founder framework, AI as co-founder, Poppy AI"
+    },
+    "SP76PvgMzVU": {
+      "title": "CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman",
+      "topics": [
+        "ai-safety-and-the-future",
+        "future-of-work"
+      ],
+      "why": "AI consciousness, bubble question, agents reshaping work"
+    },
+    "nlOmBneT-oM": {
+      "title": "How AI Is Breaking the Rules of Biology | Dr. Priscilla Chan, Chan Zuckerberg Initiative",
+      "topics": [
+        "health-and-science"
+      ],
+      "why": "Virtual cell models, curing all disease, biology datasets"
+    },
+    "NPiKEwTSwn4": {
+      "title": "Google Search VP on How AI Search Really Works | Robby Stein",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "ai-tools-and-workflows"
+      ],
+      "why": "How AI search ranks and recommends; staying visible"
+    },
+    "APTVFZSYtiE": {
+      "title": "Why Working HARD will Keep You Poor (unless you do this)",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-business-and-startups"
+      ],
+      "why": "Decision filters, focus doubled revenue, saying no to scale"
+    },
+    "tSrN8eRMEAE": {
+      "title": "$10M CEO: How to Get Ahead while Others Get Replaced | Daniel Priestley",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-skills-and-careers",
+        "future-of-work"
+      ],
+      "why": "Entrepreneurial skills as moat, GPT-wrapper business, wages falling"
+    },
+    "SQReIhBKFlw": {
+      "title": "7 Habits That Turn You Into an AI-Native Professional",
+      "topics": [
+        "ai-skills-and-careers",
+        "leadership-and-mindset"
+      ],
+      "why": "Habits: discipline, multi-domain skills, taste over execution"
+    },
+    "EUrkIpq838c": {
+      "title": "ElevenLabs CEO on How to Make Your First $10,000 with AI | Mati Staniszewski",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Voice agents as a $10K business, voice licensing income, deepfakes"
+    },
+    "L1EmhDYc11g": {
+      "title": "5 BEST AI Businesses To Start before 2026 (For Beginners)",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Five beginner AI business ideas, GPT wrappers, marketing tools"
+    },
+    "U7PcyE0p54s": {
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows",
+        "education-and-learning"
+      ],
+      "why": "Perplexity growth, Comet browser, degrees and entry jobs obsolete"
+    },
+    "Q66gsBJnKKQ": {
+      "title": "Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows",
+        "leadership-and-mindset"
+      ],
+      "why": "Small teams to $100M with Claude, shutting down Artifact"
+    },
+    "UJo_MiMA7qE": {
+      "title": "$1.5B AI Founder: This Is Your Golden Age to Build With AI | Jesse Zhang, Decagon",
+      "topics": [
+        "future-of-work",
+        "ai-business-and-startups",
+        "ai-skills-and-careers"
+      ],
+      "why": "Customer-service agents, jobs at risk, golden age for founders"
+    },
+    "ELuBhd-PgDg": {
+      "title": "9 AI Skills That Will Make You Rich in 2026",
+      "topics": [
+        "ai-skills-and-careers",
+        "ai-business-and-startups",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Income-driving AI skills: no-code apps, agents, workflow automation"
+    },
+    "3FgPLbfs_oY": {
+      "title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows",
+        "future-of-work"
+      ],
+      "why": "Non-technical founders building software, vibe coding, engineers' future"
+    },
+    "zCWfnfFDr90": {
+      "title": "The Most Overlooked Business Asset of 2025 (I Regret Ignoring It)",
+      "topics": [
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Email list growth tactics, open rates, welcome sequences"
+    },
+    "S9xrvZhMLMI": {
+      "title": "Ex-Rocket Scientist: The Secret to Millionaires' Investment Portfolios | Alex, Ticker Symbol: YOU",
+      "topics": [
+        "money-and-investing"
+      ],
+      "why": "AI stocks, forward PE, concentrated portfolio, investor behaviour"
+    },
+    "8DuxOlkHdy4": {
+      "title": "Become an Entrepreneur Today – AI stack to build your company in 2025",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Three AI adoption pillars for entrepreneurs, Klarna and Vise examples"
+    },
+    "1gm__VUG2m8": {
+      "title": "AI Agents EXPLAINED in 14 minutes and TOOLS for building one",
+      "topics": [
+        "ai-tools-and-workflows",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Three levels of AI, no-code agent running Shorts pipeline"
+    },
+    "3cs09XQ6cb0": {
+      "title": "The Future of Work: High-Paying Careers That AI Won't Replace",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "Careers safe from automation, EPOCH framework, AI wage premium"
+    },
+    "9XM8yDN-AEA": {
+      "title": "Big Job Disruption in 5 Years — Hugging Face Co-Founder on How to Stay Ahead | Thomas Wolf",
+      "topics": [
+        "future-of-work",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Open-source AI, no-code Spaces, job disruption within five years"
+    },
+    "KfoenLbhOTI": {
+      "title": "How to Build a Profitable Personal Brand with AI (In Just 30 Days)",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "ai-tools-and-workflows"
+      ],
+      "why": "30-day personal brand framework using ChatGPT, trust as moat"
+    },
+    "4jqrK-hUicQ": {
+      "title": "How to Build a Viral Brand Online ft. @blogilates",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "leadership-and-mindset"
+      ],
+      "why": "Creator-founded apparel brands, Target launch, AI content theft, burnout"
+    },
+    "PR__eFQsnhg": {
+      "title": "GitHub CEO: Why Now Is the BEST Time to Be a Developer | Thomas Dohmke",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers",
+        "ai-tools-and-workflows"
+      ],
+      "why": "More developers not fewer, vibe coding limits, tools, kids' skills"
+    },
+    "IdN-b2Y_foo": {
+      "title": "Marie Forleo: Progress Way Faster than 99% of people",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-skills-and-careers"
+      ],
+      "why": "Decision-making, leaving Wall Street, burnout, ego versus values"
+    },
+    "Ab1FyDL4HEY": {
+      "title": "High-income AI business ideas for 2025 (no coding, no budget)",
+      "topics": [
+        "ai-business-and-startups",
+        "ai-tools-and-workflows"
+      ],
+      "why": "No-code AI business ideas, content factory service, tools"
+    },
+    "jVD8pCZeLww": {
+      "title": "How to Use AI to Go VIRAL on Social Media (full guide)",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "ai-tools-and-workflows"
+      ],
+      "why": "AI repurposing, packaging, distribution over creation"
+    },
+    "4BrBrwAXCXo": {
+      "title": "Don’t Let AI Take Your Job: Master These 7 Skills Now",
+      "topics": [
+        "ai-skills-and-careers",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Seven AI skills: prompting, trend spotting, content strategy"
+    },
+    "Hg-iFwW5vBo": {
+      "title": "Win the AI Race in 2025 with These 9 Game-Changing Tools",
+      "topics": [
+        "ai-tools-and-workflows"
+      ],
+      "why": "Nine tools the media team uses, Google IO observations"
+    },
+    "ZYT81iUfBK4": {
+      "title": "How I Launched My Merch Store in 7 Minutes Using AI Tools",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "ai-tools-and-workflows"
+      ],
+      "why": "Creator merch store launched with AI tools, rebrand"
+    },
+    "s5r4wdOWLjk": {
+      "title": "AI Instead of a Degree: How to Build a $1B Company | Samir Vasavada, Vise",
+      "topics": [
+        "education-and-learning",
+        "leadership-and-mindset"
+      ],
+      "why": "Skipped college, founded Vise at 16, hiring for qualities"
+    },
+    "qkGuzV50JWI": {
+      "title": "Must Have AI Skills to Save your Career in 2026",
+      "topics": [
+        "ai-skills-and-careers"
+      ],
+      "why": "Eight principles for AI literacy and a career moat"
+    },
+    "gW51vYIJgUs": {
+      "title": "Life-Changing Lessons I Learned From The Top 1%",
+      "topics": [
+        "leadership-and-mindset"
+      ],
+      "why": "Ten behavioural rules learned from top founders and investors"
+    },
+    "mtfB8GtJAWM": {
+      "title": "Unacademy Founders: What It Really Takes to Build a $3 Billion Business | Gaurav Munjal & Roman Saini",
+      "topics": [
+        "leadership-and-mindset",
+        "education-and-learning"
+      ],
+      "why": "YouTube to $3B edtech, burn, layoffs, AI English app"
+    },
+    "_tQUyvTLaSM": {
+      "title": "From $0 to $9M: How an Immigrant Turned Failure Into Fortune | Jenny Lei, Freja",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-business-and-startups"
+      ],
+      "why": "Immigrant founder, dropshipping to $9M DTC brand, failed launch"
+    },
+    "PmpaFWBFy_c": {
+      "title": "Pay Rent, Get Rich? Indian-American Built a $3.1B Startup From That Idea | Ankur Jain, Bilt",
+      "topics": [
+        "leadership-and-mindset",
+        "money-and-investing"
+      ],
+      "why": "Cold-start problem, rent rewards, points toward down payments"
+    },
+    "B8v4wWeWqJ8": {
+      "title": "TOP MODEL on the Body Image, Pressure of Industry and How She is Dealing with Hate | Coco Rocha",
+      "topics": [
+        "leadership-and-mindset",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Built Model Camp and agency, teams, motherhood, online hate"
+    },
+    "KnWKFp472GI": {
+      "title": "What No One Tells You About Building a Startup With Your Spouse (Our Story)",
+      "topics": [
+        "leadership-and-mindset"
+      ],
+      "why": "Co-founder marriage, scaling Linguatrip, 500 Startups, splitting up"
+    },
+    "xuN4jZpaPho": {
+      "title": "Steal These Money Habits — They Built My 7-Figure Wealth",
+      "topics": [
+        "money-and-investing"
+      ],
+      "why": "Eleven money habits, founder salary, Solo 401(k), automation"
+    },
+    "NX5-bXM1NQg": {
+      "title": "Started from Zero at 33 — Now He’s Building a $1B Airline | Blake Scholl",
+      "topics": [
+        "leadership-and-mindset"
+      ],
+      "why": "Left Amazon at 33, raised $150M, broke sound barrier"
+    },
+    "QvwI0TTVcwo": {
+      "title": "I'm 35. If you're in your 20s, watch this",
+      "topics": [
+        "leadership-and-mindset",
+        "money-and-investing"
+      ],
+      "why": "Ten life lessons for your 20s, including investing early"
+    },
+    "d_Dp1vpDCrk": {
+      "title": "My 19 sources of income at age 34",
+      "topics": [
+        "money-and-investing",
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "19 income streams, diversification, digital products"
+    },
+    "ZE1AjTnsubI": {
+      "title": "LinkedIn founder: how to get ahead while others lose their jobs | Reid Hoffman @reidhoffman",
+      "topics": [
+        "ai-skills-and-careers",
+        "future-of-work",
+        "ai-business-and-startups"
+      ],
+      "why": "Skills to develop, kids, UBI, founders with contrarian insight"
+    },
+    "GOqARrckaR8": {
+      "title": "TOP 17 Highest Paying Jobs for the next 5 years (and jobs that have NO future)",
+      "topics": [
+        "future-of-work",
+        "ai-skills-and-careers"
+      ],
+      "why": "WEF Future of Jobs ranking of growing and declining jobs"
+    },
+    "FZm2vVlPX9w": {
+      "title": "TOP-8 profitable online business ideas you can start in 2025",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Eight AI-powered online business ideas ranked by profit"
+    },
+    "pqf9uL4j9GU": {
+      "title": "7 steps to start your business from ZERO in 2025",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Seven steps: niche, brand, banking, automation"
+    },
+    "pUITF0uGa6U": {
+      "title": "Former Financial Advisor: “Do Not Buy A House!” Do THIS Instead! | Humphrey Yang",
+      "topics": [
+        "money-and-investing"
+      ],
+      "why": "Budgeting, three-fund portfolio, house versus rent, crypto"
+    },
+    "qrzRg0JUBj0": {
+      "title": "34-year-old millionaire explains: 13 habits keeping you poor",
+      "topics": [
+        "money-and-investing"
+      ],
+      "why": "50/30/20 budgeting, income streams, lifestyle inflation"
+    },
+    "t6UbvaOGIEI": {
+      "title": "How I built a $34M business at 34 on Youtube",
+      "topics": [
+        "creator-economy-and-personal-brand",
+        "leadership-and-mindset"
+      ],
+      "why": "Ten years building a creator business, burnout, delegation"
+    },
+    "Y4Jxbet2RK8": {
+      "title": "6 habits that made me a multi-millionaire",
+      "topics": [
+        "leadership-and-mindset"
+      ],
+      "why": "Self-belief, consistency, protecting mental environment"
+    },
+    "VN_0zJXBO6E": {
+      "title": "How to make $1000/month on social media with 0 followers",
+      "topics": [
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Nine creator income streams without a large audience"
+    },
+    "OrbhGa4aeAM": {
+      "title": "Getting Started with Email Marketing: Full Step-by-Step Guide",
+      "topics": [
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Step-by-step email marketing guide, owned audience"
+    },
+    "V3PbrBA9teE": {
+      "title": "How To Make Your Life Exciting Again",
+      "topics": [
+        "leadership-and-mindset"
+      ],
+      "why": "Minimalism, spontaneous decisions, launching new ventures"
+    },
+    "2kWPqccrb-o": {
+      "title": "9 Work From Home Business Ideas To Quit Your Job",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "Nine work-from-home business ideas including Telegram bots"
+    },
+    "r67fvYaB2y8": {
+      "title": "10 AI tools to use in 2025",
+      "topics": [
+        "ai-tools-and-workflows"
+      ],
+      "why": "Ten tools including Claude computer use and Rewind"
+    },
+    "VHiyfK06n1c": {
+      "title": "How to Start Affiliate Marketing in 2024 (Ultimate Beginner’s Guide)",
+      "topics": [
+        "creator-economy-and-personal-brand"
+      ],
+      "why": "Affiliate marketing basics: programs, payment models, niches"
+    },
+    "tzUAJZAuaZw": {
+      "title": "Solana Founder Raj Gokal Shares MINDSET SHIFTS That Built $83B Company",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-business-and-startups"
+      ],
+      "why": "Co-founder choice, six-month bet on Solana, growth strategy"
+    },
+    "JqcK4b3wRGU": {
+      "title": "How I Made $50,000 on My Airbnb in 6 Months",
+      "topics": [
+        "money-and-investing"
+      ],
+      "why": "Rental property income, costs and investment decision"
+    },
+    "JcvG5P6CW-M": {
+      "title": "9 AI TOOLS You Must Know In 2024",
+      "topics": [
+        "ai-tools-and-workflows"
+      ],
+      "why": "Nine tools including self-built GhostWriter bot"
+    },
+    "chbinls_V-w": {
+      "title": "31 Most Profitable Business Ideas for the Next 10 Years",
+      "topics": [
+        "ai-business-and-startups"
+      ],
+      "why": "31 business ideas ranked by market size and growth"
+    },
+    "JI6KrvldAoE": {
+      "title": "Meet Renuka from India who moved to the U.S. to build a manicure robot | Renuka Apte, Clockwork",
+      "topics": [
+        "leadership-and-mindset",
+        "ai-business-and-startups"
+      ],
+      "why": "Hardware startup MVP, manicure robot, running a startup as a mother"
+    },
+    "kvlMhVz-DeM": {
+      "title": "His family moved from India, he built a $10B company in the US - Nikil Viswanathan (Alchemy)",
+      "topics": [
+        "leadership-and-mindset"
+      ],
+      "why": "Confidence from childhood, 16 pivots, raising $200M unspent"
+    }
+  }
+}

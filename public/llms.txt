@@ -27,12 +27,16 @@
 - X: https://x.com/siliconvalleymm
 
 ## Topics Covered on Silicon Valley Girl
-- AI careers: How artificial intelligence is changing jobs, skills, and career paths
-- Startup building: Practical entrepreneurship advice from founders who built billion-dollar companies
-- Technology leadership: Interviews with CEOs of AI companies on strategy, product, and management
-- AI and healthcare: How AI is transforming medicine, diagnostics, and biotech — from CEOs of Microsoft AI, Chan Zuckerberg Initiative, and General Motors
-- Personal finance in the AI era: Investing, wealth building, and financial strategy as technology reshapes markets
-- Creator economy: How to build a media business, monetize an audience, and use AI to scale a personal brand
+- AI skills and careers: What should I learn to stay employable as AI changes work? 39 episodes: https://marinamogilko.co/topics/ai-skills-and-careers/
+- Future of work: Which jobs will AI change or replace, and how soon? 34 episodes: https://marinamogilko.co/topics/future-of-work/
+- AI business and startups: How do I start a business with AI, without funding or a technical team? 39 episodes: https://marinamogilko.co/topics/ai-business-and-startups/
+- Leadership and mindset: What does it actually take to build and lead a company, and keep going? 32 episodes: https://marinamogilko.co/topics/leadership-and-mindset/
+- AI tools and workflows: Which AI tools and agent workflows are worth setting up, and how? 37 episodes: https://marinamogilko.co/topics/ai-tools-and-workflows/
+- AI safety and the future: How far will AI go, and what are the risks? 11 episodes: https://marinamogilko.co/topics/ai-safety-and-the-future/
+- Education and learning: Is a degree still worth it, and how should I or my kids learn in the AI era? 13 episodes: https://marinamogilko.co/topics/education-and-learning/
+- Creator economy and personal brand: How do I build an audience and make money from it? 20 episodes: https://marinamogilko.co/topics/creator-economy-and-personal-brand/
+- Money and investing: How do I manage, grow and diversify my money? 10 episodes: https://marinamogilko.co/topics/money-and-investing/
+- Health and science: How is AI changing medicine and science, and how should I use it for my health? 6 episodes: https://marinamogilko.co/topics/health-and-science/
 
 ## Podcast Guests and Their Episodes
 Every guest interview on the Silicon Valley Girl podcast, newest first. Each line is the guest, their role, the year, and the page with the full transcript.

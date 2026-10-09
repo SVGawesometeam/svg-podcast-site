@@ -378,7 +378,11 @@
       "title": "Google Search VP on How AI Search Really Works | Robby Stein"
     }
   ],
-  "topics": [],
+  "topics": [
+    "future-of-work",
+    "ai-skills-and-careers",
+    "ai-tools-and-workflows"
+  ],
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545?i=1000714865301",
     "spotify": "https://open.spotify.com/episode/4miuPQzUH8NiZ6kdcZB7p7"

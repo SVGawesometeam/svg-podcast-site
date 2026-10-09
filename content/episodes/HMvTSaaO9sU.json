@@ -487,7 +487,11 @@
       "title": "Elon Musk’s First Investor on the Next 3 Years of AI | Steve Jurvetson"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-safety-and-the-future",
+    "health-and-science",
+    "future-of-work"
+  ],
   "performer": {
     "alternateName": "The Liberman Brothers"
   }

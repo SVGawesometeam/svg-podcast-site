@@ -322,7 +322,9 @@
       "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan"
     }
   ],
-  "topics": [],
+  "topics": [
+    "ai-business-and-startups"
+  ],
   "summaryHtml": "In this episode of the Silicon Valley Girl Podcast, Marina Mogilko interviews Sal Khan, Amjad Masad, Andrew Ng, Eddie Kim, Jesse Zhang, Allie K. Miller, Daniel Priestley, Founder of Khan Academy · CEO of Replit · Founder of Coursera · AI founders and researchers. Marina Mogilko interviews seven AI founders, CEOs, and researchers to identify the biggest untapped opportunities in AI. The core insight is that while 76% of small business owners use AI, only 14% have integrated it into core operations—revealing a massive gap between AI awareness and actual implementation. Rather than chasing oversaturated AI markets, the guests recommend targeting &quot;boring&quot; industries with inefficient workflows, such as property management where customers experience multi-day delays between inquiry and paperwork. The episode reveals that domain knowledge—the tacit understanding of an industry's pain points—is becoming the primary competitive advantage, since building AI solutions is now cheap and fast. Speakers including Amjad Masad (Replit CEO) and Andrew Ng (Coursera founder) emphasize that deciding what to build matters more than technical execution, and that existing industry experience can be transformed into a valuable business opportunity.",
   "metaDescription": "Marina Mogilko ranks seven boring-business AI opportunities with Sal Khan (Khan Academy), Alex Mashrabov (Higgsfield), Amjad Masad (Replit), Andrew Ng (Coursera), Eddie Kim (Gusto), Jesse Zhang (Decagon), Allie K. Miller and Daniel Priestley on the Silicon Valley Girl Podcast"
 }

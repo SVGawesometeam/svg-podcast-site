@@ -82,6 +82,8 @@ Team: the Tilda export (text and images) or the content filled into the template
 
 Scope: topic tags on all 123 episodes (I propose, the team confirms in one session); `/topics/<slug>/` for the first four hubs; `/episodes/` with search and filters, full list kept in HTML; homepage v2 in the section order from the plan; template v2 rolled to all pages once the Release 3 watch is clean.
 
+Status 2026-10-09: tags proposed and applied; all ten hubs built (structure: question, episodes about it, episodes that touch it, sibling links, newsletter CTA; the editorial answer, the disagreements and the FAQ from plan section 5.5 are added per hub from `content/topics/<slug>.md` after review); `/episodes/` search and filters done; the homepage has a topic strip (full homepage v2 still open); v2 pages show topic links (v1 pages untouched until the rollout).
+
 Gate: full-site transcript diff clean; every episode still linked from the homepage or the directory; the internal-link checker reports no orphans; Peec and Search Console baseline snapshot taken before merge.
 
 Team: confirm tags; review hub answers in Marina's voice.
@@ -123,7 +125,7 @@ Releases 1 and 2 can be built today in this session; they are the safest and nee
 | Episode-level Apple and Spotify URLs for the six pilots (done for five of six on 2026-10-08, see `content/PLATFORM-LINKS.md`; the sixth, `L1EmhDYc11g`, has no podcast release found); roles at recording | R3 |
 | Biography facts (confirmed 2026-10-08 from the media kit page; source links to follow and go into `content/site.json`); counts (done 2026-10-09: weekly GitHub Action reads the dashboard's audience API into `content/audience.json`; the team runs it once by hand from Actions to confirm the commit and the Vercel deploy); legal texts (received, built); press list (received, built); portrait (received) | R4 |
 | Tilda export or filled template; demographics; formats; logo permissions; case-study sign-off; Tilda sitemap; DNS change | R5 |
-| Topic tags confirmed; hub answers reviewed | R6 |
+| Topic tags: proposed 2026-10-09 (`content/topics.json`, reasoning per episode in `content/topics-proposal.json`), applied to all 123 episodes and built as ten hubs; the team confirms or edits names, questions and assignments on the preview. Hub answers in Marina's voice: go into `content/topics/<slug>.md` once reviewed; the hub renders them when the file exists | R6 |
 | Sources for numbers; guide review | R7 |
 | Trint API access or backend diarisation decision; YouTube API key; merge policy | R8 |
 | RSS feed URL (host identified on 2026-10-08: Spotify for Creators, formerly Anchor; the feed URL is in its settings) | R1 onward |
