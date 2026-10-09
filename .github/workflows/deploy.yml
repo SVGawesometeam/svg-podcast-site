@@ -1,0 +1,51 @@
+# Deploys the site to Vercel from GitHub Actions, so the repository can be
+# private while the Vercel account stays on its current plan.
+# main -> production; any other branch -> preview (URL in the run summary).
+name: Deploy
+
+on:
+  push:
+    branches: ["**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Tests
+        run: npm ci && npm test
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Deploy
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+            vercel build --prod --token="$VERCEL_TOKEN"
+            url=$(vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN")
+          else
+            vercel pull --yes --environment=preview --token="$VERCEL_TOKEN"
+            vercel build --token="$VERCEL_TOKEN"
+            url=$(vercel deploy --prebuilt --token="$VERCEL_TOKEN")
+          fi
+          echo "Deployed: $url" >> "$GITHUB_STEP_SUMMARY"
