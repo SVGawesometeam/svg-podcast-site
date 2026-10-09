@@ -7,7 +7,7 @@ Marina Mogilko is an entrepreneur, creator and the host of Silicon Valley Girl, 
 
 I grew up in Saint Petersburg, Russia. At 14 I started traveling to the UK for language courses. English was how I got into a much bigger world.
 
-In 2015 my husband Dmitrii and I moved to Silicon Valley with an early-stage startup and a couple of thousand dollars in savings. The startup was LinguaTrip, and that year it went through the 500 Startups accelerator.
+In 2015 my husband Dmitrii and I moved to Silicon Valley with an early-stage startup and a couple of thousand dollars in savings. The startup was [LinguaTrip](https://linguatrip.com/en), and that year it went through the 500 Startups accelerator.
 
 In 2021 Slow Ventures invested in me as a person. Instead of buying shares in a company, they bought a share of my future earnings. No creator had raised venture money this way before. I used part of it for my first angel investments. Today I've backed more than 20 startups.
 
@@ -29,7 +29,7 @@ Pick a guest or a topic you're curious about. Every episode page has the full tr
 
 ## LinguaTrip and Linguamarina
 
-Before the podcast, I co-founded LinguaTrip, a platform for booking language courses abroad, and built Linguamarina, my YouTube channel for English learners, which now has almost 9 million subscribers.
+Before the podcast, I co-founded [LinguaTrip](https://linguatrip.com/en), a platform for booking language courses abroad, and built Linguamarina, my YouTube channel for English learners, which now has almost 9 million subscribers.
 
 ## Questions people ask
 
@@ -67,8 +67,8 @@ Future Proof is Marina's newsletter: one email a week with the AI idea worth you
 
 ### What are LinguaTrip and Linguamarina?
 
-LinguaTrip is a platform for booking language courses abroad that Marina co-founded. Linguamarina is her YouTube channel for English learners, with almost 9 million subscribers.
+[LinguaTrip](https://linguatrip.com/en) is a platform for booking language courses abroad that Marina co-founded. Linguamarina is her YouTube channel for English learners, with almost 9 million subscribers.
 
 ### How do I work with Marina?
 
-Brand partnerships go to [partnerships@marinamogilko.co](mailto:partnerships@marinamogilko.co), press to [pr@marinamogilko.co](mailto:pr@marinamogilko.co). Guest pitches and speaking invitations go through the [form on the homepage](https://marinamogilko.co/#work).
+Brand partnerships go to [partnerships@marinamogilko.co](mailto:partnerships@marinamogilko.co), press to [pr@marinamogilko.co](mailto:pr@marinamogilko.co). Guest pitches and speaking invitations go through the [contact form](https://marinamogilko.co/about/#contact) on this page.

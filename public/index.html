@@ -384,6 +384,9 @@
     .nl-pop-form { display: grid; gap: 0.6rem; }
     .nl-pop-form input { font: inherit; font-size: 1rem; padding: 0.7rem 0.9rem; border: 1.5px solid var(--rule); border-radius: 8px; min-height: 44px; }
     .nl-pop-form input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .nl-pop-consent { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.82rem; line-height: 1.4; color: rgba(23, 21, 17, 0.8); }
+    .nl-pop-consent input { margin: 0.2rem 0 0; width: 1rem; height: 1rem; flex: none; accent-color: var(--accent); }
+    .nl-pop-consent a { color: inherit; }
     .nl-pop-note { font-size: 0.78rem; color: rgba(23, 21, 17, 0.6); margin-top: 0.6rem; }
     @media (max-width: 640px) { .nl-pop { right: 0.75rem; bottom: 0.75rem; left: 0.75rem; width: auto; } .library-search { flex-direction: column; } }
 
@@ -422,6 +425,7 @@
     /* ---- Work with Marina ---- */
     .work { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
     .work-inner { max-width: 760px; }
+
     .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
     .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
     .field { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -449,6 +453,11 @@
     }
     /* Off-screen rather than display:none — some bots skip hidden fields. */
     .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    @media (max-width: 900px) {
+      .pitch-form { grid-template-columns: 1fr; }
+      .field label { font-size: 0.75rem; }
+      .field input, .field select, .field textarea { font-size: 16px; }
+    }
 
     @media (max-width: 900px) {
       .hero-inner, .about-inner, .host-inner, .newsletter-inner {
@@ -462,11 +471,10 @@
 
       /* Labels and meta sit near 10px at desktop sizes, which is too small to
          read comfortably on a phone. */
-      .eyebrow, .ep-card-meta, .cover-meta, .stat-label, .field label { font-size: 0.75rem; }
+      .eyebrow, .ep-card-meta, .cover-meta, .stat-label { font-size: 0.75rem; }
 
       /* 16px is the threshold below which iOS Safari zooms the page when a
          field is focused, throwing the layout around mid-typing. */
-      .field input, .field select, .field textarea { font-size: 16px; }
 
       /* The badge sits over the still at desktop widths. On a phone the image
          is far smaller and the badge covers the thumbnail's own caption, so it
@@ -481,7 +489,6 @@
       .follow-btn { padding: 0.7rem 0.95rem; }
       .archive-grid { grid-template-columns: 1fr; }
       .host-stills { grid-template-columns: 1fr 1fr; }
-      .pitch-form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -502,8 +509,22 @@
         <a href="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=transcripts&amp;utm_campaign=futureproof-sub" target="_blank" rel="noopener" aria-label="Newsletter" title="Newsletter"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EC4899"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B5BDB"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#bh)"/><rect x="8.7" y="5" width="6.6" height="2.9" rx="1.45" fill="#fff"/><rect x="7.5" y="8.35" width="9" height="2.9" rx="1.45" fill="#fff"/><rect x="6.3" y="11.7" width="11.4" height="2.9" rx="1.45" fill="#fff"/><rect x="7.2" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><rect x="13.7" y="15.05" width="3.1" height="2.95" rx="1.2" fill="#fff"/><path d="M10.7 18v-1.55a1.3 1.3 0 0 1 2.6 0V18z" fill="#fff"/></svg></a>
       </nav>
       <nav class="site-nav">
-        <a href="/episodes/">Episodes</a>
-        <a href="/topics/">Topics</a>
+        <div class="nav-menu">
+          <a href="/topics/" aria-haspopup="true">Topics</a>
+          <ul class="nav-sub" aria-label="Topics">
+            <li><a href="/episodes/">All episodes</a></li>
+            <li><a href="/topics/ai-skills-and-careers/">AI skills and careers</a></li>
+            <li><a href="/topics/future-of-work/">Future of work</a></li>
+            <li><a href="/topics/ai-business-and-startups/">AI business and startups</a></li>
+            <li><a href="/topics/leadership-and-mindset/">Leadership and mindset</a></li>
+            <li><a href="/topics/ai-tools-and-workflows/">AI tools and workflows</a></li>
+            <li><a href="/topics/ai-safety-and-the-future/">AI safety and the future</a></li>
+            <li><a href="/topics/education-and-learning/">Education and learning</a></li>
+            <li><a href="/topics/creator-economy-and-personal-brand/">Creator economy and personal brand</a></li>
+            <li><a href="/topics/money-and-investing/">Money and investing</a></li>
+            <li><a href="/topics/health-and-science/">Health and science</a></li>
+          </ul>
+        </div>
         <div class="nav-menu">
           <a href="/about/" aria-haspopup="true">About Marina</a>
           <ul class="nav-sub" aria-label="About Marina">
@@ -798,6 +819,10 @@
     <form id="nl-pop-form" class="nl-pop-form" action="https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&amp;utm_medium=popup&amp;utm_campaign=futureproof-sub">
       <label for="nl-pop-email" class="visually-hidden">Your email address</label>
       <input type="email" id="nl-pop-email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <label class="nl-pop-consent">
+        <input type="checkbox" id="nl-pop-consent" required>
+        <span>Yes! Sign me up for Future Proof Newsletter. In doing so, I agree to the <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Use</a>.</span>
+      </label>
       <button type="submit" class="btn btn-accent">Subscribe to the newsletter</button>
     </form>
     <p class="nl-pop-note">Free. Unsubscribe any time.</p>
@@ -827,12 +852,13 @@
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         var email = document.getElementById("nl-pop-email").value.trim();
-        if (!email) return;
+        if (!email || !document.getElementById("nl-pop-consent").checked) return;
         window.open(form.getAttribute("action") + "&email=" + encodeURIComponent(email), "_blank", "noopener");
         hide();
       });
     })();
   </script>
+
 
   <script>
     (function () {
@@ -844,8 +870,8 @@
       var label = button.textContent;
 
       // Stamped on load, not at build time. Baking it into the HTML would make
-      // every build produce a different index.html, and would measure the age
-      // of the deploy rather than how long this visitor spent on the page.
+      // every build produce a different page, and would measure the age of
+      // the deploy rather than how long this visitor spent on the page.
       var stamp = form.querySelector('input[name="rendered"]');
       if (stamp) stamp.value = String(Date.now());
 

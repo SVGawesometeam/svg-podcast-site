@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const { ICONS, SOCIAL_LINKS, SHARED_HEAD, SHARED_HEADER, SHARED_FOOTER, CHROME_CSS } = require("./lib/chrome");
-const { TOPICS, FIELDS } = require("./lib/contact-fields");
+const { renderContactForm, CONTACT_FORM_CSS, CONTACT_FORM_SCRIPT } = require("./lib/contact-form");
 const { esc, jsonForScript } = require("./lib/html");
 const { renderEpisodePageV2 } = require("./lib/render-episode-v2");
 const { renderAboutPage, renderNewsletterPage, renderLegalPage, episodeFor } = require("./lib/pages");
@@ -519,30 +519,6 @@ function displayGuest(ep) {
 // can never disagree about names, options or limits. Every control gets a real
 // <label for> — the mock's uppercase field names are styling, not placeholders,
 // and a placeholder disappears the moment someone starts typing.
-function renderFormFields() {
-  return FIELDS.map((f) => {
-    const id = `f-${f.name}`;
-    const req = f.required ? " required" : "";
-    const cap = f.max ? ` maxlength="${f.max}"` : "";
-    const auto = f.autocomplete ? ` autocomplete="${f.autocomplete}"` : "";
-    const ph = f.placeholder ? ` placeholder="${esc(f.placeholder)}"` : "";
-
-    let control;
-    if (f.type === "select") {
-      const options = TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join("\n            ");
-      control = `<select id="${id}" name="${f.name}"${req}>\n            ${options}\n          </select>`;
-    } else if (f.type === "textarea") {
-      control = `<textarea id="${id}" name="${f.name}" rows="6"${req}${cap}${ph}></textarea>`;
-    } else {
-      control = `<input type="${f.type}" id="${id}" name="${f.name}"${req}${cap}${auto}${ph}>`;
-    }
-
-    return `        <div class="field field-${f.name}">
-          <label for="${id}">${esc(f.label)}</label>
-          ${control}
-        </div>`;
-  }).join("\n");
-}
 
 
 
@@ -601,6 +577,12 @@ function renderEpisodesPage(episodes, topics = TOPIC_HUBS) {
     .toolbar input, .toolbar select {
       font: inherit; font-size: 1rem; color: var(--ink); background: var(--card);
       border: 1.5px solid var(--rule); border-radius: 8px; padding: 0.6rem 0.8rem; min-height: 44px;
+    }
+    /* The arrow is drawn by us, so it sits a clear 1rem from the edge. */
+    .toolbar select {
+      appearance: none; -webkit-appearance: none; padding-right: 2.6rem; min-width: 11rem;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23171511' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 1rem center;
     }
     .toolbar input { min-width: 16rem; }
     .toolbar input:focus, .toolbar select:focus { outline: 2px solid var(--accent); outline-offset: 2px; border-color: var(--ink); }
@@ -1046,6 +1028,9 @@ function renderHomePage(episodes, site = null) {
     .nl-pop-form { display: grid; gap: 0.6rem; }
     .nl-pop-form input { font: inherit; font-size: 1rem; padding: 0.7rem 0.9rem; border: 1.5px solid var(--rule); border-radius: 8px; min-height: 44px; }
     .nl-pop-form input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .nl-pop-consent { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.82rem; line-height: 1.4; color: rgba(23, 21, 17, 0.8); }
+    .nl-pop-consent input { margin: 0.2rem 0 0; width: 1rem; height: 1rem; flex: none; accent-color: var(--accent); }
+    .nl-pop-consent a { color: inherit; }
     .nl-pop-note { font-size: 0.78rem; color: rgba(23, 21, 17, 0.6); margin-top: 0.6rem; }
     @media (max-width: 640px) { .nl-pop { right: 0.75rem; bottom: 0.75rem; left: 0.75rem; width: auto; } .library-search { flex-direction: column; } }
 
@@ -1084,33 +1069,7 @@ function renderHomePage(episodes, site = null) {
     /* ---- Work with Marina ---- */
     .work { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
     .work-inner { max-width: 760px; }
-    .work-dek { color: rgba(23, 21, 17, 0.8); margin-bottom: 2rem; }
-    .pitch-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
-    .field { display: flex; flex-direction: column; gap: 0.4rem; }
-    .field-budget, .field-details { grid-column: 1 / -1; }
-    .field label {
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em;
-      text-transform: uppercase; color: rgba(23, 21, 17, 0.62);
-    }
-    .field input, .field select, .field textarea {
-      font-family: var(--body); font-size: 0.95rem; color: var(--ink);
-      background: var(--card); border: 1px solid var(--rule);
-      padding: 0.7rem 0.8rem; width: 100%; border-radius: 0;
-    }
-    .field textarea { resize: vertical; min-height: 8rem; }
-    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--ink); }
-    .form-submit { grid-column: 1 / -1; justify-self: start; border: none; cursor: pointer; }
-    .form-submit[disabled] { opacity: 0.6; cursor: default; }
-    .form-error {
-      grid-column: 1 / -1; background: #FDECEC; border-left: 3px solid var(--accent);
-      padding: 0.75rem 0.9rem; font-size: 0.9rem;
-    }
-    .form-done {
-      background: var(--card); border-left: 3px solid var(--accent);
-      padding: 1rem 1.1rem; font-size: 1rem;
-    }
-    /* Off-screen rather than display:none — some bots skip hidden fields. */
-    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+${CONTACT_FORM_CSS}
 
     @media (max-width: 900px) {
       .hero-inner, .about-inner, .host-inner, .newsletter-inner {
@@ -1124,11 +1083,10 @@ function renderHomePage(episodes, site = null) {
 
       /* Labels and meta sit near 10px at desktop sizes, which is too small to
          read comfortably on a phone. */
-      .eyebrow, .ep-card-meta, .cover-meta, .stat-label, .field label { font-size: 0.75rem; }
+      .eyebrow, .ep-card-meta, .cover-meta, .stat-label { font-size: 0.75rem; }
 
       /* 16px is the threshold below which iOS Safari zooms the page when a
          field is focused, throwing the layout around mid-typing. */
-      .field input, .field select, .field textarea { font-size: 16px; }
 
       /* The badge sits over the still at desktop widths. On a phone the image
          is far smaller and the badge covers the thumbnail's own caption, so it
@@ -1143,7 +1101,6 @@ function renderHomePage(episodes, site = null) {
       .follow-btn { padding: 0.7rem 0.95rem; }
       .archive-grid { grid-template-columns: 1fr; }
       .host-stills { grid-template-columns: 1fr 1fr; }
-      .pitch-form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -1251,22 +1208,7 @@ ${practical.length ? `
       <h2 class="section-title">Pitch Marina anything</h2>
       <p class="work-dek">Brand deals, podcast guests, speaking, press, partnerships &mdash; anything at all. Tell us what you have in mind and the team will get back to you.</p>
 
-      <form id="pitch-form" class="pitch-form" novalidate>
-        <p id="form-error" class="form-error" role="alert" hidden></p>
-${renderFormFields()}
-        <div class="hp" aria-hidden="true">
-          <label for="f-website">Leave this blank</label>
-          <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
-        </div>
-        <input type="hidden" name="rendered" value="">
-        <button type="submit" class="btn btn-accent form-submit">Send opportunity</button>
-      </form>
-
-      <p id="form-done" class="form-done" role="status" hidden>Thank you &mdash; that&rsquo;s with the team. You&rsquo;ll hear back at the address you gave.</p>
-
-      <noscript>
-        <p class="work-dek">This form needs JavaScript. Email <a href="mailto:pr@marinamogilko.co">pr@marinamogilko.co</a> instead and we&rsquo;ll pick it up just the same.</p>
-      </noscript>
+${renderContactForm()}
     </div>
   </section>
 
@@ -1295,6 +1237,10 @@ ${renderFormFields()}
     <form id="nl-pop-form" class="nl-pop-form" action="${esc(NEWSLETTER_SUBSCRIBE)}">
       <label for="nl-pop-email" class="visually-hidden">Your email address</label>
       <input type="email" id="nl-pop-email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <label class="nl-pop-consent">
+        <input type="checkbox" id="nl-pop-consent" required>
+        <span>Yes! Sign me up for Future Proof Newsletter. In doing so, I agree to the <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Use</a>.</span>
+      </label>
       <button type="submit" class="btn btn-accent">Subscribe to the newsletter</button>
     </form>
     <p class="nl-pop-note">Free. Unsubscribe any time.</p>
@@ -1324,71 +1270,14 @@ ${renderFormFields()}
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         var email = document.getElementById("nl-pop-email").value.trim();
-        if (!email) return;
+        if (!email || !document.getElementById("nl-pop-consent").checked) return;
         window.open(form.getAttribute("action") + "&email=" + encodeURIComponent(email), "_blank", "noopener");
         hide();
       });
     })();
   </script>
 
-  <script>
-    (function () {
-      var form = document.getElementById('pitch-form');
-      if (!form) return;
-      var errorBox = document.getElementById('form-error');
-      var done = document.getElementById('form-done');
-      var button = form.querySelector('button[type="submit"]');
-      var label = button.textContent;
-
-      // Stamped on load, not at build time. Baking it into the HTML would make
-      // every build produce a different index.html, and would measure the age
-      // of the deploy rather than how long this visitor spent on the page.
-      var stamp = form.querySelector('input[name="rendered"]');
-      if (stamp) stamp.value = String(Date.now());
-
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        errorBox.hidden = true;
-        button.disabled = true;
-        button.textContent = 'Sending…';
-
-        var payload = {};
-        new FormData(form).forEach(function (value, key) { payload[key] = value; });
-
-        fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        })
-          .then(function (res) {
-            return res.json().catch(function () { return {}; }).then(function (body) {
-              return { ok: res.ok, body: body };
-            });
-          })
-          .then(function (result) {
-            if (result.ok) {
-              form.hidden = true;
-              done.hidden = false;
-              done.scrollIntoView({ block: 'center', behavior: 'smooth' });
-              return;
-            }
-            fail(result.body.error || 'Something went wrong. Please try again.');
-          })
-          .catch(function () {
-            fail('Could not reach the server. Please try again, or email pr@marinamogilko.co.');
-          });
-      });
-
-      // Never clears the form: whatever they typed stays exactly where it is.
-      function fail(message) {
-        errorBox.textContent = message;
-        errorBox.hidden = false;
-        button.disabled = false;
-        button.textContent = label;
-        errorBox.scrollIntoView({ block: 'center', behavior: 'smooth' });
-      }
-    })();
-  </script>
+${CONTACT_FORM_SCRIPT}
 
 </body>
 </html>`;

@@ -65,7 +65,7 @@ test('a hub lists primary episodes first, then the ones that touch the topic, ne
   assert.ok(html.includes('<div class="cta">CTA</div>'));
   assert.ok(html.includes('<link rel="canonical" href="https://marinamogilko.co/topics/future-of-work/">'));
   assert.ok(html.includes('href="/topics/ai-skills-and-careers/"'), 'sibling hubs are linked');
-  assert.ok(!html.includes('href="/topics/future-of-work/"'), 'a hub does not link itself');
+  assert.ok(!main.includes('href="/topics/future-of-work/"'), 'a hub does not link itself (the header menu aside)');
   assert.doesNotMatch(html.replace(ANALYTICS_HEAD, ''), /<script>/, 'hubs need no JavaScript');
   const data = ld(html);
   assert.equal(data['@type'], 'CollectionPage');
@@ -122,7 +122,8 @@ test('v2 episode pages show their topics as links and carry them as keywords', (
   assert.ok(html.includes('<a href="/topics/money-and-investing/">Money and investing</a>'));
   assert.equal(ld(html).keywords, 'Future of work, Money and investing');
   const v1 = renderEpisodePage({ ...d, template: undefined });
-  assert.ok(!v1.includes('/topics/future-of-work/'), 'v1 pages are unchanged until the template rolls out');
+  const v1Main = v1.slice(v1.indexOf('</header>'));
+  assert.ok(!v1Main.includes('/topics/future-of-work/'), 'v1 pages are unchanged until the template rolls out (the header menu aside)');
 });
 
 test('the homepage has the topic strip and the nav links the topics index', () => {
@@ -130,7 +131,7 @@ test('the homepage has the topic strip and the nav links the topics index', () =
   assert.match(html, /<section id="search" class="library">/);
   for (const t of topics) assert.ok(html.includes(`href="/topics/${t.slug}/"`));
   assert.ok(html.includes('href="/topics/" class="all"'));
-  assert.ok(html.includes('<a href="/topics/">Topics</a>'));
+  assert.ok(html.includes('<a href="/topics/" aria-haspopup="true">Topics</a>'));
 });
 
 test('the sitemap and llms.txt list the hubs', () => {

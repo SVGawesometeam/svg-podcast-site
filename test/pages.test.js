@@ -71,7 +71,10 @@ test('the about page renders every fact, press link and speaking date from site.
   assert.match(html, /woman-hosted/);
   assert.ok(html.includes('mailto:partnerships@marinamogilko.co') && html.includes('mailto:pr@marinamogilko.co'));
   assert.ok(!/marina@|ks@/.test(html), 'private addresses must not be shown');
-  assert.doesNotMatch(noAnalytics(html), /<script>/, 'no JavaScript on the about page');
+  const { CONTACT_FORM_SCRIPT } = require('../lib/contact-form');
+  assert.ok(html.includes(CONTACT_FORM_SCRIPT), 'the contact form script is on the page');
+  assert.doesNotMatch(noAnalytics(html).replace(CONTACT_FORM_SCRIPT, ''), /<script>/, 'no other JavaScript on the about page');
+  assert.ok(html.includes('<form id="pitch-form"') && html.includes('id="contact"'), 'the contact section carries the form');
 });
 
 test('the about page shows no counts until the dashboard job has written them', () => {
