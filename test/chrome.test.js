@@ -50,11 +50,20 @@ test('header is the black bar with wordmark and nav', () => {
   // Nav since Release 4: the archive, the About page, the newsletter page and
   // the pitch form, in that order. Homepage sections keep their ids for links
   // from elsewhere; the nav no longer points at them.
-  for (const [href, label] of [['/episodes/', 'Episodes'], ['/topics/', 'Topics'], ['/about/', 'About Marina'], ['/newsletter/', 'Newsletter'], ['/#work', 'Work with Marina']]) {
+  for (const [href, label] of [['/episodes/', 'Episodes'], ['/topics/', 'Topics'], ['/about/', 'About Marina'], ['/newsletter/', 'Newsletter'], ['/#work', 'Contact us']]) {
     assert.ok(chrome.SHARED_HEADER.includes(`href="${href}"`), `missing nav link: ${href}`);
     assert.ok(chrome.SHARED_HEADER.includes(`>${label}<`), `missing nav label: ${label}`);
   }
-  assert.match(chrome.SHARED_HEADER, /href="\/#work" class="nav-cta"/, 'the pitch form is the call to action');
+  assert.match(chrome.SHARED_HEADER, /href="\/#work" class="nav-cta"/, 'the contact form is the call to action');
+  assert.ok(!chrome.SHARED_HEADER.includes('Work with Marina'), 'reads like a job ad; the label is Contact us');
+});
+
+test('the About Marina item opens a sub-menu of the About page sections, without JavaScript', () => {
+  const sub = chrome.SHARED_HEADER.slice(chrome.SHARED_HEADER.indexOf('class="nav-sub"'), chrome.SHARED_HEADER.indexOf('</ul>'));
+  for (const m of chrome.ABOUT_MENU) assert.ok(sub.includes(`href="${m.href}">${m.label}<`), `sub-menu lacks ${m.label}`);
+  assert.ok(chrome.ABOUT_MENU.every((m) => m.href.startsWith('/about/')), 'every item is a section of the About page');
+  assert.match(chrome.CHROME_CSS, /\.nav-menu:hover \.nav-sub, \.nav-menu:focus-within \.nav-sub/, 'opens on hover and on keyboard focus');
+  assert.ok(!/<script/.test(chrome.SHARED_HEADER));
 });
 
 test('nav anchors are root-relative so they work from an episode page', () => {

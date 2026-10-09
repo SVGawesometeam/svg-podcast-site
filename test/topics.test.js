@@ -127,7 +127,7 @@ test('v2 episode pages show their topics as links and carry them as keywords', (
 
 test('the homepage has the topic strip and the nav links the topics index', () => {
   const html = renderHomePage(EPISODES, { topics });
-  assert.match(html, /<h2 class="section-title">Explore by topic<\/h2>/);
+  assert.match(html, /<section id="search" class="library">/);
   for (const t of topics) assert.ok(html.includes(`href="/topics/${t.slug}/"`));
   assert.ok(html.includes('href="/topics/" class="all"'));
   assert.ok(html.includes('<a href="/topics/">Topics</a>'));
@@ -158,4 +158,9 @@ test('a hub slug that is not a plain slug stops the build before any path is bui
     assert.fail('should have thrown');
   } catch (e) { out = String(e.stderr || e.message); } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
   assert.match(out, /bad slug/);
+});
+
+test('the directory script splits the query on whitespace in the built page, not on the letter s', () => {
+  const html = renderEpisodesPage(EPISODES, topics);
+  assert.ok(html.includes('raw.split(/\\s+/)'), 'the regex must survive the template literal');
 });

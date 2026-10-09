@@ -82,6 +82,8 @@ Team: the Tilda export (text and images) or the content filled into the template
 
 Scope: topic tags on all 123 episodes (I propose, the team confirms in one session); `/topics/<slug>/` for the first four hubs; `/episodes/` with search and filters, full list kept in HTML; homepage v2 in the section order from the plan; template v2 rolled to all pages once the Release 3 watch is clean.
 
+Status 2026-10-09 (later): the team's homepage decisions are in: the newest episode is the hero (nothing pinned), a curated "Conversations that matter" block from `site.json` replaces the cover story, a library search block (query goes to `/episodes/`, which also searches transcripts through `public/search-index.json`) sits above the topic chips, the partnerships block is gone, the nav call to action reads "Contact us" and "About Marina" has a drop-down of the About page sections, and a newsletter prompt appears after 40 seconds. The About page renders the team's text from `content/about.md` with toggled questions and FAQPage markup.
+
 Status 2026-10-09: tags proposed and applied; all ten hubs built (structure: question, episodes about it, episodes that touch it, sibling links, newsletter CTA; the editorial answer, the disagreements and the FAQ from plan section 5.5 are added per hub from `content/topics/<slug>.md` after review); `/episodes/` search and filters done; the homepage has a topic strip (full homepage v2 still open); v2 pages show topic links (v1 pages untouched until the rollout).
 
 Gate: full-site transcript diff clean; every episode still linked from the homepage or the directory; the internal-link checker reports no orphans; Peec and Search Console baseline snapshot taken before merge.

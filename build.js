@@ -31,6 +31,10 @@ const CONTENT_DIR = path.join(__dirname, "content", "episodes");
 // reaches all pages and a page is never edited by hand. Hand corrections go
 // into the JSON (and their reasons into transcript-fixes/<id>.json).
 const SITE_FILE = path.join(__dirname, "content", "site.json");
+const ABOUT_FILE = path.join(__dirname, "content", "about.md");
+// Where the newsletter prompt sends people; the email is appended by the
+// page so the subscribe page opens with it filled in.
+const NEWSLETTER_SUBSCRIBE = "https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&utm_medium=popup&utm_campaign=futureproof-sub";
 const AUDIENCE_FILE = path.join(__dirname, "content", "audience.json");
 const LEGAL_DIR = path.join(__dirname, "content", "legal");
 const TOPICS_FILE = path.join(__dirname, "content", "topics.json");
@@ -133,6 +137,18 @@ async function importDraft(videoId, idSet, { fetchImpl = fetch } = {}) {
   return d;
 }
 
+// Everything a visitor might search for in an episode, lowercased, with
+// whitespace collapsed: summary, takeaways, chapter titles, then the
+// transcript. Guest and title are on the card already.
+function searchText(d) {
+  return [
+    d.summary || "",
+    ...(d.keyTakeaways || []),
+    ...(d.timestamps || []).map((c) => c.title),
+    ...(d.transcript || []).map((b) => b.text),
+  ].join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+}
+
 // What the homepage, the directory, the sitemap and llms.txt need to know
 // about an episode.
 function summaryFor(d) {
@@ -160,6 +176,10 @@ async function build() {
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
 
   const allEpisodes = [];
+  // The directory's transcript search: one lowercased string per episode,
+  // fetched by the page only when someone types a query of three or more
+  // characters. Summaries, takeaways and chapter titles are in it too.
+  const searchIndex = [];
   let imported = 0, rendered = 0, failed = 0;
 
   for (let i = 0; i < videoIds.length; i++) {
@@ -203,6 +223,7 @@ async function build() {
     fs.writeFileSync(path.join(epDir, "index.html"), renderEpisodePage(d));
     rendered++;
     allEpisodes.push(summaryFor(d));
+    searchIndex.push({ id: d.videoId, text: searchText(d) });
   }
 
   // Data files for episodes not in the registry are not rendered; say so.
@@ -225,7 +246,7 @@ async function build() {
   console.log("Written public/episodes/index.html");
 
   const staticPages = {
-    "about": renderAboutPage(site, allEpisodes),
+    "about": renderAboutPage(site, allEpisodes, fs.existsSync(ABOUT_FILE) ? fs.readFileSync(ABOUT_FILE, "utf8") : ""),
     "newsletter": renderNewsletterPage(site),
     "privacy": renderLegalPage(fs.readFileSync(path.join(LEGAL_DIR, "privacy.md"), "utf8"),
       { path: "/privacy/", description: "How marinamogilko.co and Linguamarina, Inc. handle the information visitors share, what is collected, and how to ask for it to be reviewed or deleted." }),
@@ -250,6 +271,9 @@ async function build() {
     fs.writeFileSync(path.join(dir, "index.html"), html);
     console.log(`Written public/${slug}/index.html`);
   }
+
+  fs.writeFileSync(path.join(PUBLIC_DIR, "search-index.json"), JSON.stringify(searchIndex));
+  console.log(`Written public/search-index.json (${(JSON.stringify(searchIndex).length / 1e6).toFixed(1)} MB)`);
 
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), renderSitemap(allEpisodes));
   console.log("Written public/sitemap.xml");
@@ -520,10 +544,6 @@ function renderFormFields() {
   }).join("\n");
 }
 
-// Pin a specific episode to the top of the homepage. Set to null (or a
-// videoId no longer on the site) and the newest episode takes the slot again,
-// which is what the page does by default.
-const FEATURED_VIDEO_ID = "qy8Gr27yLMk";
 
 
 // Every episode on one page, linked from the homepage archive. Separate from
@@ -588,6 +608,9 @@ function renderEpisodesPage(episodes, topics = TOPIC_HUBS) {
     .toolbar .reset:hover { background: var(--ink); color: var(--ground); }
     .no-results { display: none; padding: 2rem 0; font-size: 1.05rem; }
     .no-results.show { display: block; }
+    .search-note { font-size: 0.85rem; color: rgba(23, 21, 17, 0.6); margin: -1.25rem 0 1.5rem; }
+    .search-note[hidden] { display: none; }
+    .ep-card-snippet { font-size: 0.85rem; color: rgba(23, 21, 17, 0.7); margin-top: 0.45rem; line-height: 1.45; }
     ${CARD_CSS}
     .back-home {
       display: inline-block; margin-top: 2.5rem; font-size: 0.95rem;
@@ -633,6 +656,7 @@ function renderEpisodesPage(episodes, topics = TOPIC_HUBS) {
 ${cards}
       </div>
       <p class="no-results" id="none">No episodes match. <a href="/episodes/">Clear the filters</a> or try another word.</p>
+      <p class="search-note" id="search-note" hidden></p>
       <a class="back-home" href="/">&larr; Back to the homepage</a>
     </div>
   </main>
@@ -645,23 +669,59 @@ ${cards}
         fmt = document.getElementById("format"), topic = document.getElementById("topic"),
         cards = Array.prototype.slice.call(document.querySelectorAll("#grid .ep-card")),
         count = document.getElementById("count"), none = document.getElementById("none"),
-        total = cards.length;
+        note = document.getElementById("search-note"), total = cards.length,
+        byId = {}, index = null, loading = null;
+    cards.forEach(function (c) { byId[c.getAttribute("href").split("/")[2]] = c; });
+
+    // The transcript index is fetched once, the first time a query is three
+    // characters or longer; until it arrives, cards match on title and guest.
+    function loadIndex() {
+      if (index || loading) return loading;
+      note.hidden = false; note.textContent = "Searching transcripts…";
+      loading = fetch("/search-index.json").then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (data) { index = {}; data.forEach(function (e) { index[e.id] = e.text; }); apply(); })
+        .catch(function () { index = {}; note.hidden = true; });
+      return loading;
+    }
+    function snippet(text, phrase) {
+      var i = text.indexOf(phrase); if (i === -1) return "";
+      var start = Math.max(0, i - 70), end = Math.min(text.length, i + phrase.length + 90);
+      return (start ? "…" : "") + text.slice(start, end).trim() + (end < text.length ? "…" : "");
+    }
     function apply() {
-      var words = q.value.toLowerCase().trim().split(/\\s+/).filter(Boolean), f = fmt.value, tp = topic.value, shown = 0;
+      var raw = q.value.toLowerCase().trim(), words = raw.split(/\\s+/).filter(Boolean),
+          f = fmt.value, tp = topic.value, shown = 0, inTranscripts = 0;
+      if (raw.length >= 3 && !index) loadIndex();
       cards.forEach(function (c) {
-        var s = c.getAttribute("data-search") || "", ok = true, i;
+        var s = c.getAttribute("data-search") || "", id = c.getAttribute("href").split("/")[2],
+            ok = true, viaText = false, i, snip = c.querySelector(".ep-card-snippet");
         for (i = 0; i < words.length; i++) if (s.indexOf(words[i]) === -1) { ok = false; break; }
+        if (!ok && index && raw.length >= 3 && index[id] && index[id].indexOf(raw) !== -1) { ok = true; viaText = true; }
         if (ok && f && c.getAttribute("data-format") !== f) ok = false;
         if (ok && tp && (" " + (c.getAttribute("data-topics") || "") + " ").indexOf(" " + tp + " ") === -1) ok = false;
+        if (viaText && ok) {
+          if (!snip) { snip = document.createElement("p"); snip.className = "ep-card-snippet"; c.querySelector(".ep-card-body").appendChild(snip); }
+          snip.textContent = snippet(index[id], raw); inTranscripts++;
+        } else if (snip) { snip.remove(); }
         c.hidden = !ok; if (ok) shown++;
       });
-      count.textContent = shown === total ? total + " episodes" : shown + " of " + total + " episodes";
+      count.textContent = shown === total && !raw ? total + " episodes" : shown + " of " + total + " episodes";
       none.className = shown ? "no-results" : "no-results show";
+      if (index && raw.length >= 3) { note.hidden = false; note.textContent = inTranscripts ? inTranscripts + " matched inside a transcript; the phrase is shown under the episode." : "Transcripts searched too; no extra matches."; }
+      else if (index || !raw) note.hidden = true;
     }
     form.hidden = false;
+    // A query from the homepage search box (or a shared link) fills the form in.
+    try {
+      var params = new URLSearchParams(location.search);
+      if (params.get("q")) q.value = params.get("q");
+      if (params.get("format")) fmt.value = params.get("format");
+      if (params.get("topic")) topic.value = params.get("topic");
+    } catch (e) {}
     q.addEventListener("input", apply); fmt.addEventListener("change", apply); topic.addEventListener("change", apply);
     form.addEventListener("reset", function () { setTimeout(apply, 0); });
     form.addEventListener("submit", function (e) { e.preventDefault(); });
+    apply();
   })();
   </script>
 
@@ -730,20 +790,17 @@ function homeJsonLd() {
 
 function renderHomePage(episodes, site = null) {
   const audienceTotal = site && site.audience ? formatCount(site.audience.total) : "";
-  const newest = episodes[0];
-  const pinned = FEATURED_VIDEO_ID
-    ? episodes.find((e) => e.videoId === FEATURED_VIDEO_ID)
-    : null;
-  if (FEATURED_VIDEO_ID && !pinned) {
-    console.log(`Note: featured episode ${FEATURED_VIDEO_ID} is not on the site — falling back to the newest.`);
-  }
-  // Two distinct slots. The hero carries whatever is pinned — an editorial
-  // pick, with no "latest" wording anywhere near it. The cover story below is
-  // always the genuinely newest episode, so "This week's cover story" stays
-  // true no matter what is pinned above it.
-  const hero = pinned || newest;
-  const cover = newest;
-  const shown = new Set([hero.videoId, cover.videoId]);
+  // The hero is always this week's episode: the newest one. When a new
+  // episode is published the hero changes with it, nothing to pin.
+  const hero = episodes[0];
+  // The curated block under it: episodes the team chose (content/site.json,
+  // featuredEpisodes), in the team's order; ids not on the site are skipped.
+  const byId = new Map(episodes.map((e) => [e.videoId, e]));
+  const featured = site && site.featuredEpisodes
+    ? site.featuredEpisodes.videoIds.map((id) => byId.get(id)).filter(Boolean)
+    : [];
+  const featuredHeading = site && site.featuredEpisodes ? site.featuredEpisodes.heading : "Conversations that matter";
+  const shown = new Set([hero.videoId, ...featured.map((e) => e.videoId)]);
   const rest = episodes.filter((e) => !shown.has(e.videoId));
 
   // Six cards show; the rest stay in the markup but hidden, and "All episodes"
@@ -751,38 +808,21 @@ function renderHomePage(episodes, site = null) {
   // linking the archive is worth to search — moving 110 of them behind a
   // separate page would cost that for a purely visual gain.
   const ARCHIVE_VISIBLE = 6;
-  const archive = episodes.filter((e) => !new Set([hero.videoId, cover.videoId]).has(e.videoId));
-  const archiveHtml = rest
-    .slice(0, ARCHIVE_VISIBLE)
-    .map(
-      (ep) => `
+  const card = (ep) => `
           <a href="/episode/${ep.videoId}/" class="ep-card">
             <img src="${esc(ep.thumbnail)}" alt="${esc(ep.title)}" loading="lazy" width="480" height="270">
             <div class="ep-card-body">
               <p class="ep-card-meta">${esc(displayGuest(ep))} &middot; ${esc(ep.duration)}</p>
               <h3 class="ep-card-title">${esc(ep.title)}</h3>
             </div>
-          </a>`
-    )
-    .join("\n");
-  const moreCount = Math.max(0, rest.length - ARCHIVE_VISIBLE);
+          </a>`;
+  const featuredHtml = featured.map(card).join("\n");
+  const archiveHtml = rest.slice(0, ARCHIVE_VISIBLE).map(card).join("\n");
 
   // Six guests, each linking to their interview (the thumbnail stands in for
   // a portrait until there are portraits), and four of Marina's own videos
   // with the format on the card. Both come from the data; both are left out
   // when the site facts are not supplied (unit renders).
-  const guestRow = site && site.featuredGuests
-    ? site.featuredGuests
-        .map((name) => ({ name, ep: episodeFor(name, episodes) }))
-        .filter((g) => g.ep)
-        .slice(0, 6)
-    : [];
-  const guestsHtml = guestRow.map(({ name, ep }) => `
-          <a href="/episode/${ep.videoId}/" class="guest-tile">
-            <img src="${esc(ep.thumbnail)}" alt="${esc(name)} on the Silicon Valley Girl Podcast" loading="lazy" width="480" height="270">
-            <span class="guest-name">${esc(name)}</span>
-            <span class="guest-role">${esc(ep.guestTitle || "")}</span>
-          </a>`).join("");
   const practical = site
     ? episodes.filter((e) => (e.format === "solo" || e.format === "compilation") && !shown.has(e.videoId)).slice(0, 4)
     : [];
@@ -1017,6 +1057,34 @@ function renderHomePage(episodes, site = null) {
     .btn-ghost { border: 2px solid var(--ground); color: var(--ground); background: transparent; }
     .btn-ghost:hover { background: var(--ground); color: var(--ink); }
 
+    /* ---- Featured block and library search ---- */
+    .featured { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .library { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
+    .library .section-title { margin-bottom: 0.75rem; }
+    .library-search { display: flex; gap: 0.6rem; max-width: 40rem; margin: 1.5rem 0 1.25rem; }
+    .library-search input {
+      flex: 1; min-width: 0; font: inherit; font-size: 1.05rem; color: var(--ink); background: var(--card);
+      border: 2px solid var(--ink); border-radius: 8px; padding: 0.75rem 1rem; min-height: 48px;
+    }
+    .library-search input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .library-or { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(23, 21, 17, 0.55); margin: 1.5rem 0 0.75rem; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+    /* ---- Newsletter prompt ---- */
+    .nl-pop {
+      position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 60; width: min(24rem, calc(100vw - 2.5rem));
+      background: var(--card); color: var(--ink); border: 2px solid var(--ink); border-radius: 12px;
+      padding: 1.5rem 1.5rem 1.25rem; box-shadow: 0 16px 40px rgba(23, 21, 17, 0.18);
+    }
+    .nl-pop[hidden] { display: none; }
+    .nl-pop h2 { font-family: var(--display); text-transform: uppercase; font-size: 1.5rem; line-height: 1; margin: 0 0 1rem; }
+    .nl-pop-close { position: absolute; top: 0.5rem; right: 0.6rem; font: inherit; font-size: 1.5rem; line-height: 1; background: none; border: 0; cursor: pointer; padding: 0.25rem 0.5rem; min-width: 44px; min-height: 44px; }
+    .nl-pop-form { display: grid; gap: 0.6rem; }
+    .nl-pop-form input { font: inherit; font-size: 1rem; padding: 0.7rem 0.9rem; border: 1.5px solid var(--rule); border-radius: 8px; min-height: 44px; }
+    .nl-pop-form input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .nl-pop-note { font-size: 0.78rem; color: rgba(23, 21, 17, 0.6); margin-top: 0.6rem; }
+    @media (max-width: 640px) { .nl-pop { right: 0.75rem; bottom: 0.75rem; left: 0.75rem; width: auto; } .library-search { flex-direction: column; } }
+
     /* ---- Guests and practical rows ---- */
     .guests, .practical { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
     .section-dek { max-width: 40rem; margin: -1rem 0 1.8rem; color: rgba(23, 21, 17, 0.7); }
@@ -1145,31 +1213,23 @@ function renderHomePage(episodes, site = null) {
     </div>
   </section>
 
-  <section class="cover">
+${featured.length ? `
+  <section id="featured" class="featured">
     <div class="wrap">
-      <h2 class="section-title"><span class="pill-label">Latest</span>This week&rsquo;s cover story</h2>
-      <div class="cover-card">
-        <a href="/episode/${cover.videoId}/"><img src="${esc(cover.thumbnail)}" alt="${esc(cover.title)}" loading="lazy" width="480" height="270"></a>
-        <div>
-          <p class="cover-meta">${formatDateShort(cover.publishedAt)} &middot; ${esc(cover.duration)} &middot; With ${esc(displayGuest(cover))}</p>
-          <h3 class="cover-title"><a href="/episode/${cover.videoId}/">${esc(cover.title)}</a></h3>
-          ${cover.description ? `<p class="cover-dek">${esc(cover.description)}</p>` : ""}
-          <div class="cover-cta">
-            <a class="btn btn-ink" href="https://youtube.com/watch?v=${cover.videoId}" target="_blank" rel="noopener">Play on YouTube</a>
-            <a class="btn" href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a>
-          </div>
-        </div>
+      <h2 class="section-title">${esc(featuredHeading)}</h2>
+      <div class="archive-grid">
+${featuredHtml}
       </div>
     </div>
   </section>
-
+` : ""}
   <section class="about">
     <div class="wrap about-inner">
       <h2 class="section-title">About the show</h2>
       <div class="about-body">
         <p>Silicon Valley Girl is a weekly interview podcast hosted by Marina Mogilko, an entrepreneur and creator based in Silicon Valley. Each episode she sits down with the founders and scientists building AI and asks them one question: what can a normal person actually do with this today?</p>
-        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work. Past guests include Andrew Ng, Fei-Fei Li, Sal Khan, Anne Wojcicki and Shishir Mehrotra.</p>
-        <p>You can watch on YouTube or listen on Spotify and Apple Podcasts. New episodes come out every week.</p>
+        <p>Episodes run roughly 35 to 60 minutes and cover AI tools for building a business faster, running a household, learning, health and creative work.</p>
+        <p>You can watch on <a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">YouTube</a> or listen on <a href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY" target="_blank" rel="noopener">Spotify</a> and <a href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545" target="_blank" rel="noopener">Apple Podcasts</a>. New episodes come out every week.</p>
       </div>
     </div>
   </section>
@@ -1178,7 +1238,7 @@ function renderHomePage(episodes, site = null) {
     <div class="wrap">
       <div class="archive-head">
         <h2 class="section-title">The archive</h2>
-        ${moreCount ? `<a class="btn-text archive-more" href="/episodes/">All episodes &rarr;</a>` : ""}
+        <a class="btn btn-ink archive-more" href="/episodes/">All episodes &rarr;</a>
       </div>
       <div class="archive-grid">
 ${archiveHtml}
@@ -1186,9 +1246,16 @@ ${archiveHtml}
     </div>
   </section>
 
-  <section id="topics" class="topics">
+  <section id="search" class="library">
     <div class="wrap">
-      <h2 class="section-title">Explore by topic</h2>
+      <h2 class="section-title">Search the entire library.<br>Find the episode you want.</h2>
+      <p class="section-dek">Unlock the full power of the Silicon Valley Girl podcast library. Find any moment, quote or advice you are looking for.</p>
+      <form class="library-search" action="/episodes/" method="get" role="search">
+        <label for="home-q" class="visually-hidden">Search episodes and transcripts</label>
+        <input type="search" id="home-q" name="q" placeholder="A guest, a company, a topic, a phrase" autocomplete="off">
+        <button type="submit" class="btn btn-accent">Search</button>
+      </form>
+      <p class="library-or">Or browse by topic</p>
       <ul class="topic-chips">
         ${(site && site.topics ? site.topics : TOPIC_HUBS).map((t) => `<li><a href="/topics/${esc(t.slug)}/">${esc(t.name)}</a></li>`).join("\n        ")}
         <li><a href="/topics/" class="all">All topics &rarr;</a></li>
@@ -1196,18 +1263,7 @@ ${archiveHtml}
     </div>
   </section>
 
-${guestRow.length ? `
-  <section id="guests" class="guests">
-    <div class="wrap">
-      <div class="archive-head">
-        <h2 class="section-title">Guests on the show</h2>
-        <a class="btn-text archive-more" href="/about/#guests">Who else has been on &rarr;</a>
-      </div>
-      <div class="guest-grid">${guestsHtml}
-      </div>
-    </div>
-  </section>
-` : ""}${practical.length ? `
+${practical.length ? `
   <section id="practical" class="practical">
     <div class="wrap">
       <div class="archive-head">
@@ -1239,16 +1295,6 @@ ${guestRow.length ? `
           <a class="btn btn-ghost host-more" href="/about/">About Marina, speaking and press &rarr;</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contact" class="partnerships">
-    <div class="wrap partnerships-inner">
-      <div>
-        <p class="eyebrow">Partnerships</p>
-        <h2>Want your brand on the podcast?</h2>
-      </div>
-      <a class="pill" href="mailto:partnerships@marinamogilko.co">${ICONS.mail} partnerships@marinamogilko.co</a>
     </div>
   </section>
 
@@ -1293,6 +1339,49 @@ ${renderFormFields()}
   </section>
 
   ${SHARED_FOOTER}
+
+  <div class="nl-pop" id="nl-pop" hidden role="dialog" aria-modal="false" aria-labelledby="nl-pop-title">
+    <button type="button" class="nl-pop-close" id="nl-pop-close" aria-label="Close">&times;</button>
+    <p class="eyebrow">Future Proof, the newsletter</p>
+    <h2 id="nl-pop-title">One email a week. The AI idea worth your attention.</h2>
+    <form id="nl-pop-form" class="nl-pop-form" action="${esc(NEWSLETTER_SUBSCRIBE)}">
+      <label for="nl-pop-email" class="visually-hidden">Your email address</label>
+      <input type="email" id="nl-pop-email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit" class="btn btn-accent">Subscribe to the newsletter</button>
+    </form>
+    <p class="nl-pop-note">Free. Unsubscribe any time.</p>
+  </div>
+
+  <script>
+    (function () {
+      // The newsletter prompt: appears after 40 seconds, once per visitor
+      // per 30 days (remembered on this device the moment it is shown),
+      // never on top of someone typing in the contact form. Submitting
+      // opens the newsletter's own subscribe page with the address filled
+      // in; the page itself never posts anywhere.
+      var pop = document.getElementById("nl-pop"), close = document.getElementById("nl-pop-close"),
+          form = document.getElementById("nl-pop-form"), KEY = "svg-nl-pop", MONTH = 30 * 864e5;
+      function seen() { try { return Date.now() - Number(localStorage.getItem(KEY) || 0) < MONTH; } catch (e) { return false; } }
+      function remember() { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} }
+      function hide() { pop.hidden = true; remember(); }
+      if (!seen()) {
+        setTimeout(function () {
+          var active = document.activeElement;
+          if (active && active.closest && active.closest("#pitch-form")) return;
+          pop.hidden = false; remember();
+        }, 40000);
+      }
+      close.addEventListener("click", hide);
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !pop.hidden) hide(); });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("nl-pop-email").value.trim();
+        if (!email) return;
+        window.open(form.getAttribute("action") + "&email=" + encodeURIComponent(email), "_blank", "noopener");
+        hide();
+      });
+    })();
+  </script>
 
   <script>
     (function () {

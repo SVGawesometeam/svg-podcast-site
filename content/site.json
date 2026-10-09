@@ -1,5 +1,5 @@
 {
-  "_comment": "Facts about Marina and the show, used by /about/, llms.txt and the JSON-LD. Confirmed by the team on 2026-10-08 from the partnerships.marinamogilko.co media kit; `source` is a link that supports the fact and is filled in as the team supplies them. Counts are not typed here: they are written by the scheduled dashboard job into `counts`.",
+  "_comment": "Facts about Marina and the show, used by /about/, llms.txt and the JSON-LD. Confirmed by the team on 2026-10-08 from the partnerships.marinamogilko.co media kit; `source` is a link that supports the fact and is filled in as the team supplies them. Counts are not typed here: they are written by the scheduled dashboard job into `counts`. `featuredEpisodes` is the curated block on the homepage, chosen by the team 2026-10-09; the narrative and FAQ for /about/ are in content/about.md.",
   "person": {
     "name": "Marina Mogilko",
     "jobTitle": "Host, Silicon Valley Girl Podcast",
@@ -24,31 +24,110 @@
     ]
   },
   "facts": [
-    { "text": "Host of Silicon Valley Girl, a podcast that was part of the official program of the World Economic Forum in Davos in 2026.", "year": 2026, "source": null },
-    { "text": "The first creator to receive venture capital funding as an individual, from Slow Ventures in 2021.", "year": 2021, "source": "https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11", "sourceLabel": "Business Insider, November 2021" },
-    { "text": "Built two eight-figure businesses: LinguaTrip, an education company, and a global media company.", "year": null, "source": null },
-    { "text": "Angel investor in more than 20 startups, including Boom Supersonic, Higgsfield AI, Navier and Beacons.ai.", "year": null, "source": null },
-    { "text": "WIBA Award for Best Influencer in Education, presented at Cannes in 2023.", "year": 2023, "source": "https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/", "sourceLabel": "Times Monaco" },
-    { "text": "Cover story of Times Monaco and L'Officiel Cyprus.", "year": null, "source": "https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence", "sourceLabel": "L'Officiel Cyprus" }
+    {
+      "text": "Host of Silicon Valley Girl, a podcast that was part of the official program of the World Economic Forum in Davos in 2026.",
+      "year": 2026,
+      "source": null
+    },
+    {
+      "text": "The first creator to receive venture capital funding as an individual, from Slow Ventures in 2021.",
+      "year": 2021,
+      "source": "https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11",
+      "sourceLabel": "Business Insider, November 2021"
+    },
+    {
+      "text": "Built two eight-figure businesses: LinguaTrip, an education company, and a global media company.",
+      "year": null,
+      "source": null
+    },
+    {
+      "text": "Angel investor in more than 20 startups, including Boom Supersonic, Higgsfield AI, Navier and Beacons.ai.",
+      "year": null,
+      "source": null
+    },
+    {
+      "text": "WIBA Award for Best Influencer in Education, presented at Cannes in 2023.",
+      "year": 2023,
+      "source": "https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/",
+      "sourceLabel": "Times Monaco"
+    },
+    {
+      "text": "Cover story of Times Monaco and L'Officiel Cyprus.",
+      "year": null,
+      "source": "https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence",
+      "sourceLabel": "L'Officiel Cyprus"
+    }
   ],
   "awards": [
     "WIBA Award, Best Influencer in Education (Cannes, 2023)"
   ],
   "featuredGuests": [
-    "Reid Hoffman", "Brian Chesky", "Greg Brockman", "Mustafa Suleyman", "Mary Barra", "Andrew Ng",
-    "Sal Khan", "Aravind Srinivas", "Thomas Dohmke", "Anne Wojcicki", "Daron Acemoglu", "Fei-Fei Li",
-    "Yoshua Bengio", "Erik Brynjolfsson", "Mike Krieger", "Luis von Ahn", "Mel Robbins", "Gary Vaynerchuk"
+    "Reid Hoffman",
+    "Brian Chesky",
+    "Greg Brockman",
+    "Mustafa Suleyman",
+    "Mary Barra",
+    "Andrew Ng",
+    "Sal Khan",
+    "Aravind Srinivas",
+    "Thomas Dohmke",
+    "Anne Wojcicki",
+    "Daron Acemoglu",
+    "Fei-Fei Li",
+    "Yoshua Bengio",
+    "Erik Brynjolfsson",
+    "Mike Krieger",
+    "Luis von Ahn",
+    "Mel Robbins",
+    "Gary Vaynerchuk"
   ],
   "speaking": [
-    { "event": "World Economic Forum", "place": "Davos", "year": 2026, "note": "official program" },
-    { "event": "Viva Technology", "place": "Paris", "year": 2025 },
-    { "event": "1 Billion Followers Summit", "place": "Dubai", "year": 2025 },
-    { "event": "Stanford University", "place": "San Francisco", "year": 2025 },
-    { "event": "Nas Summit", "place": "San Francisco", "year": 2024 },
-    { "event": "ManyChat Instagram Online Summit", "place": "online", "year": 2024 },
-    { "event": "VidCon", "place": "Anaheim", "year": 2023 },
-    { "event": "Alibaba Co-Create", "place": "Las Vegas", "year": 2023 },
-    { "event": "EduCon by YouTube", "place": "New York", "year": 2022 }
+    {
+      "event": "World Economic Forum",
+      "place": "Davos",
+      "year": 2026,
+      "note": "official program"
+    },
+    {
+      "event": "Viva Technology",
+      "place": "Paris",
+      "year": 2025
+    },
+    {
+      "event": "1 Billion Followers Summit",
+      "place": "Dubai",
+      "year": 2025
+    },
+    {
+      "event": "Stanford University",
+      "place": "San Francisco",
+      "year": 2025
+    },
+    {
+      "event": "Nas Summit",
+      "place": "San Francisco",
+      "year": 2024
+    },
+    {
+      "event": "ManyChat Instagram Online Summit",
+      "place": "online",
+      "year": 2024
+    },
+    {
+      "event": "VidCon",
+      "place": "Anaheim",
+      "year": 2023
+    },
+    {
+      "event": "Alibaba Co-Create",
+      "place": "Las Vegas",
+      "year": 2023
+    },
+    {
+      "event": "EduCon by YouTube",
+      "place": "New York",
+      "year": 2022
+    }
   ],
   "speakingTopics": [
     "What AI changes for careers, and what to do about it this year",
@@ -56,21 +135,89 @@
     "How Silicon Valley actually works, for people outside it"
   ],
   "press": [
-    { "outlet": "Forbes", "title": "Top social media influencers of 2020", "date": "2020-12", "url": "https://www.forbes.com/sites/johnbbrandon/2020/12/21/my-picks-for-the-top-social-media-influencers-of-2020/" },
-    { "outlet": "Business Insider", "title": "VC firms are buying equity directly in influencers and YouTube creators", "date": "2021-11", "url": "https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11" },
-    { "outlet": "Tubefilter", "title": "Creators on the Rise: Silicon Valley Girl Marina Mogilko", "date": "2022-06", "url": "https://www.tubefilter.com/2022/06/01/creators-on-the-rise-silicon-valley-girl-marina-mogilko/" },
-    { "outlet": "YouTube Official Blog", "title": "10 creators shaping the YouTube Shorts community", "date": null, "url": "https://blog.youtube/creator-and-artist-stories/10-creators-shaping-the-youtube-shorts-community/" },
-    { "outlet": "The Washington Post, WP Creative Group", "title": "The impact of the creator economy", "date": null, "url": "https://www.washingtonpost.com/creativegroup/youtube/the-impact-of-the-creator-economy/" },
-    { "outlet": "International Business Times", "title": "Why Marina Mogilko's Silicon Valley Girl podcast is exactly what the innovation economy needs right now", "date": null, "url": "https://www.ibtimes.com/why-marina-mogilkos-silicon-valley-girl-podcast-exactly-what-innovation-economy-needs-right-now-3775116" },
-    { "outlet": "Paper", "title": "Marina Mogilko", "date": null, "url": "https://papermag.com/marina-mogilko" },
-    { "outlet": "L'Officiel Cyprus", "title": "Marina Mogilko: redefining entrepreneurship and influence", "date": null, "url": "https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence" },
-    { "outlet": "Times Monaco", "title": "WIBA Awards winner Marina Mogilko, shining social media star from Silicon Valley", "date": null, "url": "https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/" },
-    { "outlet": "Vogue Adria", "title": "WIBA Awards USA launch event", "date": null, "url": "https://vogueadria.com/wiba-awards-usa-launch-event/" },
-    { "outlet": "The Tilt", "title": "Marina Mogilko, YouTube content creator", "date": null, "url": "https://www.thetilt.com/content-entrepreneur/marina-mogilko-youtube-content-creator" },
-    { "outlet": "The Tribune", "title": "Marina Mogilko: YouTube phenomenon and Silicon Valley entrepreneur", "date": null, "url": "https://www.thetribune.com/marina-mogilko-youtube-phenomenon-and-silicon-valley-entrepreneur/" },
-    { "outlet": "BuzzFeed", "title": "The cost of having a baby, on TikTok", "date": null, "url": "https://www.buzzfeed.com/kristatorres/cost-to-have-a-baby-tiktok" }
+    {
+      "outlet": "Forbes",
+      "title": "Top social media influencers of 2020",
+      "date": "2020-12",
+      "url": "https://www.forbes.com/sites/johnbbrandon/2020/12/21/my-picks-for-the-top-social-media-influencers-of-2020/"
+    },
+    {
+      "outlet": "Business Insider",
+      "title": "VC firms are buying equity directly in influencers and YouTube creators",
+      "date": "2021-11",
+      "url": "https://www.businessinsider.com/vc-firms-are-buying-equity-directly-in-influencers-youtube-creators-2021-11"
+    },
+    {
+      "outlet": "Tubefilter",
+      "title": "Creators on the Rise: Silicon Valley Girl Marina Mogilko",
+      "date": "2022-06",
+      "url": "https://www.tubefilter.com/2022/06/01/creators-on-the-rise-silicon-valley-girl-marina-mogilko/"
+    },
+    {
+      "outlet": "YouTube Official Blog",
+      "title": "10 creators shaping the YouTube Shorts community",
+      "date": null,
+      "url": "https://blog.youtube/creator-and-artist-stories/10-creators-shaping-the-youtube-shorts-community/"
+    },
+    {
+      "outlet": "The Washington Post, WP Creative Group",
+      "title": "The impact of the creator economy",
+      "date": null,
+      "url": "https://www.washingtonpost.com/creativegroup/youtube/the-impact-of-the-creator-economy/"
+    },
+    {
+      "outlet": "International Business Times",
+      "title": "Why Marina Mogilko's Silicon Valley Girl podcast is exactly what the innovation economy needs right now",
+      "date": null,
+      "url": "https://www.ibtimes.com/why-marina-mogilkos-silicon-valley-girl-podcast-exactly-what-innovation-economy-needs-right-now-3775116"
+    },
+    {
+      "outlet": "Paper",
+      "title": "Marina Mogilko",
+      "date": null,
+      "url": "https://papermag.com/marina-mogilko"
+    },
+    {
+      "outlet": "L'Officiel Cyprus",
+      "title": "Marina Mogilko: redefining entrepreneurship and influence",
+      "date": null,
+      "url": "https://www.lofficiel.cy/influencers/marina-mogilko-redefining-entrepreneurship-and-influence"
+    },
+    {
+      "outlet": "Times Monaco",
+      "title": "WIBA Awards winner Marina Mogilko, shining social media star from Silicon Valley",
+      "date": null,
+      "url": "https://www.timesmonaco.com/wiba-awards-winner-marina-mogilko-shining-social-media-star-from-silicon-valley/"
+    },
+    {
+      "outlet": "Vogue Adria",
+      "title": "WIBA Awards USA launch event",
+      "date": null,
+      "url": "https://vogueadria.com/wiba-awards-usa-launch-event/"
+    },
+    {
+      "outlet": "The Tilt",
+      "title": "Marina Mogilko, YouTube content creator",
+      "date": null,
+      "url": "https://www.thetilt.com/content-entrepreneur/marina-mogilko-youtube-content-creator"
+    },
+    {
+      "outlet": "The Tribune",
+      "title": "Marina Mogilko: YouTube phenomenon and Silicon Valley entrepreneur",
+      "date": null,
+      "url": "https://www.thetribune.com/marina-mogilko-youtube-phenomenon-and-silicon-valley-entrepreneur/"
+    },
+    {
+      "outlet": "BuzzFeed",
+      "title": "The cost of having a baby, on TikTok",
+      "date": null,
+      "url": "https://www.buzzfeed.com/kristatorres/cost-to-have-a-baby-tiktok"
+    }
   ],
-  "counts": { "updatedAt": null, "items": [] },
+  "counts": {
+    "updatedAt": null,
+    "items": []
+  },
   "contacts": {
     "partnerships": "partnerships@marinamogilko.co",
     "press": "pr@marinamogilko.co"
@@ -79,5 +226,16 @@
     "name": "Future Proof",
     "url": "https://siliconvalleygirl.beehiiv.com/subscribe?utm_source=marinamogilkoco&utm_medium=newsletter-page&utm_campaign=futureproof-sub",
     "cadence": "One email a week"
+  },
+  "featuredEpisodes": {
+    "heading": "Conversations that matter",
+    "videoIds": [
+      "S0h5oUVv0BY",
+      "SP76PvgMzVU",
+      "vZLY2YGUk4o",
+      "o-wv_szZ0V0",
+      "E0Q96IKXx6Q",
+      "subu-xHrp1w"
+    ]
   }
 }

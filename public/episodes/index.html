@@ -132,6 +132,25 @@
   }
   .site-nav .nav-cta:hover { background: var(--accent); color: var(--ground); }
 
+  /* Drop-down under About Marina: opens on hover and on keyboard focus,
+     closes when the pointer or focus leaves. No JavaScript. On a phone the
+     header stacks and the About page's own section nav does this job. */
+  .nav-menu { position: relative; }
+  .nav-menu > a::after { content: " ▾"; font-size: 0.7em; }
+  .nav-sub {
+    position: absolute; top: 100%; left: -0.75rem; margin: 0; padding: 0.5rem 0;
+    list-style: none; min-width: 12rem; background: var(--ground);
+    border: 1px solid var(--rule); border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(23, 21, 17, 0.12);
+    opacity: 0; visibility: hidden; transform: translateY(4px);
+    transition: opacity 0.12s, transform 0.12s, visibility 0s linear 0.12s;
+  }
+  .nav-menu:hover .nav-sub, .nav-menu:focus-within .nav-sub {
+    opacity: 1; visibility: visible; transform: none; transition-delay: 0s;
+  }
+  .nav-sub a { display: block; padding: 0.45rem 1rem; font-size: 0.9rem; white-space: nowrap; }
+  .nav-sub a:hover { background: rgba(23, 21, 17, 0.05); }
+
   /* The header is sticky, so anything the nav jumps to needs a matching
      scroll offset or its heading lands underneath the bar. */
   [id] { scroll-margin-top: 6rem; }
@@ -191,7 +210,12 @@
     .site-socials { margin: 0; gap: 1rem; flex-wrap: wrap; }
     .site-socials a { min-height: 36px; }
     .site-socials svg { width: 20px; height: 20px; }
-    .site-nav { gap: 1.1rem; }
+    /* Five items do not fit on one line at phone width: let them wrap, and
+       keep each label on one line so nothing pokes past the edge. */
+    .site-nav { gap: 0.6rem 1.1rem; flex-wrap: wrap; }
+    .site-nav a { white-space: nowrap; }
+    .nav-menu > a::after { content: ""; }
+    .nav-sub { display: none; }
     /* Comfortable tap targets on a phone. */
     .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
     .site-header .wordmark { min-height: 44px; }
@@ -230,6 +254,9 @@
     .toolbar .reset:hover { background: var(--ink); color: var(--ground); }
     .no-results { display: none; padding: 2rem 0; font-size: 1.05rem; }
     .no-results.show { display: block; }
+    .search-note { font-size: 0.85rem; color: rgba(23, 21, 17, 0.6); margin: -1.25rem 0 1.5rem; }
+    .search-note[hidden] { display: none; }
+    .ep-card-snippet { font-size: 0.85rem; color: rgba(23, 21, 17, 0.7); margin-top: 0.45rem; line-height: 1.45; }
     
     .ep-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -288,9 +315,20 @@
       <nav class="site-nav">
         <a href="/episodes/">Episodes</a>
         <a href="/topics/">Topics</a>
-        <a href="/about/">About Marina</a>
+        <div class="nav-menu">
+          <a href="/about/" aria-haspopup="true">About Marina</a>
+          <ul class="nav-sub" aria-label="About Marina">
+            <li><a href="/about/">About Marina</a></li>
+            <li><a href="/about/#story">Story</a></li>
+            <li><a href="/about/#press">Press</a></li>
+            <li><a href="/about/#awards">Awards</a></li>
+            <li><a href="/about/#speaking">Speaking</a></li>
+            <li><a href="/about/#faq">Questions</a></li>
+            <li><a href="/about/#contact">Contact</a></li>
+          </ul>
+        </div>
         <a href="/newsletter/">Newsletter</a>
-        <a href="/#work" class="nav-cta">Work with Marina</a>
+        <a href="/#work" class="nav-cta">Contact us</a>
       </nav>
     </div>
   </header>
@@ -1315,6 +1353,7 @@
           </a>
       </div>
       <p class="no-results" id="none">No episodes match. <a href="/episodes/">Clear the filters</a> or try another word.</p>
+      <p class="search-note" id="search-note" hidden></p>
       <a class="back-home" href="/">&larr; Back to the homepage</a>
     </div>
   </main>
@@ -1337,23 +1376,59 @@
         fmt = document.getElementById("format"), topic = document.getElementById("topic"),
         cards = Array.prototype.slice.call(document.querySelectorAll("#grid .ep-card")),
         count = document.getElementById("count"), none = document.getElementById("none"),
-        total = cards.length;
+        note = document.getElementById("search-note"), total = cards.length,
+        byId = {}, index = null, loading = null;
+    cards.forEach(function (c) { byId[c.getAttribute("href").split("/")[2]] = c; });
+
+    // The transcript index is fetched once, the first time a query is three
+    // characters or longer; until it arrives, cards match on title and guest.
+    function loadIndex() {
+      if (index || loading) return loading;
+      note.hidden = false; note.textContent = "Searching transcripts…";
+      loading = fetch("/search-index.json").then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (data) { index = {}; data.forEach(function (e) { index[e.id] = e.text; }); apply(); })
+        .catch(function () { index = {}; note.hidden = true; });
+      return loading;
+    }
+    function snippet(text, phrase) {
+      var i = text.indexOf(phrase); if (i === -1) return "";
+      var start = Math.max(0, i - 70), end = Math.min(text.length, i + phrase.length + 90);
+      return (start ? "…" : "") + text.slice(start, end).trim() + (end < text.length ? "…" : "");
+    }
     function apply() {
-      var words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean), f = fmt.value, tp = topic.value, shown = 0;
+      var raw = q.value.toLowerCase().trim(), words = raw.split(/\s+/).filter(Boolean),
+          f = fmt.value, tp = topic.value, shown = 0, inTranscripts = 0;
+      if (raw.length >= 3 && !index) loadIndex();
       cards.forEach(function (c) {
-        var s = c.getAttribute("data-search") || "", ok = true, i;
+        var s = c.getAttribute("data-search") || "", id = c.getAttribute("href").split("/")[2],
+            ok = true, viaText = false, i, snip = c.querySelector(".ep-card-snippet");
         for (i = 0; i < words.length; i++) if (s.indexOf(words[i]) === -1) { ok = false; break; }
+        if (!ok && index && raw.length >= 3 && index[id] && index[id].indexOf(raw) !== -1) { ok = true; viaText = true; }
         if (ok && f && c.getAttribute("data-format") !== f) ok = false;
         if (ok && tp && (" " + (c.getAttribute("data-topics") || "") + " ").indexOf(" " + tp + " ") === -1) ok = false;
+        if (viaText && ok) {
+          if (!snip) { snip = document.createElement("p"); snip.className = "ep-card-snippet"; c.querySelector(".ep-card-body").appendChild(snip); }
+          snip.textContent = snippet(index[id], raw); inTranscripts++;
+        } else if (snip) { snip.remove(); }
         c.hidden = !ok; if (ok) shown++;
       });
-      count.textContent = shown === total ? total + " episodes" : shown + " of " + total + " episodes";
+      count.textContent = shown === total && !raw ? total + " episodes" : shown + " of " + total + " episodes";
       none.className = shown ? "no-results" : "no-results show";
+      if (index && raw.length >= 3) { note.hidden = false; note.textContent = inTranscripts ? inTranscripts + " matched inside a transcript; the phrase is shown under the episode." : "Transcripts searched too; no extra matches."; }
+      else if (index || !raw) note.hidden = true;
     }
     form.hidden = false;
+    // A query from the homepage search box (or a shared link) fills the form in.
+    try {
+      var params = new URLSearchParams(location.search);
+      if (params.get("q")) q.value = params.get("q");
+      if (params.get("format")) fmt.value = params.get("format");
+      if (params.get("topic")) topic.value = params.get("topic");
+    } catch (e) {}
     q.addEventListener("input", apply); fmt.addEventListener("change", apply); topic.addEventListener("change", apply);
     form.addEventListener("reset", function () { setTimeout(apply, 0); });
     form.addEventListener("submit", function (e) { e.preventDefault(); });
+    apply();
   })();
   </script>
 

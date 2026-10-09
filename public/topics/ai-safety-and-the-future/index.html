@@ -132,6 +132,25 @@
   }
   .site-nav .nav-cta:hover { background: var(--accent); color: var(--ground); }
 
+  /* Drop-down under About Marina: opens on hover and on keyboard focus,
+     closes when the pointer or focus leaves. No JavaScript. On a phone the
+     header stacks and the About page's own section nav does this job. */
+  .nav-menu { position: relative; }
+  .nav-menu > a::after { content: " ▾"; font-size: 0.7em; }
+  .nav-sub {
+    position: absolute; top: 100%; left: -0.75rem; margin: 0; padding: 0.5rem 0;
+    list-style: none; min-width: 12rem; background: var(--ground);
+    border: 1px solid var(--rule); border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(23, 21, 17, 0.12);
+    opacity: 0; visibility: hidden; transform: translateY(4px);
+    transition: opacity 0.12s, transform 0.12s, visibility 0s linear 0.12s;
+  }
+  .nav-menu:hover .nav-sub, .nav-menu:focus-within .nav-sub {
+    opacity: 1; visibility: visible; transform: none; transition-delay: 0s;
+  }
+  .nav-sub a { display: block; padding: 0.45rem 1rem; font-size: 0.9rem; white-space: nowrap; }
+  .nav-sub a:hover { background: rgba(23, 21, 17, 0.05); }
+
   /* The header is sticky, so anything the nav jumps to needs a matching
      scroll offset or its heading lands underneath the bar. */
   [id] { scroll-margin-top: 6rem; }
@@ -191,7 +210,12 @@
     .site-socials { margin: 0; gap: 1rem; flex-wrap: wrap; }
     .site-socials a { min-height: 36px; }
     .site-socials svg { width: 20px; height: 20px; }
-    .site-nav { gap: 1.1rem; }
+    /* Five items do not fit on one line at phone width: let them wrap, and
+       keep each label on one line so nothing pokes past the edge. */
+    .site-nav { gap: 0.6rem 1.1rem; flex-wrap: wrap; }
+    .site-nav a { white-space: nowrap; }
+    .nav-menu > a::after { content: ""; }
+    .nav-sub { display: none; }
     /* Comfortable tap targets on a phone. */
     .site-nav a { min-height: 44px; display: inline-flex; align-items: center; }
     .site-header .wordmark { min-height: 44px; }
@@ -305,9 +329,20 @@
       <nav class="site-nav">
         <a href="/episodes/">Episodes</a>
         <a href="/topics/">Topics</a>
-        <a href="/about/">About Marina</a>
+        <div class="nav-menu">
+          <a href="/about/" aria-haspopup="true">About Marina</a>
+          <ul class="nav-sub" aria-label="About Marina">
+            <li><a href="/about/">About Marina</a></li>
+            <li><a href="/about/#story">Story</a></li>
+            <li><a href="/about/#press">Press</a></li>
+            <li><a href="/about/#awards">Awards</a></li>
+            <li><a href="/about/#speaking">Speaking</a></li>
+            <li><a href="/about/#faq">Questions</a></li>
+            <li><a href="/about/#contact">Contact</a></li>
+          </ul>
+        </div>
         <a href="/newsletter/">Newsletter</a>
-        <a href="/#work" class="nav-cta">Work with Marina</a>
+        <a href="/#work" class="nav-cta">Contact us</a>
       </nav>
     </div>
   </header>

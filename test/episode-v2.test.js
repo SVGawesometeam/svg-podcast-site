@@ -53,7 +53,8 @@ test('summary, takeaways, chapters and transcript are visible sections with head
   assert.match(html, /<h2>Key takeaways<\/h2>/);
   assert.match(html, /<h2>Chapters<\/h2>/);
   assert.match(html, /<h2>Transcript<\/h2>/);
-  assert.doesNotMatch(html, /display:\s*none/, 'something is hidden by default');
+  const content = html.replace(/\/\* CHROME-START \*\/[\s\S]*?\/\* CHROME-END \*\//, '');
+  assert.doesNotMatch(content, /display:\s*none/, 'something is hidden by default');
   // The only script is the analytics loader every page carries.
   assert.doesNotMatch(html.replace(ANALYTICS_HEAD, ''), /<script>/, 'the page should need no JavaScript');
   assert.ok(html.includes('People pay $50 to $100 for a &quot;boring&quot; product.'));

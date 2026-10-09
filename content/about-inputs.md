@@ -1,5 +1,7 @@
 # About page: what Marina's team needs to confirm
 
+**Status 2026-10-09:** the team's narrative and FAQ arrived and live in `content/about.md`; the page renders them with the fact list from `content/site.json`. Edit the narrative in `about.md`, the facts and press in `site.json`.
+
 **Status 2026-10-08:** `/about/` is built from `content/site.json`. The team confirmed
 everything that was on partnerships.marinamogilko.co and asked to build without source
 links; the `source` field in `site.json` is filled in as links arrive. What is still open is

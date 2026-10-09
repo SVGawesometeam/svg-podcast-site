@@ -5,13 +5,15 @@ const test = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
-const { mdToHtml, renderLegalPage, renderAboutPage, renderNewsletterPage, episodeFor } = require('../lib/pages');
+const { mdToHtml, parseAbout, renderLegalPage, renderAboutPage, renderNewsletterPage, episodeFor } = require('../lib/pages');
+const { ABOUT_MENU } = require('../lib/chrome');
 const { ANALYTICS_HEAD } = require('../lib/chrome');
 const { esc } = require('../lib/html');
 
 const ROOT = path.join(__dirname, '..');
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'site.json'), 'utf8'));
 const legal = (name) => fs.readFileSync(path.join(ROOT, 'content', 'legal', `${name}.md`), 'utf8');
+const aboutMd = fs.readFileSync(path.join(ROOT, 'content', 'about.md'), 'utf8');
 const vercel = JSON.parse(fs.readFileSync(path.join(ROOT, 'vercel.json'), 'utf8'));
 const csp = vercel.headers.find((h) => h.source === '/(.*)').headers.find((h) => h.key === 'Content-Security-Policy').value;
 
@@ -87,7 +89,49 @@ test('featured guests link to their interview rather than a compilation, and mis
   const html = renderAboutPage({ ...site, featuredGuests: ['Reid Hoffman', 'Nobody'] }, EPISODES);
   assert.ok(html.includes('<a href="/episode/aaaaaaaaaaa/">Reid Hoffman</a>'));
   assert.ok(!html.includes('Nobody'));
-  assert.match(html, /3 episodes on this site: 1 interviews, 1 solo episodes and 1 compilations/);
+  assert.match(html, /All 3 episodes/);
+});
+
+test('the markdown subset renders safe links and leaves unsafe ones as text', () => {
+  const html = mdToHtml('See [the show](https://marinamogilko.co/episodes/), [BI](https://www.businessinsider.com/x), [mail](mailto:pr@marinamogilko.co), [bad](javascript:alert(1)) and * a bullet\n\n* one\n* two');
+  assert.ok(html.includes('<a href="/episodes/">the show</a>'), 'own-site links become root-relative');
+  assert.ok(html.includes('<a href="https://www.businessinsider.com/x" target="_blank" rel="noopener">BI</a>'));
+  assert.ok(html.includes('<a href="mailto:pr@marinamogilko.co">mail</a>'));
+  assert.ok(html.includes('[bad](javascript:alert(1))') && !html.includes('href="javascript'));
+  const prot = mdToHtml('[a](//evil.com) [b](/\\evil.com)');
+  assert.ok(!prot.includes('href='), 'protocol-relative and backslash paths are not links');
+  assert.ok(html.includes('<li>one</li>'), 'asterisk bullets are lists too');
+});
+
+test('about.md parses into an intro, sections and a FAQ', () => {
+  const about = parseAbout(aboutMd);
+  assert.match(about.intro, /^Marina Mogilko is an entrepreneur/);
+  assert.deepEqual(about.sections.map((s) => s.heading), ['My story', 'Why I started Silicon Valley Girl', 'If this is your first visit', 'LinguaTrip and Linguamarina']);
+  assert.ok(about.faq.length >= 9);
+  assert.equal(about.faq[0].question, 'Who is Marina Mogilko?');
+  assert.match(about.faq.find((f) => /guest/.test(f.question)).answer, /\[Reid Hoffman\]\(https:\/\/marinamogilko\.co\/episode\/S0h5oUVv0BY\/\)/);
+});
+
+test('the about page renders the team\'s text, toggled questions, and every anchor the nav menu points at', () => {
+  const html = renderAboutPage(site, EPISODES, aboutMd);
+  for (const m of ABOUT_MENU) {
+    const id = m.href.split('#')[1];
+    if (id) assert.ok(html.includes(`id="${id}"`), `nav menu points at #${id} but the About page has no such section`);
+  }
+  assert.ok(html.includes('<h2>My story</h2>'));
+  assert.ok(html.includes('500 Startups accelerator'));
+  assert.match(html, /<details class="faq-item" open>\s*<summary><h3>Who is Marina Mogilko\?<\/h3><\/summary>/);
+  assert.ok((html.match(/<details class="faq-item"/g) || []).length >= 9);
+  assert.ok(html.includes('<a href="/episode/S0h5oUVv0BY/">Reid Hoffman</a>'), 'links in the FAQ are rendered root-relative');
+  assert.ok(html.includes('<a href="https://www.youtube.com/@SiliconValleyGirl" target="_blank" rel="noopener">YouTube</a>'));
+  assert.ok(html.includes('id="awards"') && html.includes('WIBA Award'));
+  assert.ok(html.includes('id="contact"') && html.includes('mailto:partnerships@marinamogilko.co'));
+  assert.ok(!html.includes('Work with Marina'));
+  const data = ld(html);
+  const faq = data['@graph'].find((n) => n['@type'] === 'FAQPage');
+  assert.ok(faq && faq.mainEntity.length >= 9);
+  assert.equal(faq.mainEntity[0].name, 'Who is Marina Mogilko?');
+  assert.ok(!/<[a-z]/.test(faq.mainEntity.map((q) => q.acceptedAnswer.text).join('')), 'answers in the schema are plain text');
 });
 
 test('the about page JSON-LD describes the same person the homepage declares', () => {

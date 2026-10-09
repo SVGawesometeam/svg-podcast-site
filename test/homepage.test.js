@@ -66,8 +66,11 @@ test('head metadata is preserved', () => {
   assert.match(html, /og:image" content="https:\/\/marinamogilko\.co\/og-image\.png"/);
 });
 
-test('partnerships mailto survives the redesign', () => {
-  assert.match(renderHomePage(EPISODES), /mailto:partnerships@marinamogilko\.co/);
+test('the partnerships block is gone; contact goes through the form', () => {
+  const html = renderHomePage(EPISODES);
+  assert.ok(!html.includes('Want your brand on the podcast?'));
+  assert.ok(!html.includes('id="contact"'));
+  assert.ok(html.includes('id="work"') && html.includes('id="pitch-form"'));
 });
 
 test('the header and footer come from the shared chrome', () => {
@@ -78,7 +81,7 @@ test('the header and footer come from the shared chrome', () => {
 
 test('nav anchor targets exist on the page', () => {
   const html = renderHomePage(EPISODES);
-  for (const id of ['episodes', 'host', 'contact', 'subscribe']) {
+  for (const id of ['episodes', 'search', 'host', 'work', 'subscribe']) {
     assert.ok(html.includes(`id="${id}"`), `nav points at #${id} but no such element`);
   }
 });
@@ -107,10 +110,13 @@ test('the hero image is eager while the rest are lazy', () => {
   }
 });
 
-test('the cover meta renders its date in UTC, in the mock short form', () => {
-  // 2026-09-08T17:00Z. The assertion guards the formatter staying UTC-pinned
-  // and matching the mock's "SEP 8 2026".
-  assert.match(renderHomePage(EPISODES), /SEP 8 2026/);
+test('the curated block shows the chosen episodes in the chosen order under the chosen heading', () => {
+  const html = renderHomePage(EPISODES, { featuredEpisodes: { heading: 'Conversations that matter', videoIds: ['ccc', 'nope', 'aaa'] } });
+  assert.match(html, /<h2 class="section-title">Conversations that matter<\/h2>/);
+  const block = html.slice(html.indexOf('id="featured"'), html.indexOf('<section class="about">'));
+  assert.ok(block.indexOf('/episode/ccc/') < block.indexOf('/episode/aaa/'), 'order is the team\'s order');
+  assert.ok(!block.includes('/episode/bbb/'));
+  assert.ok(!renderHomePage(EPISODES).includes('id="featured"'), 'no block without the site facts');
 });
 
 // Six cards on the homepage, everything else on its own page. Revealing the
@@ -161,11 +167,11 @@ test('every episode is reachable from the homepage in at most one hop', () => {
 // The hero carries an editorial pin; the cover story is always the genuinely
 // newest episode. That split is what keeps "This week's cover story" true no
 // matter what is pinned above it.
-test('the cover story is always the newest episode and is labelled as such', () => {
-  const html = renderHomePage(EPISODES);
-  assert.match(html, /pill-label">Latest<\/span>This week/);
-  const cover = html.slice(html.indexOf('class="cover-card"'));
-  assert.ok(cover.includes(`/episode/${EPISODES[0].videoId}/`), 'cover is not the newest episode');
+test('the hero is always the newest episode, with nothing pinned over it', () => {
+  const html = renderHomePage(EPISODES, { featuredEpisodes: { heading: 'X', videoIds: ['bbb'] } });
+  const hero = html.slice(html.indexOf('<section class="hero">'), html.indexOf('</section>'));
+  assert.ok(hero.includes('/episode/aaa/'), 'the newest episode is the hero');
+  assert.ok(!html.includes('cover story'));
 });
 
 test('the hero carries no "latest" wording, since it may be a pinned older episode', () => {
@@ -174,19 +180,21 @@ test('the hero carries no "latest" wording, since it may be a pinned older episo
   assert.ok(!/latest/i.test(hero), 'hero still claims to be the latest episode');
 });
 
-test('neither the hero nor the cover story is repeated in the archive', () => {
-  const html = renderHomePage(EPISODES);
-  const archive = html.slice(html.indexOf('id="episodes"'));
-  const heroId = html.slice(html.indexOf('hero-media')).match(/href="\/episode\/([^/]+)\//)[1];
-  const coverId = html.slice(html.indexOf('class="cover-card"')).match(/href="\/episode\/([^/]+)\//)[1];
-  for (const id of new Set([heroId, coverId])) {
-    assert.ok(!archive.includes(`/episode/${id}/`), `${id} duplicated in the archive`);
-  }
+test('neither the hero nor a curated episode is repeated in the archive', () => {
+  const html = renderHomePage(EPISODES, { featuredEpisodes: { heading: 'X', videoIds: ['bbb'] } });
+  const archive = html.slice(html.indexOf('id="episodes"'), html.indexOf('id="search"'));
+  assert.ok(!archive.includes('/episode/aaa/'), 'hero repeated in the archive');
+  assert.ok(!archive.includes('/episode/bbb/'), 'curated episode repeated in the archive');
+  assert.ok(archive.includes('/episode/ccc/'));
 });
 
-test('the cover story shows its description, as the reference does', () => {
-  const withDesc = EPISODES.map((e, i) => (i === 0 ? { ...e, description: 'A dek from the episode page.' } : e));
-  assert.match(renderHomePage(withDesc), /<p class="cover-dek">A dek from the episode page\.<\/p>/);
+test('the about-the-show block links the three platforms and names no guests', () => {
+  const html = renderHomePage(EPISODES);
+  const block = html.slice(html.indexOf('<section class="about">'), html.indexOf('id="episodes"'));
+  assert.ok(!block.includes('Past guests include'));
+  assert.ok(block.includes('href="https://www.youtube.com/@SiliconValleyGirl"'));
+  assert.ok(block.includes('href="https://open.spotify.com/show/02ZRsvu61y1C2GIc8J2gsY"'));
+  assert.ok(block.includes('href="https://podcasts.apple.com/us/podcast/silicon-valley-girl-ai-tech-and-career-growth/id1819090545"'));
 });
 
 // macOS is case-insensitive, so a file saved as host.JPG satisfies
@@ -228,16 +236,30 @@ const MORE = [
   { videoId: 'eee', title: 'Interview E', thumbnail: 'https://i.ytimg.com/vi/eee/hq.jpg', publishedAt: '2026-06-01T17:00:00.000Z', guestName: 'E Guest', guestTitle: 'CEO, E', duration: '30 MIN', format: 'interview' },
 ].map((e) => ({ format: e.videoId === 'ccc' ? 'compilation' : 'interview', ...e }));
 
-test('the guests row shows featured guests with their role, linking to their interview', () => {
+test('the library search block sends the query to the directory and lists the topics', () => {
   const html = renderHomePage(MORE, SITE);
-  assert.match(html, /<h2 class="section-title">Guests on the show<\/h2>/);
-  assert.ok(html.includes('<a href="/episode/aaa/" class="guest-tile">'));
-  assert.ok(html.includes('<span class="guest-name">Shishir Mehrotra</span>'));
-  assert.ok(html.includes('<span class="guest-role">CEO, Superhuman</span>'));
-  assert.ok(html.includes('<a href="/episode/bbb/" class="guest-tile">'), 'Andrew Ng links his interview, not the compilation');
-  assert.ok(!html.includes('Nobody Here'), 'a guest without an episode is left out');
-  assert.ok(html.includes('href="/about/#guests"'));
-  assert.ok(!renderHomePage(MORE).includes('Guests on the show'), 'no row without the site facts');
+  assert.match(html, /<section id="search" class="library">/);
+  assert.match(html, /Search the entire library\./);
+  assert.match(html, /Silicon Valley Girl podcast library/);
+  assert.match(html, /<form class="library-search" action="\/episodes\/" method="get" role="search">/);
+  assert.match(html, /<input type="search" id="home-q" name="q"/);
+  assert.ok(html.includes('href="/topics/future-of-work/"') && html.includes('href="/topics/" class="all"'));
+  assert.ok(!html.includes('Explore by topic'));
+  assert.ok(!html.includes('Guests on the show'), 'the curated block replaced the guests row');
+  assert.match(html, /<a class="btn btn-ink archive-more" href="\/episodes\/">All episodes/);
+});
+
+test('the newsletter prompt is in the page, hidden, and opens the subscribe page with the address filled in', () => {
+  const html = renderHomePage(EPISODES);
+  assert.match(html, /<div class="nl-pop" id="nl-pop" hidden role="dialog"/);
+  assert.match(html, /<input type="email" id="nl-pop-email" name="email"[^>]*required/);
+  assert.match(html, /<form id="nl-pop-form" class="nl-pop-form" action="https:\/\/siliconvalleygirl\.beehiiv\.com\/subscribe\?[^"]*">/);
+  assert.ok(!/nl-pop-form[^>]*method=/.test(html), 'no native submission: the CSP would block it and the script opens the page instead');
+  assert.match(html, /pop\.hidden = false; remember\(\);/, 'remembered when shown, so it appears once per 30 days');
+  assert.match(html, /setTimeout\(function \(\) \{[\s\S]*?\}, 40000\)/, 'appears after 40 seconds');
+  assert.match(html, /localStorage\.setItem\(KEY/, 'remembered once dismissed');
+  assert.match(html, /window\.open\(form\.getAttribute\("action"\) \+ "&email=" \+ encodeURIComponent\(email\), "_blank", "noopener"\)/);
+  assert.ok(!/innerHTML/.test(html));
 });
 
 test('the practical row shows only solo and compilation episodes, labelled, and not the ones already on the page', () => {
