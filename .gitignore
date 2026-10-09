@@ -7,3 +7,6 @@ dossiers/
 # Finder metadata — created whenever the folder is opened, never part of the site
 .DS_Store
 **/.DS_Store
+
+# Internal plans and working notes — kept locally, never pushed (the repo is public)
+internal/
