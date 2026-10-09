@@ -84,7 +84,7 @@ test('partner names, quotes and case studies are escaped; first row and "more" s
     ] });
   } finally { console.warn = warn; }
   assert.ok(html.includes('A&lt;script&gt;') && !html.includes('A<script>'));
-  assert.ok(html.includes('Show all 3 partners'));
+  assert.ok(html.includes('>Show all<') && !html.includes('Show all 3'));
   assert.strictEqual((html.match(/<li class="partner"/g) || []).length, 3);
   const quotes = renderTestimonials([{ quote: '"<img src=x onerror=1>"', name: 'X', title: 'CEO<', company: 'Y' }, { quote: '', name: 'empty' }]);
   assert.ok(!quotes.includes('<img src=x') && quotes.includes('&lt;img'));
@@ -105,4 +105,24 @@ test('awards, press and facts links only get http(s) hrefs', () => {
   assert.ok(!html.includes('href="javascript:') && !html.includes('href="data:') && !html.includes('href="//evil'));
   assert.ok(html.includes('href="https://example.com/a"'));
   assert.ok(html.includes('<span class="outlet">O</span> P'));
+});
+
+test('pngProblem accepts a whole PNG and names what is wrong with a damaged one', () => {
+  const { pngProblem } = require('../lib/render-partnerships');
+  const good = fs.readFileSync(path.join(ROOT, 'public', 'partners', 'microsoft.png'));
+  assert.strictEqual(pngProblem(good), null);
+  assert.strictEqual(pngProblem(Buffer.from('GIF89a')), 'not a PNG');
+  assert.ok(/truncated|no IEND/.test(pngProblem(good.subarray(0, good.length - 20))));
+  const flipped = Buffer.from(good);
+  flipped[60] ^= 0xff;
+  assert.ok(/does not inflate|expected/.test(pngProblem(flipped)), pngProblem(flipped));
+  const text = logoHtml({ name: 'Damaged', file: 'zz-damaged.png' });
+  assert.ok(text.includes('mark-text'));
+});
+
+test('every raster logo shipped in public/partners/ is whole', () => {
+  const { pngProblem } = require('../lib/render-partnerships');
+  const dir = path.join(ROOT, 'public', 'partners');
+  const bad = fs.readdirSync(dir).filter((f) => f.endsWith('.png')).map((f) => [f, pngProblem(fs.readFileSync(path.join(dir, f)))]).filter(([, p]) => p);
+  assert.deepStrictEqual(bad, []);
 });
